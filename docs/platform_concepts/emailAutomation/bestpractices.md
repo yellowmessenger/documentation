@@ -15,7 +15,7 @@ Follow the below best practices to build an email bot:
 
 :::note
 
-Once the channel is configured, reach out to [tara@yellow.ai](mailto:tara@yellow.ai) or [mohan.kumar@yellow.ai](mailto:mohan.kumar@yellow.ai) to enable email automation on the bot. As this feature is gated, it requires activation from the backend. Provide the bot ID and email address configured to do this.
+Once the channel is configured, reach out to the platform team to enable email automation on the bot. As this feature is gated, it requires activation from the backend. Provide the bot ID and email address configured to do this.
 
 :::
 
