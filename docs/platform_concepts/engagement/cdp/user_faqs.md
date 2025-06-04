@@ -29,7 +29,7 @@ How do I update user contact details or other information directly from a folder
 
 
 1. **Create a CSV File** with contact details or other relevant information that you want to add/update. Ensure the filename begins with "userdata_".
-2. Upload via SFTP: Store the file in a folder in an SFTP server and [connect your SFTP with Yellow.ai](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/sftp)
+2. Upload via SFTP: Store the file in a folder in an SFTP server and [connect your SFTP with Yellow.ai](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/sync_users)
 3. **Sync Data**: Schedule one time import or recurring import based on your requirement. 
 
 For more detailed help, refer to [import user data from a third-party system or Sync user data from SFTP](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/sync_users).

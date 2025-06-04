@@ -287,7 +287,8 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
    * Select **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicable only for marketing templates)
 
    :::note
-   This option is only available for customers who are onboarded to MM Lite and is supported only for MARKETING templates
+      * This option is only available for customers who are onboarded to MM Lite and is supported only for MARKETING templates
+      * By default, it applies the configured  [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level).
    :::
 
 6. Enable **During workflow business hours** to send the message only during business hours.

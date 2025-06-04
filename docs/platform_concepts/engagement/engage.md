@@ -59,11 +59,6 @@ To know about Inbound engagement in detail, see [this article](https://docs.yell
 
 
 
-
-Certainly. Here's a **feature documentation draft** for **MM Lite API integration** written in a professional, structured format suitable for your product documentation. This version follows best practices seen in Google and Microsoft documentation styles:
-
----
-
 ## MMLite API integration for campaign messages
 
 
@@ -107,15 +102,33 @@ You can override the global MM Lite setting at the following points:
 
 ### How to enable
 
-For accounts managed by Yellow\.ai:
+For accounts managed by Yellow.ai:
 
 * Your **Customer Success Manager (CSM)** will assist you with MM Lite onboarding.
-* You can also proactively request enablement by reaching out to your CSM.
+* You can also request your CSM to enable this your CS.
 
-Once enabled, customers can configure MM Lite delivery preferences via:
+Once enabled, you can configure MM Lite delivery preferences as explained here:
 
-* **Global Settings UI** (coming soon)
-* **Individual Campaign or Flow settings**
+#### Set MM Lite preference at org level
+Use this setting to define default delivery preferences for all campaign types—Flow Campaigns, Outbound Campaigns, and Notification API messages—across your organization.
+
+1. On the left navigation pane, go to **Settings** > **Engage** > **WhatsApp API Preference**.
+
+   ![](/img/cdp/whatsapp-preference.png)
+
+2. For each API type, choose your delivery preference.
+
+    <img src="/img/cdp/p2.png" width="50%"/>
+
+3. Click **Confirm**.
+
+#### Setting MM Lite at individual campaign level
+
+
+You can also configure this setting while creating a Flow, Outbound campaign, or using Notification APIs. It overrides the global (org-level) configuration and applies only to the specific campaign or use case.
+
+
+For more details, refer to the relevant documentation.
 
 
 
