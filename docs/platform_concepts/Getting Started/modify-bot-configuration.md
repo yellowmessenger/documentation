@@ -100,24 +100,3 @@ You cannot delete an AI agent. However, you can:
 * Pause the agent to stop its responses.
 * Reset it to clear all existing configurations and data.
 
------
-
-## View AI agent audit log 
-
-Audit log provids a detailed record of the changes made to each module(APIs, Inbox Agent configuration/actions, Channels), including information about the user (user email) who made the changes and the timestamp of the actions taken. 
-
-To view audit log, follow these steps:
-
-1. Click **AI agent settings** > **Audit logs** to access the log of all the changes made.
-
-    ![image](https://imgur.com/E5gLq7h.png)
-
-2. To filter the results and view specific information, you can use the **filter** button and apply relevant filters.
-
-    <img src="https://imgur.com/QqL6CXo.png" alt="drawing" width="50%"/>
-
-3. If you wish to download all the data from the Audit log, you can do so by clicking on **Download CSV**. This will allow you to have a comprehensive record of all the changes made to the AI agent over time.
-
-:::note
-Audit logs will be available for 6 months.
-:::

@@ -160,7 +160,7 @@ You can add website content to your Knowledge base by providing specific URLs. T
 
       **Use case**: Useful for privacy policies, single-product pages, FAQs, or any specific page that contains useful standalone information.
 
-    **Example**: If you enter https://yellow.ai/terms-and-conditions, only that single page will be crawled and added to the Knowledge Base.
+    **Example**: If you enter `https://yellow.ai/terms-and-conditions`, only that single page will be crawled and added to the Knowledge Base.
 
     To add specific pages, follow these steps:
 

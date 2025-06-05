@@ -38,7 +38,7 @@ You will receive **API Key**, **Auth Token**, and **Private Salt**.
 :::note
 Credentials vary between **Test Mode** and **Live Mode**. Use **test credentials** while integrating for testing, and **live credentials** only when you're ready for production.
 
-* __Test Mode:__ This mode is intended for testing purposes and for developers who are just beginning their integration with Instamojo. Test Mode is completely free of charge but requires completion of KYC (Know Your Customer) verification. No actual charges will be incurred, even if valid card details are provided on the [Instamojo test environment](https://test.instamojo.com/) for sign-up.
+* __Test Mode:__ This mode is intended for testing purposes and for developers who are just beginning their integration with Instamojo. Test Mode is completely free of charge but requires completion of KYC (Know Your Customer) verification. No actual charges will be incurred, even if valid card details are provided on the [Instamojo test environment](https://test.instamojo.com) for sign-up.
 * __Live mode__: In Live Mode, transactions occur in real-time, and actual charges apply. To operate in Live Mode, users must provide their bank account information and complete the KYC (Know Your Customer) process. This ensures compliance with regulatory requirements and enables seamless processing of payments. To get started with Live Mode, visit [Instamojo's website](https://www.instamojo.com/) and sign up for an account.
 
 :::
