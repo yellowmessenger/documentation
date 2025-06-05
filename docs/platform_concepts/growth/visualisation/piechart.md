@@ -15,5 +15,12 @@ Click **Visualisation > Pie**.
 - If your company offers customer support through various channels, including phone, email, live chat, and social media and your support team wants to assess customer satisfaction levels across these different channels, use a pie chart to display the distribution of customer satisfaction ratings (e.g., satisfied, neutral, dissatisfied) for each support channel. 
 
 
+![image](https://imgur.com/RFoOjol.png)
+
+<!---
+
+// Remove this commented code & above image after color feature is live. 
 
 ![Chart pie](https://imgur.com/mvrZuRc.gif)
+
+--> 

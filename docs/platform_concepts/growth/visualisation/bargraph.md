@@ -22,6 +22,19 @@ When you click **Visualisation > Bar graph**, you will get the following options
 After selecting the values, you will get the option to **stack** the bar graph:
 
 - **Don't stack:** The bar graphs are not stacked.
+    ![image](https://imgur.com/UWIdZNV.png)
+
+- **Stack:** Y-axis will have the count value.
+    ![image](https://imgur.com/UECZaHY.png)
+
+- **Stack 100%:** Y-axis will have the count % value.
+    ![image](https://imgur.com/ue1jkR8.png)
+
+<!----
+
+// Remove this commented code & above lines(24-31) after color feature is live. 
+
+- **Don't stack:** The bar graphs are not stacked.
     ![image](https://imgur.com/Y3IwhH4.png)
 
 - **Stack:** Y-axis will have the count value.
@@ -30,6 +43,7 @@ After selecting the values, you will get the option to **stack** the bar graph:
 - **Stack 100%:** Y-axis will have the count % value.
     ![image](https://imgur.com/kIijMQ7.png)
 
+--> 
 
 
 
