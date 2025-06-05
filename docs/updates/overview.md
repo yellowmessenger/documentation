@@ -58,6 +58,44 @@ If your account is managed by Yellow\.ai:
 
 ## Agent AI
 
+### Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents
+
+We’ve reimagined the AI agent setup experience to be more guided, efficient, and powerful—so you spend less time configuring and more time delivering intelligent conversations.
+
+
+
+#### **What’s enhanced:**
+
+#### Simplified Setup
+
+Define your AI agent’s behavior using natural language. Just describe what the agent should do, and the system generates the logic for you—no technical configuration required.
+
+
+#### Super Agents & Agents
+
+Design large, multi-functional AI assistants with ease using a modular architecture.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/superagent.png)
+
+* **Super Agent:** Acts as the master controller that defines your AI assistant’s overarching goal (e.g., customer support, travel, healthcare). It intelligently routes queries to the right sub-agent and manages the overall conversation flow.
+* **Agents:** Independent, task-specific AI agents under the Super Agent. Each one handles a focused use case such as booking a flight, cancelling a ticket, or responding to knowledge-based queries. This structure keeps logic clean, reusable, and scalable.
+
+
+#### Improved Conversation Design
+
+Build smarter, more natural conversations using intuitive building blocks:
+
+* **Start Triggers:** Automatically detect user intent and launch the right conversation.
+* **Prompts:** Ask relevant questions, deliver precise answers, and guide users clearly.
+* **Actions:** Perform tasks like capturing inputs, calling APIs, or handling fallback responses.
+* **Variables:** Store, recall, and reuse user data throughout the interaction for a personalized experience.
+* **Workflows:** Seamlessly connect to external systems and dynamically fetch or update data in real time.
+
+[**Check out the setup guide →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona)
+
+---
+
+
 ### PCI-Compliant Data Capture Now Supported in Question Nodes
 As part of our ongoing commitment to security and compliance, Yellow.ai now supports PCI-compliant data capture across multiple channels using question nodes, in addition to the previously supported voice input nodes. You can then use the API node to transfer PCI-sensitive information securely.
 
@@ -141,7 +179,7 @@ To ensure faster access to actionable insights and smoother navigation:
 * KB Recommendations and the Manual Conversation Analysis CTA have been moved to the top of the page.
 
 
-[**Continue reading**](https://docs.yellow.ai/docs/platform_concepts/analyze/indepthinsights)
+[**Continue reading →**](https://docs.yellow.ai/docs/platform_concepts/analyze/indepthinsights)
 
 ---
 
@@ -160,4 +198,7 @@ We’ve completely revamped the Knowledge Base module to help you manage and del
 * **Smarter file management**: Organize your content with folders, subfolders, and perform bulk actions for quicker updates.
 * **Metadata management**: Tag and filter files to improve search accuracy and make content more discoverable for your AI agent.
 * **Independent publishing workflow**: Publish Knowledge Base updates without redeploying the entire bot.
+
+
+[**Read the full documentation →**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
 
