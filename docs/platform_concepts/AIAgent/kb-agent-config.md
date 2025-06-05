@@ -1,8 +1,9 @@
 ---
 title: Knowledge base agent 
-sidebar_label: Knowledge base agent overview 
+sidebar_label: Knowledge base agent  
 ---
 
+## Overview
 Knowledge base (Kb) agent is a specialized tool available to the [Super agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona) that helps to provides accurate answers by fetching information from documents, FAQs, and other connected sources.
 
 It allows the Super agent to respond to user queries without relying on predefined conversation flows.

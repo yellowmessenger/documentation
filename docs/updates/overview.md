@@ -147,11 +147,13 @@ To ensure faster access to actionable insights and smoother navigation:
 
 ## Knowledgebase
 
-### Enhanced Knowledge base module **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Redesigned Knowledge Base: Faster Setup, Smarter Syncing, Better Organizing **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-We are excited to announce the launch of the new and improved Knowledge base module, now enabled by default for all newly created bots. This update introduces major enhancements designed to streamline how you manage, organize, and sync content—ensuring your AI agents always deliver accurate, context-aware responses.
+We’ve completely revamped the Knowledge Base module to help you manage and deliver content more efficiently. Now enabled by default for all newly created bots, this update brings powerful new capabilities to streamline setup, syncing, and ongoing content management—ensuring your AI agents stay accurate and context-aware.
 
-**What’s enhanced**:
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
+
+**What’s new**:
 
 * **Guided content onboarding**: Step-by-step onboarding for websites, document uploads, and third-party platforms.
 * **Automated content syncing**: Schedule regular content updates using the built-in scheduler—no backend configuration required.
