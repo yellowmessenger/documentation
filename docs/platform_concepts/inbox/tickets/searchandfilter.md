@@ -19,21 +19,24 @@ With **Filters** you can refine the ticket list according to a particular condit
 
 
 2. You can filter tickets based on the following: 
-    | **Field**                  | **Description**                                                                 |
-    |---------------------------|----------------------------------------------------------------------------------|
-    | **Created Date**          | The date and time when the ticket was created.                          |
-    | **Tags**                  | Tags used to categorize and filter tickets.                       |
-    | **Groups**                | Group assigned to handle the ticket.                           |
-    | **Agents**                | The support agents responsible for managing or resolving the ticket.            |
-    | **Status**                | The current state of the ticket (e.g., Open, Pending, On-hold).                 |
-    | **Priority**              | The urgency or importance level assigned to the ticket (e.g., Low, High).       |
-    | **Source Email**          | The email address from which the ticket was received or created.                |
-    | **Due Date**              | The final date by which the ticket should be resolved.                          |
-    | **Start Date**            | The date when work on the ticket began.                                         |
-    | **End Date**              | The date when the ticket was closed or resolved.                                |
-    | **Resolution Due By**     | The deadline for resolving the issue according to SLAs.                         |
-    | **First Response Due By** | The deadline for the first agent response based on SLAs.                        |
-    | **Next Response Due By**  | The deadline for the next agent follow-up or update based on SLAs.              |
+
+
+| **Field**                  | **Description**                                                                 |
+|---------------------------|----------------------------------------------------------------------------------|
+| **Created Date**          | The date and time when the ticket was created.                          |
+| **Tags**                  | Tags used to categorize and filter tickets.                       |
+| **Groups**                | Group assigned to handle the ticket.                           |
+| **Agents**                | The support agents responsible for managing or resolving the ticket.            |
+| **Status**                | The current state of the ticket (e.g., Open, Pending, On-hold).                 |
+| **Priority**              | The urgency or importance level assigned to the ticket (e.g., Low, High).       |
+| **Source Email**          | The email address from which the ticket was received or created.                |
+| **Due Date**              | The final date by which the ticket should be resolved.                          |
+| **Start Date**            | The date when work on the ticket began.                                         |
+| **End Date**              | The date when the ticket was closed or resolved.                                |
+| **Resolution Due By**     | The deadline for resolving the issue according to SLAs.                         |
+| **First Response Due By** | The deadline for the first agent response based on SLAs.                        |
+| **Next Response Due By**  | The deadline for the next agent follow-up or update based on SLAs.              |
+
 
 3. Click **Apply Filter** to see the results.
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/tseeresults.png)

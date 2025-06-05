@@ -34,6 +34,9 @@ The available environments include **Sandbox, Staging, Production, Live,** and *
 
 -->
 
+These are Tier 1 bots having two environments: Development and Live.
+
+
 #### Development
 
 In this mode, you can build and update bots, design flows, and conduct testing. When your bot aligns with your requirements, you can initiate a Publish request and the bot admin/approver can approve it. 
@@ -44,6 +47,7 @@ In this mode, you can build and update bots, design flows, and conduct testing. 
 #### Live
 
 Published bots operate in the Live mode once the publish request is approved. No changes are possible in this mode.
+
 
 -----
 
@@ -56,6 +60,9 @@ Published bots operate in the Live mode once the publish request is approved. No
 ![](https://i.imgur.com/WI0YLmE.png)
 
 -->
+
+These are Tier 2 bots(with two environments: Sandbox and Production) and Tier 3 bots(with three environments: Sandbox, Staging, and Production).
+
 
 #### Sandbox
 
@@ -70,6 +77,14 @@ Staging is very similar to Sandbox except you can make quick fixes here and publ
 #### Production 
 
 Production contains the published live bots and is similar to the **Live** mode.
+
+
+
+:::note
+
+When granting access to a user in a specific environment—such as staging—access will be limited to that environment only. For example, if a user is given access to staging, they will not receive access to sandbox or production. The same applies to the other environments, access to sandbox grants access to sandbox only and access to production grants access to production only.
+:::
+
 
 ----
 

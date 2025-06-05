@@ -23,6 +23,19 @@ Chat transcript visibility for different permissions:
     ![](https://imgur.com/c6T900o.png)                      
 
 
+------
+
+## Enable IP whitelisting on cloud 
+
+To enable IP whitelisting on the cloud platform, follow these steps:
+
+1. Log in to the platform. Open settings. Search and select **IP whitelisting**. 
+2. Click on the toggle button to enable IP whitelisting. This which will reveal an option to add IP addresses.
+3. Click **+Add IP Range** to include the IP address range. After adding the IP range, it will be displayed on the dashboard. You can **edit/delete** these details. 
+
+**Demo**: 
+![](https://imgur.com/CkQrHTU.gif)
+
 
 ---
 
@@ -51,17 +64,6 @@ After adding the IP range, it will be displayed on the dashboard.
 
 
 -------
-
-## Enable IP whitelisting on cloud 
-
-To enable IP whitelisting on the cloud platform, follow these steps:
-
-1. Log in to the platform. Open settings. Search and select **IP whitelisting**. 
-2. Click on the toggle button to enable IP whitelisting. This which will reveal an option to add IP addresses.
-3. Click **+Add IP Range** to include the IP address range. After adding the IP range, it will be displayed on the dashboard. You can **edit/delete** these details. 
-
-**Demo**: 
-![](https://imgur.com/CkQrHTU.gif)
 
 
 :::note
