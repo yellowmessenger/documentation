@@ -34,7 +34,10 @@ You can apply visualizations for the **summarized** tables by following these st
 
 3. Click **Apply**. Refresh the page after making changes.
 
-----
+
+<!--
+
+//Remove this commented code after color feature is live. 
 
 ## Customise visualised data
 
@@ -44,8 +47,6 @@ Visualised charts display data with corresponding labels and values based on the
 
   ![Chart Label Toggle](https://imgur.com/PWrB6fA.gif)
 
-<!--
-**Adjust colors**: Customize the colors used in the charts to match your preferences or reporting standards.
 -->
 
 ----

@@ -14,4 +14,10 @@ Click **Visualisation > Row**.
 - While using sales bot, you can divide the sales data based on geographic regions and represent it using a row chart. By examining this chart, you can compare sales performance across various regions, identifying markets with high sales potential and areas where further growth opportunities exist. 
 
 
-![Chart Label Toggle](https://imgur.com/PWrB6fA.gif)
+![image](https://imgur.com/hVs11w1.png)
+
+
+<!---
+// Remove this commented code & above image after color feature is live. 
+ ![Chart Label Toggle](https://imgur.com/PWrB6fA.gif)
+--> 
