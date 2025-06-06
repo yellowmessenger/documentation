@@ -269,7 +269,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/Getting Started/createfirstbot",
-            "platform_concepts/Getting Started/publish-env",
+            //"platform_concepts/Getting Started/publish-env",
             "platform_concepts/Getting Started/modify-bot-configuration",
 
           ]
