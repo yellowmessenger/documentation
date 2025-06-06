@@ -9,7 +9,6 @@ When you create an AI agent, you can configure key details such as the agent's n
 This guide explains how to update your AI agent’s configuration, pause and resume its responses, and reset its data.
 
 
-You can manage your AI agent’s configuration from the **Overview** page.
 
 To manage your AI agent's configuration, follow these steps:
 

@@ -41,6 +41,16 @@ Sharing bot access allows you to grant view or edit permissions to other users. 
 
 Each environment has a unique bot ID. When granting access, make sure you are in the correct environment for the bot. To provide access across all environments, you need to grant access individually in each one.
 
+:::note
+When you grant a user access to a specific environment (for example, staging), the access applies only to that environment.
+For example:
+
+* Access to staging does not include access to sandbox or production.
+* Access to sandbox applies only to sandbox.
+* Access to production applies only to production.
+
+:::
+
 To share bot access with other users, follow these steps:
 
 1. In the Environment drop-down menu, select the environment for which you want to grant access.
