@@ -35,7 +35,7 @@ You can enable or disable 2FA from your **Profile Settings**.
 2. Locate the **2FA toggle** under your profile settings.
 3. Toggle it **ON** to enable or **OFF** to disable 2FA for your account.
 
-![2FA Toggle](https://imgur.com/whYQOc5.png)
+   ![2FA Toggle](https://imgur.com/whYQOc5.png)
 
 **Login behavior with 2FA**
 
@@ -51,7 +51,7 @@ In cases where **OAuth** is enabled (commonly for organization-level authenticat
 - During configuration, businesses can choose whether to **enable or disable 2FA** for users.
 - If 2FA is disabled under OAuth, the **2FA toggle will be disabled** in the UI and cannot be changed manually.         
 
-<img src="https://imgur.com/LeNAMG1.png" alt="OAuth2FA" width="50%"/>
+   <img src="https://imgur.com/LeNAMG1.png" alt="OAuth2FA" width="50%"/>
 
 ------
 
@@ -83,9 +83,9 @@ You can view all the options on the platform in the language of your choice by s
 2. Select the desired language from the Current language drop-down in the Account language pop-up.
 3. Click **Save** to apply the new language.
 
-<img src="https://imgur.com/PKxOwWX.png" alt="drawing" width="50%"/>
+   <img src="https://imgur.com/PKxOwWX.png" alt="drawing" width="50%"/>
 
-<img src="https://imgur.com/nvaicVs.png" alt="drawing" width="50%"/>
+   <img src="https://imgur.com/nvaicVs.png" alt="drawing" width="50%"/>
 
 
 :::note
@@ -111,12 +111,12 @@ To customize your email notifications, follow these steps:
     - Enable **Health check** notifications to receive an email if your bot remains inactive for more than 30 minutes. The bot is monitored by pinging it every minute, and if it doesn’t respond within 30 minutes, you’ll be alerted. To stop receiving these alerts, simply uncheck the box.
     - Enable **API management** to receive alerts if any APIs configured in Automation experience a failure rate of more than 5% over the last 7 days. Uncheck the box to stop receiving these notifications.
 
-![](https://imgur.com/1MQCJd5.png)
+      ![](https://imgur.com/1MQCJd5.png)
 
-![](https://imgur.com/jaWeDno.png)
+      ![](https://imgur.com/jaWeDno.png)
 
-**Sample email**: 
-![](https://imgur.com/geznD2O.png)
+   **Sample email**: 
+   ![](https://imgur.com/geznD2O.png)
 
 ---------------
 
