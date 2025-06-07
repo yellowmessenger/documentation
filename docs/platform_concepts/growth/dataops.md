@@ -147,7 +147,7 @@ To set up an SFTP server, install and configure software like OpenSSH. Users cre
 
 ### Azure BLOB (secured/private)
 
-To securly export the data from dataops to Azure BLOB, follow these steps: 
+To securly export the data from Data Export to Azure BLOB, follow these steps: 
 1. Open **Data export rule** select **Azure Blob**. 
 2. Click **Connect via Azure storage account**.         
 3. Enter **Container name** and **Connection string**.      
