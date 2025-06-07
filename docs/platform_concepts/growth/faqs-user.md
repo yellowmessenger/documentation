@@ -205,10 +205,10 @@ Only the columns which are searchable will be available to be filtered. Columns 
 </details>
 
 <details>
-<summary> What is the difference between Data Explorer > Notification Report and DataOps Notification Report? </summary>
+<summary> What is the difference between Data Explorer > Notification Report and Data Export Notification Report? </summary>
 <div>
 
-In Data Explorer > Notification Report, only entries where the source is WhatsApp or SMS are shown. However, in DataOps Notification Report, an additional source, YellowMessenger, is also included for the same data source.
+In Data Explorer > Notification Report, only entries where the source is WhatsApp or SMS are shown. However, in Data Export Notification Report, an additional source, YellowMessenger, is also included for the same data source.
 
 </div>
 </details>
