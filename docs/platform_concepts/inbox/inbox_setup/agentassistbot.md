@@ -143,7 +143,7 @@ When agents trigger the assist bot within the Inbox, it receives a complete set 
 
 To use the payload details within flows, follow these steps: 
 
-1. Use the [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) node to initialize variables. Use this format `{{{profile.payload.Your_Field_Name}}}` to extract data from the payload.
+1. Use the [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node) node to initialize variables. Use this format `{{{profile.payload.Your_Field_Name}}}` to extract data from the payload.
     ![](https://imgur.com/QWF8rCj.png)
 2. Add multiple flows/nodes using the payload variables. These flows can be employed for various purposes, such as API calls and other automation tasks.
     ![](https://imgur.com/Qbcvx42.png)

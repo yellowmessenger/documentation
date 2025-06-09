@@ -276,7 +276,7 @@ You can also create variables through nodes, and those variables can be used in 
 :::note
  1. Only the names of the existing variables are displayed on the **store response in** dropdown. 
  2. Create a new variable if you want to add more variables to the dropdown.
- 3. Variables can also be stored with the help of a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) in the flow.
+ 3. Variables can also be stored with the help of a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node) in the flow.
  
  ![](https://i.imgur.com/l6aRHLK.png) 
 :::
@@ -342,23 +342,23 @@ Different prompts and action nodes return responses in various formats and data 
 | [Multiselect](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#23-multi-select)                                                                | string            |
 | [Image/file](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#26-file-prompt)        | string            |
 
-#### [Actions nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes)
+#### [Actions nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/action-nodes)
 
 
 | Action Nodes                                                                 | Variable Datatype             |
 |-----------------------------------------------------------------------------|-------------------------------|
-| [API](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api)                           | object, array, number, string |
-| [Database (search)](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database)          | array                         |
-| [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function)                 | object, array, number, string |
-| [Outbound Notification](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#32-outbound-notification)                                                       | object, array, number, string |
-| [Notification Status](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#33-notification-status)                                                         | object, array, number, string |
-| [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket)         | object, array, number, string |
-| [Modifier](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#25-modifier)                 | object, array, number, string |
-| [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-knowledge-search)   | object, array, number, string |
-| [Set Language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language)         | object, array, number, string |
-| [Send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#12-send-otp)   | object, array, number, string |
-| [Verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#13-verify-otp) | object, array, number, string |
+| [API](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node)                           | object, array, number, string |
+| [Database (search)](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node)          | array                         |
+| [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node)                 | object, array, number, string |
+| [Outbound Notification](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/outbound-notification)                                                       | object, array, number, string |
+| [Notification Status](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/notification-status)                                                         | object, array, number, string |
+| [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket)         | object, array, number, string |
+| [Modifier](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/modifier)                 | object, array, number, string |
+| [Knowledge search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/knowledge-search-node)   | object, array, number, string |
+| [Set Language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language)         | object, array, number, string |
+| [Send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/send-otp)   | object, array, number, string |
+| [Verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/verify-otp) | object, array, number, string |
 | Payment                                                                     | object, array, number, string |
-| [Generate PDF](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#19-generate-pdf-image)         | object, array, number, string |
+| [Generate PDF](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/generate-pdf-image)         | object, array, number, string |
   
   

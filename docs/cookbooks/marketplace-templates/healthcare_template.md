@@ -58,14 +58,14 @@ It can also be triggered at any point of the conversation when the bot user type
 
     <img src="https://i.imgur.com/PalQaNC.png" alt="drawing" width="80%"/>
 
-4. **Storing new patient details in the database:** After the details are modified, the [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node is used to store the entered details in the table - ```Patient details```. Once the records are added, a success message is displayed using text node .
+4. **Storing new patient details in the database:** After the details are modified, the [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) node is used to store the entered details in the table - ```Patient details```. Once the records are added, a success message is displayed using text node .
 
     <img src="https://i.imgur.com/WhEECsW.png" alt="drawing" width="80%"/>  
 
 #### :pushpin: Tips 
 
 - You can collect more details - previous medical details and upload files.
-- Using [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) and [QR nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) you can display the next options available for the patient registration.       
+- Using [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow) and [QR nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) you can display the next options available for the patient registration.       
    
 ----------
 
@@ -78,17 +78,17 @@ It can also be triggered at any point of the conversation when the bot user type
    - Using a [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-question) node, **email ID** is obtained and stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```emailId```. 
     <img src="https://i.imgur.com/MCtQVrz.png" alt="drawing" width="80%"/>
 3. **Fetch the branch details from the database:** 
-   - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) - From the doctor details table, the database node will fetch unique branch names, which are stored in a  [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```branch```. 
+   - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) - From the doctor details table, the database node will fetch unique branch names, which are stored in a  [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```branch```. 
     - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - branch function is used to display the branch names, which are stored in the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```branch_qr```.
     - [Quick reply](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to fetch a list of branch names from the ```branch_qr``` variable and display the branch names in the form of quick reply buttons. 
 ![](https://i.imgur.com/1QHyybF.png)
 4. **Fetch the doctor's specialization from the database:**
-   - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) - From the doctor details table, the database node will fetch all the details of doctors from the previously selected branch, which are stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```doctor```. These records are sent to the function.
+   - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) - From the doctor details table, the database node will fetch all the details of doctors from the previously selected branch, which are stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```doctor```. These records are sent to the function.
     - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - ```speciality``` function is used to display the doctor's specialization, which is stored in the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)- ```speciality_qr``` in the form of quick reply buttons. 
     - [Quick reply](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to fetch a doctor's specialization from the ```speciality_qr``` variable and display the branch names in the form of quick reply buttons. 
     <img src="https://i.imgur.com/C12XIL9.png" alt="drawing" width="80%"/>
 5. **Fetch the doctor's details from the database:**
-    - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) - From the doctor details table, the database node will fetch all the details of doctors from the previously selected branch and doctor specialization, which are stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```doctor```. These records are sent to the function.
+    - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) - From the doctor details table, the database node will fetch all the details of doctors from the previously selected branch and doctor specialization, which are stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```doctor```. These records are sent to the function.
     - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - doctor function is used to display the doctor's name, which is stored in the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - ```doctor_qr``` in the form of quick reply buttons. 
     - [Quick reply](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to fetch a doctor's name from the ```doctor_qr``` variable and display the branch names in the form of quick reply buttons. 
     <img src="https://i.imgur.com/zuW1TM7.png" alt="drawing" width="80%"/>
@@ -101,7 +101,7 @@ It can also be triggered at any point of the conversation when the bot user type
     ![](https://i.imgur.com/IHKld6z.png)
 
 7. **Store details in database and confirm booking:** After all the details are fetched, a booking ID is generated - ```bookappointresponse``` function. 
-   - A [database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node is used to store the entered details in the table -```Booking details```. Once the record is added, your appointment booking is successfully created.
+   - A [database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) node is used to store the entered details in the table -```Booking details```. Once the record is added, your appointment booking is successfully created.
 
     <img src="https://i.imgur.com/0uox17m.png" alt="drawing" width="80%"/> 
 
@@ -115,14 +115,14 @@ It can also be triggered at any point of the conversation when the bot user type
 
    - It can also be triggered at any point of the conversation when the bot user types a sentence that matches with the [intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) - ```Locate nearby clinics```
 2. **Collect location:** User location is collected using the [location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-location) node. This information is stored in a variable named **location**.
-3. **Nearby clinics:** A search happens in the [database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) that contains the location details of all the clinics. A flash message 'Please wait while we fetch the nearest branch.' is displayed using the [text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) node before showning nearby clinics.
+3. **Nearby clinics:** A search happens in the [database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) that contains the location details of all the clinics. A flash message 'Please wait while we fetch the nearest branch.' is displayed using the [text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) node before showning nearby clinics.
 
    - If there is a clinic closer to the user location, the flow moves to the **success** branch.
    - If there's no clinic in or closer to the user location, the flow moves to the **fallback** and conveys this in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes).
 
     ![](https://i.imgur.com/r2tHPOX.png)
-4. **Clinic details:** The success branch is connected to a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) which executes the function **nearbyClinics** and stores the clinic details in the variable **fiveNearbyDealers**.
-5. **Display the clinic details:** The [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) is then connected to a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) which is connected to a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) and [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes). At this step, the list of clinics will be displayed to the end user.
+4. **Clinic details:** The success branch is connected to a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) which executes the function **nearbyClinics** and stores the clinic details in the variable **fiveNearbyDealers**.
+5. **Display the clinic details:** The [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) is then connected to a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node) which is connected to a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) and [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes). At this step, the list of clinics will be displayed to the end user.
 
 ---------------
 
@@ -134,11 +134,11 @@ It can also be triggered at any point of the conversation when the bot user type
     ![](https://i.imgur.com/DPaxpMM.png)
 3. **Identify the selected option and display details to collect report:** The selected option from the Carousel node is identified by the [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition).
    - If MRN option is selected, [question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-question) node is used to obtain the MRN number.
-   - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node is used to fetch MRN.
+   - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) node is used to fetch MRN.
    - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - ```generateDynamicLink``` function is used to fetch the report from the ```record health``` database, which is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)- ```test_report``` and it converts the report into PDF format.
     ![](https://i.imgur.com/P6PVLqp.png) 
     - Similarly, if phone number option is selected, [phone number](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-phone) node is used to get the phone number of the patient.
-	- [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node is used to fetch phone number.
+	- [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) node is used to fetch phone number.
    - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - ```generateDynamicLink``` function is used to fetch the report from the ```record health``` database, which is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)- ```test_report``` and it converts the report into PDF format.
     ![](https://i.imgur.com/ISyRRgD.png)
 
@@ -146,7 +146,7 @@ It can also be triggered at any point of the conversation when the bot user type
 
 ### 1.6 Connect with support
 
-[Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are used to fetch the bot user's information such as ```phone number```, ```name```, and ```query```. These details are stored in the [respective variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) and passed into the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node, this will connect the user to the support agent.  
+[Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are used to fetch the bot user's information such as ```phone number```, ```name```, and ```query```. These details are stored in the [respective variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) and passed into the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) action node, this will connect the user to the support agent.  
 
    ![](https://i.imgur.com/7yl13Mx.png)
 

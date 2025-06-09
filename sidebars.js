@@ -380,9 +380,15 @@ module.exports = {
 
               ],
             },
-
-            "platform_concepts/copilot",
             
+            {
+              type: "category",
+              label: "AI Copilot",
+             link: {type: 'doc', id: 'platform_concepts/AICopilot/copilot'},
+             items: [ 
+                "platform_concepts/AICopilot/ai-copilot-debugger",
+             ],
+            },
           // Agent AI 
 
             "platform_concepts/studio/build/workflows",
@@ -421,13 +427,41 @@ module.exports = {
                         "platform_concepts/studio/build/nodes/message-nodes1/whatsapp-list",
                         "platform_concepts/studio/build/nodes/message-nodes1/whatsapp-product-message",
                         "platform_concepts/studio/build/nodes/prompt-nodes",
-                        
-                       
-                        "platform_concepts/studio/build/nodes/action-nodes",
-                        "platform_concepts/studio/build/nodes/logic-nodes",
                       ],
                     }, 
-                    "platform_concepts/studio/build/nodes/action-nodes",
+                    {
+                      type: "category",
+                      label: "Action nodes",
+                      link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/action-nodes-overview/action-nodes'},
+                      collapsed: true,
+                      items: [
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/api-node",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/analytics-node",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/database-node",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/data-formatter",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/delay",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/date-time-validator",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/email-validator",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/function-node",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/file-validator",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/generate-pdf-image",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/knowledge-search-node",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/modifier",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/name-validator",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/notification-status",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/outbound-notification",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/phone-validator",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/send-otp", 
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/set-language",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/sync-database",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/send-event-node",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/user-event",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/verify-otp",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/variables-node",       
+                      ],
+                    }, 
                     "platform_concepts/studio/build/nodes/logic-nodes",
                   ],
                 },       

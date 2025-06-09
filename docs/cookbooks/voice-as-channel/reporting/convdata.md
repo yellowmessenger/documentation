@@ -73,7 +73,7 @@ SID is a voice data variable which is available immediately after the call is in
 
 To ensure that you have the customer details even if the customer disconnects in the middle, add a database node after every prompt node to send the collected data to the table. This data can then be used to reach out to the customer or as a survey.
 
-> [Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) about the DB node.
+> [Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) about the DB node.
 
 
 -----------------

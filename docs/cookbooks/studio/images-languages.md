@@ -18,7 +18,7 @@ sidebar_label : Display images for different languages
 ![](https://i.imgur.com/P575QBh.png)
 
 
-4. Add [Set Language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) and add the global variable here.
+4. Add [Set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language) and add the global variable here.
 
 ![](https://i.imgur.com/yxqWbNh.png)
 

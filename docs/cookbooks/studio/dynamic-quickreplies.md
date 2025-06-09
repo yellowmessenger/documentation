@@ -5,7 +5,7 @@ sidebar_label : Create dynamic quick replies
 
 A **Fetch from** field is available in the quick replies node to add the code to generate dynamic quick replies. 
 
-1. Include a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) and write the code to generate dynamic quick replies(you can also refer to the [sample code](#sample-snippet-to-generate-dynamic-quick-replies) below). 
+1. Include a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) and write the code to generate dynamic quick replies(you can also refer to the [sample code](#sample-snippet-to-generate-dynamic-quick-replies) below). 
 2. Store the response of that function node in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#21-custom-variables).
 3. Use quick replies node to display this data by passing the variable in the **Fetch from** field(as shown below).
 

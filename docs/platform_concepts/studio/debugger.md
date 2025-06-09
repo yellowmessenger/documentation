@@ -52,7 +52,7 @@ The **Debugger** section will reflect the current state of variables or the valu
 :::info
 1. The debugger section can be resized, with the default height set at 30% of the builder area's height and adjustable up to a maximum of 50%.
 
-2. Breakpoints are applicable across multiple flows, when a flow execution switches to another flow using the [Execute flow node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow), the new flow containing the breakpoint will automatically load.
+2. Breakpoints are applicable across multiple flows, when a flow execution switches to another flow using the [Execute flow node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow), the new flow containing the breakpoint will automatically load.
 :::
 
 ### Resume flow execution from a breakpoint

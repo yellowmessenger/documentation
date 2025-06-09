@@ -200,7 +200,7 @@ You can use the Function node to capture and store the variable in the respectiv
 
    <img src="https://i.imgur.com/g4zb0a8.png" width="70%"/>
 
-   > Learn how to usilize the [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) to capture data from the payload.
+   > Learn how to usilize the [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) to capture data from the payload.
 
 :::note
 You can also use SDK APIs to programmatically set user properties and the user ID.

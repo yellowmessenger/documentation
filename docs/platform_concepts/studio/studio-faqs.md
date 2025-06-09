@@ -627,7 +627,7 @@ return new Promise(resolve => {
  <summary>How do I link one flow to another flow for a AI-agent?
 </summary>
  <div>
-  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow">Execute Flow</a> to link  another flow to a AI-agent.
+  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow">Execute Flow</a> to link  another flow to a AI-agent.
 ​
 </div>
   <br/>

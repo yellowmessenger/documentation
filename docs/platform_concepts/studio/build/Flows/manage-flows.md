@@ -219,7 +219,7 @@ To move the flow to another category, follow the below step:
 
 Connecting flows ensures seamless transitions between different conversation stages, maintaining context for a personalized user experience.
 
-To connect two flows, you can use a [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. In the case of a switch flow, the AI-agent does not return to the original flow from which the node was triggered. While an execute flow node, allows the AI-agent to return to the original flow after executing the designated new flow.
+To connect two flows, you can use a [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow) node. In the case of a switch flow, the AI-agent does not return to the original flow from which the node was triggered. While an execute flow node, allows the AI-agent to return to the original flow after executing the designated new flow.
 
 
 ### Configuring a start trigger for a Flow

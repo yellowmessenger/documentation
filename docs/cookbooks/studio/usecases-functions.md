@@ -20,7 +20,7 @@ Show real-time weather data within a carousel format in your bot interface.
 [Add the Weather API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#1-add-a-new-api-using-url) to your bot platform to enable it to retrieve weather information.
 
 #### 1.2. Create a flow and add the API node
-Next, [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) and insert an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api). Use this node to call the Weather API and fetch real-time data.
+Next, [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) and insert an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node). Use this node to call the Weather API and fetch real-time data.
 
 <img src="https://i.imgur.com/Jklf0Ia.png" width="80%"/>
 
@@ -36,7 +36,7 @@ Navigate to the **Functions** section and write a function to process the saved 
 
 ### 1.5. Include a function node
 
-1. Add a [Function Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) in the flow.
+1. Add a [Function Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) in the flow.
 2. Choose the function you created.
 3. Store the response in your preferred variable and mention its datatype  (e.g., object, string, etc.) for clarity.
 
@@ -68,7 +68,7 @@ Compute a date that is 45 days before the current date and display it in the bot
 ### Steps to implement
 
 #### 2.1. Create a flow and define a variable node
-[Create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) and add a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables). Define a variable - **bookingDate** and assign it the value `{{{date.timestamp}}}` , which captures the current date and time.
+[Create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) and add a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node). Define a variable - **bookingDate** and assign it the value `{{{date.timestamp}}}` , which captures the current date and time.
 
 <img src="https://i.imgur.com/e2JnHnf.png" width="80%"/>
 

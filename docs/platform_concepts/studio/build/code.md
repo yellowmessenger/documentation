@@ -397,7 +397,7 @@ The Localization feature allows you to easily add translation capabilities to yo
 
 ## Using functions in flows
 
-Functions are used in flows via the [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function). 
+Functions are used in flows via the [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node). 
 
 The following is an example where the function node is used to convert minutes to seconds.
 

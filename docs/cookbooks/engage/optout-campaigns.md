@@ -24,7 +24,7 @@ Enhance your campaign targeting by excluding users who have opted out. Learn how
 
 
 
-3. Use the [Variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables)  to [update the relevant user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data), in the following example, the `campaignOptIn` property is set to `false`. This ensures that the customer's optout status is captured and stored in User 360.
+3. Use the [Variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node)  to [update the relevant user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data), in the following example, the `campaignOptIn` property is set to `false`. This ensures that the customer's optout status is captured and stored in User 360.
 
     <img src="https://i.imgur.com/rK3a7ZU.png" width="100%"/>
 

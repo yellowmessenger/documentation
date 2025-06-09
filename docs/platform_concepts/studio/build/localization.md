@@ -162,15 +162,15 @@ To add a new language to your AI-agent, follow these steps:
    
 ### Set your preferred language during AI-agent conversations
 
-To interact with the AI-agent in your preferred language at any point during the conversation, use the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node to set your desired language. 
+To interact with the AI-agent in your preferred language at any point during the conversation, use the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language) node to set your desired language. 
 
 :::info
-You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the AI-agent will continue responding in English without adjusting to the new language. You can only set the language using the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node.
+You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the AI-agent will continue responding in English without adjusting to the new language. You can only set the language using the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language) node.
 :::
 
 To configure the language for your AI-agent, follow these steps :
 
-1. In a flow, add the [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node where you want to enable translation.
+1. In a flow, add the [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language) node where you want to enable translation.
 
     <img  src="https://i.imgur.com/r6YHBrj.png"  alt="drawing"  width="70%"/>
 
@@ -249,7 +249,7 @@ You can add translation keys to nodes in a multilingual AI-agent to ensure the A
 
     ![](https://i.imgur.com/eVy9OuF.png)
 
-* When the AI-agent-user conversation reaches this node, based on the [language set by the user](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language), the AI-agent automatically switches to the language configured in the key.
+* When the AI-agent-user conversation reaches this node, based on the [language set by the user](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language), the AI-agent automatically switches to the language configured in the key.
 
     ![](https://i.imgur.com/tQiRXEf.png)
 

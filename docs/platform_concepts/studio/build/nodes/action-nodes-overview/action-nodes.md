@@ -3,7 +3,29 @@ title: Action Nodes
 sidebar_label: Actions
 ---
 
+Action nodes in an AI-agent flow execute specific tasks or trigger actions based on user inputs. These nodes enable the AI agent to interact with external systems, process data, and manage backend operations. They support key functionalities such as sending API requests, verifying users with One-Time Passwords (OTPs), storing user data, executing custom scripts, and escalating unresolved queries to live agents.
+
+The following are the different types of Action nodes available on Yellow.ai:
+
+1. **Interactive nodes**: This node allows you to manage and improve AI-agent conversations. These nodes help you trigger events, handle OTPs, search documents and respond to user queries, execute flows within flows, delay implementation, ticket generation, analytics capture, PDF/image generation, user event triggering, data formatting, and flow switching.
+2. **Code based**: Code-based nodes allow you to execute actions such as retrieving or sending data via API responses, implementing custom logic for specific actions, and using stored variable data effectively.
+3. **Language & Notification**: Handle tasks like language-specific operations or sending notifications to users.
+
+**Key features of Action nodes**:
+
+* **Backend integration**: To retrieve, update, or send data from/to external systems such as databases, CRMs, or other APIs.
+* **Data processing**: To process, format, and store user-provided data that the AI-agent collects during interactions with the user.
+* **User verification and security**: Use nodes like Send OTP and Verify OTP to add security layers during sensitive operations like login or payment.
+* **Support escalation**: Use a raise ticket node to escalate unresolved queries to connect the user to a live agent if the bot cannot resolve the user's query.
+* **Custom logic implementation**: Function nodes are used for executing complex logic or custom operations.
+* **API calls**: Fetch live data from external systems, such as retrieving customer information, tracking orders, or fetching weather updates.
+* **Storing user information**: To save user-provided data like email addresses or preferences for future interactions using the Variables.
+* **Triggering events**: Activate AI-agent flows when specific user actions occur like sending email confirmations, updating order statuses, or starting other automated processes.
 You can use Action nodes to perform a specific task. For example, you can use the **Send OTP** node to send out an OTP to the user.
+
+-----
+
+You can use Action nodes to perform a specific task. For example, you can use the Send OTP node to send out an OTP to the user.
 
 :::info
 Action nodes will not display any message to the user during conversation, they run the configured tasks in the background.
@@ -244,9 +266,9 @@ If your team uses Yellow.ai's in-house support system, tickets will be raised in
 | **Voice ticket options**   | Options to customize how voice-based tickets are handled, if applicable. Available options: Voice call, SIP call and Auto start call  |
 
 
-<!--
+
 This node is used create a live chat request with basic or advanced scenarios such as **Working Hours**, **Agent Availability**, **Voice/Video calling**, etc.
--->
+
 
 #### Raise ticket outputs 
 

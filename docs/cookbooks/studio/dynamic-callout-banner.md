@@ -35,7 +35,7 @@ If you do not want the banner to be displayed, you can set the entire Date in th
 To load the callout banner dynamically, consider the following prerequisites:
 
 * **Database setup**: Create a database with the relevant columns based on the banner requirement. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/database#create-database-table).
-* Use [send event](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#11-send-event) node:  Use this node to call the event `ui-event-update-promotion`. When this event is triggered, the bot fetches the details from the database and displays them in a callout banner format.
+* Use [send event](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/send-event-node) node:  Use this node to call the event `ui-event-update-promotion`. When this event is triggered, the bot fetches the details from the database and displays them in a callout banner format.
 
 
 #### Loading callout banner dynamically

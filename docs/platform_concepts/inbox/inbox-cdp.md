@@ -148,7 +148,7 @@ If the User identification setting is not visible in the Conversation settings p
     ![](https://hackmd.io/_uploads/HJlWi4_kT.png)
 4. Choose **Use this as Unique ID for User**.
     ![](https://hackmd.io/_uploads/Hyd-s4_Jp.png)
-5. Use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) instead of using regular journey or global variables.
+5. Use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) instead of using regular journey or global variables.
     ![](https://hackmd.io/_uploads/SkeqhuEd1T.png)
 
     <img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
@@ -173,7 +173,7 @@ If you can find the **User identification flow** setting in **Automation** > **B
 
 ![](https://imgur.com/J0w94up.png)
 
-After setting up the user identification flow, use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) instead of using regular journey or global variables.
+After setting up the user identification flow, use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) instead of using regular journey or global variables.
 ![](https://imgur.com/C6cgITI.png)
 
 <img src="https://imgur.com/6YFE8D8.png" width="70%"/> 

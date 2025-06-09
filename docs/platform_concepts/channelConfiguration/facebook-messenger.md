@@ -143,7 +143,7 @@ To test your bot on Facebook page, follow these steps:
 If you have not added the `get started` or `Get Started` utterances to your flow, the FBM chatbot will not trigger the intended flow. Instead, a fallback message will be displayed.
 :::   
    
-4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
+4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
 
     <img src="https://i.imgur.com/jG4pgDK.png" alt="drawing" width="50%"/>
     

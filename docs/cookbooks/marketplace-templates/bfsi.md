@@ -41,7 +41,7 @@ These flows are explained in detail in the further sections.
 
 
 :::note
-A flow triggers when a particular intent/entity/event/URL is identified or when the [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node is used in other flows. See [start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#configure-start-trigger) for more details.
+A flow triggers when a particular intent/entity/event/URL is identified or when the [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow) node is used in other flows. See [start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#configure-start-trigger) for more details.
 :::
 
 ---
@@ -92,7 +92,7 @@ A flow triggers when a particular intent/entity/event/URL is identified or when 
 
 ![](https://i.imgur.com/nzYjMaX.png)
 
-5. **Create account and store details in database**: After the PAN and Aadhar numbers are verified, the [database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node is used to store the entered details into the [table](https://docs.yellow.ai/docs/platform_concepts/studio/database) - ```Bank accounts```. Once the record is added, the account is successfully created. 
+5. **Create account and store details in database**: After the PAN and Aadhar numbers are verified, the [database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) node is used to store the entered details into the [table](https://docs.yellow.ai/docs/platform_concepts/studio/database) - ```Bank accounts```. Once the record is added, the account is successfully created. 
 
 
 ![](https://i.imgur.com/vAmYxl8.png)
@@ -103,7 +103,7 @@ A flow triggers when a particular intent/entity/event/URL is identified or when 
 
 - After the account is created, you can use [message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) nodes to display/promote other banking features that the customers can avail immediately. 
 - Using [prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) nodes, customer details such as location, salary range, etc. can be obtained. 
-- You can verify the phone number using [send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#12-send-otp) and [verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#13-verify-otp) nodes.
+- You can verify the phone number using [send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/send-otp) and [verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/verify-otp) nodes.
 
 -----------
 
@@ -154,7 +154,7 @@ A flow triggers when a particular intent/entity/event/URL is identified or when 
 #### :pushpin: Tips 
 
 - Use [prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) nodes to collect more customer details while applying for a loan.
-- You can verify the phone number using [send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#12-send-otp) and [verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#13-verify-otp) nodes.
+- You can verify the phone number using [send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/send-otp) and [verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/verify-otp) nodes.
 
 ----------
 
@@ -166,7 +166,7 @@ A flow triggers when a particular intent/entity/event/URL is identified or when 
 
 > There must be an existing loan application to check its status. 
 
-3. **Search for the application status from the database table**: ```Loan application``` [table](https://docs.yellow.ai/docs/platform_concepts/studio/database) is created with required columns to store all the loan application details and their statuses. Using a [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) in the flow, the application details of the entered phone number are fetched. 
+3. **Search for the application status from the database table**: ```Loan application``` [table](https://docs.yellow.ai/docs/platform_concepts/studio/database) is created with required columns to store all the loan application details and their statuses. Using a [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) in the flow, the application details of the entered phone number are fetched. 
 
 > **Database node**: The response obtained from this node is a result of the **Search** operation performed on the table **Loan application** where the **Phone number** (table's column) matches the ```customerPhone``` (phone number variable entered by the bot user). This response is stored in a variable ```dbresp```. 
 
@@ -221,7 +221,7 @@ EMI = P × r × (1 + r)n/((1 + r)n - 1)
 ![](https://i.imgur.com/N3XaYml.png)
 
 
-4. **Chat with support**: [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are used to fetch the bot user's information such as ```phone number```, ```name```, and ```query```. These details are stored in the [respective variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) and passed into the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node, this will connect the user to the support agent.  
+4. **Chat with support**: [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are used to fetch the bot user's information such as ```phone number```, ```name```, and ```query```. These details are stored in the [respective variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) and passed into the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) action node, this will connect the user to the support agent.  
 
 > Inbox must be set up to connect the bot user to a live support agent. A support agent must be available (online) when the support request is raised. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to learn about Inbox. 
 

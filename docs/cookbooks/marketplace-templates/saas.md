@@ -44,7 +44,7 @@ The most common use cases (flows) are prebuilt in this template for a SaaS indus
 These flows are explained in detail in the further sections. 
 
 :::note
-The start trigger is a starting point at which the flow gets triggered(or executed). A flow can get triggered when a particular intent/entity/event/URL is identified or a flow can get triggered when [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node is used in other flows. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#configure-start-trigger) to learn more.
+The start trigger is a starting point at which the flow gets triggered(or executed). A flow can get triggered when a particular intent/entity/event/URL is identified or a flow can get triggered when [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow) node is used in other flows. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#configure-start-trigger) to learn more.
 :::
 
 ---
@@ -72,7 +72,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 1. **Start trigger**: This flow is triggered when the bot user selects Explore products and offerings button when menu options are displayed. 
     - It can also be triggered at any point of the conversation when the bot user types a sentence that matches with the intent- *Products and offers* options. You can customize this [intent.](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#11-zero-shot-model) 
 2. **Display categories of products**: With a [carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel) node, 3 product categories are displayed. 
-3. **Verify product selection and execute the next flow**: After the bot user selects an option from the carousel node, the response (which is a trained entity value) is identified for the category using an if-else logic ([condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) and the respective flow for the selected category is executed by using [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. 
+3. **Verify product selection and execute the next flow**: After the bot user selects an option from the carousel node, the response (which is a trained entity value) is identified for the category using an if-else logic ([condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) and the respective flow for the selected category is executed by using [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow) node. 
     - ```Explore_products```  is an [entity](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) which is trained for 3 categories of ```entity value``` (explore by use case, channel, and industry). The response obtained by clicking the carousel button will be identified as an entity value. 
     - If ```entity value``` is equal to ```Explore by use case```- **Explore by use case** flow will get executed.
     - Else, if ```entity value``` is equal to ```Explore by channel```- **Explore by channel** flow will get executed.
@@ -174,7 +174,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 6. **Identify the channel and display options to Confirm or Reschedule booking**: After the meeting is scheduled successfully, using the [Condition](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) node, the channel is identified. If the identified channel is WhatsApp, [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel) node is used to display options to **Reschedule/Confirm**. If the bot conversation is happening from other channels, the [Quick replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to display **Reschedule/Confirm** options. 
 
     - **Reschedule booking**: If Reschedule is selected, the flow is directed back to step#3 to schedule a meeting from the beginning. 
-    - **Confirm booking**: If the booking is confirmed, using a [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node, meeting details(**name, email, phone, demodate and demotime**) are stored in ```book_a_demo``` table ([table](https://docs.yellow.ai/docs/platform_concepts/studio/database) and respective columns are existing with the name ```book_a_demo```)
+    - **Confirm booking**: If the booking is confirmed, using a [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) node, meeting details(**name, email, phone, demodate and demotime**) are stored in ```book_a_demo``` table ([table](https://docs.yellow.ai/docs/platform_concepts/studio/database) and respective columns are existing with the name ```book_a_demo```)
 
 
 ![](https://i.imgur.com/oBJQqzn.png)
@@ -203,7 +203,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 ![](https://i.imgur.com/OFyuQW1.png)
 
 
-4. **Chat with support**: [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are used to fetch the bot user's information such as **phone number**, **name** and **query**. These details are stored in the [respective variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) and passed into the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node, this will connect the user to the support agent.  
+4. **Chat with support**: [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are used to fetch the bot user's information such as **phone number**, **name** and **query**. These details are stored in the [respective variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) and passed into the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) action node, this will connect the user to the support agent.  
 
 > Inbox must be set up to connect the bot user to a live support agent. A support agent must be available (online) when the support request is raised. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to learn about Inbox. 
 

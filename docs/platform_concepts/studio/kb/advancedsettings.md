@@ -17,7 +17,7 @@ Utilize the Knowledge search node to offer responses from website URLs or docume
    * Input configuration
    * Knowledge filter
    * AI-agent response configuration
-For more information on Knowledge search settings, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-knowledge-search).    
+For more information on Knowledge search settings, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/knowledge-search-node).    
 
    ![image](https://i.imgur.com/MbNYlpx.png)
 

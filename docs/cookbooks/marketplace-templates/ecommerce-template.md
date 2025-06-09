@@ -186,7 +186,7 @@ With this flow, users can get instant answers through FAQs or choose to chat wit
 > Add more such questions as **Quick reply** options or directly train them on the FAQ page. 
 > Show more support options if required such as Ask the community, and Refer to docs.
 
-6. **Chat with support**: Captures the user information using [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and uses it to fetch the user details. It also captures the query using the [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and creates a ticket assigning it to an Inbox agent ([Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node). The chat is handled by the [Inbox module](https://docs.yellow.ai/docs/platform_concepts/inbox). 
+6. **Chat with support**: Captures the user information using [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and uses it to fetch the user details. It also captures the query using the [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and creates a ticket assigning it to an Inbox agent ([Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) node). The chat is handled by the [Inbox module](https://docs.yellow.ai/docs/platform_concepts/inbox). 
 
 ![](https://i.imgur.com/eNr7vI0.png)
 
