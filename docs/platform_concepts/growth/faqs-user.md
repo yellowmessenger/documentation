@@ -121,16 +121,6 @@ There can be multiple reasons for <a href="https://docs.yellow.ai/docs/platform_
 
 
 <details>
-<summary> How to check where users are dropping off?</summary>
-<div>
-    
-<a href="https://docs.yellow.ai/docs/platform_concepts/growth/user-journeys"> User journey visualization </a> can show you which flows users are mostly dropping off after and where within the journeys.
-</div>
-</details>
-
-
-
-<details>
 <summary> Can I automate(schedule) my report generation? </summary>
 <div>
 You can schedule any saved report on <b>Data Explorer</b> as an email alert. Open any <b>Saved report</b> > click <b>Actions</b> > <b>Schedule Reports</b> > configure all details > <b>Save</b>.  Click <a href="https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#1-schedule-a-report"> here </a> for more details.
