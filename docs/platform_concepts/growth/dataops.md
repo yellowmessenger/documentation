@@ -147,7 +147,7 @@ To set up an SFTP server, install and configure software like OpenSSH. Users cre
 
 ### Azure BLOB (secured/private)
 
-To securly export the data from dataops to Azure BLOB, follow these steps: 
+To securly export the data from Data Export to Azure BLOB, follow these steps: 
 1. Open **Data export rule** select **Azure Blob**. 
 2. Click **Connect via Azure storage account**.         
 3. Enter **Container name** and **Connection string**.      
@@ -287,8 +287,8 @@ For example, call recordings have a daily frequency with a step-up value of 1, m
 
 
 :::note
-When exporting data as CSV, only the top-level keys are included as columns. A fully flattened structure is not currently supported. This issue occurs in specific DataOps exports, not all. 
-**Work-around**: Some exports may return JSON even when CSV is selected. You can try exporting JSON data from DataOps and use an external tool to convert it to CSV if needed.
+When exporting data as CSV, only the top-level keys are included as columns. A fully flattened structure is not currently supported. This issue occurs in specific Data Exports, not all. 
+**Work-around**: Some exports may return JSON even when CSV is selected. You can try exporting JSON data from Data Export and use an external tool to convert it to CSV if needed.
 :::
 
 
