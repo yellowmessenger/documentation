@@ -125,7 +125,7 @@ To test your bot on Telegram, follow these steps:
 * The "START" button is visible only during the initial interaction with the bot.
 :::  
    
-4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
+4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
 
     <img src="https://i.imgur.com/F73BibF.jpg" alt="drawing" width="30%"/>
     

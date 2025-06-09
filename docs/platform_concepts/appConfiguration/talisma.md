@@ -33,7 +33,7 @@ If you have multiple accounts, follow the above mentioned steps to add each of t
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
 :::
 
-In this integration, you can use [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to create a conversation with Talisma agent. Once the conversation is initiated the user can talk to the talisma agent.
+In this integration, you can use [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) node to create a conversation with Talisma agent. Once the conversation is initiated the user can talk to the talisma agent.
 After the conversation between them ends, the bot takes over the conversation with the user.
 
 		

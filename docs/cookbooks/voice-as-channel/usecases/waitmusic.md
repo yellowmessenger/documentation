@@ -10,7 +10,7 @@ Without **Wait Music**, the silence on the call while executing APIs results in 
 ![](https://i.imgur.com/eCsR3Cy.jpg)
 
 When the wait music is configured for high latency API calls, it allows voice bot developers to play music on the call while waiting for the API response. After the API call is completed, the wait music is stopped and the further steps (nodes) are executed. 
-You can configure the wait music in the [API node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api) where bot developers can upload a public URL or upload a music file.   
+You can configure the wait music in the [API node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node) where bot developers can upload a public URL or upload a music file.   
 
 > **Supported formats for wait music files**: .mp3 and .wav.
 

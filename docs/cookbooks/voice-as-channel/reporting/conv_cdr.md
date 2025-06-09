@@ -64,7 +64,7 @@ The `callbackStatus` object is a container that holds important CDR data and is 
 2. On the start node, add an [event trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event) by selecting **Event** as the trigger and `callbackStatus` as the value. This will ensure that the flow executes when the call has ended as per the backend logic.     
     ![](https://i.imgur.com/5xbfRqM.png)
 3. Create new [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-3-create-a-variable) to retrieve CDR-related entries. For example, to retrieve **Call duration**, create a variable *Duration* and add value as `{{variables.EVENT_DATA.duration}}`. [Click here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/variables#variables-available-for-disconnected-calls) for detailed explaination. 
-4. Add a [database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node to combine CDR and conversational detail fields [into one table](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata#step-1-create-a-flow-to-store-data-in-variables).   
+4. Add a [database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) node to combine CDR and conversational detail fields [into one table](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata#step-1-create-a-flow-to-store-data-in-variables).   
     - Add type as **Update**. Select the same table name. 
     - Filter for **SID**.
     - Add CDR fields/variables. 

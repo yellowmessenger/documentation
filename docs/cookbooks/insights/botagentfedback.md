@@ -24,7 +24,7 @@ You can visualize it further by taking advantage of [Dashboards](https://docs.ye
 
 ## 2. Default user feedback for agent interaction
 
-1. Create a flow using the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node. 
+1. Create a flow using the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) action node. 
 2. Configure Inbox agents . 
 3. Enable **CSAT** from the inbox settings. 
 4. After a chat ticket is closed, your customers will be asked for feedback on the agent interaction.
@@ -53,11 +53,11 @@ Follow the given steps: 
     
     ![](https://i.imgur.com/uQMNe3m.png)
 
-3. Send the collected data (feedback variables) into the database using the [database action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) in the bot flow.
+3. Send the collected data (feedback variables) into the database using the [database action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) in the bot flow.
 
     ![](https://i.imgur.com/1GbRjx2.png)
 
-4. Connect this feedback flow at the end of your use case (i.e., the other flow where the bot interaction is expected to end) using an [Execute Flow node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) or when the [ticket is closed](https://docs.yellow.ai/docs/cookbooks/inbox/ticketclose-message).
+4. Connect this feedback flow at the end of your use case (i.e., the other flow where the bot interaction is expected to end) using an [Execute Flow node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/execute-flow) or when the [ticket is closed](https://docs.yellow.ai/docs/cookbooks/inbox/ticketclose-message).
 
 -----
 

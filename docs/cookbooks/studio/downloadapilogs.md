@@ -14,7 +14,7 @@ When there is an API issue, we don’t know if our API calls are failing or if t
 
 ## 1. API Logs data
 
-API logs data stores all the API data like requests, responses, etc. The data would be available for requests sent from the [API Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api) only.
+API logs data stores all the API data like requests, responses, etc. The data would be available for requests sent from the [API Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node) only.
 API download data would contain this information:
 * API Name
 * API Requests

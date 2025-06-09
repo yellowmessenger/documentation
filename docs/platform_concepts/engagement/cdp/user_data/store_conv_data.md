@@ -64,7 +64,7 @@ In [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nod
 
 ### Using the Variables node
 
-Alternatively, you can also use the Variable node (under Actions) to store a specific property value as userId. For more details, see [Variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables)
+Alternatively, you can also use the Variable node (under Actions) to store a specific property value as userId. For more details, see [Variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node)
 
   <center><img src="https://i.imgur.com/IAfz380.png" width="70%"/></center>
 
@@ -83,7 +83,7 @@ In addition to the userId, you can also store other user properties in real-time
 
 
 
-To store user details (such as name, email address, phone number, and any other relevant information) through the AI-agent, use [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) in the AI-agent Builder.
+To store user details (such as name, email address, phone number, and any other relevant information) through the AI-agent, use [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node) in the AI-agent Builder.
 
 
 :::note

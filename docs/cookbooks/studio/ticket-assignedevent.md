@@ -7,7 +7,7 @@ sidebar_label: Capture events when a ticket is assigned
  
 Use ```ticket-assigned-bot event``` event for this. To activate this event:
 
-1. Store the response of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) in a variable.
+1. Store the response of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) in a variable.
 
    <img src="https://i.imgur.com/ZwNgVAS.png" alt="drawing" width="70%"/>
 

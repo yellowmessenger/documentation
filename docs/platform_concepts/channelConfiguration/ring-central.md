@@ -406,7 +406,7 @@ After connecting your IVA Professional account with RingCX, you need to design t
 
    ![](https://i.imgur.com/Jl5lswM.png)
 
-4. Connect a [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) to the Dynamic Chat node and fill the following fields:
+4. Connect a [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) to the Dynamic Chat node and fill the following fields:
 
    ![](https://i.imgur.com/kLObbST.png)
 

@@ -238,7 +238,7 @@ resolve(output);
 ```
                                           
 2. Go to **Automation** > **Build** > to the respective flow and [store the response of this API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
-3. Add a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) to the flow and pass the function you created in step 1. [Store the response of this function node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) depending on its data type.
+3. Add a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) to the flow and pass the function you created in step 1. [Store the response of this function node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) depending on its data type.
 
     <img src="https://i.imgur.com/4PTK4Q9.png" alt="drawing" width="90%"/>
 

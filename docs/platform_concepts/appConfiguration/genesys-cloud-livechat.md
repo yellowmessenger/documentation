@@ -401,7 +401,7 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
 :::
 
 1. Go to **Automation** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on how you want the bot to take the user through the process.
-2. Navigate to the desired point in a flow where you want to let the user talk to Genesys live agent and add the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket).  
+2. Navigate to the desired point in a flow where you want to let the user talk to Genesys live agent and add the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket).  
 
    ![](https://i.imgur.com/7GNgHeo.png)
 

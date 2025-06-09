@@ -3,7 +3,7 @@ title: Chat widget supported languages and placeholder texts
 sidebar_label : Chat Widget Localization
 ---
 
-The chat widget automatically changes the text based on the user's language preference. It supports multiple languages for placeholder texts, tooltips, and time stamps. For more information on how to set the language, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language)
+The chat widget automatically changes the text based on the user's language preference. It supports multiple languages for placeholder texts, tooltips, and time stamps. For more information on how to set the language, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language)
 
 :::note
 * The chat widget currently supports English, Arabic, Tamil, Kannada, Hindi, Urdu, Slovak, Japanese, Czech, Croatian, Romanian, Polish, Chinese Simplified, Spanish, Portuguese, Telugu, Marathi, Gujarati, Punjabi, Oriya, Malayalam, Bengali, and Assamese.

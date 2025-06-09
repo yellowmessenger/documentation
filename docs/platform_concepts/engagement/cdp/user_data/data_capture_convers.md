@@ -34,7 +34,7 @@ The following table summarizes the behavior of userId capturing in User 360.
 
 ## What happens when a userId is captured for the first time?
 
-In a AI-agent conversation, a user is identified through the userId and can be captured through [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) nodes. A userId is a unique indetifier such as mobile number, email address, or any other identifier such as driving livence number. 
+In a AI-agent conversation, a user is identified through the userId and can be captured through [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node) nodes. A userId is a unique indetifier such as mobile number, email address, or any other identifier such as driving livence number. 
 
 For more details, see [How to capture userId in AI-agent conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
 

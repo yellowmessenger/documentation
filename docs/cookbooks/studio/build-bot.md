@@ -61,7 +61,7 @@ Enable **Create as a workflow** if you'd like this flow to [function as a workfl
 
 Until this step, the bot would automatically fetch answers from FAQs to reply to the user queries. If the bot doesn't understand, the chat can be transfered to a live agent. Follow the below-mentioned steps to add a live agent to attend your user queries.
 
-9. In the same flow, set the fallback to the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node.  This will transfer the chat to a live agent. The live agent can attend the user queries from the [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox) module. To know more about how the live chat agent function works, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo).
+9. In the same flow, set the fallback to the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) node.  This will transfer the chat to a live agent. The live agent can attend the user queries from the [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox) module. To know more about how the live chat agent function works, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo).
 
 ![](https://i.imgur.com/stH4NCN.png)
 

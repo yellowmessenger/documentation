@@ -36,7 +36,7 @@ You can create multilingual bots in yellow.ai platfrom through which your bot ca
 
 ![](https://i.imgur.com/GcopfKf.png)
 
-8. Add a [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) to the node that takes ISO input(quick replies in this case). Select the variable in which the previous reply is stored. This language will be permanently set (currently set 2 days of expiry), unless it is being changed by same action node only.
+8. Add a [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language) to the node that takes ISO input(quick replies in this case). Select the variable in which the previous reply is stored. This language will be permanently set (currently set 2 days of expiry), unless it is being changed by same action node only.
 
 ![](https://i.imgur.com/RCNpPes.png)
 
@@ -46,5 +46,5 @@ You can create multilingual bots in yellow.ai platfrom through which your bot ca
 
 * [Languages supported](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages)
 * [Multi-language support](https://docs.yellow.ai/docs/platform_concepts/studio/tools#213-multi-language)
-* [Set language node in Flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language)
+* [Set language node in Flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/set-language)
 * [Language Translation](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)

@@ -440,6 +440,12 @@ If your WhatsApp chat is stuck in a loop and intents or entities are not working
 </p>
 </details>
 
+<details><summary><b>Which countries support WhatsApp voice calling?</b></summary>
+<p>
+WhatsApp voice calling is currently supported in India and Indonesia.
+</p>
+</details>
+
 
 
 

@@ -144,7 +144,7 @@ To test your bot on Viber, follow these steps:
 
 * If the intent does not match, the bot should be able to respond with a fallback message.
 
-4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
+4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
 
     <img src="https://i.imgur.com/M6JA7UY.png" alt="drawing" width="30%"/>
     

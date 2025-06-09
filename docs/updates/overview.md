@@ -113,7 +113,7 @@ As part of our ongoing commitment to security and compliance, Yellow.ai now supp
 
 [**Learn how to capture PCI card data securely using Question node**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#question-node-to-collect-pci-details)
 
-[**Learn how to store PCI data using the API**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api)
+[**Learn how to store PCI data using the API**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node)
 
 ---
 

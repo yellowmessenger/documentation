@@ -55,7 +55,7 @@ Click [here](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback) for
 
 ## 5. What happens when the Group is configured with email IDs(for email communications) but is used in raise ticket node 
 
-- Consider a use case where the agent groups-Esclations (with email ID as abc@company.com) is added in the inbox groups settings. This group will be visible on the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket)- Advance options. For example, the Escalation group is selected on the Raise ticket node.  
+- Consider a use case where the agent groups-Esclations (with email ID as abc@company.com) is added in the inbox groups settings. This group will be visible on the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket)- Advance options. For example, the Escalation group is selected on the Raise ticket node.  
 - All the support requests that are triggered through this particular flow will be assigned to the Escalation group **live chats**. These support requests will be found in the **Chats** tab and not in the **Tickets** tab.  
 
 ![](https://i.imgur.com/Ba6S98Z.png)

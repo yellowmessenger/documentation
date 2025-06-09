@@ -44,7 +44,7 @@ To set up Voice calls in Inbox, follow the steps below:
 
 ### Enable voice call in raise ticket node 
 
-Set up the [raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) to inform Inbox about the anticipated call transfer from the voice bot. Ensure that the necessary options are configured to be available for Inbox agents when handling a raised support query.
+Set up the [raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) to inform Inbox about the anticipated call transfer from the voice bot. Ensure that the necessary options are configured to be available for Inbox agents when handling a raised support query.
 
 
 1. Navigate to **Automation > Build > Flows**.

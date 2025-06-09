@@ -124,7 +124,7 @@ You need to build a flow that redirects your users to the ServiceNow agents and 
 
 ![](https://i.imgur.com/z7QtZM5.png)
 
-2. Insert the **Integration node** wherever you want the flow to connect the user to the ServiceNow agent. To do so, drag and drop a [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) and choose the integrated ServiceNow account in the **Live chat agent** drop down.
+2. Insert the **Integration node** wherever you want the flow to connect the user to the ServiceNow agent. To do so, drag and drop a [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) and choose the integrated ServiceNow account in the **Live chat agent** drop down.
 
 <img src="https://i.imgur.com/uANMMwJ.png" alt="drawing" width="60%"/>
 

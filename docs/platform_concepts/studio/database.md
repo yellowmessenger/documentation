@@ -146,7 +146,7 @@ You can directly pass field values to the table from bot flows. For instance, in
 
 To insert data into the table, follow these steps:
 
-1. Select the [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node and choose 'Insert' in the *Select type* field.
+1. Select the [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) node and choose 'Insert' in the *Select type* field.
 
 2. In the drop-down, choose the respective table where you want to insert the values
  
@@ -166,7 +166,7 @@ Refer to following GIF to see how the Insert type works in Database node.
 
 ### Update database table records using the database node
 
-To update an existing field value of a table use the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) and choose **Select type** as **Update** along with other configurations.
+To update an existing field value of a table use the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) and choose **Select type** as **Update** along with other configurations.
 
    <img src="https://imgur.com/HUhNRrn.png" alt="drawing" width="80%"/>
    <img src="https://i.imgur.com/lHajFi7.png" alt="drawing" width="80%"/>
@@ -177,9 +177,9 @@ Refer to following GIF to see how the Update type works in Database node.
    
 ### Fetch database records using the Database node
 
-To search for specific information in a bot conversation using the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database), follow these steps:
+To search for specific information in a bot conversation using the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node), follow these steps:
 
-1. Select the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) and choose **Select type** as **Search**.
+1. Select the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/database-node) and choose **Select type** as **Search**.
 
    <img src="https://i.imgur.com/zdictxI.png" alt="drawing" width="70%"/>
 
