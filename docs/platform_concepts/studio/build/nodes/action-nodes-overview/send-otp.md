@@ -1,5 +1,5 @@
 ---
-title: Send OTP
+title: Send OTP node
 sidebar_label: Send OTP
 ---
 

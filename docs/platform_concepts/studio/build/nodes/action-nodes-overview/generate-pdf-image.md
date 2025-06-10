@@ -1,5 +1,5 @@
 ---
-title: Generate PDF/Image
+title: Generate PDF/Image node
 sidebar_label: Generate PDF/Image
 ---
 

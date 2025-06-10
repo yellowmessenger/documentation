@@ -1,5 +1,5 @@
 ---
-title: Verify OTP
+title: Verify OTP node
 sidebar_label: Verify OTP
 ---
 

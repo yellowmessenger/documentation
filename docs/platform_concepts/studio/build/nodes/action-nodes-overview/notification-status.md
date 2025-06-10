@@ -1,5 +1,5 @@
 ---
-title: Notification status
+title: Notification status node
 sidebar_label: Notification status
 ---
 

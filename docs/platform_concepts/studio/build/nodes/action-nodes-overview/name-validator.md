@@ -1,5 +1,5 @@
 ---
-title: Name validator
+title: Name validator node
 sidebar_label: Name validator
 ---
 

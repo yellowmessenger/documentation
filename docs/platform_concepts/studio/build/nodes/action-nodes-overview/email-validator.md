@@ -1,5 +1,5 @@
 ---
-title: Email validator
+title: Email validator node
 sidebar_label: Email validator
 ---
 

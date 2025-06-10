@@ -1,5 +1,5 @@
 ---
-title: Execute flow
+title: Execute flow node
 sidebar_label: Execute flow
 ---
 

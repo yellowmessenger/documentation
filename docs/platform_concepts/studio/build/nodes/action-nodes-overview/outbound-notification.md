@@ -1,5 +1,5 @@
 ---
-title: Outbound notification
+title: Outbound notification node
 sidebar_label: Outbound notification
 ---
 

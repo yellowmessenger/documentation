@@ -452,6 +452,7 @@ module.exports = {
                         "platform_concepts/studio/build/nodes/action-nodes-overview/notification-status",
                         "platform_concepts/studio/build/nodes/action-nodes-overview/outbound-notification",
                         "platform_concepts/studio/build/nodes/action-nodes-overview/phone-validator",
+                        "platform_concepts/studio/build/nodes/action-nodes-overview/prompt-executor-node",
                         "platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket",
                         "platform_concepts/studio/build/nodes/action-nodes-overview/send-otp", 
                         "platform_concepts/studio/build/nodes/action-nodes-overview/set-language",
