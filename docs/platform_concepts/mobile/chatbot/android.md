@@ -107,7 +107,7 @@ ymChat.config.useSecureYmAuth = true
 ```
 
 :::note
-For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth).  
+For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/sdk-faq-worflows/secure-ymauth).  
 :::
 
 ### Push Notifications
@@ -544,7 +544,7 @@ When you are using the `ym-revalidate-token` event, your application must includ
 ***
 
 :::note 
-For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth).
+For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/sdk-faq-worflows/secure-ymauth).
 :::
 
 ***
@@ -571,7 +571,7 @@ To use this api `event` is a mandatory parameter.
 ```
 
 :::note 
-For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/send-event-workflow). 
+For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/sdk-faq-worflows/send-event-workflow). 
 :::
 
 ***
