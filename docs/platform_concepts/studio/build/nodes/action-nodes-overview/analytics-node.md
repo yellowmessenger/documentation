@@ -1,5 +1,5 @@
 ---
-title: Analytics node
+title: Analytics
 sidebar_label: Analytics node
 ---
 

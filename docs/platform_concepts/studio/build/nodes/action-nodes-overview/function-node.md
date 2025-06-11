@@ -1,5 +1,5 @@
 ---
-title: Function
+title: Function node
 sidebar_label: Function
 ---
 

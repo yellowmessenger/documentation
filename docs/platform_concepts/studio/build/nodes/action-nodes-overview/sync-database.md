@@ -1,5 +1,5 @@
 ---
-title: Sync database
+title: Sync database node
 sidebar_label: Sync database
 ---
 
@@ -21,26 +21,28 @@ To configure the **Sync Database** node, follow these steps:
    ![](https://imgur.com/RkLZsbJ.png)
 
 2. In **API**, choose the preferred API in the drop- down. For steps to add a new API to the bot, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
-2. In API response type, choose the response type of the API added. **JSON** and **CSV** are the options available. Fill the following fields based on the option selected.
-     i. **JSON path selector:(this field is available only for the JSON response)** Select the path where the relevant data lies in the JSON response. For example, the JSON path  for the following code would be  "data.results.*
 
-```json
-{
-  data: {
-    results: {
-      record1 :{},
-      record2: {},
-      ........
-      } 
+3. In API response type, choose the response type of the API added. **JSON** and **CSV** are the options available. Fill the following fields based on the option selected:
+
+  i. **JSON path selector:(this field is available only for the JSON response)** Select the path where the relevant data lies in the JSON response. For example, the JSON path  for the following code would be  "data.results.*
+
+  ```json
+  {
+    data: {
+      results: {
+        record1 :{},
+        record2: {},
+        ........
+        } 
+    }
   }
-}
-```
+  ```
 
    ii. **Parse API response:** Choose the function that contains the transformation logic. This helps access individual row attributes. Note that, the column names in the table should be exactly the same as the attribute names.
 
- **Sample code**
+**Sample code**
  
-   (This is optional for CSV)
+(This is optional for CSV)
 
  ```
 return new Promise(resolve => {
@@ -55,13 +57,13 @@ return new Promise(resolve => {
 });
 ```
 
-
-    iii. **Store Response in:** Choose the variable in which the response of this node should be stored.
-    iv. **Select table:** Choose the database table in which the data should be populated.
-    iv. **Select action:** Choose the following preferred actions:
-     - **Insert**: Adds rows from API response.
-     - **Update**: Compares rows from API response to the existing table and checks if there is a match in Unique ID and updates those rows.
-     - **Import**: Truncates existing table completely and replaces it with data from API response.
+iii. **Store Response in:** Choose the variable in which the response of this node should be stored.<br/>
+iv. **Select table:** Choose the database table in which the data should be populated.<br/>
+v. **Select action:** Choose the following preferred actions:
+  * **Insert**: Adds rows from API response.
+  * **Update**: Compares rows from API response to the existing table and checks if there is a match in      Unique ID and updates those rows.
+  * **Import**: Truncates existing table completely and replaces it with data from API response.
+        
 
 To use this node in a flow:
 
