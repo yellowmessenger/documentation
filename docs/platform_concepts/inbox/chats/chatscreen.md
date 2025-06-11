@@ -270,7 +270,8 @@ The following details are available on this screen to provide agents with more c
 |Details| |<img src="https://imgur.com/QGGARtt.png" alt="drawing" width="60%"/>|
 ||Internal notes|Agents can add a note regarding the conversation or Internal notes are updated here|
 ||Custom fields| Inbox provides custom fields to fetch more insights from the customer. Configure and arrange the required custom fields. Learn [more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields)|
-|Collaborators| | <img src="https://imgur.com/U6PUkB4.png" alt="drawing" width="60%"/><br/>More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu|
+|Collaborators| | <img src="https://imgur.com/U6PUkB4.png" alt="drawing" width="60%"/><br/>More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu. |
+|||**Bot status** toggle is paused when the chat is ongoing with the agent. In any case if the agent wants to close the ticket and let the user continue chatting with the bot, Bot Status toggle can be enabled|
 | Activity log| | <img src="https://imgur.com/sMf9Wb3.png" width="70%"/> <br/> Click **View recent activity** to gain a comprehensive understanding of customer activity |
 |Website activity||<img src="https://imgur.com/fB2CZ8G.png" alt="drawing" width="70%"/> <br/> This includes links to the URLs that your customer previously visited|
 |Device details| |<img src="https://imgur.com/3VERizN.png" alt="drawing" width="70%"/> <br/>Details about the user device that the AI-agent tracks |

@@ -78,6 +78,7 @@ Encrypted data:
 
 ### Steps to generate a public key 
 
+
 Follow these steps to generate the keys for encryption:
 
 * Generate private key:
