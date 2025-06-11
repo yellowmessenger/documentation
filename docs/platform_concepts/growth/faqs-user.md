@@ -232,3 +232,16 @@ The chat tickets table updates each row in place, meaning that when a ticket mov
   <br/>
    </div>
 </details>
+
+
+<details>
+  <summary>What encryption method is used to secure data?</summary>
+  <div>
+    <p>
+      If you have selected the option to secure PII data in default tables, RSA (Rivest–Shamir–Adleman) encryption is used for both encryption and decryption.
+    </p>
+  </div>
+</details>
+
+
+
