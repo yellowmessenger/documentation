@@ -1,5 +1,5 @@
 ---
-title: User event
+title: User event node
 sidebar_label: User event
 ---
 

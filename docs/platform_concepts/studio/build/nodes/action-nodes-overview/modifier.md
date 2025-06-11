@@ -1,5 +1,5 @@
 ---
-title: Modifier
+title: Modifier node
 sidebar_label: Modifier
 ---
 

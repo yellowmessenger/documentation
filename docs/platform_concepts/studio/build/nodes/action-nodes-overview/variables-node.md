@@ -1,6 +1,6 @@
 ---
-title:  Variables
-sidebar_label:  Variables
+title: Variables node
+sidebar_label: Variables
 ---
 
 Variable node allows you to assign static values or capture dynamic inputs during AI agent conversation and store them for later use within the conversational flow. It acts as a memory unit within the conversation, enabling you to retrieve, update, or reference information at different stages of the flow. For more detailed information on variables, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).

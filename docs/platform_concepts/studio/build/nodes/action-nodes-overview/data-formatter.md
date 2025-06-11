@@ -1,9 +1,9 @@
 ---
-title: Data formatter
+title: Data formatter node
 sidebar_label: Data formatter
 ---
 
-Data Formatter node allows you to convert CSV (or) XML file responses to JSON format. This node is used when an API is giving the response in CSV or XML Format. By converting these formats to JSON, the data becomes more accessible and usable within your bot's flow.
+Data formatter node allows you to convert CSV (or) XML file responses to JSON format. This node is used when an API is giving the response in CSV or XML Format. By converting these formats to JSON, the data becomes more accessible and usable within your bot's flow.
 
 * **Supported input formats**: CSV (Raw), CSV (Base64), CSV (URL), XML
 * **Supported output format**: JSON

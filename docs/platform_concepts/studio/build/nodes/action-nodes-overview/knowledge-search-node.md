@@ -1,5 +1,5 @@
 ---
-title: Knowledge search
+title: Knowledge search node
 sidebar_label: Knowledge search
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Phone validator
+title: Phone validator node
 sidebar_label: Phone validator
 ---
 

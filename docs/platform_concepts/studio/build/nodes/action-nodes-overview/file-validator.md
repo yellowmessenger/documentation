@@ -1,5 +1,5 @@
 ---
-title: File validator
+title: File validator node
 sidebar_label: File validator
 ---
 

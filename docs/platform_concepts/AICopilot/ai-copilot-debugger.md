@@ -54,8 +54,9 @@ To use the Copilot debugger, follow these steps:
 To begin debugging, the Copilot debugger requires specific inputs that help it analyze the issue accurately and provide relevant suggestions.
 
 1. Provide the following inputs:
-     i. **Describe problem** (required): Provide a clear explanation of the issue you are facing. Example: "The AI agent does not confirm the flight booking after user selects a flight".
-   ii. **Expected answer** (optional): If you expect the AI agent to respond in a particular way, you can specify the expected output here. This helps the debugger compare the actual behavior with your intended outcome. Example: "Your flight from Delhi to Mumbai has been successfully booked."
+
+    i. **Describe problem** (required): Provide a clear explanation of the issue you are facing. Example: "The AI agent does not confirm the flight booking after user selects a flight".<br/>
+    ii. **Expected answer** (optional): If you expect the AI agent to respond in a particular way, you can specify the expected output here. This helps the debugger compare the actual behavior with your intended outcome. Example: "Your flight from Delhi to Mumbai has been successfully booked."
      
      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/Analyze.png)
 

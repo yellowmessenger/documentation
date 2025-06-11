@@ -15,6 +15,41 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 
 ***
 
+## Knowledgebase
+
+### Conversational Knowledge Base (KB) **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+
+We have intoduced Conversational KB, a smarter and more intuitive way to deliver knowledge-driven conversations in your AI agents!
+
+**What is Conversational KB?**
+
+Conversational KB is an intelligent AI-powered knowledge assistant that enables your AI agent to understand user intent, retain conversation context, and respond in a more human-like, interactive manner when answering queries from your knowledge base.
+
+**What’s new?**
+
+**Before:**
+
+* KB responses were static, one-shot Q&A interactions.
+* No context retention across user messages.
+* Complex KB setup involving multiple methods (DC nodes, KB skills, prompt engineering, custom functions).
+* Creating a conversational experience often required writing dozens of lines of prompt code and debugging issues in the setup.
+
+**Now:**
+
+* Unified and simplified KB setup: One clean interface to configure search instructions.
+* Prompt complexity drastically reduced. Example: Recreating the Enbridge bot previously needed 74 lines of prompt code in a DC node. With Conversational KB, it now takes just 20 lines — cutting down time, effort, and complexity significantly.
+
+**Key features**
+
+* **Smarter conversations**: The agent can ask follow-up questions, clarifying questions and follow up with users, creating a much more natural, interactive experience..
+* **Context retention:** It remembers what the user previously asked, enabling smoother, context-aware interactions without repetition.
+* **Rich media responses**: Enhance answers with images and videos as part of the KB response.
+* **Multi-step reasoning over retrieved content**: Agent can reason over the retrieved content, before sharing the final response
+* **Multilingual support**: The AI agent can automatically respond in the user’s language.
+* **Clickable hyperlinks**: Any links in responses are now displayed as hyperlinks.
+
+[**Check out the documentation →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config)
+
 ## Engage
 
 ###  Smarter WhatsApp Message Delivery with MM Lite API Integration
@@ -58,7 +93,7 @@ If your account is managed by Yellow\.ai:
 
 ## Agent AI
 
-### Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents
+### Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 We’ve reimagined the AI agent setup experience to be more guided, efficient, and powerful—so you spend less time configuring and more time delivering intelligent conversations.
 

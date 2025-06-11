@@ -1,5 +1,5 @@
 ---
-title: Set language
+title: Set language node
 sidebar_label: Set language
 ---
 

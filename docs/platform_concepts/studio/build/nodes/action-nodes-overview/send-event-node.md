@@ -1,5 +1,5 @@
 ---
-title: Send event
+title: Send event node
 sidebar_label: Send event
 ---
 

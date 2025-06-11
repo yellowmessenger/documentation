@@ -1,6 +1,6 @@
 ---
 title: Action Nodes
-sidebar_label: Actions
+sidebar_label: Actions nodes
 ---
 
 Action nodes in an AI-agent flow execute specific tasks or trigger actions based on user inputs. These nodes enable the AI agent to interact with external systems, process data, and manage backend operations. They support key functionalities such as sending API requests, verifying users with One-Time Passwords (OTPs), storing user data, executing custom scripts, and escalating unresolved queries to live agents.
@@ -25,7 +25,7 @@ You can use Action nodes to perform a specific task. For example, you can use th
 
 -----
 
-You can use Action nodes to perform a specific task. For example, you can use the Send OTP node to send out an OTP to the user.
+<!-- You can use Action nodes to perform a specific task. For example, you can use the Send OTP node to send out an OTP to the user.
 
 :::info
 Action nodes will not display any message to the user during conversation, they run the configured tasks in the background.
@@ -427,7 +427,7 @@ Use this node to generate PDFs and images (JPG/JPEG/PNG) files from docsx, html 
 ![](https://i.imgur.com/IP7PcU4.png)
 
 1. In **Select variable containing HTML string**, choose the variable that contains the HTML string.
-2. In **Select an output format**, choose the format in which the file should be generated, **PDF**/**JPG**/**JPEG**/**PNG**
+2. In **Select an output format**, choose the format in which the file should be generated, PDF, JPG, JPEG, or PNG.
 
 Enable **Advanced options** to set the margin and dimensions based on which the file should be geenrated.
 
@@ -789,18 +789,7 @@ To configure the **Sync Database** node:
  
    (This is optional for CSV)
 
- ```
-return new Promise(resolve => {
-  let record = ymLib.args.record;
-  /*
-    record is an object, representing a row. all values will be of type string, keys will be fetched from the csv-header.
-  */
-  resolve({
-    identifier: record.identifier,
-    category: record.category
-  });
-});
- ```
+
 
 
 * **Store Response in:** Choose the variable in which the response of this node should be stored.
@@ -836,4 +825,4 @@ recordsProcessed: 1230,
 :::note
 When an event is created using the action node, the *eventID* can be found in the response (payload) of that action node.
 :::
-
+ -->
