@@ -446,6 +446,12 @@ WhatsApp voice calling is currently supported in India and Indonesia.
 </p>
 </details>
 
+<details><summary><b>Can we detect if a user has blocked the AI agent’s WhatsApp number?</b></summary>
+<p>
+ No, it is not possible to determine if a user has blocked the AI agent’s number. WhatsApp does not share this information to protect user privacy.
+</p>
+</details>
+
 
 
 

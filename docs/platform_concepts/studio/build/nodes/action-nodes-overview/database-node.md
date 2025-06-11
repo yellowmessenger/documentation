@@ -1,5 +1,5 @@
 ---
-title: Database
+title: Database node
 sidebar_label: Database
 ---
 

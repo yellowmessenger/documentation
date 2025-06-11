@@ -1,6 +1,6 @@
 ---
 title: API node
-sidebar_label: API node
+sidebar_label: API
 ---
 
 API node allows you to integrate APIs from third-party systems and use them within conversational flows. It acts as a gateway for triggering HTTP-based APIs (GET, POST, PUT, DELETE, CREATE) and enables sending data from your workflow to external systems, and receiving data from external systems. You can then process data and use in subsequent steps or store in the database.

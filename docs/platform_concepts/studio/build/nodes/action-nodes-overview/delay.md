@@ -1,5 +1,5 @@
 ---
-title: Delay
+title: Delay node
 sidebar_label: Delay
 ---
 

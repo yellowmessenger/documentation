@@ -1,5 +1,5 @@
 ---
-title: Raise ticket
+title: Raise ticket node
 sidebar_label: Raise ticket
 ---
 

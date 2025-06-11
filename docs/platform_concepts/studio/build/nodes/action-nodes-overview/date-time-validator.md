@@ -1,5 +1,5 @@
 ---
-title: Date and time validator
+title: Date and time validator node
 sidebar_label: Date and time validator
 ---
 
