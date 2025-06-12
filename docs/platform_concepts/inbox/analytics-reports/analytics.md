@@ -32,7 +32,7 @@ In Inbox, analytics can be viewed and exported (as CSV files) for the following:
 
 :::note
 
-In the Chat Analytics and Agent Performance sections, supervisors can use filters to view data specific to agents and groups within their assigned teams.
+In the Chat Analytics and Agent Performance sections, **Supervisors** can use filters to view data specific to agents and groups within their assigned teams. The data displayed in these sections will be restricted to the agents and groups within their assigned teams.
 
 :::
 
