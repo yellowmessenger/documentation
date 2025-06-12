@@ -2,99 +2,168 @@
 title: Chat section and different types of chats
 sidebar_label : Getting started with live chat
 keywords : [bot messages, active chats, queued chats, open chat, missed chats]
-
 ---
 
-> Previously, **live chats** were referred to/termed as **chat tickets**. Please bear with the us while we make changes to our product and documentation. 
+  
+
+> Previously, **live chats** were referred to/termed as **chat tickets**. Please bear with the us while we make changes to our product and documentation.
+
+  
 
 -----
 
-The Chats section covers all the aspects of synchronous real-time conversations between an AI-agent user and the agent. It is an omnichannel dashboard that supports chats on more than 15 different [channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).  
+  
+
+The Chats section covers all the aspects of synchronous real-time conversations between an AI-agent user and the agent. It is an omnichannel dashboard that supports chats on more than 15 different [channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).
+
 - Any incoming live chat (from any channel) will be assigned to a particular inbox agent only when the inbox agent is **Available**.
 
-> Know more on default agent statuses [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentstatuses).     
+  
+
+> Know more on default agent statuses [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentstatuses).                
 > Know more on chat assignment logic [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/assignmentlogic)
 
+  
+
 :::note
-Live chats are assigned only to an **Inbox agent** (although **Inbox admin** will have the permission to see and contribute to  the [operations](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/roleaccess) in Inbox).
-- For an inbox admin, all the chats/tickets will be accessible.  
+
+Live chats are assigned only to an **Inbox agent** (although **Inbox admin** will have the permission to see and contribute to the [operations](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/roleaccess) in Inbox).
+
+- For an inbox admin, all the chats/tickets will be accessible.
 - For an inbox agent, only the chats/tickets assigned to them will be accessible.
+
 :::
+
+  
 
 ---------
 
+  
+  
 
 The chat section screen is divided into 3 parts:
 
-![](https://imgur.com/rVgzpnf.png)
+  
 
+![](https://cdn.yellowmessenger.com/assets/yellow-docs/inboxmainsceen.png)
+
+  
+  
 
 | Section| Description |
 | -------- | -------- |
-|[Chat conversation, resolve and transfer chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen) | View the chat. Reply to the user. Make notes of user conversation (summary) to help other agents understand the conversation quicker. Transfer the chat to another agent. Download the chat. <br/> Configure and understand how the [video calling](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/videocall) works for live chats. Transfer or resolve the live chat.  |
-| [Search and filter section](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatsearch)     | Choose the type of chat you want to see. Filter and search for specific chats. Perform bulk actions like transfer/resolve/reopen etc. by simple selecting multiple chats.         |
-|[User and chat details](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-2-user-details)| Learn details such as location, name, phone number, order ID, device details, etc. Add other agents to collaborate on this chat, to resolve the query quicker.  Add custom fields, monitor user activity etc.    |
+|[Chat conversation, resolve and transfer chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen) | View the chat. Reply to the user. Make notes of user conversation (summary) to help other agents understand the conversation quicker. Transfer the chat to another agent. Download the chat. <br/> Configure and understand how the [video calling](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/videocall) works for live chats. Transfer or resolve the live chat. |
+| [Search and filter section](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatsearch) | Choose the type of chat you want to see. Filter and search for specific chats. Perform bulk actions like transfer/resolve/reopen etc. by simple selecting multiple chats. |
+|[User and chat details](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-2-user-details)| Learn details such as location, name, phone number, order ID, device details, etc. Add other agents to collaborate on this chat, to resolve the query quicker. Add custom fields, monitor user activity etc. |
 
+  
+  
+  
+  
 
+> The above sub-sections are explained in detail in the upcoming articles.
 
-
- > The above sub-sections are explained in detail in the upcoming articles. 
-
+  
+  
 
 ----
 
+  
+
 ## 1. Types of chats
 
-When a live chat is raised by the AI-agent user (requesting to connect with an agent), that chat will be displayed under this section. 
+  
+
+When a live chat is raised by the AI-agent user (requesting to connect with an agent), that chat will be displayed under this section.
+
+  
 
 :::note
-- Only the **My chats** tab gets updated in real-time as and when the conversation occurs. Other chats are not updated unless the page is refreshed.
-- When the customer name is available on the platform (User 360) or it is collected via Raise ticket node, the name will be displayed on the chat. Otherwise, a dummy customer name will be auto generated by the system.  
 
-    <img src="https://imgur.com/2uc65xF.png" alt="drawing" width="85%"/>       
+- Only the **My chats** tab gets updated in real-time as and when the conversation occurs. Other chats are not updated unless the page is refreshed.
+- When the customer name is available on the platform (User 360) or it is collected via Raise ticket node, the name will be displayed on the chat. Otherwise, a dummy customer name will be auto generated by the system.
+
+  
+
+<img  src="https://cdn.yellowmessenger.com/assets/yellow-docs/namechat.png"  alt="drawing"  width="65%"/>
+
 :::
 
+  
+  
+  
 
+**ticket-assigned-bot** event ([custom event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events)) gets triggered when a live chat is assigned to an agent.
 
-**ticket-assigned-bot** event ([custom event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events)) gets triggered when a live chat is assigned to an agent. 
+  
 
 API to enable this event:
 
+  
+
 ```
+
 curl --location 'https://cloud.yellow.ai/api/agents/settings/ticketUpdateEventSettings?bot=<botID>' \
+
 --header 'x-auth-token: <token>' \
+
 --header 'Content-Type: application/json' \
+
 --data '{
-    "chatAssignedBot": true
+
+"chatAssignedBot": true
+
 }'
+
 ```
+
+  
 
 > Use the correct URL link for **location** and enter the token key in **x-auth-token/x-api-key**.
 
+  
+  
+  
 
+Inbox classifies live chats into 7 different types, explained below:
 
-Inbox classifies live chats into 7 different types, explained below: 
+  
 
-<img src="https://imgur.com/mntjqyQ.png" alt="drawing" width="45%"/>    
+<img  src="https://cdn.yellowmessenger.com/assets/yellow-docs/typesofchats.png"  alt="drawing"  width="45%"/>
 
-> To learn how to build a flow that will raise a ticket to a live agent, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo).  
-> To view chats, Open Inbox > Chats. Select from the Chat types dropdown. 
+  
 
+> To learn how to build a flow that will raise a ticket to a live agent, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo).
+
+> To view chats, Open Inbox > Chats. Select from the Chat types dropdown.
+
+  
+  
 
 ### 1.1 My Chats
 
-Inbox agents with the status as **Available** will be assigned live chats based on the [auto assignment logic](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/assignmentlogic). 
+  
+
+Inbox agents with the status as **Available** will be assigned live chats based on the [auto assignment logic](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/assignmentlogic).
 These chats assigned to the respective agents will be displayed under My chats.
-My chats will differ from agent to agent because they can only see the live chat assigned specifically to them. 
+My chats will differ from agent to agent because they can only see the live chat assigned specifically to them.
+
+  
 
 ### 1.2 Active Chats
 
-Active chat option will be visible to the users with **Inbox Supervisor/Admin** access.
-- **Supervisor** can see all the active live chats that are being handled by the agents of their group. 
-- **Admins** can monitor all the ongoing live chat.
+  
 
+Active chat option will be visible to the users with **Inbox Supervisor/Admin** access.
+
+-  **Supervisor** can see all the active live chats that are being handled by the agents of their group.
+-  **Admins** can monitor all the ongoing live chat.
+
+  
+  
 
 The Active chat supports **real-time updates** for **Supervisors**, eliminating the need to refresh the page. This enables supervisors to efficiently monitor and manage ongoing conversations.
+
 * Only chats assigned to the supervisor’s group are visible in real-time.
 * Resolved chats automatically move out of the Active Chat view.
 * All chat messages, internal notes, and events (created, resolved) are updated live.
@@ -102,78 +171,118 @@ The Active chat supports **real-time updates** for **Supervisors**, eliminating 
     * If a chat is transferred within the **same group** or transfered to a different group managed by the **same supervisor**, the supervisor is notified (e.g., "Chat transferred to Sam").
     * If a chat is transferred to a **different group** managed by another supervisor, it will no longer be visible to the original supervisor.
 
+  
+  
 
 :::note
+
 Real-time updates on the Active Chat page for supervisors is a **gated feature**. Contact the support team to enable it.
+
 :::
 
+  
+  
 
 ### 1.3 Queued Chats
 
+  
+
 If either of the below conditions is true, the live chat raised will not be assigned to any agent in particular and it will be found under queued chats (only if [chat queues](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat-queue) is enabled from the settings).
+
+  
 
 - If agent availability is **busy** or **away**.
 - If the chat **concurrency** for each of the agents is full.
 
+  
+  
 
 > For example:
-> A limit is set that each agent can handle 5 live chats and there are 2 agents. 10 live chats are raised and they are in the assigned state.  In this case, when an 11th live chat is raised and the chat queues are enabled, it will be queued and found under queued chats.
+> A limit is set that each agent can handle 5 live chats and there are 2 agents. 10 live chats are raised and they are in the assigned state. In this case, when an 11th live chat is raised and the chat queues are enabled, it will be queued and found under queued chats.
 
+  
+  
 
-Users will be notified with the position in which these live chats are in the queue. 
-When any agent's status becomes available or the concurrency is changed, the live chat gets assigned automatically to an agent without any manual intervention. 
+Users will be notified with the position in which these live chats are in the queue.
+When any agent's status becomes available or the concurrency is changed, the live chat gets assigned automatically to an agent without any manual intervention.
+
+  
 
 :::info
 
+  
+
 **Resolve queued live chat manually**
 
-Advanced customers can have a dedicated supervisor who can keep a look at all the live chats. When a high-priority live chat moves to the queued list, the supervisor can assign it to any agent who can take immediate action.  
+  
+
+Advanced customers can have a dedicated supervisor who can keep a look at all the live chats. When a high-priority live chat moves to the queued list, the supervisor can assign it to any agent who can take immediate action.
+
 :::
+
+  
 
 ### 1.4 Open Chats
 
-When a live chat is incoming and there are no inbox agents available (inside or outside [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours)) to take this live chat, Open chats are created. 
-Open chats will be automatically assigned to the agents when they log in/ become available when **Auto assign tickets** on [Offline handling setting](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) is enabled. 
+  
+
+When a live chat is incoming and there are no inbox agents available (inside or outside [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours)) to take this live chat, Open chats are created.
+Open chats will be automatically assigned to the agents when they log in/ become available when **Auto assign tickets** on [Offline handling setting](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) is enabled.
+
+  
 
 :::note
+
 Generally, customers cannot request for live chats outside working hours unless [offline handling](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) is enabled.
+
 :::
 
+  
+  
 
 ### 1.5 Resolved Chats
+
+  
 
 All the live chats that are solved or **closed** by the agents will be found under resolved chats.
 Admins can see all the resolved chats, while the agents can see only their resolved chats.
 
+  
+
 ### 1.6 Missed Chats
 
-When a chat is missed, it won't be assigned to any agent hence the resolution wont be provided to the customer. 
+When a chat is missed, it won't be assigned to any agent hence the resolution wont be provided to the customer.
 This is the ultimate fallback. When a chat doesn't belong to any other category of chats, it becomes a missed chat.
-There are multiple ways in which a chat can move under missed chats. For example:  
 
-1. When the Inbox settings hamper the experience of chats going into other categories. 
+There are multiple ways in which a chat can move under missed chats. For example:
+
+1. When the Inbox settings hamper the experience of chats going into other categories.
 2. When the Raise ticket node (flow) is not configured correctly or raise ticket action fails due to Inbox settings that can be controlled (for example, if offline handling is disabled, group queue is not configured, etc.), the chat will be available in missed chats.
-3. When Chat queue is not enabled in the Inbox setting, the incoming live chat that must be available under Queued chats moves into missed chats. 
-4. When Offline handling is not enabled in the Inbox setting, the incoming live chat that must be available under Open chats moves into missed chats. 
+3. When Chat queue is not enabled in the Inbox setting, the incoming live chat that must be available under Queued chats moves into missed chats.
+4. When Offline handling is not enabled in the Inbox setting, the incoming live chat that must be available under Open chats moves into missed chats.
+
 
 > The chats do not move into missed chats for cases that are not controllable (like the AI-agent server is down, technical error, AI-agent shut down).
 
+  
+
 :::note
+
 [Here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/debugchecklist#understand-missed-chat-scenarios) are some additional reasons why chats can be missed.
+
 :::
+
+  
 
 ### 1.7 Bot Messages
 
-Bot messages are not assigned to any agents. Admins can use this tab to see the conversation flows. 
+  
 
-All the conversations that happen on the AI-agent will be visible under bot messages (for admins and agents). This is an entire conversation that the user went through, irrespective of the live chat request raised. 
-The purpose of this section is to monitor the AI-agent responses (bot messages). If the conversation is not going as expected, agents can take the control over from the AI-agent and converse with the user. 
+Bot messages are not assigned to any agents. Admins can use this tab to see the conversation flows.
+All the conversations that happen on the AI-agent will be visible under bot messages (for admins and agents). This is an entire conversation that the user went through, irrespective of the live chat request raised.
+The purpose of this section is to monitor the AI-agent responses (bot messages). If the conversation is not going as expected, agents can take the control over from the AI-agent and converse with the user.
 
-> - For advance functionalities, you can see the [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs) in **Automation**. For example: To check if the AI-agent is responding correctly, you can check the conversation logs.             
-> - If you have only Inbox agents/admins access consult your bot admin for Automation access. 
+  
 
-
-
-
-
-
+>  - For advance functionalities, you can see the [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs) in **Automation**. For example: To check if the AI-agent is responding correctly, you can check the conversation logs.
+>  - If you have only Inbox agents/admins access consult your bot admin for Automation access.

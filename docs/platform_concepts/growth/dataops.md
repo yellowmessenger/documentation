@@ -111,6 +111,8 @@ There is no restriction on the number of rules that can be added.
     ![image](https://imgur.com/cbWGoev.png)
 
 
+#### View details 
+
 - Click **View details** to see the assigned rule details (data, frequency, and destination).    
 - You can see **Export date** (frequency), **Status of export** (scheduled, ongoing, and failure/success), and **Size of data** exported. 
 

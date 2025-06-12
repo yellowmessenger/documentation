@@ -8,7 +8,7 @@ In the Monitor section you can effectively track the productivity of your entire
 2. [Email trends](#email): Offers analysis and trends related to email tickets.
 3. [Team](#team): Allows you to monitor and evaluate the performance of your support team.
 
-![image](https://imgur.com/A9INncG.png)
+![image](https://cdn.yellowmessenger.com/assets/yellow-docs/monitor.png)
 
 
 :::note
@@ -18,8 +18,8 @@ In the Monitor section you can effectively track the productivity of your entire
 
 :::info
 
-- Admins have access to all the features and data. 
-- Supervisors have access to all the data that pertains to their teams. 
+- **Inbox Admins** have access to all the features and data. 
+- **Supervisors** have access to all the data that pertains to their group and it's agents. 
 
 :::
 
@@ -62,7 +62,7 @@ The widgets provide the following data:
 
 | Label | Description |
 | -------- | -------- |
-|Online visitors|	Number of current users on the website where the chatbot is embedded. |
+|Online visitors|	Number of current users on the website where the AI agent is embedded. |
 | Agents availability |	Status of agents currently logged in and available for chat. |
 | Average handling time |	Average time taken to handle chats over the last 7 days (excluding chats > 24 hours). |
 | First response time|	Average time taken to provide the first response to chats over the last 7 days.|
@@ -144,12 +144,9 @@ Real-time chat activity is displayed in a table within the Inbox. This table pro
 ![image](https://imgur.com/YXcB6bo.png)
 
 - Each chat ticket number is accompanied by the assigned **agent's name, priority level, assigned time, duration of the chat, reply count** (number of replies sent to the user), and more.
-
 - In case an anomaly is detected in a chat, admins/supervisors have the convenience of accessing the chat details directly by clicking on the chat number. This feature eliminates the need for manual search and opens the chat on the same page.
-
 - By simply clicking on the chat number #, admins/supervisors can quickly investigate any issues or concerns identified in the chat, enabling efficient resolution and support.
 
-    ![](https://i.imgur.com/K6B5gnd.png)
 
 ---
 
