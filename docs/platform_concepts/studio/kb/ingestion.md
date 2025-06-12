@@ -44,7 +44,7 @@ You can add content to the Knowledge base using any of the following sources:
        * It usually ends in .xml (example, https://example.com/sitemap.xml)
        * It helps fetch content from multiple web pages at once.
        * It is used for adding content from large websites or documentation portals.
-     * **URL**: A URL (Uniform Resource Locator) is the web address of a specific page on your site. Example: https://example.com/help/article1
+     * **URL**: A URL (Uniform Resource Locator) is the web address of a specific page on your site. Example: `https://example.com/help/article1`
         * Use this option if you want to add only specific web pages to your Knowledge base
         * Useful when your site does not have a sitemap or you want to include select pages only.
 

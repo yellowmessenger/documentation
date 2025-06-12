@@ -133,7 +133,7 @@ Validation fails when the token expires due to customer inactivity. In such situ
     ```
 
 :::info
-Click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth) to learn how to add YMAuth token for Mobile SDK.   
+Click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/sdk-faq-worflows/secure-ymauth) to learn how to add YMAuth token for Mobile SDK.   
 ::: 
 
 

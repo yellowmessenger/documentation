@@ -46,7 +46,7 @@ cordova.plugins.ymchat.useSecureYmAuth(true);
 ```
 
 :::note
-For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth).
+For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/sdk-faq-worflows/secure-ymauth).
 :::
 
 ### Push Notifications
@@ -407,7 +407,7 @@ cordova.plugins.ymchat.revalidateToken("new token", refreshSession);
 ```
 
 :::note 
-For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth).
+For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/sdk-faq-worflows/secure-ymauth).
 :::
 
 ***
@@ -423,7 +423,7 @@ cordova.plugins.ymchat.sendEventToBot('code', { some-key: "some-value" });
 ```
 
 :::note 
-For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/send-event-workflow).
+For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/sdk-faq-worflows/send-event-workflow).
 :::
 
 ## Demo App

@@ -34,7 +34,7 @@ featured: true
 
 | New features | Description |
 | --- | --- |
-| **Alerts to notify bot failures** | Proactively monitor failures and issues in the bot by creating alerts to notify you when set rules are met. <br/> <br/>**[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/health)** |
+| **Alerts to notify bot failures** | Proactively monitor failures and issues in the bot by creating alerts to notify you when set rules are met. |
 | **Analyze your campaign performance with our new Campaign Notifications Report** | Gain valuable insights into your campaign performance with our new report. Monitor important details such as campaign dates, template IDs, status updates, and message counts all in one place.<br/> <br/>You can easily download the report or schedule it to be sent to your email on a recurring basis, providing you with regular updates on your campaign performance. It is available under **Metrics** > **Export**. |
 | **Hourly grouping of timestamps for efficient data analysis** | You can use the 'Group by Hourly' option to group timestamps while summarizing a table. |      
 </details>

@@ -154,6 +154,9 @@ As part of our ongoing commitment to security and compliance, Yellow.ai now supp
 
 ## Insights
 
+### Name change: Dataops is not renamed to Data export **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+
+Data Operations (DataOps) has been renamed to Data Export to better reflect its functionality.
 
 ### Sunset Notice: Clearing the Path for a Smarter Analytics Experience **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
