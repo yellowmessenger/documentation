@@ -240,3 +240,11 @@ We’ve completely revamped the Knowledge Base module to help you manage and del
 
 [**Read the full documentation →**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
 
+---
+
+## Sender Email Logic Update in Email Ticketing
+
+We’ve simplified how the "From" address is selected when replying to tickets. The new logic is more accurate and predictable, so agents always reply from the correct email.
+
+Also, a small but helpful UI update:
+You’ll now see the From/To details clearly while composing a response—no more second-guessing which address is being used.
