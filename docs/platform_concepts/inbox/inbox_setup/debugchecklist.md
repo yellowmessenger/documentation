@@ -3,17 +3,14 @@ title: Debug inbox error logs
 sidebar_label : Debug inbox errors 
 ---
 
-In this article, you will learn how to debug errors encountered while [testing](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) the bot for Inbox configuration using the **Automation** module, as debugging is not supported directly in the Inbox module.
+In this article, you will learn how to debug errors encountered while [testing](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) the AI agent for Inbox configuration using the **Automation** module, as debugging is not supported directly in the Inbox module.
 
-The debugging logs provide helpful information to bot developers for every raise chat operation, such as: 
-1. **Bot status**: Whether the bot is running or paused 
+The debugging logs provide helpful information to AI agent developers for every raise chat operation, such as: 
+1. **Bot status**: Whether the AI agent is running or paused 
 2. **Chat status**: Whether the chat is assigned, queued, open, or missed
 3. **Chat ID**: If a chat was created, its unique number 
 4. **Missed reason**: If a chat was missed, its reason
 5. **Errors**: Description of the issue that occurred during the operation, like user input validation errors or incorrect information being passed.
-
-<img src="https://imgur.com/BuNEKlV.png" alt="drawing" width="50%"/>  
-
 
 :::note
 Inbox may behave differently in Live and Development enviornments because the settings configured in Live mode are not reflected in Development mode, and vice versa.
@@ -78,11 +75,12 @@ The reason for missed chats can be viewed under **Activity log**.
 
 ## Audit log for inbox changes
 
+You can view logs on **Automation > Debugger**. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/bot-logs). 
+
 Audit logs are available for all changes made to inbox settings and the chat screen. However, this feature is currently not available for email-related changes. 
 Open **Audit logs** from your profile, and you can filter the audit logs for the inbox module to review the changes. 
 
 ![image](https://imgur.com/oWtpDxy.png)
-
 
 
 

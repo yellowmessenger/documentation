@@ -7,7 +7,7 @@ In this article, you will learn how to accept/add inbox roles.
 
 
 :::note
-- **Admin** (of the bot) can give access to **Inbox Admin/Agent** to any user (or themselves).     
+- **Admin** (of the AI Agent) can give access to **Inbox Admin/Agent** to any user (or themselves).     
 - Users with **Inbox Admin** access can add **Inbox Agents** (these agents can become **Suprevisors** of a particular group).
 - Any user provided with **Inbox Agents** invite can join as a inbox agent. 
 - Users with only **Inbox Admin/Agent** roles can access only **Inbox module** on the yellow.ai platform.
@@ -22,12 +22,12 @@ In this article, you will learn how to accept/add inbox roles.
 - Incoming live chats and email tickets (from the customers) are assigned only to the **Inbox agents** (support agents).
 - **Inbox agents** will have access to their **chats/tickets/analytics/performance** to help understand and resolve queries in Inbox.
 - Other modules in the yellow.ai platform such as **Automation**, **Channels**, etc. will not be visible to the **Inbox Admin/Agent**.
-- If you have **Admin** access(to the bot), you can give yourself the **Inbox Agent/Inbox Admin** access to explore the Inbox functionalities. From settings, click **Access control** > **Edit** your row to add **Inbox agent** access along with **Inbox admin** access.
+- If you have **Admin** access(to the AI Agent), you can give yourself the **Inbox Agent/Inbox Admin** access to explore the Inbox functionalities. From settings, click **Access control** > **Edit** your row to add **Inbox agent** access along with **Inbox admin** access.
 
 ![image](https://imgur.com/qdviCKa.png)
 
 
-> Supporting document to add/accept bot access for different roles: [Access control](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
+> Supporting document to add/accept AI Agent access for different roles: [Access control](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
 
 
 
