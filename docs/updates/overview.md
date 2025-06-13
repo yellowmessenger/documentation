@@ -50,7 +50,7 @@ Conversational KB is an intelligent AI-powered knowledge assistant that enables 
 
 [**Check out the documentation →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config)
 
-## Engage
+## **Engage**
 
 ###  Smarter WhatsApp Message Delivery with MM Lite API Integration
 
@@ -89,9 +89,14 @@ If your account is managed by Yellow\.ai:
 :::info
 * This feature is currently in beta and will be available in production soon.
 :::
+
+### Deprecated Engage Overview Page
+The Engage Overview page has been deprecated as part of our ongoing efforts to streamline the platform. 
+
+
 ---
 
-## Agent AI
+## **Agent AI**
 
 ### Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
@@ -152,7 +157,40 @@ As part of our ongoing commitment to security and compliance, Yellow.ai now supp
 
 ---
 
-## Insights
+## **Insights**
+
+
+### Access Control–Based Filters for Monitor and Reporting
+
+We’re making monitoring and reporting more secure and relevant by applying **access control–based filters**. Supervisors will now see only data related to their assigned teams across both the **Monitor** and **Analytics** sections.
+
+
+#### **Monitor Section Updates**
+
+* **Removed: Online Visitors**
+  The *Online Visitors* metric has been removed from the Monitor view to streamline the dashboard.
+
+* **Live Chats, Now Filtered**
+  Live chats shown will now reflect only those conversations that fall under the supervisor’s assigned teams.
+
+* **Updated: Email Trends UI**
+  The filters in *Email Trends* have been refreshed to match the platform’s standard UI style. Functionality remains unchanged.
+
+* **Team Tab, Now Scoped**
+  The *Team* tab now displays only agents and groups belonging to the supervisor’s team, instead of showing all.
+
+
+#### **Analytics Enhancements**
+
+* **New Filters in Chat Analytics & Agent Performance**
+  Supervisors now have access to filters in these sections. Data will be scoped to agents and groups in their own teams.
+
+* **Improved Filter Key**
+  A filter key has been added to clarify how team-specific filters work, ensuring that supervisors see only relevant data.
+
+
+---
+
 
 ### Name change: Dataops is not renamed to Data export **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
