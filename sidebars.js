@@ -991,7 +991,7 @@ module.exports = {
       collapsed: true,
       items: [
        // "platform_concepts/engagement/engage",
-       "platform_concepts/engagement/outbound/engage-overview",
+      // "platform_concepts/engagement/outbound/engage-overview",
        {
         type: "category",
         label: "Outbound templates",
