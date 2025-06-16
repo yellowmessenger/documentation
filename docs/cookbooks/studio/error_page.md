@@ -1,6 +1,6 @@
 ---
-title : Error page troubleshooting guide
-sidebar_label : Error page troubleshooting guide
+title : Error occured in Cloud Platform
+sidebar_label : Error occured in Cloud Platform
 ---
 
 If you encounters an error page while using the Yellow.ai platform, follow the troubleshooting steps provided to resolve the issue.

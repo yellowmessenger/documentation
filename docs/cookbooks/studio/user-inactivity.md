@@ -6,7 +6,7 @@ sidebar_label: User inactivity event guide
 
 **User Inactivity Events** help manage conversations when users stop responding. You can use them to follow up, repeat prompts, or even redirect the conversation automatically—ensuring conversations remain active and productive.
 
-To know how to configure User inactivity event, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-user-inactivity-event)
+To know how to configure User inactivity event, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-user-inactivity-event).
 
 
 ### Common use cases
