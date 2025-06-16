@@ -294,6 +294,8 @@ Supervisors now get scoped views across Monitor, Reporting, and Team tabs—ensu
 * ✉️ *Email Trends* filters updated to match the latest UI
 * 📈 New filters + key added for *Chat Analytics* and *Agent Performance* views
 
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/monitor.png)
+
 Cleaner data. Sharper control. Just the way it should be.
 
 
