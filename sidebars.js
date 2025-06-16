@@ -283,7 +283,7 @@ module.exports = {
         items: [
           "platform_concepts/Getting Started/user-account-settings", 
           "platform_concepts/Getting Started/upgrade",  
-          "platform_concepts/Getting Started/acl",
+          // "platform_concepts/Getting Started/acl",
         ],
       },
 
