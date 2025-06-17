@@ -16,8 +16,8 @@ To connect an SFTP server:
 4. In **Host IP**, enter the IP address of your SFTP server. Example: `192.168.1.1`
 5. In **Port**, enter the port number used for SFTP connection. Default: `22`
 6. In **Username**, enter your SFTP server username.
-7. In **Password**, enter the associated SFTP password.
-8. Enable **Private key based authentication** option to authenticate with the SFTP server using a private SSH key instead of a password.
+7. Enable **Private key based authentication** option to authenticate with the SFTP server using a private SSH key instead of a password.
+8. In **Password**, enter the associated SFTP password. Applicable only if **Private key based authentication** is disabled.
 
 
 
