@@ -17,6 +17,8 @@ To connect an SFTP server:
 5. In **Port**, enter the port number used for SFTP connection. Default: `22`
 6. In **Username**, enter your SFTP server username.
 7. In **Password**, enter the associated SFTP password.
+8. Enable **Private key based authentication** option to authenticate with the SFTP server using a private SSH key instead of a password.
+
 
 
 ### Sync SFTP data with User 360
