@@ -191,13 +191,24 @@ Event | Description
 
 ***
 
-### <a name="uie-1"></a> User inactivity events
+### <a name="uie-1"></a> User inactivity event
 
-User inactivity event refers to a specific event that is triggered when a user remains inactive or doesn't respond to the AI-agent's prompts for a certain period of time. 
+User inactivity event is triggered when a user remains inactive or does not respond to the agent's prompts within a defined period. 
 
-For example, if we ask for an email and get no response, we may check if they are still available or repeat the request. Options include sending a message, repeating the prompt, or starting a new flow to handle inactivity.
+If the agent asks for the user’s email and receives no response, the inactivity event is triggered. You can then define how the bot should respond—such as:
 
-For a detailed use case guide on this event, click [here](https://docs.yellow.ai/docs/cookbooks/studio/user-inactivity).
+* Sending a gentle follow-up message (e.g., “Are you still there?”)
+* Repeating the original question
+* Triggering an alternative flow (e.g., escalation, feedback, or session timeout)
+
+:::note
+The inactivity event is triggered for a specific node only if the user was previously active in the flow. If the user doesn’t respond at all from the beginning of the flow, the event will not be activated.
+:::
+
+This event helps maintain engagement and ensures conversations don’t stall due to inactivity.
+
+
+For a detailed use case guide, click [here](https://docs.yellow.ai/docs/cookbooks/studio/user-inactivity).
 
 **To create user inactive events**:
 

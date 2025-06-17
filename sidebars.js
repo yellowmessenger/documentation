@@ -75,7 +75,18 @@ module.exports = {
         //  "cookbooks/studio/debug-logs",
           "cookbooks/studio/error_page",
           "cookbooks/studio/userinitiateddisconnection",
+          "cookbooks/studio/userinitiateddisconnection",
 
+      ],
+    }, 
+    {
+      type: "category",
+      label: "Troubleshooting Guide",
+     // link: {type: 'doc', id: 'platform_concepts/Getting Started/marketplaceintro'},
+      collapsed: true,
+      items: [
+        "cookbooks/studio/error_page",
+        "cookbooks/email_issue",
       ],
     }, 
 

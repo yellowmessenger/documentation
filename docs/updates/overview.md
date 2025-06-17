@@ -52,7 +52,7 @@ Conversational KB is an intelligent AI-powered knowledge assistant that enables 
 
 ## **Engage**
 
-###  Smarter WhatsApp Message Delivery with MM Lite API Integration
+###  Smarter WhatsApp Message Delivery with MM Lite API Integration  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 We’ve added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
 This smart delivery feature uses Meta’s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they’re most likely to engage.
@@ -136,7 +136,7 @@ Build smarter, more natural conversations using intuitive building blocks:
 ---
 
 
-### PCI-Compliant Data Capture Now Supported in Question Nodes
+### PCI-Compliant Data Capture Now Supported in Question Nodes  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 As part of our ongoing commitment to security and compliance, Yellow.ai now supports PCI-compliant data capture across multiple channels using question nodes, in addition to the previously supported voice input nodes. You can then use the API node to transfer PCI-sensitive information securely.
 
 #### Key enhancements
@@ -160,7 +160,7 @@ As part of our ongoing commitment to security and compliance, Yellow.ai now supp
 ## **Insights**
 
 
-### Access Control–Based Filters for Monitor and Reporting
+### Access Control–Based Filters for Monitor and Reporting  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 We’re making monitoring and reporting more secure and relevant by applying **access control–based filters**. Supervisors will now see only data related to their assigned teams across both the **Monitor** and **Analytics** sections.
 
@@ -203,7 +203,7 @@ As we prepare for a major revamp of our Analytics module, we’re streamlining t
 Here’s what’s changing:
 
 
-#### Insights – User Journeys
+#### Insights – User Journeys  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 With the shift towards agentic AI workflows, this section—based on an older implementation—no longer aligns with our direction. We’re removing it, but don’t worry:
 
@@ -280,9 +280,27 @@ We’ve completely revamped the Knowledge Base module to help you manage and del
 
 ---
 
-## Sender Email Logic Update in Email Ticketing
+## **Inbox**
 
-We’ve simplified how the "From" address is selected when replying to tickets. The new logic is more accurate and predictable, so agents always reply from the correct email.
 
-Also, a small but helpful UI update:
-You’ll now see the From/To details clearly while composing a response—no more second-guessing which address is being used.
+### Monitor & Reporting Access Control Updates  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+
+Supervisors now get scoped views across Monitor, Reporting, and Team tabs—ensuring visibility is limited to their assigned teams.
+
+**What’s changed:**
+
+* 🗑️ *Online Visitor* metric removed from the Monitor section
+* 💬 *Live Chats*, *Team Tab*, and *Analytics* now show data only for supervisor-assigned teams
+* ✉️ *Email Trends* filters updated to match the latest UI
+* 📈 New filters + key added for *Chat Analytics* and *Agent Performance* views
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/monitor.png)
+
+Cleaner data. Sharper control. Just the way it should be.
+
+
+### Sender Email Logic Update in Email Ticketing  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+
+We’ve cleaned up how the "From" address is picked when replying to tickets. Agents can also see clear From/To details while composing—no more guesswork.
+
+
