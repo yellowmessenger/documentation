@@ -55,7 +55,7 @@ To create a WhatsApp template and send for approval, follow these steps:
 
    ![](https://i.imgur.com/jknxfcv.png)
 
-6. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
+6. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#6-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
 
    ![](https://i.imgur.com/63SeUhj.png)
 
