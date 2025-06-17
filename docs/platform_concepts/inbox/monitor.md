@@ -8,8 +8,7 @@ In the Monitor section you can effectively track the productivity of your entire
 2. [Email trends](#email): Offers analysis and trends related to email tickets.
 3. [Team](#team): Allows you to monitor and evaluate the performance of your support team.
 
-![image](https://cdn.yellowmessenger.com/assets/yellow-docs/monitor.png)
-
+![](https://cdn.yellowmessenger.com/assets/yellow-docs/monitormainscreen.png)
 
 :::note
 - All the values displayed in the Monitor section are **updated automatically** after every 60 seconds. To view real-time values, refresh your browser.
@@ -30,6 +29,8 @@ In the Monitor section you can effectively track the productivity of your entire
 
 The chat trends tab provides valuable insights into live chat activity and performance metrics, enabling admins/supervisors to monitor trends and optimize chat support operations effectively.
 
+
+
 **Use cases of metrics on chat trends**:
 
 | Use case | Description/Solution |
@@ -44,30 +45,38 @@ The chat trends tab provides valuable insights into live chat activity and perfo
 
 ### Filter and organize chat data
 
-1. **Tag-based chat data filtering**: Utilize the filter option to sort chat details based on specific tags. Simply choose a tag from the dropdown menu, as tags are assigned during chat/ticket creation.
-    ![](https://imgur.com/fszF8RV.png)
+Use the **Filters** option to efficiently sort and view chat data based on various parameters:
+- **Channel**: Filter chats by selecting a specific channel from the dropdown menu. All active channels will be listed for selection.
+- **Tags**: Sort chat data using assigned tags. Simply choose a tag from the dropdown menu to view relevant chats.
+- **Groups**: View data related to specific groups. This includes all chats and agents associated with the selected group.
+- **Agents**:  Filter chat data by individual agents to monitor or review their interactions.
+- **Priority**:  Organize chat data based on priority levels such as *Low*, *Medium*, *High*, and *Urgent*.
 
-2. **Channel-based chat data filtering**: Easily filter chats based on different channels by selecting the desired channel from the dropdown menu. All active channels will be listed for you to choose from.
-    
-    <img src="https://imgur.com/pTsJ79O.png" alt="drawing" width="80%"/>
+<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/monitorfilter.png" alt="drawing" width="50%"/>
+
+
+
 
 ---------
 
 ### Summarized chat insights with widgets
 
 The top section contains widgets that display essential metrics for efficient live chat workflow management.
-![image](https://imgur.com/5MHnW6v.png)
+
+![](https://cdn.yellowmessenger.com/assets/yellow-docs/monitorwidgets.png)
 
 The widgets provide the following data:
+| **Label**              | **Description**                                                                 |
+|------------------------|---------------------------------------------------------------------------------|
+| **Conversations**      |                                |
+| Active Chats      | Number of chats currently assigned to you and your team.                       |
+| Queued Chats      | Number of chats waiting in the queue to be assigned.                           |
+| **Time Trend**         |                           |
+| Resolved Chats     | Total number of chats resolved within the last 7 days.                         |
+| Avg. Handling Time | Average time taken to handle chats over the last 7 days.                       |
+| First Response Time| Average time taken to provide the first response to chats over the last 7 days.|
+| **Team**               | Availability status of currently logged-in agents, including total online agents and their statuses (Available, Busy, Away). |
 
-| Label | Description |
-| -------- | -------- |
-|Online visitors|	Number of current users on the website where the AI agent is embedded. |
-| Agents availability |	Status of agents currently logged in and available for chat. |
-| Average handling time |	Average time taken to handle chats over the last 7 days (excluding chats > 24 hours). |
-| First response time|	Average time taken to provide the first response to chats over the last 7 days.|
-| Resolved tickets	| Total number of chats resolved within the last 7 days.|
-| Active tickets	| Number of chats currently assigned to you and your team, including those in the queue. |
 
 ---------
 
@@ -91,10 +100,10 @@ The two graphs provided offer detailed analysis of chat trends, allowing trackin
 
 A live monitor dashboard has been specifically developed for inbox admins and supervisors to oversee latest live chats.
 
-- By selecting **View live chat dashboard**, a new page will open, presenting the **50 most recent chats**. The chats in the table are arranged in descending order based on the latest received chat.
+<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/monitorlivechat.png" alt="drawing" width="80%"/>
 
-    ![image](https://imgur.com/yjIta82.png)
-    
+
+- By selecting **View live chat dashboard**, a new page will open, presenting the **50 most recent chats**. The chats in the table are arranged in descending order based on the latest received chat.
 - The table includes the following information for each chat:
     - **ID**: Unique identification for each chat.
     - **Customer name**
@@ -156,6 +165,9 @@ Admins can effectively monitor the handling of email tickets by utilizing the fe
 
 > The terms *email data* and *ticket data* are used interchangeably in this context.
 
+
+
+
 **Use cases of metrics on email trends:**
 
 | Use case | Description/Solution |
@@ -179,21 +191,16 @@ You can filter the email trends data based on specific **tags, groups, agents, a
 
 ### Summarized ticket insights with widgets
 
+![image](https://cdn.yellowmessenger.com/assets/yellow-docs/emailmainpage.png)
+
+
 You can quickly see the count of email tickets in various states such as **Unassigned, Unresolved, Opened, Pending, On-Hold, In-Progress, and Unassigned**.
-
-![](https://imgur.com/NZfSm5A.png)
-
-----
 
 ### Ticket trends for the current day
 
-- **Track agent availability to handle tickets**:  
-    Monitor the number of agents who are currently **available, busy, or away** on that day.
+- **Track agent availability to handle tickets**: Monitor the number of agents who are currently **available, busy, or away** on that day.
+- **Understand the performance of agents handling tickets**: Get insights into the number of resolved and unresolved tickets for the day, as well as metrics like **first response time, average reply time, and average handling time** for the email tickets.
 
-- **Understand the performance of agents handling tickets**:         
-    Get insights into the number of resolved and unresolved tickets for the day, as well as metrics like **first response time, average reply time, and average handling time** for the email tickets.
-
-![](https://imgur.com/OqfCRLA.png)
 
 ----
 
