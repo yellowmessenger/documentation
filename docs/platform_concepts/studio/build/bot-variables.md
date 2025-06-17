@@ -29,7 +29,7 @@ The following table consists of various data types for variables, along with the
 
 #### Limitations
 
-* You can create variables only from [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) nodes.
+* You can create variables only from [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node) nodes.
 * If the data type is an array or object, you need to use the [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) to display the data. 
 
 **Example: Configuration for using variables in a AI-agent**
@@ -245,7 +245,7 @@ To create a variable, follow these steps:
 You can also create variables through nodes, and those variables can be used in any flow or node.
 
 :::note
-* You can create variables only from [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) nodes.
+* You can create variables only from [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node) nodes.
 * It is recommended to use new variables to store data rather than reusing existing ones, as the values may get overwritten.
 :::
 
@@ -271,7 +271,7 @@ You can also create variables through nodes, and those variables can be used in 
    
 ### Store data in variables
 
-[Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) nodes can be used to store the data in variables. 
+[Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node) nodes can be used to store the data in variables. 
 
 :::note
  1. Only the names of the existing variables are displayed on the **store response in** dropdown. 

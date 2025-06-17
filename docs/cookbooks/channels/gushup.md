@@ -34,7 +34,6 @@ Refer to the below Gupshup official documentation:
 * [Gupshup Webhook Overview](https://docs.gupshup.io/docs/webhooks-2)
 * [Set Webhook Callback URL](https://docs.gupshup.io/docs/set-webhookcallback-url)
 * [What is a Webhook?](https://docs.gupshup.io/docs/what-is-a-webhook)
-* [Gupshup Documentation for further details](https://www.gupshup.io/developer/guide?name=international-sms-api-documentation-en).
 
 ### Steps to Integrate Gupshup with Yellow.ai
 

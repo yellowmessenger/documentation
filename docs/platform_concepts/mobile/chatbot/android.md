@@ -434,7 +434,7 @@ To use this api `apiKey`, `botId`, `deviceToken` and `ymAuthenticationToken` are
             ymConfig.ymAuthenticationToken = "your ymAuthentiction token";
             // Set custom base url in case your bot does not belong to india region and yellow cloud
             // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai
-            // ymConfig.customBaseUrl = "https://r5.cloud.yellow.ai";
+            // ymConfig.customBaseUrl = "`https://r5.cloud.yellow.ai`";
             ymChat.registerDevice(apiKey, ymConfig, new YellowCallback() {
                 @Override
                 public void success() {
@@ -466,7 +466,7 @@ Device token typically is unlinked when the user logs out of the app.
             ymConfig.deviceToken = "your FCM Token";
             // Set custom base url in case your bot does not belong to india region and yellow cloud
             // Example- If your bot is in `r5` or EURO region custom base url would be `https://r5.cloud.yellow.ai
-            // ymConfig.customBaseUrl = "https://r5.cloud.yellow.ai";
+            // ymConfig.customBaseUrl = "`https://r5.cloud.yellow.ai`";
             ymChat.unlinkDeviceToken(apiKey, ymConfig, new YellowCallback() {
                 @Override
                 public void success() {
@@ -505,7 +505,7 @@ To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
             ymConfig.ymAuthenticationToken = "your ymAuthentiction token";
             // Set custom base url in case your bot does not belong to india region and yellow cloud
             // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai
-            // ymConfig.customBaseUrl = "https://r5.cloud.yellow.ai";
+            // ymConfig.customBaseUrl = "`https://r5.cloud.yellow.ai`";
             ymChat.getUnreadMessagesCount(ymConfig, new YellowDataCallback() {
                 @Override
                 public <T> void success(T data) {

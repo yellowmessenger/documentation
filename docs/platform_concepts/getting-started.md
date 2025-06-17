@@ -56,7 +56,7 @@ Here’s what you’ll use under Automate:
 
 * **AI Agent Builder** – Design engaging, dynamic conversations without writing code. [Learn more](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent_intro)
 * **Agentic RAG** – Let our agent pull from documents, knowledge bases, and more to give smart, accurate answers.
-* **AI Copilot for Debugging** – Spot issues in your bot flows and get smart suggestions to fix them. [Learn more](https://docs.yellow.ai/docs/platform_concepts/copilot#docusaurus)
+* **AI Copilot for Debugging** – Spot issues in your bot flows and get smart suggestions to fix them. [Learn more](https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot)
 * **Agent Marketplace** – Pick from ready-to-use templates so you can launch faster.
 
 

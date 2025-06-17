@@ -102,7 +102,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |----|
-| Redirect URI     | https://cloud.yellow.ai/integrations/genericIntegration/oauth/okta/x5 | String   | Callback location where the authorization code or tokens should be sent. It must match the value that was pre-registered in Okta during the client registration. <br/> Copy the value from integration card and pass it here.|
+| Redirect URI     | `https://cloud.yellow.ai/integrations/genericIntegration/oauth/okta/x5` | String   | Callback location where the authorization code or tokens should be sent. It must match the value that was pre-registered in Okta during the client registration. <br/> Copy the value from integration card and pass it here.|
 |Scope| openid profile | String | ID tokens and access tokens can access openid, profile, email, address, phone, offline_access, and groups.|
 
 

@@ -88,4 +88,4 @@ To display PDFs from an API response, store the response in  an object variable,
 2. In **Select variable**, choose the variable that contains the BASE64 file.
 3. **Select an output format**: Choose the PDF option. 
 
-Display the file through the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#6-file). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user. 
+Display the file through the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/file-node). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user. 

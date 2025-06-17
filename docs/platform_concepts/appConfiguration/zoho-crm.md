@@ -29,8 +29,6 @@ To connect your Zoho CRM account with Yellow.ai, follow the these steps:
 
 Add accounts only in the development or staging environment. You can access the connected accounts in the Live/Production environment.
 
-
-
 1. On the left navigation bar, go to **Extensions** > **Integrations**.
 
    ![](https://i.imgur.com/JagYT5w.png)
@@ -39,12 +37,19 @@ Add accounts only in the development or staging environment. You can access the 
 
    ![](https://i.imgur.com/KiYwOg2.png)
 
-3. In **Give account name** provide a unique name only lowercase alphanumeric and underscore is supported) for the integration and click **Connect**.You'll be prompted to sign-in to your Zoho CRM account.
+3. Under **Give account name**, provide a unique identifier. Only lowercase alphanumeric characters and underscores (_) are allowed.
 
-   ![](https://i.imgur.com/Ddj9RiF.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/Zohoaccount.png)
+
+4. Go to your **Zoho account** > **Profile settings** to identify your data center location.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/zohoprofile.png)
    
+5. Based on your Zoho profile, choose the matching data center from the options listed in the drop-down.
 
-4. Once you have signed-in, click **Accept** to authorize Yellow.ai to access **Zoho CRM**.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/datacenter.png)
+
+6. Once you have signed-in, click **Accept** to authorize Yellow.ai to access **Zoho CRM**.
 
    ![](https://i.imgur.com/3bBqQIe.png)
 
