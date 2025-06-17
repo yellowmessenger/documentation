@@ -244,4 +244,30 @@ The chat tickets table updates each row in place, meaning that when a ticket mov
 </details>
 
 
+<details>
+  <summary>Where are the recordings stored? Are they stored securely?</summary>
+  <div>
+    <p>
+     Recordings are securely stored in Amazon Web Services (AWS) S3, specifically in the US region. We use Server-Side Encryption with Amazon S3 managed keys (SSE-S3) to ensure data security and compliance.
+    </p>
+  </div>
+</details>
+
+<details>
+  <summary>How long are the recordings stored?</summary>
+  <div>
+    <p>
+   All recordings are retained for a minimum of one year by default. Recording of a call—or specific portions of a call—can be disabled via bot configuration settings.
+    </p>
+  </div>
+</details>
+
+<details>
+  <summary> Who has access to the stored recordings?</summary>
+  <div>
+    <p>
+   Only authorized members with access to the bot can view or manage the stored recordings.
+    </p>
+  </div>
+</details>
 
