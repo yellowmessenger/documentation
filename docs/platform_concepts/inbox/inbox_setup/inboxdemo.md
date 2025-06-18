@@ -1,122 +1,99 @@
 ---
 title: Use yellow.ai's inbox live chat 
-sidebar_label : Try inbox demo
+sidebar_label: Try inbox demo
 ---
 
-<!--
-While trained flows on yellow.ai bots provide exceptional customer experience, sometimes, customers prefer human interactions. The inbox module is designed to provide bot users with technical customer assistance by helping them resolve any issues they have with the products or services. Inbox Agents are appointed to provide solutions to customer queries, this process is also familiar among industries that choose to promote products, create promotions and provide positive customer experiences.
--->
+When a customer chooses to switch from AI agent interaction to human support, **Inbox** connects them to live agents (who are available to accept chats). This setup ensures seamless handoff between automation and human interaction.
 
-When the customer opts to switch from bot interaction to human interaction, with Inbox, they are connected to the Live agents (who are available to accept live chats). 
+## Configure your AI agent to chat with a live agent
 
-
-To configure your bot to chat with a live agent:
+To enable this functionality, ensure the following:
 
 1. **Automation** must be configured:
-    - With a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to identify *chat with an agent* intent and raise a live chat request to Inbox.          
+   - Use a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) that detects the *chat with an agent* intent and raises a live chat request to Inbox.
+
 2. **Inbox** must be configured:
-    - To receive and reply to chats. 
-    - To allow agents to converse with the bot users by providing **Inbox agent/admin** access.    
-    > Learn how to provide/receive inbox access, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents).
-
-
-:::note
-- This article discusses the creation of [live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) that are received by the Inbox agent for live resolution. **This is a simplified demo**.     
-- Email tickets are configured using different [steps](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro).
-:::
-
-
-
-**On your web browser, you can open 2 different tabs (Automation module and Inbox module)**
-
-
-## Tab 1: Configure Automation flow and request for support 
+   - To receive and respond to chats.
+   - To allow agents to interact with users by granting **Inbox agent/admin** access.  
+   > Learn how to provide Inbox access [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents).
 
 :::note
-You will not be able to create flows on Automation module when the bot is in **Live/Production** mode, hence, try Inbox demo in **Development** or **Sandbox/Staging** mode. 
+- This article explains how to set up a [live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) that Inbox agents can handle in real time. **This is a simplified demo**.
+- Email ticket configuration follows a different process. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro).
 :::
 
-You can follow any of the given three methods to create flow on **Automation** to support **Inbox**. 
-- Import support flow while creating bot (recommended).
-- Use the Inbox setup option provided on the preview tab (recommended).
-- Create a support flow from scratch. 
-- Import support flow from **Marketplace**.
+You can test this setup by opening two browser tabs:  
+- **Tab 1:** Automation module  
+- **Tab 2:** Inbox module
+
+---
+
+## Tab 1: Configure automation flow and request for support
+
+:::note
+You cannot create flows in the Automation module when the AI agent is in **Live/Production** mode. Use **Development** or **Sandbox/Staging** mode for testing the Inbox demo.
+:::
+
+### Create an AI agent
+
+Follow [these steps](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/create-agent) to create an AI agent. Add a prompt that asks users if they’d like to connect with a support agent.
 
 ### Create a flow
 
-#### Steps to import **Connect with support** flow while creating a bot
+#### Option 1: Create a **Support flow** from scratch
 
-1. Click **Create bot** to create a new bot.
-2. Enter the details and select the **Add live chat support to your bot** checkbox. Support flow will get automatically imported. 
+1. Open a new flow and add [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to collect the user's name and query.
+2. Store the collected inputs using [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-4-store-and-access-variables-via-nodes).
+3. Connect to a **Raise ticket** [action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket), passing the collected information.
+4. (Optional) Use advanced options to capture additional fields.
 
-<img src="https://imgur.com/uEGrf1l.png" alt="drawing" width="50%"/>  
+#### Option 2: Import the **Connect with support** template
 
-#### Steps to import **Connect with support** from preview tab
+1. Go to **Automation > Create flow**. Follow [these steps](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow).
+2. Search for [Support templates](https://cloud.yellow.ai/marketplace?name=support) in the Marketplace.
+3. Add a suitable flow to your AI agent.
 
-1. After creating a bot, go to **Automation**. 
-2. Open Preview bot tab and select **Connect to agent** (to configure Inbox flow) or **Others** (to connect to other live agent apps on Integrations).    
+   ![Support template](https://imgur.com/iT97EQi.png)
 
+   > Refer to the [Marketplace guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#-1-choose-a-right-marketplace-template) for help using templates.
 
-<img src="https://imgur.com/PnlqpRg.png" alt="drawing" width="50%"/>    
+### Raise a live chat request
 
+1. Test your flow in the demo AI agent space by sending a message like *connect to an agent* and follow the prompts.
 
-#### Steps to create **Support flow** from scratch
+   <img src="https://imgur.com/rzyvlP7.png" alt="Live chat prompt" width="50%" />
 
-1. Create an [Intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) and add [utterances](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance) to identify the flow that connects a user to a live inbox agent. 
-    - Utterance examples, “Can I talk to a Live agent?”, and “Connect me to Customer Support”.
-2. Add [prompts](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to collect information(name and query) from the users. Store the collected details in the respective [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-4-store-and-access-variables-via-nodes). 
-3. Connect the flow to **Raise ticket action node** (pass the collected information). Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) to learn about the action node. 
-4. Advanced options can be enabled and optional fields can be entered. 
+2. If the live chat is raised successfully and an Inbox agent receives it (as explained in the next section), an **agent connected** message will appear (as defined in the Raise ticket node).
 
-#### Steps to import **Connect with support** template from **Marketplace**
+   <img src="https://imgur.com/6kiU6i4.png" alt="Agent connected" width="50%" />
 
-1. Click **Create flow** from Automation. See [steps](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) here.
-2. Search for [Support templates](https://cloud.yellow.ai/marketplace?name=support)(prebuilt marketplace flows). Add the most suited flow to your bot. 
-
-![image](https://imgur.com/iT97EQi.png)
-
-> Refer to [this](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#-1-choose-a-right-marketplace-template) guide to work with **Marketplace** templates. 
-
-### Raise a request for live chat 
-
-1. After the flow is created, test it on the demo bot space by raising a live chat request. That is, enter a message in the input bar to *connect to an agent*, and provide details. 
-
-    <img src="https://imgur.com/rzyvlP7.png" alt="drawing" width="50%"/>  
-
-2. If the live chat request is raised successfully and the Inbox agent has received the chat (explained in the next section), agent connected message will be displayed (as configured on the raise ticket node).
-
-    <img src="https://imgur.com/6kiU6i4.png" alt="drawing" width="50%"/>    
-
-3. You can navigate to the Inbox screen by clicking **Go to Inbox**.
-
-    ![](https://imgur.com/ndEfeRv.png)
+3. You can now navigate to Inbox to continue the test.
 
 :::note
-You will not be able to raise another live chat request until the current live chat is resolved. 
+You won’t be able to raise another live chat request until the current one is resolved.
 :::
 
----------
+---
 
-## Tab 2: Live chat request and resolution on the Inbox chat screen 
+## Tab 2: Handle live chat requests in Inbox
 
 :::note
-- To test the live agent transfer, you must have **[Inbox agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) access**.
-- Your status (inbox agent) must be **Available**. 
+- You must have [Inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) to test this feature.
+- Your status must be set to **Available**.
 :::
 
-Once you have created the live agent flow, follow these steps to test how tickets get created and get assigned to inbox agents:
+Once the live agent flow is created:
 
-1. Open **Inbox** > **Chats** > **My chats**.
-2. As only you will be the only available Inbox agent to your bot, the live chat will be assigned to you. Make sure you are **Available**. To check your status, click on the profile icon on the right corner, and verify the status drop-down. 
+1. Go to **Inbox > Chats > My chats**.
+2. You’ll be the only available Inbox agent for your AI agent, so the chat will be assigned to you.  
+   To check your status, click on your profile icon in the top-right corner and ensure it is set to **Available**.
 
-    <img src="https://i.imgur.com/I7XrOLT.png" alt="drawing" width="70%"/>    
-    
-3. You will see a live chat raised. It will be displayed as a message on **My chat** page(if the live chat request is successful). You can reply to that message from your live chat screen. This is a real-time conversation on the bot.
+   <img src="https://cdn.yellowmessenger.com/assets/status.png" alt="Agent status" width="40%" />
 
-    ![image](https://imgur.com/yST6Df9.png)
+3. The live chat will appear under **My chats** if raised successfully. You can now reply in real time from the chat screen.
 
-4. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-3-resolve-or-transfer-tickets) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
+   ![Inbox chat screen](https://cdn.yellowmessenger.com/assets/yellow-docs/inbox.png)
 
-    <img src="https://imgur.com/rUez8N9.png" alt="drawing" width="50%"/>    
+4. To end the chat, click **Resolve**. You’ll see a message on *Tab 1* confirming that the live chat has ended.
 
-
+   <img src="https://imgur.com/rUez8N9.png" alt="Resolve chat" width="50%" />

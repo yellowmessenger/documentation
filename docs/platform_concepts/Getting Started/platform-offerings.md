@@ -13,6 +13,12 @@ Welcome to the [Yellow.ai's Cloud platform](https://cloud.yellow.ai)! This docum
 
 ![Overview Page](https://i.imgur.com/NDWatwo.png)
 
+:::note
+
+Yellow.ai’s platform and AI agents require a stable internet connection to function properly. If your connection is weak or unstable, you may see a "Connecting" message on the screen, and the platform or AI agent may not load as expected.
+
+:::
+
 ### Quick links
 
 Use Quick Links to open your frequently used modules and actions fast.
