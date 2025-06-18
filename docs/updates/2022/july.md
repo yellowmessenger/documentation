@@ -36,7 +36,7 @@ You can now monitor all the conversations in real time. The auto-tagging of prob
 #### 1.6 Add API to Sync data to the database
 
 The **Sync database** node is available in Workflow - actions. You can now insert, update or import databases to external sources using APIs. You can update database tables in a scheduled manner using APIs.     
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/sync-database).
 
 #### 1.7 Quick Reply buttons in WhatsApp
 

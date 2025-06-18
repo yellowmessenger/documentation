@@ -204,7 +204,7 @@ For connecting Azure AD with YM bot, following details need to be obtained using
 
 5. Goto **Authentication** > **Add a platform** > **Web** > **Add the redirect URL** > **Save**.
 
-   Redirect-Url: https://app.yellowmessenger.com/integrations/azureauth/
+   Redirect-Url: `https://app.yellowmessenger.com/integrations/azureauth/`
 
 6. Add/Remove permission and Grant Admin consent for the App.
 

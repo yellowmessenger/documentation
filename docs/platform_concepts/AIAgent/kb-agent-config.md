@@ -171,8 +171,8 @@ The following options control how content appears in the Kb agent's responses:
 
 Setting | Description |	Example
 --------|-------------|--------
-Show links in response as hyperlinks |	When enabled, any URLs in the response are shown as clickable hyperlinks.	| https://example.com/policy.pdf becomes View Policy Document.
-Show links used for summarisation | When enabled, the Kb agent displays the source links it referred to while generating the summary. | If enabled, users might see a source like: “Based on information from https://example.com/policy” at the end of the response.
+Show links in response as hyperlinks |	When enabled, any URLs in the response are shown as clickable hyperlinks.	| `https://example.com/policy.pdf` becomes View Policy Document.
+Show links used for summarisation | When enabled, the Kb agent displays the source links it referred to while generating the summary. | If enabled, users might see a source like: “Based on information from `https://example.com/policy` at the end of the response.
 Show images and videos in responses | When enabled, the agent can include embedded images or videos in its answers. | A refund policy response could include a video thumbnail or an image chart explaining timelines.
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/otherconfig.png)

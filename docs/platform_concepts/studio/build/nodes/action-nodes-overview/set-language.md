@@ -23,7 +23,7 @@ To configure set language node, follow these steps:
   
 2. [Add the preferred languages](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#set-your-preferred-language-during-bot-conversations) to your bot.
 
-3. Go to the flow and include a [Quick reply node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#7-quick-replies). Create different buttons for different languages and assign the ISO code as button values to the respective language option.
+3. Go to the flow and include a [Quick reply node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/quick-replies). Create different buttons for different languages and assign the ISO code as button values to the respective language option.
 
 4. Store the response of the Quick Reply node in a variable.
 
