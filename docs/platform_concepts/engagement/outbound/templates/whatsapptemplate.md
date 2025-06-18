@@ -98,7 +98,7 @@ Variable names should not contain spaces. Only underscores (_) are permitted for
    Quick replies | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters. <br/>For more details, see [Quick replies](#4-add-quick-replies-in-whatsapp-template).
 
 
-### Options to create WhatsApp carousel template
+### Options to create WhatsApp carousel template¸
 
   Other than the options available in common, here are some options specific to WhatsApp carousel template:
 
