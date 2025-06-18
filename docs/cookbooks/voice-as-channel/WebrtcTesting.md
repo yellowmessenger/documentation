@@ -6,7 +6,7 @@ sidebar_label : WebRTC for voice agents testing
 
 Yellow.ai offers a **WebRTC (Web Real-Time Communication)** calling feature that enables browser-based calls directly from the platform. This allows bot developers to simulate and experience agent interactions with both Indian and international numbers—without the need to procure or map PSTN phone numbers. 
 
-By removing the dependency on external telephony systems, it significantly speeds up voice bot development and testing.
+By removing the dependency on external telephony systems, it significantly speeds up voice agent development and testing.
 
 This feature is especially useful for testing voice agents and previewing their responses for customers outside India (e.g., in the US, UK, or UAE).
 
@@ -71,7 +71,7 @@ To test a voice agent using the WebRTC feature, follow these steps:
 
 When testing a voice agent and the **agent transfer** flow is triggered, the call will remain active for up to **2 minutes** before being automatically terminated by the system.  
 
-> This 2-minute limit applies **only** when the call is transferred to a **human agent**. All other bot interactions are not subject to this timeout.
+> This 2-minute limit applies **only** when the call is transferred to a **human agent**. All other agent interactions are not subject to this timeout.
 
 
 #### (Optional) Set a Caller Line Identity (CLI)

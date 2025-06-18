@@ -1,28 +1,28 @@
 ---
-title : Call Details Report (CDR) of your voice bot on Insights module
+title : Call Details Report (CDR) of your voice agent on Insights module
 sidebar_label : Auto-generated call details report 
 ---
 
 
 :::note
-In Data Explorer, CDR is available only for voice bots. The data will be updated after the call is completed. 
+In Data Explorer, CDR is available only for voice agents. The data will be updated after the call is completed. 
 :::
 
-This article focuses on **Call details report** (CDR) for voice bots, a database table maintained by yellow.ai platform which records more than 15+ important metrics (like start time, duration, recording url etc) for each call.
+This article focuses on **Call details report** (CDR) for voice agents, a database table maintained by yellow.ai platform which records more than 15+ important metrics (like start time, duration, recording url etc) for each call.
 
 
 ## 1. Call details report overview
 
-CDR is a report of telephony data obtained from each call (bot conversation with customer) for reporting and analytics purposes. Parameters of every call made through the **yellow telephony system** is recorded in the CDR, making it a reliable source of truth for call-related information.
+CDR is a report of telephony data obtained from each call (voice agent conversation with customer) for reporting and analytics purposes. Parameters of every call made through the **yellow telephony system** is recorded in the CDR, making it a reliable source of truth for call-related information.
 
 - CDR fields help businesses gain valuable insights into their call center operations and customer interactions.
 - The CDR table contains several fields that record various details about the call, such as **call duration, caller ID, called number, call status, and call type**. CDR fields are explained in the [last section](#cdr) of this article. 
-- By analyzing CDR data, businesses can **identify trends and patterns** in their call center operations, **improve call quality**, and **enhance customer experience**, make **data-driven decisions** and **optimize** the voice bot operations for maximum efficiency and effectiveness.
+- By analyzing CDR data, businesses can **identify trends and patterns** in their call center operations, **improve call quality**, and **enhance customer experience**, make **data-driven decisions** and **optimize** the voice agent operations for maximum efficiency and effectiveness.
 
 Examples of insights you can derive from the auto generated call details report: 
 - Retrieve a list of users who disconnected calls during the last 7 days.
 - Retrieve the answering rate for a specific campaign (identified by its ID) that was launched last Sunday.
-- Retrieve daily total calls handled by the voice bot.
+- Retrieve daily total calls handled by the voice agent.
 
 
 -------
@@ -30,7 +30,7 @@ Examples of insights you can derive from the auto generated call details report:
 ## 2. Access call details(CDR) on Data Explorer
 
 
-To access the CDR for voice bots: 
+To access the CDR for voice agent: 
 1. Navigate to **Insights** > **Data Explorer**.
     ![](https://i.imgur.com/dmQSwnB.png)
 2. Open **Call details report**. You can see the report for the last 31 days. 
@@ -49,7 +49,7 @@ On the data explorer, you have the option to filter or summarize the CDR data ac
 
 ### Use case 1: Create custom dasboards
 
-Suppose you're a ticket booking center using the yellow.ai voice bot, and you want to track the number of daily calls due to the different offers you provide. Here are the steps you can follow:
+Suppose you're a ticket booking center using the yellow.ai voice agent, and you want to track the number of daily calls due to the different offers you provide. Here are the steps you can follow:
 
 1. Open **Call details report** and click on the **Summarize** button.
 2. Click on **Add metrics** and select **Number of distinct values of**.
@@ -76,11 +76,11 @@ Suppose you're a ticket booking center using the yellow.ai voice bot, and you wa
 
 ### Use case 2: Schedule reports to be sent to your email
 
-Suppose you are a new support center on the yellow.ai voice bot, and you need to send a weekly report of the voice bot's billing duration to the accounts department. Here are the steps you can follow:
+Suppose you are a new support center on the yellow.ai voice agent, and you need to send a weekly report of the voice agent's billing duration to the accounts department. Here are the steps you can follow:
 
 1. Open the **Call Details Report** and click the **Summarize** button.
-2. Click **Add metrics** and select **Number of distinct values of**, then choose **Call ID** to fetch the unique calls attended by the bot.
-3. Click **Add metrics** and select **Sum of** and **Voice bot billing duration** to calculate the total billing duration for the selected timestamp.
+2. Click **Add metrics** and select **Number of distinct values of**, then choose **Call ID** to fetch the unique calls attended by the voice agent.
+3. Click **Add metrics** and select **Sum of** and **voice agent billing duration** to calculate the total billing duration for the selected timestamp.
 4. To filter the data further and get weekly stats, choose **Timestamp** under **Group by** and select **Week**. Click **Apply**.
 
     ![](https://i.imgur.com/yITVlXG.png)
@@ -98,7 +98,7 @@ Suppose you are a new support center on the yellow.ai voice bot, and you need to
 
 ----
 
-### Use case 3: Voice bot billing analysis
+### Use case 3: voice agent billing analysis
 
 VoIP/IVR providers aim to bill companies accurately for channel usage. Analyzing call durations is pivotal. Quick disconnects within 5 seconds may not yield valuable insights and can be excluded from billing. For durations between 15 to 30 seconds, one billing rate applies, while calls exceeding 30 seconds fall into a different billing band. The Call Details report provides actionable insights for such billing scenarios. Follow these steps:
 
@@ -145,11 +145,11 @@ Call duration refers to the length of time that a phone call. It is the amount o
 
 ### Voice Bot Duration
 
-Voice bot duration, in seconds refers to the length of time that a voice bot or automated voice response system interacts with a caller during a phone call. This duration starts when the caller is first connected to the voice bot and ends when the call is transferred to a live agent or when the call is disconnected. The voice bot duration can vary depending on the complexity of the bot's responses and the options provided to the caller.
+Voice agent duration, in seconds refers to the length of time that a voice agent or automated voice response system interacts with a caller during a phone call. This duration starts when the caller is first connected to the voice agent and ends when the call is transferred to a live agent or when the call is disconnected. The voice agent duration can vary depending on the complexity of the voice agent's responses and the options provided to the caller.
 
 ### Voice Bot Bill Duration
 
-The duration, in seconds, of the conversation between the user and the voice bot, rounded up to the nearest Voice Billing Pulse interval for billing purposes.
+The duration, in seconds, of the conversation between the user and the voice agent, rounded up to the nearest Voice Billing Pulse interval for billing purposes.
 
 ### Campaign ID
 
@@ -165,8 +165,8 @@ Hangup Reason is a valuable metric for analyzing call center performance and ide
 
 Hangup source/Disconnected by specifies the party that disconnected the calls. The possible values for this column are **User/Bot/System**.
 - USER: When the customer itself disconnects the call.
-- BOT: When the bot disconnects the call after providing the necessary information.
-- SYSTEM: When neither bot nor the user disconnects the call and the call is disconnected due to any of the system issues. 
+- BOT: When the voice agent disconnects the call after providing the necessary information.
+- SYSTEM: When neither voice agent nor the user disconnects the call and the call is disconnected due to any of the system issues. 
 
 
 Hangup Source can provide useful information for analyzing call quality, identifying problems with the network or equipment, and understanding the reasons for call failures.
@@ -189,7 +189,7 @@ Specifies the direction of the call, either Inbound or Outbound. It could be **i
 
 ### Recording URL
 
-An URL to the end-to-end call recording of the call, which is usually recorded by default. Users have the option to pause recording during certain sections of the call or stop recording altogether as part of the bot logic.
+An URL to the end-to-end call recording of the call, which is usually recorded by default. Users have the option to pause recording during certain sections of the call or stop recording altogether as part of the voice agent logic.
 The recording URL can be used to retrieve and listen to the recording of the call.
 
 ### SIP Code 
