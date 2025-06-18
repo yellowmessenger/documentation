@@ -28,7 +28,7 @@ To connect Freshservice ITSM, follow these steps:
    ![](https://i.imgur.com/GKoMiy2.png)
    
 :::note
-The format of this field should be https://yellowtest.freshservice.com/api/v2 and this is also to be provided by the client/freshservice spoc of the client.
+The format of this field should be `https://yellowtest.freshservice.com/api/v2` and this is also to be provided by the client/freshservice spoc of the client.
 :::
 
 4. Click **Connect**.  The integration will be enabled for the bot.

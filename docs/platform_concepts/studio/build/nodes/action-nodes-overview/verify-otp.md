@@ -41,7 +41,7 @@ To configure Verify OTP node, follow these steps:
 
     ![](https://imgur.com/4E4E2Xh.png)
 
-3. Add a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text) to **Success** and **Fallback**. Success indicates that verification of the otp is successful (for example, "Your OTP has been successfully verified"). Fallback indicates that the verification has failed (for example, "The OTP verification failed. Please try again").
+3. Add a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) to **Success** and **Fallback**. Success indicates that verification of the otp is successful (for example, "Your OTP has been successfully verified"). Fallback indicates that the verification has failed (for example, "The OTP verification failed. Please try again").
    
    <img src="https://imgur.com/jt5Tm6d.png" alt="drawing" width="80%"/>
 

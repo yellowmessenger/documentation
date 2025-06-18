@@ -34,7 +34,7 @@ To integrate Yellow.ai with CleverTap, follow these steps -
 
    ![](https://i.imgur.com/eqNJf36.png)
 
-5. Register https://cloud.yellow.ai/integrations/genericIntegration/clevertap as a static URL on the CleverTap dashboard to trigger Yellow.ai campaigns. 
+5. Register `https://cloud.yellow.ai/integrations/genericIntegration/clevertap` as a static URL on the CleverTap dashboard to trigger Yellow.ai campaigns. 
 6. Generate regular templates through the [Template creation module](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview) and use those template names directly in CleverTap.
 7. To dynamically change text within a template, you can make use of **Freeform templates**. These will help you to pass dynamic text on CleverTap. For this, you need to generate two separate templates.
 

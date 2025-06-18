@@ -138,8 +138,8 @@ You can add website content to your Knowledge base by providing specific URLs. T
         2. To exclude specific URLs from being crawled, turn on the toggle and choose a filter type:
 
             i. **Contains**: This option will exclude any URL that contains the specified keyword or phrase. Example: Entering ?sessionid= excludes URLs like www.site.com/page?sessionid=123.<br/>
-            ii. **Begins with**: This option will exclude all URLs that start with the specified prefix. Example: Entering https://dev.example.com/ excludes all pages starting with that path.<br/>
-            iii. **Equals to:** This option will exclude only the URL that exactly matches the specified text. Example: Entering https://example.com/old_page.html excludes only that exact page.
+            ii. **Begins with**: This option will exclude all URLs that start with the specified prefix. Example: Entering `https://dev.example.com/` excludes all pages starting with that path.<br/>
+            iii. **Equals to:** This option will exclude only the URL that exactly matches the specified text. Example: Entering `https://example.com/old_page.html` excludes only that exact page.
 
             <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/toogleenabler.png" alt="drawing" width="80%"/>
         

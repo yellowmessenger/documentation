@@ -72,9 +72,9 @@ To create a Category, follow these steps:
 
 ### Create a Workflow
 
-Workflows are background processes that are built using only [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes and operate along with the conversational flow. Workflows enhance the AI-agent's capabilities by performing various tasks such as calling functions, executing APIs, and database operations. This configuration allows you to create workflows that can be linked to categories and invoked as needed within a conversation. 
+Workflows are background processes that are built using only [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes and operate along with the conversational flow. Workflows enhance the AI-agent's capabilities by performing various tasks such as calling functions, executing APIs, and database operations. This configuration allows you to create workflows that can be linked to categories and invoked as needed within a conversation. 
 
-For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) operates in the background, synchronizing data with an external database while the AI-agent executes the rest of the flow.
+For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/sync-database) operates in the background, synchronizing data with an external database while the AI-agent executes the rest of the flow.
 
 To create a Workflow, follow these steps:
 

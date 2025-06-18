@@ -56,8 +56,8 @@ To add a sitemaps or URLs, follow these steps:
 3. If you want to exclude any specific URL enable the toggle button and select the following options:
 
     i. **Contains**: This option will Exclude any URL containing the specified keyword or phrase anywhere within it. Useful for filtering out patterns. Example: Entering ?sessionid= excludes URLs like www.site.com/page?sessionid=123
-    ii. **Begins with**: This option will exclude any URL that starts exactly with the specified prefix. Ideal for excluding entire directories or subdomains. Example: Entering https://dev.example.com/ excludes all pages starting with that path.
-    iii. **Equals to:** Excludes only URLs that are an exact match to the specified text. Use this for specific, individual pages. Example: Entering https://example.com/old_page.html excludes only that exact page.
+    ii. **Begins with**: This option will exclude any URL that starts exactly with the specified prefix. Ideal for excluding entire directories or subdomains. Example: Entering `https://dev.example.com/` excludes all pages starting with that path.
+    iii. **Equals to:** Excludes only URLs that are an exact match to the specified text. Use this for specific, individual pages. Example: Entering `https://example.com/old_page.html` excludes only that exact page.
     
 4. Select the Sitemap storage location and click **Next**.
 

@@ -411,8 +411,8 @@ To use this api `apiKey`, `botId`, `deviceToken` and `ymAuthenticationToken` are
     config.ymAuthenticationToken = "your ymAuthentication token"
 
     // Set custom base url in case your bot does not belong to india region and yellow cloud
-    // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai
-    // config.customBaseUrl = "https://r5.cloud.yellow.ai"
+    // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai`
+    // config.customBaseUrl = "`https://r5.cloud.yellow.ai`"
 
     YMChat.shared.registerDevice(apiKey: apiKey, ymConfig: config) {
         print("Success")
@@ -432,8 +432,8 @@ Device token typically is unlinked when the user logs out of the app.
     // Set the FCM token as device token, this is required so that it can be removed and customer stop receiving the notification
     config.deviceToken = "your FCM Token"
     // Set custom base url in case your bot does not belong to india region and yellow cloud
-    // Example- If your bot is in `r5` or EURO region custom base url would be `https://r5.cloud.yellow.ai
-    // config.customBaseUrl = "https://r5.cloud.yellow.ai";
+    // Example- If your bot is in `r5` or EURO region custom base url would be `https://r5.cloud.yellow.ai`
+    // config.customBaseUrl = "`https://r5.cloud.yellow.ai`";
 
     YMChat.shared.unlinkDeviceToken(apiKey: apiKey, ymConfig: config) {
         print("Token removed successfully")
@@ -457,8 +457,8 @@ To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
     // `ymAuthenticationToken` is required to identify the right
     config.ymAuthenticationToken = "your ymAuthentication token"
     // Set custom base url in case your bot does not belong to india region and yellow cloud
-    // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai
-    // config.customBaseUrl = "https://r5.cloud.yellow.ai";
+    // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai`
+    // config.customBaseUrl = "`https://r5.cloud.yellow.ai`";
 
     YMChat.shared.getUnreadMessagesCount(ymConfig: config) { count in
         print("Unread message count:" + count)

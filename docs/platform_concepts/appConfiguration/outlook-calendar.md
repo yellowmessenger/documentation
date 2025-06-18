@@ -20,7 +20,7 @@ Yellow.ai integrates with the Outlook calendar using the OAuth 2.0  authenticati
 ![](https://i.imgur.com/bF6XPpu.png)
 
 
-3. To get the Redirect URI details, retrieve the redirect URL from the Outlook Calendar integration card in the Yellow.ai platform integration module. For e.g., https://cloud.yellow.ai/integrations/genericIntegration/oauth/outlook-calendar
+3. To get the Redirect URI details, retrieve the redirect URL from the Outlook Calendar integration card in the Yellow.ai platform integration module. For example, `https://cloud.yellow.ai/integrations/genericIntegration/oauth/outlook-calendar`.
 
 ![](https://i.imgur.com/1i0Z6MV.png)
 
