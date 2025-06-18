@@ -1627,7 +1627,7 @@ module.exports = {
 // Voice docs 
 {
   type: "category",
-  label: "AI Voice bot builder",
+  label: "AI Voice agent builder",
   link: {type: 'doc', id: 'cookbooks/voice-as-channel/vbintro'},
   collapsed: true,
   items: [
@@ -1640,7 +1640,7 @@ module.exports = {
 // building  
 {
   type: "category",
-  label: "Build a voice bot",
+  label: "Build a voice agent",
   link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
   collapsed: true,
   items: [
@@ -1653,7 +1653,7 @@ module.exports = {
 // Reporting  
 {
   type: "category",
-  label: "Voice bot analytics and reports",
+  label: "Voice agent analytics and reports",
   //link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
   collapsed: true,
   items: [
@@ -1672,7 +1672,7 @@ module.exports = {
 
 {
   type: "category",
-  label: "Outbound campaign via. voice bot",
+  label: "Outbound campaign via. voice agent",
   collapsed: true,
   items: [
     "cookbooks/voice-as-channel/OBcampaign/introOBC",
@@ -1685,7 +1685,7 @@ module.exports = {
 // Voice Capabilities (usecases)
  {
     type: "category",
-    label: "Capabilities of a voice bot",
+    label: "Capabilities of a voice agent",
     collapsed: true,
     items: [
       "cookbooks/voice-as-channel/usecases/interrupthandling",
