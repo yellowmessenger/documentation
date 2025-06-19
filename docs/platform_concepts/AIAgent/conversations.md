@@ -134,12 +134,12 @@ For example, if a user provides their name, the bot can use it in future interca
 When creating an input, different input types can be selected based on the use case:
 
 * **[Name](#get-name-input)** – Captures the user’s name.
-* **Email** – Collects the user’s email address.
-* **Phone** – Gets the user’s phone number.
-* **Quick Reply** – Provides users with predefined response options.
-* **Carousel** – Displays multiple options in a scrollable format.
-* **Date** – Allows users to select or input a date.
-* **Custom** – Enables a more flexible input type tailored to specific needs.
+* **[Email](#email)** – Collects the user’s email address.
+* **[Phone](#phone)** – Gets the user’s phone number.
+* **[Quick reply](#add-quick-reply-buttons-to-the-ai-agent)** – Provides users with predefined response options.
+* **[Carousel](#carousel)** – Displays multiple options in a scrollable format.
+* **[Date](#date)** – Allows users to select or input a date.
+* **[Custom](#custom)** – Enables a more flexible input type tailored to specific needs.
 
 ### Create input
 
@@ -194,7 +194,7 @@ Others | Enable **Mark user input as optional** checkbox:<br/>*	If checked, user
 
 ### Phone
 
-Use **Get phone input**    to collect and store a user’s phone number during a conversation. The collected phone number is stored in a variable. You , such as sending notifications, verifying user identity, or to order details.
+Use the **Get Phone input** action to collect and store a user’s phone number during a conversation. The collected number is saved in a variable and can be used for tasks such as sending notifications, verifying the user’s identity, or linking to order details.
 
 The table below describes the fields available in the Get Phone Input action:
 
@@ -260,7 +260,7 @@ The table below describes each field in the date configuration:
 Field name | Description
 -----------|------------
 Input name	| Enter the name where the user's selected date will be stored.
-Data type |	Default data type is displayed. For carousel input, it is set as "Date".
+Data type |	Default data type is displayed. For date input, it is set as "Date".
 Description | A brief explanation of the purpose of the date input field.
 Validation | Ensures that the entered date meets specified constraints.<br/> **Range: Min. / Max:**	Allows setting a minimum and maximum date range to restrict user input within a valid timeframe.<br/> **Custom instructions**: Specifies the format in which the date should be entered or displayed (example, YYYY-MM-DD, MM/DD/YYYY).
 Others | Enable **Mark user input as optional** to allow users to skip providing a date if they prefer not to share it.
@@ -503,9 +503,10 @@ You need to create a backend workflow that accepts location inputs, calls a weat
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/apimap.png)
 
-6. Add an Output node to return the mapped values and set:
-    i. **Type of output**: Choose **Variable** as the output type.
-    ii. **Select a variable**: Select a variable storing the API response.
+6. Add an Output node to return the mapped values and set:<br/>
+
+    i. **Type of output**: Choose **Variable** as the output type.<br/>
+    ii. **Select a variable**: Select a variable storing the API response.<br/>
     iii. **Path**: Use dot notation (example, main.temp) to extract specific values from the API response. 
 
 * This set up completes the workflow definition. You can now use the workflow in the conversation.
