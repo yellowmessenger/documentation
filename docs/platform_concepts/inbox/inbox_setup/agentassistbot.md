@@ -51,8 +51,8 @@ Agent assist bot helps agents efficiently complete their tasks directly within t
 2. Create multiple [custom flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) within **Automation** based on your business use cases. 
     > All the data within Inbox (like contacts and custom fields) is accessible in **Automation**.
 3. Test and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot. 
-4. Navigate to **Channels** > **Chat widgets** > **Settings** and enable the option **Show the conversation history** and disable **Create a new session for every new tab**.
-    ![](https://imgur.com/oCaGBHw.png)
+4. Open **Extensions** > **Chat widgets** > **Settings** and enable the option **Show the conversation history** and disable **Create a new session for every new tab**.
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/chatwidgetenable.png)
 5. After completing the above steps, reach out to Yellow.ai's Inbox team to integrate your Assist bot with the chat/ticket screen. 
 
 -------
@@ -157,10 +157,12 @@ To use the payload details within flows, follow these steps:
 > Inbox agents and inbox admins have access to the assist bot within the chat/ticket screen.
 
 - Inside the Inbox chat/ticket screen, simply press Cmd + K (Ctrl + K on Windows) or click on the assist bot icon within the chat interface to open the assist bot.
-    ![](https://imgur.com/9I1LQll.png)          
-    ![image](https://imgur.com/Iq0AfAt.png)
-
-
 - Each chat/ticket session will include a dedicated bot instance, allowing agents to ask questions or perform various operations tailored to the ongoing customer interaction.
-    ![](https://imgur.com/kGgtMwe.png)
+    
+![](https://imgur.com/9I1LQll.png)          
 
+**Chat screen**: 
+![](https://cdn.yellowmessenger.com/assets/yellow-docs/chataibot.png)
+
+**Email screen**: 
+![image](https://imgur.com/Iq0AfAt.png)
