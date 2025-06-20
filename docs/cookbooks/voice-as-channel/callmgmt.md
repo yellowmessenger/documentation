@@ -4,7 +4,7 @@ sidebar_label : Call management options
 ---
 
 
-Managing calls effectively is crucial to ensure seamless customer experience. The Yellow.ai platform offers several advanced call management options that enable you to configure your voice bot as per your specific requirements. 
+Managing calls effectively is crucial to ensure seamless customer experience. The Yellow.ai platform offers several advanced call management options that enable you to configure your voice agent as per your specific requirements. 
 
 This article provides an overview of the additional call management options available on the Yellow.ai platform like **call disconnection** and **call recording** and how to configure them.
 
@@ -20,7 +20,7 @@ Enabling the call disconnect option will atutomatically disconnect the voice cal
 
 **Use-cases:** 
 - Call disconnect can be used to **end a use case**.
-- When the **bot is unable to understand the user's response** due to noise or any other reason, you can add a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to identify the user's intent and disconnect the call. 
+- When the **agent is unable to understand the user's response** due to noise or any other reason, you can add a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to identify the user's intent and disconnect the call. 
 - When the user's input is not relavant despite repeated attempts, you can set maxium number of retries on the voice input node and disconnect once the limit is reached. 
 
 On the node (question, text, voice input, etc.) that you want to disconnect the call, configure the following: 
@@ -35,7 +35,7 @@ On the node (question, text, voice input, etc.) that you want to disconnect the 
 
 ------
 
-## 2. Manage call recording through bot flows 
+## 2. Manage call recording through agent flows 
 
 
 By default, the **end-to-end call is always recorded**, but you can change this behavior (**pause, stop, resume**) based on specific cases.

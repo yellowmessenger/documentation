@@ -1,9 +1,9 @@
 ---
-title:  Set up outbound campaign via. yellow.ai voice bots
+title:  Set up outbound campaign via. yellow.ai voice agents
 sidebar_label : Set up outbound campaign 
 ---
 
-In this article, you will learn how to select an entry rule and design a campaign flow for voice bots.
+In this article, you will learn how to select an entry rule and design a campaign flow for voice agents.
 
 :::info
 
@@ -11,15 +11,15 @@ In this article, you will learn how to select an entry rule and design a campaig
 
 1. **User segmentation**: Grouping users based on shared characteristics, such as interests or behaviors, is known as user segmentation. There are two types of segments: static segments, which remain constant, and dynamic segments, which update automatically based on user data. To send targeted campaigns, you need to have user data grouped into segments in **user360**. Segments like product interest or recent purchasers can be created for effective messaging.
     > Follow the steps provided [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) to create and manage user segments
-2. **Events**: an event refers to a recognized occurrence by the bot (asynchronous). In **Automation**, there are various events available, such as widget, inbox, engage, integration, user inactivity, schedule, User 360, and custom events, which are used to handle occurrences and perform tasks.
+2. **Events**: an event refers to a recognized occurrence by the voice agent (asynchronous). In **Automation**, there are various events available, such as widget, inbox, engage, integration, user inactivity, schedule, User 360, and custom events, which are used to handle occurrences and perform tasks.
     > Learn more about events and the steps to create custom events [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub).
 :::
 
 
-To create a voice bot campaign, follow these steps:
+To create a voice agent campaign, follow these steps:
 
 
-## Step 1: Create a voice bot campaign workflow 
+## Step 1: Create a voice agent campaign workflow 
 
 1. Log in to your [yellow.ai](https://cloud.yellow.ai/) account. Open **Engage** > **Outbound**. 
 2. On the **Flows** tab, select **+Create workflow**.
@@ -27,7 +27,7 @@ To create a voice bot campaign, follow these steps:
 
 ------
 
-## Step 2: Select entry rule for the voice bot campaign
+## Step 2: Select entry rule for the voice agent campaign
 
 To get started, follow the steps below: 
 
@@ -50,8 +50,8 @@ To get started, follow the steps below:
 ## Step 3: Add voice call node and configure the campaign
 
 :::note
-- Voice calls can only be added to the workflow if the voice bot has an IVR (Interactive Voice Response) configuration in place.
-- It is necessary to configure a flow that the voice bot will follow when the campaign is triggered. This flow will serve as a template for voice calls.
+- Voice calls can only be added to the workflow if the voice agent has an IVR (Interactive Voice Response) configuration in place.
+- It is necessary to configure a flow that the voice agent will follow when the campaign is triggered. This flow will serve as a template for voice calls.
 - If you intend to use other message channels such as SMS or Email, you need to configure the senderID/channel and ensure that a corresponding template is available for that particular channel.
 :::
 
@@ -61,7 +61,7 @@ To initiate a voice call, follow the steps below:
     <img  src="https://imgur.com/wtMZcSL.png" width="90%"/>
     
 2. Enter the details.
-    - **Enable answering machine detection (AMD)** : You have the option to enable AMD, which helps determine if a voice call made by the bot is answered by a human or a machine (such as a voicemail system).
+    - **Enable answering machine detection (AMD)** : You have the option to enable AMD, which helps determine if a voice call made by the agent is answered by a human or a machine (such as a voicemail system).
     - **Bot flow**: From the dropdown menu, select the desired flow that should be triggered when the campaign call is made to customers. All available flows in Automation are listed here.
     - **From**: Choose the IVR number(s) from which the voice call should be made. If multiple IVRs are added, the calls will be made randomly from any of those numbers.
     - **To**: Select the variable that contains the user identifier. Click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow) for steps on setting up user identification.
@@ -79,7 +79,7 @@ You can add [conditions](https://docs.yellow.ai/docs/platform_concepts/engagemen
 
 -------
 
-## Step 4: Add goal to end the voice bot campaign
+## Step 4: Add goal to end the voice agent campaign
 
 To prevent spamming users, it is recommended to add a campaign goal. When an event is detected that signifies the completion of the goal, users will exit the flow and the campaign will end.
 
@@ -94,12 +94,12 @@ Follow these steps to add a new goal to the flow:
 
 -----
 
-## Step 5: Publish workflow for voice bot campaign 
+## Step 5: Publish workflow for voice agent campaign 
 
 1. Click on **Publish** to publish the flow and make it active.
     ![](https://imgur.com/uxNgtUQ.png)
 2. Once the campaign is published, it will automatically run for users who meet the entry rule criteria.
-3. To monitor the status of the voice bot campaign, track the users who have entered the campaign, and keep a count of the number of times the goal has been achieved, refer to the flow campaign page.
+3. To monitor the status of the voice agent campaign, track the users who have entered the campaign, and keep a count of the number of times the goal has been achieved, refer to the flow campaign page.
     ![](https://imgur.com/8NXJkqU.png)
 
 

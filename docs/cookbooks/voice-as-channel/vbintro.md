@@ -1,11 +1,11 @@
 ---
-title : Enhance your CX with Yellow.ai's voice bot today!
-sidebar_label : Voice bot
+title : Enhance your CX with Yellow.ai's voice agent today!
+sidebar_label : Voice agent
 ---
 
 
 
-**Why use yellow.ai's cloud platform to build your first AI-voice bot?**
+**Why use yellow.ai's cloud platform to build your first AI-voice agent?**
 
 
 | What we provide? | What you can do? |
@@ -16,10 +16,10 @@ sidebar_label : Voice bot
 | **24/7 availability** | Be there for your customers anytime, anywhere with round-the-clock support, building loyalty and trust by providing instant assistance whenever it's needed. |
 | **Personalize experiences** | Capture customer data and tailor interactions, offering targeted suggestions, promotions, and support that create personalized experiences and foster long-lasting relationships.|
 | **Data-driven insights**  | Gain valuable insights from customer interactions, uncover trends, and optimize processes to make informed decisions and enhance your customer service strategies.|
-| **Easy integration** | Experience a seamless integration process with Yellow.ai's user-friendly platform, getting you up and running quickly with their intuitive bot development and deployment tools.|
+| **Easy integration** | Experience a seamless integration process with Yellow.ai's user-friendly platform, getting you up and running quickly with their intuitive agent development and deployment tools.|
 
 :::info
-:unlock: :	 **[Sign up today](https://cloud.yellow.ai/auth/login)** to integrate your business with Yellow.ai's voice bot and elevate your business to new heights.
+:unlock: :	 **[Sign up today](https://cloud.yellow.ai/auth/login)** to integrate your business with Yellow.ai's voice agent and elevate your business to new heights.
 
 :::
 

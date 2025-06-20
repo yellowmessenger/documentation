@@ -1,21 +1,21 @@
 ---
 title : Introduction to Conversational Voice AI - Benefits and Applications for Businesses
-sidebar_label : Voice bot overview 
+sidebar_label : Voice agent overview 
 ---
 
 
 In this article, you will learn: 
 1. [Introduction to conversational voice AI](#intro) 
-2. [Deploying and understanding voice bots for business](#fundamentals)
-3. [Yellow.ai's complete voice bot solution provided by each module](#ecosystem) 
+2. [Deploying and understanding voice agents for business](#fundamentals)
+3. [Yellow.ai's complete voice agent solution provided by each module](#ecosystem) 
 
 
 ------
 
-## 1. AI Voicebot Demo 
+## 1. AI Voice agent Demo 
 
 :::info
-- **Visit our [voice channel](https://yellow.ai/voice-channel/) to listen to the live calls attended by the yellow.ai voice bots.** 
+- **Visit our [voice channel](https://yellow.ai/voice-channel/) to listen to the live calls attended by the yellow.ai voice agents.** 
 - Post your queries on [voice community](https://community.yellow.ai/c/voice/31).
 - Contact the platform team for support and pricing details.
 :::
@@ -26,7 +26,7 @@ To begin with, let's understand Conversational AI before delving into its subset
 
 ### What is conversational AI?
 
-Conversational AI, short for Conversational Artificial Intelligence, refers to the utilization of technology and algorithms to create lifelike dialogues and interactions between humans and machines. By incorporating Natural Language Processing (NLP), Machine Learning (ML), and other related technologies, chatbots, virtual assistants, and other automated systems can communicate with users in a way that is natural and intuitive, similar to how humans converse with one another.
+Conversational AI, short for Conversational Artificial Intelligence, refers to the utilization of technology and algorithms to create lifelike dialogues and interactions between humans and machines. By incorporating Natural Language Processing (NLP), Machine Learning (ML), and other related technologies, chat agents, virtual assistants, and other automated systems can communicate with users in a way that is natural and intuitive, similar to how humans converse with one another.
 
 To comprehend user input, conversational AI systems employ various techniques such as speech recognition, text analysis, and semantic understanding, and can tailor their responses to meet the user's needs and business preferences. These systems have a wide range of applications, from customer service and healthcare to education and entertainment, providing personalized support, answering questions, and automating mundane tasks.
 
@@ -46,30 +46,30 @@ Overall, Conversational Voice AI holds immense potential to improve accessibilit
 
 ------
 
-### Adapting to customer needs with voice bots
+### Adapting to customer needs with voice agents
 
-In today's fast-paced world, customer preferences evolve rapidly, and businesses must keep up to stay ahead of the competition and meet their customers' changing needs. Customers increasingly prefer automated self-service options like mobile applications or business chatbot setups to address simple concerns, such as updating personal account details or canceling an order.
+In today's fast-paced world, customer preferences evolve rapidly, and businesses must keep up to stay ahead of the competition and meet their customers' changing needs. Customers increasingly prefer automated self-service options like mobile applications or business chat agent setups to address simple concerns, such as updating personal account details or canceling an order.
 
-While the popularity of automated self-service options is nothing new, customers now seek even more convenience by resolving their queries through voice commands. This is where voice bots come in, providing the ease and convenience customers crave for resolving their queries.
+While the popularity of automated self-service options is nothing new, customers now seek even more convenience by resolving their queries through voice commands. This is where voice agents come in, providing the ease and convenience customers crave for resolving their queries.
 
-To assist businesses in providing better virtual assistants, Yellow offers voice bots that can help them meet their customers' needs effectively.
+To assist businesses in providing better virtual assistants, Yellow offers voice agents that can help them meet their customers' needs effectively.
 
 ----
 
-## <a name="fundamentals"></a> 3. Deploying and understanding voice bots for business
+## <a name="fundamentals"></a> 3. Deploying and understanding voice agents for business
 
 
-Yellow AI offers top-notch voice bots that can be easily integrated with a business's phone lines. These bots simulate human-like conversations and can perform various tasks, including answering questions, providing information, and completing transactions.
+Yellow AI offers top-notch voice agents that can be easily integrated with a business's phone lines. These voice agents simulate human-like conversations and can perform various tasks, including answering questions, providing information, and completing transactions.
 
-With voice bots in place, customers can dial a business's phone number and receive quick and convenient solutions to their simpler queries. Additionally, businesses can leverage outbound campaigns via phone calls to reach out to their target audience for tasks such as collecting product feedback, verifying user data, and reminding users of payment deadlines.
+With voice agents in place, customers can dial a business's phone number and receive quick and convenient solutions to their simpler queries. Additionally, businesses can leverage outbound campaigns via phone calls to reach out to their target audience for tasks such as collecting product feedback, verifying user data, and reminding users of payment deadlines.
 
-Here's how voice bots work end-to-end:
+Here's how voice agents work end-to-end:
 
 1. The **automatic speech recognition** system listens to the caller's request and transforms it into text.
 2. The **natural language understanding** component comprehends the speaker's intent and identifies relevant information to drive the conversation forward.
 3. The **conversation module**, or business logic, determines the appropriate response by considering the user's request's context.
 4. Advanced **text-to-speech** technology converts the response text into human-like speech.
-5. Voice bots continually improve their ability to simulate human conversations by analyzing user data and adding it to their knowledge database using advanced **machine learning** features.
+5. Voice agents continually improve their ability to simulate human conversations by analyzing user data and adding it to their knowledge database using advanced **machine learning** features.
 
 
 **![](https://lh3.googleusercontent.com/a3aqkQRD_ilANkuIdAjb9teX0D9ijMKSZ6UyI1o-hJKhH3gPUAvhSow502xkEDGn0vrxVmQYfnfQoHeNHMJY1F7U1lp3LNBHp46MAWqkuY-23yTMH-dcFsD-if59O7g3nbml2AHedhYEfQe-lDNk8Nw)**
@@ -79,13 +79,13 @@ Here's how voice bots work end-to-end:
 ## <a name="ecosystem"></a>  4. Yellow.ai's Complete Voice Bot Solution
 
 
-Yellow.ai offers a complete voice bot solution that integrates speech recognition and speech synthesis technologies into their product ecosystem. This comprehensive solution simplifies the process of creating and deploying voice bots for businesses. Let's take a closer look at the different products in the ecosystem.
+Yellow.ai offers a complete voice agent solution that integrates speech recognition and speech synthesis technologies into their product ecosystem. This comprehensive solution simplifies the process of creating and deploying voice agents for businesses. Let's take a closer look at the different products in the ecosystem.
 
 1. **Design module**: This module provides an intuitive and straightforward way for users to design and craft their own conversations quickly and easily.
-2. **Automation module**: Once a conversational voice bot is created, businesses can personalize the experience by connecting it to their CRM and APIs. This module helps businesses to create custom voice bots tailored to their specific needs.
-3. **Engage module**: Businesses can use voice bots to reach out to customers via outbound campaigns. The User 360* feature in this module maintains a digital diary of customers and helps to run targeted campaigns.
-4. **Insights module**: The Insights module provides businesses with detailed analytics and metrics related to their voice bots' performance, such as the number of calls, call duration, and API response time.
-5. **Channels module**: Businesses can easily set up their voice bots, including configuring the IVR channel, and associated phone numbers.
-6. **Integration module**: Along with leading speech recognition and speech synthesis technologies, businesses can integrate their Voice Bots with other external services like CRM. These integrations can then be utilized in the bot flows, making it possible to create a more personalized experience for customers.
+2. **Automation module**: Once a conversational voice agent is created, businesses can personalize the experience by connecting it to their CRM and APIs. This module helps businesses to create custom voice agents tailored to their specific needs.
+3. **Engage module**: Businesses can use voice agents to reach out to customers via outbound campaigns. The User 360* feature in this module maintains a digital diary of customers and helps to run targeted campaigns.
+4. **Insights module**: The Insights module provides businesses with detailed analytics and metrics related to their voice agents performance, such as the number of calls, call duration, and API response time.
+5. **Channels module**: Businesses can easily set up their voice agents, including configuring the IVR channel, and associated phone numbers.
+6. **Integration module**: Along with leading speech recognition and speech synthesis technologies, businesses can integrate their Voice Bots with other external services like CRM. These integrations can then be utilized in the voice agent flows, making it possible to create a more personalized experience for customers.
 
 

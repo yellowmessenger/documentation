@@ -1,6 +1,6 @@
 ---
-title : Voice bot data handling 
-sidebar_label : Handle voice bot data
+title : Voice agent data handling 
+sidebar_label : Handle voice agent data
 ---
 
 Coming soon!

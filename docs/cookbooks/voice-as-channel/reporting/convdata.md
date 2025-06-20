@@ -8,11 +8,11 @@ In this document, we will cover a use case where custom fields are used to track
 
 **Conversational details that can be tracked during the call**
 
-Voice bot developers have the ability to define custom fields based on their business logic requirements, in addition to standard fields. This allows them to derive additional insights from their data. A few examples of custom details are additional phone numbers, ages, names, etc.
+Voice agent developers have the ability to define custom fields based on their business logic requirements, in addition to standard fields. This allows them to derive additional insights from their data. A few examples of custom details are additional phone numbers, ages, names, etc.
 
 Examples of insights you can derive from the conversational details report: 
 - Retrieve the percentage of callers who are selecting the Hindi language option.
-- For an e-commerce chatbot, retrieve the percentage split between inquiries related to order status and those related to registering a complaint.
+- For an e-commerce chat agent, retrieve the percentage split between inquiries related to order status and those related to registering a complaint.
 
 
 -----
@@ -21,7 +21,7 @@ Examples of insights you can derive from the conversational details report:
 
 **Use-case to understand how to create reports with conversational details data**
 
-If you are developing a voice bot for educational counseling for students across various age groups, it may be required as per company guidelines to keep track of the customer/student's age and the type of query asked. This information can be recorded as custom fields, allowing you to gain insights into the types of queries being asked by different age groups.
+If you are developing a voice agent for educational counseling for students across various age groups, it may be required as per company guidelines to keep track of the customer/student's age and the type of query asked. This information can be recorded as custom fields, allowing you to gain insights into the types of queries being asked by different age groups.
 
 
 ### Step 1. Create a flow to store data in variables 
