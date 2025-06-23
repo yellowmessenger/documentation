@@ -271,3 +271,22 @@ The chat tickets table updates each row in place, meaning that when a ticket mov
   </div>
 </details>
 
+
+
+<details>
+<summary> Is it possible to decrypt the database for specified users?</summary>
+<div>
+ Yes, decryption is possible for specified users if the data has already been masked and encrypted. Using the appropriate private key, the data can be decrypted as needed. For more details, refer to <a href="https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/configure-data#secure-pii-data-on-default-tables"> Yellow.ai's documentation on securing PII data. </a>
+</div>
+</details>
+
+
+
+
+<details>
+<summary> If an update comes days after the interaction, will it be added to the previous session? </summary>
+<div>
+No, once the 24-hour session window is over, any new update — even if it's related to the previous interaction — will not be attached to the old session. Instead, it will start a brand new session.
+</div>
+</details>
+
