@@ -49,7 +49,7 @@ Add accounts only in the development or staging environment. You can access the 
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/datacenter.png)
 
-6. Once you have signed-in, click **Accept** to authorize Yellow.ai to access **Zoho CRM**.
+6. You need to sign-in to your Zoho CRM account. Once you have signed-in, click **Accept** to authorize Yellow.ai to access **Zoho CRM**.
 
    ![](https://i.imgur.com/3bBqQIe.png)
 

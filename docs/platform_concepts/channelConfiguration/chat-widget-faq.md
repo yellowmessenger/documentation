@@ -516,6 +516,15 @@ config.theme = theme
   </div>
 </details>
 
+<details>
+<summary>Is it possible to replace the close (X) button in the chat widget with a drop-down arrow button?</summary>
+<div>
+ <br/>
+ <div>Yes, it is possible by using a custom script to modify the chat widget’s UI. To implement this change,contact the support team. They can guide you and provide the necessary custom script to help replace the close button with a drop-down arrow.
+ </div>
+  </div>
+</details>
+
 -----------
 
 ## PWA related FAQs

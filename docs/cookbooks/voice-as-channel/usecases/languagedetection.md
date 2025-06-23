@@ -1,10 +1,10 @@
 ---
-title: Understand language detection in voice bots 
+title: Understand language detection in voice agents 
 sidebar_label : Language detection
 ---
 
 
-You can now interact with the bot in multiple languages without the need to manually select the language each time you use it. The bot will automatically recognize the language you are speaking and respond accordingly.
+You can now interact with the agent in multiple languages without the need to manually select the language each time you use it. The agent will automatically recognize the language you are speaking and respond accordingly.
 
 The success of an automated Voice conversation depends heavily on the correct transcription of the caller’s speech inputs to text with the help of third-party speech-to-text services.
 
@@ -21,7 +21,7 @@ In addition to the ability to accept multiple languages, Language detection also
 
 This feature is part of the new voice 2.0 architecture. To utilize this, while passing the *STTlanguage parameter* (voice options), pass all the expected STT language codes comma separated. For example, if you are at a phone number node, pass the node level option of STT_language as “en-IN,hi-IN” to enable auto-capture in both English and Hindi for that specific node only.
 
-> The switching of bot language needs to be part of bot logic. This is not a direct platform feature in v1.
+> The switching of agent language needs to be part of agent logic. This is not a direct platform feature in v1.
 
 **Usage recommendations**
 Language detection is an additional processing overhead for the STT engine and hence should be used at selected steps. Using this across all the steps will probably result in higher conversational latency. From our internal testing, the additional latency is directly proportional to the number of languages added for detection.

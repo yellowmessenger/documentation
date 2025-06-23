@@ -20,7 +20,7 @@ You can configure the wait music in the [API node](https://docs.yellow.ai/docs/p
  
 
 :::note
-- Wait music option on API nodes work only for voice bots.
-- This feature is an add-on hence nothing changes on the LIVE bots. Though, the team recommends implementing wait music if the latency of some APIs is high for a better user experience.
+- Wait music option on API nodes work only for voice agents.
+- This feature is an add-on hence nothing changes on the LIVE agents. Though, the team recommends implementing wait music if the latency of some APIs is high for a better user experience.
 - Ensure that the **Wait Music Length** (duration) is greater than the timeout configured for the API for a better experience to avoid unseen race condition scenarios.
 :::

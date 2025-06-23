@@ -5,7 +5,7 @@ sidebar_label : Call & conversational details analysis
 
 This document outlines the application of **conversational details report** and **call detail report** parameters for customer tracking purposes.
 
-Along with standard fields present in [CDR](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr) and [conversational details report](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata), voice bot developers can define fields based on their business logic requirements.
+Along with standard fields present in [CDR](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr) and [conversational details report](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata), voice agent developers can define fields based on their business logic requirements.
 
 Examples of insights you can derive from the call and conversational details reports: 
 - Retrieve average call duration for callers from Gujarat state by combining **duration** fields from CDR table and **state** name from conversational details report table.
@@ -17,7 +17,7 @@ Examples of insights you can derive from the call and conversational details rep
 
 To analyze both call details and conversational details for certain use cases, you can create a flow that integrates data from both sources. By doing so, you can gain insights by analyzing the combined data.
 
-For example, if you are developing a voice bot for medical counseling aimed at different age groups, it may be necessary to track the age of customers, the nature of their queries, and the length of their calls, in accordance with company guidelines. You could record the customer's age and query as custom fields, while the call duration can be automatically tracked by CDR. By combining both sources of data, you could create a dashboard that is tailored to this use case.
+For example, if you are developing a voice agent for medical counseling aimed at different age groups, it may be necessary to track the age of customers, the nature of their queries, and the length of their calls, in accordance with company guidelines. You could record the customer's age and query as custom fields, while the call duration can be automatically tracked by CDR. By combining both sources of data, you could create a dashboard that is tailored to this use case.
 
 
 To accomplish use cases that involve using both conversational data and CDR data, three steps need to be followed:
