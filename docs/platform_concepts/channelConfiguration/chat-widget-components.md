@@ -35,7 +35,7 @@ Following are the types of interactive message components:
 
 |     |  |
 |---------|-------|
-| Allows you to select a preferred date from the calendar view. The date is displayed in the predefined format. If the user's input contains a date or a time, it will pass the validator. Otherwise, the specified validation fail message will be sent. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#31-date">here</a> to implement Date picker using a node. | <img src="https://i.imgur.com/iIZpkxw.png" alt="drawing" width="100%"/>
+| Allows you to select a preferred date from the calendar view. The date is displayed in the predefined format. If the user's input contains a date or a time, it will pass the validator. Otherwise, the specified validation fail message will be sent. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/date-node">here</a> to implement Date picker using a node. | <img src="https://i.imgur.com/iIZpkxw.png" alt="drawing" width="100%"/>
 
 The following are the different date pickers supported:
 
@@ -109,7 +109,7 @@ You can download video, image, and file sent by the bot or agent.
 
 |     |  |
 |---------|-------|
-| This component allows you to upload files in supported formats such as jpeg, jpg, png, gif, pdf, txt, doc, ppt, docx, pptx, xlsx, mp4, mp3, and mov. You can either attach a file or skip it. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#36-file-prompt">here</a> to implement Location using a node. | <img src="https://i.imgur.com/J0wKybH.png" alt="drawing" width="90%"/>	
+| This component allows you to upload files in supported formats such as jpeg, jpg, png, gif, pdf, txt, doc, ppt, docx, pptx, xlsx, mp4, mp3, and mov. You can either attach a file or skip it. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/file-prompt-node">here</a> to implement Location using a node. | <img src="https://i.imgur.com/J0wKybH.png" alt="drawing" width="90%"/>	
 
 ### 1.11 Callout banner
 

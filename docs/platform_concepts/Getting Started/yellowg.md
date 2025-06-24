@@ -76,7 +76,7 @@ Enter a fluid journey of product exploration as users interact with your catalog
 
    ![](https://i.postimg.cc/GhWHYDDt/product-search.gif)
 
-For further insights, check out our comprehensive documentation on [Product search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#310-product-search).
+For further insights, check out our comprehensive documentation on [Product search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/product-search-node).
 
 
 ---

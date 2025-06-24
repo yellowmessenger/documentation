@@ -11,16 +11,16 @@ import TabItem from '@theme/TabItem';
 
 Prompts are Interactive or conversational nodes, which expect user input. When a user provides an invalid input to the prompt, a fallback message will be displayed. 
 
-In this article, you will learn about the different types of prompt nodes: 
+<!-- In this article, you will learn about the different types of prompt nodes: 
 1. [Frequently used prompts](#used)
 2. [Other prompts](#others) 
 3. [Make prompt smarter](#smarter)
 
 > All these prompts must be followed by another node as a response to this node. 
 
----
+--- -->
 
-## 1. Common Features in all the Prompt Nodes
+## Common Features in all the Prompt nodes
 
 **Randomization**
 
@@ -42,7 +42,7 @@ You can set a delay in displaying each of these nodes.
 A Fetch from field will be provided in most of the fields to render the dynamic data of that respective node.
 
 
----
+<!-- ---
 
 
 ## <a name="ud"></a>  2. Frequently used prompts
@@ -456,7 +456,7 @@ There are various types of date pickers available, each catering to different ne
 
 <!-- <img src="https://i.imgur.com/JNHbV83.png" width="50%"/> -->
 
-1. Single Date Picker
+<!-- 1. Single Date Picker
 2. Date Range Picker
 3. Month Picker
 4. Single Date and Time Picker
@@ -993,11 +993,11 @@ Harnessing generative AI, the product search node dynamically showcases items fr
 
 To use this node, you need to create a [product catalogue](https://docs.yellow.ai/docs/platform_concepts/studio/product-catalogue) and [configure this node in flows](https://docs.yellow.ai/docs/platform_concepts/studio/product-catalogue#display-product-catalogue-in-bot-conversations).
 
- ![](https://i.imgur.com/ztWUzV7.png)
+ ![](https://i.imgur.com/ztWUzV7.png) -->
 
----
+--- -->
 
-## 4. Make prompt smarter
+## Make prompt smarter
 
 Make Prompt Smarter option is available on all the prompt nodes. 3 options available broadly are auto complete, autoskip and other related options. 
 
@@ -1005,7 +1005,7 @@ Make Prompt Smarter option is available on all the prompt nodes. 3 options avail
 
 ----
 
-### 4.1 Auto complete
+### Auto complete
 
 Autocomplete is set so that the AI-agent can start predicting the rest of the word or sentence for users as they start typing. For example, if you want to find your location and you start typing Jai, you will get the city names starting with Jai - Jaipur. Similarly, if you type Ban, you will get suggestions such as Bangalore, Bangla, Banswara, etc.
 
@@ -1055,7 +1055,7 @@ return new Promise(resolve => {
 
 --------
 
-### 4.2 Autoskip
+### Autoskip
 
 You can keep your conversations from being repetitive by auto-skipping the prompt with entities or variables if you already received the value and have stored it.
 
@@ -1069,7 +1069,7 @@ Configure Auto-skip at a global level (from tools section), click [here](https:/
 
 ---
 
-### 4.3 Additional 
+### Additional 
 
 1. **Use this as Unique ID for User**: Info entered at this node will be unique for a user. 
 For example, instead of setting a new user ID, you can use the phone number as a unique ID to recognize this user. Other nodes that can be used as Unique IDs are Car Number, Aadhar Card, SSN, etc. that are unique to an individual. 
@@ -1096,7 +1096,7 @@ For example, instead of setting a new user ID, you can use the phone number as a
  Click the tools icon and configure the node. For more details, see [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes). 
 :::
 
---- 
+<!-- --- 
 ## 5. Voice input node
 
 A voice input node is used to gather user information, process it, and manage various scenarios of conversing in a human-like manner. This node is in auto-sync with the conversation design so all the designs you add there will appear here automatically. To learn about using this node, click [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput).
@@ -1105,4 +1105,4 @@ A voice input node is used to gather user information, process it, and manage va
 Voice input node will work only for voice AI-agents, i.e you should have enabled **Voice bot** while creating your AI-agent.
 
 <img src="https://imgur.com/kyYVxAR.png" alt="drawing" width="50%"/>
-:::
+::: -->
