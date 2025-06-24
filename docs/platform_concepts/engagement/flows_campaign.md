@@ -320,7 +320,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 7. If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).
 7. Enable **During workflow business hours** to send the message only during business hours.
 
-
+<!--
 #### 4. GBM channel configuration
 
 1. In **Template**, choose the GBM template that you want to use for the notification. To know how to create a template, see [GBM template](/docs/platform_concepts/engagement/outbound/templates/gbm-template).
@@ -330,9 +330,9 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 2.  If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).
 3. If your template includes media content, you can add it in the **Template media** section. [Know more about](#add-media-content-in-your-template---static-or-dynamic)
 
+-->
 
-
-#### 5. Push notification channel configuration
+#### 4. Push notification channel configuration
 
 *  In **Template**, choose the push notification template that you want to use for the notification.
 
@@ -349,7 +349,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 3. If your template includes media content, you can add it in the **Template media** section. [Know more about](#add-media-content-in-your-template---static-or-dynamic)
 
 
-#### 7. Voice call channel configuration
+#### 5. Voice call channel configuration
 
 1. Check **Enable answering machine detection (AMD)** to automatically identify answering machines.
 2. In **AI-agent flow**, choose the welcome flow to be triggered (Automation) for the current channel.
@@ -359,7 +359,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 <center><img src="https://i.imgur.com/lBvitpz.png" width="50%"/></center>
 
 
-#### 8. RCS channel configuration
+#### 6. RCS channel configuration
 
 :::note
 **Limitations**:
