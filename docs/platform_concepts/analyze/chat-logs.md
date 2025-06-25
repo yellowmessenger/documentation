@@ -40,6 +40,9 @@ Each user is identified by a **unique ID (UID)**, and a conversation log is gene
 
 > You can search for a particular conversation using **UID** or **SID** (Session ID) to locate specific sessions easily.
 
+> **To get session ID of an Ongoing Conversation**, use `{{{session.id}}}`. This placeholder returns the unique identifier for the active conversation session.
+
+
 **Session expiry explained**
 
 - A session lasts for **24 hours** from the user's last message.
@@ -53,6 +56,8 @@ Each user is identified by a **unique ID (UID)**, and a conversation log is gene
 | **Continued Session** | 9:00 AM - Start<br/>9:30 AM - Last message<br/>6:00 PM - Next message (same day) | User sends a message **within 24 hours** | Same session continues.<br/>Session expiry shifts to **6:00 PM next day**. |
 | **New Session**       | 9:00 AM - Start<br/>9:30 AM - Last message<br/>9:31 AM - Next message (next day) | User sends a message **after 24 hours** | New session starts.<br/>Previous chat history is available, but **context is lost**. |
 
+> Q1. How can I get the current session ID of an ongoing conversation?
+> A: You can retrieve the session ID using {{{session.id}}}. This placeholder returns the unique identifier for the active conversation session.
 
 :::note
 When users starts a new session (after 24 hours), they can view the previous conversation history, but the context from the earlier session is not retained.

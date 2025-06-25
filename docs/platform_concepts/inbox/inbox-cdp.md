@@ -51,7 +51,7 @@ There are two distinct scenarios to consider based on the channel (live chats/em
 | Using only live chat (excluding email) | Using both email and live chat |
 | -------- | -------- |
 | This is a relatively straightforward process. The userID can take any value that you intend to track within the flow (phone number, email, SSN, etc).     | If you're utilizing both email and live chat, the userID can only be the **customer's email address**.  <br/> <br/> UserIDs for email tickets are automatically set as the respective customer's email address. <br/> <br/>  Unless you are also collecting email address data in other channels, it becomes challenging to unify sessions across email and channels like WhatsApp for the same customer.    |
-| To capture the userId in the bot flows, you can proceed with the steps mentioned above.|To ensure seamless operations, incorporate a step within your flow that requests the [customer's email address](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-email) and set this email address as your userID. |
+| To capture the userId in the bot flows, you can proceed with the steps mentioned above.|To ensure seamless operations, incorporate a step within your flow that requests the [customer's email address](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/email-node) and set this email address as your userID. |
 
 -->
 
@@ -70,7 +70,7 @@ If you're utilizing both email and live chat, the userID can only be the **custo
 - UserIDs for email tickets are automatically set as the respective customer's email address. Unless you are also collecting email address data in other channels, it becomes challenging to unify sessions across email and channels like WhatsApp for the same customer.
 
 :::note
-To ensure seamless operations, incorporate a step within your flow that requests the [customer's email address](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-email) and set this email address as your userID. 
+To ensure seamless operations, incorporate a step within your flow that requests the [customer's email address](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/email-node) and set this email address as your userID. 
 :::
 
 
@@ -143,7 +143,7 @@ While building flow, configure:
 If the User identification setting is not visible in the Conversation settings popup and **Use this as unique ID for user** option is available, follow these steps:
 
 1. Open the bot flows **Automation** > **Build**. 
-2. You must collect specific business-related information like email, phone number, or account number (userId) within your flows before any automation. Let's say you want to capture the Email ID as the userId, add an [email prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-email) to your flow. 
+2. You must collect specific business-related information like email, phone number, or account number (userId) within your flows before any automation. Let's say you want to capture the Email ID as the userId, add an [email prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/email-node) to your flow. 
 3. On that prompt, select the **Make prompt smarter** option.
     ![](https://hackmd.io/_uploads/HJlWi4_kT.png)
 4. Choose **Use this as Unique ID for User**.

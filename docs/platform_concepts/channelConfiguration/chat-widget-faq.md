@@ -92,7 +92,7 @@ if (userIsAuthenticated) {
 <summary>Why is the bot not displaying or loading any of the configured messages?</summary>
 <div>
  <br/>
- <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Automation</a>. Login to cloud.yellow.ai platform. Navigate to  <b>Studio -> Welcome Message -> Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a>. </div>
+ <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Automation</a>. Login to cloud.yellow.ai platform. Navigate to  <b>Studio > Welcome Message > Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a>. Also, check the <b>bot status</b>. If the bot is in an <b>unpaused</b> state, it will not load or respond. </div>
   </div>
 </details>
 
@@ -258,7 +258,7 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 <summary>Does the chat widget support auto-complete feature?</summary>
 <div>
  <br/>
- <div>Yes, the chat widget supports auto-complete. To set up auto-complete, follow these steps:<br/>• You need to enable auto complete in [Yellow.ai Platform](https://cloud.yellow.ai) > <b>Channels</b> > <b>Chat widget</b> > <b>Settings</b> > enable <b>Auto complete</b> > click <b>Save changes</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settings">here</a><br/><img src="https://i.imgur.com/268ATI6.png)" alt="drawing" width="60%"/><br/>• Navigate to <b>Automation</b> > select a flow > click on the respective <b>node</b> > click <b>Make prompt smarter</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#4-make-prompt-smarter">here</a>.</div>
+ <div>Yes, the chat widget supports auto-complete. To set up auto-complete, follow these steps:<br/>• You need to enable auto complete in [Yellow.ai Platform](https://cloud.yellow.ai) > <b>Channels</b> > <b>Chat widget</b> > <b>Settings</b> > enable <b>Auto complete</b> > click <b>Save changes</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settings">here</a><br/><img src="https://i.imgur.com/268ATI6.png)" alt="drawing" width="60%"/><br/>• Navigate to <b>Automation</b> > select a flow > click on the respective <b>node</b> > click <b>Make prompt smarter</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/prompt-nodes#make-prompt-smarter">here</a>.</div>
   </div>
 </details>
 
@@ -771,7 +771,7 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 <summary>How to add the image in Quick Replies node?</summary>
 <div>
  <br/>
- <div>In the quick reply node, add the image link under the Prefix image. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-quick-replies">here</a> for more information.<br/><img src="https://i.imgur.com/CERBwzb.png"/><img src="https://i.imgur.com/FhUnKaK.png" alt="drawing" width="40%"/>
+ <div>In the quick reply node, add the image link under the Prefix image. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/quick-replies">here</a> for more information.<br/><img src="https://i.imgur.com/CERBwzb.png"/><img src="https://i.imgur.com/FhUnKaK.png" alt="drawing" width="40%"/>
 </div>
   </div>
 </details>
