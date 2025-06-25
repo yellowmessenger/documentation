@@ -260,3 +260,14 @@ On the overview tab there is an option to view agent and their current statuses.
     For security and performance reasons, all user sessions (Admin, Agent, and Super Admin) in the Inbox app automatically expire after 8 hours of inactivity or continuous use. After this period, you'll be logged out and prompted to sign in again.  
     </div>
 </details>
+
+
+<details>
+  <summary>  Why does the bot icon change during a conversation? </summary>
+  <div>
+   When a user is chatting with the AI agent, the AI agent’s logo is displayed in the chat widget. If the conversation is transferred to a live agent, the icon automatically updates to show the live agent’s display image or profile picture. Once the conversation ends and the AI agent takes over again, the icon switches back to the AI agent’s logo.
+    </div>
+</details>
+
+
+
