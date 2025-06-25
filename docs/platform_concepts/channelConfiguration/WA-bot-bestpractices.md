@@ -17,7 +17,7 @@ Before creating a flow for the WhatsApp bot, you need to consider the following 
 * If a flow is configured and published in a specific environment, it will not respond to queries in other environments.
 * If your bot has 3 environments such as sandbox, staging, and production, you need to use sandbox bot for building the chatbot or making changes in existing flows. Once you are done with creating the flows, you can publish the bot from the sandbox to staging.
 * Include intents for common questions or requests that align with your conversation flow, aiding in proper training of the bot to identify user intent.
-* Use WhatsApp nodes such as [WhatsApp quick replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-quick-replies), [WhatsApp list](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#32-whatsapp-list), and [prompt carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#26-carousel) to enhance the flow's functionality.
+* Use WhatsApp nodes such as [WhatsApp quick replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/quick-replies), [WhatsApp list](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/whatsapp-list-node), and [prompt carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/carousrel-node) to enhance the flow's functionality.
 
 
 
@@ -25,7 +25,7 @@ Before creating a flow for the WhatsApp bot, you need to consider the following 
 
 #### **Prompt carousel node**
 
-The WA bot will respond with a number list even if the buttons are configured in the quick reply node. In this case, you can use the [prompt carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#26-carousel) node instead of quick reply to display the buttons in the bot response.
+The WA bot will respond with a number list even if the buttons are configured in the quick reply node. In this case, you can use the [prompt carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/carousrel-node) node instead of quick reply to display the buttons in the bot response.
 
 <img src="https://i.imgur.com/1coMBB2.png)" alt="drawing" width="40%"/>
 
@@ -42,7 +42,7 @@ The WA bot will respond with a number list even if the buttons are configured i
 
 ##### **Best Practices**
 
-* To know more about how to use the WA quick reply node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-quick-replies).
+* To know more about how to use the WA quick reply node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/quick-replies).
 * You can trigger a flow when a user clicks on the quick reply option on WhatsApp. For more information, click [here](https://docs.yellow.ai/docs/cookbooks/studio/qr-node).
 * To add a quick reply button, you need to switch the channel filter to Website. Eventually, if you try to add a button in the WA channel filter, then the add button option will be disabled.
    <img src="/img/channels/WAgif.gif" alt="drawing"/>
@@ -74,7 +74,7 @@ For more information on how to create a variable, to store, and retrieve data fr
 
 #### **WhatsApp list**
 
-* To know more about how to use the WA list node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-quick-replies).
+* To know more about how to use the WA list node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/quick-replies).
 
 #### **WA list options** 
 
