@@ -23,11 +23,11 @@ Only an admin can download reports.
 | 9 |source_email| The email ID to which the customer raised/created this specific ticket to||
 | 10 | priority |The current priority of the ticket| |
 | 11 | resolution_time | The timestamp at which the ticket was marked resolved | |
-| 12 | handling_time | The time taken by the agent to resolve the ticket | [[Resolved time - Assigned time] - Time spent in (Pending + On-hold)]| 
+| 12 | handling_time | Handling Time is calculated as the sum of all active handling periods across the ticket’s lifecycle. Specifically, for each cycle where the ticket is in an **Assigned** state. If a ticket was resolved without ever being assigned, then its handling time is marked as 0, since no agent was officially handled to it at any point in time. | Handling Time = Σ (Resolved Timeₙ – Assigned Timeₙ) – Σ (Time spent in Pending or On-hold during that cycle) | 
 | 13 | assigned_to | Name of the current assigned agent| |
 | 14 | created_time | The timestamp at which the ticket was created| |
 | 15 | assignment_count | The total number of times the ticket was reassigned to the agent | |
-| 16 | first_assignment_time | The timestamp at which the ticket was first assigned to the agent | |
+| 16 | first_assignment_time | Assigned Time is considered as the first instance when the ticket was assigned to any agent. Even if the ticket went through multiple reassignments or was touched by multiple agents during its lifecycle, we must only consider the timestamp of the initial assignment.|   |
 | 17 | assignment_time | The timestamp at which the ticket was assigned to the agent, in case of reassignment | |
 | 18 | number_of_replies | The total number of replies from the agent in the ticket| |
 | 19 | reopened_count | The total number of times the ticket was reopened| Default value is 0 |
