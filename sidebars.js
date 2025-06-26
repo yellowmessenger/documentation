@@ -126,6 +126,9 @@ module.exports = {
     "cookbooks/inbox/videourl",
     "cookbooks/inbox/classifyspamemail",
     "cookbooks/inbox/dyteevent",
+    "cookbooks/inbox/monitorerror",
+    "cookbooks/inbox/recentactivity",
+    "cookbooks/inbox/chathistory",
   ],
 },    
 // end of inbox 
