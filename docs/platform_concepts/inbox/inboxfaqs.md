@@ -271,3 +271,10 @@ On the overview tab there is an option to view agent and their current statuses.
 
 
 
+<details>
+  <summary> How is Handling Time calculated in the Ticket Archive report? </summary>
+  <div>
+  Handling Time represents the total duration a ticket was actively worked on by an agent, excluding periods when the ticket was in Pending or On-hold status.<br/>
+  Example: <br/> Assigned: Jan 1 → Resolved: Jan 2 → Handling Time = (Jan 2 – Jan 1) – Pending/On-hold time <br/> Reopened: Jan 3 → Assigned: Jan 3 → Resolved: Jan 4 → Add this cycle's Handling Time. <br/> Total Handling Time = First cycle + Second cycle. 
+    </div>
+</details>
