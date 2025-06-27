@@ -260,3 +260,21 @@ On the overview tab there is an option to view agent and their current statuses.
     For security and performance reasons, all user sessions (Admin, Agent, and Super Admin) in the Inbox app automatically expire after 8 hours of inactivity or continuous use. After this period, you'll be logged out and prompted to sign in again.  
     </div>
 </details>
+
+
+<details>
+  <summary>  Why does the bot icon change during a conversation? </summary>
+  <div>
+   When a user is chatting with the AI agent, the AI agent’s logo is displayed in the chat widget. If the conversation is transferred to a live agent, the icon automatically updates to show the live agent’s display image or profile picture. Once the conversation ends and the AI agent takes over again, the icon switches back to the AI agent’s logo.
+    </div>
+</details>
+
+
+
+<details>
+  <summary> How is Handling Time calculated in the Ticket Archive report? </summary>
+  <div>
+  Handling Time represents the total duration a ticket was actively worked on by an agent, excluding periods when the ticket was in Pending or On-hold status.<br/>
+  Example: <br/> Assigned: Jan 1 → Resolved: Jan 2 → Handling Time = (Jan 2 – Jan 1) – Pending/On-hold time <br/> Reopened: Jan 3 → Assigned: Jan 3 → Resolved: Jan 4 → Add this cycle's Handling Time. <br/> Total Handling Time = First cycle + Second cycle. 
+    </div>
+</details>
