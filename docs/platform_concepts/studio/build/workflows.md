@@ -309,7 +309,7 @@ You connect the start trigger (first node) to other nodes such as Action, Logic,
 |                              | - Update custom fields for the chat.       |
 | **Resolve Chat**             | Close the ticket as the issue has been addressed and resolved ( and the status of the live chat is updated to resolved).  |
 | **API Node**                 | Execute API calls as part of the chat workflow to interact with external systems, fetch/send data, or trigger specific processes. |
-| **Outbound Notification**    | Send an outbound message, typically to an external system or communication channel (e.g., SMS, email).                     |
+| [**Outbound Notification**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/outbound-notification)    | Send an outbound message, typically to an external system or communication channel (e.g., SMS, email).                     |
 | **Variables**                | Set the value of one or more variables with this node.                                                                     |
 | **Database**                 | Insert, update, and search operations on database tables with this node.                                                   |
 | **Function**                 | Execute custom code written for a function with this node.                                                                 |

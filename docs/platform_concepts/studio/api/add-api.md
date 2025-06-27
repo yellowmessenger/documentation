@@ -119,6 +119,78 @@ You can modify the API settings for optimal performance and security. This lets 
 The **Configure environment** option is disabled in the **Live/Production** environment.
 :::
 
+### Add SOAP API in Yellow.ai
+
+You can connect Yellow.ai to external systems that expose SOAP APIs. This enables the AI agent to retrieve data, perform operations, or exchange information with enterprise applications as part of its conversation flow.
+
+
+#### Prerequisites
+
+* Access to Yellow.ai Studio
+* SOAP API Endpoint URL (e.g., https://.../soap/SERVICE_NAME)
+* SOAP XML payload structure for the request
+* Any required authentication details (e.g., WS-Security headers)
+
+#### Steps to integrate a SOAP API
+
+1. In **Automation** > **Build** > **APIs** section, Click **+ Add API**.
+   ![](https://i.imgur.com/csYrfGc.png)
+
+2. In **API endpoint**, paste the full SOAP endpoint URL (e.g., `https://your-endpoint/soap/service`)
+3. In **HTTP method**, select POST (SOAP requests are typically POST-based).
+4. In **Headers**, add Content-Type: `application/soap+xml` or `text/xml`; add any custom headers or authentication headers if required.
+5. In **Body**, select the body format: XML. Paste the complete SOAP XML payload:
+
+**Sample XML Body**
+
+   ```xml
+   <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <wsse:Security S:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/...">
+         <wsu:Timestamp>
+         <wsu:Created>{{createdDate}}</wsu:Created>
+         <wsu:Expires>{{expiryDate}}</wsu:Expires>
+         </wsu:Timestamp>
+         <wsse:UsernameToken>
+         <wsse:Username>{{username}}</wsse:Username>
+         <wsse:Password Type="...#PasswordText">{{password}}</wsse:Password>
+         <wsse:Nonce>{{nonce}}</wsse:Nonce>
+         <wsu:Created>{{timestamp}}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </SOAP-ENV:Header>
+   <S:Body>
+      <!-- Replace below with your API-specific body -->
+      <OTA_ReadRQ xmlns="http://www.opentravel.org/OTA/2003/05">
+         <ReadRequests>
+         <ReadRequest>
+            <UniqueID ID="{{bookingId}}" ID_Context="CrsConfirmNumber" Type="14"/>
+         </ReadRequest>
+         </ReadRequests>
+      </OTA_ReadRQ>
+   </S:Body>
+   </S:Envelope>
+   ```
+
+
+   | **Element**                                    | **Description**                                                                                                            |
+   | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+   | `XML Payload`                                  | Enter the complete XML structure of the SOAP request. This forms the full message sent to the SOAP API.                    |
+   | `<soap:Envelope>`                              | The root element of the SOAP message that wraps the entire request.                                                        |
+   | `<soap:Header>` *(Optional)*                   | Contains metadata or security-related information. Often used for authentication or message tracking.                      |
+   | `&nbsp;&nbsp;&nbsp;&nbsp;<wsse:Security>`      | Used for WS-Security implementations. Can include tokens and encryption information.                                       |
+   | `&nbsp;&nbsp;&nbsp;&nbsp;<wsse:UsernameToken>` | Contains the username and password for authentication.                                                                     |
+   | `&nbsp;&nbsp;&nbsp;&nbsp;<wsu:Timestamp>`      | (Optional) Provides a time window for when the message is valid, helping prevent replay attacks.                           |
+   | `<soap:Body>`                                  | Contains the main content of the request — the actual operation and parameters being sent to the API (e.g., `OTA_ReadRQ`). |
+
+
+
+6. Yellow.ai will receive an XML SOAP response. To handle API response:
+   *  Use Studio functions to parse the XML and extract relevant values.
+   * Implement error handling to manage invalid or failed responses.
+
+
+
 ### Import APIs (CURL/JSON)
 
 If you have a CURL script, JSON file, or collection URL, you can conveniently import it to yellow.ai.

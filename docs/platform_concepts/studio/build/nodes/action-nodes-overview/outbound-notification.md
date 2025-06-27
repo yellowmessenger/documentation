@@ -16,12 +16,13 @@ You can use this node when you want to send important messages, updates to users
 * Shipping updates: Once the order is shipped, the bot sends an email or voice notification with the shipping details and tracking information.
 * **Promotional campaigns**: You can use this node to send WhatsApp or Email campaigns promoting discounts, special offers, or new products.
 
-**Configure Outbound notification node**
+## Configure Outbound notification node
 
-**Prerequisites**
+### Prerequisites
 * Ensure that an [email template is created](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/email-template).
 * The communication channels (SMS, Email, WhatsApp, etc.) must be properly set up for the Outbound Notification node to work.
 
+### Steps to configure outbound notifications
 To configure Outbound notification node, follow these steps:
 
 1. Drag and drop the Outbound notification node in the flow editor.
@@ -74,3 +75,65 @@ DTMF digital length	| Enter the length of characters to be captured. Example: Fo
 Refer to the following GIF to see how the outbound notification works:
 
   ![](https://imgur.com/w1nY1xx.gif)
+
+
+
+## Configrure Outbound notification node for WhatsApp notification
+
+
+You can use the **Outbound notification** node to send WhatsApp template messages to end users as part of a flow. 
+
+
+### Prerequisites
+
+Before using this node, ensure the following requirements are met:
+
+* A **WhatsApp template message** must be approved by **Meta (Facebook)**.
+  Learn how to create and submit templates:
+  [Create WhatsApp Templates →](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#docusaurus_skipToContent_fallback)
+
+* Your bot must be connected to a **WhatsApp Infrastructure**. Without this, the WhatsApp option will not be available in the node.
+
+
+### Steps to configure
+
+1. **Drag and drop** the **Outbound notification node** in your flow.
+
+2. **Set the Notification type** to `WhatsApp`.
+
+3. **Select the sender**:  Choose the bot’s connected **WhatsApp phone number**.
+
+   * Ensure it matches the one registered in your WhatsApp Infra.
+
+4. **Specify the recipient (`To`)**:
+
+   * Use a **flow variable** that stores the user’s phone number.
+   * This allows dynamic delivery to individual users.
+
+5. **Choose a template**:
+
+   * Select an approved WhatsApp template from the dropdown. Only templates associated with the connected WhatsApp sender will appear.
+
+6. **Configure template parameters**:
+
+   * Dynamic fields (e.g., name, date, order ID) can be mapped using:
+
+     * Flow variables (created in the same flow).
+     * Global variables (reusable across flows).
+   * Ensure all required parameters are filled.
+
+7.  **Save and publish** the flow.
+
+When the flow reaches this node, the WhatsApp template will be sent automatically to the user, using the values from the current session.
+
+:::notes
+* **All parameters** in the template must be mapped.
+  Missing parameters will cause the message to **fail silently** (it won’t be sent).
+
+* Always choose the **correct sender number** from your connected WhatsApp numbers.
+
+* If a user's phone number is available in the flow (for example, collected during onboarding), it can be used as the **recipient**.
+
+:::
+
+
