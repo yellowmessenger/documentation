@@ -401,7 +401,7 @@ Functions are used in flows via the [Function node](https://docs.yellow.ai/docs/
 
 The following is an example where the function node is used to convert minutes to seconds.
 
-1. Create a flow with the [Question node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#21-question) to take an input from the user and store the response in a variable, pizzamin.
+1. Create a flow with the [Question node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/question-node) to take an input from the user and store the response in a variable, pizzamin.
 
 ![](https://i.imgur.com/FS5E7IW.png)
 
