@@ -87,6 +87,7 @@ module.exports = {
       items: [
         "cookbooks/studio/error_page",
         "cookbooks/email_issue",
+        "platform_concepts/studio/build/unknown_error",
       ],
     }, 
 
