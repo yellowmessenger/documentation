@@ -126,6 +126,7 @@ module.exports = {
     "cookbooks/inbox/notifycustomerofflinehandling",
     "cookbooks/inbox/videourl",
     "cookbooks/inbox/classifyspamemail",
+    "cookbooks/inbox/datac_notloaded",
     "cookbooks/inbox/dyteevent",
   ],
 },    

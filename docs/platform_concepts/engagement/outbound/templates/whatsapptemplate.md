@@ -98,7 +98,7 @@ Variable names should not contain spaces. Only underscores (_) are permitted for
    Quick replies | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters. <br/>For more details, see [Quick replies](#4-add-quick-replies-in-whatsapp-template).
 
 
-### Options to create WhatsApp carousel template¸
+### Options to create WhatsApp carousel template
 
   Other than the options available in common, here are some options specific to WhatsApp carousel template:
 
@@ -286,21 +286,83 @@ To enable users to trigger a flow or display messages when Quick Reply buttons a
 
 ## 5. Add variables in WhatsApp template
 
-Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
+Variables allow you to personalize message content dynamically for each user. You can use variables in the Body or Footer sections of your WhatsApp template to insert user-specific information such as name, order ID, or email. So, when a campaign is sent, each variable will be automatically populated with real user data.
 
-You can add variables by adding two curly brackets before and after the variable name.
 
-   ![](https://i.imgur.com/2DX9Uiu.png)
 
-  
+Here’s a professionally written, user manual-style version that integrates the new META guidelines with your original intent, following a structured and polished tone suitable for product documentation:
 
-By doing so you define a variable user, which can contain unique names of the user you want to send out campaigns to.
+---
 
-  
+### 5. Add Variables to WhatsApp templates
 
-You can see in the preview tab below, the variable user we just created is highlighted in blue for your own convenience.
+Variables allow you to personalize message content dynamically for each user. These placeholders can be used in the **Body** or **Footer** sections of your WhatsApp template to insert user-specific information such as name, order ID, or email.
 
+
+META has updated its template guidelines to enforce **named variables** instead of numeric identifiers. Adhering to these new rules is mandatory to avoid rejections or errors during template submission.
+
+#### ❌ Deprecated format
+
+Using numeric placeholders is no longer supported.
+**Invalid Example:**
+
+```text
+{{1}}, {{2}}, {{3}}
+```
+
+#### ✅ Supported format
+
+All variables must now follow the **named format** with meaningful identifiers.
+**Valid Examples:**
+
+```text
+{{name}}, {{order_id}}, {{customer_email}}
+```
+
+
+#### Variable naming rules
+
+When defining variables:
+
+* Use double curly brackets: `{{ }}`
+      ![](https://i.imgur.com/2DX9Uiu.png)
+
+* Variable names can contain:
+
+  * Lowercase letters (a–z)
+  * Numbers (0–9)
+  * Underscores (\_)
+
+**Correct Examples:**
+
+* `{{customer_name}}`
+* `{{order_id}}`
+* `{{email_1}}`
+
+
+#### Previewing variables in templates
+
+Once added, variables will appear highlighted in the **Preview** tab of the template editor for easy identification. This helps you confirm placement and structure before submitting the template for approval.
+
+Example:
+If you define `{{user_name}}`, the preview will highlight this variable in blue to help you visualize how the content will look during live messaging.
    <img src="https://i.imgur.com/jRhm0jE.png" width="50%"/>
+
+
+:::info
+### 📌 Important notes
+
+* Ensure all new templates created on the platform or submitted directly to META follow the updated naming conventions.
+* Templates using the deprecated numeric format will be **rejected** by META.
+* We recommend adopting descriptive variable names to improve clarity for both reviewers and your internal teams.
+
+:::
+
+
+
+
+
+
 
 ## 6. Setup URL clicks tracking in WhatsApp campaigns
 
