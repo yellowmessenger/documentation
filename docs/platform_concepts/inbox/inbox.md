@@ -14,7 +14,7 @@ To try the Inbox demo, click [here](https://docs.yellow.ai/docs/platform_concept
 
 ---
 
-### **Explore Inbox capabilities:**
+### Explore Inbox capabilities
 
 1. [Powerful inbox functionalities](#i2): Navigate the Inbox and explore tools for efficient query management.  
 2. [Real-time notifications](#i4): Stay updated on key actions and changes in your Inbox.  
@@ -23,7 +23,7 @@ To try the Inbox demo, click [here](https://docs.yellow.ai/docs/platform_concept
 
 ---
 
-### 🎥 **Watch our overview video of Inbox**
+### Watch our overview video of Inbox
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UXM2-18QLds" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
