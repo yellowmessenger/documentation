@@ -48,7 +48,7 @@ featured: true
 
 | New feature | Description | 
 | --- | --- | 
-| **Introducing a new channel in Flows: Outbound Campaigns on Google Business Messages** | Flows now support a new outbound campaign channel, allowing you to utilise Google Business Messages (GBM) for your marketing campaigns.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/gbm-template) | 
+| **Introducing a new channel in Flows: Outbound Campaigns on Google Business Messages** | Flows now support a new outbound campaign channel, allowing you to utilise Google Business Messages (GBM) for your marketing campaigns.<br/><br/> -_> DEPRECATED | 
     
 
 | Enhancement | Description |

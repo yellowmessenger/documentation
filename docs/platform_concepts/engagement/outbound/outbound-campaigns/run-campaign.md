@@ -40,7 +40,7 @@ This article provides how to create campaigns for any channel. The process for c
    * [Email](/docs/platform_concepts/engagement/outbound/templates/email-template)
    * [SMS](/docs/platform_concepts/engagement/outbound/templates/sms-template)
    * [Mobile push](/docs/platform_concepts/engagement/outbound/templates/mobilepush)
-   * [Google Business Message](/docs/platform_concepts/engagement/outbound/templates/gbm-template)
+   <!-- * [Google Business Message](/docs/platform_concepts/engagement/outbound/templates/gbm-template) -->
    * [Viber](/docs/platform_concepts/engagement/outbound/templates/viber-template)
    * [Microsoft Teams](/docs/platform_concepts/engagement/outbound/templates/teams-template)
 
