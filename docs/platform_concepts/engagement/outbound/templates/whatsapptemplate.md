@@ -302,7 +302,7 @@ You can see in the preview tab below, the variable user we just created is highl
 
    <img src="https://i.imgur.com/jRhm0jE.png" width="50%"/>
 
-## 6. Track URL clicks in WhatsApp campaigns
+## 6. Setup URL clicks tracking in WhatsApp campaigns
 
 URL click tracking in Campaigns allows you to monitor user clicks on links used in messages.  Before sending out the actual message, the URLs in the template are shortened, and each user is provided with a unique identifier. This allows you to track individual clicks on the links, providing valuable insights into user engagement and campaign performance.
 
@@ -319,7 +319,7 @@ URL click tracking is currently
 2. **Surveys**: Measure the response rate by tracking the number of users who clicked on the survey link.
 3. **Event invitations**: Monitor the interest level by tracking clicks on event registration links.
 
-To track URL clicks:
+To setup URL clicks tracking:
 1. Create your marketing campaign with the URLs.
 2. Navigate to the **URL click tracking** section and select the URL(s) that you want to track. You will see all the URLs used in the template in the respective sections - this includes URLs in Body text, variables and CTAs.
 
@@ -328,6 +328,25 @@ To track URL clicks:
 3. Send out the campaign to users with the template. The URLs in the tracked list are shortended and a unique identifier is provided to each user before sending.
 
    <img src="https://i.imgur.com/RZGOF9e.jpg" width="40%"/>
+
+
+### Track URL clicks in WhatsApp campaigns
+
+To track URL clicks:
+1. Go to **Engage** > **Outbound** > Click on the respective **Campaign analytics** icon.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/outcamp.png)
+
+2. Scroll down to the bottom of the report.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/templatename.png"/>
+
+   * **Total clicks**: Represents the total number of times the CTA was clicked, including repeated clicks by the same user.
+   * **Unique clicks**: Represents the number of distinct users who clicked the CTA. Multiple clicks by the same user are counted only once.
+
+
+If CTA URL tracking is enabled for a single CTA button, you will see the details of CTA link. If CTA URL tracking is enabled for variable and CTA button, you will see both the metrics as shown below.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/CTAlink.png)
+
 
 
 
