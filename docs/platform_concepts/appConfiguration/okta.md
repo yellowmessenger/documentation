@@ -3,11 +3,13 @@ title : Okta Integration
 sidebar_label : Okta
 ---
 
-# Okta integration
 
 Your Yellow.ai platform can now be integrated with [Okta](https://www.okta.com/). **Okta** is a customizable, secure, and drop-in solution that adds authentication and authorization services to your applications. Get scalable authentication built right into your application without the development overhead, security risks, and maintenance that come from building it yourself. 
 
 You can connect any application in any language or on any stack to Okta and define how you want your users to sign in. Each time a user tries to authenticate, **Okta** will verify their identity and send the required information back to your app. This integration lets you generate login links and get user details.
+
+
+
 
 ## 1. Connect Yellow.ai with Okta
 
@@ -15,17 +17,16 @@ To connect your Okta account with Yellow.ai, follow the steps mentioned below:
 
 ### 1.1 Fetch Okta app integration credentials
 
-1. Sign-in to your **Okta** organization with your administrator account. In the **Admin Console**, go to **Applications** > **Applications**. 
+1. Sign-in to your **Okta** with your Admin account. In the **Admin Console**, go to **Applications** > **Applications**. 
 2. If you already have the app integration in your org, you can search for it using the search box. Once you find it, click on it to go to the settings page.
 
-![](https://i.imgur.com/a3jLTtQ.png)
+   ![](https://i.imgur.com/a3jLTtQ.png)
 
-3. If you need to create a new Okta app integration to represent your project, click **Create App Integration** and follow the instructions (on the new window) to create a new app integration. 
 4. Alternatively, you can search for a pre-existing app integration in the **Okta** catalog and add it to your org by clicking **Browse App Catalog**. 
 
 5. Once you click the app integration, you will be redirected to the setting page. Here, under the **General** tab, the **Client Credentials** section shows the **Client ID** and **Client secrets** for your app integration.
 
-![](https://i.imgur.com/BomtQV0.png)
+   ![](https://i.imgur.com/BomtQV0.png)
 
 
 You can copy the **Client ID** and **Client secret values** using the Copy to Clipboard button beside each text field.
