@@ -372,6 +372,7 @@ module.exports = {
             "platform_concepts/studio/build/create_voice_bot",  
           ],
         },
+        "platform_concepts/AIAgent/automated-agent-testing",
           
             
             
