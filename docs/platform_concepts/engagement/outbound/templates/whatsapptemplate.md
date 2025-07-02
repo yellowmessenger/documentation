@@ -520,7 +520,26 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 
    <img src="https://i.imgur.com/OpceI9g.png" width="60%"/>
 
-  
+## 10. Troubleshooting Guide
+
+### WhatsApp video playback error in campaigns
+
+Use this guide to troubleshoot the issue where video files sent through WhatsApp campaign templates fail to play, displaying the error: “This video is not available because something is wrong. ...”
+
+   <center><img src="https://cdn.yellowmessenger.com/assets/yellow-docs/WAerror.png" alt="drawing" width="40%"/></center>
+
+To fix this, ensure you have access to Engage module and permission to create or edit WhatsApp templates.
+
+1. Go to `https://cloudconvert.com/mp4-converter`.
+2. Upload your original video file.
+3. Convert it to MP4 using the default settings
+4. Download the re-formatted video
+5. Create a new [WhatsApp template](#2-creating-whatsapp-template) as explained on this page.
+6. Upload the converted video.
+7. Submit the template for approval
+8. Once the template is approved, send a test message.
+
+Check that the video plays correctly.
 
 
 ***
