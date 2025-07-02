@@ -18,13 +18,16 @@ To connect your Okta account with Yellow.ai, follow the steps mentioned below:
 ### 1.1 Fetch Okta app integration credentials
 
 1. Sign-in to your **Okta** with your Admin account. In the **Admin Console**, go to **Applications** > **Applications**. 
-2. If you already have the app integration in your org, you can search for it using the search box. Once you find it, click on it to go to the settings page.
+2. If you already have the app integration in your org, you can search for it using the search box. Once you find it, click on it to go to the settings page. [OR] Use **Browse App Catalog** to choose a preconfigured app integration in the **Okta** catalog.
 
    ![](https://i.imgur.com/a3jLTtQ.png)
+ 
+:::note
+* For Single Sign-On (SAML) apps, the Client ID is not applicable or visible.
+:::
 
-4. Alternatively, you can search for a pre-existing app integration in the **Okta** catalog and add it to your org by clicking **Browse App Catalog**. 
 
-5. Once you click the app integration, you will be redirected to the setting page. Here, under the **General** tab, the **Client Credentials** section shows the **Client ID** and **Client secrets** for your app integration.
+3. Once you click the app integration, you will be redirected to the setting page. Here, under the **General** tab, the **Client Credentials** section shows the **Client ID** and **Client secrets** for your app integration.
 
    ![](https://i.imgur.com/BomtQV0.png)
 
@@ -42,13 +45,13 @@ You can copy the **Client ID** and **Client secret values** using the Copy to Cl
 
 ### 1.2 Enable the integration in Yellow.ai
 
-1. Log in to cloud.yellow.ai and click the **Integrations Module** from the module switcher.
+1. On the left navigation bar, go to **Extensions** > **Integrations**.
 
-![](https://i.imgur.com/uT0eVDT.png)
+   ![](https://i.imgur.com/JagYT5w.png)
 
-3. Either search for **Okta** or choose the category named Payment from the left navigation bar and then click **Okta**.
+3. In **Tools & utilities**, select **Okta**. You can also search for the **Okta**.
 
-![](https://i.imgur.com/0RXUqde.png)
+   ![](https://i.ibb.co/nsF9yPNw/okta.png)
 
 5. Fill in the fields under **Account Details** and click **Connect**.
 6. If you have multiple accounts, follow the above mentioned steps to add each of them.
@@ -62,15 +65,15 @@ You can copy the **Client ID** and **Client secret values** using the Copy to Cl
 
 ### 1.3 Receive event in Yellow.ai bot
 
-1. Login to cloud.yellow.ai and click **Automation** from the module switcher.
-3. Click Event on the left navigation bar and choose **Custom Events**.
+1. In the left navigation, go to **Automation** > **Events**.
+2. Click on **Custom Events**.
 
-![](https://i.imgur.com/M1Tb8Md.png)
+   ![](https://i.imgur.com/M1Tb8Md.png)
 
 5. Create an event named **okta-auth-success** and activate it.
 6. A journey needs to be created in the Automation module with this event as its trigger point. Based on the received event data, an appropriate message will be displayed to the end user.
 
-![](https://i.imgur.com/dZo6FdL.png)
+  ![](https://i.imgur.com/dZo6FdL.png)
 
 :::info
 If you have added multiple accounts in your platform, enable events for each of those accounts.
@@ -89,12 +92,12 @@ When multiple accounts are added, select the appropriate account for each node, 
 
 1. In the [Automation flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Okta** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
-![](https://i.imgur.com/xHPgShg.png)
+  ![](https://i.imgur.com/xHPgShg.png)
 
 
 3. When you click the **Integration Action Node**, a drop-down of all the available use-cases for this integration will be displayed. Click **Generate Login URL** from that dropdown.
 
-![](https://i.imgur.com/sodoaqD.png)
+  ![](https://i.imgur.com/sodoaqD.png)
 
 
 5. Fill in the following field for the execution of the use-case. The following is a table that consists of the sample value,data type and description for each of these fields. 
@@ -146,12 +149,12 @@ app.executeIntegrationAction({
 
 1. In the [Automation flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Okta** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
-![](https://i.imgur.com/xHPgShg.png)
+  ![](https://i.imgur.com/xHPgShg.png)
 
 
 3. Once you click the **Integration Action Node**, you will see a dropdown of available use-cases for this integration. Click **Get User Info** from that dropdown.
 
-![](https://i.imgur.com/rdWKWC7.png)
+  ![](https://i.imgur.com/rdWKWC7.png)
 
 5. Fill in the following fields for the execution of the use-case. The following is a table that consists of the sample value, data type and description for each of these fields.
 
