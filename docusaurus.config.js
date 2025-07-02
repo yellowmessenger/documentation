@@ -142,7 +142,10 @@ module.exports = {
     "https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap",
   ],
   onBrokenLinks: "log",
-  clientModules: [require.resolve('./static/js/client-module.ts')],
+  // clientModules: [require.resolve('./static/js/client-module.ts')],
+
+  clientModules: [require.resolve('./src/client-modules/client-module')],
+
   scripts: [
     "/js/FeedbackFooter.js", // feedback footer
     "/js/bot.js", // connect support bot
