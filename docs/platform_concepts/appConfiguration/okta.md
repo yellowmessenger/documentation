@@ -39,7 +39,7 @@ You can copy the **Client ID** and **Client secret values** using the Copy to Cl
 * In redirectUri , please add the webhook url copied from integration card.
 * Ensure that you have selected the user consent.
 
-![](https://i.imgur.com/G7Sazp7.png)
+   ![](https://i.imgur.com/G7Sazp7.png)
 
 :::
 
