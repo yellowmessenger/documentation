@@ -26,7 +26,7 @@ You can access the LLM configuration in two ways:
 
    1. Go to **Settings** > **LLM configuration**.
 
-      ![](https://i.imgur.com/TgBNvuc.png)
+      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/LLMi.png)
     
 #### **Directly from the specific LLM-powered module**
 
@@ -62,7 +62,7 @@ To add the LLM account, follow these steps:
 5. In **LLM provider**, choose your preferred LLM provider.
 6. In **API key**,  get the API key and resource from GPT 3.5 or GPT 4.
 
-      ![](https://i.imgur.com/Ix9UZea.png)
+      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/LLMdetails.png)
 
 7. Click **Connect**.
 
@@ -74,11 +74,11 @@ You can update the details of an existing LLM account or provider if needed. You
 
 2. Navigate to the account you want to edit and click **Edit details**.
 
-     ![](https://i.imgur.com/2K5tlzc.png)
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/editdetails.png)
 
 3. Add the required account details and click **Save**.
 
-     <img  src="https://i.imgur.com/WKxnmnU.png"  alt="drawing"  width="80%"/>
+     <img  src="https://cdn.yellowmessenger.com/assets/yellow-docs/editllm.png"  alt="drawing"  width="80%"/>
 
 #### Disconnect LLM account
 
@@ -87,16 +87,14 @@ You cannot disconnect the default Yellow account. However, you can disconnect an
 Before disconnecting, ensure another account is created to handle all LLM features.
 
 1. Select an alternative account that you want the module to use.
-
-     <img  src="https://i.imgur.com/1gLlCT7.png"  alt="drawing"  width="80%"/>
   
 2. Go to **Account list** > **+ Add account**.
 
-   ![](https://i.imgur.com/I0wQ2Ta.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/addccount.png)
 
 3. Navigate to the account you want to disconnect, then click **Disconnect** to remove the account.
 
-   ![](https://i.imgur.com/iIbYwb5.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/disllm.png)
 
 #### Edit LLM configuration 
 
@@ -112,7 +110,7 @@ For example, you can set GPT 4.0 model in Staging environment and GPT 3.5 model 
 
 2. Update the **Account name** and **Model** as needed.
  
-    <img  src="https://i.imgur.com/B3qS5Xk.png"  alt="drawing"  width="80%"/>
+    <img  src="https://cdn.yellowmessenger.com/assets/yellow-docs/editaccountd.png"  alt="drawing"  width="80%"/>
 
 3. Click **Save**.
 
