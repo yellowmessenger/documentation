@@ -82,7 +82,7 @@ Steps to **retrieve details** from a few **common identity providers** are outli
    
 Watch this video on how configure your identity provider (**Microsoft AzureAD**) and fetch details for yellow.ai SSO configuration:    
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VmhHpo5FeYI?si=CmNdYqjbtM2NJ38E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/VmhHpo5FeYI?si=CmNdYqjbtM2NJ38E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 :::note
 If your identity provider isn't configured in yellow.ai for SSO, share OAuth details directly with [yellow.ai's support team](mailto:support@yellow.ai).
@@ -127,14 +127,16 @@ To enable Single Sign-On (SSO) using Okta, follow the steps below to configure y
 
 1. Enter a recognizable **App Name** (e.g., *Yellow\.ai Integration*).
 2. Upload an optional logo if needed, then click **Next**.
-3. In **Single sign-on URL**, enter the URL provided by Yellow\.ai.
-   (Example: `https://cloud.yellow.ai/...`)
+3. In **Single sign-on URL**, enter the URL provided by Yellow\.ai (`https://cloud.yellow.ai/api/sso/oauth/handle-redirect`)
 4. **Check** the option:
    **✔ Use this for Recipient URL and Destination URL**
 5. In **Default Relay State**, paste the value provided by Yellow\.ai (if available). 
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/editsaml.png)
 
+6. In **Attribute statements**, add *Firstname* and *Email* attributes.
+
+   ![](https://i.ibb.co/35jGCd3h/image-13.png)
 
 ##### When updating an existing app
 
@@ -148,10 +150,7 @@ If your Okta app is already set up:
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/okta.png)
 
 
-#### Step 4: Save and Share Metadata
-
-1. Save the changes in Okta.
-2. Share the **Identity Provider Metadata** (or **IdP Entity ID**, **SSO URL**, and **certificate**) with the Yellow\.ai support team to complete the integration.
+#### Step 4: Save the changes in Okta.
 
 ---
 
