@@ -21,7 +21,7 @@ The Generate PDF/Image node allows you to create PDF and image files (JPG, JPEG,
 * [HTML (to PDF/JPG/JPEG/PNG)](#to-convert-html-to-pdfjpgjpeg-format)
 * [Base64](#to-convert-from-base64)
     
-#### To convert from docx to PDF format
+### To convert from docx to PDF format
 
 To convert docx to PDF format, follow these steps:
 
@@ -43,7 +43,7 @@ Refer to the following gif to see how the docx format is converted to pdf.
 
    ![](https://imgur.com/t1lvWpt.gif)
 
-#### To convert HTML to PDF/JPG/JPEG format
+### To convert HTML to PDF/JPG/JPEG format
 
 1. Choose the **HTML** option.
 
@@ -63,13 +63,13 @@ Refer to the following gif to see how the HTML format is converted to PDF/JPG/JP
 
    ![](https://imgur.com/VadEPOc.gif)
 
-#### To convert from Base64
+### To convert from Base64
 
 There are two ways by which you can convert Base64 files from:
 * [APIs](#apis)
 * [Variables](#variables)
   
-##### APIs  
+#### APIs  
 
 1. In **Input type** choose **API**.
 2. In **API**, choose the API added to your bot. If your API has dynamic paramters, add nodes to collect that information from users.
@@ -82,10 +82,63 @@ There are two ways by which you can convert Base64 files from:
 To display PDFs from an API response, store the response in  an object variable, for example **pdf_response**. Include a text node and enter this syntax ```{{{variables.pdf_response.file.url}}}``` 
 :::
 
-##### Variables
+#### Variables
 
 1. In **Input type** choose **Variable**.
 2. In **Select variable**, choose the variable that contains the BASE64 file.
 3. **Select an output format**: Choose the PDF option. 
 
 Display the file through the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/file-node). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user. 
+
+### Generate PDF file from CDN url
+
+When PDF URLs are retrieved from an API response or internal database, you can use a custom script to generate a downloadable PDF file and share it with the user. 
+
+This is done by formatting the file details into a JavaScript object and storing it in a variable of type Object, which is then used in the File node to deliver the file to the user.
+
+Let's say your API returns a PDF file URL like:
+
+`https://cdn.yellowmessenger.com/PpfArbF4dxlI1744625393376.pdf`
+
+You can format and return this URL in a structure supported by the [File node](https://docs/platform_concepts/studio/build/nodes/prompt-node-overview/file-prompt-node) using a script function.
+
+#### Steps to implement
+
+**Step 1**: Write a [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) to format the File object. Use a function node or logic node to write the following script. It consists of PDF link and file name inside an object format expected by the File node:
+
+```c
+return new Promise(resolve => {
+    // Replace the static link with your logic to extract the PDF link from API/database
+    // Example: let pdflink = data.variables.pdfLink;
+    let pdflink = "https://cdn.yellowmessenger.com/PpfArbF4dxlI1744625393376.pdf";
+
+    let obj = {
+        "file": {
+            "url": `${pdflink}`,
+            "name": "file name"
+        }
+    };
+
+    console.log(pdflink, "link of the file");
+    resolve(obj);
+});
+```
+
+**Note**:
+* **url**: Provide the full PDF URL.
+* **name**: Provide the file name that will appear to the user when they download it.
+
+**Step 2**: Store the response in an object variable
+   * Save the output of the above function in a variable.
+   * The variable should be of type Object.
+   * Example variable name: pdfFileObject.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/filenodepdf.png)
+
+**Step 3**: Use the Object Variable in a File Node
+   * Add a File node to your conversation flow.
+   * In the Fetch from section, select Variable.
+   * Choose the variable name used in Step 2 (example, pdfFileObject).
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/objectdata.png)
+
