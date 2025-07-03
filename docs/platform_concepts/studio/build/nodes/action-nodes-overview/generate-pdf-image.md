@@ -100,7 +100,7 @@ Let's say your API returns a PDF file URL like:
 
 `https://cdn.yellowmessenger.com/PpfArbF4dxlI1744625393376.pdf`
 
-You can format and return this URL in a structure supported by the File node using a script function.
+You can format and return this URL in a structure supported by the [File node](https://docs/platform_concepts/studio/build/nodes/prompt-node-overview/file-prompt-node) using a script function.
 
 #### Steps to implement
 
