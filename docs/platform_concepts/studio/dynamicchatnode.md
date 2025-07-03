@@ -358,7 +358,55 @@ Configure the following fields:
     <img src="https://i.imgur.com/1gy4RKn.png" alt="drawing" width="100%%"/>
 
 
+## Enable smart quick reply in Dynamic chat node
 
+Smart Quick reply feature in Dynamic chat automatically shows clickable reply options to users during a conversation. It helps improve user experience by suggesting quick responses, especially when prompts for displaying options do not work as expected. Enabling this feature ensures users always see quick reply buttons in the chat.
+
+**When to use smart Quick reply**
+
+If you have added a promot like `Provide clickable options formatted as options` but the quick reply buttons does not display in the chat, it means the system could not understand the prompt. In such cases, enabling smart Quick reply automatically show relevant quick reply buttons to the user.
+    
+  ![image](https://hackmd.io/_uploads/Byo24A1Hxl.png)
+    
+### Steps to enable smart Quick reply
+
+To enable this feature within a Dynamic chat node, follow these steps:  
+    
+1. Go to the AI agent that contains the Dynamic chat node where quick replies are not functioning as expected.    
+    
+2. In the conversation flow canvas, find the Dynamic chat node and click on the node to open its configuration panel on the right.
+    
+     ![image](https://hackmd.io/_uploads/H1C5SCkSll.png)
+
+3. In the Dynamic chat node's configuration panel, scroll to the bottom and expand the **Additional settings** section.  
+    
+    ![image](https://hackmd.io/_uploads/rJ7zLAkHxl.png)
+
+4. Toggle **Smart Quick replies** option.
+    
+    ![image](https://hackmd.io/_uploads/HkJnLR1Sxg.png)
+    
+* This setting automatically generate and show quick reply buttons based on the conversation context.    
+
+5. After enabling the toggle, click **Save** to confirm your changes to the Dynamic chat node.   
+    
+### Verification    
+    
+After enabling Smart Quick reply, verify that it is working as expected:
+
+1. **Test AI agent**: Use the test AI agent option within Automation or a connected live channel to simulate user interaction.
+2. **Trigger Dynamic chat node**: Navigate through the conversation flow to activate the Dynamic chat node where you enabled smart Quick reply.
+3. **Confirm Quick reply display**: Check whether the clickable quick reply options now appear in the chat interface. The replies should be contextually appropriate and assist users in responding quickly.
+    
+### Troubleshooting
+
+* **Quick replies still not appearing**: Double-check that the smart Quick replies toggle is indeed enabled and saved.
+  - Clear your browser cache and try testing again.
+Verify that there are no conflicting settings or other node configurations that might be suppressing quick replies.
+* **Unexpected Quick replies**: If smart Quick replies generates options you did not intend, review your AI agent's training data and the context provided to the Dynamic Chat node to refine the AI's understanding.
+    
+
+    
 
  
 
