@@ -27,11 +27,11 @@ sidebar_label: SMS template
 
    Option | Description
    -------- | ---------
-   Template name | Name the template. Name should be in lower case and you can only use underscore as a special character. Example: sms_name
+   Template name | Name the template. Name should be in lower case, and you can only use underscore as a special character. Example: sms_name
    Sender ID | Provide the number from which you want to send the SMS. For example, you can use a numeric ID like 12345 or a custom name such as MYSHOP. For example, this could be a numeric identifier like 9876543210 or a custom alphanumeric ID such as MYSHOP.
-   Template ID | Template ID associated with the SMS message. <br/>For Indian numbers, this identifier is mandated by the DLT (Distributed Ledger Technology) platform to comply with local regulations. It is a numberic value with length between 12 and 19 characters. You can find this against the template from the DLT portal of the brand. <br/> However, for numbers in other regions, such as the US, this may not apply. In such cases, you can input any value or leave it blank, depending on the provider's specifications. Requirements may vary across geographies, so it's best to confirm with the Engage/Channels team for region-specific guidelines.
+   Template ID | Template ID associated with the SMS message. <br/>For Indian numbers, this identifier is mandated by the DLT (Distributed Ledger Technology) platform to comply with local regulations. It is a numeric value with length between 12 and 19 characters. You can find this against the template from the DLT portal of the brand. <br/> However, for numbers in other regions, such as the US, this may not apply. In such cases, you can input any value or leave it blank, depending on the provider's specifications. Requirements may vary across geographies, so it's best to confirm with the Engage/Channels team for region-specific guidelines.
    Language | Choose the language of the message.
-   Body text | Enter the message body. To add variables such as verification code, payment links, or first nam, use {{ }}. For Example: {{CustName}}<br/>To create a new variable, use the structure {{*variable_name_comes_here*}} - ie, the variable name between double curly brackets.
+   Body text | Enter the message body. To add variables such as verification code, payment links, or first name, use {{ }}. For Example: {{CustName}}<br/>To create a new variable, use the structure {{*variable_name_comes_here*}} - i.e., the variable name between double curly brackets.
 
    ![](https://cdn.yellowmessenger.com/VfiEBNhwk6IM1649261672637.png)
 
@@ -52,8 +52,8 @@ URL click tracking in Campaigns allows you to monitor user clicks on links used 
 
 :::note
 URL click tracking is currently
-* supported for SMS and WhatsApp campaigns. If you need it for URLs in other channels, please contact us.
-* available only for Premium users.
+* Supported for SMS and WhatsApp campaigns. If you need it for URLs in other channels, please contact us.
+* Available only for Premium users.
 :::
 
 
@@ -65,7 +65,7 @@ You can track URL clicks in three different elements of your template - Template
 3. **Event invitations**: Monitor the interest level by tracking clicks on event registration links.
 
 
-To setup URL clicks tracking:
+To set up URL clicks tracking:
 1. Create your marketing campaign with the URLs.
 2. Navigate to the **URL click tracking** section and select the URL(s) that you want to track. You will see all the URLs used in the template in the respective sections - this includes URLs in Body text, variables and CTAs.
 
@@ -73,7 +73,7 @@ To setup URL clicks tracking:
 
 3. Click **Create template**.    
 
-4. [Send out the campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) to users with the template. The URLs in the tracked list are shortended and a unique identifier is provided to each user before sending.
+4. [Send out the campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) to users with the template. The URLs in the tracked list are shortened, and a unique identifier is provided to each user before sending.
 
 
 ### 1.2 Track URL clicks in SMS campaigns
@@ -126,7 +126,7 @@ Common details that will be expected during the DLT registration are:
 
 You can create the DLT account with your preferred telecom provider.
 
-Search Google for <_telecom_name DLT registration_> (e.g, Airtel DLT registration) or refer to relevant link below. and Follow the steps as directed by the selected telecom operator.
+Search Google for <_telecom_name DLT registration_> (e.g, Airtel DLT registration) or refer to relevant link below. Follow the steps as directed by the selected telecom operator.
 
 1. [Airtel](https://dltconnect.airtel.in/signup/)
 2. [Jio](https://trueconnect.jio.com/#/home/entity-registration)
@@ -188,19 +188,19 @@ SMS Sender ID or SMS Header should be created in the DLT portal as follows:
 |- | - |
 Turn around time | The Turnaround time (TAT) for successful/unsuccessful registration of Sender ID/Header will vary vendor wise and will be mentioned in the respective links. On an average, 2 days will be taken for approval or rejection of the Sender ID.
 Template creation & approval | Once the Sender ID/Header has been approved, next step is to proceed with template creation
-TAT for approval or rejection | 3-5 days
+TAT for approval or rejection | 3–5 days
 
 
 
 ### 2.4 Steps to create template
 
 :::note
-The User interface may slightly differ for DLT portal from one telecom operator to other. Follow the specific steps as directed by the portal during registration. Below points are for overall understanding of the process.
+The User interface may slightly differ for DLT portal from one telecom operator to others. Follow the specific steps as directed by the portal during registration. Below points are for overall understanding of the process.
 :::
 
-1. Choose the ’Template type’ as SMS
-2. Choose the ‘Type of communication’ as Promotional or Transactional as needed
-3. Choose the appropriate ‘Category’ of the business
+1. Choose the **Template type** as SMS
+2. Choose the **Type of communication** as Promotional or Transactional as needed
+3. Choose the appropriate **Category** of the business
 4. Choose from one or more already created headers
 5. Give an appropriate name to the template
 6. Write the exact message content with or without variables as per need
@@ -222,7 +222,7 @@ Once the SMS channel configuration is successful, next is to send notifications.
 
 Two types of notifications can be achieved with yellow.ai platform.
 
-1. Blast campaigns to a large audience using the Campaigns manager
+1. Blast campaigns to a large audience using the Campaign manager
 2. 1-o-1 transactional updates to the customers
 
 **For bulk outbound campaign:**
@@ -232,20 +232,20 @@ Two types of notifications can be achieved with yellow.ai platform.
 Sending blast campaign from the engagement platform:
 
 1. Upload the CSV in the audience
-2. Create a segment based on the desired ‘tags
+2. Create a segment based on the desired tags
 3. [Schedule campaign](/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign)
 
 **If the bot is on the cloud platform**, to run blast campaigns:
 
-1. Go to **Engage** > **Templates** > Select **SMS** > Create the same template that you created and got approved in the DLT portal. Ensure you add the exact details as added in the DLT portal - without any changes in the linespace, case (upper/lower case) and 
+1. Go to **Engage** > **Templates** > Select **SMS** > Create the same template that you created and got approved in the DLT portal. Ensure you add the exact details as added in the DLT portal - without any changes in the line space, case (upper/lower case) and 
 2. Add the [audience CSV](https://docs.google.com/document/d/1RCPeDiS4Hv_n0thHRpICK0kQ1RjUpzET365cEEnxpQM/edit)
 3. Schedule the campaign as explained in [Create outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
 
-**for transactional 1-o-1 updates 👇**
+**For transactional 1-o-1 updates 👇**
 
 **If the bot is on cloud platform**
 
-1. **Go to Engagement > Templates > Select SMS > Create the same template** that you created and got approved in the DLT portal. Add the exact details as added in the DLT portal. Make sure the message content is JUST THE SAME without any changes in the linespace, case (upper/lower case) and such
+1. **Go to Engagement > Templates > Select SMS > Create the same template** that you created and got approved in the DLT portal. Add the exact details as added in the DLT portal. Make sure the message content is JUST THE SAME without any changes in the line space, case (upper/lower case) and such
 2. Make use of the V2 Notification API and/or [Workflow campaign](/docs/platform_concepts/engagement/flows_campaign) as per need.
 
 

@@ -41,7 +41,7 @@ To create a Workflow campaign, follow these steps -
 
 1. Create a new flow to use in your Workflow campaign.
 
-   From **Automation** >  **Create flow**. [OR]
+   From **Automation** > **Create flow**. [OR]
    ![](https://i.imgur.com/owb39Q6.png)
    
    From **Automation** > **Flows** > **Create flow**.
@@ -63,11 +63,11 @@ To create a Workflow campaign, follow these steps -
 
 ![](https://i.imgur.com/gL830m9.png)
 
-6. Map Template params properly with CDP Attribute or AI-agent variable so that the Template can be sent to the user.
+6. Map Template parameters properly with CDP Attribute or AI-agent variable so that the Template can be sent to the user.
 
 :::note
-* There should be at least 1-2 minutes delay between an Outbound Node and Notification Status Node.
-* It is recommended to have at least 2-3 channels configured in an AI-agent for  Workflow Campaigns to have better fallbacks.
+* There should be at least 1–2 minutes delay between an Outbound Node and Notification Status Node.
+* It is recommended to have at least 2–3 channels configured in an AI-agent for Workflow Campaigns to have better fallbacks.
 * Currently, not all the Action Nodes are supported in a Workflow. Basic functionalities such as Outbound Nodes, Delay Nodes, and DB Updates are compatible with Workflow Campaign.
 :::
 

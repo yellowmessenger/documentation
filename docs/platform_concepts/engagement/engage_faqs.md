@@ -12,9 +12,9 @@ rank: 1
 
 To prevent sending campaigns to users who respond with DND, follow these steps:
 
-1. Create and train an [intent on relevant uttrences like DND and unsubscribe](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
+1. Create and train an [intent on relevant utterances like DND and unsubscribe](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
 2. Set up a flow triggered by the respective intent.
-3. Within the flow, [update the opt-in property when the intent is triggered.
+3. Within the flow, update the opt-in property when the intent is triggered.
 4. Use this updated property as a [condition in segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) targeting to exclude users who have opted for DND from receiving further campaign messages.
 
 For a detailed help guide, refer to [Engage user guide](https://docs.yellow.ai/docs/cookbooks/engage/optout-campaigns).
@@ -27,7 +27,7 @@ For a detailed help guide, refer to [Engage user guide](https://docs.yellow.ai/d
 
 You can initiate outbound campaigns using notification APIs. These APIs provide the necessary functionality to trigger campaigns programmatically, allowing for seamless integration with your existing systems or applications.
 
-For more details, see[Notification APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#23-postman-collections).
+For more details, see [Notification APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#23-postman-collections).
 
 </details>
 
@@ -55,7 +55,7 @@ To capture the data sent in the template, You can capture template ID, variable 
  How do I capture additional details from the messages sent?</summary>
 
 
-To capture additional details from the messages sent, you can pass inside  the `customPayload` in the `config` object. This allows you to include specific data within the message payload, which can then be accessed and processed by your AI-agent. You can pass upto three variables.
+To capture additional details from the messages sent, you can pass inside the `customPayload` in the `config` object. This allows you to include specific data within the message payload, which can then be accessed and processed by your AI-agent. You can pass up to three variables.
 
 For example, you can include relevant variables such as waybill numbers, IDs, or codes within the customPayload field of the config object.
 
@@ -224,7 +224,7 @@ The yellow.ai will help in setting up a Bulk email campaign account. The followi
 
  <div>
 
-   No. Unlike many channels like SMS, WhatsApp, we cannot send lakhs or thousands of emails from day one. Email is a highly regulated channel where the ISP (internet service providers and the end-user's email clients (aka emailbox) screens for the reputation of the IP address from which the emails are sent from.
+   No. Unlike many channels like SMS, WhatsApp, we cannot send lakhs or thousands of emails from day one. Email is a highly regulated channel where the ISP internet service providers and the end-user's email clients (aka emailbox) screens for the reputation of the IP address from which the emails are sent from.
 
    Hence, we need to spend considerable time in increasing the reputation of the IP address from which the bulk emails are sent. This process is called ‘IP Warming’.
 
@@ -234,7 +234,7 @@ The yellow.ai will help in setting up a Bulk email campaign account. The followi
 <details>
 <summary>What is an IP address?</summary>
 
-Internet Protocol Address (shortly, IP address) is a unique numerical address that defines your location on the internet. Roughly , this is like your house address which is needed to locate you and your identity .
+Internet Protocol Address (shortly, IP address) is a unique numerical address that defines your location on the internet. Roughly, this is like your house address which is needed to locate you and your identity.
 
   
 
@@ -252,7 +252,7 @@ IP warming is the process of incrementally adding email volume to the new IP add
 
 Mailboxes treat a new IP address with suspicion until they build a positive sending reputation.
 
-Typically, it takes 4-8 weeks to achieve highest deliverability (subject to vary based on email volume and engagement).
+Typically, it takes 4–8 weeks to achieve the highest deliverability (subject to vary based on email volume and engagement).
 
 </details>
 
@@ -264,9 +264,9 @@ What are the tips for IP warm up planning?</summary>
 
 
 - Start your email program with the email content that you feel will perform the best with respect to engagement (opens, clicks).
-- Start your email program with the users that you know are most likely to open/engage with your emails (It could be your best users, favourite customers active on email).
+- Start your email program with the users that you know are most likely to open/engage with your emails (It could be your best users, favorite customers active on email).
 - As you progress with the warm-up plan, keep adding 10-15% of your older user audience to your most engaging user segment that you started with.
-- During the course of the IP warming program, we should be incrementally adding the audience size from highest engaging users to the lowest, dull engaging users based on the historic experience.
+- During the course of the IP warming program, we should be incrementally adding the audience size from the highest engaging users to the lowest, dull engaging users based on the historic experience.
 - During the first two weeks, send emails to the most engage-worthy users. The brands could help with the audience.
 - During the third and fourth weeks, we could include the audience users who have opened/clicked emails in last 60 days from your previous email program.
 - During the first six weeks, we should avoid sending emails to the least engaged/ bounce-worthy users, spam-markers.
@@ -289,12 +289,12 @@ What should we consider for IP warm-up plan?</summary>
  
 
   
-- Different mailbox providers may delay the mail delivery, block the emails during the initial days. It is important to discover the bad user segments after each day and ensure to add the engage-worthy userbase on a daily basis during the warm-up plan.
-- IP warming is not only about the incremental increase in volume but also about the engagement ( opens, clicks, bounces, getting marked as spam).
+- Different mailbox providers may delay the mail delivery, block the emails during the initial days. It is important to discover the bad user segments after each day and ensure to add the engage-worthy user base on a daily basis during the warm-up plan.
+- IP warming is not only about the incremental increase in volume but also about the engagement (opens, clicks, bounces, getting marked as spam).
 - Opens & clicks engagement positively impact the IP sending reputation.
 - Bounces, invalid user email addresses, and spam reports negatively impact the IP sending reputation.
 - To keep the engagement rate high, ensure to send emails only to the opted-in users.
-- Begin your email sending program by sending an opt-in sign up form. You can have email opt-in across your digital portfolio such as website, WhatsApp bots etc.
+- Begin your email sending program by sending an opt-in sign-up form. You can have email opt-in across your digital portfolio such as website, WhatsApp bots etc.
 - Send only high-relevant content.
 - Request the users to whitelist your email ID to deliver directly to ‘primary inbox’ instead of spam or promotions.
 - As the list grows, remove non-engaging users.
@@ -314,12 +314,12 @@ What should we consider for IP warm-up plan?</summary>
 
   
 
-Computers are extremely fast. They can handle the IP addresses of the Internet-connected devices which are numerical. However, we humans have a lot other things to remember, right? To bail you out from remembering the numerical IPs, comes the domain names.
+Computers are extremely fast. They can handle the IP addresses of the Internet-connected devices which are numerical. However, we humans have a lot of other things to remember, right? To bail you out from remembering the numerical IPs, comes the domain names.
 
 
 
 
-Domain names are human-readable address. For example, yellow.ai , google.com, Yellow and Google are the domains. `.ai` and `.com` are called top level domains.
+Domain names are human-readable address. For example, yellow.ai, google.com, Yellow and Google are the domains. `.ai` and `.com` are called top level domains.
 
 </details>
 
@@ -330,7 +330,7 @@ Domain names are human-readable address. For example, yellow.ai , google.com, Ye
 <summary>What is a sub-domain?</summary>
 
 
-In the example docs.yellow.ai, `docs` is the sub-domain of yellow.ai.
+In the example docs.yellow.ai, `docs` is the subdomain of yellow.ai.
 
 </details>
 
@@ -343,7 +343,7 @@ Are these domains taken for rent?
 
 Yes, you cannot own domains. You can only pay and get the right to use it for the approved time (say 2 years) before renewal. If you fail to renew, this will be available for someone else to buy for a rent.
 
-The place where you pay and get the domains are called 'Registrars'. For example, GoDaddy, CloudFlare (DNS names given are for example and not as a recommendation from yellow.ai) is a registrar from whom you can get domains.
+The place where you pay and get the domains are called 'Registrars'. For example, GoDaddy, Cloudflare (DNS names given are for example and not as a recommendation from yellow.ai) is a registrar from whom you can get domains.
 </details>
 
 
@@ -353,7 +353,7 @@ The place where you pay and get the domains are called 'Registrars'. For example
 
 <summary>What is DNS?</summary>
 
-In short, Domain Name System (DNS) behaves like a translator. Whenever you types something like yellow.ai on the browser, DNS translates this to computer-friendly IP address and that's why the particular page gets opened.
+In short, Domain Name System (DNS) behaves like a translator. Whenever you type something like yellow.ai on the browser, DNS translates this to computer-friendly IP address and that's why the particular page gets opened.
 
 </details>
 
@@ -424,7 +424,7 @@ Brands should create a new DLT account with one of the Telco providers.
 What is an Entity ID?
 </summary>
 
-Entitiy ID is the unique ID given to the brand by the TRAI upon successful creation of the DLT account. There can be only one DLT account per business.
+Entity ID is the unique ID given to the brand by the TRAI upon successful creation of the DLT account. There can be only one DLT account per business.
 </details>
 
 
@@ -442,7 +442,7 @@ Sender ID or Header is a 6-digit alphabetic name for transactional messages and 
 What is a template ID?
 </summary>
 
-This is the unique reference to the template message that you apply in the your DLT portal.
+This is the unique reference to the template message that you apply in your DLT portal.
 </details>
 
 
@@ -451,9 +451,9 @@ This is the unique reference to the template message that you apply in the your 
 What are the types of SMS notifications brands cans send?
 </summary>
 
-There are two types of SMS notifications  - 1. Promotional 2. Transactional.
+There are two types of SMS notifications - 1. Promotional 2. Transactional.
 
-Transactional notifications has three types:
+Transactional notifications have three types:
 
 a. OTP - only for banks.<br/>
 b. Service Implicit - transactional notifications sent based on customer’s actions (e.g, product purchase confirmations, service related info, order/delivery status info, OTP by brands).<br/>
@@ -544,11 +544,11 @@ When a campaign triggered via the yellow.ai platform or through API notification
 2. [Download the campaign report](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/view-outbound#download-and-analyse-campaign-report) for the specific campaign to identify any failures.
 3. Two reports will be sent to your email address: one indicating the achievement of the set goal and the other highlighting failures with reasons under the error resolution column.
 
-  ![campaign reort](https://i.imgur.com/jQd2VqR.png)
+  ![campaign report](https://i.imgur.com/jQd2VqR.png)
  
 **B. If the campaign is triggered using the Notification API**:
 
-1. In the Insights module, navigate to **Data Explorer** page .
+1. In the Insights module, navigate to **Data Explorer** page.
 2. Open the notification report and filter by campaign ID, template name, or status and click **Apply filters**.
 
    ![img](https://i.imgur.com/jegyYyw.png)

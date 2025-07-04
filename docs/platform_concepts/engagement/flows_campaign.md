@@ -69,8 +69,8 @@ To set an event for which the user qualifies to enter the flow:
 | Option | Description |
 | ------ | ------------ |
 | **Campaign triggers when user**  | Choose the event for which the user qualifies to enter the flow. Learn more about [how to activate events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#1-activatedeactivate-event) and [how to add custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-event). |
-**After event, campaign triggers** | <ul><li>Choose *Immediately* to trigger the campaign right after the event has occured.</li><li>Choose **At a specific time** to trigger the campaign on a specific date for the qualified users. <br/><img src="https://i.imgur.com/SdcMiVJ.png" width="50%"/></li><li>Choose **After a delay** to trigger the campaign after a specific number of hours, days, or weeks from the event occured time. <img src="/img/cdp/afteraDelay.png" width="60%"/><br/> You can also define a custom property (Click **Add property input**) by which you want to trigger the campaign. <br/><img src="/img/cdp/addPropertyInput.png" width="60%"/> <br/>1. Set the duration in minutes, hours, days or weeks. <br/>2. Choose when to remind - Before or After, and <br/>3. Enter your preferred event property in the last box. <img src="/img/cdp/property2.png" width="60%"/><br/>For example, send a notification 2 days before a subscription renewal date, Send a greeting on the customer's birthdate, send a reminder 30 minutes before the appointment, or send a thank you message an hour after the flight departure.</li></ul> | 
-| **Campaign frequency & duration** | Setup when to run the campaign.<br/><ol><li>In **Run this campaig**, choose between *Once per user* or *Everytime when the event happens*.</li><li>In **Start** and **End**, set the duration of the campaign (date and time).</li></ol> | 
+**After event, campaign triggers** | <ul><li>Choose *Immediately* to trigger the campaign right after the event has occurred.</li><li>Choose **At a specific time** to trigger the campaign on a specific date for the qualified users. <br/><img src="https://i.imgur.com/SdcMiVJ.png" width="50%"/></li><li>Choose **After a delay** to trigger the campaign after a specific number of hours, days, or weeks from the event occurred time. <img src="/img/cdp/afteraDelay.png" width="60%"/><br/> You can also define a custom property (Click **Add property input**) by which you want to trigger the campaign. <br/><img src="/img/cdp/addPropertyInput.png" width="60%"/> <br/>1. Set the duration in minutes, hours, days or weeks. <br/>2. Choose when to remind - Before or After, and <br/>3. Enter your preferred event property in the last box. <img src="/img/cdp/property2.png" width="60%"/><br/>For example, send a notification 2 days before a subscription renewal date, Send a greeting on the customer's birthdate, send a reminder 30 minutes before the appointment, or send a “Thank You” message an hour after the flight departure.</li></ul> | 
+| **Campaign frequency & duration** | Setup when to run the campaign.<br/><ol><li>In **Run this campaign**, choose between *Once per user* or *Every time when the event happens*.</li><li>In **Start** and **End**, set the duration of the campaign (date and time).</li></ol> | 
 | **Target audience** | <ul><li>If you want the campaign to be applicable for specific users groups, select **One or more segments** and choose your preferred user segments.</li><li> If you want the campaign to be enabled for all users, select **All users**. </li></ul> | 
 
 ***
@@ -118,7 +118,7 @@ After exiting segment, campaign triggers | Once a user exits the segment, choose
 **Campaign frequency & duration** | Set the campaign frequency and duration.
 **Run this campaign** | Choose whether to run the campaign only *Once per user* or *Every time event happens* (every time a user exits a segment).
 **Start** / **End** | Choose the duration of the campaign using the calendar boxes.
-**Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the. campaign applicable to all users.
+**Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the campaign applicable to all users.
 
 
 :::note
@@ -222,11 +222,11 @@ Before adding channels to a flow, ensure the following:
 
 ### Channels configuration
 
-Use this to send a WhatsApp notification. You can set when to proceed to the next step of the flow using **Add wait upto** - Immediately, Duration, or Timestamp.
+Use this to send a WhatsApp notification. You can set when to proceed to the next step of the flow using **Add wait up to** - Immediately, Duration, or Timestamp.
 
 <center><img src="https://i.imgur.com/PruprxG.png" width="30%"/></center>
 
-* **Immediately**: Proceed to the next step of the flow immediately after sending the message.
+* **Immediately**: Proceed to the next step of the flow immediately after sending the message. 
 * **Duration**: Proceed to the next step after a specific number of days, hours, or minutes from the message sent time. 
 * **Timestamp**: Proceed to the next step on a specific date and time.
 
@@ -288,7 +288,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
    :::note
       * This option is only available for customers who are onboarded to MM Lite and is supported only for MARKETING templates
-      * By default, it applies the configured  [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level).
+      * By default, it applies the configured [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level).
    :::
 
 6. Enable **During workflow business hours** to send the message only during business hours.
@@ -314,7 +314,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
 <center><img src="https://i.imgur.com/ykOxSYJ.png" width="50%"/></center>
 
-4. In **CC**,  add the email addresses to which you want to send a copy of the email. Recipients in the CC field are visible to all the recipients of the email.
+4. In **CC**, add the email addresses to which you want to send a copy of the email. Recipients in the CC field are visible to all the recipients of the email.
 5. In **BCC**, add other email addresses to which you want to send the email copy.  Recipients in the BCC field won't be visible to anyone else.
 6. In **Templates**, choose the email template that you want to use for sending the message.
 7. If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).

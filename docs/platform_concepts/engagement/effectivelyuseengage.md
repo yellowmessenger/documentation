@@ -8,10 +8,10 @@ In this article, you will learn how to -
 * [Identify the right audience](#1identify-the-right-audience)
 * [Set up goals and objectives](#2-setup-goals-and-objectives)
 * [Identify the message to be conveyed](#3-identify-the-message-to-be-conveyed)
-* [Monitor and analyse the campaign](#4-analyse-campaign-performance)
+* [Monitor and analyze the campaign](#4-analyse-campaign-performance)
 * [Best practices to drive customer engagement](#5-best-practices-to-engage-customers)
 
-## 1.Identify the right audience
+## 1. Identify the right audience
 
 When you create a campaign, it is important to identify the right set of audience. Sending messages to uninterested audience might lead to a low quality rating. For example, if a customer keeps receiving irrelevant messages from your WhatsApp business number, he might block your number.
 
@@ -48,7 +48,7 @@ Hence, setting objectives works best through SMART goals as they cover every asp
 *  **Measurable**: What KPIs will help you determine whether you have reached your goal or not.
 *  **Achievable**: It is good to aim high but at the same time be prudent enough to set achievable goals.
 *  **Relevant**: Ensure your goals are relevant to the overall business goal.
-*  **Time-bound**- Giving your objectives clear deadline tells you when you need to measure the results and benchmark these results against past ( and future) campaigns.
+*  **Time-bound**- Giving your objectives clear deadline tells you when you need to measure the results and benchmark these results against past (and future) campaigns.
 
   
   
@@ -57,23 +57,23 @@ Hence, setting objectives works best through SMART goals as they cover every asp
 
 
   
-Identify the what message you need to send, who are the tatget audience, and why you need to send.
+Identify what message you need to send, who are the target audience, and why you need to send.
 * **What?** 
     You should revisit the organization's goal and objectives outlined in the previous section to confirm the outcomes messaging is designed to achieve.
 * **Who?** 
    Confirm the target audience for the message as mentioned in the first step (identify the right audience)
 * **Why?** 
-   Identify key words and ideas that you want to associate with your organization, product offerings, or services. You need to use these keywords prominently in your messaging to standout and differentiate from competition.
+   Identify keywords and ideas that you want to associate with your organization, product offerings, or services. You need to use these keywords prominently in your messaging to standout and differentiate from competition.
 
   
 
-**Whatsapp as a Channel**
+**WhatsApp as a Channel**
 
-Whatsapp has mandated template approval to curb marketing spams. Promotional marketing is restricted, the primary focus being providing customer support and lifecycle updates to customer.
+WhatsApp has mandated template approval to curb marketing spams. Promotional marketing is restricted, the primary focus being providing customer support and lifecycle updates to customer.
 
   
 
-* We recommend to restrict whatsapp campaigns to convey account updates, payment updates, appointment updates,personal finance updates, reservation updates, shipping updates, and provide issue resolution.
+* We recommend restricting WhatsApp campaigns to convey account updates, payment updates, appointment updates, personal finance updates, reservation updates, shipping updates, and provide issue resolution.
 
 * Message templates that contain any of the following are at a risk of getting rejected.
 
@@ -81,17 +81,17 @@ Whatsapp has mandated template approval to curb marketing spams. Promotional mar
 
 * Surveys, product/service reviews and rating requests.
 
-* Large media ( images/gifs/videos).
+* Large media (images/GIFs/videos).
 
   
 
-## 4. Analyse campaign performance
+## 4. Analyze campaign performance
 
-Once you have executed your campaign, you need to analyse the results of the campaign. 
+Once you have executed your campaign, you need to analyze the results of the campaign. 
 
-There are three ways in which you can analyse the campaign performance -
+There are three ways in which you can analyze the campaign performance -
 
-1. Go to the outbound/inbound page and you will get a brief summary of the campaigns that you have triggered/scheduled.
+1. Go to the outbound/inbound page, and you will get a brief summary of the campaigns that you have triggered/scheduled.
 
    ![](https://i.imgur.com/MPKmP0K.png)
 
@@ -113,7 +113,7 @@ You can now apply filters, summarize and visualize the data according to your re
 
   
 
-The final visualisation will look something like this
+The final visualization will look something like this
 
   
 
@@ -122,7 +122,7 @@ The final visualisation will look something like this
   
   
 
-It is important to note here that you should have clarity on what results you need to measure and **what are your KPIs**, once you know this you need to **benchmark** with past( and future) campaigns.
+It is important to note here that you should have clarity on what results you need to measure and **what are your KPIs**, once you know this you need to **benchmark** with past (and future) campaigns.
 
   
 
@@ -137,10 +137,10 @@ This will be your very first interaction with the user and first impressions do 
   
   
 
-### 5.2 Create personalised messages
+### 5.2 Create personalized messages
 To obtain higher engagement and ROI (return on investment), personalization plays a key role. Do you prefer a common message that ideally ends in spam or a personalized message that you feel like it's written for you?
 
-Definitely, you world prefer a more personalized message. Use the dynamic variables tp the best possible extent in your templates.
+Definitely, the world prefers a more personalized message. Use the dynamic variables to the best possible extent in your templates.
 
   
 
@@ -150,7 +150,7 @@ Definitely, you world prefer a more personalized message. Use the dynamic variab
 
 ### 5.3 Run feedback campaigns
 
-Make sure to take feedback from the user quite often. Just don't make it frequent and repetitive, user might drop off in such cases. Also your template approval might create issues.
+Make sure to take feedback from the user quite often. Just don't make it frequent and repetitive, user might drop off in such cases. Also, your template approval might create issues.
 
    <img src="https://i.imgur.com/Qlm6M8q.png" width="50%"/>
 
@@ -170,7 +170,7 @@ Make sure your messages provide an option for the user to interact and engage mo
 With inbound engagement, you can set up various widgets with various triggers such as -
 
 * URL: Used to specify the URL of the page that is opened
-* Seconds on page: Used to specify the time spent on the same page, in seconds
+* Seconds on page: Used to specify the time spent on the same page (in seconds)
 * Seconds of inactivity: Used to specify for how long the visitor has been inactive
 
 Know more about [Inbound campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign), [Triggers](/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType) & [Web widgets](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign#6-inbound-widgets)

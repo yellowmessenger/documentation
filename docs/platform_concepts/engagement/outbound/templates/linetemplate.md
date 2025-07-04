@@ -15,19 +15,19 @@ You can use the Line template that you create here in [Flow campaigns](https://d
 
 To create a line template, follow these steps:
 
-1.  On the left navigation bar, go to  **Engage**  >  **Templates**.
-2.  Click  **+Create new templates**  >  **Line**.
+1.  On the left navigation bar, go to **Engage** > **Templates**.
+2.  Click **+Create new templates** > **Line**.
 
    ![](https://i.imgur.com/5fVJn18.png)
 
-3. In  **Template name**, enter a unique name for the template in lower case without space or special characters.
+3. In **Template name**, enter a unique name for the template in lower case without space or special characters.
 
    ![](/img/cdp/line2.png)
 
 4. In **Template language**, enter the language that you want to use in the template.
 5. In **Body text**, enter the message. It supports up to 5000 characters, including variable values. 
-   * To create personalized conversations, you can insert [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) in the message using the syntax `{{<name>}}`  and map them to your preferred [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-2-variable-types) before sending out the actual message. 
-   * You can also include hyperlinks and text formating such as bold, italics, and line breaks.
+   * To create personalized conversations, you can insert [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) in the message using the syntax `{{<name>}}` and map them to your preferred [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-2-variable-types) before sending out the actual message. 
+   * You can also include hyperlinks and text formatting such as bold, italics, and line breaks.
 
 9. Preview your message on the right screen to ensure the message looks as intended.
 

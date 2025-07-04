@@ -27,8 +27,8 @@ To create an email template, follow these steps:
 
 
 :::note
-* To create a new variable, use the structure {{*variable_name_comes_here*}} - ie, the variable name between double curly brackets.  You can create variables inside the content.
-* You can add dynamic variables (such as verification code, payment links, first names etc) in Subject and Body.
+* To create a new variable, use the structure {{*variable_name_comes_here*}} - i.e., the variable name between double curly brackets.  You can create variables inside the content.
+* You can add dynamic variables (such as verification code, payment links, first names etc.) in Subject and Body.
 * CSS code should be inline for HTML.
 :::
 

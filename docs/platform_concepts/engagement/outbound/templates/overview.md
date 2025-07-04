@@ -22,7 +22,7 @@ The following are the different channels that Engage supports for sending out ca
 
 To access Template manager, follow these steps -
 
-1. On the left navigation nar, click on **Engage**. > **Template**.
+1. On the left navigation bar, click on **Engage**. > **Template**.
 
    ![](https://i.imgur.com/9HS17ju.png)
 
@@ -67,7 +67,7 @@ To see templates of a specific channel -
 
 You can get the latest instance of the templates created in the channel’s native manager and the latest template approval status. 
 
-Click **Sync Templates**  to get the updated templates whenever there is a change in the status or addition of templates from the channel's native manager side.
+Click **Sync Templates** to get the updated templates whenever there is a change in the status or addition of templates from the channel's native manager side.
 
    ![](https://i.imgur.com/8NEhWEl.png)
 
@@ -86,7 +86,7 @@ Templates also help in duplicating existing templates where you want to make sli
 
 Sample Use case:
 
-A brand x wants to use the same content of a whatsapp template "image_cta" but with minor content changes and added button.
+A brand x wants to use the same content of a WhatsApp template "image_cta" but with minor content changes and added button.
 
   
 
@@ -142,11 +142,11 @@ You cannot edit or delete an approved template.
 
 1. **What are the channels that Yellow.ai supports?**
 
-   Currently, we support WhatsApp, SMS, Email, and Viber business. However, we also add Facebook messenger soon.
+   Currently, we support WhatsApp, SMS, Email, and Viber business. However, we also add Facebook Messenger soon.
 
   
 
-2. **What does the approval status Pending mean for whatsapp channels?**
+2. **What does the approval status Pending mean for WhatsApp channels?**
 
    WhatsApp reviews and approves each WhatsApp template.  Pending means that the template is pending for approval. WhatsApp is committed to responding to template submissions within 48 hours, excluding weekends and holidays.
 
@@ -154,7 +154,7 @@ You cannot edit or delete an approved template.
 
 3. **How do I delete templates?**
 
-   Currently we do not support deleting the templates from template manager considering the stability of recurring campaigns. However, you can delete rejected templates (applicable for WhatsApp).
+   Currently, we do not support deleting the templates from template manager considering the stability of recurring campaigns. However, you can delete rejected templates (applicable for WhatsApp).
 
    You can raise a ticket to support@yellow.ai if you want to delete any templates.
 

@@ -1,13 +1,13 @@
 ---
 sidebar_label: Clone Flow campaign
-title: Clone existing Flow campaigns
+title: Clone Existing Flow Campaigns
 ---
 
-To maximize the potential of your existing flows for different use cases, you can replicate a flow and modify necessary steps as required. With this, you can take your successful workflows and customize them to fit various scenarios. This saves time and effort, allowing you to create personalized conversational experiences for different user interactions, all without having to start from scratch.
+You can duplicate an existing flow to adapt it for different use cases without starting over. This allows you to leverage successful workflows and customize them for various scenarios. Cloning saves time and effort, enabling you to create personalized conversational experiences for different user interactions efficiently.
 
 To duplicate an existing flow campaign:
-1. On the Flows page, navigate to the desired flow you wish to duplicate.
-2. Click on the More options icon > **Duplicate**.
+1. On the **Flows** page, navigate to the flow you want to duplicate.
+2. Click the **More options** icon (**...**) > **Duplicate**.
 
    ![](https://i.imgur.com/MOtKdpm.png)
 
@@ -15,4 +15,4 @@ To duplicate an existing flow campaign:
 
    <center><img src="https://i.imgur.com/2uHY3Cz.png" width="60%"/> </center>
 
-4. Click on the duplicated campaign to make any necessary changes.
+4. Click the duplicated campaign to make any necessary changes.

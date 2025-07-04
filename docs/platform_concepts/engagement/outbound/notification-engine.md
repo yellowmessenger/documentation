@@ -23,7 +23,7 @@ For a more efficient approach, we strongly recommend adopting [Flow campaigns](h
 
 *   Single endpoint for multiple channels
 *   Enable a range of API services with one-click
-*   Real-time reports on the YM Platform with the basic features of the BI tool to visualise your data
+*   Real-time reports on the YM Platform with the basic features of the BI tool to visualize your data
 *   Callback Webhook Configuration support to receive delivery updates directly on your system
 
 ### 1.2 IPs Whitelisting
@@ -125,7 +125,7 @@ Only users with a Super Admin role can [create a Bot API key](https://docs.yello
 
 #### Request Query Parameter
 
-| **Parameter** | **Datatype** | **Description** |
+| **Parameter** | **Data type** | **Description** |
 | --- | --- | --- |
 | botId* | String | Unique ID of the bot. Login to the Platform and navigate to the bot . You can find the bot ID in the URL Eg: x16387123456 |
 
@@ -133,10 +133,10 @@ Only users with a Super Admin role can [create a Bot API key](https://docs.yello
 
 | **Parameter** | **Type** | **Required** | **Description** |
 | --- | --- | --- | --- |
-| `userDetails` | Object | Yes | Details of the user to be notified. Eg. Phone Number for WhatsApp. |
+| `userDetails` | Object | Yes | Details of the user to be notified. E.g. Phone Number for WhatsApp. |
 | `notification`  (fields: `params`) | Object | Yes | Template details |
 | `media` | Object | Optional | Template Media URL, Quick Reply Payload can be passed here |
-| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - Used to receive delivery updates on the client's webhook. <br/>To receive delivery updates on the client's webhook, enable **Postback URL** in **Engage** > **Preferences** and enter the Webhook URL. See [Send delivery status to webhook](#14-send-delivery-status-to-webhook). <br/> <br/> `apiPreference`: The MM Lite API is an intelligent delivery enhancement that leverages Meta’s infrastructure to optimize the timing of message delivery. <br/>To explicitly choose MM Lite for message delivery, set the `apiPreference` to `MM_Lite` in your API request,
+| `config` fields: (`customPayload`, `postbackUrl`) | Object (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - Used to receive delivery updates on the client's webhook. <br/>To receive delivery updates on the client's webhook, enable **Postback URL** in **Engage** > **Preferences** and enter the Webhook URL. See [Send delivery status to webhook](#14-send-delivery-status-to-webhook). <br/> <br/> `apiPreference`: The MM Lite API is an intelligent delivery enhancement that leverages Meta’s infrastructure to optimize the timing of message delivery. <br/>To explicitly choose MM Lite for message delivery, set the `apiPreference` to `MM_Lite` in your API request,
 
 
 ##### `userDetails` Object
@@ -373,10 +373,10 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 1500 - messageExpired | The message failed to send due to some issue with the WhatsApp Business Account. It may be down or disconnected for more than 1 day.
 | 1501 - ttlLimitReached | The message failed to send during its Time To Live (TTL) duration. Please resend the message.
 | 1503 - userPartOfExperiment | Failed to send message because this user's phone number is part of an [experiment](https://developers.facebook.com/docs/whatsapp/on-premises/guides/experiments). |
-| 1504 - waCompatibility | There could be any of the following reasons: <ul><li>Unable to deliver message due to software/device compatibility.</li><li> The recipient's phone number is not a WhatsApp phone number.</li><li> Recipient has not accepted our new Terms of Service and Privacy Policy.</li><li>Recipients using an old WhatsApp version; must use the following WhatsApp version or greater: <br/> * - Android: 2.21.15.15<br/> *  - SMBA: 2.21.15.15 <br/> * - iOS: 2.21.170.4 <br/> * - SMBI: 2.21.170.4  <br/> *  - KaiOS: 2.2130.10 <br/> * - Web: 2.2132.6</li></ul> For more details, refer to the [Meta doc](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates#per-user-marketing-template-message-limits)
+| 1504 - waCompatibility | There could be any of the following reasons: <ul><li>Unable to deliver message due to software/device compatibility.</li><li> The recipient's phone number is not a WhatsApp phone number.</li><li> Recipient has not accepted our new Terms of Service and Privacy Policy.</li><li> Recipients using an old WhatsApp version; must use the following WhatsApp version or greater: <br/> * - Android: 2.21.15.15<br/> *  - SMBA: 2.21.15.15 <br/> * - iOS: 2.21.170.4 <br/> * - SMBI: 2.21.170.4  <br/> *  - KaiOS: 2.2130.10 <br/> * - Web: 2.2132.6</li></ul> For more details, refer to the [Meta doc](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates#per-user-marketing-template-message-limits)
 | 1520 - WA Tier - Cloud-API-Webhook | The WhatsApp message was not delivered by Meta to ensure compliance and maintain a healthy messaging environment. <br/>It is due to a limit, avoid immediately resending the template message, as it may result in another error. Instead, retry sending the message at progressively longer intervals until it is successfully delivered. For more details, see refer to the [Meta doc for the Error Code 131049](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates#per-user-marketing-template-message-limits) |
 | 14271 - invalidParameter | One or more parameters are invalid. (WA tier - cloud-api/onprem).   |
-| 14272 - Invalid user | The recipient WhatsApp number is invalid or the user doesn't have a WhatsApp account. |
+| 14272 - Invalid user | The recipient WhatsApp number is invalid, or the user doesn't have a WhatsApp account. |
 
 
 :::note
@@ -432,7 +432,7 @@ You can view data regarding the campaigns you execute through the **Insights** m
 
 
 ## 5. Examples
-### 5.1 Normal Text  Notification
+### 5.1 Normal Text Notification
 #### 1. CURL request
 
 ```json

@@ -7,7 +7,7 @@ title: User properties and table customization
 
 Properties are individual fields to be captured for a customer. For example, name, phone number, gender, email address and more. There are several predefined fields that you can use to capture a user's data. You can also create custom properties if required.
 
-A customer is identified with a unique identifier `userId`. This can be any unique identifier such as mobile number, email adress, or any other identifier. However, you can set only one property for the `userId` for your org.
+A customer is identified with a unique identifier `userId`. This can be any unique identifier such as mobile number, email address, or any other identifier. However, you can set only one property for the `userId` for your org.
 
 
 
@@ -21,7 +21,7 @@ This is enabled only for https://cloud.yellow.ai
 There are two types of user data that is supported in User 360:
 
 
-1. User propertiess
+1. User properties
 
    i. [System user properties](#system-user-properties): Default data that you can capture about your users.
 
@@ -74,7 +74,7 @@ String-type properties are limited to a maximum of 255 characters.
 ### `UserId` as a property
 
 
-The `userId` is a unique property in the users schema and serves as an identifier for each user. It helps in recognizing users across multiple touch-points, capture and update user data. A `userId` can be any unique identifier such as phone number, email address, or any other external unique identifier such as driving licence number.
+The `userId` is a unique property in the users schema and serves as an identifier for each user. It helps in recognizing users across multiple touch-points, capture and update user data. A `userId` can be any unique identifier such as phone number, email address, or any other external unique identifier such as driving license number.
 
    <img src="https://i.imgur.com/aWczHLm.png" width="70%"/>
 
@@ -87,7 +87,7 @@ For more details, see:
 - [What happens when a userId is captured for the first time during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-a-userid-is-captured-for-the-first-time).
 - [What happens when a userId is recaptured during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-the-userid-is-recaptured).
 - [How to enrich user profiles with the data collected from multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_user_overview)
-- [How to offer personalised engegement across multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
+- [How to offer personalized engagement across multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
 
 
 :::info
@@ -97,7 +97,7 @@ Two records cannot have the same userId.
 
 ## `Tag` as user property
 
-A tag is a label used to categorise users based on certain characteristics or attributes. These labels can be used to segment customers into different groups for targeted marketing, sales, or customer service efforts. Some examples of customer labels include High-value, New customer, Inactive, or campaign responders.
+A tag is a label used to categorize users based on certain characteristics or attributes. These labels can be used to segment customers into different groups for targeted marketing, sales, or customer service efforts. Some examples of customer labels include High-value, New customer, Inactive, or campaign responders.
 
 A user can have more than one tag.
 
@@ -116,7 +116,7 @@ For instance, you might want to store details such as the number of times they h
 :::
 
 
-To create a new user property with your preferred label name and datatype, follow these steps:
+To create a new user property with your preferred label name and data type, follow these steps:
 
 1. On the **User 360** module, click **User properties**.
 
@@ -155,14 +155,14 @@ Currently, you cannot modify or delete a custom property once created.
 :::
 
 
-## Customise User 360 table/columns
+## Customize User 360 table/columns
 
 You can organize user properties to better understand your data. You can also customize the table by choosing the fields you want to see and ordering them as you prefer. For instance, you can place user identifier on the first column.
 
 
 ### Customize columns
 
-To customise the User 360 table data/columns:
+To customize the User 360 table data/columns:
 
 1. On the **User 360** page, click **User properties**.
 
