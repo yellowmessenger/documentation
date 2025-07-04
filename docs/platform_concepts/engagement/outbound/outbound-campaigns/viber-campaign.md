@@ -4,7 +4,7 @@ title : Viber Business Campaigns
 ---
 
 
-Yellow.ai now supports sending campaigns on [Viber Business](https://www.forbusiness.viber.com/en/viber-for-business/). These campaigns can be sent out using customised [templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/viber-template).  
+Yellow.ai now supports sending campaigns on [Viber Business](https://www.forbusiness.viber.com/en/viber-for-business/). These campaigns can be sent out using customized [templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/viber-template).  
 Using this feature, brands can engage with the customers for various **use-cases**.
 Follow the steps below to create a Viber Business campaign: 
 
@@ -53,7 +53,7 @@ Follow the steps below to create a Viber Business campaign:
 ![](https://i.imgur.com/3maBZJK.png)
 
 
-- **Actionable message**: The emplate can be a combination of text and a button (which directs to a given URL).
+- **Actionable message**: The template can be a combination of text and a button (which directs to a given URL).
 
 ![](https://i.imgur.com/swd5ZxK.png)
 
@@ -166,7 +166,7 @@ You can configure what to do with the messages after the configured business hou
 
 You can make sure your campaign notifications are flawless by testing it with internal team members.
 
-> Although this is an optional step, we highly recommend you to test your campaigns that contain images, buttons, deep links, and elements of personalisation in the message to ensure that everything's in order.
+> Although this is an optional step, we highly recommend you to test your campaigns that contain images, buttons, deep links, and elements of personalization in the message to ensure that everything's in order.
 
 **Advantage**
 
@@ -186,9 +186,9 @@ You can make sure your campaign notifications are flawless by testing it with in
 
 * Click on a relevant user to populate all values like recipient ID and other parameters if any.
 * You can check whether all the parameters are mapped correctly to the desired user columns.
-* Here you can ensure that all the values are available for the user. If not, then you can search for an alternate user to personalise the message.
+* Here you can ensure that all the values are available for the user. If not, then you can search for an alternate user to personalize the message.
 
-![](https://i.imgur.com/qD091UD.png)
+   ![](https://i.imgur.com/qD091UD.png)
 
 * You can add up to 5 test users at a time. Click on "+Add Users" to search and add multiple users.
 ![](https://i.imgur.com/OFDwZvH.gif)
@@ -196,7 +196,7 @@ You can make sure your campaign notifications are flawless by testing it with in
 2. Send Test Messages
 * Once all the data is cross verified, you can click on "send test campaign" to trigger notifications to recipient IDs added.
 
-![](https://i.imgur.com/Z3NC91L.png)
+   ![](https://i.imgur.com/Z3NC91L.png)
 
 * This screen will be frozen for 15 seconds to update the sent status of messages. 
 * In case of any data mismatch, you can save the campaign by clicking "save as draft", navigate to the templates step, and correct your mappings.
@@ -216,10 +216,10 @@ You can make sure your campaign notifications are flawless by testing it with in
 
 ### 5.2 Launch Campaign 
 
-* Click **Launch Cammpaign**. The campaign gets launched. 
+* Click **Launch Campaign**. The campaign gets launched. 
 * To Pause/ Deactivate it, on the Outbound campaigns page- select the campaign name. From Actions select **Deactivate**. 
 
-![](https://i.imgur.com/pSmFzsT.png)
+   ![](https://i.imgur.com/pSmFzsT.png)
 
 **Launched campaign example**
 

@@ -79,13 +79,13 @@ Name | Description
 Campaign type | Type if the campaign - Outbound.
 Channels sent on | Channel through which the campaign was sent.
 Segment name | Name of the segment.
-Schedule type | Occurance of the campaign - once or recurring.
+Schedule type | Occurrence of the campaign - once or recurring.
 Scheduled on |  Date and time when the campaign was sent.
 Campaign progress | Displays the history of the campaign, including details such as the creator, scheduled execution time, campaign execution start, and successful processing of all audiences.
 
 ***
 
-### Download and analyse campaign report
+### Download and analyze campaign report
 
 The campaign report provides complete insights and data regarding the performance and results of your campaigns. By downloading the campaign report, you can access detailed information about campaign metrics, audience engagement, conversion rates, and more. This report serves as a valuable resource for analyzing the effectiveness of your campaigns and making data-driven decisions to optimize future marketing strategies.
 
