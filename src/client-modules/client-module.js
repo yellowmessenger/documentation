@@ -19,11 +19,14 @@ function addDocTitleToPayload() {
 function safeGetUid() {
   try {
     const jid = window?.frames?.ymIframe?.chat?.jid;
-    if (typeof jid === 'string') {
+
+    if (typeof jid === 'string' && jid.includes('@')) {
       return jid.split('@')[0];
+    } else {
+      console.warn('[YM] Invalid jid (not string or missing @):', jid);
     }
   } catch (e) {
-    console.warn('UID error:', e);
+    console.warn('[YM] UID error (exception):', e);
   }
   return null;
 }
