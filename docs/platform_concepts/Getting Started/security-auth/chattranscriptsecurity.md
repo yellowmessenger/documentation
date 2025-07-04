@@ -19,7 +19,7 @@ Chat transcript visibility for different permissions:
 - **Users with AI-agent Access**: If the user already has access to the AI-agent, they can seamlessly view the chat transcript links without the need to whitelist their IP address. However, users must have an active session (logged into the platform) to access the chat transcript links. If not logged in, they will be prompted to log in before viewing the links.                   
 - **Users without AI-agent Access**: Users who do not have access to the AI-agent can access the chat transcript links only by whitelisting their IP address.                      
     ![](https://imgur.com/WwmmYyn.png)                       
-- **Users without AI-agent access and without whitelisted IP addresses**: The chat transcript link will not be accessable.                       
+- **Users without AI-agent access and without whitelisted IP addresses**: The chat transcript link will not be accessible.                       
     ![](https://imgur.com/c6T900o.png)                      
 
 

@@ -48,6 +48,6 @@ The segments you create should be specific to your use case. Here are some ideas
 
 ![](https://i.imgur.com/45FBZpB.png)
 
-- **Potential leads**: You could create a segment of users who have visited your pricing page more than twice. Then you can give them a little nudge and incentivise them with an offer or set up a demo with your sales team. Your filters here might be: `Pricing Page visited more than twice`
+- **Potential leads**: You could create a segment of users who have visited your pricing page more than twice. Then you can give them a little nudge and incentivize them with an offer or set up a demo with your sales team. Your filters here might be: `Pricing Page visited more than twice`
 
 ![](https://i.imgur.com/9NYYn0L.png)

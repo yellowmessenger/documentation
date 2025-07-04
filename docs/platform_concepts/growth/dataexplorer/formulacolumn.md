@@ -44,12 +44,12 @@ Click **Save query** to save this as a new report or add it to the existing one.
 
 ## Common formulas that can be applied on summarized tables
 
-1. **Ticket status percentage split** (used to Summarise Chat tickets table by their ticket status count)      
+1. **Ticket status percentage split** (used to Summarize Chat tickets table by their ticket status count)      
 **New column**: `Status %`     
 **Formula**: `Count / (Count, RTotal) * 100`     
 ![](https://i.imgur.com/fQmaZzl.png)
 
-2. **Journey retention rate** (Used to summarise flows started count and group by flows - to see funnel of users from one flow to another)     
+2. **Journey retention rate** (Used to summarize flows started count and group by flows - to see funnel of users from one flow to another)     
 **New column**: `Retention rate`     
 **Formula**: `Count / (Count, R1) * 100`     
 ![](https://i.imgur.com/fKPKvKh.png)

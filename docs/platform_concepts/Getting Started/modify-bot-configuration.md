@@ -20,7 +20,7 @@ To manage your AI agent's configuration, follow these steps:
 
     * [Edit AI agent details](#addupdate-ai-agent-information)
     * [Disable AI agent response](#pauseresume-your-ai-agent)
-    * [Reset the AI agemt](#reset-your-ai-agent-data)
+    * [Reset the AI agent](#reset-your-ai-agent-data)
 
 :::note
 UTC time format is used throughout the AI agent.

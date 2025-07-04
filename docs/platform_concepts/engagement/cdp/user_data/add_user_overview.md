@@ -118,7 +118,7 @@ In User360, the platform provides four different methods for adding or updating 
 2. [Import users directly from a CSV file](/docs/platform_concepts/engagement/cdp/user_data/import_users).
 3. [Use our REST APIs to add or modify users real time](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
 4. [Use Bot conversations to create and update user records](/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
-5. Add users from SFTP or any third=pary integration
+5. Add users from SFTP or any third-party integration
 
 
 

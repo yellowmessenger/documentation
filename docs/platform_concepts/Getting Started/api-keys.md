@@ -9,7 +9,7 @@ tags: [bot token, get bot token, bot access token, access token, x-auth-token, b
 * A Super Admin can delete any API key, while an admin can delete only the key(s) they have personally created.
 :::
 
-API keys act as secure passcodes, granting authorized access to specific functionalities or resources within a system. They serve as an additional layer of protection, safeguarding sensitive data and ensuring that only authenticated users or applications can interact with the API.
+API keys act as secure passcode, granting authorized access to specific functionalities or resources within a system. They serve as an additional layer of protection, safeguarding sensitive data and ensuring that only authenticated users or applications can interact with the API.
 
 
 To generate an API key, follow these steps:

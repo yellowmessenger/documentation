@@ -1,11 +1,11 @@
 ---
 title: Perform analytics on default tables in data explorer
-sidebar_label: Analyse default tables   
+sidebar_label: Analyze default tables   
 ---
 
 **What are Default tables?** 
 
-**Default tables** are the built-in tables, related to Users Events, Messages, API Events, Agent Events, etc. Click on any of the table names to view the data available for the last month (you can use filters to customise what you want to see). 
+**Default tables** are the built-in tables, related to Users Events, Messages, API Events, Agent Events, etc. Click on any of the table names to view the data available for the last month (you can use filters to customize what you want to see). 
 
 ![](https://i.imgur.com/uqwkU9X.png)
 
@@ -18,19 +18,19 @@ Following are the default tables and their functions:
 | **API Events** | Displays APIs performance, their response time, status codes, IP addresses, etc. |
 | **Bot Events** | Provides technical insights around chat widget loads, various function execution, where widget loads are happening, what is the platform and channel, etc. |
 | **Chat tickets** |  Delivers data for chat tickets about how agents are performing, how many users are interacting with the agents, response time, Agent details, User details, CSAT, AHT, etc. |
-| **Email tickets** |  Analyse operational metrics and agent performance for email tickets, and create your custom analytics dashboards. |
-| **Inbox call records** | Analyse details regarding the calls between inbox agents and end users. |
-|**Inbox events**| Analyse agent performance by deep diving into first response time, average handling time, resolved and missed tickets, etc.|
-| **Knowledgebase articles** | Analyse views, likes, dislikes and other details of the articles published in the inbox knowledgebase section. | 
+| **Email tickets** |  Analyze operational metrics and agent performance for email tickets, and create your custom analytics dashboards. |
+| **Inbox call records** | Analyze details regarding the calls between inbox agents and end users. |
+|**Inbox events**| Analyze agent performance by deep diving into first response time, average handling time, resolved and missed tickets, etc.|
+| **Knowledgebase articles** | Analyze views, likes, dislikes and other details of the articles published in the inbox knowledgebase section. | 
 | **Message events** | Data about the user traffic metrics here, messages exchanged, sessions created, user demographics, devices they are using, etc on a channel level. |
 | **Notification Reports** | Deep dive into how the campaigns are performing, which channel is doing well, how are different templates performing, how many notifications are failing, etc. |
 | **User Engagement Events** | Check how your users are engaging with the bot, flows they are taking, agent transfers, flow switches, unidentified utterances, etc. |
 | **User Feedback** | Provides info about the user experience from the feedback they give on the bot. Slice and dice it based on the use cases they visit the bot for. See how individual use cases are performing. |
-|**Video Chats**|Analyse the usage metrics for video calling tickets, and create your custom dashboards.|
+|**Video Chats**|Analyze the usage metrics for video calling tickets, and create your custom dashboards.|
 | **Voice Bot Events** | Find insights around voice bots. Number of inbound/outbound calls, calls per user, region, call duration, etc. |
 |**Call details report** |CDR is a report of telephony data such as call duration, caller ID, called number, call status, and call type obtained from each call (bot conversation with customer). |
-| **Knowledge base report** | Analyse query resolution rates, failure reports and a dump of all queries that have been handled by Knowledge base (Automation). |
-| **Contained resolution analysis** | Analyse the conversation flow, user engagement and bot performance metrics.|
+| **Knowledge base report** | Analyze query resolution rates, failure reports and a dump of all queries that have been handled by Knowledge base (Automation). |
+| **Contained resolution analysis** | Analyze the conversation flow, user engagement and bot performance metrics.|
 
 :::note
 
@@ -48,7 +48,7 @@ When using the filters option, you can apply filters to any of the available col
 1. Click **Filters**. 
 2. Select the filters you want to apply. 
     - You can search for the column name. 
-    - For each filter, you can add a conditon and the value. 
+    - For each filter, you can add a condition and the value. 
 3. Click **Apply filter**.
     ![image](https://imgur.com/CxjFRAo.png)
 
@@ -67,4 +67,4 @@ Once you have applied filters/summarization, a button labeled **Save query** wil
 ![image](https://imgur.com/QRizLWe.png)
 
 
-> You can also visualise this data, steps are explained in further sections. 
+> You can also visualize this data, steps are explained in further sections. 

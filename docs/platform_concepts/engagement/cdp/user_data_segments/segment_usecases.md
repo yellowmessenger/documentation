@@ -13,7 +13,7 @@ You may frequently need to target users on specific dates or after a certain num
 
 
 
-### Usecase
+### Use case
 
 
  ### Schedule recurring campaign based on User 360 Table updates
@@ -50,7 +50,7 @@ To create segment based on user added date:
 * **Is**: Create segments with customers whose record is created on a specific date such as "Created At Is 15 June, 2023".
 * **Is after**: Create segments with customers whose record is created after a specific date, such as "Created At Is Before 15 June, 2023".
 * **Is before**: Create segments with customers whose record is created before a specific date, such as "Created At Was Exactly 2 days ago".
-* **Was exactly**: Create segments with customers whose record was created just before a specific number of days, hours or minutes, such as "Created At was Exactly after 12 hours dbefore".
+* **Was exactly**: Create segments with customers whose record was created just before a specific number of days, hours or minutes, such as "Created At was Exactly after 12 hours before".
 * **Will be exactly**: Create segments with customers whose record will be created exactly after a specific number of days, hours or minutes, such as "Created At Will Be Exactly after 1 day".
 
 

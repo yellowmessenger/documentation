@@ -4,7 +4,7 @@ sidebar_label: AI features of Yellow.ai
 tags: [what is yellowg, yellowg]
 ---
 
-Yellow.ai's Gen AI is a generative AI technology developed by Yellow.ai. It excels in natural language generation, providing customizable, multimodal output and adaptive responses. With contextual understanding, scalability, and privacy focus, Gen AI evolves continuously, adapting to dynamic user needs and incorporating AI technologies for enhanced performance.
+Yellow.ai's Gen AI is a generative AI technology developed by Yellow.ai. It excels in natural language generation, providing customizable, multi-modal output and adaptive responses. With contextual understanding, scalability, and privacy focus, Gen AI evolves continuously, adapting to dynamic user needs and incorporating AI technologies for enhanced performance.
 
 
 The following sections provide details of Yellow.ai's Gen AI capabilities across each product.
@@ -101,7 +101,7 @@ Please note that this feature is exclusively available for premium customers. To
 Transform ticketing systems with our Gen AI Inbox. Experience efficient handling, personalized responses, and enhanced agent effectiveness, powered by Gen AI for superior customer satisfaction.
 
 :::note
-Please note that all the Gen AI geatures of Inbox are exclusively available for premium customers. To unlock, you'll need to upgrade your account. For assistance with upgrading and selecting the most suitable plan, please reach out to our team at support@yellow.ai.
+Please note that all the Gen AI gestures of Inbox are exclusively available for premium customers. To unlock, you'll need to upgrade your account. For assistance with upgrading and selecting the most suitable plan, please reach out to our team at support@yellow.ai.
 :::
 
 ### Analyze Interactions Efficiently with Conversation Summarizer

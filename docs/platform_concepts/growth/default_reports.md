@@ -24,13 +24,13 @@ Yellow.ai offers pre-built reports with filters, summaries, and visualizations, 
 
 ## List of default reports 
 
-Here are the default reports available on the Data Explorer page, along with the applied operations (original dataset, filters, summarization and visualisation applied):
+Here are the default reports available on the Data Explorer page, along with the applied operations (original dataset, filters, summarization and visualization applied):
 
 ### Based on user traffic
 
-Visualised under default dashboard: **User traffic**
+You can see it under default dashboard: **User traffic**
 
-| Report | Description | Tables | Filter | SummarizeBy | GroupBy | Visualisation |
+| Report | Description | Tables | Filter | SummarizeBy | GroupBy | Visualization |
 |--------|-------------|---------|--------|------------|----------|--------------|
 | Unique Users | Number of distinct users | Message Events | Message Type is User | Distinct count of UID | | Count |
 | New Users | Number of new users | User Engagement Events | Event is first-message | Count| | |

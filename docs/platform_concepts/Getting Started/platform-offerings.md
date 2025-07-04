@@ -123,7 +123,7 @@ See how organizations like Lion Air, Domino’s, AirAsia, and Sony use Yellow.ai
 
 ### Bot & subscription search
 
-Search bots by subscription ID, name, and bot ID. Also , or recently accessed bots (upto 3). See bots you have access to, recently accessed bots (upto 3), and pending invites.
+Search bots by subscription ID, name, and bot ID. Also , or recently accessed bots (up to 3). See bots you have access to, recently accessed bots (up to 3), and pending invites.
 
    ![Bot and Subscription Search](https://i.imgur.com/NaFU9qw.png)
 

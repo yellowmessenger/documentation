@@ -3,7 +3,7 @@ title: Enhance reporting with available actions
 sidebar_label : Actions on saved reports 
 ---
 
-When you click on **Save query** on the tables page, you can create Custom reports that include filters, summarization, and visualisation. These Custom reports and Default reports (created by yellow.ai) can be scheduled for automatic alerts, can be used for advanced data analytics, added to a dashboard for easy access, or downloaded/deleted as needed. 
+When you click on **Save query** on the tables page, you can create Custom reports that include filters, summarization, and visualization. These Custom reports and Default reports (created by yellow.ai) can be scheduled for automatic alerts, can be used for advanced data analytics, added to a dashboard for easy access, or downloaded/deleted as needed. 
 
 You can find **Reports** (saved reports built using default and custom tables) at the top of the data explorer section.
 
@@ -47,11 +47,11 @@ To schedule a report, follow the below steps:
 
 ## 2. Add a report to dashboard
 
-For faster access and visualisation, you can add custom report to your dashboard by clicking **Add to dashboard** from the **Actions** dropdown.      
+For faster access and visualization, you can add custom report to your dashboard by clicking **Add to dashboard** from the **Actions** dropdown.      
 
 ![image](https://imgur.com/WywNX56.png)
 
-> All the changes made to these custom reports will be reflected on Dashboards. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro) for more details on customising your dashboard. 
+> All the changes made to these custom reports will be reflected on Dashboards. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro) for more details on customizing your dashboard. 
 
 ------
 

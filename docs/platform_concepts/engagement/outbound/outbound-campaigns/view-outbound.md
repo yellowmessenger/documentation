@@ -24,7 +24,7 @@ Name | Name of the campaign.
 Status | Current status of the campaign. <ul><li><strong>Pending:</strong> The campaign has been scheduled and is awaiting preparation and sending at the scheduled time.</li><li><strong>Preparing:</strong> We initiate the process of finalizing the recipients for the campaigns 30 minutes before the scheduled execution time, using the segmentation logic that has been set up. In rare cases, when dealing with a considerably large segment size, this process may exceed the allocated 30 minutes.</li><li><strong>Failed:</strong> The campaign failed to execute or complete due to an issue. Please retry the campaign or reach out to support for assistance.</li><li><strong>Paused:</strong> The campaign has been paused. There are multiple cases in which campaigns can be paused. For example, when a WhatsApp template receives lowest rating. For additional information, please refer the tooltip by hovering over the status.</li><li><strong>In Progress:</strong> The campaign has initiated and is currently in progress.</li><li><strong>Completed:</strong> The campaign has been successfully completed. You can download the report or refer to the metrics available in the table for more information on delivery updates.</li><li><strong>Draft:</strong> The campaign has been saved as a draft for editing.</li></ul>
 Channels | The communication channel used to send out the campaign, such as email, SMS, WhatsApp, or any other messaging channel. 
 Success | The success rate indicates the success status of messages from the previous campaign execution and provides the overall success rate for the entire campaign. It also includes a breakdown of the count of messages sent, delivered, read and failed.<center><img src="https://i.imgur.com/D1477ji.png" width="40%"/></center>
-Last executed | The most recent execution (date and time) of a recurring campaign. It provides information on the success status of messages from the previous execution and also displays the overall success for the entire campain.
+Last executed | The most recent execution (date and time) of a recurring campaign. It provides information on the success status of messages from the previous execution and also displays the overall success for the entire campaign.
 Next execution time | The scheduled time for the next execution of the campaign. This is applicable for recurring campaigns.
 
 :::note
@@ -82,7 +82,7 @@ You cannot pause or resume a campaign that is in the Draft, Completed, or Failed
 
 ***
 
-### Download and analyse campaign report
+### Download and analyze campaign report
 
 The campaign report provides complete insights and data regarding the performance and results of your campaigns. By downloading the campaign report, you can access detailed information about campaign metrics, audience engagement, conversion rates, and more. This report serves as a valuable resource for analyzing the effectiveness of your campaigns and making data-driven decisions to optimize future marketing strategies.
 

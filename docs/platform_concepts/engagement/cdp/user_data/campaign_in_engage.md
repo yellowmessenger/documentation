@@ -1,9 +1,9 @@
 ---
-sidebar_label: Hyper-personalised Campaigns
-title: Creating Hyper-personalised Campaigns in Engage
+sidebar_label: Hyper-personalized Campaigns
+title: Creating Hyper-personalized Campaigns in Engage
 ---
 
-If you’ve built a campaigns on yellow.ai, you can use the [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) to create hyper-personalised engagements based on user data.
+If you’ve built a campaigns on yellow.ai, you can use the [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) to create hyper-personalized engagements based on user data.
 
 To improve engagement rates of your campaigns, it’s extremely important to target the right set of users, with the right content.
 

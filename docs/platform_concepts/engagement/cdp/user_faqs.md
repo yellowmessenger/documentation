@@ -91,7 +91,7 @@ This option is only available for older bots. However, for bots running on execu
 <details>
 <summary>Can I connect a database with User 360?</summary>
 
-Usecase: I currently store the details of users who click the "STOP" button to unsubscribe from my campaign. I want to integrate this information with User 360 to ensure that campaigns are not sent to those users. Is it possible to use User360 instead of a separate database to store the list of unsubscribers?<br/>
+Use case: I currently store the details of users who click the "STOP" button to unsubscribe from my campaign. I want to integrate this information with User 360 to ensure that campaigns are not sent to those users. Is it possible to use User360 instead of a separate database to store the list of those who unsubscribed?<br/>
 
 
 1. **Store user responses directly to User360 table**: You can store the user responses in a user property which saves it directly in User360. This allows you to associate the unsubscribe information with each user profile. For more details, refer to the documentation on [Storing conversation data in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
@@ -129,7 +129,7 @@ No, deleting a user from user 360 is not possible. Once a user is created, their
 
 <details>
 
-<summary>Why am I getting <i>Some error occured message when trying to import a CSV file?</i></summary>
+<summary>Why am I getting <i>Some error occurred message when trying to import a CSV file?</i></summary>
 
 Ensure that the CSV file does not contain exponential notation. 
 

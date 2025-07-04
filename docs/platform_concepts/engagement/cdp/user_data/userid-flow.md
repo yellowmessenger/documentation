@@ -8,7 +8,7 @@ sidebar_label: User identification flow
 The User Identification flow in AI-agent conversation is the process of identifying the user interacting with the AI-agent. This is achieved by requesting the unique identifier from the user. It could be an email address, phone number or other identifier. 
 
 :::note
-Date datatypes are not supported for the userId. It supports String, Number, email, and phone types.
+Date data types are not supported for the userId. It supports String, Number, email, and phone types.
 :::
 
 ### Significance of identifying users
@@ -137,7 +137,7 @@ You can use the Function node to capture and store the variable in the respectiv
 
    For instance, here `returnId` is the function name containing the provided code. 
    
-   To access property vallues from the `payload` schema above, you can use the syntax: `data.profile.payload`. 
+   To access property values from the `payload` schema above, you can use the syntax: `data.profile.payload`. 
 
 
    ```js
@@ -200,7 +200,7 @@ You can use the Function node to capture and store the variable in the respectiv
 
    <img src="https://i.imgur.com/g4zb0a8.png" width="70%"/>
 
-   > Learn how to usilize the [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) to capture data from the payload.
+   > Learn how to  the [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) to capture data from the payload.
 
 :::note
 You can also use SDK APIs to programmatically set user properties and the user ID.

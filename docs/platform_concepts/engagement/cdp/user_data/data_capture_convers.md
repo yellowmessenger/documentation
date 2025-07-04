@@ -34,7 +34,7 @@ The following table summarizes the behavior of userId capturing in User 360.
 
 ## What happens when a userId is captured for the first time?
 
-In a AI-agent conversation, a user is identified through the userId and can be captured through [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node) nodes. A userId is a unique indetifier such as mobile number, email address, or any other identifier such as driving livence number. 
+In a AI-agent conversation, a user is identified through the userId and can be captured through [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/variables-node) nodes. A userId is a unique identifier such as mobile number, email address, or any other identifier such as driving license number. 
 
 For more details, see [How to capture userId in AI-agent conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
 
@@ -93,7 +93,7 @@ These are the steps that take place:
 * **Properties with list values**: These values will be unified. Example: `labels` in the above table.
 *  The **Unidentified record** will be deleted post-merging.
 
-#### Scnerios where a user record with the same userId exists in User 360
+#### Scenarios where a user record with the same userId exists in User 360
 
  * The client created the user record via CSV import or API.
  * The same user was already identified once on a different channel.

@@ -74,7 +74,7 @@ You will see template configuration slide screen where you need to configure det
 
 6. In the **API reference**, select your preferred delivery method. This setting applies only to WhatsApp campaigns.
    * Choose **Meta Cloud** to send campaigns exactly at the scheduled date and time, or 
-   * Choose **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicabla only for WhatsApp marketing campaigns)
+   * Choose **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicable only for WhatsApp marketing campaigns)
    
    :::note
    * This option is only available for customers who are onboarded to MM Lite and is supported only for WhatsApp MARKETING templates.
@@ -107,7 +107,7 @@ You will see template configuration slide screen where you need to configure det
 
    ii. Set the duration (in hours/days) for which you want to track the goal in **Track the goal for**. For example, if there is a sale in a couple of days, you can set it to track for two days to get the count of messages delivered before the sale ends.
 
-10. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
+10. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add up to five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
 
 11.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
 
@@ -190,7 +190,7 @@ This section guides you on how to configure template for each channel -
 
 5. Use **Media** to configure personalized media for the campaign.
    *  **Static** media: Select to send a common media file to all the recipients. Use **Browse** to upload the media file.
-   *  **Dynamic** media: Select this option to send personalized media to each user. Map the column from the database where you have included these details. For instance, you can send WhatsApp campaigns with personalized video media to your customers.<br/> <br/>To insert a property dynamic URL:<br/>a. [Create a user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) with the data type set as URL.<br/><img src="https://i.imgur.com/l1CSdNF.png" width="60%"/><br/>b. [Store the image URL for each user to that user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).<br/>c. Associate the media with this user property when scheduling the camapign.<img src="https://i.imgur.com/umvqXL4.png" width="50%"/>
+   *  **Dynamic** media: Select this option to send personalized media to each user. Map the column from the database where you have included these details. For instance, you can send WhatsApp campaigns with personalized video media to your customers.<br/> <br/>To insert a property dynamic URL:<br/>a. [Create a user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) with the data type set as URL.<br/><img src="https://i.imgur.com/l1CSdNF.png" width="60%"/><br/>b. [Store the image URL for each user to that user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).<br/>c. Associate the media with this user property when scheduling the campaign.<img src="https://i.imgur.com/umvqXL4.png" width="50%"/>
 
 ### 3.4 Viber campaign 
 
@@ -338,9 +338,9 @@ If you upload a CSV while the campaign is still executing, it will cause additio
 
 The campaign goal represents a specific objective that you want to achieve through the campaign. Campaign goals can vary depending on the purpose of the campaign and the desired outcome. 
 
-Tracking the progress of campaign goals is important to ensure the effectiveness of the campaign in meeting its objectives. This could include the template used, user segment targetted, scheduled time, or any other parameter.
+Tracking the progress of campaign goals is important to ensure the effectiveness of the campaign in meeting its objectives. This could include the template used, user segment targeted, scheduled time, or any other parameter.
 
-Goals are categorised into three types depending on the purpose of the campaign:
+Goals are categorized into three types depending on the purpose of the campaign:
 
 #### 1. Delivery goal
 
@@ -379,7 +379,7 @@ This goal assists in tracking the reactions or clicks received for the campaign.
 
 ## 7. Test campaigns (Recommended)
 
-It is recommended to test your campaign with internal or test users before launching to ensure the campaign notifications are flawless. Especially, verify if images, buttons, deep links, and elements of personalisation are working or rendering as expected.
+It is recommended to test your campaign with internal or test users before launching to ensure the campaign notifications are flawless. Especially, verify if images, buttons, deep links, and elements of personalization are working or rendering as expected.
 
 The following are the benefits of testing a campaign before launching -
 

@@ -59,7 +59,7 @@ Export is supported in CSV and JSON (and WAV for voice bot data) format.
     - **Daily export**: You will receive daily exports at the selected time(timezone) everyday.
     - **Weekly export**: You will receive weekly data(Monday to Sunday) at the selected time(timezone) on every selected week-day.
     - **Monthly export**: You will receive last month’s data(1st to last day) on every selected date of the month at selected time(timezone).
-    - **Quaterly export**: You will receive last quarter’s data(1st to last day) on every selected date of next quarter at selected time(timezone).
+    - **Quarterly export**: You will receive last quarter’s data(1st to last day) on every selected date of next quarter at selected time(timezone).
     - **Yearly export**: You will receive last year’s data on every selected of next year at the selected time(timezone). 
     - **One-time export**: You will receive data between the selected dates. 
 - Click **Next**. 
@@ -88,7 +88,7 @@ For a single export, the maximum time range is one year. If more than one year's
 - Choose an export destination: 
     - Connect with **Amazon S3** by providing **Bucket name, Access Key, and Secret Key**.
     - Connect with **Azure Blob** by providing **Container Name and Connection String**.
-    - Connect with **STPT server** by providing **Host name, Port, Username, Password and Path**. 
+    - Connect with **SFTP server** by providing **Host name, Port, Username, Password and Path**. 
     - Connect with **Google cloud storage** by providing **Bucket name, Private Key, and Client email**.
 - Click **Connect** and **Next**.    
 
@@ -149,7 +149,7 @@ To set up an SFTP server, install and configure software like OpenSSH. Users cre
 
 ### Azure BLOB (secured/private)
 
-To securly export the data from Data Export to Azure BLOB, follow these steps: 
+To securely export the data from Data Export to Azure BLOB, follow these steps: 
 1. Open **Data export rule** select **Azure Blob**. 
 2. Click **Connect via Azure storage account**.         
 3. Enter **Container name** and **Connection string**.      
@@ -167,7 +167,7 @@ Exported files are saved in the below path with the given naming convention:
 
 ``${botId}/${dataSet}/${jobId}_${userSelectedExportStartDate}_${userSelectedExportEndDate}/${fileSuffix}.json``
 
-- **BotID**: Bot ID of the bot where the export was initated
+- **BotID**: Bot ID of the bot where the export was initiated
 - **Dataset**: Name of the data you are downloading. For each table the *dataset* name is mentioned below.
 
 ```
