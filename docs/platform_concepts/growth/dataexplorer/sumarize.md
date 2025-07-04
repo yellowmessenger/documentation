@@ -99,10 +99,10 @@ By default, all summarized tables in Data Explorer display a **Total** at the en
 ![](https://imgur.com/drMl6xE.png)
 
 
-### Add formulas(arithimetic operations) to columns
+### Add formulas(arithmetic operations) to columns
 
 You have the ability to add formulas using arithmetic operators to the required columns to quickly calculate results. This feature allows you to perform calculations without leaving the platform. 
-You can simply select the desired columns, add the formula using arithmetic operators, and apply it to calculate the results. This feature saves time and enhances your ability to analyse data efficiently in Data Explorer.
+You can simply select the desired columns, add the formula using arithmetic operators, and apply it to calculate the results. This feature saves time and enhances your ability to analyze data efficiently in Data Explorer.
 
 > This feature is available for **Saved reports**. Read more [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#4-add-a-formula-column-to-a-report). 
 
@@ -126,6 +126,6 @@ These summarized queries can be used for future references and they will be avai
 
 ![](https://imgur.com/xs7M4JE.png)
 
-> You can visualise this data, steps are explained in next section. 
+> You can visualize this data, steps are explained in next section. 
 
 

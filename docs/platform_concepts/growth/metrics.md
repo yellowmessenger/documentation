@@ -167,12 +167,12 @@ The widget allows you to analyze the conversion rates between each stage of enga
 ----
 
 
-## <a name="wac"></a> WhatsApp comsumption
+## <a name="wac"></a> WhatsApp consumption
 
-> WhatsApp comsumption is calculated only for WhatsApp bots.
+> WhatsApp consumption is calculated only for WhatsApp bots.
 
 
-In the WhatsApp comsumption widget, you can select a WhatsApp phone number from the dropdown to see the consumption for that specific number.    
+In the WhatsApp consumption widget, you can select a WhatsApp phone number from the dropdown to see the consumption for that specific number.    
 If no number is selected, the data will be compiled and displayed for all the numbers collectively.
 
 

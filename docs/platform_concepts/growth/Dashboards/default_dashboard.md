@@ -60,7 +60,7 @@ Additionally, the report includes the Deflection Rate, measuring the effectivene
 You can filter Inbox Agent Performance Data with two filters: date and ticket priority. 
 
 * **Date filter**: This allows you to focus your analysis based on specific date ranges 
-* **Ticket priority filter**: This allows you to customize the dashbord based on ticket priority according to urgency or importance. 
+* **Ticket priority filter**: This allows you to customize the dashboard based on ticket priority according to urgency or importance. 
 
 
 
@@ -126,7 +126,7 @@ This lets you evaluate the performance of your support agents to ensure high-qua
 ### Inbox agent performance Filters
 
 You can filter Inbox Agent Performance Data with two filters: date and ticket priority. 
-* **Ticket priority filter**: This allows you to customize the dashbord based on ticket priority according to urgency or importance. 
+* **Ticket priority filter**: This allows you to customize the dashboard based on ticket priority according to urgency or importance. 
 
 --------
 

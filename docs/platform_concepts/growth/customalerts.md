@@ -9,7 +9,7 @@ Custom alerts enables you to monitor and receive notifications based on specific
 - **Enhanced efficiency**: Automate the monitoring process, reducing the need for manual checks and enabling proactive management of business metrics.
 
 :::note
-Custom alerts are currently enabled for **Dashboards/Reports** that have [**Count** visualusation](https://docs.yellow.ai/docs/platform_concepts/growth/visualisation/countchart) applied. 
+Custom alerts are currently enabled for **Dashboards/Reports** that have [**Count** visualization](https://docs.yellow.ai/docs/platform_concepts/growth/visualisation/countchart) applied. 
 :::
 
 
@@ -90,15 +90,15 @@ To check KPI changes at the selected frequency within the specified intervals, c
 
 -----
 
-### Alert receipients & details
+### Alert recipients & details
 
-#### Alert activitation
+#### Alert activation
     
 When an alert is set for **minutes**, the first alert activates at the nearest multiple of 5 minutes. For example, if the alert is set up at 10:23, monitoring begins at 10:25 (with the first check at 10:25). Subsequent checks occur at the interval specified when setting the condition.
 Similarly, alerts set for **hours** activate at the next hour. For instance, if an alert is set at 10:23, the first check occurs at 11:00.
 The next alerts start as per the configured time.
     
-#### Add receipients
+#### Add recipients
 
 * **Role-based recipients**: Select roles from the dropdown. All users assigned to the selected role will receive the alert.
 * **Email ID configuration**: Add individual email addresses to the list. Alerts will be sent only to these specified users.
