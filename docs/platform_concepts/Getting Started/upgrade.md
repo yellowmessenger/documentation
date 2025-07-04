@@ -53,7 +53,7 @@ The following features are currently unavailable in the Freemium plan and can be
 
 
 
-After the upgrade, you can work on a three enviornment platform.
+After the upgrade, you can work on a three environment platform.
 
 - **Freemium plan**: Provides 2 environments: Development for creating, configuring, and launching your bot, and Live Mode for making your bot available to customers.
 - **Premium plan**: Offers 3 environments: Sandbox for primary bot development, Staging for thorough testing, and Production for active customer service.

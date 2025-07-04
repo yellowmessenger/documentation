@@ -146,7 +146,7 @@ To view an existing subscription:
 
 1. Go to **Subscriptions** under User account to view your bot subscriptions.
 2. You can see the details of your subscription plan, organization name, billing address, and contact details.
-3. To see all the subscriptions you have access to, click the dropwdown next to your subscription name. 
+3. To see all the subscriptions you have access to, click the dropdown next to your subscription name. 
 
    ![image](https://imgur.com/3ToVdp9.png)
 

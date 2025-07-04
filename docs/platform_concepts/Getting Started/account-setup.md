@@ -17,7 +17,7 @@ This guide will walk you through the process of signing up for a yellow.ai accou
     ![](https://imgur.com/XjcxAfF.png)
 
    :::note 
-   * Only official email addresses are accepted for signup. Personal email addresses won't be validated. For any issues, [contact us](https://yellow.ai/contact-us/).
+   * Only official email addresses are accepted for sign up. Personal email addresses won't be validated. For any issues, [contact us](https://yellow.ai/contact-us/).
    * Include your contact number with the country code.
    ::: 
 
@@ -47,7 +47,7 @@ To access specific bots within your organization, click Request Access.
    
 Upon clicking **Create project**, your [Freemium](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade) plan account is automatically activated and a default AI-agent is created. 
 
-- You will be directed to the [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) module ([development enviornment](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env)) where you can start building the bots.
+- You will be directed to the [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) module ([development environment](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env)) where you can start building the bots.
 - You can go to [Overview > Configure](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration#personalise-your-bot-information) and reconfigure your bot details. 
 - You can [upgrade your account](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#steps-to-upgrade-your-freemium-plan) to access all the functionalities of a tier 3 bot. 
 

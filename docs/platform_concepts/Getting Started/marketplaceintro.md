@@ -57,7 +57,7 @@ Search for the templates using keywords related to your use case. You can also f
 
 ### 1.3 Filter templates by Industry, Use case, and Channels
 
-To make your search experience easy, there are several filters availavle on the Marketplace template. You can get templates of a specific industry, use case, and/or channel. You can choose more than one value in filter using the checkbox.
+To make your search experience easy, there are several filters available on the Marketplace template. You can get templates of a specific industry, use case, and/or channel. You can choose more than one value in filter using the checkbox.
 
 Filter templates for the following:
 1. **Most common use cases**: Employee Engagement, Customer Engagement, Enterprise Automation, Customer Support, and WhatsApp For Business. Select the use cases that you would need.
@@ -117,7 +117,7 @@ Templates are categorized into 7 different collections. You can explore template
 
 **Export flows from one bot to another**
 
-If you have an existing flow that is being used in one of your bots and you want to use the same flow in the current bot, you can do with the help of Marketplace component feature. This feature can be used when the available templates on our Marketplace does not match your requirement, but there is a functioning flow which is already exisiting on yellow.ai platform in another bot.
+If you have an existing flow that is being used in one of your bots and you want to use the same flow in the current bot, you can do with the help of Marketplace component feature. This feature can be used when the available templates on our Marketplace does not match your requirement, but there is a functioning flow which is already existing on yellow.ai platform in another bot.
 Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow) to learn how. 
 :::
 
