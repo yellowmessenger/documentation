@@ -23,7 +23,7 @@ The following are the prerequisites for creating a WhatsApp template:
 
 * Ensure that the WhatsApp channel is configured under [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
 
-* Verify that the account is active and its status is showing as *Connected*.
+* Verify that the account is active, and its status is showing as *Connected*.
 
 ## 2. Creating WhatsApp template
 
@@ -35,7 +35,7 @@ To create a WhatsApp template and send for approval, follow these steps:
 
   
 
-2. Click **Create new template** > **Whatsapp**.
+2. Click **Create new template** > **WhatsApp**.
 
    ![](https://i.imgur.com/yznZ3m2.png)
 
@@ -68,7 +68,7 @@ To create a WhatsApp template and send for approval, follow these steps:
 7. Preview the message on the right pane and click **Create template** to finalize and create the WhatsApp template.
 
 
-   The template will be sent for reviewing. You can use can use it in your campaign once Facebook approves it.
+   The template will be sent for reviewing. You can use it in your campaign once Facebook approves it.
 
    ![](https://i.imgur.com/04nApo5.png)
 
@@ -90,11 +90,11 @@ Variable names should not contain spaces. Only underscores (_) are permitted for
    Option | Description
    --------- | --------
    Header type | Choose the type of the header content - *Text* or *Media*.
-   Text (Header) | Enter your text-based header content here. You can have upto 60 characters with only one variable in the header.
+   Text (Header) | Enter your text-based header content here. You can have up to 60 characters with only one variable in the header.
    Media (Header) | Upload your preferred media file. Supported formats include image files (.jpg/.jpeg/.png) with a maximum size of 5 MB, mp4 files with a maximum size of 12 MB, and PDF files with a maximum size of 12 MB.
-   Body text | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can use upto 1024 characters, which can include text and variables.
+   Body text | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can use up to 1024 characters, which can include text and variables.
    Footer |  This lets you include extra details at the end of your WhatsApp message to share important information or calls to action. <br/> Check the box **Use as a footer text** to easily include the text "Reply with STOP to unsubscribe" in the message footer.
-   Button type | Choose the button type - None, Call to action (CTA) or Quick replies.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone. You can either add up to two CTAs. <br/> For more details, see [Phone call CTA](#add-make-a-phone-call-cta), and [URL redirect CTA](#add-url-redirect-cta).
+   Button type | Choose the button type - None, Call to action (CTA) or Quick replies.<br/> Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone. You can either add up to two CTAs. <br/> For more details, see [Phone call CTA](#add-make-a-phone-call-cta), and [URL redirect CTA](#add-url-redirect-cta).
    Quick replies | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters. <br/>For more details, see [Quick replies](#4-add-quick-replies-in-whatsapp-template).
 
 
@@ -108,10 +108,10 @@ Variable names should not contain spaces. Only underscores (_) are permitted for
    --------- | --------
    Template name | Enter a name for the template (Supports only lowercase letters without space, including numbers and underscores). This is used only for your reference and the client cannot see it. 
    Select language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
-   Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*. <br/>If you want the template to move to the right category automatically depending on the content, **If the template does not qualify under the selected category, move it to the correct category**.
+   Select category | Choose for what type of messages you want to use the current template - *Transactional*, *Marketing*, or *One-time passwords*. <br/>If you want the template to move to the right category automatically depending on the content, **If the template does not qualify under the selected category, move it to the correct category**.
    Template type | Choose *Carousel template*.
-   Card | You can add upto 10 cards in a template and set header, body, and buttons for each card separately. 
-   Header | Choose the media type for the header. You cannot have one card with an image type and another with a video type. <ul><li>Image: Supports .jpg/.jpeg/.png with a maximum size of 5 MB. </li><li>Video:  Use to add mp4 file. Supports upto 12 MB. </li></ul>
+   Card | You can add up to 10 cards in a template and set header, body, and buttons for each card separately. 
+   Header | Choose the media type for the header. You cannot have one card with an image type and another with a video type. <ul><li>Image: Supports .jpg/.jpeg/.png with a maximum size of 5 MB. </li><li>Video: Use to add mp4 file. Supports up to 12 MB. </li></ul>
    Body text | Enter the body content for the WhatsApp carousel. Use {{ }} to add variables. For instance, you can use {{firstName}} to dynamically include the customer's first name within the carousel.
    CTA buttons | Add CTAs to the card. If you add another CTA, both should be of the same type. You can add up to two buttons - either CTAs or quick replies or both.
    Quick replies | Add quick replies to the card.  You can add up to two buttons - either CTAs or quick replies or both.
@@ -173,7 +173,7 @@ Simply specify the static URL (excluding the dynamic path) when submitting it fo
 For example: If the URL is `https://exampleshopping.com/checkout/{userId}`
 
 
-   1. In the template configuration , just mention `https://exampleshopping.com/checkout/`
+   1. In the template configuration, just mention `https://exampleshopping.com/checkout/`
 
    2. When configuring campaign, specify the path variable (say `userId`).
 
@@ -219,7 +219,7 @@ Use this to trigger a specific journey when the user clicks on the button. For e
 
 **Prerequisite**: A journey should be created already for offers and buy products to select from.
 
-Enter the **Button text**, choose the **Action type**,  *Trigger journey*, and select the **Journey name** that you want to trigger.
+Enter the **Button text**, choose the **Action type**, *Trigger journey*, and select the **Journey name** that you want to trigger.
 
    ![](https://i.imgur.com/7a6k9Nc.png)
 
@@ -230,7 +230,7 @@ Use this to trigger the bot conversation as per the utterances trained under int
 
 **Prerequisite**: Live agent flow should be trained with the *Talk to customer support* utterance.
   
-Enter the **Button text**, choose the **Action type**,  *Trigger NLP*.
+Enter the **Button text**, choose the **Action type**, *Trigger NLP*.
 
   ![](https://i.imgur.com/Ijp1chQ.png)
 
@@ -244,7 +244,7 @@ Use this to send all the template data to the bot and use it in custom flows. Fo
 If you use the **Send as event** action, you will need to import the corresponding flow from the marketplace. This import is necessary to ensure the smooth functioning of the chosen button action.
 :::
 
-Enter the **Button text**, choose the **Action type**,  *Send as event*.
+Enter the **Button text**, choose the **Action type**, *Send as event*.
 
    ![](https://i.imgur.com/ew3RIM0.png)
   
@@ -372,8 +372,8 @@ You can track URL clicks in three different elements of your template - Template
 
 :::note
 URL click tracking is currently
-* supported for SMS and WhatsApp campaigns. If you need it for URLs in other channels, please contact us.
-* available only for Premium users.
+* Supported for SMS and WhatsApp campaigns. If you need it for URLs in other channels, please contact us.
+* Available only for Premium users.
 :::
 
 #### Sample use cases:
@@ -381,13 +381,13 @@ URL click tracking is currently
 2. **Surveys**: Measure the response rate by tracking the number of users who clicked on the survey link.
 3. **Event invitations**: Monitor the interest level by tracking clicks on event registration links.
 
-To setup URL clicks tracking:
+To set up URL clicks tracking:
 1. Create your marketing campaign with the URLs.
 2. Navigate to the **URL click tracking** section and select the URL(s) that you want to track. You will see all the URLs used in the template in the respective sections - this includes URLs in Body text, variables and CTAs.
 
    <img src="https://i.imgur.com/G1ihjVL.png"/>
 
-3. Send out the campaign to users with the template. The URLs in the tracked list are shortended and a unique identifier is provided to each user before sending.
+3. Send out the campaign to users with the template. The URLs in the tracked list are shortened, and a unique identifier is provided to each user before sending.
 
    <img src="https://i.imgur.com/RZGOF9e.jpg" width="40%"/>
 
@@ -483,7 +483,7 @@ A WhatsApp template needs to be approved by Facebook before you start using it. 
   
 
 :::note
-When you send a template for approval, Facebook approves it only if everything is as per the guidelines. or will reject it if it is not as per their standards.
+Facebook approves templates only if they strictly adhere to its guidelines; otherwise, they will be rejected.
 :::
 
 You can see the template status on the Templates home page.
@@ -502,7 +502,7 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 * Missing variable parameters or incorrect curly braces. The correct format is {{1}}.
 * Undefined variable parameters.
 * Non-sequential variable parameters. For example, {{1}}, {{2}}, {{4}}, {{5}} are defined but {{3}} does not exist.
-* Mismatch in the defined language and the template content. For example, Spanish was select but the content is English or the content is a mixture of languages containing both Spanish and English.
+* Mismatch in the defined language and the template content. For example, Spanish was selected, but the content is English, or the content is a mixture of languages containing both Spanish and English.
 * The URL domain in your links does not belong to your business.
 
 

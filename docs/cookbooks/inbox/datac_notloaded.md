@@ -29,7 +29,7 @@ Before proceeding:
 ### 1. Open the Monitor Tab and Developer Tools
 
 * On the left navigation bar, go to **Inbox** > **Monitor**
-* Open the browswr's **Developer Tools**:
+* Open the browser's **Developer Tools**:
 
   * Windows/Linux: Press `F12` or `Ctrl + Shift + I`
   * macOS: Press `Cmd + Option + I`

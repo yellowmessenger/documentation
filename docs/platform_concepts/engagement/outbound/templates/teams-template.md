@@ -2,7 +2,7 @@
 sidebar_label: MS Teams template
 title: Microsoft Teams template
 ---
-Microsoft Teams is a widely used collaboration platform. Using Microsoft Teams for outbound campaigns offers several advantages for companiesto manage important notifications and reminders efficiently. 
+Microsoft Teams is a widely used collaboration platform. Using Microsoft Teams for outbound campaigns offers several advantages for companies to manage important notifications and reminders efficiently. 
 
 It includes pre-configured use cases like survey reminders, document upload prompts, scheduling meetups, sharing important updates, and distributing media to team members. Moreover, customization options are available to tailor content to specific needs.
 
@@ -14,7 +14,7 @@ The following are the prerequisites for creating an MS Teams' template:
 
 * Ensure that MS Teams is configured under [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/teams).
 
-* Verify that the account is active and its status is showing as *Connected*.
+* Verify that the account is active, and its status is showing as *Connected*.
 
 :::
 
@@ -49,9 +49,9 @@ Option | Description
    --------- | --------
    Template name | Enter a name for the template (Only lowercase letters, numbers and underscores are allowed). This is used only for your reference and the client cannot see it. 
    Template language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
-   Message title | Enter a title for the message. This field is mandatory and is auto-populated based on the selected use case. Uou can edit it as necessary. <br/>If the message is sent without a title, the CTA will not be included in the campaign or the campaign might fail.
+   Message title | Enter a title for the message. This field is mandatory and is autopopulated based on the selected use case. You can edit it as necessary. <br/>If the message is sent without a title, the CTA will not be included in the campaign or the campaign might fail.
    Media | Use image to the template to make it visually appealing.
-   Body | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can add upto 2000 characters including text and variables.
+   Body | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can add up to 2000 characters including text and variables.
    Buttons | Helps add CTAs to your template as explained in Button type below.
    Button type | Choose the button type: None, Call to action, or Quick reply.<br/>- **Call to action**: You can include up to three URL redirect CTAs.<br/>- **Quick reply**: You can add a maximum of three quick reply buttons, with each button text limited to 20 characters.
 

@@ -4,9 +4,9 @@ title: Flow campaigns overview
 ---
 
 
-Yellow.ai's Flow Campaign is a  conversational marketing tool  with an advanced campaign builder. It helps marketers deliver a comprehensive customer experience across channels and engage customers at every stage of their journey.
+Yellow.ai's Flow Campaign is a conversational marketing tool with an advanced campaign builder. It helps marketers deliver a comprehensive customer experience across channels and engage customers at every stage of their journey.
 
-A Flow Campaign consists of  user journeys  which you can use to strategically target customers across channels. You can quickly develop flows using the no-code builder according to your business needs. This also allows you to track  customer activities  across platforms and analyze the data to make decisions.
+A Flow Campaign consists of user journeys which you can use to strategically target customers across channels. You can quickly develop flows using the no-code builder according to your business needs. This also allows you to track customer activities across platforms and analyze the data to make decisions.
 
 You have two options to create Flow campaigns:
 
@@ -40,7 +40,7 @@ To add your brand details:
 
    ![](https://i.imgur.com/mwFSq2H.png)
    
-2. In **Describe about brand**,  enter essential details about your brand within 1000 characters. For best results, provide as much information as possible.
+2. In **Describe about brand**, enter essential details about your brand within 1000 characters. For best results, provide as much information as possible.
 
    <center><img src="https://i.imgur.com/BfgFyE7.png" width="60%"/></center>
 

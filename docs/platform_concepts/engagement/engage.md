@@ -3,11 +3,11 @@ title: Engage overview
 sidebar_label: Overview
 ---
 
-Engage is a customer engagement module that enables marketers to craft multi-channel campaigns intuitively.  Engage helps marketers deliver total lifecycle CX from acquisition through transaction, to retention and growth.
+Engage is a customer engagement module that enables marketers to craft multichannel campaigns intuitively.  Engage helps marketers deliver total lifecycle CX from acquisition through transaction, to retention and growth.
 
 
 
-Yellow has dedicated features to help  manage your business campaigns efficiently.
+Yellow has dedicated features to help manage your business campaigns efficiently.
 
 
 ![](https://i.imgur.com/InpWUnu.png)
@@ -46,7 +46,7 @@ The Flow campaign is an outbound campaign that lets you automate your marketing 
 
 Outbound campaigns can only be used with a single channel and all the users will receive the same template. You cannot configure Fallbacks in case of failed notifications. 
 
-With Workflow campaigns,  you can configure multiple channels and add fallbacks to each priority channel. 
+With Workflow campaigns, you can configure multiple channels and add fallbacks to each priority channel. 
 
 :::
 
@@ -155,14 +155,14 @@ A new column called **API Preference** has been added to notification reports. T
 :::note
 There are two user roles for Engage module. 
 
-* **Engagement admin**:  Authorised to send campaigns and create audience groups.
+* **Engagement admin**: Authorized to send campaigns and create audience groups.
 * **Engagement user**: Can only schedule campaigns.
 :::
 
 To access Engage, follow these steps -
-1. Login to https://cloud.yellow.ai  and go to your AI-agent.  
+1. Login to https://cloud.yellow.ai and go to your AI-agent.  
 2. Use any of the following ways -
-   * Click on **Engage for campaigns** under  *Quick links*.
+   * Click on **Engage for campaigns** under *Quick links*.
    * Click on the main menu to expand and select **Engage**.
 
    ![](https://i.imgur.com/eyL6QxV.png)

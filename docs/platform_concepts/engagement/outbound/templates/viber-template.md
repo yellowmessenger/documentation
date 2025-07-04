@@ -7,7 +7,7 @@ sidebar_label: Viber template
 
 Yellow.ai also supports sending campaigns on [Viber Business](https://www.viber.com/en/). These [campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/viber-campaign).
 
-The following are the different use cases that you an solve with the template -
+The following are the different use cases that you can solve with the template -
 
 1.  **Send transactional updates**: OTP, Order status, Payment remainders, feedback prompts, cart recovery
 
@@ -41,13 +41,13 @@ To create a Viber business template, follow these steps -
   ![](https://i.imgur.com/G9oqqNE.png)
 
 
-3. Add a template **Name**. It should be in lowercase. You can use alpha- numerics and only underscore is allowed as a special character.
+3. Add a template **Name**. It should be in lowercase. You can use alphanumerics and only underscore is allowed as a special character.
 
 4. Select your preferred **message format** (Text only, Media message or Actionable message) and click **Create template**.
 
 ### 2.1 Text only message
 
-Select this to create a pure text message. You can use You can bold or italicise words and add variables wherever required in the message.
+Select this to create a pure text message. You can use You can bold or italicize words and add variables wherever required in the message.
 
    <img src="https://i.imgur.com/Iyq7Kum.png" width="70%"/>
 
@@ -62,14 +62,14 @@ Select this to create a pure text message. You can use You can bold or italicise
  Use this to create a template with any of the following formats
  
  * *image*: jpg, png
- * *video*: .3gp, .m4v, .mov, .mp4 for video; .jpg, .jpeg, .png for thumbnail) or *file*. <br/>
+ * *video*: .3gp, .m4v, .mov, .mp4 for video; .jpg, .jpeg, .png for thumbnail or *file*. <br/>
  * *Document*: .doc, .docx, .rtf, .dot, .dotx, .odt, .odf, .fodt, .txt, .info <br/>
  * *PDF*: .pdf, .xps, .pdax, .eps <br/>
  * *Spreadsheets*: .xlx, .xlsx, .ods, .fods, .csv, .xlsm, .xltx
 
   
 
-   You can upload a media file  (**uploaded from the local system**) or  enter the image URL (**media URL can be pasted**).
+   You can upload a media file (**uploaded from the local system**) or enter the image URL (**media URL can be pasted**).
 
 ![](https://i.imgur.com/7iSj7FF.jpg)
 

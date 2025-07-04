@@ -36,7 +36,7 @@ You can copy the **Client ID** and **Client secret values** using the Copy to Cl
 
 :::note
 * In **Grant type** please select **Client credentials** and **Authorization code**.
-* In redirectUri , please add the webhook url copied from integration card.
+* In redirectUri, please add the webhook URL copied from integration card.
 * Ensure that you have selected the user consent.
 
    ![](https://i.imgur.com/G7Sazp7.png)
@@ -54,7 +54,7 @@ You can copy the **Client ID** and **Client secret values** using the Copy to Cl
    ![](https://i.ibb.co/nsF9yPNw/okta.png)
 
 5. Fill in the fields under **Account Details** and click **Connect**.
-6. If you have multiple accounts, follow the above mentioned steps to add each of them.
+6. If you have multiple accounts, follow the above-mentioned steps to add each of them.
 
 :::note
 1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
@@ -82,7 +82,7 @@ If you have added multiple accounts in your platform, enable events for each of 
 
 ## 2. Use-Cases
 
-The following use-cases are accomodated in this integration.
+The following use-cases are accommodated in this integration.
 
 :::note
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
@@ -100,7 +100,7 @@ When multiple accounts are added, select the appropriate account for each node, 
   ![](https://i.imgur.com/sodoaqD.png)
 
 
-5. Fill in the following field for the execution of the use-case. The following is a table that consists of the sample value,data type and description for each of these fields. 
+5. Fill in the following field for the execution of the use-case. The following is a table that consists of the sample value, data type and description for each of these fields. 
 
 
 
@@ -162,7 +162,7 @@ app.executeIntegrationAction({
 
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |----|
-| Access Token     | asddskeku2iwewbhwjsnmelsdjckmd22eokeds| String   | You will get the access token in okta event after successful login.
+| Access Token     | asddskeku2iwewbhwjsnmelsdjckmd22eokeds| String   | You will get the access token in OKTA event after successful login.
 
 **Sample response in case of success:**
 ```
