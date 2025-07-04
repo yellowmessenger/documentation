@@ -58,7 +58,7 @@ Bots that have records in the old Users Module will see a data migration window.
   
   
 
-* To know the data types supported in User 360, see [User property datatypes](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties). 
+* To know the data types supported in User 360, see [User property data types](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties). 
 
 The following mappings are not recommended as it might throw data incompatibility errors, and prevent from successful migration of data.
 
@@ -94,7 +94,7 @@ Here you can refer to the activity *Migrate Data*.
 
 ![](https://i.imgur.com/1yobIJF.png)
 
-* To analyse the migration activity, click **Download log**. The log will be downloaded as CSV which will include the following:
+* To analyze the migration activity, click **Download log**. The log will be downloaded as CSV which will include the following:
 
    ![](https://i.imgur.com/QCCOrwr.png)
 * **Summary**

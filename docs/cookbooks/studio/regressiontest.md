@@ -239,7 +239,7 @@ To upload KB FAQs, follow these steps:
 The report includes the following details:
    * **Questions**: The questions that were uploaded.
    * **Answers**: The answers are generated for the uploaded questions.
-   * **Links**: Gnerates the links from where the answers are fetched from the uploaded document.
+   * **Links**: Generates the links from where the answers are fetched from the uploaded document.
    
    ![](https://imgur.com/PuWMvcR.png)    
     

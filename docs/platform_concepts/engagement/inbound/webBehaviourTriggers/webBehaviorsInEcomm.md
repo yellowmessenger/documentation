@@ -3,11 +3,11 @@ title: Web Behavior Triggers to identify in E-commerce
 sidebar_label: Web Behavior Triggers to identify in E-commerce
 ---
 
-## Web Behaviours to Identify in eCommerce
+## Web Behaviors to Identify in eCommerce
 
 # In this guide
 
-In this guide, we walk through the various [behavioural automation rules](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType),that can be used to improve the navigation for an e-commerce website visitor.
+In this guide, we walk through the various [behavioral automation rules](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType),that can be used to improve the navigation for an e-commerce website visitor.
 
 For this walkthrough, we have broken down the website into **Homepage, Product Search Page, Product Details Page** and **Cart Page**. There could, of course, be many more pages and use cases other than the ones covered in this guide.
 
@@ -19,7 +19,7 @@ For this walkthrough, we have broken down the website into **Homepage, Product S
 
 ![Shopify Homepage Help.gif](https://cdn.yellowmessenger.com/Gbz77mhH5QLl1628180208877.gif)
 
-2. **Homepage Ad Bar →** Visitors will often land on your website through an external campaign or referrer. Such visitors have a very specific intent. You can identify which source they've come from using **URL Query Param** and **Referrer** targeting rules, and create personalised engagements.
+2. **Homepage Ad Bar →** Visitors will often land on your website through an external campaign or referrer. Such visitors have a very specific intent. You can identify which source they've come from using **URL Query Param** and **Referrer** targeting rules, and create personalized engagements.
 
 ![Image.png](https://cdn.yellowmessenger.com/TOhLLTnkAh9j1628176246228.png)
 

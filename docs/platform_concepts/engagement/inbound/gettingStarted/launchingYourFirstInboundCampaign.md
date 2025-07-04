@@ -57,7 +57,7 @@ At any point, you can click
 * **Save as drafts** to save the current settings as draft and exit the campaign builder
 :::
 
-5. In **Web behaviour**, define the condition under which visitors should see this campaign. For more details, see [here](/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType)
+5. In **Web behavior**, define the condition under which visitors should see this campaign. For more details, see [here](/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType)
 
    ![](https://i.imgur.com/Tl4n4zU.png)
 
@@ -69,7 +69,7 @@ Custom Event | Show the campaign based on custom events.
 Device | The device from which the visitor accessed the website - mobile, desktop, or tablet.
 Element Clicked | Show the campaign when the user clicked on a specific element on the page. Format: `key=value` <br/>You can use the element's `id` or `class`. Example: `class=ri-thumb-up-fill` or `id=liked_docs`. ![](https://i.imgur.com/NX1zR7h.png)
 Element hovered over | Show the campaign when the vision hovered on a specific element of the page. Use the selector and define the *key-value* pair. Format: `key=value` <br/>You can use the element's `id` or `class`. Example: `class=ri-thumb-up-fill` or `id=liked_docs`. <br/>Supported operators: is and isn't.
-Referrer | The source (URL) from which the visitor has been ßredirected to the current page.
+Referrer | The source (URL) from which the visitor has been redirected to the current page.
 Site visits | Shows the campaign based on the number of times the user visited the site.
 Number of site visits | The number of times a user has visited the specified website site (It considers sessions, not page views).
 On exit intent | Show the campaign when a visitor's cursor leaves the window on the top half of the screen (an indication of changing the browser tab or closing the current tab/window).
@@ -148,7 +148,7 @@ To test an inbound campaign widget, follow these steps -
 ## 4. Prioritize campaign
 
 
-When multiple campaigns were triggering at the same instant, you can prioritise which campaign to run. Campaign prioritisation ensures that no two campaigns are triggered at the same time.
+When multiple campaigns were triggering at the same instant, you can prioritize which campaign to run. Campaign prioritization ensures that no two campaigns are triggered at the same time.
 
 By default, the first campaign that you create will have the highest priority and the new campaign will have the least priority. You can change the priority of a campaign as per your preference so that the highest priority campaign when there are multiple campaigns at the same instant.
 
@@ -238,7 +238,7 @@ Sample report
 
 Unlike the preceding two overlay widgets, this one is a part of the chat widget itself that sits at the bottom right of your website.
 
-Whenever this type of campaign is executed, the chat widget opens up with the preconfigured journey, as can be seen in the following image.
+Whenever this type of campaign is executed, the chat widget opens up with the pre-configured journey, as can be seen in the following image.
 
 
 ![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/068BB776-1320-44EE-951A-D501BCFBC578/B6BD397D-3D20-43E2-BD0A-96EB4244752B_2/GkYg3GybLbn2xnt3mxlrXz6REIdInCLIZvK6nn7p7t0z/Image.png)
@@ -250,9 +250,9 @@ When an inbound campaign is executed, a pop-up message is displayed on a mobile 
 On desktop, bot will fully open when a respective journey is triggered.
 :::
 
-Following are the behaviour of the pop-up messages on the mobile device when a campaign is executed: 
+Following are the behavior of the pop-up messages on the mobile device when a campaign is executed: 
 
-Message type | Behaviour
+Message type | Behavior
 -------------|----------
 Single text message | Displays a text message in the pop-up.
 Single text message + any other component | Displays **New message received**. 

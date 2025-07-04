@@ -1,6 +1,6 @@
 ---
 sidebar_label: Capture user data through conversations
-title: Capture data through Studio & create personalised conversations
+title: Capture data through Studio & create personalized conversations
 ---
 
 
@@ -11,7 +11,7 @@ For complete details on how Studio-User 360 integration works see
 
 * [User record creation and unification via bot conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
 * [Storing user data via bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
-* [Creating personalised conversations using user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
+* [Creating personalized conversations using user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
 
 
 <!--

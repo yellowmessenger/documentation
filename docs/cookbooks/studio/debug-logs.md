@@ -80,7 +80,7 @@ To read the logs, follow these steps:
 
 #### View & download AI agent audit logs
 
-Audit log provids a detailed record of the changes made to each module(APIs, Inbox Agent configuration/actions, Channels), including information about the user (user email) who made the changes and the timestamp of the actions taken. 
+Audit log provide a detailed record of the changes made to each module(APIs, Inbox Agent configuration/actions, Channels), including information about the user (user email) who made the changes and the timestamp of the actions taken. 
 
 To view audit log, follow these steps:
 

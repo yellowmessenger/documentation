@@ -51,7 +51,7 @@ To import or sync data from an SFTP integration:
 
    <img src="https://i.imgur.com/qDdDR6c.png"/>
 
-   b. Map other prooperties with the relevant CSV header.
+   b. Map other properties with the relevant CSV header.
 
    c. Click **Next**.
 

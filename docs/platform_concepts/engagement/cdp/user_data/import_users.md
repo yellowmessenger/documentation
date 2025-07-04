@@ -10,7 +10,7 @@ The following are the three different steps involved in importing a CSV file.
 
 1. [Creating a CSV file with user details](#step-1-create-csv-file-with-user-details)
 2. [Importing the created CSV file](#step-2-import-csv-file)
-3. [Analysing import](#step-3-analyse-import-errors)
+3. [Analyzing import](#step-3-analyze-import-errors)
 
 :::note
 During the CSV import process, the system allows simultaneous import of only two files at a time. 
@@ -111,7 +111,7 @@ If a CSV header is not mapped to any user property, that CSV column will not be 
 :::
 
 5. Click **Next**.
-6. In **Resolve conflicts** set the action to be performed to the record when a userIdin the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360. 
+6. In **Resolve conflicts** set the action to be performed to the record when a userId in the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360. 
 
    ![](https://i.imgur.com/w9DvsBR.png)
 
@@ -127,14 +127,6 @@ This replaces the entire user record with the ones available in the CSV file.
 
    
 
-<!---
-#### Retain existing user data
-
-If the `userId` that you import already exists, it skips without making any changes to the existing record, even for the properies that are not mapped.
-
-   ![](https://i.imgur.com/EQNTPHg.png)
-    
-  -->
 
 
 ### Update existing user data
@@ -150,7 +142,7 @@ For example, if there are two records with the same userId - one in row 10 and a
 *  It is then updated as per row 15.
 :::
 
-7. Check **Merge tags** to retain existing tags and also add new tags in the CSV file if the userId that you are importing already exists. This overrides the behaviour of tags configured in Step 5.
+7. Check **Merge tags** to retain existing tags and also add new tags in the CSV file if the userId that you are importing already exists. This overrides the behavior of tags configured in Step 5.
 
    ![](https://i.imgur.com/z3VGPUJ.png)
 
@@ -218,7 +210,7 @@ The system prioritizes past mapping over matching property names. If a past mapp
 ***
 -->
 
-## Step 3: Analyse import errors
+## Step 3: Analyze import errors
 
 When importing a CSV file, it is important to analyze any potential errors that may occur:
 

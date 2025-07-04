@@ -90,7 +90,7 @@ To store user details (such as name, email address, phone number, and any other 
 * All user properties captured for a record will be mapped to the user as soon as the `userId' is captured during the session.
 :::
 
-To store the user’s response in User 360, in **Store Response in**, choose variables only under **User properties**. If a specific user property is not avilable, [create a custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) and use it.
+To store the user’s response in User 360, in **Store Response in**, choose variables only under **User properties**. If a specific user property is not available, [create a custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) and use it.
 
 
    ![](https://i.imgur.com/h8FfpZE.png)
@@ -143,7 +143,7 @@ To store the user’s response in User 360, in **Store Response in**, choose var
 
    For instance, here `returnId` is the function name containing the provided code. 
    
-   To access property vallues from the `payload` schema above, you can use the syntax: `data.profile.payload`. 
+   To access property values from the `payload` schema above, you can use the syntax: `data.profile.payload`. 
 
 
    ```js
@@ -199,7 +199,7 @@ To store the user’s response in User 360, in **Store Response in**, choose var
 
 ## Update user properties through AI-agent conversations
 
-Once the user is identified, you can update the user properties (other than userId) using the Prompt or Vaiable nodes.
+Once the user is identified, you can update the user properties (other than userId) using the Prompt or Variable nodes.
 
 :::note
 You cannot update user ID once captured. If the userId is captured again in a flow, it will map to the existing record if it already exists, or create a new userId if it does not exist. To know about user identification in Builder, see [How user records are created through conversations & unified in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).

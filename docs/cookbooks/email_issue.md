@@ -13,7 +13,7 @@ If you're not receiving emails from the Yellow\.ai platform, follow the steps be
 Determine whether the issue is specific to you or affecting others in your organization.
 
 * Ask colleagues if they are receiving Yellow\.ai emails.
-* If only you are affected, proceed to the next steps.
+* If you are affected, proceed to the next steps.
 
 ---
 

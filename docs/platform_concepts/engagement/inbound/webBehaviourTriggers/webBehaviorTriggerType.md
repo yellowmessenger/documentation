@@ -1,28 +1,28 @@
 ---
-title:  Web behaviour conditions
+title:  Web behavior conditions
 sidebar_label: Campaign display conditions
 ---
 
 
 When creating an Inbound campaign, you need to define when the campaign should show. You can use various conditions or strategies to run effective inbound campaigns. 
 
-This article provides various conditions (web behaviour) that the Inbound campaign supports and helps you with setting up multiple conditions.
+This article provides various conditions (web behavior) that the Inbound campaign supports and helps you with setting up multiple conditions.
   
  
  ## 1. Evaluate multiple conditions
   
 
-For every Condition set, you can have one or more conditions, and for every campaign (Web behaviour settings), you can have multiple Condition sets.
+For every Condition set, you can have one or more conditions, and for every campaign (Web behavior settings), you can have multiple Condition sets.
   
 
-By default, *and* is applied between each condition within a Condition set and *or* is applied between each Condition set of Web behaviour settings. 
+By default, *and* is applied between each condition within a Condition set and *or* is applied between each Condition set of Web behavior settings. 
 
 Hence, the campaign is displayed only when all the conditions of any Condition set are met.
 
  ![](https://i.imgur.com/ZFgKhu2.png)
  
 
-To know how to define conditions, [see the following section
+To know how to define conditions, see the following section
 
 ## 2. Trigger events
   
@@ -45,7 +45,7 @@ Element hovered over | Show the campaign when the vision hovered on a specific e
 Custom Event | Show the campaign based on custom events. See [Custom event based trigger](#21-custom-event-based-trigger)
 
 :::note
-To know when to use different trigger events, see [Web behaviour triggers for content marketing](#3-web-behaviour-triggers-for-content-marketing) and [Web behavior triggers for e-commerce](#4-web-behavior-triggers-for-e-commerce).
+To know when to use different trigger events, see [Web behavior triggers for content marketing](#3-web-behavior-triggers-for-content-marketing) and [Web behavior triggers for e-commerce](#4-web-behavior-triggers-for-e-commerce).
 :::
 
 ### 2.1 Custom event based trigger
@@ -81,7 +81,7 @@ In the Condition set, choose Custom event and select the event on which you want
 
 
 
-## 3. Web behaviour triggers for content marketing
+## 3. Web behavior triggers for content marketing
 
 This section explains how you can configure the condition for different web pages such as Home, Solutions, Product details, Blog, and Pricing pages.
 
@@ -111,7 +111,7 @@ Use **URL targeting**, **Seconds on page**, **Seconds of inactivity** and **Scro
 
 Visitors often land on to your website through an external campaign or referrer. Such visitors have a very specific intent. 
 
-You can identify the source from which they have come from using **URL Query Param** and **Referrer** targeting rules to create personalised engagements.
+You can identify the source from which they have come from using **URL Query Param** and **Referrer** targeting rules to create personalized engagements.
 
   
 
@@ -203,7 +203,7 @@ Identify such visitors using **URL targeting**, **Seconds on page**, **Seconds o
 
 ## 4. Web behavior triggers for e-commerce
 
-In this section, we have provided some examples on how you can leverage Web behaviour triggers for some e-commerce use cases. We have considered the following pages for a typical e-commerce website - *Homepage, Product search page,  Product details page**, and *Cart page*. 
+In this section, we have provided some examples on how you can leverage Web behavior triggers for some e-commerce use cases. We have considered the following pages for a typical e-commerce website - *Homepage, Product search page,  Product details page**, and *Cart page*. 
 
   
 
@@ -226,7 +226,7 @@ Use **URL Targeting**, **Seconds on Page**, **Seconds of Inactivity** and **Scro
   
 
 #### 2. Homepage ad. bar
-Visitors often land on to your website through an external campaign or referrer. Such visitors have a very specific intent. Identify which source they have come from using **URL Query Param** and **Referrer** targeting rules, and create personalised engagements accordingly.
+Visitors often land on to your website through an external campaign or referrer. Such visitors have a very specific intent. Identify which source they have come from using **URL Query Param** and **Referrer** targeting rules, and create personalized engagements accordingly.
 
 
 ![Image.png](https://cdn.yellowmessenger.com/TOhLLTnkAh9j1628176246228.png)

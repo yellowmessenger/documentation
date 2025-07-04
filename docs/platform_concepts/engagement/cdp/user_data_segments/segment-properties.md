@@ -21,7 +21,7 @@ To create a user segment, follow these steps:
 Option | Description
 --------- | --------
 property | The attribute by which you want to create the segment. You can choose from a list of predefined and custom user properties along with `createdAt` (Timestamp of when the user record was created) and `updatedAt` (Timestamp of when the user record was recently updated).
-operator | The condition operator that you want to use - is known, is not known, is, isn't, contains, does not contain.<br/><ul><li>**Operators for String datatypes**: is known, is not known, is, isn't, contains, does not contain </li><li>**Operators for Email/phone**: is known, is not known, is, isn't</li> <li>**Operators for date datatype**: is today, is known, is not known, is, is after, is above, was exact </li><li> **Operators for Boolean data type**: is known, is not known, is true, is not true, is false, is not false</li></ul>
+operator | The condition operator that you want to use - is known, is not known, is, isn't, contains, does not contain.<br/><ul><li>**Operators for String data types**: is known, is not known, is, isn't, contains, does not contain </li><li>**Operators for Email/phone**: is known, is not known, is, isn't</li> <li>**Operators for date datatype**: is today, is known, is not known, is, is after, is above, was exact </li><li> **Operators for Boolean data type**: is known, is not known, is true, is not true, is false, is not false</li></ul>
 value | Value of the expression. Use + to add multiple values. For example, create users whose city is either Bangalore or Mumbai.<img src="https://i.imgur.com/vdcl0je.png" width="90%"/>
 
 
