@@ -87,8 +87,8 @@ There are 4 different types of variables supported by Yellow.ai:
 
 Custom variables are created by AI-agent designers to store specific information unique to a particular conversation or use case. They are further divided into two types:
 
-* [Journey variable](#)
-* [Global variable](#) 
+* [Journey variable](#journey-variable)
+* [Global variable](#global-variable) 
 
 :::note
 Journey and Global variables expired after 48 hours of inactivity.
@@ -329,18 +329,18 @@ Different prompts and action nodes return responses in various formats and data 
 
 | Prompt    Nodes                                                                 | Variable Datatype |
 |----------------------------------------------------------------------------|-------------------|
-| [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#12-name)             | string            |
-| [Email](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#15-email)            | string            |
-| [Phone](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-phone)            | string            |
-| [Location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-location)           | object            |
-| [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel)                  | string            |
-| [Quick Replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies)         | string            |
-| [Date](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#21-date)                    | object            |
-| [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-question)         | string            |
-| [Feedback](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback)            | object            |
-| [Whatsapp List](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#22-whatsapp-list) | string            |
-| [Multiselect](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#23-multi-select)                                                                | string            |
-| [Image/file](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#26-file-prompt)        | string            |
+| [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/name-node)             | string            |
+| [Email](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/email-node)            | string            |
+| [Phone](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/phone-node)            | string            |
+| [Location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/location-node)           | object            |
+| [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/carousrel-node)                  | string            |
+| [Quick Replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/quick-replies)         | string            |
+| [Date](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/date-node)                    | object            |
+| [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/question-node)         | string            |
+| [Feedback](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/feedback-node)            | object            |
+| [Whatsapp List](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/whatsapp-list-node) | string            |
+| [Multiselect](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/multi-slect-node)                                                                | string            |
+| [Image/file](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/file-prompt-node)        | string            |
 
 #### [Actions nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/action-nodes)
 
