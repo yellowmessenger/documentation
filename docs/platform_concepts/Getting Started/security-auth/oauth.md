@@ -1,4 +1,3 @@
-````
 ---
 title: Single sign-on with OAuth & SAML for Cloud Platform
 sidebar_label: SSO with OAuth & SAML
