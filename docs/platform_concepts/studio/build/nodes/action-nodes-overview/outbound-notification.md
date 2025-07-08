@@ -126,7 +126,8 @@ Before using this node, ensure the following requirements are met:
 
 When the flow reaches this node, the WhatsApp template will be sent automatically to the user, using the values from the current session.
 
-:::notes
+:::note
+
 * **All parameters** in the template must be mapped.
   Missing parameters will cause the message to **fail silently** (it won’t be sent).
 

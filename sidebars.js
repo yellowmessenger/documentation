@@ -85,6 +85,7 @@ module.exports = {
      // link: {type: 'doc', id: 'platform_concepts/Getting Started/marketplaceintro'},
       collapsed: true,
       items: [
+        "cookbooks/platform_notload",
         "cookbooks/studio/error_page",
         "cookbooks/email_issue",
         "platform_concepts/studio/build/unknown_error",

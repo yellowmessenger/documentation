@@ -5,7 +5,7 @@ title: User 360 Overview
 
 ## User 360 overview
 
-User 360 is a Customer Data Platform that helps you manage your customer base.  You can segment your customers based on some shared characteristics for personalised targeting and get insights into their cross-channel engagement behavior.
+User 360 is a Customer Data Platform that helps you manage your customer base.  You can segment your customers based on some shared characteristics for personalized targeting and get insights into their cross-channel engagement behavior.
 
 The following are some key features of User 360 - 
 
@@ -14,7 +14,7 @@ The following are some key features of User 360 -
 * **Audience segmentation**: Segment your user base into meaningful groups, making it easier to target and engage with specific audiences for better personalization.
 * **Data activation**: Leverage user data and segments across various modules of yellow.ai to enhance personalization and drive more effective interactions.
 * **Real-time data updates**: Add or update user records in real-time through bot conversations, integrations and user events, keeping your data up-to-date and accurate.
-* **Events-based data update**: Updates user records based on user events from third-party systems (through Integeations) 
+* **Events-based data update**: Updates user records based on user events from third-party systems (through Integrations) 
 * **User data export**: Update your user base or use it outside Yellow.ai, you can conveniently export user data, making it readily available for your requirements. 
 
 

@@ -200,6 +200,51 @@ This contains the message template details that need to be sent as a notificatio
 
 ```
 
+##### `quickReplies` Object
+
+You can use the quickReplies object in the Notification API to define dynamic Call-To-Action (CTA) buttons in your outbound campaigns. These buttons map directly to placeholder variables in your approved message templates.
+Purpose of quickReplies
+
+The `quickReplies` object lets you:
+
+* Insert dynamic button text into predefined template variables
+* Define one or more CTA buttons for a message
+* Support personalization and interaction through button-based replies
+
+**Example with One CTA Button**
+
+If your template uses a single placeholder for a button:
+
+```json
+"quickReplies": {
+  "ctaUrlParam": {
+    "buttonText": "pricing-ai-chatbot"
+  }
+}
+```
+
+buttonText: The placeholder variable defined in the template and its value if the label (or URL segment) rendered in the message.
+
+
+**Example with Multiple CTA Buttons**
+If your template supports multiple placeholders, define each one separately under quickReplies:
+
+```json
+"quickReplies": {
+  "button1Text": "pricingPage",
+  "button2Text": "paymentPage",
+  "button3Text": "featuresPage"
+}
+```
+
+:::note
+Each key (e.g., button1Text) should exactly match the variable name in your template. The corresponding value is what users will see on the button or what gets appended to the URL.
+
+:::
+
+
+
+
 
 ##### `config` Object
 
