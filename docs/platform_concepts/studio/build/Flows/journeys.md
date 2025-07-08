@@ -70,15 +70,21 @@ To create a Category, follow these steps:
 
 * For the flow to work, you need to trigger it. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) for the detailed steps.
 
-### Create a Workflow
+## Workflows
 
-Workflows are background processes that are built using only [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes and operate along with the conversational flow. Workflows enhance the AI-agent's capabilities by performing various tasks such as calling functions, executing APIs, and database operations. This configuration allows you to create workflows that can be linked to categories and invoked as needed within a conversation. 
+Workflows are background processes that are built using only [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes and operate along with the conversational flow. Workflows enhance the AI-agent's capabilities by performing various tasks such as calling functions, executing APIs, and database operations. This configuration allows you to create workflows that can be linked to categories and invoked as needed within a conversation. For more information on how to call workflows in AI agent Prompt section, click [here](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow#create-a-workflow).
 
 For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/sync-database) operates in the background, synchronizing data with an external database while the AI-agent executes the rest of the flow.
 
-To create a Workflow, follow these steps:
+### Create a workflow via Workflow builder section
 
-1. Go to **Automation** > **Build** > **Create flow** > **+ Create Workflow**.
+To create a Workflow via Workflow builder section, follow these steps:
+
+1. Go to **Automation** > **Workflow builder** > **Create flow**.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/workflowcreate.png)
+
+2. Click **+ Create Workflow**.
 
    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/workflow.png" alt="drawing" width="100%"/>
 
@@ -119,3 +125,21 @@ Refer to the following video to see how the Workflow works in the conversational
 <video width="600" controls>
   <source src="/files/skill in a flow.mp4" type="video/mp4"/>
 </video>
+
+### Create workflow via AI agent prompt section
+
+To create a worflow via AI agent prompt section, follow these steps:
+
+1. Navigate to **Agents** > **Prompts** > **Actions** > **Call workflow**.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/callworkflow.png)
+    
+2. Click **+ Create workflow**.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/createworkflow1.png" alt="drawing" width="40%"/>
+
+3. Provide a **Workflow name** and **Description** to explain the purpose of the workflow.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/workdetails.png" alt="drawing" width="50%"/>
+   
+4. This will create a new workflow where you can configure with the required input parameters, logic, and output settings.

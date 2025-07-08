@@ -53,6 +53,34 @@ Trip type prompt: "Would you like to book a one-way or round-trip flight?""
 
 You can preview AI Agent to test and experience how your AI agent interacts with users in real-time. It simulates live conversations, helping you validate if prompts, workflows, and conversation rules work as expected before publishing the AI agent.
 
+You can preview and test the AI agent using two methods:
+* [AI Copilot](#ai-copilot)
+* [Preview via agent builder](#preview-via-agent-builder)
+
+### AI Copilot
+
+You can also preview and test the AI Agent using the Copilot, which simulates user sessions and helps in validating both functionality and performance.
+
+To preview via Copilot, follow these steps:
+
+1. Select the AI Agent you want to test.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/selectbot.png)
+
+1. Navigate to **Automation** > **Co-pilot** from the left navigation bar.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/copilot1.png)
+
+2. Start a new session or use an existing test scenario.
+
+3. Interact with the agent to observe how it responds to different queries and whether the flows work as intended.
+
+   ![Copilot preview](/files/Copilotpreview.gif)
+
+### Preview via agent builder
+
+You can also test the AI agent directly within the Agent builder interface.
+
 To preview the AI agent, follow these steps:
 
 1. Go to **Agents**.
@@ -61,7 +89,13 @@ To preview the AI agent, follow these steps:
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/previewagent.png)
 
+    * A preview panel will open on the right. Use this panel to interact with your agent and test flows.
+
 3. Test the AI agent in the preview panel.
 
-* Review the responses, check variable values, and see if fallback and workflows are triggered.
+   * Review the responses, check variable values, and see if fallback and workflows are triggered.
+
+4. Click the below high-lighted icon to preview the AI agnet in a different tab.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/preview.png)
 
