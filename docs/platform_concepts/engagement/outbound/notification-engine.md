@@ -366,7 +366,7 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 404        | Resource not found.                                                                                   |
 | 405        | HTTP method not supported for the API.             |
 | 406        | Must be used when the requested media type cannot be served by the API.                                                                  |
-| 415        | Rquest body does not contain content type.                                                              |
+| 415        | Request body does not contain content type.                                                              |
 | 422 | Invalid inputs. The request structure is evaluated to be correct but the parameter values are not within the expected range. Channel not configured. |
 | 429 | Rate limited. Occurs when there are too many requests sent to the API within a short time. Once a rate limit error is captured, the rate of the API call should be decreased to honour the limits.  *Default Rate Limit is 2000 requests/min per Bot.* |
 | 500 | Internal server error. TraceId will be sent back for tracking. |
