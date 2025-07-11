@@ -44,7 +44,13 @@ module.exports = {
     },
     colorMode: {
       defaultMode: "light",
-      disableSwitch: true,
+      disableSwitch: false,
+      defaultMode: 'light',
+      // Optional: If true, the user's OS preference (light/dark)
+      // will override the defaultMode.
+      respectPrefersColorScheme: false,
+
+
     },
     image: "img/og_img.png",
     metadata: [{ name: "twitter:card", content: "summary" }],
@@ -144,8 +150,17 @@ module.exports = {
   onBrokenLinks: "log",
   // clientModules: [require.resolve('./static/js/client-module.ts')],
 
-  clientModules: [require.resolve('./src/client-modules/client-module')],
+  // docusaurus.config.js
 
+clientModules: [
+  require.resolve('./src/client-modules/client-module'), // This is your existing one
+  require.resolve('./static/js/feedbackFooter.js'),              // Add this new line for the feedback script
+],
+
+  
+  //clientModules: [require.resolve('./src/client-modules/client-module')],
+
+  
   scripts: [
     "/js/FeedbackFooter.js", // feedback footer
     "/js/bot.js", // connect support bot
