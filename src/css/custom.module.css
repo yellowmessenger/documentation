@@ -2,7 +2,7 @@
  * custom.css
  *
  * This file contains all global styles for your Docusaurus portal.
- * It has been refactored for consistency, maintainability, and modern practices.
+ * This version has been simplified to ensure a successful production build.
  */
 
 /* ==========================================================================
@@ -26,7 +26,7 @@
   --ifm-color-warning: #F79009;
 
   /* --- Custom Brand & UI Colors --- */
-  --ifm-color-text-base: #384248; /* Reverted to a softer grey */
+  --ifm-color-text-base: #384248;
   --ifm-color-text-secondary: #52525B;
   --ifm-primary-button-color: var(--ifm-color-primary);
   --ifm-footer-bg-color: #0c111d;
@@ -35,7 +35,7 @@
   --ifm-link-color: var(--ifm-color-primary);
   --ifm-link-hover-color: var(--ifm-color-primary-dark);
 
-  /* --- Typography (Reverted to previous style) --- */
+  /* --- Typography --- */
   --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --ifm-font-family-heading: 'Roboto', sans-serif;
   --ifm-font-family-monospace: 'Courier New', monospace;
@@ -45,7 +45,7 @@
   --ifm-line-height-base: 1.7;
   --ifm-doc-sidebar-width: 280px;
 
-  /* --- Layout & Spacing (Inspired by MDN) --- */
+  /* --- Layout & Spacing --- */
   --ifm-container-width-xl: 1440px;
 
   /* --- Component Backgrounds --- */
@@ -56,20 +56,18 @@
   /* --- Component-Specific Styles --- */
   --ifm-navbar-background-color: #ffffff;
   --ifm-navbar-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
-  --ifm-menu-color: #52525B; /* Updated for clarity */
+  --ifm-menu-color: #334155;
   --ifm-menu-color-active: var(--ifm-link-color);
-  --ifm-menu-color-background-active: #eef2ff; /* Subtle background for active link */
+  --ifm-menu-color-background-active: #eef2ff;
   --ifm-menu-color-background-hover: #f8fafc;
 }
-
 
 /* ==========================================================================
    2. DARK THEME OVERRIDES
    ========================================================================== */
 
-
 html[data-theme="dark"] {
-  --ifm-color-primary: #60a5fa; /* Lighter blue for dark mode */
+  --ifm-color-primary: #60a5fa;
   --ifm-background-color: #0c111d;
   --ifm-background-surface-color: #1e293b;
   --ifm-background-surface-color-secondary: #334155;
@@ -82,26 +80,12 @@ html[data-theme="dark"] {
   --ifm-code-color: #e2e8f0;
   --ifm-link-color: #60a5fa;
   --ifm-link-hover-color: #93c5fd;
-  --ifm-menu-color: #a9b7c6; /* Brighter menu text for dark mode */
   --ifm-menu-color-background-active: #334155;
   --ifm-menu-color-background-hover: #1e293b;
+}
 
-  /* --- Dark Theme Admonitions --- */
-  .admonition h5 {
-    color: var(--ifm-heading-color);
-  }
-
-  /* --- Dark Theme DocSearch --- */
-  --docsearch-text-color: var(--ifm-color-text-base);
-  --docsearch-muted-color: var(--ifm-color-text-secondary);
-  --docsearch-container-background: rgba(0,0,0,0.8);
-  --docsearch-modal-background: var(--ifm-background-color);
-  --docsearch-searchbox-background: var(--ifm-background-surface-color);
-  --docsearch-searchbox-focus-background: var(--ifm-background-surface-color);
-  --docsearch-hit-color: var(--ifm-color-text-base);
-  --docsearch-hit-active-color: var(--ifm-heading-color);
-  --docsearch-hit-background: var(--ifm-background-surface-color);
-  --docsearch-footer-background: var(--ifm-background-color);
+html[data-theme="dark"] .admonition h5 {
+  color: var(--ifm-heading-color);
 }
 
 /* ==========================================================================
@@ -117,36 +101,33 @@ h1, h2 {
   font-family: var(--ifm-font-family-heading);
   font-style: normal;
   letter-spacing: -0.02em;
-  font-weight: 600; /* Reverted font weight */
+  font-weight: 600;
 }
 
 h3, h4, h5, h6 {
   font-family: var(--ifm-font-family-heading);
   font-style: normal;
   letter-spacing: -0.01em;
-  font-weight: 500; /* Reverted font weight */
+  font-weight: 500;
 }
 
 p, li, table th, table td {
-  font-size: 15px; /* Reverted font size */
+  font-size: 15px;
   line-height: var(--ifm-line-height-base);
 }
 
 p {
-  font-weight: 300; /* Reverted to lighter font weight */
+  font-weight: 300;
   margin-top: 1em;
 }
 
-/* Modern link styling within content */
 .markdown a {
   color: var(--ifm-link-color);
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.2s ease-in-out;
 }
 
 .markdown a:hover {
-  color: var(--ifm-link-hover-color);
   text-decoration: underline;
 }
 
@@ -159,8 +140,7 @@ code {
 }
 
 pre {
-  background-color: var(--ifm-code-background) !important;
-  padding: 1.25rem !important;
+  padding: 1.25rem;
   border-radius: 8px;
   border: 1px solid var(--ifm-color-emphasis-300);
 }
@@ -168,7 +148,6 @@ pre {
 pre code {
   font-family: var(--ifm-font-family-monospace);
   font-size: 14px;
-  color: var(--ifm-code-color);
   background: transparent;
   border: none;
   padding: 0;
@@ -178,119 +157,41 @@ pre code {
    4. LAYOUT & MAIN COMPONENTS
    ========================================================================== */
 
-/* --- Main Document Page --- */
-.docPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-styles-module {
-  max-width: var(--ifm-container-width-xl);
-  margin: 0 auto;
-}
-
-/* --- Doc Page Layout Fix --- */
-/* This ensures the main content and the feedback form stack vertically
-   by forcing the flex container to wrap its items. !important is used
-   to win the specificity battle with Docusaurus's inline styles. */
-main[class*="docMainContainer"] {
-    flex-wrap: wrap !important;
-}
-
-/* Add horizontal padding to the main content column for better spacing */
 [class*="docItemCol_"] {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-/* Constrain the width of the article content for readability */
 [class*="docItemContainer_"] {
-  max-width: 860px; /* Wider content area inspired by MDN */
-  margin: 0 auto; /* Center the container within its column */
+  max-width: 860px;
+  margin: 0 auto;
 }
 
-/* Right Table of Contents */
 .toc-wrapper {
   width: 240px;
 }
 
-
-.docTitle_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Content-Header-styles-module {
-  font-size: var(--ifm-h1-font-size);
-  font-family: var(--ifm-font-family-heading);
-}
-
-/* --- Remove default footer and tags --- */
 .footer,
 .theme-doc-footer-tags-row {
   display: none;
 }
 
-
 /* ==========================================================================
    5. NAVBAR
    ========================================================================== */
 
-.navbar {
-  position: sticky;
-  top: 0;
-}
-
-.navbar__inner {
-  max-width: var(--ifm-container-width-xl);
-  margin: 0 auto;
-}
-
-.navbar__logo {
-  height: 24px;
-}
-
-.navbar__link {
-  position: relative;
-  padding: 0;
-  margin: 0 20px;
-  color: var(--ifm-color-text-secondary);
-  font-size: 0.875rem;
-  letter-spacing: 0.15px;
-  font-weight: 500;
-  font-family: "Nunito", sans-serif;
-}
-
-.navbar__link:hover {
-  color: var(--ifm-color-text-base);
-}
-
-.navbar__link--active {
-  font-weight: 700;
-  color: var(--ifm-color-text-base);
-}
-
-/* Active link indicator */
 .navbar__link--active::before {
   content: "";
   width: 100%;
   height: 3px;
-  background-color: var(--ifm-color-primary) !important;
+  background-color: var(--ifm-color-primary);
   position: absolute;
   bottom: -20px;
   border-radius: 10px;
 }
 
-/* --- Navbar "Sign Up" Button --- */
-.navbar__items--right a:last-child {
-  background-color: var(--ifm-primary-button-color);
-  border: 1px solid var(--ifm-color-primary-dark);
-  box-shadow: 0px 1px 0px rgba(61, 47, 38, 0.15);
-  border-radius: 4px;
-  padding: 5px 10px;
-  color: #fff; /* White text on blue button */
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.15px;
-}
-
-.navbar__items--right a:last-child:hover {
-  background-color: var(--ifm-color-primary-dark);
-}
-
 /* ==========================================================================
-   6. SIDEBAR MENU & TABLE OF CONTENTS (REDESIGNED)
+   6. SIDEBAR MENU
    ========================================================================== */
 
 .menu__list-item a {
@@ -311,19 +212,14 @@ main[class*="docMainContainer"] {
 }
 
 .menu__link--active {
-  color: var(--ifm-link-color) !important;
-  background-color: var(--ifm-menu-color-background-active) !important;
+  color: var(--ifm-link-color);
+  background-color: var(--ifm-menu-color-background-active);
   font-weight: 600;
 }
 
-/* Category headers in the sidebar */
 .menu__list-item-collapsible > .menu__link {
   font-weight: 700;
   color: var(--ifm-color-text-base);
-}
-
-.menu__caret::before {
-  opacity: 0.5;
 }
 
 /* ==========================================================================
@@ -340,7 +236,6 @@ main[class*="docMainContainer"] {
   font-weight: 600;
 }
 
-/* --- TIP (Success) --- */
 .admonition-tip {
   background: #F0FDF4;
   border-color: var(--ifm-color-success);
@@ -349,7 +244,6 @@ main[class*="docMainContainer"] {
   color: #15803D;
 }
 
-/* --- INFO --- */
 .admonition-info {
   background: #EFF6FF;
   border-color: #60A5FA;
@@ -358,7 +252,6 @@ main[class*="docMainContainer"] {
   color: #1E40AF;
 }
 
-/* --- NOTE (Secondary/Warning) --- */
 .admonition-note {
   background: #FEFCE8;
   border-color: var(--ifm-color-warning);
@@ -367,124 +260,10 @@ main[class*="docMainContainer"] {
   color: #B45309;
 }
 
-.admonition-content a {
-  color: var(--ifm-link-color);
-}
-
 /* ==========================================================================
-   8. FAQs & DETAILS (Collapsibles)
-
-.details {
-  width: 100%;
-  margin: 0 auto 0.5rem;
-  background: #fff;
-  box-shadow: 0 .1rem 1rem -.5rem rgba(0, 0, 0, .4);
-  border-radius: 5px;
-  overflow: hidden;
-  border: 1px solid #f2cb67;
-  --docusaurus-details-decoration-color: #f0b41c;
-}
-
-.details summary {
-  padding: 1rem 1rem 1rem 1.9rem;
-  position: relative;
-  cursor: pointer;
-}
-
+   10. FEEDBACK COMPONENT
    ========================================================================== */
 
-/* ==========================================================================
-   8. FAQ & DETAILS (REDESIGNED)
-   ========================================================================== */
-
-/* Main container for each FAQ item */
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
-  background-color: var(--ifm-background-surface-color);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  box-shadow: none;
-  transition: all 0.2s ease-in-out;
-}
-
-/* Hover effect for the FAQ item */
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module:hover {
-  border-color: var(--ifm-color-emphasis-300);
-  transform: translateY(-2px);
-  box-shadow: var(--ifm-global-shadow-lw);
-}
-
-/* The clickable summary (question) part of the FAQ */
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module summary {
-  padding: 1.25rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--ifm-heading-color);
-  cursor: pointer;
-  outline: none;
-}
-
-/* The collapsible content (answer) part of the FAQ */
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module .collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
-    padding: 0 1.25rem 1.25rem 1.25rem;
-    color: var(--ifm-color-text-secondary);
-}
-
-/* Styling for the expand/collapse arrow */
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module summary::before {
-  --docusaurus-details-decoration-color: var(--ifm-color-text-secondary);
-  top: 1.35rem;
-}
-
-
-
-
-/* ==========================================================================
-   9. MISCELLANEOUS
-   ========================================================================== */
-
-/* --- Images with borders --- */
-p img, li img {
-  border: 1px solid #C4C4C4;
-}
-
-/* --- Pagination --- */
-.pagination-nav__link {
-  border-radius: 10px;
-  font-size: 14px;
-}
-
-.pagination-nav__sublabel {
-  color: var(--ifm-link-color);
-}
-
-.pagination-nav__label {
-  color: var(--ifm-primary-grey-color);
-  font-weight: 400;
-}
-
-/* --- Header Icons (Github, etc) --- */
-.header-github-link:before,
-.header-download-link:before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  display: flex;
-}
-
-.header-github-link:before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
-}
-
-html[data-theme="dark"] .header-github-link:before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
-}
-
-/* ==========================================================================
-   10. FEEDBACK COMPONENT (REDESIGNED)
-   ========================================================================== */
-
-/* This container ensures the component takes up its own line and is centered on the page */
 .feedbackFooter__cont {
   width: 100%;
   margin: 4rem auto 2rem auto;
@@ -492,7 +271,6 @@ html[data-theme="dark"] .header-github-link:before {
   justify-content: center;
 }
 
-/* The main card for the feedback widget */
 .feedbackFooter__content {
   max-width: 500px;
   width: 100%;
@@ -501,39 +279,25 @@ html[data-theme="dark"] .header-github-link:before {
   border-radius: 16px;
   padding: 2rem;
   text-align: center;
-  transition: all 0.3s ease-in-out;
 }
 
-html[data-theme='dark'] .feedbackFooter__content {
-    border: 1px solid var(--ifm-color-emphasis-400);
-}
-
-/* The title text "Was this article helpful?" */
 .feedbackFooter__content h3 {
   margin-top: 0;
   margin-bottom: 1.5rem;
-  color: var(--ifm-heading-color);
   font-size: 1.125rem;
   font-weight: 600;
 }
 
-/* Container for the buttons */
 .feedbackButtons {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
 }
 
-/* Styling for the individual like/dislike buttons */
 .feedbackButtons button {
-  --feedback-color-default: var(--ifm-font-color-secondary);
-  --feedback-color-up-hover: var(--ifm-color-success);
-  --feedback-color-down-hover: var(--ifm-color-danger);
-
   background-color: transparent;
-  color: var(--feedback-color-default);
   border: 2px solid var(--ifm-color-emphasis-300);
-  border-radius: 50%; /* Circular buttons */
+  border-radius: 50%;
   width: 56px;
   height: 56px;
   display: inline-flex;
@@ -543,41 +307,27 @@ html[data-theme='dark'] .feedbackFooter__content {
   transition: all 0.2s ease-in-out;
 }
 
-html[data-theme='dark'] .feedbackButtons button {
-    border-color: var(--ifm-color-emphasis-400);
-}
-
-/* Icon size within the buttons */
 .feedbackButtons button i {
   font-size: 1.5rem;
-  transition: transform 0.2s ease-in-out;
 }
 
-/* Hover and focus states for a modern feel */
 .feedbackButtons button:hover {
   transform: translateY(-3px);
   box-shadow: var(--ifm-global-shadow-md);
 }
 
-.feedbackButtons button:hover i {
-    transform: scale(1.1);
-}
-
-/* Specific hover styles for the "like" button */
 .feedbackButtons button#liked_docs:hover {
-  background-color: var(--feedback-color-up-hover);
-  border-color: var(--feedback-color-up-hover);
+  background-color: var(--ifm-color-success);
+  border-color: var(--ifm-color-success);
   color: #fff;
 }
 
-/* Specific hover styles for the "dislike" button */
 .feedbackButtons button#disliked_docs:hover {
-  background-color: var(--feedback-color-down-hover);
-  border-color: var(--feedback-color-down-hover);
+  background-color: var(--ifm-color-danger);
+  border-color: var(--ifm-color-danger);
   color: #fff;
 }
 
-/* Styles for the "Thank You" message after feedback is given */
 .feedbackThanks {
   display: flex;
   flex-direction: column;
@@ -588,7 +338,6 @@ html[data-theme='dark'] .feedbackButtons button {
 }
 
 .feedbackThanks h3 {
-  color: var(--ifm-heading-color);
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
