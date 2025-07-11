@@ -1,7 +1,8 @@
 /**
  * index.module.css
  *
- * Styles for the homepage component.
+ * Styles for the homepage component. This version removes complex gradients
+ * to ensure the production build succeeds.
  */
 
 /* --- Main Wrapper --- */
@@ -9,15 +10,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* Add a subtle dot-grid background for texture */
-  background-image: radial-gradient(var(--ifm-color-emphasis-200) 1px, transparent 1px);
-  background-size: 1.5rem 1.5rem;
-  background-position: -0.75rem -0.75rem;
 }
 
 /* --- Hero Section --- */
 .homeHero {
-  padding: 4rem 1.5rem; /* Reduced vertical padding to bring content up */
+  padding: 4rem 1.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -25,23 +22,10 @@
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
 }
 
-/* Add a subtle gradient "glow" behind the hero content */
-.homeHero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150%;
-  height: 100%;
-  background: radial-gradient(circle at 50% 0%, rgba(0, 82, 234, 0.05), transparent 70%);
-  z-index: 0;
-}
-
 .homeHeroInner {
   max-width: 800px;
   margin: 0 auto;
-  position: relative; /* Ensure content is above the gradient */
+  position: relative;
   z-index: 1;
 }
 
@@ -151,4 +135,3 @@
     font-size: 1.1rem;
   }
 }
-  
