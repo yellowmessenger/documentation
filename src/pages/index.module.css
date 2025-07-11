@@ -1,0 +1,154 @@
+/**
+ * index.module.css
+ *
+ * Styles for the homepage component.
+ */
+
+/* --- Main Wrapper --- */
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* Add a subtle dot-grid background for texture */
+  background-image: radial-gradient(var(--ifm-color-emphasis-200) 1px, transparent 1px);
+  background-size: 1.5rem 1.5rem;
+  background-position: -0.75rem -0.75rem;
+}
+
+/* --- Hero Section --- */
+.homeHero {
+  padding: 4rem 1.5rem; /* Reduced vertical padding to bring content up */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Add a subtle gradient "glow" behind the hero content */
+.homeHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 82, 234, 0.05), transparent 70%);
+  z-index: 0;
+}
+
+.homeHeroInner {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; /* Ensure content is above the gradient */
+  z-index: 1;
+}
+
+.homeHeroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  margin: 0;
+  line-height: 1.1;
+  color: var(--ifm-heading-color);
+}
+
+.homeHeroSubtitle {
+  font-size: 1.25rem;
+  color: var(--ifm-color-text-secondary);
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* --- Main Content Section --- */
+.homeSection {
+  padding: 4rem 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- Grid for Feature Cards --- */
+.homeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* --- Individual Feature Card --- */
+.homeCard {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: var(--ifm-card-background-color);
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.homeCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.07);
+}
+
+/* Enhanced hover effect for the icon */
+.homeCard:hover .homeIconWrapper {
+  background-color: var(--ifm-color-primary);
+}
+
+.homeCard:hover .homeIcon {
+  color: #fff;
+}
+
+.homeIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: var(--ifm-menu-color-background-active);
+  margin-bottom: 1.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.homeIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--ifm-link-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.homeCardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeCardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-heading-color);
+}
+
+.homeCardDesc {
+  font-size: 1rem;
+  color: var(--ifm-color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .homeHeroTitle {
+    font-size: 2.5rem;
+  }
+  .homeHeroSubtitle {
+    font-size: 1.1rem;
+  }
+}
+  
