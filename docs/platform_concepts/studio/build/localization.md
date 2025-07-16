@@ -102,7 +102,7 @@ The following are the different languages supported in the AI-agent.
 | Pashto                        |   ps  | Yes                 |                          |                |                | Yes              |                     |                    |
 | Persian                       |   fa  | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | Polish                        |  pl   | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
-| Portuguese (Brazil)           |  pt   | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
+| Portuguese (Brazil)           |  pt-br   | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Portuguese (Portugal)         |    pt | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Punjabi (Gurmukhi)            |   pa  |                     | Yes                      | Yes            |                | Yes              |                     |                    |
 | Romanian                      |ro     | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |

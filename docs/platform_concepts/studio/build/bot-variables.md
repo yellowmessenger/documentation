@@ -90,8 +90,9 @@ Custom variables are created by AI-agent designers to store specific information
 * [Journey variable](#journey-variable)
 * [Global variable](#global-variable) 
 
-:::note
-Journey and Global variables expired after 48 hours of inactivity.
+:::notes
+* By default, both Journey and Global variables expire after 48 hours of inactivity to maintain data freshness and optimize storage.
+* For the WhatsApp channel, Global variable values persist for the lifetime of the user and do not expire after 48 hours. This ensures a seamless and continuous experience across sessions for WhatsApp users.
 :::
 
 ### Journey variable
