@@ -137,6 +137,6 @@ To enable Google play store event, follow these steps:
 Refer to the following video to see how the Google play store integration works:
 
 <video width="600" controls>
-  <source src="/files/YM-playstore-integration-demo.mp4" type="video/mp4"/>
-  Your browser does not support the video tag.
+  <source src="/files/Playstore-integration-demo.mp4" type="video/mp4"/>
 </video>
+
