@@ -1,5 +1,5 @@
 ---
-title: Automated AI agent testing  
+title: Automated AI agent Testing  AI agent
 sidebar_label: Automated AI agent testing
 ---
 
@@ -8,7 +8,7 @@ Automated AI agent testing (Agentic testing) allows you to validate the function
 With Automated testing, you can:
 
 - Generate test cases from your Knowledge base
-- Replay saved Copilot sessions (Comming soon)
+- Replay saved Copilot sessions 
 - Retest past user conversations (Comming soon)
 - Simulate end-to-end flows with scenario-based testing (Comming soon)
 
@@ -151,11 +151,11 @@ To test knowledge base, follow these steps:
       
 * FAQs will be generated for each uploaded document. You can generate FAQs for up to 100 documents at once.
 
-#### Configure Set criteria
+#### Configure Set criteria for Knowledge base
 
-After generating the test cases, you need to configure AI settings to define how the test should be evaluated.
+After generating the test cases, you need to configure set criteria to define how the test should be evaluated.
 
-To configure test AI settings, follow these steps:
+To configure set criteria, follow these steps:
 
 1. Click **Set criteria**.
 
@@ -164,8 +164,8 @@ To configure test AI settings, follow these steps:
 2. Set the Evaluation rules and click **Save**.
 
     i. **Accuracy**: Set the empathy level on the slider. **Value**: 75 – This is the suggested setting for optimal empathy.<br/>
-    ii. **Empathy**: Set the empathy level on the slider. **Value**: 7 – This is the suggested setting for optimal empathy. It ensures the AI responds in a friendly, human-like manner.<br/>
-    iii. **Rules**: Define rules that the AI agent should follow during test case evaluation:
+    ii. **Empathy**: Set the empathy level on the slider. **Value**: 75 – This is the suggested setting for optimal empathy. It ensures the AI responds in a friendly, human-like manner.<br/>
+    iii. **Rules**: Define rules that the AI agent should follow during test case evaluation.<br/>Example
       * Your questions must be phrased differently and varied each time to make it human-like. Each step should have actionable questions.
       * If the user expresses anger or frustration immediately skip to cancellation.
 
@@ -178,7 +178,7 @@ To configure test AI settings, follow these steps:
      ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/simulationset.png)
 
 
-### Run a test case
+### Run a test case for Knowledge base
 
 To run a test case, follow these steps:
 
@@ -200,9 +200,9 @@ To run a test case, follow these steps:
    
 * In the **Report** section, you can view the status of each test case along with details like the accuracy score, empathy score, and whether the AI response meets your configured rules.
 
-    ![image](https://hackmd.io/_uploads/HyoYp93-ex.png)
+    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/reportview.png)
    
-### View report
+### View Knowledge base report
 
 You can view the detailed results of each test case and compare actual versus expected outcomes.
 
