@@ -1,8 +1,8 @@
 /**
  * index.module.css
  *
- * Styles for the homepage component. This version removes complex gradients
- * to ensure the production build succeeds.
+ * Styles for the homepage component. This version is simplified to ensure
+ * the production build succeeds.
  */
 
 /* --- Main Wrapper --- */

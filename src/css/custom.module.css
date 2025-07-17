@@ -2,7 +2,7 @@
  * custom.css
  *
  * This file contains all global styles for your Docusaurus portal.
- * This version has been simplified to ensure a successful production build.
+ * This is the final, consolidated version with all features and fixes.
  */
 
 /* ==========================================================================
@@ -56,7 +56,7 @@
   /* --- Component-Specific Styles --- */
   --ifm-navbar-background-color: #ffffff;
   --ifm-navbar-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
-  --ifm-menu-color: #334155;
+  --ifm-menu-color: #52525B;
   --ifm-menu-color-active: var(--ifm-link-color);
   --ifm-menu-color-background-active: #eef2ff;
   --ifm-menu-color-background-hover: #f8fafc;
@@ -80,6 +80,7 @@ html[data-theme="dark"] {
   --ifm-code-color: #e2e8f0;
   --ifm-link-color: #60a5fa;
   --ifm-link-hover-color: #93c5fd;
+  --ifm-menu-color: #a9b7c6;
   --ifm-menu-color-background-active: #334155;
   --ifm-menu-color-background-hover: #1e293b;
 }
@@ -87,6 +88,7 @@ html[data-theme="dark"] {
 html[data-theme="dark"] .admonition h5 {
   color: var(--ifm-heading-color);
 }
+
 
 /* ==========================================================================
    3. BASE & TYPOGRAPHY
@@ -191,19 +193,20 @@ pre code {
 }
 
 /* ==========================================================================
-   6. SIDEBAR MENU
+   6. SIDEBAR MENU & TABLE OF CONTENTS (REDESIGNED)
    ========================================================================== */
 
-.menu__list-item a {
+.menu__list-item .menu__link {
   border-radius: 6px;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+  margin: 0.1rem 0;
+  display: block;
 }
 
 .menu__link {
   font-size: 14px;
   font-weight: 500;
-  color: var(--ifm-color-text-secondary);
+  color: var(--ifm-menu-color);
 }
 
 .menu__link:hover {
@@ -212,8 +215,8 @@ pre code {
 }
 
 .menu__link--active {
-  color: var(--ifm-link-color);
-  background-color: var(--ifm-menu-color-background-active);
+  color: var(--ifm-link-color) !important;
+  background-color: var(--ifm-menu-color-background-active) !important;
   font-weight: 600;
 }
 
@@ -221,6 +224,11 @@ pre code {
   font-weight: 700;
   color: var(--ifm-color-text-base);
 }
+
+.menu__caret::before {
+  opacity: 0.5;
+}
+
 
 /* ==========================================================================
    7. ADMONITIONS
@@ -253,15 +261,144 @@ pre code {
 }
 
 .admonition-note {
-  background: #FEFCE8;
+  background: #FFFBEB;
   border-color: var(--ifm-color-warning);
 }
 .admonition-note .admonition-heading h5 {
   color: #B45309;
 }
 
+html[data-theme="dark"] .admonition-note {
+  background-color: rgba(247, 144, 9, 0.1);
+  border-color: var(--ifm-color-warning);
+}
+
+html[data-theme="dark"] .admonition-note .admonition-heading h5 {
+    color: #FFD68A;
+}
+
 /* ==========================================================================
-   10. FEEDBACK COMPONENT
+   8. FAQs & DETAILS (Collapsibles)
+   ========================================================================== */
+
+.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module:hover {
+  border-color: var(--ifm-color-emphasis-300);
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module summary {
+  padding: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+  cursor: pointer;
+  outline: none;
+}
+
+.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module .collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    color: var(--ifm-color-text-secondary);
+}
+
+.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module summary::before {
+  --docusaurus-details-decoration-color: var(--ifm-color-text-secondary);
+  top: 1.35rem;
+}
+
+/* ==========================================================================
+   9. VIDEO TUTORIALS PAGE
+   ========================================================================== */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: var(--ifm-card-background-color);
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.07);
+}
+
+.video-embed-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background-color: #000;
+}
+
+.video-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.video-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-heading-color);
+}
+
+.video-card-description {
+  font-size: 0.9rem;
+  color: var(--ifm-color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================================================================
+   10. IN-ARTICLE CARDS
+   ========================================================================== */
+
+.in-article-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .in-article-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   11. FEEDBACK COMPONENT
    ========================================================================== */
 
 .feedbackFooter__cont {
