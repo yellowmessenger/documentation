@@ -3,7 +3,14 @@ title: Yellow.ai - Agentic AI That Feels Human, Works Autonomously
 sidebar_label: Yellow.ai
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ArticleCard from '@site/src/components/ArticleCard';
+import ArticleCardGrid from '@site/src/components/ArticleCardGrid';
+
 ---
+
+
 
 ## Overview
 
@@ -226,35 +233,60 @@ If you prefer personalized training, write to academy@yellow.ai, and our experts
 :::
 
 
-### Chat with Mia, Your AI Assistant
+---
 
-Need quick answers or guidance? Chat with Mia, our built-in AI assistant trained to support your journey.
-
-
-- On our **[Cloud platform](https://cloud.yellow.ai)**: Click **Help** > **Ask a question** to engage with Mia. 
-- On our [**Documentation site**](https://docs.yellow.ai page): Find Mia at the bottom of each page and initiate a chat.
-<!--
-![](https://hackmd.io/_uploads/S1UFf7Uoh.png)
--->
-
-
-### Join our Community for product discussions
-
-At Yellow.ai, we believe in fostering a strong community of AI-agent builders and enthusiasts. 
-Join our community to connect with fellow users, share experiences, and exchange knowledge. Engage with our product experts and receive guidance, support, and inspiration to create exceptional AI-agents.
-- [**Join yellow.ai community :arrow_right:**](https://community.yellow.ai/) 
-
-
-### Explore Product Documentation 
+### Explore Product Documentation
 Find answers fast with our comprehensive knowledge base, covering everything from getting started to advanced use cases.
 
-* [**Product documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/getting-started)      
-* [**Use-case guides :arrow_right:**](https://docs.yellow.ai/docs/cookbooks/getting_started)      
-* [**API documentation :arrow_right:**](https://docs.yellow.ai/api)      
-* [**Monthly product updates(for each module) :arrow_right:**](https://docs.yellow.ai/docs/updates/overview)      
 
 
-:::note
+<ArticleCardGrid>
+  <ArticleCard
+    href="/docs/platform_concepts/Getting%20Started/createfirstbot"
+    icon="robot"
+    title="Create your AI Agent"
+    description="Learn how to configure your new project and set up integrations."
+  />
+
+  <ArticleCard
+    href="/api"
+    icon="code"
+    title="API Reference"
+    description="All the technical details to build and integrate with our platform."
+  />
+
+  <ArticleCard
+    href="/docs/cookbooks/getting_started"
+    icon="book"
+    title="Use Case Guides"
+    description="Practical workflows and scenarios to help you get the most out of the platform."
+  />
+
+  <ArticleCard
+    href="/docs/updates/overview"
+    icon="newspaper"
+    title="Monthly Release Notes"
+    description="Stay up to date with the latest improvements, features, and fixes."
+  />
+
+### Need Help?
+
+<br/>
+<ArticleCard
+    href=""
+   icon="aiAgent"
+    title="Chat with Mia, Your AI Assistant"
+    description="Need help? Chat with Mia at the bottom-right of this page or through Help > Ask a question on the Cloud platform."
+  />
+  <ArticleCard
+  href="https://community.yellow.ai"
+  icon="community"
+  title="Join Our Community"
+  description="Connect with fellow AI-agent builders, share ideas, and get support from product experts to build exceptional AI experiences."
+/>
+</ArticleCardGrid>
+
+:::info
 For any queries or help, contact [support@yellow.ai](mailto:support@yellow.ai). 
 :::
 

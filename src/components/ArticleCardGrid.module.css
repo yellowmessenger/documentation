@@ -1,0 +1,12 @@
+.inArticleCardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .inArticleCardGrid {
+    grid-template-columns: 1fr;
+  }
+}
