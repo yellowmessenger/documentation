@@ -100,10 +100,74 @@ For example, if the role of Admin/Developer is assigned in the Live/Production e
 - To provide combined access to Database Viewer, Inbox (Admin), Inbox (Agent), Insights (Analytics), Insights (Admin), Engagement (Admin), and Engagement (User) in both environments, combine the access with either Admin or Developer access.
 
 
-
 ***
 
+## Request access to an AI Agent
 
+There are multiple cases where both customers and internal users (Yellow) raise a support request to support@yellow.ai for Bot access so they can follow the steps here and request for access
+
+#### Prerequisites
+
+* For the user requesting access:
+   Should have the Bot ID of the bot they want to access.
+* For the approver (Super Admin/Admin):
+    Should have Super Admin or Admin access.
+
+
+To request access to an AI agent on Yellow.ai, follow these steps:
+
+1. Copy and paste the following URL in your browser:
+`https://cloud.yellow.ai/bot/<your_bot_ID>/overview`
+
+2. Replace `<your_bot_ID>` with the actual bot ID you want to access. Example: If your bot ID is `x1234567890000`, the URL becomes:`https://cloud.yellow.ai/bot/x1234567890000/overview`
+
+3. Verify the bot ID, and then click **Request access** button.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/botid.png)
+    
+* After you click the button, a confirmation pop-up appears.
+
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/requestacc.png)
+     
+* If you have already submitted a request for this bot, you will see the following message:
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/errrequest.png)
+    
+* Once your request is submitted, users with Super Admin or Admin access can review and approve it.
+
+4. Navigate to **Settings** > **Access controls** > **User requests**.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/botemail.png)
+    
+* Reach out to Super admin/Admin who have the access to the AI agent and ask them to 'Approve' your request. The request can be approved by clicking on the **Approve** button shown in the above screenshot.
+
+5. Once the Super admin/Admin clicks on **Approve**, below drop-down will be displayed.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/emailaccess1.png)
+    
+6. Super admin/Admin can select the access to be provided and then click on **Approve** button. 
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/accessselected.png)
+    
+* Once the button is clicked, below pop-up will be displayed and the access will be shared.
+
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/request1.png)
+     
+*  A success popup appears, and the requester can refresh their browser to start using the bot.
+
+7. If the User request is not valid (that is, user not meant to access the Bot), then you can click **Decline**.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/botemail1.png)
+     
+8. Click on **Decline** button to confirm or **Cancel** button to close the pop-up.
+
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/decline.png)
+     
+* If the request is declined, below pop-up will be displayed.
+
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/decline.png)
+
+***     
 
 ## Accept bot invites
 

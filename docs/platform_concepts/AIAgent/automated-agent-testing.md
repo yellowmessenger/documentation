@@ -33,10 +33,10 @@ Manual testing whether through preview windows or live sessions is time consumin
 
 Automated AI agent testing supports four test case types, each designed to validate different aspects of an agent's performance to ensure consistent behavior across updates and environments.
 
-1. **Knowledge base test case**: Knowledge Base (KB) test case helps you verify if the AI agent is responding accurately based on the documents uploaded in the Knowledge Base. It ensures the agent retrieves the correct information from those files when answering questions. This is especially useful when handling large volumes of content like PDFs, website links (URLs), or data from APIs.
+1. **[Knowledge base test case](#knowledge-base)**: Knowledge Base (KB) test case helps you verify if the AI agent is responding accurately based on the documents uploaded in the Knowledge Base. It ensures the agent retrieves the correct information from those files when answering questions. This is especially useful when handling large volumes of content like PDFs, website links (URLs), or data from APIs.
 
    In the KB test case section, you can view the list of documents uploaded to the Knowledge Base. For each document, a question and answer pair (FAQ) is generated. You can generate FAQs for up to 100 documents at a time. When you run the test, the AI agent is asked these questions to check whether it responds with the expected answers to validate that it understands and uses the document content correctly.
-2. **Copilot saved session**: Copilot saved session test case allows you to capture and save user-agent interactions during a conversation within the AI Copilot. These saved sessions are useful for testing and debugging purposes. When a session is saved, it records the complete conversation between the user and the AI agent, including prompts, responses, and conversation context.
+2. **[Copilot saved session](#test-copilot-saved-session)**: Copilot saved session test case allows you to capture and save user-agent interactions during a conversation within the AI Copilot. These saved sessions are useful for testing and debugging purposes. When a session is saved, it records the complete conversation between the user and the AI agent, including prompts, responses, and conversation context.
 
     Once a session is saved in the Copilot Saved Session test case, it can be tested to evaluate how the AI agent performs based on that specific conversation.
 3. **Past conversation**: This allows you to select actual conversations from production or other environments and retest them across different environments like sandbox and production to identify inconsistencies.  It is particularly useful for debugging failed conversations or comparing performance across sandbox and production. It helps you compare performance, identify discrepancies, and confirm whether recent fixes have resolved previous issues. 
@@ -111,7 +111,7 @@ Provides a overview of the test case outcome and scores. It consist of three par
    * Avoid unnecessary repetition of policy details
    * Balance added context with clarity 
 
-## Exceute test case
+## Execute test case
 
 ### Knowledge base
 
@@ -163,8 +163,8 @@ To configure set criteria, follow these steps:
 
 2. Set the Evaluation rules and click **Save**.
 
-    i. **Accuracy**: Set the empathy level on the slider. **Value**: 75 – This is the suggested setting for optimal empathy.<br/>
-    ii. **Empathy**: Set the empathy level on the slider. **Value**: 75 – This is the suggested setting for optimal empathy. It ensures the AI responds in a friendly, human-like manner.<br/>
+    i. **Accuracy**: Set the empathy level on the slider. This determines how the AI agent's responses match the expected behavior. <br/>**Value**: 75 – This is the suggested setting for optimal empathy.
+    ii. **Empathy**: Set the empathy level on the slider. It ensures the AI responds in a friendly, human-like manner. <br/>**Value**: 75 – This is the suggested setting for optimal empathy. 
     iii. **Rules**: Define rules that the AI agent should follow during test case evaluation.<br/>Example
       * Your questions must be phrased differently and varied each time to make it human-like. Each step should have actionable questions.
       * If the user expresses anger or frustration immediately skip to cancellation.
@@ -219,3 +219,124 @@ To view report, follow these steps:
 2. Click **Analyse conversation** to compare the expected FAQ and the agent’s response during simulation.
 
     ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/comparision.png)
+
+## Test Copilot saved session
+
+You can test your AI agent using saved conversations from Copilot. 
+
+To create and validate a Copilot saved session, follow these steps:
+
+1. Navigate to **Automation** > **Test suites**.
+  
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/testsuite.png)
+    
+2. Click on **Copilot saved session**, then select **Go to Copilot** to begin creating the test case.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/Gotocopilot.png)
+   
+* This will navigate you to the Copilot module.   
+   
+3. In Copilot, click **Begin with fresh conversation** to initiate a new test session.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/begin.png)
+   
+4. Start the conversation and click **Save test case** icon to save the session.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/savetestcase.png)
+   
+5. Enter a name for your test case and click **Save**.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/savetescase.png" alt="drawing" width="60%"/>
+    
+:::note
+You can save up to 10 pairs of conversation per testcase.
+:::
+    
+6. Click **Check testcase** to review your saved conversation. This will display the recorded session under the Copilot saved session tab.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/checktestcase.png)
+   
+* The saved session will be displayed in the Copilot saved session tab.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/flight.png)
+   
+#### Configure set criteria for Copilot saved session
+
+After saving a test case, you need to configure set criteria to define how the Copilot should evaluate the session. This step helps ensure your AI agent behaves as expected.
+
+To configure set criteria, follow these steps:
+
+1. In the Copilot saved session tab, click on **Set criteria** for the test case you want to configure.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/copilotcriteria.png)
+
+2. Set the Evaluation rules and click **Save**.
+
+    i. **Accuracy**: Set the empathy level on the slider. This determines how the AI agent's responses match the expected behavior.<br/>**Value**: 75 – This is the suggested setting for optimal empathy.
+    ii. **Empathy**: Set the empathy level on the slider. This ensures the AI responds in a friendly, human-like tone.<br/> **Value**: 75 – This is the suggested setting for optimal empathy.<br/>
+    iii. **Rules**: Define rules that the AI agent should follow during test case evaluation.<br/> Example:
+      * Your questions must be phrased differently and varied each time to make it human-like.
+      * If the user expresses anger or frustration immediately skip to cancellation.
+
+     ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/seteval.png)
+
+3. **Set Simulation rules**: Add the rules to guide how the AI simulates user interactions during testing.
+   * If the user provides incomplete information, simulate a natural follow-up question instead of re-asking the original question.
+   * Always rephrase questions in a human-like manner to avoid repetition and mimic natural conversation patterns.
+ 
+     ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/simulationset.png)
+     
+### Run a test case for Copilot saved session
+
+To run a test case for Copilot saved session, follow these steps:
+
+1. Go to the Copilot saved session tab. Use the checkboxes to select one or more test cases that you want to run.
+
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/selectcopilottestcase.png)
+   
+2. Click **Run test cases** button at the top.
+
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/copilotruntestcase.png)
+
+3. Enter an Execution name for the test run. By default, the name will be auto-filled based on the current date and time.
+
+      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/copilotsaved.png" alt="drawing" width="70%"/>
+      
+4. Click **Run** to start the test execution.      
+      
+5. Click **Check reports** to view the results of the test case execution.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/checkcopilot.png" alt="drawing" width="50%"/>
+   
+* In the **Report** section, you will see a summary of the test execution, including:
+    - Status (Passed/Failed)
+    - Accuracy Score
+    - Empathy Score
+    - Compliance with evaluation rules and simulation behavior
+    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/copilottestcases.png)
+   
+### View report of Copilot saved session
+
+After running a Copilot saved session test, you can view detailed reports to evaluate how the AI agent performed compared to expected behavior.
+
+To view report, follow these steps:
+
+1. Click the **Execution name link**.
+
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/Copilotlink.png)
+
+* Here, you can view the complete status of the report. This report provides a comprehensive overview of the AI agent's performance, including:
+  *  Accuracy score
+  *  Empathy score 
+  *  Clear communication
+  *  Hallucination
+  *  Follow-up handling.
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/analyzecopilot.png)
+   
+2. Click on **Analyse conversation** to open a side-by-side view of:
+  * The Copilot conversation session (test input and expected flow)
+  * The Simulated agent response (what actually happened during the test)
+
+This allows you to compare expected vs actual behavior and ensures if the AI handled the conversation correctly.
+
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/copilotconversation.png)    
