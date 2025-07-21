@@ -1,58 +1,27 @@
-// This check ensures the code only runs in a browser environment, not during the server-side build
+// This check ensures the code only runs in a browser environment
 if (typeof window !== 'undefined') {
   window.addEventListener("load", () => {
-    console.log("Feedback JS: Script loaded.");
-
     const observer = new MutationObserver(() => {
       const parentDOM = document.getElementById("__docusaurus");
-      if (!parentDOM) {
-        return;
-      }
+      if (!parentDOM) return;
 
+      // This targets the container that holds the main article content
       const container = parentDOM.querySelector('[class*="docItemContainer"]');
-      
       const existingFooter = document.getElementById("feedbackFooter");
       const isHomepage = document.body.classList.contains("homepage");
 
-      // Only render if we are on a doc page and the footer doesn't already exist
       if (container && !isHomepage && !existingFooter) {
-        console.log("Feedback JS: Rendering footer inside docItemContainer.");
         renderFeedbackFooter(container);
       }
     });
 
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
+    observer.observe(document.body, { childList: true, subtree: true });
   });
 
-  // This function is called when a user clicks a feedback button
-  function handleFeedbackClick(type) {
-    const feedbackContent = document.getElementById("feedbackFooter");
-    if (!feedbackContent) return;
-
-    console.log(`Feedback JS: Clicked ${type}`);
-
-    // Call the original tracking function based on the button clicked
-    if (type === 'up') {
-      thumb_up_flow();
-    } else {
-      thumb_down_flow();
-    }
-
-    // Provide immediate visual feedback to the user by changing the HTML
-    feedbackContent.innerHTML = `
-      <div class="feedbackThanks">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M10.07,16.42l-4.5-4.5l1.414-1.414L10.07,13.59l6.5-6.5l1.414,1.414L10.07,16.42z"></path></svg>
-        <h3>Thank you for your feedback!</h3>
-      </div>
-    `;
-  }
-
-  // Original function for "thumb up"
+  // Original analytics functions
   function thumb_up_flow() {
     console.log("Feedback JS: thumb_up_flow triggered");
+    // Your existing analytics/bot trigger code
     window.YellowMessengerPlugin?.openBot();
     window.frames?.ymIframe?.postMessage(
       JSON.stringify({
@@ -60,37 +29,50 @@ if (typeof window !== 'undefined') {
         data: { journeySlug: "likes_sxpmll" },
       })
     );
+    // You can optionally change the UI after click
+    const feedbackContent = document.getElementById("feedbackFooter");
+    if(feedbackContent) {
+        feedbackContent.innerHTML = `<h3 class="feedback-thanks-simple">Thank you!</h3>`;
+    }
   }
 
-  // Original function for "thumb down"
   function thumb_down_flow() {
     console.log("Feedback JS: thumb_down_flow triggered");
+    // Your existing analytics/bot trigger code
+    window.YellowMessengerPlugin?.openBot();
     window.frames?.ymIframe?.postMessage(
       JSON.stringify({
         event_code: "trigger-journey",
         data: { journeySlug: "dislikes_dsxlbu" },
       })
     );
+     // You can optionally change the UI after click
+     const feedbackContent = document.getElementById("feedbackFooter");
+     if(feedbackContent) {
+         feedbackContent.innerHTML = `<h3 class="feedback-thanks-simple">Thank you for your feedback.</h3>`;
+     }
   }
 
-  // Renders the initial state of the feedback footer
+  // Renders the feedback footer with HTML-based layout adjustments
   function renderFeedbackFooter(container) {
     const wrapper = document.createElement("div");
-    wrapper.className = "feedbackFooter__cont";
+    // The innerHTML now includes a horizontal rule for spacing and a centered div
     wrapper.innerHTML = `
-      <div id="feedbackFooter" class="feedbackFooter__content">
-        <h3>Was this article helpful?</h3>
-        <div class="feedbackButtons">
-          <button id="liked_docs" onclick="handleFeedbackClick('up')">
-            <i class="ri-thumb-up-fill"></i>
-          </button>
-          <button id="disliked_docs" onclick="handleFeedbackClick('down')">
-            <i class="ri-thumb-down-fill"></i>
-          </button>
+      <hr style="margin: 4rem 0 2rem 0; border-top: 1px solid #eee; border-bottom: none;" />
+      <div align="center">
+        <div id="feedbackFooter" class="feedbackFooter__content">
+          <h3>Was this article helpful?</h3>
+          <div class="feedbackButtons">
+            <button id="liked_docs" onclick="thumb_up_flow()" title="Yes">
+              <i class="ri-thumb-up-fill"></i>
+            </button>
+            <button id="disliked_docs" onclick="thumb_down_flow()" title="No">
+              <i class="ri-thumb-down-fill"></i>
+            </button>
+          </div>
         </div>
       </div>
     `;
-
     container.appendChild(wrapper);
   }
 }
