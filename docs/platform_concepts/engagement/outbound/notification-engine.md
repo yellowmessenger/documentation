@@ -153,6 +153,8 @@ This object contains all relevant information about the user. It needs to have a
 
 ```
 
+
+
 ##### `notification` Object
 
 This contains the message template details that need to be sent as a notification. `templateId` is mandatory.
@@ -299,6 +301,18 @@ To explicitly choose MM Lite for message delivery, set the `apiPreference` to `"
 > ⚠️ Note:
 > MM Lite is only available for onboarded customers and is currently supported only for **Meta-approved MARKETING templates**.
 
+:::note
+Automatic category updates may apply to approved templates that were not initially reviewed according to Meta’s template category guidelines. Affected businesses are notified in advance through various channels, such as webhooks or email.
+  * **Recent Policy Update **(Effective April 16, 2025)<br/>If a template is approved as Utility but is determined to be Marketing:
+    * **Before April 16**: You’ll receive a 1-day advance notice before the category change.
+    * **After April 16**:
+       * No prior notice will be given.
+       * The category change from Utility to Marketing will happen instantly.
+       * The template status remains Approved, and you can continue sending messages without interruption.
+   For more details, refer to [Facebook documentation](http://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines/#how-we-update-a-template-s-category-after-initial-approval)
+:::
+
+
 ---
 
 
@@ -380,6 +394,7 @@ On successful queueing of the notification, you will receive a 202 status code w
 |---------------|--------------|
 | 100 - Parameter is invalid |  One or more parameters are invalid. Please check the error message to learn more about how to fix it.
 | 190 - Access token has expired | [Generate a new access token](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started#get-access-token)
+| 401 - Unauthorized | A request is made to the Notification API when the AI bot is in a paused state. While the bot is paused, it does not accept or process Notification APIs.
 | 1004 - mediaUploadError  | Failed to upload media to WhatsApp (wa tier - cloud-api/onprem)  |
 | 1400 - authException | If no sub-code is present, the login status or access token has expired, been revoked, or is otherwise invalid. Get a new access token. If a sub-code is present, see the subcode. (wa tier - cloud-api/onprem) |
 | 1401 - apiUnknown | Possibly a temporary issue due to downtime. Wait and retry the operation. If it occurs again, check that you are requesting an existing API. See Authentication and Authorization Errors for debugging information. (wa tier - cloud-api/onprem)    |
