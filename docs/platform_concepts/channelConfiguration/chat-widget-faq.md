@@ -593,6 +593,16 @@ export default () => (
   </div>
 </details>
 
+<details>
+<summary>Why is the date picker not working in the PWA bot, even though it works on the web bot?</summary>
+<div>
+ <br/>
+ <div>The date picker should work in both the PWA and web bots. If it's not working in the PWA bot, check the following:<br/> * <b>Channel support</b>: Make sure you are testing on a supported channel. Some channels like WhatsApp do not support the date picker. PWA and Web do support it.<br/> * <b>Variable type</b>: Ensure the date is being saved in a variable of type Object. If it is not, the date picker may not function as expected.
+
+</div>
+  </div>
+</details>
+
 ----------
 
 ## Chat history related FAQs

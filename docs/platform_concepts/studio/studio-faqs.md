@@ -830,6 +830,17 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
    </div>
 </details>
 
+<details>
+ <summary>Does the bot understand images as inputs in the Knowledge Base?
+</summary>
+ <div>
+  <div> 
+     No, currently the bot does not understand or process images as inputs in the Knowledge Base. It can only understand text-based content.
+</div>
+  <br/>
+   </div>
+</details>
+
 
 --------
 
@@ -867,7 +878,7 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
 
 
 <details>
- <summary>What is the difference between <b>>Suggestions</b> and <b>Fallback</b> under conversation settings? 
+ <summary>What is the difference between <b>Suggestions</b> and <b>Fallback</b> under conversation settings? 
 </summary>
  <div>
   <div> 
@@ -926,6 +937,25 @@ Refer to the following gif to see how to consolidate two variables into one:<br/
 <div>
 
  This report includes both identified and unidentified utterances when the confidence level is set between 0 and 1. To fetch only unidentified utterances, set the confidence level below the minimum confidence configured in the bot’s NLU settings. The number of fetched utterances may be lower than expected because the report only lists utterances the bot has not seen before, excluding duplicates.
+    
+</div>
+</details>
+
+<details>
+<summary> Can we block a user from sending messages to the bot? </summary>
+<div>
+
+No, currently you cannot block a user from sending messages to the bot directly.
+    
+</div>
+</details>
+
+<details>
+<summary>What does the Failed to encrypt error mean?</summary>
+<div>
+
+This error means that the method or function trying to encrypt some data has failed.
+It usually happens due to:<br/>* Incorrect encryption setup (like a missing key or invalid input).<br/>* System-level issues or bugs in the function. To find the exact cause, you’ll need to check the full error message and logs for more details.
     
 </div>
 </details>
