@@ -43,19 +43,30 @@ To create a WhatsApp template and send for approval, follow these steps:
 
 4. In **Select language**, choose the language for which you want to use the template.
 
-3. In **Select category**, choose for what type of messages you want to use the current template: *Transactional*, *Marketing* or *One-time passwords*. If you want the template to move to the right category automatically depending on the content, select **If the template does not qualify under the selected category, move it to the correct category**.
+5. In **Select category**, choose for what type of messages you want to use the current template: *Transactional*, *Marketing* or *One-time passwords*. If you want the template to move to the right category automatically depending on the content, select **If the template does not qualify under the selected category, move it to the correct category**.
 
-4. In **Template Type**, choose the template type for your message.
+   :::note
+   Automatic category updates may apply to approved templates that were not initially reviewed according to Meta’s template category guidelines. Affected businesses are notified in advance through various channels, such as webhooks or email.
+   * **Recent Policy Update **(Effective April 16, 2025)<br/>If a template is approved as Utility but is determined to be Marketing:
+      * **Before April 16**: You’ll receive a 1-day advance notice before the category change.
+      * **After April 16**:
+         * No prior notice will be given.
+         * The category change from Utility to Marketing will happen instantly.
+         * The template status remains Approved, and you can continue sending messages without interruption.
+   For more details, refer to [Facebook documentation](http://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines/#how-we-update-a-template-s-category-after-initial-approval)
+   :::
+
+6. In **Template Type**, choose the template type for your message.
 
    * **Standard Template**: Select for straightforward, single-item messages. It suits scenarios where a concise and focused message is preferable.
    * **Carousel Template**: Select for showcasing multiple items in a single, interactive format. Carousels offer a dynamic and engaging way to present diverse content within a single message.
 
 
-5. Configure the template using the available options - [For standard template](#options-to-create-whatsapp-standard-template), [for carousel template](#options-to-create-whatsapp-carousel-template).
+7. Configure the template using the available options - [For standard template](#options-to-create-whatsapp-standard-template), [for carousel template](#options-to-create-whatsapp-carousel-template).
 
    ![](https://i.imgur.com/jknxfcv.png)
 
-6. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#6-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
+8. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#6-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
 
    ![](https://i.imgur.com/63SeUhj.png)
 
@@ -65,7 +76,7 @@ To create a WhatsApp template and send for approval, follow these steps:
 
 :::
 
-7. Preview the message on the right pane and click **Create template** to finalize and create the WhatsApp template.
+9. Preview the message on the right pane and click **Create template** to finalize and create the WhatsApp template.
 
 
    The template will be sent for reviewing. You can use it in your campaign once Facebook approves it.
@@ -428,7 +439,7 @@ Column Name | Description
 Template name | Name of the template.
 Status | The current status of the template.<ul><li>**Pending**: Templates that have been submitted for approval but are still awaiting review from Facebook.</li> <li>**Rejected**: Templates that have been reviewed and rejected for not meeting the guidelines or requirements set by WhatsApp. These templates cannot be used for messaging purposes.</li> <li>**Disabled**: Templates that were previously approved but have been disabled either by the business or by WhatsApp. Disabled templates cannot be used for messaging until reactivated.</li> <li>**Approved**: Templates that have successfully passed the review process and meet the guidelines and requirements set by WhatsApp. These templates are eligible for use in messaging campaigns.</li> <li>**1st pause**: Templates that have successfully passed the review process but received negative feedback from users. The campaign using these templates will be suspended for 3 hours as a precautionary measure.</li> <li> **2nd pause**: If you resend the same template after the 3-hour suspension, the templates will be blocked for 6 hours as a further measure to prevent any potential issues or misuse.</li></ul>
 Quality | The quality rating of the template based on users feedback.<ul><li>**Not available**: This is the initial rating for approved message templates.</li><li>**High**: Templates with positive performance and user feedback.</li><li>**Medium**: Templates with moderate performance and user feedback.</li><li>**Low**: Templates with poor performance and negative feedback.</li></ul>
-Template category | Classification of the template based on its purpose or content - Utility, Marketing.<ul><li>**Utility templates** for WhatsApp are used for transactional or service-based messages. You can use this to provide important updates or assist users with specific tasks.</li><li>**Marketing templates** for WhatsApp are used for promotional purposes to engage with customers and drive business growth. These messages usually focus on campaigns, offers, or recommendations.</li></ul>
+Template category | Classification of the template based on its purpose or content - Utility, Marketing.<ul><li>**Utility templates** for WhatsApp are used for transactional or service-based messages. You can use this to provide important updates or assist users with specific tasks.</li><li>**Marketing templates** for WhatsApp are used for promotional purposes to engage with customers and drive business growth. These messages usually focus on campaigns, offers, or recommendations.</li></ul> <br/><strong>Note:</strong> From April 16, 2025, approved Utility templates may be reclassified as Marketing without prior notice; the status remains Approved and templates can still be used.
 Created on | Date and time of the template creation. 
 Created by | The platform user who the template.
   

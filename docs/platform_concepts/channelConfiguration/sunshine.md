@@ -3,9 +3,10 @@ title : Sunshine Conversations
 sidebar_label : Sunshine Conversations
 ---
 
-Sunshine Conversations is a messaging platform that allows businesses to interact with their customers across the various messaging apps such as Facebook Messenger, WhatsApp, Instagram, and SMS. The Sunshine Conversations bot allows you to send text, images, files, cards, and quick replies.
+Sunshine (Social Channels): Connect Facebook, WhatsApp, and Instagram via Yellow.ai with message routing through Zendesk Sunshine."
 
-For instance, if a business has integrated Sunshine conversations with Facebook, it creates a Sunshine conversations channel for Facebook. Businesses can use this channel to communicate with their customers via WhatsApp to send and receive messages. Similarly, you can integrate with other messaging apps based on your business requirements.
+This integration allows you to connect social channels like Facebook, WhatsApp, and Instagram to Zendesk Sunshine via Yellow.ai. It ensures that messages from these platforms are routed through Yellow.ai to your Zendesk agents, enabling seamless conversational handoff while maintaining context and continuity across systems. Ideal for businesses using Sunshine to manage customer conversations from multiple social platforms in one place.
+
 
 :::info
 For Yellow.ai to receive events on ending a conversation, follow one of these:

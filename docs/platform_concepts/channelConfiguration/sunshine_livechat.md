@@ -4,9 +4,14 @@ sidebar_label : Sunshine live chat
 ---
 
 
+Use Sunshine (Live Chat) integration to connect Zendesk Sunshine as a third-party live chat system.
 
-The Sunshine Live Cloud integration with the Yellow.ai bot enables Sunshine users to connect directly with bot users, enhancing communication and support capabilities. This integration allows for real-time interactions, ensuring that customer inquiries are addressed promptly and efficiently. This documentation will guide you through the setup process, empowering you to leverage the full benefits of the integration for improved customer experiences and operational efficiency.
+This integration enables you to connect your Yellow.ai AI Agent with Zendesk Sunshine for live agent handoff. It allows conversations initiated on your website or app to be smoothly routed to human agents on Sunshine, ensuring a unified support experience. 
 
+
+:::info
+Use Sunshine integration only for traditional third-party live chat via Zendesk Sunshine.
+:::
 
 ## Integration & configuration process
 
