@@ -35,7 +35,7 @@ To access the Analyze module, you must have **any one** of the following permiss
 - Developer
 
 
-> Refer to [manage your bot users](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#share-bot-access) article to understand how to request or provide access to use the Analyze module in a bot.
+> Refer to [manage your bot users](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators#share-bot-access) article to understand how to request or provide access to use the Analyze module in a bot.
 
 
 ---

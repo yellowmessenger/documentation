@@ -19,7 +19,7 @@ This template is built around the use case to help customers explore the product
 Bot users can also read customer use cases from the main flow, directly book a demo, or talk to an agent. 
 
 :::info
-For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/marketplaceintro). 
 :::
 
 

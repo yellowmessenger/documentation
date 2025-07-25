@@ -20,7 +20,7 @@ The following are the steps involved in setting up secure YMAuthentication:
 8. **Handling invalid tokens**:<br/> If the token is found to be invalid, you will receive another `ym-revalidate-token` event (up to 3 incorrect attempts). Follow the above steps to revalidate the token. After three unsuccessful attempts, if the token remains invalid, you will be directed to an error page with a *Try again* option.
 
 :::info
-For detailed steps, refer [this guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/security-auth/ymauth).
+For detailed steps, refer [this guide](https://docs.yellow.ai/docs/platform_concepts/get_started/security-auth/ymauth).
 :::
 
 

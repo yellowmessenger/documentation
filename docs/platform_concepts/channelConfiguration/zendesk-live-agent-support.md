@@ -56,7 +56,7 @@ The Yellow.ai Agent Assist package is available on the Zendesk marketplace. Foll
 
     * **Bot ID**: Enter the bot ID connected to Zendesk.
     * **API Base URL**: Enter the webhook URL based on your bot region (for example, r0 - https://cloud.yellow.ai, r1 - https://r1.cloud.yellow.ai).
-    * **X-API Key**: Enter the API key. For more information on how to get the API key, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/api-keys#docusaurus_skipToContent_fallback).
+    * **X-API Key**: Enter the API key. For more information on how to get the API key, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/api-keys#docusaurus_skipToContent_fallback).
     * **Site URL**: Enter the URL of your website to fetch information for user assistance (for example, puma.com/help).
     * **Enable role restrictions**: Enable the check box and select the roles that should have access to this app.
     * **Enable group restrictions**: Enable the check box and select which groups should have access to this app.

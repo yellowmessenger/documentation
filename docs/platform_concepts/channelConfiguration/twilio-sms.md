@@ -25,7 +25,7 @@ To set up Twilio SMS, you need to perform the following:
 
 * [Setup Twilio SMS account](#setup-twilio-sms-account)
 * [Connect Twilio number to Yellow.ai](#connect-twilio-sms-to-your-bot)
-* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
 * [Test Twilio SMS](#test-twilio-sms)
 
 ### Setup Twilio SMS account

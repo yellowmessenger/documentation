@@ -55,7 +55,7 @@ Follow [these steps](https://docs.yellow.ai/docs/platform_concepts/studio/build/
 
    ![Support template](https://imgur.com/iT97EQi.png)
 
-   > Refer to the [Marketplace guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#-1-choose-a-right-marketplace-template) for help using templates.
+   > Refer to the [Marketplace guide](https://docs.yellow.ai/docs/platform_concepts/get_started/marketplaceintro#-1-choose-a-right-marketplace-template) for help using templates.
 
 ### Raise a live chat request
 

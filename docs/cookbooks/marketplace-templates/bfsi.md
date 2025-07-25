@@ -20,7 +20,7 @@ Pre-built use cases accommodate basic online banking features such as creating a
 The template can be customized for complex use cases, like digital banking options (paying bills online), or simple ones like applying for a debit card, and viewing transaction history. 
 
 :::info
-For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/marketplaceintro). 
 :::
 
 -------------------

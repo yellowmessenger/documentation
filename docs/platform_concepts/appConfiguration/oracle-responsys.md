@@ -28,7 +28,7 @@ You can also refer to this video to set up the installation.
 
 ## Configure Oracle responsys on Yellow.ai
 
-1. [Sign up](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#2-signup-to-yellowai) on cloud.yellow.ai and [create a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#21-to-create-a-bot-from-scratch).
+1. [Sign up](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#2-signup-to-yellowai) on cloud.yellow.ai and [create a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#21-to-create-a-bot-from-scratch).
 2. Enter your Oracle account name in the **Give account name** field and click **Connect**.
 
  ![](https://i.imgur.com/gs26dAS.png)

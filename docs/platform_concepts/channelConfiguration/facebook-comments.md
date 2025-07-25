@@ -27,7 +27,7 @@ The FB comments integration offers these features:
 To set up Facebook comments bot, you need to perform the following:
 
 * [Connect Facebook Comments to Yellow.ai](#connect-your-facebook-page-to-yellowai)
-* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
 
 ## Connect your Facebook page to Yellow.ai
 

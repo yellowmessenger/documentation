@@ -278,7 +278,7 @@ General | copy from journey | Yes | No |
 
 Follow these steps to create a new bot on cloud.yellow.ai:
 
-1. [Sign up for an account](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#2-signup-to-yellowai) on cloud.yellow.ai if you haven't already.
+1. [Sign up for an account](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#2-signup-to-yellowai) on cloud.yellow.ai if you haven't already.
 2. Provide the necessary details and specifications for your new bot.
 3. Design the conversation flow of your bot by adding [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes).
 4. [Test your bot](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) thoroughly to ensure its functionality.

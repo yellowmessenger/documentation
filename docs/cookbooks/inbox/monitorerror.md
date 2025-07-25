@@ -52,7 +52,7 @@ Before proceeding with the resolution steps, ensure the following:
 ### 3. Set or Update the Bot Timezone
 
 - If 400 Bad Request errors are observed, it is likely that the bot’s timezone is not set or is misconfigured.
-- Refer to the official Yellow.ai documentation to configure the timezone: [Modify Bot Configuration – Yellow.ai Documentation](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration#addupdate-ai-agent-information)
+- Refer to the official Yellow.ai documentation to configure the timezone: [Modify Bot Configuration – Yellow.ai Documentation](https://docs.yellow.ai/docs/platform_concepts/get_started/modify-bot-configuration#addupdate-ai-agent-information)
 - Follow the instructions in the section **Add/Update AI Agent Information**, ensuring that the **timezone** field is correctly specified (e.g., `"Asia/Kolkata"`, `"America/Toronto"`).
 
 ### 4. Verify Data in the Monitor Tab

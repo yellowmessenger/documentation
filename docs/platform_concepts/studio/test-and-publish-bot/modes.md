@@ -5,7 +5,7 @@ sidebar_label : Publish your AI-agent
 
 Publishing a AI-agent involves deploying AI-agent changes to the live environment. Only a **Super Admin** can publish a AI-agent for the first time. Each AI-agent environment will have a unique AI-agent ID. It's important to understand that [database](https://docs.yellow.ai/docs/platform_concepts/studio/database#docusaurus_skipToContent_fallback) records will not automatically transfer to the live environment upon publication. They must be configured separately in both the development and live environments.
 
-Only certain user roles can approve the AI-agent. To know about user roles in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
+Only certain user roles can approve the AI-agent. To know about user roles in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators).
 
 :::info
 To publish your AI-agent, it's mandatory to configure [Fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#fallback-flow).
@@ -48,7 +48,7 @@ To publish a AI-agent to live mode follow these steps:
 4. Change your AI-agent environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. AI-agents with only **Development** and **Live** modes need not do this. When you publish the changes, AI-agent sends the approval request to approvers.
 
 :::info
-To learn about different AI-agent enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+To learn about different AI-agent enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env).
 :::
 
 ## Approve a AI-agent publish request
@@ -92,7 +92,7 @@ To access **Publish selected flow**s, follow these steps:
 - You cannot pick and choose which parts go to Staging; everything you set up in Sandbox will go there when you publish.
 - If you create something new in Staging that wasn't in Sandbox, you can publish it once. The next time you publish from Sandbox, anything you added exclusively in Staging will be lost and won't be in Production.
 
-To learn about different AI-agent enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+To learn about different AI-agent enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env).
 
 :::   
 

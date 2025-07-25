@@ -22,7 +22,7 @@ Yellow.ai’s AI Help Center is a plug-and-play widget that integrates seamlessl
 
 To explore the AI-Copilot features in action, please refer to the demo video below.
 
-![AI Copilot GIF](./Getting%20Started/img/cdp/Copilot-3.gif)
+![AI Copilot GIF](./get_started/img/cdp/Copilot-3.gif)
 
 > **Try it yourself!**: https://help.yellow.ai
 

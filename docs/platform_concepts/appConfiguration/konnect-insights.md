@@ -25,7 +25,7 @@ You need to create an app in Konnect Insights with the yellow.ai bot credentials
    ![](https://i.imgur.com/NDwbe7v.png)
 
 * **Profile name:** Enter a name for your profile in Konnect Insights.
-* **Bot ID:** Enter your bot ID. For steps to fetch your bot ID, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env#finding-your-bot-id).
+* **Bot ID:** Enter your bot ID. For steps to fetch your bot ID, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env#finding-your-bot-id).
 * **Webhook URL:** Copy this from Yellow.ai's integration page and paste it here. To do so:
    * Go to cloud.yellow.ai > **Integrations** > **Custom live agent** > click **Webhook URL** at the top right corner to copy it. 
   

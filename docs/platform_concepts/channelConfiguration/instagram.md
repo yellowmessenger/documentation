@@ -57,7 +57,7 @@ Carousel | <ul><li> A maximum of 80 characters are supported for the title and d
 To set up Instagram bot, you need to perform the following:
 
 * [Set up a business account on Instagram](#Connect)
-* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
 * [Test your bot](#test)
 
 :::note
@@ -287,7 +287,7 @@ Once you set up the bot, verify whether the bot responds to user according to th
 
 After connecting your bot on Yellow platform, you can test your bot as mentioned here:
 
-1. [Setup your bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot) based on your business use case.
+1. [Setup your bot](https://docs.yellow.ai/docs/platform_concepts/get_started/createfirstbot) based on your business use case.
 
 2. Log in to your personal Instagram account or use a secondary test account that you have created for testing purpose.
 

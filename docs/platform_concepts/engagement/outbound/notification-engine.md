@@ -117,10 +117,10 @@ To send Notification API reports to your preferred recipients:
 | **Header** | **Description/Value** |
 | --- | --- |
 | `Content-Type` | application/json |
-| `x-api-key` | **For** `https://app.yellow.ai` **platform**: Get the API key from the path **Configuration** > **Access Control** > **Bot API Key**. <br/>  <br/>**For** `https://cloud.yellow.ai` **platform**: Click on the **Access control** icon on top-right > Go to **API Keys** (you can see this option only if you are a bot admin). > Click +Generate API key**. [Click here for detailed help](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/api-keys). |
+| `x-api-key` | **For** `https://app.yellow.ai` **platform**: Get the API key from the path **Configuration** > **Access Control** > **Bot API Key**. <br/>  <br/>**For** `https://cloud.yellow.ai` **platform**: Click on the **Access control** icon on top-right > Go to **API Keys** (you can see this option only if you are a bot admin). > Click +Generate API key**. [Click here for detailed help](https://docs.yellow.ai/docs/platform_concepts/get_started/api-keys). |
 
 :::note
-Only users with a Super Admin role can [create a Bot API key](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/api-keys).
+Only users with a Super Admin role can [create a Bot API key](https://docs.yellow.ai/docs/platform_concepts/get_started/api-keys).
 :::
 
 #### Request Query Parameter

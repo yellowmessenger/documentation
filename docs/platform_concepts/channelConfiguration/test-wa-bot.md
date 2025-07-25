@@ -22,7 +22,7 @@ WhatsApp List Messages | WhatsApp template Quick Replies
 To initiate testing, follow these steps:
 
 1. Enter the testing number provided by Yellow.ai or use your personal number.
-2. [Build your bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot) with the required conversational flows based on your use case.
+2. [Build your bot](https://docs.yellow.ai/docs/platform_concepts/get_started/createfirstbot) with the required conversational flows based on your use case.
 3. Test the WA bot using either Automation or Channels module. 
 
     * Use the Preview section of the Automation module.
