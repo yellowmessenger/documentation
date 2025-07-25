@@ -34,7 +34,8 @@ To enable IP whitelisting on the cloud platform, follow these steps:
 3. Click **+Add IP Range** to include the IP address range. After adding the IP range, it will be displayed on the dashboard. You can **edit/delete** these details. 
 
 **Demo**: 
-![](https://imgur.com/CkQrHTU.gif)
+   
+   ![](https://imgur.com/CkQrHTU.gif)
 
 
 ---
