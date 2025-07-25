@@ -283,6 +283,20 @@ We’ve completely revamped the Knowledge Base module to help you manage and del
 ## **Inbox**
 
 
+### Redact sensitive messages in Chats
+
+We’ve introduced Message Redaction to help you safeguard sensitive customer data directly from the Inbox. Agents can now mark specific text messages as sensitive, ensuring private information is masked across chat views, transcripts, and logs — while remaining securely stored for audits and compliance.
+
+* **Redact individual text messages** with one click (attachments not supported).
+* **Admin-controlled permissions**: Only agents with redaction access can redact messages. Permissions can be managed in the Agent Settings page.
+* **Secure masking, not deletion**: Redacted content is hidden from all users but retained securely for audit purposes.
+* **Visible across views**: Redacted messages appear masked in the Inbox, chat transcripts, and conversation exports.
+* **Complete audit trail**: Every redaction is logged with metadata including who redacted, when, and which message.
+
+[Read the doc](https://docs.yellow.ai/docs/updates/overview#redact-sensitive-messages-in-chats)
+
+
+
 ### Monitor & Reporting Access Control Updates  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 Supervisors now get scoped views across Monitor, Reporting, and Team tabs—ensuring visibility is limited to their assigned teams.
