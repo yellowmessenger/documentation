@@ -15,11 +15,11 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 
 ***
 
-## Knowledgebase
+## **Knowledgebase**
 
 ### Conversational Knowledge Base (KB) **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-We have intoduced Conversational KB, a smarter and more intuitive way to deliver knowledge-driven conversations in your AI agents!
+We have introduced Conversational KB, a smarter and more intuitive way to deliver knowledge-driven conversations in your AI agents!
 
 **What is Conversational KB?**
 
@@ -49,6 +49,25 @@ Conversational KB is an intelligent AI-powered knowledge assistant that enables 
 * **Clickable hyperlinks**: Any links in responses are now displayed as hyperlinks.
 
 [**Check out the documentation →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config)
+
+
+### Redesigned Knowledge Base: Faster Setup, Smarter Syncing, Better Organizing **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+
+We’ve completely revamped the Knowledge Base module to help you manage and deliver content more efficiently. Now enabled by default for all newly created bots, this update brings powerful new capabilities to streamline setup, syncing, and ongoing content management—ensuring your AI agents stay accurate and context-aware.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
+
+**What’s new**:
+
+* **Guided content onboarding**: Step-by-step onboarding for websites, document uploads, and third-party platforms.
+* **Automated content syncing**: Schedule regular content updates using the built-in scheduler—no backend configuration required.
+* **Smarter file management**: Organize your content with folders, subfolders, and perform bulk actions for quicker updates.
+* **Metadata management**: Tag and filter files to improve search accuracy and make content more discoverable for your AI agent.
+* **Independent publishing workflow**: Publish Knowledge Base updates without redeploying the entire bot.
+
+
+[**Read the full documentation →**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
+
 
 ## **Engage**
 
@@ -233,7 +252,7 @@ We’re reimagining Analytics to support faster decision-making with smarter, cl
 
 ---
 
-## Analyze
+## **Analyze**
 
 ### Redesigned Topic Details Page **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
@@ -259,24 +278,7 @@ To ensure faster access to actionable insights and smoother navigation:
 
 ---
 
-## Knowledgebase
 
-### Redesigned Knowledge Base: Faster Setup, Smarter Syncing, Better Organizing **![](https://img.shields.io/badge/-Enhancement-ff9800)**
-
-We’ve completely revamped the Knowledge Base module to help you manage and deliver content more efficiently. Now enabled by default for all newly created bots, this update brings powerful new capabilities to streamline setup, syncing, and ongoing content management—ensuring your AI agents stay accurate and context-aware.
-
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
-
-**What’s new**:
-
-* **Guided content onboarding**: Step-by-step onboarding for websites, document uploads, and third-party platforms.
-* **Automated content syncing**: Schedule regular content updates using the built-in scheduler—no backend configuration required.
-* **Smarter file management**: Organize your content with folders, subfolders, and perform bulk actions for quicker updates.
-* **Metadata management**: Tag and filter files to improve search accuracy and make content more discoverable for your AI agent.
-* **Independent publishing workflow**: Publish Knowledge Base updates without redeploying the entire bot.
-
-
-[**Read the full documentation →**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
 
 ---
 
@@ -293,7 +295,7 @@ We’ve introduced Message Redaction to help you safeguard sensitive customer da
 * **Visible across views**: Redacted messages appear masked in the Inbox, chat transcripts, and conversation exports.
 * **Complete audit trail**: Every redaction is logged with metadata including who redacted, when, and which message.
 
-[Read the doc](https://docs.yellow.ai/docs/updates/overview#redact-sensitive-messages-in-chats)
+[Check out doc](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#message-redaction-to-protect-sensitive-information-with-controlled-visibility)
 
 
 
