@@ -45,7 +45,7 @@ Before proceeding:
 ### 3. Update the Bot’s Timezone
 
 * Go to the **bot configuration** settings. Follow this guide to set or update the timezone:
-  [🔗 Modify Bot Configuration – Yellow.ai Docs](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration#addupdate-ai-agent-information)
+  [🔗 Modify Bot Configuration – Yellow.ai Docs](https://docs.yellow.ai/docs/platform_concepts/get_started/modify-bot-configuration#addupdate-ai-agent-information)
 * Make sure the timezone field is populated with a valid timezone (e.g., `Asia/Kolkata`, `America/New_York`).
 
 ### 4. Refresh and Revalidate

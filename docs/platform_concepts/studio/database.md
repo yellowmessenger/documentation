@@ -80,6 +80,31 @@ To create a database table, follow these steps:
 * You cannot delete a column once added.
 :::
 
+Following are the key points that you need to consider while creating custom database tables:
+
+1. Maximum of 10 Searchable Keys
+    * You can define up to 10 searchable keys per table.
+    * This is a system limitation in cloud bots and ensures effective filtering performance.
+    * Exceeding this limit will prevent the use of search filters.
+2. Searchable keys cannot be modified later
+    * Once a table is created, searchable keys are fixed and cannot be updated.
+    * You need to plan filtering in advance based on data access patterns.
+3. If changes are needed, you should:
+    * Export the data
+    * Drop the existing table
+    * Create a new table with updated searchable keys
+    * Re-import the data
+    * Reapply any filters manually  
+4. Search filters based on initial setup
+    * Filters can only be applied on keys marked as searchable during table creation.
+    * You cannot add or change filterable fields afterward.  
+5. Mask sensitive data 
+    * You can mask table data at any time after table creation.
+    * However, this flexibility does not apply to search filters, which are fixed at creation.  
+6. Plan ahead for long-term use
+    * Understand how data will be accessed, queried, and filtered.
+    * Choose searchable keys that align with these use cases to avoid rework.      
+
 ## Insert data into a database table
 
 When publishing the bot, only the database structure (table and column names) is automatically transferred to higher environments. 

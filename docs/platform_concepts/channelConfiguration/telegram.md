@@ -21,7 +21,7 @@ This channel enables the following key features:
 
 To set up Telegram bot, you need to perform the following:
 
-* [Create a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Create a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
 * [Setup a Telegram chatbot](#setup-telegram-chatbot)
 * [Connect Telegram channel to your bot](#connect-telegram-channel-to-your-bot)
 * [Test your Telegram chatbot](#test-telegram-chatbot)

@@ -11,7 +11,7 @@ Functionalities such as Design(for voice), Voice input node, etc. will not work 
 
 ## 1. Create a new voice agent 
 
-> If you are a new user, refer to [this](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup) article. 
+> If you are a new user, refer to [this](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup) article. 
 
 
 1. [Log in](https://cloud.yellow.ai) to your account and click **+Create new agent**.

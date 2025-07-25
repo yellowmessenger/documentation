@@ -18,7 +18,7 @@ To download reports for different time frames, you can use Insight's [Data explo
 
 ![](https://cdn.yellowmessenger.com/assets/yellow-docs/reportsmain.png)
   
-> You cannot use Data explorer with only Inbox admin or Inbox agent access. Contact your bot admin and request for the suitable [access](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#1-share-bot-access).
+> You cannot use Data explorer with only Inbox admin or Inbox agent access. Contact your bot admin and request for the suitable [access](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators#1-share-bot-access).
    
 
 There are 2 different types of reports, namely, **Chat reports** and **Email reports**.

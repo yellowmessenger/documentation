@@ -82,7 +82,7 @@ module.exports = {
     {
       type: "category",
       label: "Troubleshooting Guide",
-     // link: {type: 'doc', id: 'platform_concepts/Getting Started/marketplaceintro'},
+     // link: {type: 'doc', id: 'platform_concepts/get_started/marketplaceintro'},
       collapsed: true,
       items: [
         "cookbooks/platform_notload",
@@ -96,7 +96,7 @@ module.exports = {
     {
       type: "category",
       label: "Marketplace",
-      link: {type: 'doc', id: 'platform_concepts/Getting Started/marketplaceintro'},
+      link: {type: 'doc', id: 'platform_concepts/get_started/marketplaceintro'},
       collapsed: true,
       items: [
         "cookbooks/marketplace-templates/edtech-template",
@@ -272,11 +272,11 @@ module.exports = {
           label: "Signup & Onboarding",
           collapsed: true,
           items: [
-            "platform_concepts/Getting Started/account-setup",
-            "platform_concepts/Getting Started/login",
+            "platform_concepts/get_started/account-setup",
+            "platform_concepts/get_started/login",
            // "platform_concepts/Getting Started/yellowg",
-            "platform_concepts/Getting Started/platform-offerings",
-           // "platform_concepts/Getting Started/keyboard-shortcuts",
+            "platform_concepts/get_started/platform-offerings",
+           // "platform_concepts/get_started/keyboard-shortcuts",
 
           ],
         },
@@ -285,9 +285,9 @@ module.exports = {
           label: "Build your AI agent",
           collapsed: true,
           items: [
-            "platform_concepts/Getting Started/createfirstbot",
+            "platform_concepts/get_started/createfirstbot",
             //"platform_concepts/Getting Started/publish-env",
-            "platform_concepts/Getting Started/modify-bot-configuration",
+            "platform_concepts/get_started/modify-bot-configuration",
 
           ]
         },
@@ -295,12 +295,12 @@ module.exports = {
       {
         type: "category",
         label: "User & account management",
-        link: {type: 'doc', id: 'platform_concepts/Getting Started/add-bot-collaborators'},
+        link: {type: 'doc', id: 'platform_concepts/get_started/add-bot-collaborators'},
         collapsed: true,
         items: [
-          "platform_concepts/Getting Started/user-account-settings", 
-          "platform_concepts/Getting Started/upgrade",  
-          // "platform_concepts/Getting Started/acl",
+          "platform_concepts/get_started/user-account-settings", 
+          "platform_concepts/get_started/upgrade",  
+          // "platform_concepts/get_started/acl",
         ],
       },
 
@@ -310,9 +310,9 @@ module.exports = {
         label: "Authentication & security",
         collapsed: true,
         items: [
-          "platform_concepts/Getting Started/security-auth/oauth",
-          "platform_concepts/Getting Started/security-auth/ymauth",
-          "platform_concepts/Getting Started/security-auth/chattranscriptsecurity",
+          "platform_concepts/get_started/security-auth/oauth",
+          "platform_concepts/get_started/security-auth/ymauth",
+          "platform_concepts/get_started/security-auth/chattranscriptsecurity",
         ],
       }, 
 
@@ -348,7 +348,7 @@ module.exports = {
        {
         type: "category",
         label: "Create your AI agent",
-            link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/create-agent'},
+            link: {type: 'doc', id: 'platform_concepts/get_started/createfirstbot'},
         collapsed: true,
         items: [
              "platform_concepts/AIAgent/aiagent-architecture",
@@ -370,7 +370,7 @@ module.exports = {
               "platform_concepts/AIAgent/kb-agent-config",
         ],
       },
-        "platform_concepts/studio/build/create_chatbot",
+        // "platform_concepts/studio/build/create_chatbot",
         "platform_concepts/studio/build/orchestrator",
         "platform_concepts/studio/build/create_voice_bot",
         "platform_concepts/AIAgent/automated-agent-testing",
@@ -1105,7 +1105,7 @@ module.exports = {
             "platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen",
           /*  {
               type: "category",
-              label: "Getting Started",
+              label: "Get Started",
               collapsed: true,
               items: [
                 "platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign",

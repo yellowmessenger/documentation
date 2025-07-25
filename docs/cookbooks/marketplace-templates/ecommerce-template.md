@@ -16,7 +16,7 @@ Here is the high-level overview of the e-commerce template:
 <img src="https://i.imgur.com/2mgM0ax.png" width="80%"/>
 
 :::info
-For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/marketplaceintro). 
 :::
 
 

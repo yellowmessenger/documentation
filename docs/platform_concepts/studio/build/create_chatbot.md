@@ -29,6 +29,6 @@ To create a AI-agent, follow these steps:
 | Region | Choose the country to which your AI-agent belongs |
 | Add live char support to your bot | Enable this checkbox if you want to connect your users with a live agent for support. |
 
-* Once your AI-agent is created, you will be redirected to the Overview page. Here, you can [configure](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration) your newly created AI-agent according to your requirements
+* Once your AI-agent is created, you will be redirected to the Overview page. Here, you can [configure](https://docs.yellow.ai/docs/platform_concepts/get_started/modify-bot-configuration) your newly created AI-agent according to your requirements
 
     ![](https://imgur.com/CK1d1BU.png)

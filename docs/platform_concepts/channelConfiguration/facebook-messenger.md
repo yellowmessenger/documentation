@@ -37,7 +37,7 @@ Character limit for Text message | 2000
 To set up FBM bot, you need to perform the following:
 
 * [Connect Facebook page to Yellow.ai](#connect-your-facebook-page-to-yellowai)
-* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
 * [Test your FBM chatbot](#test-fbm-chatbot)
 
 ## Connect your Facebook page to Yellow.ai

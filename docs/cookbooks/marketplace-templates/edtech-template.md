@@ -16,7 +16,7 @@ You can completely customize the template according to your business requirement
 Explore **Edtech(education) template** [here](https://cloud.yellow.ai/marketplace?industries=Ed-tech). 
 
 :::info
-For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/marketplaceintro). 
 :::
 
 

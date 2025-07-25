@@ -40,7 +40,7 @@ There are two ways in which you can access Automation:
  
     ![](https://imgur.com/G2cqLk5.png)
 
-## Create your first AI-agent    
+<!-- ## Create your first AI-agent    
 
 Creating a high-performing AI agent involves configuring its personality, capabilities, and interaction channels—including voice. This guide gives you a one-glance understanding of the core setup areas needed to deliver seamless, intelligent user experiences across text and speech.
 
@@ -69,7 +69,7 @@ Here’s what you will find and can customize in every part of the AI agent setu
     
 ## Create your first AI-agent
 
-For a detailed guide on how to create your first AI-agent, refer to this [document](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot). You can also watch this video for a brief demonstration of creating a AI-agent using the yellow.ai cloud platform.
+For a detailed guide on how to create your first AI-agent, refer to this [document](https://docs.yellow.ai/docs/platform_concepts/get_started/createfirstbot). You can also watch this video for a brief demonstration of creating a AI-agent using the yellow.ai cloud platform. -->
 
 
 

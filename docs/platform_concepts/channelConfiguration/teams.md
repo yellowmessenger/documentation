@@ -16,7 +16,7 @@ This channel enables the following key features:
 
 To set up MS Teams
 
-* [Create a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Create a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
 * [Setup a MS Teams chatbot](#setup-telegram-chatbot)
 * [Connect MS Teams channel to your bot](#connect-telegram-channel-to-your-bot)
 * [Test your MS Teams chatbot](#test-telegram-chatbot)

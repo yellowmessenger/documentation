@@ -17,7 +17,7 @@ To set up email automation for your email ID, follow these steps:
 
 > Refer to [this guide](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound), to understand email channel configuration.
 
-2. [**Design your bot**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot): Customize flows, intents, entities, FAQs, and documents based on your use case to ensure the bot generates responses to customer queries received via email. 
+2. [**Design your bot**](https://docs.yellow.ai/docs/platform_concepts/get_started/createfirstbot): Customize flows, intents, entities, FAQs, and documents based on your use case to ensure the bot generates responses to customer queries received via email. 
 
 > While creating flows, note that only **Text** and **Action** nodes are supported. 
 

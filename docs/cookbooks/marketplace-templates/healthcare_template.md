@@ -10,7 +10,7 @@ The **Healthcare** template provides quick and convenient access to information 
 ![](https://i.imgur.com/REKc66X.png)
 
 :::info
-For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/marketplaceintro). 
 :::
 
 -------------------

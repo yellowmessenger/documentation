@@ -162,7 +162,7 @@ After connecting your bot to the Facebook workplace, you can test your bot.
      
 #### Prerequisites
 
-* Ensure that you have created the bot with intents and configured the flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot). 
+* Ensure that you have created the bot with intents and configured the flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/createfirstbot). 
 
 To test your bot on Facebook workplace, follow these steps:
 

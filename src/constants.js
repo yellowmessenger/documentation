@@ -1,7 +1,7 @@
 export const popularSearchItems = [
 
   { 
-    url: "/docs/platform_concepts/Getting%20Started/account-setup",
+    url: "/docs/platform_concepts/get_started/account-setup",
     title: "Signup & create first bot",
   },
   {
@@ -25,7 +25,7 @@ export const popularSearchItems = [
     title: "Flow campaigns",
   },
   { 
-    url: "/docs/platform_concepts/Getting%20Started/add-bot-collaborators",
+    url: "/docs/platform_concepts/get_started/add-bot-collaborators",
     title: "Bot access",
   },
   /*

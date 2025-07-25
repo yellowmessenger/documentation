@@ -67,7 +67,7 @@ To navigate to the Channels module, follow these steps:
 
 The following are the points that you need to consider while setting up a channel on the Yellow.ai platform:
 
-1. **Define bot purpose and scope**: Determine the bot's purpose and scope (use case) to create a flow that addresses the types of questions or requests the bot should handle based on your use case. For more detailed information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot).
+1. **Define bot purpose and scope**: Determine the bot's purpose and scope (use case) to create a flow that addresses the types of questions or requests the bot should handle based on your use case. For more detailed information, click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/createfirstbot).
 2. **Choose environment**: Select the appropriate environment for flow creation:
    * Two environments: Development and Live
    * Three environments: Sandbox, Staging, and Production

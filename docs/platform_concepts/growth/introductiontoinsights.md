@@ -33,7 +33,7 @@ Features within the Insights module can be accessed if a bot user has either of 
 
 ![](https://imgur.com/DyJzmIi.png)
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#1-share-bot-access) to learn how to provide **Insights analytics and Insights admins** permission to users in Yellow.ai. 
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators#1-share-bot-access) to learn how to provide **Insights analytics and Insights admins** permission to users in Yellow.ai. 
 
 
 1. **Insights (Admin)**: Insights (Admin) role provides access to all available data and analytics.

@@ -27,7 +27,7 @@ In this article, you will learn how to accept/add inbox roles.
 ![image](https://imgur.com/qdviCKa.png)
 
 
-> Supporting document to add/accept AI Agent access for different roles: [Access control](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
+> Supporting document to add/accept AI Agent access for different roles: [Access control](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators).
 
 
 
