@@ -347,21 +347,14 @@ module.exports = {
        // "platform_concepts/studio/overview",
        {
         type: "category",
-        label: "Create your AI agent",
-            link: {type: 'doc', id: 'platform_concepts/get_started/createfirstbot'},
+        label: "AI agent",
+            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
         collapsed: true,
         items: [
-             {
-              type: "category",
-              label: "AI agent",
-              link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
-              collapsed: true,
-              items: [
-                "platform_concepts/AIAgent/agent",
                 "platform_concepts/AIAgent/super-agent",
+                "platform_concepts/AIAgent/agent",
                 "platform_concepts/AIAgent/kb-agent-config",
-              ],
-            },
+                        
              "platform_concepts/AIAgent/agentpersona",
               {
                 type: "category",
