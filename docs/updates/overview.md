@@ -289,6 +289,10 @@ To ensure faster access to actionable insights and smoother navigation:
 
 We’ve introduced Message Redaction to help you safeguard sensitive customer data directly from the Inbox. Agents can now mark specific text messages as sensitive, ensuring private information is masked across chat views, transcripts, and logs — while remaining securely stored for audits and compliance.
 
+:::info
+* *Message Redaction is a gated feature.* To enable it for your account, please [contact Yellow.ai Support](mailto:support@yellow.ai).
+:::
+
 * **Redact individual text messages** with one click (attachments not supported).
 * **Admin-controlled permissions**: Only agents with redaction access can redact messages. Permissions can be managed in the Agent Settings page.
 * **Secure masking, not deletion**: Redacted content is hidden from all users but retained securely for audit purposes.

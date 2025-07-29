@@ -136,9 +136,11 @@ By using Message Redaction, your organization takes a proactive step toward data
 
 
 :::note
-Message redaction applies only to text messages and not for attachments.
-:::
 
+* *Message Redaction is a gated feature.* To enable it for your account, please [contact Yellow.ai Support](mailto:support@yellow.ai).
+
+* Message redaction applies only to text messages and not for attachments.
+:::
 
 
 

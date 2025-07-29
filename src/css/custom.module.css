@@ -2,7 +2,7 @@
  * custom.css
  *
  * This file contains all global styles for your Docusaurus portal.
- * This is the final, consolidated version with all features and fixes.
+ * It has been refactored for consistency, maintainability, and modern practices.
  */
 
 /* ==========================================================================
@@ -40,8 +40,6 @@
   --ifm-font-family-heading: 'Roboto', sans-serif;
   --ifm-font-family-monospace: 'Courier New', monospace;
   --ifm-code-font-size: 85%;
-  --ifm-h1-font-size: 2rem;
-  --ifm-h2-font-size: 1.625rem;
   --ifm-line-height-base: 1.7;
   --ifm-doc-sidebar-width: 280px;
 
@@ -99,11 +97,6 @@ body {
   color: var(--ifm-color-text-base);
 }
 
-p, li, table th, table td {
-    font-size: 16px;
-    line-height: var(--ifm-line-height-base);
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ifm-font-family-heading);
   font-style: normal;
@@ -116,17 +109,20 @@ h1 {
   font-size: 30px;
 }
 h2 { 
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  font-size: 24px;
+  font-weight: 550;
+  font-size: 22px;
 }
 h3 { 
-  font-weight: 600;
+  font-weight: 550;
   font-size: 20px;
 }
-h4, h5, h6 { 
-  font-weight: 600;
+h4 { 
+  font-weight: 550;
   font-size: 18px;
+}
+h5 { 
+  font-weight: 600;
+  font-size: 16px;
 }
 
 p, li, table th, table td {
@@ -154,7 +150,7 @@ code {
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 4px;
   padding: 0.1em 0.3em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 pre {
@@ -177,7 +173,7 @@ pre code {
 
 [class*="docItemCol_"] {
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 [class*="docItemContainer_"] {
@@ -198,7 +194,7 @@ pre code {
    5. NAVBAR
    ========================================================================== */
 
-.navbar__link--active::before {
+.navbar .navbar__link--active::before {
   content: "";
   width: 100%;
   height: 3px;
@@ -211,6 +207,10 @@ pre code {
 /* ==========================================================================
    6. SIDEBAR MENU & TABLE OF CONTENTS (REDESIGNED)
    ========================================================================== */
+
+.menu__list {
+  padding: 1rem;
+}
 
 .menu__list-item .menu__link {
   border-radius: 6px;
@@ -252,7 +252,7 @@ pre code {
 
 .admonition {
   border-radius: 8px;
-  border-left-width: 4px;
+  border: 1px solid;
   padding: 1rem 1.5rem;
 }
 
@@ -262,7 +262,7 @@ pre code {
 
 .admonition-tip {
   background: #F0FDF4;
-  border-color: var(--ifm-color-success);
+  border-color: #A7F3D0;
 }
 .admonition-tip .admonition-heading h5 {
   color: #15803D;
@@ -270,7 +270,7 @@ pre code {
 
 .admonition-info {
   background: #EFF6FF;
-  border-color: #60A5FA;
+  border-color: #BFDBFE;
 }
 .admonition-info .admonition-heading h5 {
   color: #1E40AF;
@@ -278,19 +278,36 @@ pre code {
 
 .admonition-note {
   background: #FFFBEB;
-  border-color: var(--ifm-color-warning);
+  border-color: #FDE68A;
 }
 .admonition-note .admonition-heading h5 {
   color: #B45309;
 }
 
+html[data-theme="dark"] .admonition-tip {
+  border-color: #15803D;
+}
+html[data-theme="dark"] .admonition-info {
+  border-color: #1E40AF;
+}
 html[data-theme="dark"] .admonition-note {
   background-color: rgba(247, 144, 9, 0.1);
   border-color: var(--ifm-color-warning);
 }
 
 html[data-theme="dark"] .admonition-note .admonition-heading h5 {
-    color: #FFD68A;
+    color: #FCD34D;
+}
+
+/* Style for links inside any admonition */
+[class*="admonitionContent"] a {
+  color: var(--ifm-link-color) !important;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+[class*="admonitionContent"] a:hover {
+  color: var(--ifm-link-hover-color) !important;
 }
 
 /* ==========================================================================
@@ -494,4 +511,87 @@ html[data-theme="dark"] .admonition-note .admonition-heading h5 {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
+}
+
+/* ==========================================================================
+   12. API REFERENCE PAGE STYLES (PROFESSIONAL REDESIGN)
+   ========================================================================== */
+
+.theme-api-markdown code {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--ifm-menu-color-background-active);
+  color: var(--ifm-color-primary-dark);
+  border-color: rgba(0, 82, 234, 0.2);
+  font-weight: 500;
+}
+
+html[data-theme="dark"] .theme-api-markdown code {
+  background-color: var(--ifm-menu-color-background-active);
+  color: var(--ifm-link-color);
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+.theme-api-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.925rem;
+}
+
+.theme-api-markdown th,
+.theme-api-markdown td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.theme-api-markdown th {
+  background-color: transparent;
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.theme-api-markdown td {
+  vertical-align: top;
+}
+
+.theme-api-markdown strong[style*="--openapi-required"] {
+  color: #b91c1c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid #fca5a5;
+  background-color: #fef2f2;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.theme-api-markdown span[style*="opacity:0.6"] {
+  color: #6b7280;
+}
+
+/* ==========================================================================
+   13. DARK MODE API STYLES
+   ========================================================================== */
+
+html[data-theme="dark"] .theme-api-markdown th {
+  color: #9ca3af;
+  border-bottom-color: #374151;
+}
+
+html[data-theme="dark"] .theme-api-markdown td {
+  border-top-color: #374151;
+}
+
+html[data-theme="dark"] .theme-api-markdown strong[style*="--openapi-required"] {
+  color: #fca5a5;
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+html[data-theme="dark"] .theme-api-markdown span[style*="opacity:0.6"] {
+  color: #9ca3af;
 }
