@@ -6,7 +6,7 @@ import ArticleCard from '@site/src/components/ArticleCard';
 import ArticleCardGrid from '@site/src/components/ArticleCardGrid';
 
 :::note
-[Upgrade](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#steps-to-upgrade-your-freemium-plan) your account to unlock all the features offered by Yellow.ai.
+[Upgrade](https://docs.yellow.ai/docs/platform_concepts/get_started/upgrade#steps-to-upgrade-your-freemium-plan) your account to unlock all the features offered by Yellow.ai.
 :::
 
 The first step in building your AI agent is configuring the Super Agent—the central intelligence layer that defines your agent’s personality, tone, and purpose. This foundational setup ensures every conversation reflects your brand voice and aligns with your business objectives.

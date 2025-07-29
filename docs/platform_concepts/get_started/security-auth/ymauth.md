@@ -69,7 +69,7 @@ Parameter | Datatype | Description
 --------- | -------- | -----------
 `{{ymAuthenticationToken}}` | String | This is the unique identifier (string value that changes for each user and each log-in) assigned to users for validation |
 | `x-api-key` | String | This is the access key. Generate a new API key with **Developer role**, follow [these steps](https://docs.yellow.ai/api#generate-api-keys) on your respective AI-agent |
-| `{{botId}}` | String | This is your bot ID. It can be obtained by logging into the Yellow platform and copying it from the bot URL. Refer to [this guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env#finding-your-bot-id) to know how |
+| `{{botId}}` | String | This is your bot ID. It can be obtained by logging into the Yellow platform and copying it from the bot URL. Refer to [this guide](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env#finding-your-bot-id) to know how |
 
 **Expected response**: 
 

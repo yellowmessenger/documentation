@@ -62,7 +62,9 @@ To create a form, follow these steps:
 
        ![](https://cdn.yellowmessenger.com/assets/yellow-docs/copyWAendURL.png) 
 
-    4. Enter the host name of the AI Agent (Example: cloud.yellow.ai) in {{host_name}} and generated key in  {{encrypted_key}}. You may encounter a version deprecation warning while running this script. You can ignore this warning message.
+    4. Go to [Facebook Business Manager](https://business.facebook.com/settings), paste the copied **Endpoint URL** in the **Set Endpoint URI** field and click Submit.
+
+       ![](https://cdn.yellowmessenger.com/assets/yellow-docs/setendpoint.png)
 
     5. After configuring the endpoint URL, contact the [platform support team](mailto:customersuccess@yellow.ai) to connect the Meta App. Provide the Flow ID, Bot ID, and the associated WhatsApp number. Note that once submitted, the Meta App cannot be changed.
 

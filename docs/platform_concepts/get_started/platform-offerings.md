@@ -147,7 +147,7 @@ Browse pre-built bot templates and industry-specific solutions. Use [Automation]
 
 ![Marketplace](https://imgur.com/hyaE929.png)
 
-**[Access the Marketplace guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro)**
+**[Access the Marketplace guide](https://docs.yellow.ai/docs/platform_concepts/get_started/marketplaceintro)**
 
 
 
@@ -167,7 +167,7 @@ Share AI agent with your team and assign roles and permissions. Only admins or s
 
    ![Access Control](https://imgur.com/fcJqwMN.png)
 
-**[Learn about access control and permissions](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators)**
+**[Learn about access control and permissions](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators)**
 
 
 <!--
@@ -178,7 +178,7 @@ You can modify your bot’s basic details at any time using the **Configure** op
 
 ![Modify Bot Configuration](https://i.imgur.com/QMg5bVq.png)
 
-**[Learn more about configuring your bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration)**
+**[Learn more about configuring your bot](https://docs.yellow.ai/docs/platform_concepts/get_started/modify-bot-configuration)**
 
 -->
 
@@ -190,7 +190,7 @@ Access your profile and account settings in the top-right corner.
 
 ![User Account](https://imgur.com/jWLqigs.png)
 
-**[Learn about profile settings](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings)**
+**[Learn about profile settings](https://docs.yellow.ai/docs/platform_concepts/get_started/user-account-settings)**
 
 :::note
 You cannot delete your account on your own using the cloud platform. To request account deletion, please contact our support team at **support@yellow.ai**.

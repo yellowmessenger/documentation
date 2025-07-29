@@ -6,7 +6,7 @@ sidebar_label : Sign in to your account
 To access the [Yellow.ai Cloud Platform](https://cloud.yellow.ai), sign in using the method you chose during account creation. We support multiple authentication methods, including Google SSO, custom OAuth providers, and Yellow.ai credentials.
 
 :::info
-* Do not have an account? [Sign up using this guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup) to create one.
+* Do not have an account? [Sign up using this guide](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup) to create one.
 * Unable to access your account? email to support@yellow.ai.
 :::
 
@@ -18,7 +18,7 @@ Open the [Yellow.ai Cloud Platform](https://cloud.yellow.ai) and login using you
   
   ![image](https://imgur.com/fHbiGIn.png)
 
-  Learn how to [configure Google SSO](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/security-auth/oauth).
+  Learn how to [configure Google SSO](https://docs.yellow.ai/docs/platform_concepts/get_started/security-auth/oauth).
 
 
 ## Method 2: Sign in with OAuth
@@ -26,7 +26,7 @@ Open the [Yellow.ai Cloud Platform](https://cloud.yellow.ai) and login using you
   
   ![image](https://imgur.com/k5Oj3bj.png)
 
-Refer to [OAuth setup instructions](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/security-auth/ymauth) to configure this method.
+Refer to [OAuth setup instructions](https://docs.yellow.ai/docs/platform_concepts/get_started/security-auth/ymauth) to configure this method.
 
 ## Method 3: Sign in with Yellow.ai credentials
 
@@ -34,7 +34,7 @@ Refer to [OAuth setup instructions](https://docs.yellow.ai/docs/platform_concept
   
    ![image](https://imgur.com/2JzJm9v.png)
 
-Learn how to [sign up to the yellow.ai account](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup)
+Learn how to [sign up to the yellow.ai account](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup)
 
 :::note
 * If you enter incorrect credentials three times in a row, your account will be temporarily locked for security reasons.

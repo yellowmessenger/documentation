@@ -202,7 +202,7 @@ After verifying your details, SSO will be enabled for your domain by the Yellow.
 
 ### Step 4: Create Your Bot
 
-Once OAuth is enabled, [create a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot). In the URL, locate and copy the `botId` (separate for live/production). This `botId` is required for providing access and assigning roles.
+Once OAuth is enabled, [create a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/createfirstbot). In the URL, locate and copy the `botId` (separate for live/production). This `botId` is required for providing access and assigning roles.
 
 ![image](https://imgur.com/TDLTqpA.png)
 
@@ -233,7 +233,7 @@ Add roles in your respective identity provider app. The following are the **supp
 
 :::note
 The **Super admin** role is automatically created and assigned to the primary email address of the bot when the bot is created. It cannot be assigned through role mapping or the Yellow.ai UI.
-Learn more about other user roles [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#user-roles-and-access).
+Learn more about other user roles [here](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators#user-roles-and-access).
 :::
 
 **Syntax to add user roles in the identity provider app**: `botId.{role}`
