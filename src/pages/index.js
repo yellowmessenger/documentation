@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 
+
 // --- SVG Icons for Feature Cards (from lucide.dev) ---
 const RocketIcon = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -62,7 +63,7 @@ const topics = [
     Icon: BrainCircuitIcon,
     title: 'Build AI Agents',
     description: 'Effortlessly create powerful AI agents that think, decide, and act.',
-    url: '/docs/platform_concepts/Getting%20Started/createfirstbot'
+    url: '/docs/platform_concepts/get_started/createfirstbot'
   },
    {
     Icon: LibraryIcon,
@@ -107,7 +108,8 @@ export default function Home() {
       <main className={styles.homeWrapper}>
         <header className={styles.homeHero}>
           <div className={styles.homeHeroInner}>
-            <h1 className={styles.homeHeroTitle}>Create Smarter Customer Conversations</h1>
+            <h1 className={styles.homeHeroTitle}>Agentic AI for Autonomous, Human-Like Conversations
+</h1>
             <p className={styles.homeHeroSubtitle}>
               Explore comprehensive guides, API references, and step-by-step tutorials to unlock the full potential of the Yellow.ai Agentic Platform.
             </p>

@@ -282,7 +282,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Build your AI agent",
+          label: "Create your AI agent",
           collapsed: true,
           items: [
             "platform_concepts/get_started/createfirstbot",

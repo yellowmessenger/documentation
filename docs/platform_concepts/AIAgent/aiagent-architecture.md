@@ -1,5 +1,5 @@
 ---
-title: Understand AI agent architecture
+title: AI agent overview
 sidebar_label: AI agent
 ---
 
