@@ -78,20 +78,14 @@ After setting up the Super Agent, you can configure the Agent with the exact use
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations"
     icon="wrench"
-    title="Configure Agent Flows"
-    description="Build and configure specific conversational flows to handle distinct use cases and user intents."
+    title="Configure Agent"
+    description="Build and configure specific conversation to handle distinct use cases and user intents."
   />
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#add-actions-to-your-ai-agent-prompts"
     icon="book"
-    title="Design Dynamic Conversations"
-    description="Shape engaging user interactions by combining prompts, actions, and conditional logic within your flows."
-  />
-  <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/aigent-variables"
-    icon="package"
-    title="Manage Context with Variables"
-    description="Store and retrieve user details and conversation context using reusable variables."
+    title="Add Actions to your AI agent prompts"
+    description="Add Actions to your AI agent prompts to perform tasks like collecting inputs, calling APIs, or triggering workflows."
   />
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation"
@@ -101,7 +95,7 @@ After setting up the Super Agent, you can configure the Agent with the exact use
   />
 </ArticleCardGrid>
 
-Here’s what you will find and can customize in every part of the AI agent setup.
+<!-- Here’s what you will find and can customize in every part of the AI agent setup.
 
 
 | Configuration Area       | Purpose                                                 | What You Define                                                                   |
@@ -111,22 +105,22 @@ Here’s what you will find and can customize in every part of the AI agent setu
 | **Conversations**        | Defines what the agent can do and how it responds.      | Prompt-based logic, input collection, workflows, fallback flows.                  |
 | **Voice AI Settings**    | Enables and tunes voice-based interactions.             | Voice model, speech-to-text accuracy, and conversation pacing.                    |
 | **Global Components**    | Centralized control of variables and data context.      | System, session, user 360, and output variables.                                  |
-| **Testing & Publishing** | Ensures quality before going live.                      | Preview conversations, validate logic, and publish to lower or live environments. |
+| **Testing & Publishing** | Ensures quality before going live.                      | Preview conversations, validate logic, and publish to lower or live environments. | -->
 
 ---
 
-## For non-super admins - Get Access to existing agents
-   
-### Request access to your Org’s AI agent 
+## Access existing agents (For non-super admins)
 
-If you’re not a super admin, you’ll see a list of AI agents that have already been created when you log in. 
+### Request access to AI agent(s) created in your Org 
+
+If you are not a super admin, you’ll see a list of AI agents that have already been created when you log in. 
   - Request access to a AI agent, [OR] Navigate to **Profile settings > My Invites** page and click on the respective **Request access** button.
  ![image](https://imgur.com/8BueeA5.png)
 
 
 ### Accept AI agent access request
 
-You can accept the invite using either of the following two methods:
+If someone has already provided you with the access to AI agent, you can accept the invite as follows:
 
 1. **Email invitation**: If an AI Agent Admin has already provided access, you can accept the invitation received via email.
 

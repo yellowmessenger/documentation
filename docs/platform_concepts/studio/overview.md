@@ -95,7 +95,7 @@ The Automation module offers everything you need to build, integrate, and test y
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/studio/database"
     icon="Database"
-    title="Database"
+    title="Store and fetch data using Database"
     description="Create and manage structured tables to store or retrieve user data as part of the conversation."
   />
   <ArticleCard
