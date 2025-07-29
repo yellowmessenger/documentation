@@ -88,7 +88,8 @@ module.exports = {
         "cookbooks/platform_notload",
         "cookbooks/studio/error_page",
         "cookbooks/email_issue",
-        "platform_concepts/studio/build/unknown_error",
+        "cookbooks/studio/whatsapp-issues",
+
       ],
     }, 
 
@@ -351,7 +352,6 @@ module.exports = {
             link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
         collapsed: true,
         items: [
-                "platform_concepts/AIAgent/super-agent",
                 "platform_concepts/AIAgent/agent",
                 "platform_concepts/AIAgent/kb-agent-config",
                         

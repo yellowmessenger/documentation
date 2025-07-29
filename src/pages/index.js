@@ -62,7 +62,7 @@ const topics = [
     Icon: BrainCircuitIcon,
     title: 'Build AI Agents',
     description: 'Effortlessly create powerful AI agents that think, decide, and act.',
-    url: '/docs/platform_concepts/Getting%20Started/createfirstbot'
+    url: '/docs/platform_concepts/get_started/createfirstbot'
   },
    {
     Icon: LibraryIcon,

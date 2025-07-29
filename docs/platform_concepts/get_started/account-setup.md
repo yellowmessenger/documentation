@@ -45,11 +45,11 @@ To access specific bots within your organization, click Request Access.
 
    <img src="https://imgur.com/qSK3txm.png" alt="drawing" width="50%"/>
    
-Upon clicking **Create project**, your [Freemium](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade) plan account is automatically activated and a default AI-agent is created. 
+Upon clicking **Create project**, your [Freemium](https://docs.yellow.ai/docs/platform_concepts/get_started/upgrade) plan account is automatically activated and a default AI-agent is created. 
 
-- You will be directed to the [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) module ([development environment](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env)) where you can start building the bots.
-- You can go to [Overview > Configure](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration#personalise-your-bot-information) and reconfigure your bot details. 
-- You can [upgrade your account](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#steps-to-upgrade-your-freemium-plan) to access all the functionalities of a tier 3 bot. 
+- You will be directed to the [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) module ([development environment](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env)) where you can start building the bots.
+- You can go to [Overview > Configure](https://docs.yellow.ai/docs/platform_concepts/get_started/modify-bot-configuration#personalise-your-bot-information) and reconfigure your bot details. 
+- You can [upgrade your account](https://docs.yellow.ai/docs/platform_concepts/get_started/upgrade#steps-to-upgrade-your-freemium-plan) to access all the functionalities of a tier 3 bot. 
 
 
 ![image](https://imgur.com/mFMWAi4.png)

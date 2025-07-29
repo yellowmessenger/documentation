@@ -36,7 +36,7 @@ The Freemium plan enables you to test and experience the platform’s automation
 
 
 :::note
-When you [sign up](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup), your account will be automatically enrolled in the Freemium plan.
+When you [sign up](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup), your account will be automatically enrolled in the Freemium plan.
 :::
 
 ### Limitations of Freemium plan

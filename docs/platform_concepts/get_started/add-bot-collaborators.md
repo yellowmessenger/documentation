@@ -15,7 +15,7 @@ The following table outlines various roles along with the associated access priv
 
 | Role | Description | Modify access | 
 |------ | --------- | --------- |
-| Super Admin | The **Super Admin** is the user who creates the bot and holds the highest level of access. To create a bot and become a Super Admin, you must have an active **[subscription](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#docusaurus_skipToContent_fallback)**. <br/> -For **enterprise customers** or users from **sales channels**, the bot and subscription are set up in the backend. <br/> -For **self-serve users**, the subscription is automatically created during sign-up.     |<ol><li> Can provide *Approver* and other accesses to others.  </li><li>  Can provide Approver access to an user without providing Developer access. </li><li> [Mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict other users from viewing specific information such as PII.  </li><li>  Can delete accesses given to other users. </li></ol> | 
+| Super Admin | The **Super Admin** is the user who creates the bot and holds the highest level of access. To create a bot and become a Super Admin, you must have an active **[subscription](https://docs.yellow.ai/docs/platform_concepts/get_started/upgrade#docusaurus_skipToContent_fallback)**. <br/> -For **enterprise customers** or users from **sales channels**, the bot and subscription are set up in the backend. <br/> -For **self-serve users**, the subscription is automatically created during sign-up.     |<ol><li> Can provide *Approver* and other accesses to others.  </li><li>  Can provide Approver access to an user without providing Developer access. </li><li> [Mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict other users from viewing specific information such as PII.  </li><li>  Can delete accesses given to other users. </li></ol> | 
 |Admin | This user has access to all modules and their components.| <ol><li> Can add/delete **Approver + Developer** and other roles. </li><li>  Cannot add Approver role when the Developer access is not provided. </li><li>  Cannot delete Approver role when Developer role exists.  </li></ol> | 
 |Developer | This user has complete access to bot components but cannot edit bot configurations or invite other users to use the bot.| Developer access must be provided to add Approver. | 
 |Database Viewer |  This user is limited to editing and viewing tables and their data in selected databases.|
@@ -78,7 +78,7 @@ To share bot access with other users, follow these steps:
 
 Tier 1 (T1) and Tier 2 (T2) bots operate in dual environments, including Staging and Production or Development and Live. The access control for these environments is unified, meaning that access to Staging/Development bots will mirror the access control settings of the Live/Production bots for a given user.
 
-Roles for adding collaborators to your bot remain consistent across all tiers. You can refer to [this link](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#user-roles-and-access) for information on available roles. However, the process of roles assigned differs for T1 and T2 bots, and this document outlines those distinctions.
+Roles for adding collaborators to your bot remain consistent across all tiers. You can refer to [this link](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators#user-roles-and-access) for information on available roles. However, the process of roles assigned differs for T1 and T2 bots, and this document outlines those distinctions.
 
 **Collaborator(Role Access) management for T1 and T2 bots**
 
@@ -224,5 +224,5 @@ With **Super Admin/Admin** privileges, you can monitor user interactions with yo
 4. The **User Requests** tab displays details pertaining to users who have formally requested access to the bot.
 
 
-> You can also find this information in the [Bot invites](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#view-bot-invites) section for your convenience.
+> You can also find this information in the [Bot invites](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators#view-bot-invites) section for your convenience.
 
