@@ -4,8 +4,10 @@ sidebar_label: Overview
 id: overview
 tags: [create your first bot]
 ---
+import ArticleCard from '@site/src/components/ArticleCard';
+import ArticleCardGrid from '@site/src/components/ArticleCardGrid';
 
-Automation is an AI-agent building platform that allows you to easily build and customize AI-agent conversations without requiring coding expertise. It provides all the necessary tools to create and test conversational AI-agents.
+<!-- Automation is an AI-agent building platform that allows you to easily build and customize AI-agent conversations without requiring coding expertise. It provides all the necessary tools to create and test conversational AI-agents. -->
 
 
 <!-- #### Key features of Automation:
@@ -22,11 +24,35 @@ Automation is an AI-agent building platform that allows you to easily build and 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yy3tmsFvw64?si=730T0hAHEPL9RC-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center> -->
 
-**Watch the introductory video on Automation:**
+<!-- **Watch the introductory video on Automation:**
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bn8TuQgTmIA?si=a7oZMdnmaAh6xgOL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>></center>
-   
+    -->
+
+
+Automation is an AI-agent building platform that enables you to easily build, customize, test, and manage agents. It offers a set of tools to create intelligent and personalized conversational experiences, including agent creation, workflow automation, API and database integration, and testing through Copilot and test suites.
+
+With Automation, you can perform backend processes, build dynamic workflows, and manage your AI agent within a single interface. From building agent conversations to handling data and running tests, configuring integrations to managing data and running test cases, everything can be done in one unified platform.
+
+You can use the Automation module when You want to:
+
+* Build AI agents that automate user conversations and tasks.
+* Design workflows, connect backend systems via APIs, or store and retrieve data using a built-in database.
+* Test and validate the agent's behavior and performance before going live, using Copilot sessions or by running test suites.
+
+**Key benefits of Automation module:**
+
+* **End-to-end Agent creation**: Design AI agents from scratch using prompts, actions, and workflows, all within a unified platform.
+* **Use componnets across agents**: Use workflows, APIs, and database configurations as modular building blocks that can be reused across multiple AI agents.
+* **Built-in testing framework**: Use Copilot sessions and Test Suites to simulate conversations, validate logic, and evaluate agent performance before going live.
+* **Backend automation**: Automate internal operations with a visual workflow builder, API connectors, and database integrations.
+* **Seamless Integration**: Easily connect AI agents to third-party systems using APIs, databases, and event-based triggers for real-time automation.
+
+
+**Watch the introductory video on Automation:**
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Bn8TuQgTmIA?si=a7oZMdnmaAh6xgOL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>    
 
 ### Access Automation
 
@@ -40,6 +66,59 @@ There are two ways in which you can access Automation:
  
     ![](https://imgur.com/G2cqLk5.png)
 
+### Components of the Automation module
+
+The Automation module offers everything you need to build, integrate, and test your AI agent. By following this sequence **agent setup** > **backend logic** > **integrations** > **data handling** > **automation testing**, you ensure your AI agent is not just functional, but also smart, connected, and reliable.
+
+
+ Here is a components you will use during the AI agent creation process:
+
+<ArticleCardGrid>
+  <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent-architecture"
+    icon="robot"
+    title="Start with AI Agent setup"
+    description="Design your conversation by creating Agents, Super Agents, or Knowledge Base Agents, and setting up triggers, prompts, and actions to guide user interactions."
+  />
+   <ArticleCard
+    href="ttps://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow"
+    icon="workflow"
+    title="Build backend logic using Workflow builder"
+    description="Use this visual, no-code tool to create business logic flows and connect them to your agent's conversation"
+  />
+  <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/studio/api/send-receive-apiresponses"
+    icon="APIs"
+    title="Integrate external systems using APIs"
+    description="Enable your agent to connect with other platforms by setting up external APIs. These APIs can be called from within workflows to allow your agent to perform tasks such as fetching order status or weather updates"
+  />
+  <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/studio/database"
+    icon="Database"
+    title="Database"
+    description="Create and manage structured tables to store or retrieve user data as part of the conversation."
+  />
+  <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub"
+    icon="Events"
+    title="Use Events to trigger background actions"
+    description="Define and manage events to initiate background tasks, connecting with external systems, or sending automated notifications based on specific conditions."
+  />
+  <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot"
+    icon="Test Copilot"
+    title="Test your AI Agent using Copilot"
+    description="Copilot is a conversational testing simulator that allows you test your AI agent's responses in real time. You can create Saved sessions to perform regression testing."
+  />
+   <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/automated-agent-testing"
+    icon="Test suites"
+    title="Run end-to-end checks with Test suites"
+    description="Test your agent before going live using built-in tools. Use Knowledge Base tests to check responses to FAQs, replay saved Copilot sessions, or run scenario tests to simulate full conversations and flows."
+  />
+</ArticleCardGrid> 
+
+ 
 <!-- ## Create your first AI-agent    
 
 Creating a high-performing AI agent involves configuring its personality, capabilities, and interaction channels—including voice. This guide gives you a one-glance understanding of the core setup areas needed to deliver seamless, intelligent user experiences across text and speech.

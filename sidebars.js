@@ -351,7 +351,17 @@ module.exports = {
             link: {type: 'doc', id: 'platform_concepts/get_started/createfirstbot'},
         collapsed: true,
         items: [
-             "platform_concepts/AIAgent/aiagent-architecture",
+             {
+              type: "category",
+              label: "AI agent",
+              link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
+              collapsed: true,
+              items: [
+                "platform_concepts/AIAgent/agent",
+                "platform_concepts/AIAgent/super-agent",
+                "platform_concepts/AIAgent/kb-agent-config",
+              ],
+            },
              "platform_concepts/AIAgent/agentpersona",
               {
                 type: "category",
@@ -367,7 +377,6 @@ module.exports = {
                 ],
               },
               "platform_concepts/AIAgent/manage-conversation",
-              "platform_concepts/AIAgent/kb-agent-config",
         ],
       },
         // "platform_concepts/studio/build/create_chatbot",

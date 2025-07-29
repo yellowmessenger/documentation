@@ -19,11 +19,11 @@ rules to follow throughout conversations.
 
 ## Configure AI agent persona 
 
-* To configure AI agent persona, go to **Automation** > **Agents** > **Super agent**. Here you can update:
+* To configure AI agent persona, go to **Automation** > **AI agent lab** > **Agents**. Here you can update:
    * [Profile settings](#profile-settings) 
    * [Query handling behavior](#how-ai-agent-handles-queries) 
 
-   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/superagent.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agentlab.png)
 
 
 ### Update profile settings
