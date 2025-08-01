@@ -336,54 +336,16 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/studio/overview'},
       collapsed: true,
       items: [
-       // "platform_concepts/studio/overview",
-       {
-        type: "category",
-        label: "AI agent",
-            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
-        collapsed: true,
-        items: [
-                "platform_concepts/AIAgent/agent",
-                "platform_concepts/AIAgent/kb-agent-config",
-                        
-             "platform_concepts/AIAgent/agentpersona",
-              {
-                type: "category",
-                label: "Configure AI agent conversations",
-                link: {type: 'doc', id: 'platform_concepts/AIAgent/conversations'},
-                collapsed: true,
-                items: [
-                  "platform_concepts/AIAgent/get-input",
-                  "platform_concepts/AIAgent/call-workflow",
-                  "platform_concepts/AIAgent/call-fallback",
-                  "platform_concepts/AIAgent/aigent-variables",
+          "platform_concepts/AIAgent/agentpersona",
+          "platform_concepts/AIAgent/agent",
+          "platform_concepts/AIAgent/kb-agent-config",
+          "platform_concepts/AIAgent/automated-agent-testing",
+          "platform_concepts/studio/test-and-publish-bot/modes",
 
-                ],
-              },
-              "platform_concepts/AIAgent/manage-conversation",
-              "platform_concepts/get_started/modify-bot-configuration",
 
-        ],
-      },
-        // "platform_concepts/studio/build/create_chatbot",
-        "platform_concepts/studio/build/orchestrator",
-        "platform_concepts/studio/build/create_voice_bot",
-        "platform_concepts/AIAgent/automated-agent-testing",
-      
-     {
-        type: "category",
-        label: "AI Copilot",
-        link: {type: 'doc', id: 'platform_concepts/AICopilot/copilot'},
-        items: [ 
-            "platform_concepts/AICopilot/ai-copilot-debugger",
-        ],
-        },  
-            
-            
-                       
-            {
+           {
               type: "category",
-              label: "AI agent building tools",
+              label: "Chatbot & Workflow automation (Non-AI)",
               collapsed: true,
               items: [
                 {
@@ -401,7 +363,51 @@ module.exports = {
 
               ],
             },
+  
+
+       // "platform_concepts/studio/overview",
+       {
+        type: "category",
+        label: "AI agent",
+            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
+        collapsed: true,
+        items: [
+                        
+              {
+                type: "category",
+                label: "Configure AI agent conversations",
+                link: {type: 'doc', id: 'platform_concepts/AIAgent/conversations'},
+                collapsed: true,
+                items: [
+                  "platform_concepts/AIAgent/get-input",
+                  "platform_concepts/AIAgent/call-workflow",
+                  "platform_concepts/AIAgent/call-fallback",
+                  "platform_concepts/AIAgent/aigent-variables",
+
+                ],
+              },
+              "platform_concepts/AIAgent/manage-conversation",
+              "platform_concepts/get_started/modify-bot-configuration",
+
+
+        ],
+      },
+        // "platform_concepts/studio/build/create_chatbot",
+        "platform_concepts/studio/build/orchestrator",
+        "platform_concepts/studio/build/create_voice_bot",
+      
+     {
+        type: "category",
+        label: "AI Copilot",
+        link: {type: 'doc', id: 'platform_concepts/AICopilot/copilot'},
+        items: [ 
+            "platform_concepts/AICopilot/ai-copilot-debugger",
+        ],
+        },  
             
+            
+                       
+           
           // Agent AI 
 
             "platform_concepts/studio/build/workflows",
@@ -563,7 +569,6 @@ module.exports = {
                "platform_concepts/studio/test-and-publish-bot/bot-logs",  
                 "platform_concepts/studio/test-and-publish-bot/debug-flow",
                 "cookbooks/studio/regressiontest",
-                "platform_concepts/studio/test-and-publish-bot/modes",
               
               ],
             },

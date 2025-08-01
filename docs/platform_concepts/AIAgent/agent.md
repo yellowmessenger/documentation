@@ -1,6 +1,6 @@
 ---
-title: Agent   
-sidebar_label: Agent  
+title: Add use cases to your AI agent    
+sidebar_label: Add use cases to AI agent  
 ---
 
 An Agent is a task-specific unit within the AI agent system, responsible for handling a defined use case such as booking a flight, tracking an order, or processing a return.
