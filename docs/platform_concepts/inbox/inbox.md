@@ -85,7 +85,7 @@ Manage your notification preferences from the [notification settings page](https
 
 ## <a name="i5"></a> Orchestrator bot feature in Inbox
 
-Use the [Orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/build/orchestrator) feature to unify multiple AI agents under one Inbox:
+Use the [Orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/build/create_chatbot#create-orchestrator-bot) feature to unify multiple AI agents under one Inbox:
 
 - Create a **parent AI agents** and connect **child AI agents** from the same subscription.  
 - Enable **"Unify inbox to all child bots"** to centralize all support tickets into the parent AI agent's Inbox.  
