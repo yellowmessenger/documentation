@@ -179,6 +179,31 @@ As part of our ongoing commitment to security and compliance, Yellow.ai now supp
 ## **Insights**
 
 
+### WhatsApp Consumption Report Aligned with New Pricing (Effective July 1, 2025)
+
+We’ve updated your WhatsApp consumption report to  ensure your reporting remains accurate and consistent with Meta’s new pricing model, effective **July 1, 2025**.
+
+#### What’s changed
+
+* **Per-message billing**: Charges are now calculated **per message** instead of per conversation.
+* **Free utility messages**: Utility template messages sent within an **open customer service window** are now free.
+* **Improved reporting**: New fields provide more clarity on **billable vs free messages**.
+
+### Reporting changes for better alignment with Meta:
+
+* **New message categories**: "User Initiated" and "Business Initiated" have been replaced with **"Paid" and "Free"**, consistent with Meta’s dashboard.
+* **Raw data table updates**:
+
+  * Added: `message_type` (e.g., Utility, Marketing)
+  * Added: `message_category` (Paid or Free)
+* **Deprecated**: “Referral Initiated” will no longer appear in reports.
+
+
+📚 [Learn more about the new pricing on Meta’s official page](https://developers.facebook.com/docs/whatsapp/pricing/updates-to-pricing)
+📩 Questions? Reach out to your Account Manager or contact us at **[support@yellow.ai](mailto:support@yellow.ai)**
+
+
+
 ### Access Control–Based Filters for Monitor and Reporting  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 We’re making monitoring and reporting more secure and relevant by applying **access control–based filters**. Supervisors will now see only data related to their assigned teams across both the **Monitor** and **Analytics** sections.
