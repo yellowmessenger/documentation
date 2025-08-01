@@ -226,3 +226,40 @@ With **Super Admin/Admin** privileges, you can monitor user interactions with yo
 
 > You can also find this information in the [Bot invites](https://docs.yellow.ai/docs/platform_concepts/get_started/add-bot-collaborators#view-bot-invites) section for your convenience.
 
+## Access existing agents (For non-super admins)
+
+### Request access to AI agent(s) created in your Org 
+
+If you are not a super admin, you’ll see a list of AI agents that have already been created when you log in. 
+  - Request access to a AI agent, [OR] Navigate to **Profile settings > My Invites** page and click on the respective **Request access** button.
+ ![image](https://imgur.com/8BueeA5.png)
+
+
+### Accept AI agent access request
+
+If someone has already provided you with the access to AI agent, you can accept the invite as follows:
+
+1. **Email invitation**: If an AI Agent Admin has already provided access, you can accept the invitation received via email.
+
+
+   <img src="https://imgur.com/DgNaTrv.png" alt="drawing" width="80%"/>
+
+2. **Platform Notification**: You can also accept the invite through the notification available on the platform’s **Notifications** page.
+
+   ![image](https://imgur.com/g3kXoAa.png)
+
+---
+
+## Access AI agent
+
+If you are a **Contributor** or a user with access rights (but not the original creator), the way you access and interact with AI agents is slightly different:
+
+1. Navigate to **Profile settings > My Invites**. Instead of creating a new AI agent, you will see a list of AI agents that your admin/team has already created.
+
+2. Click on the respective **Request Access** button to request access to the AI agent.
+
+   ![image](https://imgur.com/HtDLuBS.png)
+
+:::note
+Only **Super Admin** can create a new AI agent. Other users can request access to a AI agent and may have Admin roles, but they do not have the privilege to create a AI agent.
+:::

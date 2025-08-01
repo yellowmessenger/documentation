@@ -336,16 +336,49 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/studio/overview'},
       collapsed: true,
       items: [
-          "platform_concepts/AIAgent/agentpersona",
-          "platform_concepts/AIAgent/agent",
-          "platform_concepts/AIAgent/kb-agent-config",
-          "platform_concepts/AIAgent/automated-agent-testing",
-          "platform_concepts/studio/test-and-publish-bot/modes",
-
-
+        {
+          type: "category",
+          label: "AI agent",
+              link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
+          collapsed: true,
+          items: [
+            "platform_concepts/AIAgent/agentpersona",
+            "platform_concepts/AIAgent/agent",
+            "platform_concepts/AIAgent/kb-agent-config",
+                          
+                {
+                  type: "category",
+                  label: "Configure AI agent conversations",
+                  link: {type: 'doc', id: 'platform_concepts/AIAgent/conversations'},
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/AIAgent/get-input",
+                    "platform_concepts/AIAgent/call-workflow",
+                    "platform_concepts/AIAgent/call-fallback",
+                    "platform_concepts/AIAgent/aigent-variables",
+  
+                  ],
+                },
+                "platform_concepts/get_started/modify-bot-configuration",
+                "platform_concepts/AIAgent/manage-conversation",
+                "platform_concepts/AIAgent/automated-agent-testing",
+                {
+                  type: "category",
+                  label: "AI Copilot",
+                  link: {type: 'doc', id: 'platform_concepts/AICopilot/copilot'},
+                  items: [ 
+                      "platform_concepts/AICopilot/ai-copilot-debugger",
+                  ],
+                  }, 
+                "platform_concepts/studio/test-and-publish-bot/modes",
+                
+  
+          ],
+        },
            {
               type: "category",
               label: "Chatbot & Workflow automation (Non-AI)",
+              link: {type: 'doc', id: 'platform_concepts/studio/build/create_chatbot'},
               collapsed: true,
               items: [
                 {
@@ -365,45 +398,37 @@ module.exports = {
             },
   
 
-       // "platform_concepts/studio/overview",
-       {
-        type: "category",
-        label: "AI agent",
-            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
-        collapsed: true,
-        items: [
+      //  // "platform_concepts/studio/overview",
+      //  {
+      //   type: "category",
+      //   label: "AI agent",
+      //       link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
+      //   collapsed: true,
+      //   items: [
                         
-              {
-                type: "category",
-                label: "Configure AI agent conversations",
-                link: {type: 'doc', id: 'platform_concepts/AIAgent/conversations'},
-                collapsed: true,
-                items: [
-                  "platform_concepts/AIAgent/get-input",
-                  "platform_concepts/AIAgent/call-workflow",
-                  "platform_concepts/AIAgent/call-fallback",
-                  "platform_concepts/AIAgent/aigent-variables",
+      //         {
+      //           type: "category",
+      //           label: "Configure AI agent conversations",
+      //           link: {type: 'doc', id: 'platform_concepts/AIAgent/conversations'},
+      //           collapsed: true,
+      //           items: [
+      //             "platform_concepts/AIAgent/get-input",
+      //             "platform_concepts/AIAgent/call-workflow",
+      //             "platform_concepts/AIAgent/call-fallback",
+      //             "platform_concepts/AIAgent/aigent-variables",
 
-                ],
-              },
-              "platform_concepts/AIAgent/manage-conversation",
-              "platform_concepts/get_started/modify-bot-configuration",
+      //           ],
+      //         },
+      //         "platform_concepts/AIAgent/manage-conversation",
+      //         "platform_concepts/get_started/modify-bot-configuration",
 
 
-        ],
-      },
-        // "platform_concepts/studio/build/create_chatbot",
-        "platform_concepts/studio/build/orchestrator",
-        "platform_concepts/studio/build/create_voice_bot",
+      //   ],
+      // },
       
-     {
-        type: "category",
-        label: "AI Copilot",
-        link: {type: 'doc', id: 'platform_concepts/AICopilot/copilot'},
-        items: [ 
-            "platform_concepts/AICopilot/ai-copilot-debugger",
-        ],
-        },  
+    
+      
+   
             
             
                        
