@@ -422,7 +422,7 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
    | Email | String | Email address of the end user. This is a mandatory field | test@gmail.com |
    | Query | String | The subject/topic/reason why the ticket was created | I have a concern regarding my flight ticket |
    | Priority | String | The priority of the ticket | MEDIUM |
-   | Genesys Cloud Live Agent Custom Fields | String | Choose the variable where custom fields are stored. | -
+   | Genesys Cloud Live Agent Custom Fields | String | Choose the variable where custom fields are stored. To include first name, last name, and nickname as custom fields,use the following params| ``` { "genesysCloudUserFirstName": "Jim", "genesysCloudUserLastName": "James", "genesysCloudUserNickname": "Jam"}```
    | Advanced options | - | Enable this option to access advanced settings for the Genesis Live Chat integration with Bot. | -
    | Send chat transcript |  - | Enable this option to automatically send the conversation history between the end user and the bot as the initial message to the agent. If you don’t want to send the chat transcript to the agent, pass the value False. <br/> **Note**: In cases where the entire transcript exceeds the character limit of a single message packet in Salesforce, the content will be divided and sent as multiple message packets. For example, if the chat transcript contains 8000 characters and the message packet limit is 4000 characters, the transcript will be divided into two packets of 4000 characters each and sent as separate messages to the agent. | 
    | Custom chat transcript | String |  Select your preferred variable to send chat transcripts in the format of your choice. Please indicate your preferred format in the variable. |

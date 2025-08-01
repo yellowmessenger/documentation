@@ -1,6 +1,6 @@
 ---
-title: Manage your account
-sidebar_label: Manage your account
+title: Manage your account settings
+sidebar_label: Manage your account settings
 ---
 
 After logging in successfully, you can manage various aspects of your account settings. The options available are explained below. 

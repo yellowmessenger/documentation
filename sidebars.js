@@ -281,18 +281,19 @@ module.exports = {
 
           ],
         },
-        {
+            "platform_concepts/get_started/createfirstbot",
+
+  /*      {
           type: "category",
           label: "Create your AI agent",
           collapsed: true,
           items: [
             "platform_concepts/get_started/createfirstbot",
             //"platform_concepts/Getting Started/publish-env",
-            "platform_concepts/get_started/modify-bot-configuration",
 
           ]
         },
-
+*/
       {
         type: "category",
         label: "User & account management",
@@ -306,16 +307,6 @@ module.exports = {
       },
 
 
-      {
-        type: "category",
-        label: "Authentication & security",
-        collapsed: true,
-        items: [
-          "platform_concepts/get_started/security-auth/oauth",
-          "platform_concepts/get_started/security-auth/ymauth",
-          "platform_concepts/get_started/security-auth/chattranscriptsecurity",
-        ],
-      }, 
 
       
 
@@ -370,6 +361,8 @@ module.exports = {
                 ],
               },
               "platform_concepts/AIAgent/manage-conversation",
+              "platform_concepts/get_started/modify-bot-configuration",
+
         ],
       },
         // "platform_concepts/studio/build/create_chatbot",
@@ -1824,6 +1817,17 @@ module.exports = {
           // AI copilot doc - last doc 
 
           "platform_concepts/aicopilot",
+      {
+        type: "category",
+        label: "Authentication & security",
+        collapsed: true,
+        items: [
+          "platform_concepts/get_started/security-auth/oauth",
+          "platform_concepts/get_started/security-auth/ymauth",
+          "platform_concepts/get_started/security-auth/chattranscriptsecurity",
+        ],
+      }, 
+
 
   ], 
   // Docs tab ends here
