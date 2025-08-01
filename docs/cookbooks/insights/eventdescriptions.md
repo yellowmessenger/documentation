@@ -611,6 +611,21 @@ Use Conversation Start Time & Conversation End Time  as the primary reference fo
 | USER_INITIATED_SERVICE                | Conversations for resolving customer inquiries                                                                                                                     |
 | CONVERSATION                          | 24-hour message threads between you and your customers, opened and charged when your messages are delivered |
 
+
+
+
+<!--
+
+| **Field**          | **Description**                                                                                                                                       |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TIMESTAMP       | The date the message activity was recorded.                                                                                                          |
+| WABA_ID          | The unique WhatsApp Business Account ID associated with your Meta account.                                                                           |
+| PHONE_NUMBER     | The WhatsApp-enabled business phone number used for sending messages.                                                                                |
+| MESSAGE_TYPE     | Type of message sent. Supported values include: <br/>• Marketing <br/>• Marketing Lite <br/>• Utility <br/>• Authentication <br/>• Authentication International <br/>• Customer Service <br/>• Entry Point |
+| MESSAGE_CATEGORY | Indicates whether the message is billable (`Paid`) or non-billable (`Free`).                                                                         |
+
+-->
+
 ---------
 
 ## Call Details Report (CDR)
