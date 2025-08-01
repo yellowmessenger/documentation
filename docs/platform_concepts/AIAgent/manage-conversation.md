@@ -59,7 +59,7 @@ You can preview and test the AI agent using two methods:
 
 ### AI Copilot
 
-You can also preview and test the AI Agent using the Copilot, which simulates user sessions and helps in validating both functionality and performance.
+You can also preview and test the AI Agent using the [Copilot](https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot), which simulates user sessions and helps in validating both functionality and performance.
 
 To preview via Copilot, follow these steps:
 

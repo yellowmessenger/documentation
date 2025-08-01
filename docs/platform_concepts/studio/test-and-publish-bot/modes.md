@@ -31,9 +31,9 @@ While you can make modifications and publish flows in the Staging environment, i
 
 To publish a AI-agent to live mode follow these steps:
 
-1. Ensure the AI-agent is in **Sandbox**/**Development** mode. Go to **Automation** > **Build** > **Publish changes**. 
+1. Ensure the AI-agent is in **Sandbox/Development** mode. Go to **Automation** > **Workflow builder** > **Publish**.
 
-   ![](https://i.imgur.com/mVfjm0G.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/workflowbuilder.png)
 
 
 2. In the following screen, fill in the following fields.
@@ -42,7 +42,7 @@ To publish a AI-agent to live mode follow these steps:
 *  In **Approvers**, you will see the list of AI-agent approvers added by the **Super admin**. This cannot be modified. All the approvers will be notified when you raise a publish request.
 * In **Comment**, add a message to the approver citing the changes made in the AI-agent.
 
-   <img src="https://i.imgur.com/vKGHdg5.png" alt="drawing" width="50%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/publish.png" alt="drawing" width="50%"/>
 
 3. Click **Publish**. The changes will move to **Staging**. 
 4. Change your AI-agent environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. AI-agents with only **Development** and **Live** modes need not do this. When you publish the changes, AI-agent sends the approval request to approvers.
