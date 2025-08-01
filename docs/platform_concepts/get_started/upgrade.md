@@ -1,6 +1,6 @@
 ---
-title: AI agent subscription plans
-sidebar_label: Subscription plans
+title: AI agent subscription plans and billing
+sidebar_label: Subscription plans & billing
 tags: [start for free, essential features at no cost]
 ---
 

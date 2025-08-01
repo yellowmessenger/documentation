@@ -1,6 +1,6 @@
 ---
-title: Automated AI agent Testing  AI agent
-sidebar_label: Automated AI agent testing
+title: Test your AI agent using AI-based Test suites
+sidebar_label: Test your AI agent
 ---
 
 Automated AI agent testing (Agentic testing) allows you to validate the functionality, performance, and accuracy of your AI agents built on the agentic platform without relying on manual testing. 

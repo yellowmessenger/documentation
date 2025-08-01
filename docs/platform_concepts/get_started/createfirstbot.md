@@ -1,6 +1,6 @@
 ---
 title: Create your first AI-agent
-sidebar_label : Build your AI agent
+sidebar_label : Create your AI agent
 ---
 import ArticleCard from '@site/src/components/ArticleCard';
 import ArticleCardGrid from '@site/src/components/ArticleCardGrid';

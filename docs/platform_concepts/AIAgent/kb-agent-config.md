@@ -1,6 +1,6 @@
 ---
-title: Knowledge base agent 
-sidebar_label: Knowledge base agent  
+title: Create Knowledge base agent 
+sidebar_label: Create Knowledge base agent  
 ---
 
 ## Overview
