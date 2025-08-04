@@ -1,6 +1,6 @@
 ---
-title: AI agent variables
-sidebar_label: Variables
+title: Use Variables to store and retrieve information
+sidebar_label: Use Variables to store & retrieve information
 ---
 
 Variables are used to store and retrieve user data in the conversations. They help to maintain context across different conversation steps.

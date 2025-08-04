@@ -1,6 +1,6 @@
 ---
-title: Add multilingual support to your AI-agent
-sidebar_label: Add multilingual support to your AI-agent
+title: Add supported languages to your chatbot
+sidebar_label: Add supported languages to chatbot
 ---
 
 By adding multilingual support to your AI-agent, you can reach a broader audience and enhance customer engagement. Users can seamlessly switch languages during interactions, creating a more welcoming experience.

@@ -1,6 +1,6 @@
 ---
-title: Events
-sidebar_label: Handle AI-agent events
+title: Trigger actions based on Events
+sidebar_label: Trigger actions on Events
 ---
 
 
@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 
 
-Events are occurences that happen in a platform or system.
+Events are occurrences that happen in a platform or system.
 
 For example, let's consider a customer support AI-agent for an e-commerce platform. When a user initiates a conversation, a welcome event is triggered, presenting a greeting message along with options for the user to select from.
 
