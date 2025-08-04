@@ -1,6 +1,6 @@
 ---
-title: Functions
-sidebar_label : Function (code)
+title: Add custom logic to your chatbot or AI agent with Functions
+sidebar_label : Add custom logic with Functions
 keywords : [code, function, math, calculations]
 ---
 

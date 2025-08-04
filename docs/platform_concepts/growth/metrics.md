@@ -172,13 +172,30 @@ The widget allows you to analyze the conversion rates between each stage of enga
 > WhatsApp consumption is calculated only for WhatsApp bots.
 
 
-In the WhatsApp consumption widget, you can select a WhatsApp phone number from the dropdown to see the consumption for that specific number.    
-If no number is selected, the data will be compiled and displayed for all the numbers collectively.
+In the WhatsApp Consumption widget, you can select a specific WhatsApp phone number from the dropdown to view its individual consumption data.
+If no number is selected, the widget displays aggregated data for all connected numbers.
 
 
-<img src="https://imgur.com/J49FZ7c.png" alt="drawing" width="50%"/> 
+
+<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/consumotion.png" alt="drawing" width="50%"/> 
 
 The three categories tracked for WhatsApp phone numbers are:
+
+
+| **Section**        | **Metric**                            | **Description**                                                                                          |
+|--------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------|
+| **Paid messages**  | Authentication                         | Messages sent to verify users via one-time passcodes (e.g., login, recovery, integrity challenges).     |
+|                    | Authentication – international         | Authentication messages sent to users outside the primary region or country.                            |
+|                    | Marketing                              | Promotional messages like new product launches, discounts, and cart reminders.                          |
+|                    | Utility                                | Transactional messages such as order updates, alerts, or confirmations.                                 |
+|                    | Marketing lite                         | Lightweight marketing templates used under certain policy or pricing conditions.                        |
+| **Free messages**  | Service                                | Messages sent in response to user-initiated conversations within a 24-hour customer service window.     |
+|                    | Authentication                         | Authentication messages sent within a free service window.                                               |
+|                    | Authentication – international         | International authentication messages sent within the free window.                                       |
+|                    | Utility                                | Utility messages sent as part of ongoing free service conversations.                                     |
+| **Filter Options** | Last 90 days / All numbers              | Allows filtering the dashboard data by time period and number segmentation.                             |
+
+<!--
 
 | Category                         | Sub category    | Description |
 | -------------------------------- | --- | ----------- |
@@ -190,7 +207,7 @@ The three categories tracked for WhatsApp phone numbers are:
 ||Service | Indicates the user initiated the conversation. |
 || Referral conversion | Indicates the user initiated the conversation by clicking a **Click to WhatsApp ad** or a Facebook Page **Call-to-Action** button.|
 | **Referral Initiated**           |     |  Conversations that occur when users refer the bot to others, allowing the bot to initiate personalized conversations with those referred contacts.           |
-
+-->
 :::note
 Prior to June 1, 2023, only the main categories of Business-initiated, User-initiated, and Referral conversations were tracked without the subcategories. However, with the [WhatsApp update](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/), the subcategories (Authentication, Marketing, Utility, Service, and Referral conversations) are now included in the widget.
 Here are a few points to note:

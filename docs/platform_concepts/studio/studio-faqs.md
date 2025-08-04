@@ -1,6 +1,6 @@
 ---
-title: Automation FAQs
-sidebar_label: Automation FAQs
+title: Chatbot FAQs
+sidebar_label: Chatbot FAQs
 ---
 
 :::note

@@ -392,80 +392,29 @@ module.exports = {
         },
            {
               type: "category",
-              label: "Chatbot & Workflow automation (Non-AI)",
-              link: {type: 'doc', id: 'platform_concepts/studio/build/create_chatbot'},
+              label: "Chatbot (Non-AI agent)",
+              link: {type: 'doc', id: 'platform_concepts/studio/build/chatbot'},
+              collapsed: true,
+              items: [
+                "platform_concepts/studio/build/create_chatbot",
+                 {
+              type: "category",
+              label: "Configure chatbot conversations",
+             // link: {type: 'doc', id: 'build/'},
               collapsed: true,
               items: [
                 {
                   type: "category",
-                  label: "Flows",
+                  label: "Use Conversation Flows",
                   link: {type: 'doc', id: 'platform_concepts/studio/build/Flows/flows-overview'},
                   collapsed: true,
                   items: [        
                 "platform_concepts/studio/build/Flows/journeys",
                 "platform_concepts/studio/build/Flows/configureflow",
                 "platform_concepts/studio/build/Flows/manage-flows",
-                "platform_concepts/studio/build/Flows/test-flows",
-                "platform_concepts/studio/build/Flows/exportflow",
-                "platform_concepts/studio/debugger",
-
-              ],
-            },
-  
-
-      //  // "platform_concepts/studio/overview",
-      //  {
-      //   type: "category",
-      //   label: "AI agent",
-      //       link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
-      //   collapsed: true,
-      //   items: [
-                        
-      //         {
-      //           type: "category",
-      //           label: "Configure AI agent conversations",
-      //           link: {type: 'doc', id: 'platform_concepts/AIAgent/conversations'},
-      //           collapsed: true,
-      //           items: [
-      //             "platform_concepts/AIAgent/get-input",
-      //             "platform_concepts/AIAgent/call-workflow",
-      //             "platform_concepts/AIAgent/call-fallback",
-      //             "platform_concepts/AIAgent/aigent-variables",
-
-      //           ],
-      //         },
-      //         "platform_concepts/AIAgent/manage-conversation",
-      //         "platform_concepts/get_started/modify-bot-configuration",
-
-
-      //   ],
-      // },
-      
-    
-      
-   
-            
-            
-                       
-           
-          // Agent AI 
-
-            "platform_concepts/studio/build/workflows",
-            
-            {
-              type: "category",
-              label: "User record management",
-             link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
-             items: [ 
-                "platform_concepts/engagement/cdp/user_data/userid-flow",
-                "platform_concepts/engagement/cdp/user_data/store_conv_data",
-                "platform_concepts/engagement/cdp/user_data/personalise_conversations",
-             ],
-            },
-           
-                {
+                      {
                   type: "category",
-                  label: "Nodes",
+                  label: "Use Nodes to build conversation logic",
                   link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/nodes'},
                   collapsed: true,
                   items: [
@@ -546,16 +495,90 @@ module.exports = {
                     }, 
                     "platform_concepts/studio/build/nodes/logic-nodes",
                   ],
-                },       
+                },     
+                "platform_concepts/studio/build/Flows/test-flows",
+                "platform_concepts/studio/build/Flows/exportflow",
+                "platform_concepts/studio/debugger",
+                "cookbooks/studio/debug-logs",
+
+
+              ],
+            },
+  
+ 
+      //  // "platform_concepts/studio/overview",
+      //  {
+      //   type: "category",
+      //   label: "AI agent",
+      //       link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
+      //   collapsed: true,
+      //   items: [
+                        
+      //         {
+      //           type: "category",
+      //           label: "Configure AI agent conversations",
+      //           link: {type: 'doc', id: 'platform_concepts/AIAgent/conversations'},
+      //           collapsed: true,
+      //           items: [
+      //             "platform_concepts/AIAgent/get-input",
+      //             "platform_concepts/AIAgent/call-workflow",
+      //             "platform_concepts/AIAgent/call-fallback",
+      //             "platform_concepts/AIAgent/aigent-variables",
+
+      //           ],
+      //         },
+      //         "platform_concepts/AIAgent/manage-conversation",
+      //         "platform_concepts/get_started/modify-bot-configuration",
+
+
+      //   ],
+      // },
+      
+    
+      
+   
+            
+            
+                       
+           
+          // Agent AI 
+
+            
+           
+           
+           
                 "platform_concepts/studio/build/bot-variables",
                 "platform_concepts/studio/build/code",
                 "platform_concepts/studio/events/event-hub",
                 "platform_concepts/studio/database",
                 "platform_concepts/studio/build/localization",
                 "platform_concepts/studio/product-catalogue",
-                {
+                "platform_concepts/studio/build/additionalsettings",
+
+                ],
+},
+ 
+            
+            {
+              type: "category",
+              label: "Training chatbot data ",
+              collapsed: true,
+              items: [
+                "platform_concepts/studio/train/intents",
+                "platform_concepts/studio/train/entities",
+               // "platform_concepts/studio/train/orchllm",
+                "platform_concepts/studio/train/add-faqs",
+                "platform_concepts/studio/train/what-is-document-cognition",
+                "platform_concepts/studio/train/synonyms",
+                "platform_concepts/studio/train/smalltalk",
+                "platform_concepts/studio/train/add-contextual-response",
+                "platform_concepts/studio/tools", 
+              ],
+            },
+            "platform_concepts/studio/train/orchllm",
+                           {
                   type: "category",
-                   label: "APIs in Automation",
+                   label: "Connect external APIs to Chatbot/AI agent",
                    collapsed: true,
                    items: [
                    {
@@ -571,38 +594,14 @@ module.exports = {
                     "platform_concepts/studio/api/bearer-token",
                    // "platform_concepts/studio/api/transformation-function",
                     "platform_concepts/studio/api/api-settings",
-                    "platform_concepts/studio/api/download-logs",        
+                    "platform_concepts/studio/api/download-logs",       
+ 
                   ],
                 },        
-              ],
-            },         
 
-          
-            
-              "platform_concepts/studio/build/additionalsettings",
-            
-            
             {
               type: "category",
-              label: "Training AI agent data ",
-              collapsed: true,
-              items: [
-                "platform_concepts/studio/train/intents",
-                "platform_concepts/studio/train/entities",
-               // "platform_concepts/studio/train/orchllm",
-                "platform_concepts/studio/train/add-faqs",
-                "platform_concepts/studio/train/what-is-document-cognition",
-                "platform_concepts/studio/train/synonyms",
-                "platform_concepts/studio/train/smalltalk",
-                "platform_concepts/studio/train/add-contextual-response",
-                "platform_concepts/studio/tools", 
-              ],
-            },
-            "platform_concepts/studio/train/orchllm",
-            
-            {
-              type: "category",
-              label: "Test and publish AI agent",
+              label: "Test and publish Chatbot",
               collapsed: true,
               items: [
                // "platform_concepts/studio/test-and-publish-bot/bot-training",
@@ -617,13 +616,29 @@ module.exports = {
           
 
         "platform_concepts/studio/studio-faqs",
-        "platform_concepts/studio/LLM-central-configuration",
-        "cookbooks/studio/debug-logs",
 
       
     
       ],
     },
+
+        "platform_concepts/studio/LLM-central-configuration",
+        "platform_concepts/studio/build/workflows",
+
+              {
+              type: "category",
+              label: "Understand how user records are handled in AI and Non-AI agent",
+             link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
+             items: [ 
+                "platform_concepts/engagement/cdp/user_data/userid-flow",
+                "platform_concepts/engagement/cdp/user_data/store_conv_data",
+                "platform_concepts/engagement/cdp/user_data/personalise_conversations",
+             ],
+            },
+
+              ],
+            },         
+
  
 // Knowledge (KB studio + KB inbox)
 
