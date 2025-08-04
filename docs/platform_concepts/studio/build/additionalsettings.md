@@ -1,6 +1,6 @@
 ---
-title: AI-agent Conversation settings
-sidebar_label: AI-agent Conversation settings
+title: Chatbot Conversation settings
+sidebar_label: Chatbot Conversation settings
 tags: [conversation settings]
 ---
 

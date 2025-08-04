@@ -1,11 +1,11 @@
 ---
-title: Create AI-agent from scratch
-sidebar_label : Create your AI-agent from scratch
+title: Create & configure your chatbot from scratch
+sidebar_label : Create & configure chatbot 
 ---
 
 This guide will walk you through the process of creating different types of chatbot on the Yellow.ai platform.
 
-### Create Chatbot
+### Create Chatbot manually
 
 To create a Chatbot, follow these steps:
 
@@ -35,7 +35,9 @@ To create a Chatbot, follow these steps:
 
     ![](https://imgur.com/CK1d1BU.png)
 
-### Create Voice bot
+---
+
+## Create Voice bot
 
 To create a voice bot, follow these steps:
 
@@ -59,7 +61,9 @@ To create a voice bot, follow these steps:
 
 * Once your bot is created, you will be redirected to the Overview page. Here, you can [configure](https://docs.yellow.ai/docs/platform_concepts/get_started/modify-bot-configuration) your newly created chatbot according to your requirements.    
 
-### Create Orchestrator bot
+---
+
+## Orchestrator bot
 
 The Orchestrator bot enables you to manage and coordinate multiple bots or conversational flows within a single parent bot. It acts as a controller, guiding users to the appropriate bot or flow based on their queries or context.
 
@@ -71,7 +75,6 @@ Key features of Orchestrator bot:
 * **Modularity**: Facilitates independent development of child bots by separate teams, promoting flexibility in bot development.
 * **Automation**:  It facilitates the automated handling of various use cases such as answering common queries, collecting information from users, and initiating predefined actions without human involvement.
 
-#### Usecases
 
 Following are the use cases of Orchestrator bot:
 
@@ -79,7 +82,7 @@ Following are the use cases of Orchestrator bot:
 2. **Centralized customer support**: When organizations have a live agent team for resolving customer queries, they need a central system to manage and address user needs. For instance, in a customer support scenario, the orchestrator bot can route users to a sales bot if they are interested in purchasing a product or to a technical support bot if they are facing issues with a product.
 
 
-#### Create an orchestrator bot
+### Create an orchestrator bot
 
 **Watch the video on how to configure the orchestrator bot:**
 
@@ -123,7 +126,7 @@ Once the option is enabled, you cannot disable it later.
    ![](https://imgur.com/94oJymf.png)
 <br/>   
 
-#### Manage Orchestrator bot
+### Manage Orchestrator bot
 
 You can perform the following actions on an Orchestrator bot:
 
@@ -132,7 +135,7 @@ You can perform the following actions on an Orchestrator bot:
 * [Set a child bot as default](#set-a-child-bot-as-a-default-flow)
 * [Delete child bots](#delete-child-bots)
 
-#### Configure Welcome and Fallback messages
+### Configure Welcome and Fallback messages
 
 To configure Welcome and Fallback messages, follow these steps:
 
@@ -149,7 +152,7 @@ To configure Welcome and Fallback messages, follow these steps:
     <img src="https://imgur.com/Gu9plfa.png" alt="drawing" width="80%"/>
 
 
-#### Add child bots
+### Add child bots
 
 You can add multiple child bots under a single parent bot, as mentioned below:
 
@@ -213,9 +216,9 @@ Unified inbox will only work for bots built on the cloud platform (that is, clou
 
   <img src="https://imgur.com/MOVQdM3.png" alt="drawing" width="50%"/>
 
-###  Add channels
+###  Add channels to orchestrator bot
 
-You can [add](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) the following channels to your orchestrator:
+You can [add the following channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)to your orchestrator:
 
 1. Yellow Messenger
 2. Whatsapp

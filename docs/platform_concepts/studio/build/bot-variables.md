@@ -1,6 +1,6 @@
 ---
-title: Variables
-sidebar_label : AI-agent Variables
+title: Use Variables to store and retrieve information
+sidebar_label : Use variables to store & retrieve information
 ---
 
 Variables are placeholders that store user input, data from external systems, or any other relevant information that needs to be saved and used later in the AI-agent conversation. 

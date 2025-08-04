@@ -1,6 +1,6 @@
 ---
-title: Debug your AI-agent flows
-sidebar_label : Debug AI-agent flows
+title: Debug your bot flows
+sidebar_label : Debug chatbot flows
 ---
 
 

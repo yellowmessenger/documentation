@@ -1,6 +1,6 @@
 ---
 title: Manage database tables & table data
-sidebar_label: Manage database tables
+sidebar_label: Manage database tables and records
 ---
 
 

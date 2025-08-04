@@ -1,6 +1,6 @@
 ---
-title: AI-agent logs
-sidebar_label: AI-agent logs
+title: Monitor Chatbot logs
+sidebar_label: Monitor Chatbot logs
 tags: [bot logs, debug logs]
 ---
 
