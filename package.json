@@ -28,7 +28,7 @@
     "reading-time": "^1.2.0",
     "remixicon": "^2.5.0",
     "url": "^0.11.1",
-    "yarn": "^1.22.10"
+    "yarn": "^1.22.13"
   },
   "browserslist": {
     "production": [
