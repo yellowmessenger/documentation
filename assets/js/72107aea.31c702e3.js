@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbenthos=self.webpackChunkbenthos||[]).push([[72473],{77308:e=>{e.exports=JSON.parse('{"to":"/docs/developer","forComponent":false}')}}]);

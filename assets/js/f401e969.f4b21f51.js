@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbenthos=self.webpackChunkbenthos||[]).push([[3553],{33919:(t,n,o)=>{o.r(n),o.d(n,{default:()=>a});o(96540);var s=o(56347),e=o(74848);const h=o(43627);const a=function(t){let{location:n}=t,{to:o,forComponent:a}=t.dest;return a&&(o=n.hash&&n.hash.length>1?h.join(o,n.hash.slice(1)):h.join(o,"about")),(0,e.jsx)(s.rd,{to:o})}}}]);
