@@ -49,13 +49,13 @@ The table below provides the list of arguments you can use to access relevant in
 
 | **arg** | **Data type** | **Use** |
 | -------- | -------- | -------- |
-| data.variables.<variable_name>   | String | Retrieves the relevant AI-agent variable within the function based on the provided `variable_name`. |
+| `data.variables.<variable_name>`   | String | Retrieves the relevant AI-agent variable within the function based on the provided `variable_name`. |
 | data.channel | String | Retrieves the current channel name of the AI-agent user like whatsapp, yellowmessenger, facebook, etc.|
 |data.profile| Object  | Retrieves properties of the current user such as name, number, email, city, country, and language. |
 | data.sender | String | Retrieves the sender ID. For example, on WhatsApp, the sender ID is the user's phone number, while for website AI-agents, it's a long string representing the unique session ID. |
 |data.bot | String | Retrieves the AI-agent ID specific to the environment (staging, production, or sandbox).|
 |data.message | String | Retrieves the message inputted by the user during the conversation. This allows the AI-agent to respond to the latest input.|
-|data.event.<event_name> | Object | Retrieves the data related to a specific event, allowing the AI-agent to handle scenarios like ticket creation or resolution.|
+|`data.event.<event_name>` | Object | Retrieves the data related to a specific event, allowing the AI-agent to handle scenarios like ticket creation or resolution.|
 |ymLib.args.apiResponse | any | Retrieves and processes an API response within a parser function before assigning it to a variable.|
 | ymLib.args.logger | Object | Retrieves and pushes the API response into the logs for debugging and tracking purposes. |
 | context.history | Object | Retrieves the history of nodes that the user has passed through on the cloud platform.|

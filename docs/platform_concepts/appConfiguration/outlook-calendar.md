@@ -87,13 +87,13 @@ The table below has sample inputs, data types and remarks of the fields for this
 
 | Field Name      | Sample Input                                                               | Datatype    | Remarks                                                                   |
 |----------------|----------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------|
-| Start time      | {"dateTime":"2023-04-11T09:00:00.000","timeZone":"India Standard Time"}   | Object Type | The start date, time, and time zone of the event.                         |
-| End time        | {"dateTime":"2023-04-11T10:00:00.000","timeZone":"India standard Time"}   | Object Type | The date, time, and time zone when the event concludes.                   |
+| Start time      | `{"dateTime":"2023-04-11T09:00:00.000","timeZone":"India Standard Time"}`   | Object Type | The start date, time, and time zone of the event.                         |
+| End time        | `{"dateTime":"2023-04-11T10:00:00.000","timeZone":"India standard Time"}`   | Object Type | The date, time, and time zone when the event concludes.                   |
 | Can invitees propose a new time? | True                                        | bool        | The meeting organizer has enabled the option for invitees to suggest an alternative time while responding. |
-| Attendee details | [{"emailAddress":{"address":"samanthab@contoso.onmicrosoft.com","name":"Pradeep"},"type":"required"}] | Array | The list of people attending the event.                                    |
-| Meeting description | {"contentType":"HTML","content":"Scrum"}                               | Object Type | Meeting agenda                                                            |
+| Attendee details | `[{"emailAddress":{"address":"samanthab@contoso.onmicrosoft.com","name":"Pradeep"},"type":"required"}]` | Array | The list of people attending the event.                                    |
+| Meeting description | `{"contentType":"HTML","content":"Scrum"}`                               | Object Type | Meeting agenda                                                            |
 | Importance of the event | High                                                  | String      | The priority of the event, the possible values are: low, normal, high.     |
-| Recurrence      | {"pattern":{"type":"daily","interval":3},"range":{"type":"endDate","startDate":"2023-04-11"}} | Object Type | The pattern of how often the event will occur.                            |
+| Recurrence      | `{"pattern":{"type":"daily","interval":3},"range":{"type":"endDate","startDate":"2023-04-11"}}` | Object Type | The pattern of how often the event will occur.                            |
 | Meeting title   | Scrum                                                                     | String      | A brief summary that identifies the purpose of the meeting.               |
 
 
@@ -266,15 +266,15 @@ The table below has sample inputs, data types and remarks of the fields for this
 
 | Field Name           | Sample Input                                                                                                             | Datatype   | Remarks                                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------|
-| Start time           | {"dateTime":"2023-04-11T09:00:00.000","timeZone":"India Standard Time"}                                                  | Object Type| Start date, time, and time zone of the event.                                                               |
-| End time             | {"dateTime":"2023-04-11T10:00:00.000","timeZone":"India standard Time"}                                                  | Object Type| End date, time, and time zone for the event's end.                                                          |
+| Start time           | `{"dateTime":"2023-04-11T09:00:00.000","timeZone":"India Standard Time"}       `                                           | Object Type| Start date, time, and time zone of the event.                                                               |
+| End time             | `{"dateTime":"2023-04-11T10:00:00.000","timeZone":"India standard Time"}`                                                  | Object Type| End date, time, and time zone for the event's end.                                                          |
 | Event ID             | AAMkADA1ODMyOWE0LWNkZmUtNDJiYy1hNWI1LWE1NmQwY2RmNDhlOQBGAAAAAAAXtAWtBH7%2BRLmY0nAoX3PzBwCh69yUb7hwSIjZoGosUcSzAAAAAAENAACh69yUb7hwSIjZoGosUcSzAAAFJQ9WAAA%3D | String     | Event ID                                                                                                   |
 | Can invitees propose | True                                                                                                                     | bool       | Option to propose a new time if the organizer allows it.                                                   |
 | a new time?          |                                                                                                                          |            |                                                                                                            |
-| Attendee details     | [{"emailAddress":{"address":"samanthab@contoso.onmicrosoft.com","name":"Pradeep"},"type":"required"}]                    | Array      | List of attendees for the event.                                                                            |
-| Meeting description  | {"contentType":"HTML","content":"Scrum"}                                                                                | Object Type| Message body associated with the event.                                                                     |
+| Attendee details     | `[{"emailAddress":{"address":"samanthab@contoso.onmicrosoft.com","name":"Pradeep"},"type":"required"}]  `                  | Array      | List of attendees for the event.                                                                            |
+| Meeting description  | `{"contentType":"HTML","content":"Scrum"} `                                                                               | Object Type| Message body associated with the event.                                                                     |
 | Importance of event  | High                                                                                                                     | String     | Importance of the event (low, normal, or high).                                                             |
-| Recurrence           | {"pattern":{"type":"daily","interval":3},"range":{"type":"endDate","startDate":"2023-04-11"}}                            | Object Type| Recurrence pattern for the event.                                                                           |
+| Recurrence           | `{"pattern":{"type":"daily","interval":3},"range":{"type":"endDate","startDate":"2023-04-11"}}`                            | Object Type| Recurrence pattern for the event.                                                                           |
 | Meeting title        | Scrum                                                                                                                    | String     | A brief summary of the meeting agenda.                                                                      |
 
 
@@ -371,9 +371,9 @@ The table below has sample inputs, data types and remarks of the fields for this
 
 | Field Name         | Sample Input                                                                                     | Datatype | Remarks                                                                                         |
 |--------------------|--------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------|
-| Email addresses    | ["samanthab@contoso.onmicrosoft.com", "Rahul@contoso.onmicrosoft.com"]                         | Array    | SMTP addresses of users to get availability information for.                                    |
-| Start time         | {"dateTime":"2023-04-04T09:00:00.000","timeZone":"India Standard Time"}                         | Object   | The start date, time, and time zone of the event.                                              |
-| End time           | {"dateTime":"2023-04-04T12:43:49.4949","timeZone":"India standard Time"}                        | Object   | The end date, time, and time zone of the event.                                                |
+| Email addresses    | `["samanthab@contoso.onmicrosoft.com", "Rahul@contoso.onmicrosoft.com"] `                        | Array    | SMTP addresses of users to get availability information for.                                    |
+| Start time         | `{"dateTime":"2023-04-04T09:00:00.000","timeZone":"India Standard Time"}`                         | Object   | The start date, time, and time zone of the event.                                              |
+| End time           | `{"dateTime":"2023-04-04T12:43:49.4949","timeZone":"India standard Time"}`                        | Object   | The end date, time, and time zone of the event.                                                |
 | View available interval | 40                                                                                               | number   | Duration of a time slot in the [availability View] of the response.                            |
 
 

@@ -324,7 +324,8 @@ To delete database table fields or table, follow these steps:
 
 ### FAQs related to troubleshooting
 
-<details><summary><b>Why am I getting an error while adding a field in the database?</b></summary>
+<details>
+<summary><b>Why am I getting an error while adding a field in the database?</b></summary>
 <p>
 If you are encountering an error while adding a field in the database, try these troubleshooting steps:<br/>
    * <b>Check for duplicate values</b>: Ensure that the fields you are adding do not have duplicate values.<br/>
@@ -335,7 +336,8 @@ If you are encountering an error while adding a field in the database, try these
 </p>
 </details>
 
-<details><summary><b>Why is autosuggestion not working from a database using "Make prompt smarter</b></summary>
+<details>
+<summary><b>Why is autosuggestion not working from a database using "Make prompt smarter</b></summary>
 <p>
 If autosuggestion is not working when using the 'Make Prompt Smarter' feature with a database, follow these steps to resolve the issue:<br/>
    1. <b>Check Database connection</b>: Ensure the database is properly connected and accessible.<br/>

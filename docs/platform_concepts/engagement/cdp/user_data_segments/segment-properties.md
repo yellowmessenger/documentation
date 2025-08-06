@@ -16,7 +16,7 @@ To create a user segment, follow these steps:
  <img src="https://i.imgur.com/6O2hgru.png" width="70%"/>
 
 4. In **Conditions**, define the condition basis which you want to create the group. A condition consists of the following pattern.
- {property} {operator} {value}
+ `{property} {operator} {value}`
 
 Option | Description
 --------- | --------

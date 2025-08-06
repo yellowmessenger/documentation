@@ -51,8 +51,7 @@ To capture the data sent in the template, You can capture template ID, variable 
 
 
 <details>
-<summary>
- How do I capture additional details from the messages sent?</summary>
+<summary>How do I capture additional details from the messages sent?</summary>
 
 
 To capture additional details from the messages sent, you can pass inside the `customPayload` in the `config` object. This allows you to include specific data within the message payload, which can then be accessed and processed by your AI-agent. You can pass up to three variables.
@@ -105,9 +104,7 @@ For example:
 
 
 <details>
-<summary> How can I mask URL or PDF links in campaigns when the template type is media?
-
-   </summary>
+<summary> How can I mask URL or PDF links in campaigns when the template type is media?</summary>
 While applying media templates, you don't need to provide the actual invoice file link. Instead, you can share a sample image during the template creation process. For instance, to send invoices, consider replacing standard campaigns with event-triggered campaigns to ensure that the image links are not exposed on the platform. This approach helps maintain confidentiality and prevents unauthorized access to sensitive information.
 
 </details>
@@ -126,17 +123,14 @@ By default, the rate limit is set to 2000 calls/min. If you want to reduce this 
 
 <details>
 
-<summary>
-What’s the ideal image size for a WhatsApp outbound campaign?</summary>
+<summary>What’s the ideal image size for a WhatsApp outbound campaign?</summary>
 WhatsApp automatically resizes images. It is recommended to keep the aspect ratio of 1:1.
 </details>
 
 
 <details>
 
-<summary>
-How to add a WhatsApp number for testing purposes in the Live environment?
-</summary>
+<summary>How to add a WhatsApp number for testing purposes in the Live environment?</summary>
 
 1. In Channels, select <b>WhatsApp messenger</b> in the Live environment.
 2. Click on the more options icon and select **Edit**.
@@ -243,8 +237,7 @@ Each of internet-connected device will have an IP address. To know your local IP
 
 
 <details>
-<summary>
-What is IP warming?</summary>
+<summary>What is IP warming?</summary>
 
 IP addresses need to build reputation. The higher the reputation higher is the chance for the mails to be successfully delivered to the end users’ mailbox. To improve the reputation, we perform IP warming.
 
@@ -259,8 +252,7 @@ Typically, it takes 4–8 weeks to achieve the highest deliverability (subject t
 
 
 <details>
-<summary>
-What are the tips for IP warm up planning?</summary>
+<summary>What are the tips for IP warm up planning?</summary>
 
 
 - Start your email program with the email content that you feel will perform the best with respect to engagement (opens, clicks).
@@ -284,8 +276,7 @@ IP warm-up plan can tweaked based on the brand’s maximum volume expected to be
  </details>
  
 <details>
-<summary> 
-What should we consider for IP warm-up plan?</summary>
+<summary> What should we consider for IP warm-up plan?</summary>
  
 
   
@@ -337,9 +328,7 @@ In the example docs.yellow.ai, `docs` is the subdomain of yellow.ai.
 
 <details>
 
-<summary>
-Are these domains taken for rent?
-</summary>
+<summary>Are these domains taken for rent?</summary>
 
 Yes, you cannot own domains. You can only pay and get the right to use it for the approved time (say 2 years) before renewal. If you fail to renew, this will be available for someone else to buy for a rent.
 
@@ -387,9 +376,7 @@ SMTP configuration can be used when the purpose is to send 1:1 transactional/upd
 
 <details>
 
-<summary>
-Who regulates SMS communication in India?
-</summary>
+<summary>Who regulates SMS communication in India?</summary>
 
 
 Telecom Regulatory Authority of India (TRAI) is the regulatory body for brand-customer communication.
@@ -399,9 +386,7 @@ Telecom Regulatory Authority of India (TRAI) is the regulatory body for brand-cu
 
 <details>
 
-<summary>
-Who are the telco operators?
-</summary>
+<summary>Who are the telco operators?</summary>
 
 Telecom (Or Telco) operators are the likes of brands like Airtel, Jio, Vodafone in India that ensures flow of SMSs (from brands to customers, in this case).
 
@@ -410,8 +395,7 @@ Telecom (Or Telco) operators are the likes of brands like Airtel, Jio, Vodafone 
 
 <details>
 
-<summary>
-What is a DLT account?</summary>
+<summary>What is a DLT account?</summary>
 
 Distributed Ledger Technology (DLT) is an account which brands need to create by giving relevant business info. The DLT account is in place to prevent customers from being SMS-spammed.
 
@@ -420,9 +404,7 @@ Brands should create a new DLT account with one of the Telco providers.
 
 
 <details>
-<summary>
-What is an Entity ID?
-</summary>
+<summary>What is an Entity ID?</summary>
 
 Entity ID is the unique ID given to the brand by the TRAI upon successful creation of the DLT account. There can be only one DLT account per business.
 </details>
@@ -430,26 +412,20 @@ Entity ID is the unique ID given to the brand by the TRAI upon successful creati
 
 <details>
 
-<summary>
-What is a Sender ID (or Header)?
-</summary>
+<summary>What is a Sender ID (or Header)?</summary>
 
 Sender ID or Header is a 6-digit alphabetic name for transactional messages and telco operator-fixed 6-digit number for promotional messages. This is a personification of the brand’s contact name with respect to SMS.
 </details>
 
 <details>
-<summary>
-What is a template ID?
-</summary>
+<summary>What is a template ID?</summary>
 
 This is the unique reference to the template message that you apply in your DLT portal.
 </details>
 
 
 <details>
-<summary>
-What are the types of SMS notifications brands cans send?
-</summary>
+<summary>What are the types of SMS notifications brands cans send?</summary>
 
 There are two types of SMS notifications - 1. Promotional 2. Transactional.
 
@@ -465,8 +441,7 @@ c. Service Explicit - Notifications to existing customers only promoting other p
 
 
 <details>
-<summary>
-What are the common reasons for a message failure?</summary>
+<summary>What are the common reasons for a message failure?</summary>
 
 Message failures can occur due to various reasons depending on whether the message is sent via **Notification API** or **Outbound Campaigns**. Below are the key reasons categorized accordingly:  
 

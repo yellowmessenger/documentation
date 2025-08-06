@@ -234,8 +234,7 @@ The acceptable values for priority in the raise ticket node are Low, Normal, Hig
 <summary>Is it possible to create forms on the Sunshine conversation widget for email address and name?</summary>
 <div>
  <br/>
- <div>You will first need to reach out to the <a href="mailto:support@yellow.ai">Integrations</a> team and enable form creation on the Sunshine Conversation widget. Then, use the Sunshine Conversations post-message API to create forms
-</div>
+ <div>You will first need to reach out to the <a href="mailto:support@yellow.ai">Integrations</a> team and enable form creation on the Sunshine Conversation widget. Then, use the Sunshine Conversations post-message API to create forms</div>
   </div>
 </details>
 
@@ -243,8 +242,7 @@ The acceptable values for priority in the raise ticket node are Low, Normal, Hig
 <summary>Can we use channel filter to add flows for WhatsApp and other channels connected on Sunshine Conversation channel from the builder?</summary>
 <div>
  <br/>
- <div>No, you cannot use the channel filter in this scenario, as the Sunshine Conversation itself serves as the channel for communication.
-</div>
+ <div>No, you cannot use the channel filter in this scenario, as the Sunshine Conversation itself serves as the channel for communication.</div>
   </div>
 </details>
 

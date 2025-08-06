@@ -198,8 +198,7 @@ You need to consider the following best practices while setting up your WhatsApp
 </details>
 
 <details>
-<summary> Is it possible to connect the catalog with WhatsApp chatbot?
-</summary>
+<summary> Is it possible to connect the catalog with WhatsApp chatbot?</summary>
 <div>
  <br/>
  <div>Yes, once the catalog is linked to WABA, you can connect it with the WhatsApp chatbot.</div>

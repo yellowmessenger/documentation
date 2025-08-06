@@ -10,6 +10,7 @@
    ========================================================================== */
 
 :root {
+  /* ... (rest of your root variables remain the same) ... */
   /* --- Primary Colors (Professional Blue) --- */
   --ifm-color-primary: #0052EA;
   --ifm-color-primary-dark: #0045c4;
@@ -65,6 +66,7 @@
    ========================================================================== */
 
 html[data-theme="dark"] {
+  /* ... (rest of your dark theme variables remain the same) ... */
   --ifm-color-primary: #60a5fa;
   --ifm-background-color: #0c111d;
   --ifm-background-surface-color: #1e293b;
@@ -91,10 +93,17 @@ html[data-theme="dark"] .admonition h5 {
 /* ==========================================================================
    3. BASE & TYPOGRAPHY
    ========================================================================== */
+/* Prevents padding and borders from causing horizontal overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: var(--ifm-font-family-base);
   color: var(--ifm-color-text-base);
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -103,24 +112,24 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ifm-heading-color);
 }
 
-h1 { 
+h1 {
   font-weight: 500;
-  letter-spacing: 0em; 
+  letter-spacing: 0em;
   font-size: 30px;
 }
-h2 { 
+h2 {
   font-weight: 550;
   font-size: 22px;
 }
-h3 { 
+h3 {
   font-weight: 550;
   font-size: 20px;
 }
-h4 { 
+h4 {
   font-weight: 550;
   font-size: 18px;
 }
-h5 { 
+h5 {
   font-weight: 600;
   font-size: 16px;
 }
@@ -172,8 +181,8 @@ pre code {
    ========================================================================== */
 
 [class*="docItemCol_"] {
-  padding-left: 2rem;
-  padding-right: 1rem;
+  padding-left: var(--ifm-doc-horizontal-spacing);
+  padding-right: var(--ifm-doc-horizontal-spacing);
 }
 
 [class*="docItemContainer_"] {
@@ -193,16 +202,79 @@ pre code {
 /* ==========================================================================
    5. NAVBAR
    ========================================================================== */
+/* Ensure nav is a flex container and wraps correctly */
+/* This should be placed in global CSS, e.g., custom.css */
 
-.navbar .navbar__link--active::before {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: var(--ifm-color-primary);
-  position: absolute;
-  bottom: -20px;
-  border-radius: 10px;
+/* 1. Prevent overflow */
+
+.navbar { /* or the main header container */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Make sure it's not transparent */
+    z-index: 1000; /* Use a high value */
 }
+
+.theme-layout-navbar-left {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* 1. Make sure the navbar wraps and aligns center */
+.navbar__inner {
+  display: flex;
+  flex-wrap: nowrap;       /* Don't allow wrap */
+  align-items: center;     /* Align vertically */
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 2. Prevent children from shrinking unevenly */
+.navbar__items {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  min-width: 0;
+
+}
+
+
+
+/* 3. Make items align in one row */
+.navbar__item,
+.navbar__link,
+.navbar__brand {
+  line-height: 1;
+  padding: 0 8px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* 4. Reduce logo size if needed */
+.navbar__logo img {
+  max-height: 32px;
+  vertical-align: middle;
+}
+
+/* 5. Shrink the searchbar on small screens */
+.navbarSearchContainer_Bca1 {
+  flex-shrink: 1;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+/* Optional: handle too-small screens */
+@media (max-width: 1024px) {
+  .navbar__inner {
+    flex-wrap: wrap;
+  }
+}
+
+
 
 /* ==========================================================================
    6. SIDEBAR MENU & TABLE OF CONTENTS (REDESIGNED)

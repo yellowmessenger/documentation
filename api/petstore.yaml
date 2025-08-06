@@ -21,7 +21,7 @@ info:
     5. You may be prompted to provide additional information or permissions for the token generation. Follow the on-screen instructions and provide the necessary details.
     6. Once the process is complete, the Yellow.ai platform will generate an authentication token for you.
     7. Safely store the authentication token as it will be required for making authenticated API requests to Yellow.ai APIs.
-    8. Include the authentication token in the request headers of your API calls. Typically, you would add an `Authorization` header with the value "Bearer <authentication_token>".
+    8. Include the authentication token in the request headers of your API calls. Typically, you would add an `Authorization` header with the value `Bearer <authentication_token>`.
     9. Please note that the generated authentication token provides access to the APIs based on the permissions and privileges associated with your super admin account. Handle the token with caution.
 
    ## Generate API Keys

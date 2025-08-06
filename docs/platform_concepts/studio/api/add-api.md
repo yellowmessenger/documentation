@@ -48,10 +48,10 @@ Below are examples of key-value pairs for static and dynamic parameters:
 
 **Dynamic parameter**:
 * Key: city
-* Value: {{{city}}}
+* Value: `{{{city}}}`
 In these examples:
 The botId key has a static value (it remains constant).
-The "city" key has a dynamic value represented as {{{city}}}, indicating that the value will be dynamically replaced with the actual value of the "city" parameter during runtime. 
+The "city" key has a dynamic value represented as `{{{city}}}`, indicating that the value will be dynamically replaced with the actual value of the "city" parameter during runtime. 
 
 #### Add request headers
 
@@ -89,7 +89,7 @@ To add a body:
      
    <img src="https://i.imgur.com/hP7ay5l.png" alt="drawing" width="70%"/>
 
-To send dynamic data over body use "{{{value}}}".
+To send dynamic data over body use `{{{value}}}`.
 
 :::note
 * You can pass the access key or auth token in the way that the API is designed. You could pass it in the request URL, body, or headers. You can ignore this for APIs where no authentication is required.
@@ -247,7 +247,7 @@ To add environment variables:
    <img src="https://i.imgur.com/jRh5tRe.png" alt="drawing" width="80%"/>
 
 
-3. Include the key in API URL in the following format: {{{env.variablename}}} for example, {{{env.endpoint}}}
+3. Include the key in API URL in the following format: `{{{env.variablename}}}` for example, `{{{env.endpoint}}}`
 
    ![](https://imgur.com/ViCCnE9.png)
 

@@ -185,7 +185,7 @@ User activity by time|||Coming Soon
 User acquisition|||Coming Soon
 Unique users by country|||Coming Soon
 Users by device|||Coming Soon
-Bot performance|Bot Performance Metrics Dashboard|Bot Accuracy<br/>Deflection Rate<b/r>Flow Completion Rate|Completed
+Bot performance|Bot Performance Metrics Dashboard|Bot Accuracy<br/>Deflection Rate<br/>Flow Completion Rate|Completed
 Top flows visited|Bot Performance Metrics Dashboard|Flow Visits|Completed
 User feedback|Bot Performance Metrics Dashboard|Bot Feedback|Completed
 User by demographics|||Coming Soon

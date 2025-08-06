@@ -57,7 +57,7 @@ Each user is identified by a **unique ID (UID)**, and a conversation log is gene
 | **New Session**       | 9:00 AM - Start<br/>9:30 AM - Last message<br/>9:31 AM - Next message (next day) | User sends a message **after 24 hours** | New session starts.<br/>Previous chat history is available, but **context is lost**. |
 
 > Q1. How can I get the current session ID of an ongoing conversation?
-> A: You can retrieve the session ID using {{{session.id}}}. This placeholder returns the unique identifier for the active conversation session.
+> A: You can retrieve the session ID using `{{{session.id}}}`. This placeholder returns the unique identifier for the active conversation session.
 
 :::note
 When users starts a new session (after 24 hours), they can view the previous conversation history, but the context from the earlier session is not retained.

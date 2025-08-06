@@ -150,16 +150,14 @@ All the Insights widget pages (<b>Overview, Metrics, User Journeys, Doc cog, Das
 
     
 <details>
-<summary>  On the Data explorer - User engagement table, the timestamps increase by 30 mins. What is the reason for that?
-</summary>
+<summary>  On the Data explorer - User engagement table, the timestamps increase by 30 mins. What is the reason for that?</summary>
 <div>
 On the user engagement events table, similar records are rolled up at 30 mins interval. You can refer to the Count column to check how many records are rolled up for a particular row event. The distinct count functionality uses <a href="https://en.wikipedia.org/wiki/HyperLogLog">hyperloglog</a> algorithm which gives an approximate number and not the exact count.
 </div>
 </details>
     
 <details>
-<summary> How can I <b>download chat transcripts</b> for the last year? 
-</summary>
+<summary> How can I <b>download chat transcripts</b> for the last year?</summary>
 <div>
 Open <b> Insights</b> > <b>Metrics</b>. You can apply 31 days custom time filter of any month before 6 months(or a year) and click <b>Export</b> and select <b>Chat transcripts</b>. 
 or  from the **Data export** module. 
@@ -168,9 +166,7 @@ or  from the **Data export** module.
 
 
 <details>
-<summary> 
-When is my raw data export sent to my email and when does it get downloaded directly?
-</summary>
+<summary> When is my raw data export sent to my email and when does it get downloaded directly?</summary>
 <div>
 How a table is exported depends on the file size. If the count of records is greater or equal to 500, we do an export from backend (email). For less than 500 records, the export happens directly.
 </div>
@@ -224,13 +220,10 @@ In Data Explorer > Notification Report, only entries where the source is WhatsAp
 
 
 <details>
- <summary>Why do the assigned and resolved ticket counts in DE and Inbox Analytics sometimes differ?
-</summary>
+ <summary>Why do the assigned and resolved ticket counts in DE and Inbox Analytics sometimes differ?</summary>
  <div>
-  <div> 
-The chat tickets table updates each row in place, meaning that when a ticket moves from the Assigned state to the Resolved state, the same entry is updated with the new status. This decreases the count of Assigned tickets by 1 and increases the count of Resolved tickets by 1. To match the assigned ticket count in DE with the widget in Inbox Analytics, apply the Assignment_Time filter in the chat tickets table to the same time range as the widget in Inbox Analytics. This ensures a 1:1 match in ticket counts.</div>
-  <br/>
-   </div>
+  <div> The chat tickets table updates each row in place, meaning that when a ticket moves from the Assigned state to the Resolved state, the same entry is updated with the new status. This decreases the count of Assigned tickets by 1 and increases the count of Resolved tickets by 1. To match the assigned ticket count in DE with the widget in Inbox Analytics, apply the Assignment_Time filter in the chat tickets table to the same time range as the widget in Inbox Analytics. This ensures a 1:1 match in ticket counts.</div>
+  </div>
 </details>
 
 

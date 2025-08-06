@@ -123,7 +123,7 @@ Variable names should not contain spaces. Only underscores (_) are permitted for
    Template type | Choose *Carousel template*.
    Card | You can add up to 10 cards in a template and set header, body, and buttons for each card separately. 
    Header | Choose the media type for the header. You cannot have one card with an image type and another with a video type. <ul><li>Image: Supports .jpg/.jpeg/.png with a maximum size of 5 MB. </li><li>Video: Use to add mp4 file. Supports up to 12 MB. </li></ul>
-   Body text | Enter the body content for the WhatsApp carousel. Use {{ }} to add variables. For instance, you can use {{firstName}} to dynamically include the customer's first name within the carousel.
+   Body text | Enter the body content for the WhatsApp carousel. Use `{{ }}` to add variables. For instance, you can use `{{firstName}}` to dynamically include the customer's first name within the carousel.
    CTA buttons | Add CTAs to the card. If you add another CTA, both should be of the same type. You can add up to two buttons - either CTAs or quick replies or both.
    Quick replies | Add quick replies to the card.  You can add up to two buttons - either CTAs or quick replies or both.
 
@@ -510,9 +510,9 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
   
 
 * Spelling or grammatical errors.
-* Missing variable parameters or incorrect curly braces. The correct format is {{1}}.
+* Missing variable parameters or incorrect curly braces. The correct format is `{{1}}`.
 * Undefined variable parameters.
-* Non-sequential variable parameters. For example, {{1}}, {{2}}, {{4}}, {{5}} are defined but {{3}} does not exist.
+* Non-sequential variable parameters. For example, `{{1}}`, `{{2}}`, `{{4}}`, `{{5}}` are defined but `{{3}}` does not exist.
 * Mismatch in the defined language and the template content. For example, Spanish was selected, but the content is English, or the content is a mixture of languages containing both Spanish and English.
 * The URL domain in your links does not belong to your business.
 

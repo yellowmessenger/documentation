@@ -30,8 +30,8 @@ To convert docx to PDF format, follow these steps:
     <img src="https://imgur.com/yY1xHYY.png" alt="drawing" width="80%"/>
     
 2. Define the following fields:
-    1. In **Template**: Click **Upload file** and upload the template based on which the PDF should be generated. This document should be in `.docx` format and have placeholder values wherever the dynamic data is to be inserted. The placeholder should be enclosed in single brackets, that is`{placeholdername}`. For example, The user name is {user name}.
-   2. In **+ Add Variable Mapping**: Enter the placeholder name that you have included in docx without the brackets in the left column and select a variable (in which the value is collected from the user) in the right column. You can mutiple placeholder names.
+    1. In **Template**: Click **Upload file** and upload the template based on which the PDF should be generated. This document should be in `.docx` format and have placeholder values wherever the dynamic data is to be inserted. The placeholder should be enclosed in single brackets, that is`{placeholdername}`. For example, The user name is `{user name}`.
+   2. In **+ Add Variable Mapping**: Enter the placeholder name that you have included in docx without the brackets in the left column and select a variable (in which the value is collected from the user) in the right column. You can multiple placeholder names.
    3. **Select an output format:** Choose the PDF option as that's the only available option for docs.   
    4. Store the response in an object variable. For example, 'pdf_response'. 
    

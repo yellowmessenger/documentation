@@ -26,7 +26,7 @@ Follow the below steps to assign a ticket to a group by adding any tag:
 1. Use a channel filter to set variables.
 2. Create global variables and set those variables.
 
-> With either variables coming from payload like {{{profile.payload.< key_name in payload >}}} Or {{{sender}}} in case of WhatsApp
+> With either variables coming from payload like `{{{profile.payload.< key_name in payload >}}}` Or `{{{sender}}}` in case of WhatsApp
 
 4. Pass the same variables in the raise ticket action node.
 

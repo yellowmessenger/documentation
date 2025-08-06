@@ -4,12 +4,8 @@ sidebar_label : Inbox FAQs
 ---
 
 <details>
-<summary> 
-Which attachment formats does Inbox support?
-</summary>
-<div>
-In the chat or email conversation, customers, agents, and admins have the ability to attach files of these formats: <br/> JPEG, JPG, PNG, GIF, PDF, TXT, DOC, PPT, DOCX, PPTX, XLS, XLSX, CSV, TSV, ZIP, JSON, MP4, MP3, WAV, AAC, M4A, SVG, 3GP, and MOV. <br/>
-However, there is a 25MB size-limit on the files you can send. </div>
+<summary>Which attachment formats does Inbox support?</summary>
+<div>In the chat or email conversation, customers, agents, and admins have the ability to attach files of these formats: <br/> JPEG, JPG, PNG, GIF, PDF, TXT, DOC, PPT, DOCX, PPTX, XLS, XLSX, CSV, TSV, ZIP, JSON, MP4, MP3, WAV, AAC, M4A, SVG, 3GP, and MOV. <br/>However, there is a 25MB size-limit on the files you can send. </div>
 </details>
 
 <details>
@@ -42,8 +38,7 @@ In Outlook, email tickets do not appear as a thread; instead, each reply is trea
 
 
 <details>
-<summary> 
-Can we have primary and secondary WhatsApp numbers(2 phone numbers) connecting a bot user to the live agents? </summary>
+<summary> Can we have primary and secondary WhatsApp numbers(2 phone numbers) connecting a bot user to the live agents? </summary>
 <div>
 Each bot has only one inbox, the bot can have multiple Whatsapp numbers activated, and the agent queries will be directed to the bot's Inbox. Hence, all Whatsapp numbers are sourced to the same Inbox module, and agents will be assigned with live chats from any of the numbers.
 </div>
@@ -58,8 +53,7 @@ Each bot has only one inbox, the bot can have multiple Whatsapp numbers activate
 
     
 <details>
-<summary> Why is the agent's language not getting translated automatically to the customer's language even when the agent is replying in English?
-</summary>
+<summary> Why is the agent's language not getting translated automatically to the customer's language even when the agent is replying in English?</summary>
 <div>
     
 You can set the default language of the agent to English in <b>Inbox</b> > <b>Settings</b> > <b>Team</b> > <b>Agents</b>. Open the agent profile and select the <b>Default Language</b>. Click <a href= "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#11-editmodify-existing-agent-properties" >here</a> to learn more. 
@@ -82,15 +76,13 @@ Yes, this is expected behavior. Missed chats are not assigned to any particular 
 </details>
 
 <details>
-<summary> Is it possible for an inbox agent role to view only the chats that are assigned to him in Missed Chats and Bot Messages sections? Or is there a way to disable these sections for a particular user?
-</summary>
+<summary> Is it possible for an inbox agent role to view only the chats that are assigned to him in Missed Chats and Bot Messages sections? Or is there a way to disable these sections for a particular user?</summary>
 
 If you need to disable the Missed Chats or Bot Messages sections for a particular user, please raise a ticket with customer context to request this configuration change.
 </details>
 
 <details>
-<summary>When an inbox agent with the supervisor role is logged in, the user can view all the chats in the Resolved Chats section. Is this expected behavior?
-</summary>
+<summary>When an inbox agent with the supervisor role is logged in, the user can view all the chats in the Resolved Chats section. Is this expected behavior?</summary>
 
 Yes, this is expected behavior. When someone is made an Inbox supervisor for particular group(s), they will see all the chats raised in those group(s).
 </details>
@@ -109,8 +101,7 @@ No. You cannot download internal notes, they are only available within the respe
 </details>
 
 <details>
-<summary> 
-What happens to the live chat requests from customers when the all the agents are offline? / How to handle incoming live chats when the agents are offline? </summary>
+<summary> What happens to the live chat requests from customers when the all the agents are offline? / How to handle incoming live chats when the agents are offline? </summary>
 <div>
 An inbox admin can configure what happens to the live chats when all the agents are offline on <a href= "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat" > offline handling settings </a>.
 
@@ -162,10 +153,8 @@ Agents are considered to be not eligible for assignment when the agent status is
 </details>
 
 <details>
-<summary> Will a sticky ticket go into the queue if it is raised when all my agents are occupied? </summary>
-<div>
+<summary> Will a sticky ticket go into the queue if it is raised when all my agents are occupied?</summary>
 Sticky tickets will not go into the queue even if the group queue is turned ON. When an agent is at maximum concurrency OR busy/away/offline they are considered to be not eligible and will be skipped in consideration. It is recommended to a higher number than the set chat concurrency.
-</div>
 </details>
 
 

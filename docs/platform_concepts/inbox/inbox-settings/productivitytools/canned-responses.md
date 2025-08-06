@@ -52,9 +52,9 @@ Follow the steps below to add a canned response:
 :::note 
 **Dynamic variables**     
 The list of expressions available on the left side can be added along with your text by copying and pasting the required expression. For example:        
-- **Agent name** (available to the bot): {{agent.name}}
-- **Bot name** (available to the bot): {{agent.username}}
-- **Customer name** (to be entered by the agent on the chat screen/fetched from the flow): {{bot.botname}}
+- **Agent name** (available to the bot): `{{agent.name}}`
+- **Bot name** (available to the bot): `{{agent.username}}`
+- **Customer name** (to be entered by the agent on the chat screen/fetched from the flow): `{{bot.botname}}`
 - **Custom fields** (to be entered by the agent on the chat screen):  Will vary based on the custom fields
 :::
 

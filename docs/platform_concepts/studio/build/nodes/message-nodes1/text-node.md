@@ -61,8 +61,8 @@ For instance, to greet a user by name and reference their order, you can structu
 
 In this example:
 
-{{{variables.username}}} retrieves the user's name.
-{{{variables.order_id}}} fetches the user's order number.
+`{{{variables.username}}}` retrieves the user's name.
+`{{{variables.order_id}}}` fetches the user's order number.
 
 To configure dynamic Text message, follow these steps:
 

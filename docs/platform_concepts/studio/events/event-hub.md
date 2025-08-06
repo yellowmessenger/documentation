@@ -278,11 +278,138 @@ The following are some real-time use cases that you can solve with these events:
 * Sync data to an external CRM through APIs when a user is added/upated/deleted.
 * Sync data from an external database through APIs when these events occur.
 
-Event | Description | Sample payload
------- | ---------- | -------------
-USER_CREATE | When a user record is created in (CDP) DB through any of the following operations:<br/>- Single User Creation in UI<br/> - User Creation through Builder<br/> - User Creation through API<br/> - User Creation through CSV Import |  {<br/>            "id": "IN5TK-OyZekJUT2xldP1J",<br/>            "botId": "x1659503658437",<br/> "userId": "x1659503658437_jolly@example.com",<br/>           "event": "USER_CREATE",<br/>            "source": "SYSTEM",<br/>            "payload”: {<br/>                "timestamp": 1666340842464,<br/>                "user": {                    <br/>"firstName”: "Jolly",<br/>                   "gender": "FEMALE",<br/>                   "profileComplete": "17.65",<br/>                   "userId": "jolly@example.com"  <br/>              },<br/>                "userId": "jolly@example.com"<br/>            },<br/>         "createdAt": "2022-10-21T08:27:23.000Z"<br/>,<br/>           "updatedAt": "2022-10-21T08:27:23.000Z"<br/>,<br/>     "deletedAt": null<br/>        }
-USER_UPDATE | When a user record is updated in (CDP) DB through the following operations:<br/> - Single User Updation in UI<br/> - User Updation through Builder <br/> - User Updation through API<br/> - User Updation through CSV Import | **Setting an unset field**:<br/> {<br/> "id": "5IjS7mCLBEWehufVSa3Jj",<br/> "botId": "x1659503658437",<br/> "userId": "x1659503658437_jolly@example.com",<br/>"event": "USER_UPDATE",<br/>"source": "SYSTEM",<br/>"payload": {<br/>"newPayload": {<br/>"city": "Bengaluru",<br/> "country": "IN",<br/>"lastName": "Harsha",<br/>"profileComplete": "35.29"<br/>},<br/>"oldPayload": {<br/>"city": null,<br/>"country": null,<br/>"lastName": null,<br/>"profileComplete": "17.65"<br/> },<br/> "timestamp": 1666352773812,<br/>"userId": "jolly@example.com"<br/> },<br/>"createdAt": "2022-10-21T11:46:15.000Z",<br/>"updatedAt": "2022-10-21T11:46:15.000Z",<br/>  "deletedAt": null<br/> } <br/> **Updating an already set field**: <br/>{<br/> "id": "O0-AanNYjvHzWB-l62tKM",{<br/> "botId": "x1659503658437",{<br/>  "userId": "x1659503658437_jolly@example.com",{<br/> "event": "USER_UPDATE",{<br/> "source": "SYSTEM",{<br/> "payload": {{<br/> "newPayload": {{<br/> "city": "Mysore"{<br/> },{<br/> "oldPayload": {{<br/> "city": "Bengaluru"{<br/> },{<br/> "timestamp": 1666353518569,{<br/> "userId": "jolly@example.com"{<br/> },{<br/> "createdAt": "2022-10-21T11:58:40.000Z",{<br/> "updatedAt": "2022-10-21T11:58:40.000Z",{<br/> "deletedAt": null{<br/> }
-USER_DELETE | When a user record is updated in (CDP) DB through any of the following operations: <br/> - Single User Updation in UI<br/> - Bulk User Deletion from UI<br/> - User Deletion during MERGE<br/> - User Deletion through API | {<br/>    "user": {<br/>        "firstName": "kumar",    <br/>        "userName": "sasi",<br/>        "userId": "10"<br/>    },<br/>    "userId": "10",<br/>    "timestamp": 1657713515000<br/>  }
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Description</th>
+      <th>Sample payload</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_CREATE</td>
+      <td>
+        When a user record is created in (CDP) DB through any of the following operations:<br />
+        - Single User Creation in UI<br />
+        - User Creation through Builder<br />
+        - User Creation through API<br />
+        - User Creation through CSV Import
+      </td>
+      <td>
+        <pre><code>
+{`{
+    "id": "IN5TK-OyZekJUT2xldP1J",
+    "botId": "x1659503658437",
+    "userId": "x1659503658437_jolly@example.com",
+    "event": "USER_CREATE",
+    "source": "SYSTEM",
+    "payload": {
+        "timestamp": 1666340842464,
+        "user": {
+            "firstName": "Jolly",
+            "gender": "FEMALE",
+            "profileComplete": "17.65",
+            "userId": "jolly@example.com"
+        },
+        "userId": "jolly@example.com"
+    },
+    "createdAt": "2022-10-21T08:27:23.000Z",
+    "updatedAt": "2022-10-21T08:27:23.000Z",
+    "deletedAt": null
+}`}
+        </code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>USER_UPDATE</td>
+      <td>
+        When a user record is updated in (CDP) DB through the following operations:<br />
+        - Single User Updation in UI<br />
+        - User Updation through Builder<br />
+        - User Updation through API<br />
+        - User Updation through CSV Import
+      </td>
+      <td>
+        <strong>Setting an unset field:</strong>
+        <pre><code>
+{`{
+    "id": "5IjS7mCLBEWehufVSa3Jj",
+    "botId": "x1659503658437",
+    "userId": "x1659503658437_jolly@example.com",
+    "event": "USER_UPDATE",
+    "source": "SYSTEM",
+    "payload": {
+        "newPayload": {
+            "city": "Bengaluru",
+            "country": "IN",
+            "lastName": "Harsha",
+            "profileComplete": "35.29"
+        },
+        "oldPayload": {
+            "city": null,
+            "country": null,
+            "lastName": null,
+            "profileComplete": "17.65"
+        },
+        "timestamp": 1666352773812,
+        "userId": "jolly@example.com"
+    },
+    "createdAt": "2022-10-21T11:46:15.000Z",
+    "updatedAt": "2022-10-21T11:46:15.000Z",
+    "deletedAt": null
+}`}
+        </code></pre>
+        <strong>Updating an already set field:</strong>
+        <pre><code>
+{`{
+    "id": "O0-AanNYjvHzWB-l62tKM",
+    "botId": "x1659503658437",
+    "userId": "x1659503658437_jolly@example.com",
+    "event": "USER_UPDATE",
+    "source": "SYSTEM",
+    "payload": {
+        "newPayload": {
+            "city": "Mysore"
+        },
+        "oldPayload": {
+            "city": "Bengaluru"
+        },
+        "timestamp": 1666353518569,
+        "userId": "jolly@example.com"
+    },
+    "createdAt": "2022-10-21T11:58:40.000Z",
+    "updatedAt": "2022-10-21T11:58:40.000Z",
+    "deletedAt": null
+}`}
+        </code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>USER_DELETE</td>
+      <td>
+        When a user record is updated in (CDP) DB through any of the following operations:<br />
+        - Single User Updation in UI<br />
+        - Bulk User Deletion from UI<br />
+        - User Deletion during MERGE<br />
+        - User Deletion through API
+      </td>
+      <td>
+        <pre><code>
+{`{
+    "user": {
+        "firstName": "kumar",
+        "userName": "sasi",
+        "userId": "10"
+    },
+    "userId": "10",
+    "timestamp": 1657713515000
+}`}
+        </code></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Custom events
 

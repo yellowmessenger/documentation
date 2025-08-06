@@ -31,7 +31,7 @@ sidebar_label: SMS template
    Sender ID | Provide the number from which you want to send the SMS. For example, you can use a numeric ID like 12345 or a custom name such as MYSHOP. For example, this could be a numeric identifier like 9876543210 or a custom alphanumeric ID such as MYSHOP.
    Template ID | Template ID associated with the SMS message. <br/>For Indian numbers, this identifier is mandated by the DLT (Distributed Ledger Technology) platform to comply with local regulations. It is a numeric value with length between 12 and 19 characters. You can find this against the template from the DLT portal of the brand. <br/> However, for numbers in other regions, such as the US, this may not apply. In such cases, you can input any value or leave it blank, depending on the provider's specifications. Requirements may vary across geographies, so it's best to confirm with the Engage/Channels team for region-specific guidelines.
    Language | Choose the language of the message.
-   Body text | Enter the message body. To add variables such as verification code, payment links, or first name, use {{ }}. For Example: {{CustName}}<br/>To create a new variable, use the structure {{*variable_name_comes_here*}} - i.e., the variable name between double curly brackets.
+   Body text | Enter the message body. To add variables such as verification code, payment links, or first name, use `{{ }}`. For Example: `{{CustName}}`<br/>To create a new variable, use the structure `{{*variable_name_comes_here*}}` - i.e., the variable name between double curly brackets.
 
    ![](https://cdn.yellowmessenger.com/VfiEBNhwk6IM1649261672637.png)
 
@@ -126,7 +126,7 @@ Common details that will be expected during the DLT registration are:
 
 You can create the DLT account with your preferred telecom provider.
 
-Search Google for <_telecom_name DLT registration_> (e.g, Airtel DLT registration) or refer to relevant link below. Follow the steps as directed by the selected telecom operator.
+Search Google for `<_telecom_name DLT registration_>` (e.g, Airtel DLT registration) or refer to relevant link below. Follow the steps as directed by the selected telecom operator.
 
 1. [Airtel](https://dltconnect.airtel.in/signup/)
 2. [Jio](https://trueconnect.jio.com/#/home/entity-registration)

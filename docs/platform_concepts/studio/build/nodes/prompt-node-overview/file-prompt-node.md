@@ -32,8 +32,8 @@ To configure File promot node, follow these steps:
     * **Restrict invalid file upload**: Enable this option to restrict the inavlid file upload.
     * **Maximum size (in MB)**: Set the file size. The maximum file size is 20 MB.
     * **Supported types**: Select the file formats that the AI-agent should accept. If you do not select a file format that matches the uploaded file, the AI-agent will display an "invalid file format" message. For example, if you select JPG, PNG, and PDF as supported formats, but the user uploads a GIF or MP4, the AI-agent will display a message that the file format is invalid.
-    * **Safeguard uploaded file**: Select this option to encrypted file paths instead of public URLs for secure data access. Both file name and file path will be captured.<br/> To access file name use, {{{variables.selected_variable.fileName}}}<br/>To access file path use,
-{{{variables.selected_variable.filePath}}}
+    * **Safeguard uploaded file**: Select this option to encrypted file paths instead of public URLs for secure data access. Both file name and file path will be captured.<br/> To access file name use, `{{{variables.selected_variable.fileName}}}`<br/>To access file path use,
+`{{{variables.selected_variable.filePath}}}`
    * **Capture uploaded file name**: Enable this option to display the uploaded file name.
 
      <img src="https://imgur.com/AHBK12E.png" alt="drawing" width="70%"/>

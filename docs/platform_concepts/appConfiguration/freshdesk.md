@@ -139,10 +139,10 @@ This action updates a single ticket.
 | Name             | Name of the user (e.g., John Doe)                       | String |
 | Phone            | Mobile number of the user (e.g., 9999999999)            | String |
 | Priority         | Priority level of the ticket (Low: 1, Medium: 2, High: 3, Urgent: 4) | Number |
-| Source           | Source of the ticket (Email: 1, Portal: 2, Phone: 3, Chat: 7, Feedback Widget: 9, Outbound Email: 10) | Number |
+| Source           | Source of the ticket Email: 1, Portal: 2, Phone: 3, Chat: 7, Feedback Widget: 9, Outbound Email: 10 | Number |
 | Status           | Status of the ticket (Open: 2, Pending: 3, Resolved: 4, Closed: 5) | Number  |
 | Tags             | Tags associated with the ticket (e.g., ["login failure", "system issue"]) | Array   |
-| Custom Fields    | Custom fields and their values (e.g., {"key1": "value1", ...}) | Object Type (Ensure key names are prefixed with "cf_") |
+| Custom Fields    | Custom fields and their values (e.g., `{"key1": "value1", ...}`) | Object Type (Ensure key names are prefixed with "cf_") |
 | Email Config ID  | Email configuration ID                                  | Number |
 | Description      | Description of the ticket                               | String |
 | Group ID         | Group ID associated with the ticket                     | Number |
@@ -337,7 +337,7 @@ This action allows the user to update multiple tickets.
 | Status             | Status of the ticket (Possible values: 2, 3, 4, 5, 6, 7)                                        | Number              |
 | Type               | Type of the ticket                                                                             | String              |
 | Product ID         | ID of the product to be associated with the ticket                                              | Number              |
-| Custom Fields      | Key-value pairs containing the names and values of custom fields. Ensure keys are prefixed with `cf_` (e.g., {"cf_key1": "value1", ...})        | Object              |
+| Custom Fields      | Key-value pairs containing the names and values of custom fields. Ensure keys are prefixed with `cf_` (e.g., `{"cf_key1": "value1", ...}`)        | Object              |
 | Tags               | Array of strings representing tags associated with the ticket                                   | Array of strings    |
 | Internal Agent Id  | ID of the internal agent to whom the ticket should be assigned                                   | Number              |
 | Internal Group Id  | ID of the internal group to which the ticket should be assigned                                 | Number              |

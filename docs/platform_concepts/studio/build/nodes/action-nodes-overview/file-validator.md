@@ -32,11 +32,11 @@ To configure file validator node, follow these steps:
      ![](https://imgur.com/s1GtI5X.png)
    
 3. Enable **Advanced options** and define the following fields:
-    * **Restrict invalid file upload**: Enable this option to restrict the inavlid file upload.
+    * **Restrict invalid file upload**: Enable this option to restrict the invalid file upload.
     * **Maximum size (in MB)**: Set the file size. The maximum file size is 20 MB.
     * **Supported types**: Select the supported file type formats.
-    * **Safeguard uploaded file**: Select this option to encrypted file paths instead of public URLs for secure data access. Both file name and file path will be captured.<br/> To access file name use, {{{variables.selected_variable.fileName}}}<br/>To access file path use,
-{{{variables.selected_variable.filePath}}}
+    * **Safeguard uploaded file**: Select this option to encrypted file paths instead of public URLs for secure data access. Both file name and file path will be captured.<br/> To access file name use, `{{{variables.selected_variable.fileName}}}`<br/>To access file path use,
+`{{{variables.selected_variable.filePath}}}`
    * Capture uploaded file name: Enable this option to display the uploaded file name.
 
      <img src="https://imgur.com/LU1cnA0.png" alt="drawing" width="70%"/>

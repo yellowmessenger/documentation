@@ -117,8 +117,7 @@ For example, you can set GPT 4.0 model in Staging environment and GPT 3.5 model 
 ## FAQ
 
 <details>
- <summary>Is an LLM Required to Use Yellow.ai?
-</summary>
+ <summary>Is an LLM Required to Use Yellow.ai?</summary>
  <div>
   <div> 
      No, a Large Language Model (LLM) is not required to use Yellow.ai. The platform offers a wide range of features and functionalities that work independently of LLM integration.<br/>

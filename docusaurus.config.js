@@ -59,8 +59,8 @@ module.exports = {
       logo: {
         alt: "yellow.ai",
         src: "img/Yai-logo-yellow.svg",
-        href: "/",
-        target: "_self",
+       // href: "/",
+       // target: "_self",
       },
       items: [
         {
@@ -134,7 +134,9 @@ module.exports = {
             anonymizeIP: true,
           },
         theme: {
-          customCss: require.resolve("./src/css/custom.module.css"),
+         
+          customCss: require.resolve("./src/css/custom.css"),
+          
         },
       },
     ],

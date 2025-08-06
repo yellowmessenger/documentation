@@ -10,10 +10,11 @@
     "serve": "docusaurus serve"
   },
   "engines": {
-    "npm": "^8.19.3",
-    "node": "^16.19.1"
+    "node": ">=18.0.0"
   },
   "dependencies": {
+    "@docsearch/css": "^3.9.0",
+    "@docsearch/react": "^3.9.0",
     "@docusaurus/core": "^3.8.1",
     "@docusaurus/plugin-google-analytics": "^3.8.1",
     "@docusaurus/preset-classic": "^3.8.1",
@@ -22,8 +23,8 @@
     "docusaurus-preset-openapi": "^0.7.6",
     "html-minifier-terser": "^5.1.1",
     "path": "^0.12.7",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "react-player": "^2.7.2",
     "reading-time": "^1.2.0",
     "remixicon": "^2.5.0",

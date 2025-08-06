@@ -179,7 +179,7 @@ In cloud bots, we can resolve email tickets if the ticket has been raised by a p
 
 ```
 
-4. **Get the Initiator Email**: Extract the user email ID from the event using `{{{data.event.emailThread.initiatorMail}}}'.
+4. **Get the Initiator Email**: Extract the user email ID from the event using `{{{data.event.emailThread.initiatorMail}}}`.
 5. **Check for Spam Email**: Compare the extracted email ID with your spam emails list. If the email is in the spam list, proceed to resolve the email ticket.
 6. Resolve the Email Ticket:
 

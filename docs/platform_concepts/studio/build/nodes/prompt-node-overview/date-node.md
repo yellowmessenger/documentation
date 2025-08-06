@@ -2,7 +2,8 @@
 title: Date node
 sidebar_label: Date
 ---
-
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
      
 Date node allows you to select a date or time through an interactive calendar widget within a conversation. When you select a date using the picker, the system validates the input. If the date or time is invalid, a custom validation failure message is displayed. This node is used to get the accurate date or time inputs to reduce the chances of errors in manual input.
 
