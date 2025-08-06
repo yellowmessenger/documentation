@@ -38,9 +38,10 @@ app.executeIntegrationAction({
 |--- |--- |--- |--- |
 |integrationName|Mandatory|To get this value, Go to cloud.yellow.ai-> Integration -> search for require integration ->connect it using your creds-> Go to flow -> add flow for integration ->Click on integration action node -> Copy the integration name from the card-> replace first caps letter to small.|payu-payment-gateway|
 |action|Mandatory|Go to flow -> click on integration card -> copy the action name from drop down|Generate Payment Link|
-|dynamicParams|Mandatory|Select the action from integration card -> copy the field name as key(replace first caps letter in small) and value you can take from the user.|<code> {"amount":"1","productInfo":"testProduct","customerFirstName":”Test Customer","customerEmail":"test@test.com","customerMobileNumber":"9999999999","txnid": "123456789"}</code>|
+|dynamicParams|Mandatory|Select the action from integration card -> copy the field name as key(replace first caps letter in small) and value you can take from the user.|<code> `{"amount":"1","productInfo":"testProduct","customerFirstName":”Test Customer","customerEmail":"test@test.com","customerMobileNumber":"9999999999","txnid": "123456789"}`</code>|
 
 #### Success Response
+
 ```
 {
   "Transaction Id": "abaac3332",

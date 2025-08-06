@@ -304,5 +304,5 @@ When the validation fails, the utterance is saved in the default table along wit
 * Language
 * Translated Message
 * Date & Time (of the call initiation)
-* Issue [UIU / Intent Missing - {{Intent name}}] 
+* Issue `[UIU / Intent Missing - {{Intent name}}]` 
 

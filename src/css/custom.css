@@ -1,647 +1,342 @@
-/**
- * custom.css
- *
- * This is the reverted version of the global styles for your Docusaurus portal,
- * based on the Apple/Google-inspired design.
- */
+/* File: src/css/custom.css */
 
-/* ==========================================================================
-   1. ROOT VARIABLES & THEME CONFIGURATION
-   ========================================================================== */
-
+/* ================== ROOT VARIABLES ================== */
+/* A clean, professional color palette inspired by Google and Apple */
 :root {
-  /* --- Primary Colors (Professional Blue) --- */
-  --ifm-color-primary: #0052EA;
-  --ifm-color-primary-dark: #0045c4;
-  --ifm-color-primary-darker: #003dae;
-  --ifm-color-primary-darkest: #00318f;
-  --ifm-color-primary-light: #2e70ee;
-  --ifm-color-primary-lighter: #4782f1;
-  --ifm-color-primary-lightest: #85abf6;
-
-  /* --- Semantic Colors --- */
-  --ifm-color-danger: #D92D20;
-  --ifm-color-success: #039855;
-  --ifm-color-info: #007ed4;
-  --ifm-color-warning: #F79009;
-
-  /* --- Custom Brand & UI Colors --- */
-  --ifm-color-text-base: #1d1d1f; /* Apple-inspired off-black */
-  --ifm-color-text-secondary: #52525B;
-  --ifm-primary-button-color: var(--ifm-color-primary);
-  --ifm-footer-bg-color: #0c111d;
-
-  /* --- Links --- */
-  --ifm-link-color: var(--ifm-color-primary);
-  --ifm-link-hover-color: var(--ifm-color-primary-dark);
-
-  /* --- Typography --- */
-  --ifm-font-family-base: "Nunito", sans-serif;
-  --ifm-font-family-heading: "Nunito", sans-serif;
-  --ifm-font-family-monospace: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", monospace;
-  --ifm-code-font-size: 90%;
-  --ifm-h1-font-size: 2.25rem; 
-  --ifm-h2-font-size: 1.75rem;
-  --ifm-line-height-base: 1.65;
-  --ifm-doc-sidebar-width: 280px;
-
-  /* --- Layout & Spacing --- */
-  --ifm-container-width-xl: 1440px;
-  --ifm-doc-horizontal-spacing: 2rem; /* 32px */
-
-  /* --- Component Backgrounds --- */
-  --ifm-background-color: #ffffff;
-  --ifm-background-surface-color: #f9fafb;
-  --ifm-background-surface-color-secondary: #f3f4f6;
-
-  /* --- Component-Specific Styles --- */
-  --ifm-navbar-background-color: #ffffff;
-  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
-  --ifm-menu-color: #52525B;
-  --ifm-menu-color-active: var(--ifm-link-color);
-  --ifm-menu-color-background-active: #eef2ff;
-  --ifm-menu-color-background-hover: #f8fafc;
+  --font-primary: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  --color-text: #212121;
+  --color-text-subtle: #666;
+  --color-accent: #155de0;
+  --color-accent-hover: #0a46b5;
+  --color-logo-yellow: #ffc900;
+  --color-bg: #ffffff;
+  --color-divider: #e5e5e5;
+  --color-subtle-bg: #f8f8f8;
+  --ifm-navbar-background-color: var(--color-bg);
+  --ifm-toc-padding-vertical: 0.5rem;
+  --ifm-toc-padding-horizontal: 1rem;
 }
 
-/* ==========================================================================
-   2. DARK THEME OVERRIDES
-   ========================================================================== */
-
-html[data-theme="dark"] {
-  --ifm-color-primary: #60a5fa;
-  --ifm-background-color: #0c111d;
-  --ifm-background-surface-color: #1f2937;
-  --ifm-background-surface-color-secondary: #374151;
-  --ifm-navbar-background-color: #0c111d;
-  --ifm-heading-color: #f9fafb;
-  --ifm-color-text-base: #d1d5db;
-  --ifm-color-text-secondary: #9ca3af;
-  --ifm-blockquote-color: #9ca3af;
-  --ifm-code-background: #374151;
-  --ifm-code-color: #f3f4f6;
-  --ifm-link-color: #60a5fa;
-  --ifm-link-hover-color: #93c5fd;
-  --ifm-menu-color: #a9b7c6;
-  --ifm-menu-color-background-active: #334155;
-  --ifm-menu-color-background-hover: #1e293b;
-}
-
-html[data-theme="dark"] .admonition h5 {
-  color: var(--ifm-heading-color);
-}
-
-
-/* ==========================================================================
-   3. BASE & TYPOGRAPHY
-   ========================================================================== */
-
-/* Prevents padding and borders from causing horizontal overflow */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+/* ================== GENERAL TYPOGRAPHY ================== */
 
 body {
-  font-family: var(--ifm-font-family-base);
-  color: var(--ifm-color-text-base);
-  overflow-x: hidden; /* Safeguard against horizontal scroll */
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  line-height: 1.8;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ifm-font-family-heading);
-  font-style: normal;
-  color: var(--ifm-heading-color);
+  font-family: var(--font-primary);
+  font-weight: 500; /* Corrected from 55 0 */
+  color: var(--color-text);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
 }
 
-h1 { font-weight: 600; letter-spacing: -0.025em; font-size: var(--ifm-h1-font-size); }
-h2 { font-weight: 700; letter-spacing: -0.02em; font-size: var(--ifm-h2-font-size); }
-h3 { font-weight: 600; letter-spacing: -0.01em; }
-
-p, li, table th, table td {
-  font-size: 16px;
-  line-height: var(--ifm-line-height-base);
+h1 {
+  font-size: clamp(2rem, 4.5vw, 2.5rem);
 }
 
-p {
-  font-weight: 400;
-  margin-top: 1em;
-  color: var(--ifm-color-text-secondary);
+h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2rem);
 }
 
-.markdown a {
-  color: var(--ifm-link-color);
+a {
+  color: var(--color-accent);
   text-decoration: none;
-  font-weight: 500;
+  transition: color 0.2s ease-in-out;
 }
 
-.markdown a:hover {
+a:hover {
+  color: var(--color-accent-hover);
   text-decoration: underline;
 }
 
-code {
-  background: var(--ifm-background-surface-color-secondary);
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  padding: 0.2em 0.5em;
-  font-size: 0.9em;
-  font-family: var(--ifm-font-family-monospace);
-}
+/* ================== NAVBAR ================== */
 
-pre {
-  padding: 1.25rem;
-  border-radius: 8px;
-  border: 1px solid var(--ifm-color-emphasis-300);
-}
-
-pre code {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 14px;
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-
-/* ==========================================================================
-   4. LAYOUT & MAIN COMPONENTS
-   ========================================================================== */
-
-[class*="docItemCol_"] {
-  padding-left: var(--ifm-doc-horizontal-spacing);
-  padding-right: var(--ifm-doc-horizontal-spacing);
-}
-
-[class*="docItemContainer_"] {
-  max-width: 860px;
-  margin: 0 auto;
-}
-
-.toc-wrapper {
-  width: 240px;
-}
-
-.footer,
-.theme-doc-footer-tags-row {
-  display: none;
-}
-
-/* ==========================================================================
-   5. NAVBAR
-   ========================================================================== */
-
-/* This more specific selector prevents the blue line from appearing under tabs */
-.navbar .navbar__link--active::before {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: var(--ifm-color-primary);
-  position: absolute;
-  bottom: -20px;
-  border-radius: 10px;
-}
-
-/* ==========================================================================
-   6. SIDEBAR MENU & TABLE OF CONTENTS (REDESIGNED)
-   ========================================================================== */
-
-nav[class*="menu_"] {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.menu__list-item .menu__link {
-  border-radius: 6px;
-  padding: 0.5rem 1.5rem;
-  margin: 0.1rem 0;
-  display: block;
-  border-left: 3px solid transparent;
-}
-
-.menu__link {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--ifm-menu-color);
+.navbar {
+  z-index: 1000;
+  background-color: var(--ifm-navbar-background-color);
+  position: sticky;
+  top: 0;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu__link:hover {
-  background-color: var(--ifm-menu-color-background-hover);
-  color: var(--ifm-color-text-base);
-}
-
-.menu__link--active {
-  color: var(--ifm-link-color) !important;
-  background-color: var(--ifm-menu-color-background-active) !important;
-  font-weight: 600;
-  border-left-color: var(--ifm-color-primary);
-}
-
-.menu__list-item-collapsible > .menu__link {
-  font-weight: 700;
-  color: var(--ifm-color-text-base);
-  font-size: 15px;
-  margin-top: 1rem;
-}
-
-.menu__list .menu__list .menu__link {
-  padding-left: 2.5rem;
-}
-
-.menu__list .menu__list .menu__list .menu__link {
-  padding-left: 3.5rem;
-}
-
-.menu__caret {
-  margin-left: auto;
-}
-
-.menu__caret::before {
-  background-size: 1rem 1rem; /* Smaller arrow icon */
-}
-
-
-/* ==========================================================================
-   7. ADMONITIONS
-   ========================================================================== */
-
-.admonition {
-  border-radius: 8px;
-  border-left-width: 4px;
-  padding: 1rem 1.5rem;
-}
-
-.admonition-heading h5 {
-  font-weight: 600;
-}
-
-.admonition-tip {
-  background: #F0FDF4;
-  border-color: var(--ifm-color-success);
-}
-.admonition-tip .admonition-heading h5 {
-  color: #15803D;
-}
-
-.admonition-info {
-  background: #EFF6FF;
-  border-color: #60A5FA;
-}
-.admonition-info .admonition-heading h5 {
-  color: #1E40AF;
-}
-
-.admonition-note {
-  background: #FFFBEB;
-  border-color: var(--ifm-color-warning);
-}
-.admonition-note .admonition-heading h5 {
-  color: #B45309;
-}
-
-html[data-theme="dark"] .admonition-note {
-  background-color: rgba(247, 144, 9, 0.1);
-  border-color: var(--ifm-color-warning);
-}
-
-html[data-theme="dark"] .admonition-note .admonition-heading h5 {
-    color: #FCD34D;
-}
-
-/* ==========================================================================
-   8. FAQs & DETAILS (Collapsibles)
-   ========================================================================== */
-
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
-  background-color: var(--ifm-background-surface-color);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  box-shadow: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module:hover {
-  border-color: var(--ifm-color-emphasis-300);
-  transform: translateY(-2px);
-  box-shadow: var(--ifm-global-shadow-lw);
-}
-
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module summary {
-  padding: 1.25rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--ifm-heading-color);
-  cursor: pointer;
-  outline: none;
-}
-
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module .collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
-    padding: 0 1.25rem 1.25rem 1.25rem;
-    color: var(--ifm-color-text-secondary);
-}
-
-.theme-doc-markdown .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module summary::before {
-  --docusaurus-details-decoration-color: var(--ifm-color-text-secondary);
-  top: 1.35rem;
-}
-
-/* ==========================================================================
-   9. VIDEO TUTORIALS PAGE
-   ========================================================================== */
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.video-card {
+.navbar__brand {
   display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  background-color: var(--ifm-card-background-color);
-  border-radius: 12px;
-  border: 1px solid var(--ifm-color-emphasis-300);
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.navbar__brand img {
+  max-height: 40px;
+  width: auto;
+}
+
+.navbar__items {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-wrap: nowrap; /* Keep links on a single line on desktop */
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  min-width: 0;
+  justify-content: flex-end;
+}
+
+.navbar__item {
+  font-weight: 500;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: max-content;
+}
+
+.navbar__link {
+  color: var(--color-text);
+  transition: color 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar__link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Style for the active navigation link */
+.navbar__link.navbar__link--active {
+  color: var(--color-accent);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 2px;
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-.video-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.07);
+/* Search bar enhancement */
+.DocSearch-Button {
+  height: 40px;
+  width: 250px;
+  font-size: 0.95rem;
+  padding: 0 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-divider);
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
-.video-embed-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  background-color: #000;
-}
-
-.video-embed-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.video-card-content {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.video-card-title {
-  font-size: 1.125rem;
+/* CTA BUTTON */
+.cta-button {
+  background-color: var(--color-accent);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
   font-weight: 600;
-  margin: 0 0 0.5rem 0;
-  color: var(--ifm-heading-color);
+  transition: background-color 0.2s ease;
+  margin-left: 0.5rem;
+  white-space: nowrap;
 }
 
-.video-card-description {
-  font-size: 0.9rem;
-  color: var(--ifm-color-text-secondary);
-  line-height: 1.6;
-  margin: 0;
+.cta-button:hover {
+  background-color: #155de0;
 }
 
-/* ==========================================================================
-   10. IN-ARTICLE CARDS
-   ========================================================================== */
+/* ================== MOBILE NAV ================== */
 
-.in-article-card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
+/* Hide desktop nav and show toggle button on small screens */
+@media (max-width: 996px) {
+  .navbar__items {
+    display: none;
+  }
+  
+  .navbar__toggle {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
 
-@media (max-width: 768px) {
-  .in-article-card-grid {
-    grid-template-columns: 1fr;
+  .mobile-menu-active {
+    display: block;
+    position: fixed;
+    top: var(--ifm-navbar-height);
+    left: 0;
+    width: 75%;
+    height: calc(100% - var(--ifm-navbar-height));
+    background: var(--color-bg);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 2000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mobile-menu-active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu a {
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-divider);
+  }
+
+  .mobile-menu a:hover {
+    color: var(--color-accent);
   }
 }
 
-/* ==========================================================================
-   11. FEEDBACK COMPONENT
-   ========================================================================== */
-
-.feedbackFooter__cont {
-  width: 100%;
-  margin: 4rem auto 2rem auto;
-  display: flex;
-  justify-content: center;
+/* Hide the mobile menu toggle on larger screens */
+@media (min-width: 997px) {
+  .navbar__toggle {
+    display: none;
+  }
 }
 
-.feedbackFooter__content {
-  max-width: 500px;
-  width: 100%;
-  background: var(--ifm-background-surface-color);
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 16px;
+/*
+  Fix for the homepage where the navbar links were hidden.
+  This ensures the homepage mobile toggle and links are visible.
+*/
+@media (max-width: 996px) {
+  .homepage .navbar__toggle {
+    display: block;
+  }
+}
+
+/* ================== HOMEPAGE COMPONENTS ================== */
+
+.homeHeroTitle {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1.1;
+}
+
+.homeHeroSubtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-subtle);
+  max-width: 700px;
+  margin: 1rem auto;
+}
+
+.homeCard {
+  background-color: var(--color-subtle-bg);
+  border: 1px solid var(--color-divider);
+  border-radius: 8px;
   padding: 2rem;
-  text-align: center;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.feedbackFooter__content h3 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.125rem;
+.homeCard:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+}
+
+.homeCardTitle {
   font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
-.feedbackButtons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+/* ================== TABLE OF CONTENTS ================== */
+
+.table-of-contents, .table-of-contents ul {
+  font-size: 15px;
 }
 
-.feedbackButtons button {
-  background-color: transparent;
-  border: 2px solid var(--ifm-color-emphasis-300);
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+.table-of-contents a {
+  color: var(--color-text-subtle);
 }
 
-.feedbackButtons button i {
-  font-size: 1.5rem;
+.table-of-contents a:hover {
+  color: var(--color-accent);
 }
 
-.feedbackButtons button:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--ifm-global-shadow-md);
-}
-
-.feedbackButtons button#liked_docs:hover {
-  background-color: var(--ifm-color-success);
-  border-color: var(--ifm-color-success);
-  color: #fff;
-}
-
-.feedbackButtons button#disliked_docs:hover {
-  background-color: var(--ifm-color-danger);
-  border-color: var(--ifm-color-danger);
-  color: #fff;
-}
-
-.feedbackThanks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  color: var(--ifm-color-success);
-}
-
-.feedbackThanks h3 {
-  font-size: 1.25rem;
+.table-of-contents a.table-of-contents__link--active {
   font-weight: 600;
-  margin: 0;
+  color: var(--color-accent);
 }
 
-/* ==========================================================================
-   12. API REFERENCE PAGE STYLES (PROFESSIONAL REDESIGN)
-   ========================================================================== */
+/* ================== OTHER ELEMENTS ================== */
 
-.theme-api-markdown {
-  font-family: "Nunito", sans-serif !important;
-}
-
-.theme-api-markdown h1,
-.theme-api-markdown h2,
-.theme-api-markdown h3,
-.theme-api-markdown h4 {
-  font-family: "Nunito", sans-serif !important;
-  font-weight: 700;
-  color: #111827;
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 0.75rem;
-  margin-bottom: 1.5rem;
-  margin-top: 2.5rem;
-}
-
-.theme-api-markdown p,
-.theme-api-markdown li {
-  line-height: 1.65;
-  font-size: 16px;
-  color: #374151;
-}
-
-.theme-api-markdown table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  font-size: 0.925rem;
-}
-
-.theme-api-markdown th,
-.theme-api-markdown td {
-  padding: 1rem;
-  text-align: left;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.theme-api-markdown th {
-  background-color: transparent;
-  font-weight: 600;
-  color: #6b7280;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.theme-api-markdown td {
-  vertical-align: top;
-}
-
-.theme-api-markdown code {
-  font-family: var(--ifm-font-family-monospace);
-  background-color: #f3f4f6;
-  color: #374151;
-  border-radius: 6px;
-  padding: 0.25em 0.5em;
-  font-size: 0.9em;
-  border: 1px solid #e5e7eb;
-}
-
-.theme-api-markdown strong {
-  font-weight: 600;
-  color: #111827;
-}
-
-.theme-api-markdown strong[style*="--openapi-required"] {
-  color: #b91c1c;
-  font-size: 0.8rem;
-  font-weight: 700;
-  border: 1px solid #fca5a5;
-  background-color: #fef2f2;
-  padding: 2px 6px;
+pre, code {
+  font-family: 'Fira Code', 'Roboto Mono', monospace;
+  background-color: #f5f5f5;
   border-radius: 4px;
-  margin-left: 0.5rem;
 }
 
-.theme-api-markdown span[style*="opacity:0.6"] {
-  color: #6b7280;
+/* Corrected table styling for responsiveness */
+.markdown table {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: auto;
+  display: block;
 }
 
-/* ==========================================================================
-   13. DARK MODE API STYLES
-   ========================================================================== */
+/* ================== DOCUMENTATION LAYOUT FIXES ================== */
 
-html[data-theme="dark"] .theme-api-markdown {
-  background-color: var(--ifm-background-color);
-  color: var(--ifm-color-text-base);
+.main-wrapper {
+  padding-left: var(--ifm-spacing-horizontal);
+  padding-right: var(--ifm-spacing-horizontal);
 }
 
-html[data-theme="dark"] .theme-api-markdown h1,
-html[data-theme="dark"] .theme-api-markdown h2,
-html[data-theme="dark"] .theme-api-markdown h3,
-html[data-theme="dark"] .theme-api-markdown h4 {
-  color: var(--ifm-heading-color);
-  border-bottom-color: #374151;
+.theme-doc-sidebar-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-html[data-theme="dark"] .theme-api-markdown p,
-html[data-theme="dark"] .theme-api-markdown li {
-  color: var(--ifm-color-text-secondary);
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-html[data-theme="dark"] .theme-api-markdown th {
-  color: #9ca3af;
-  border-bottom-color: #374151;
+@media (max-width: 996px) {
+  .theme-doc-sidebar-container {
+    display: none;
+  }
 }
 
-html[data-theme="dark"] .theme-api-markdown td {
-  border-top-color: #374151;
+.docItemContainer_Djhp {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-html[data-theme="dark"] .theme-api-markdown code {
-  background-color: #374151;
-  color: #f3f4f6;
-  border-color: #4b5563;
+@media (max-width: 996px) {
+  .docItemContainer_Djhp {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
-html[data-theme="dark"] .theme-api-markdown strong {
-  color: #f9fafb;
+/* ================== SEARCH MODAL ANIMATION ================== */
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-html[data-theme="dark"] .theme-api-markdown strong[style*="--openapi-required"] {
-  color: #fca5a5;
-  background-color: rgba(239, 68, 68, 0.1);
-  border-color: rgba(239, 68, 68, 0.2);
+.DocSearch-Modal {
+  animation: fadeInScale 0.3s ease-out forwards;
 }
 
-html[data-theme="dark"] .theme-api-markdown span[style*="opacity:0.6"] {
-  color: #9ca3af;
+.DocSearch-Container .DocSearch-Backdrop {
+  transition: opacity 0.3s ease;
 }

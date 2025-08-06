@@ -32,12 +32,12 @@ Once the call is initiated, these voice agent variables (global variables) are a
 
 | Format | Datatype| Description|
 | -------- | -------- | -------- |
-|{{{data.call_sid}}} | String | A unique identifier assigned to each voice call | 
-| {{{data.recording_url}}} | String | The downloadable URL of the ongoing call |  
-| {{{data.from}}} |String| The phone number the call was made from| 
-| {{{data.to}}} | String| The phone number the voice agent called | 
-| {{{data.direction}}}|String | Inbound or outbound call| 
-| {{{data.detected_language}}}| String | The language of the conversation that was identified (only present when auto-detect option is enabled)| 
+|`{{{data.call_sid}}}` | String | A unique identifier assigned to each voice call | 
+| `{{{data.recording_url}}}` | String | The downloadable URL of the ongoing call |  
+| `{{{data.from}}}` |String| The phone number the call was made from| 
+| `{{{data.to}}}` | String| The phone number the voice agent called | 
+| `{{{data.direction}}}` |String | Inbound or outbound call| 
+| `{{{data.detected_language}}}` | String | The language of the conversation that was identified (only present when auto-detect option is enabled)| 
 
 ----
 
@@ -49,8 +49,8 @@ Additional details are only obtained after the [callback event](https://docs.yel
 
 | Format | Datatype| Description|
 | -------- | -------- | -------- |
-|{{variables.EVENT_DATA.duration}} |String|  The total duration of the call, including ring time, agent transfer, etc.|
-| {{variables.EVENT_DATA.voice_bot_duration}}| String| The duration for which the voice agent was speaking|
-|{{variables.EVENT_DATA.voice_bot_bill_duration}} |String| The duration considered for billing purposes|
-|{{variables.EVENT_DATA.disconnected_by}}|String| The entity responsible for disconnecting the call (either Bot or User)|
-|{{variables.EVENT_DATA.status}}  | String| The call status (answered, not answered, or failed) |
+|`{{variables.EVENT_DATA.duration}}` |String|  The total duration of the call, including ring time, agent transfer, etc.|
+| `{{variables.EVENT_DATA.voice_bot_duration}}`| String| The duration for which the voice agent was speaking|
+| `{{variables.EVENT_DATA.voice_bot_bill_duration}}` |String| The duration considered for billing purposes|
+| `{{variables.EVENT_DATA.disconnected_by}}`|String| The entity responsible for disconnecting the call (either Bot or User)|
+| `{{variables.EVENT_DATA.status}}`  | String| The call status (answered, not answered, or failed) |

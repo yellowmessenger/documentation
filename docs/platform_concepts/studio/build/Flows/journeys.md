@@ -114,7 +114,7 @@ When a user wants to book a test drive, a Workflow is triggered within the conve
 
 Once the user provides the necessary details such as name, contact number, car model, preferred date, and location, the workflow is called to generate a booking ID using a function or logic node.
 
-The booking ID is then stored in an output variable (for example, {{{booking_id}}}) and displayed to the user in a confirmation message, such as:
+The booking ID is then stored in an output variable (for example, `{{{booking_id}}})` and displayed to the user in a confirmation message, such as:
 
 > Your test drive has been successfully booked. Your booking ID is: `{{{booking_id}}}`.
 

@@ -16,7 +16,7 @@ To see details of an existing user, follow these steps:
 
    <img src="https://i.imgur.com/Qkqryav.png" width="70%"/>
 
-You can see three boxes that correspond to {parameter}{operator}{value}.
+You can see three boxes that correspond to `{parameter}{operator}{value}`.
 
 * **Parameter**: The user property that you want to use to filter records (first box).
 * **Operator**: The condition that you want to define. It contains `Is known`, `Is not known`, `Is`, `Isn't`, `Contains`, and `Does not contain`. These values might differ based on the parameter selected.

@@ -66,19 +66,16 @@ Ensure that you have admin access to the Facebook business manager account.
   
 8. Select the existing business account that you want to migrate.
 
-    <img src="https://i.imgur.com/AOgCsrW.png
-  " alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/AOgCsrW.png" alt="drawing" width="40%"/>
 
 9. Enter the required details such as *Meta business*, *Business name*, *Business website or profile page*, and *Country* to create a new WABA account, and click **Next**.
 
-    <img src="https://i.imgur.com/VuuaWeV.png
-  " alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/VuuaWeV.png" alt="drawing" width="40%"/>
   
   
 10. Select your WhatsApp business profile and click **Next**.
 
-     <img src="https://i.imgur.com/h3r8EzA.png
-  " alt="drawing" width="40%"/>
+     <img src="https://i.imgur.com/h3r8EzA.png" alt="drawing" width="40%"/>
   
 11. You will see a dialog box is displayed to enter the phone number and OTP. Close the dialog box to proceed further.
 

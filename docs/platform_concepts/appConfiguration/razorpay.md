@@ -128,9 +128,9 @@ In the Automation flow builder, select the **Integrations** node and click **Raz
   |Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
   |Description|Test|String|A brief description of the payment link.|
   IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
-  |CustomerObject|{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },|Object|Customer details|
-  |Notes|{ "policy_name": "Jeevan Bima" }|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
-  |NotifyOptions|{ "email": true, "sms": true }|object|Defines who handles the payment link notifications.|
+  |CustomerObject `{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },` |Object|Customer details|
+  |Notes| `{ "policy_name": "Jeevan Bima" }`|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
+  |NotifyOptions| `{ "email": true, "sms": true }`|object|Defines who handles the payment link notifications.|
   CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a redirect URL to the payment link. Once a customer completes the payment, they will be redirected to the specified URL.|
   |CallbackMethod|get|String| If callback_url parameter is passed, callback_method must be passed with the value get.|
   |EnableRemindertrue||Boolean|This is used to send reminders for the payment link. Possible values:<br/> **true:** To send reminders.<br/> **false:** To disable reminders.<br/>
@@ -267,9 +267,9 @@ app.executeIntegrationAction({
   |Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
   |Description|Test|String|A brief description of the payment link.|
   IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
-  |CustomerObject|{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },|Object|Customer details|
-  |Notes|{ "policy_name": "Jeevan Bima" }|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
-  |NotifyOptions|{ "email": true, "sms": true }|object|Defines who handles the payment link notifications.|
+  |CustomerObject| `{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },`|Object|Customer details|
+  |Notes| `{ "policy_name": "Jeevan Bima" }`|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
+  |NotifyOptions| `{ "email": true, "sms": true }`|object|Defines who handles the payment link notifications.|
   CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a redirect URL to the payment link. Once a customer completes the payment, they will be redirected to the specified URL.|
   |CallbackMethod|get|String| If callback_url parameter is passed, callback_method must be passed with the value get.|
   |EnableRemindertrue||Boolean|This is used to send reminders for the payment link. Possible values:<br/> **true:** To send reminders.<br/> **false:** To disable reminders.<br/>

@@ -258,7 +258,7 @@ The below-mentioned table below consists of the sample value, data type, and des
 |TicketCategory|Growth|String|Category of the ticket|
 |TicketSubCategory|Marketing|String|Sub-category of the ticket|
 |TicketDescription|Test Description|String|HTML content of the ticket|
-|CustomFields|{custom_fields:{“this is a test”}}|Object|Key value pairs containing the names and values of custom fields|
+|CustomFields| `{custom_fields:{“this is a test”}}` |Object|Key value pairs containing the names and values of custom fields|
 
 
 

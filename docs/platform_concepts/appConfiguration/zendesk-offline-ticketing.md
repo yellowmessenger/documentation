@@ -45,7 +45,7 @@ To integrate Zendesk Offline Ticketing with Yellow.ai, follow these steps:
     ![](https://i.imgur.com/bs15t1e.png)
 
 3. In **API key**,  paste the API token you generated from Zendesk. 
-4. In **Domain name**, enter your Zendesk domain URL (example, https://yourcompany.zendesk.com).
+4. In **Domain name**, enter your Zendesk domain URL (example, `https://yourcompany.zendesk.com`).
 
 5. Enter the **User name** that you have copied from your Zendesk account.
 
@@ -55,7 +55,7 @@ To integrate Zendesk Offline Ticketing with Yellow.ai, follow these steps:
 
 ## Manage Zendesk tickets through AI Agent
 
-This integration allows your bot to perform actions such as [retrieving user information](#), [adding new users](https://), and [creating offline tickets](https://) in Zendesk. 
+This integration allows your bot to perform actions such as [get user information](#get-user-details), [adding new users](#add-user), and [creating offline tickets](#create-request) in Zendesk. 
 
 1. Navigate to **Automation** > **Node** > **Integrations** > **Zendesk**.
 

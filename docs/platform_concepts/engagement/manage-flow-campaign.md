@@ -7,7 +7,7 @@ sidebar_label: Manage Flow campaigns
 
 You can easily archive campaigns that are no longer active or relevant. Archiving allows you to keep your campaigns organized by removing unnecessary campaigns, while still retaining access to important data and analytics. 
 
-::note
+:::note
 You can archive campaigns in **Draft** and **Completed** status, but not Live or Scheduled campaigns.
 :::
 

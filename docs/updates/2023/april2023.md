@@ -10,7 +10,6 @@ featured: true
 
 <details>
 <summary>
-
 ### Studio
 
 </summary>
@@ -27,7 +26,6 @@ featured: true
 
 <details>
 <summary>
-
 ### Insights
 
 </summary>
@@ -41,7 +39,6 @@ featured: true
 
 <details>
 <summary>
-
 ### Engage 
 
 </summary>
@@ -63,7 +60,6 @@ featured: true
 
 <details>
 <summary>
-
 ### Channels
 
 </summary>
@@ -81,7 +77,6 @@ featured: true
 
 <details>
 <summary>
-
 ### Integration  
 
 </summary>
@@ -95,7 +90,6 @@ featured: true
 
 <details>
 <summary>
-
 ### Voice
 
 </summary>
@@ -114,7 +108,6 @@ featured: true
 
 <details>
 <summary>
-
 ### Inbox
 
 </summary>

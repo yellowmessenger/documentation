@@ -77,7 +77,7 @@ Once the integration is enabled, your AI Agent gains the ability to directly per
 
 To perform a specifc integration action via AI Agent:
 1. In Development/Staging environment, navigate to **Automation** > **Build** > Select the flow where you want to use an integration action.
-2. Click **Add node** > **Integrations** > {Integration Name}.
+2. Click **Add node** > **Integrations** > `{Integration Name}`.
 
    ![](https://i.imgur.com/lVzjJq5.png)
 

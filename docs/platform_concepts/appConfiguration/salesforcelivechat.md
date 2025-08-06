@@ -128,19 +128,18 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
    <img src="https://i.imgur.com/bfVBodc.png" alt="drawing" width="60%"/>
 
 
-The following table contains the details of each field in the **Raise ticket** node.
+### Raise Ticket Node — Field Details
 
-
-   | Field name | Sample value | Data type |Description
-   | -------- | -------- | -------- |-----|
-   |Message after ticket assignment|Requesting live agent connection.|String| The message that will be displayed to the end user after a ticket is successfully assigned to an agent|
-   |Name| Rajesh|String|Name of the user|
-   |Mobile| 9870000000| String|Mobile number of the user|
-   Email|test@gmail.com|String|Email address of the user
-   Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
-   Salesforce Live Chat Custom Fields|<pre lang="json"> [<br/> {<br/> "label": "Mobile",<br/>"value": "9999444443",<br/>"transcriptFields": [<br/>"Mobile_Number__c"<br/> ],<br/> "displayToAgent": true<br/>},<br/>{<br/>"label": "Chat",<br/>"value": "sessionURL",<br/>"transcriptFields": [<br/>"chat_transcript__c"<br/>],<br/>"displayToAgent": true<br/>}<br/>]</pre>|Array| The list of details provided by the user before initiating the chat with the live agent|
-   |Salesforce Live Chat Custom Entities|<pre lang="json">[<br/> {<br/> "entityName":"Contact",<br/>"saveToTranscript":"contact",<br/> "linkToEntityName":"Case",<br/>"linkToEntityField":"ContactId",<br/>"entityFieldsMaps":<br/>[<br/>{<br/>"fieldName":"LastName",   <br/> "label":"LastName",<br/>"doFind":true,<br/>"isExactMatch":true,<br/> "doCreate":true<br/>},<br/> {<br/>"fieldName":"FirstName",<br/> "label":"FirstName",<br/> "doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"Email",<br/>"label":"Email",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>}<br/> ]<br/>}<br/>]<br/></pre>|Array|The records created/ searched depending on what [EntityFieldsMaps](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#EntityFieldMaps) has enabled.
-   | Agent ID | agent_12345 | Srting | Unique ID of the agent that you want to assign to the bot user. This applies only when the Sticky Agent option is enabled.
+| Field Name                         | Sample Value                                                                                                         | Data Type | Description                                                                                                         |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------|
+| Message after ticket assignment   | Requesting live agent connection.                                                                                   | String    | The message that will be displayed to the end user after a ticket is successfully assigned to an agent             |
+| Name                              | Rajesh                                                                                                              | String    | Name of the user                                                                                                   |
+| Mobile                            | 9870000000                                                                                                           | String    | Mobile number of the user                                                                                           |
+| Email                             | test@gmail.com                                                                                                       | String    | Email address of the user                                                                                           |
+| Query                             | I have a concern regarding my flight ticket                                                                          | String    | The subject/topic/reason why the ticket was created                                                                 |
+| Salesforce Live Chat Custom Fields | ```json [ { "label": "Mobile", "value": "...", "transcriptFields": [...] }, { "label": "Chat", "value": "...", "transcriptFields": [...] } ] ``` | Array     | The list of details provided by the user before initiating the chat with the live agent                            |
+| Salesforce Live Chat Custom Entities | ```json [ { "entityName": "Contact", "saveToTranscript": "contact", ... } ] ```                                     | Array     | The records created/searched depending on what [`EntityFieldsMaps`](...) has enabled                              |
+| Agent ID                          | agent_12345                                                                                                          | String    | Unique ID of the agent to assign to the bot user. Applies only when Sticky Agent option is enabled                |
 
 **Advanced options**
 
@@ -149,25 +148,31 @@ The following table contains the details of each field in the **Raise ticket** n
 
 
 
-The following table contains the details of each field in the **Advanced options** section.
+### Advanced Options – Field Details
 
-| Field name   | Sample value  | Data type | Description |
-|----------------------------------------------------------|------------------------------------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message after agent assignment                           | You are now connected to {liveAgent}.                      | String    | This message is displayed to the end user when an agent is assigned, us the dynamic parameter{liveAgent} to display the name of the agent. |
-| Language preference                                      | English                                                    | String    | Language preferred by the end user to chat with the live agent.                                                                                                                                |
-| Message to display queue position                        | Your queue position is {position}                          | String    | This message is displayed to the user when the ticket is in queue, use the dynamic parameter {position} to display the position. |
-| Message to display updated queue position                | Your current queue position is {position}                  | String    | This message is displayed to the user when the queue position changes, use the dynamic parameter {position} to display the position. |
-| Message after agent transfer                             | Your chat has been transferred to {liveAgent}              | String    | This message is displayed to the end user when the chat gets transferred from one agent to another, use the dynamic parameter {liveAgent} to display the name of the agent. |
-| Message to display estimated wait time before agent assignment | The estimated wait time for the chat to get assigned is {waitTime} seconds | String | This message notifies the the user on the approximate time the user needs to wait before an agent is assigned, use the dynamic parameter {waitTime} to display the wait time. |
-| Display agent name                                       | true                                                       | Boolean   | Enable this flag will to display the chat agent's name if there's an assignment or transfer of the chat.                                                                                              |
-| Warning message to display after end user inactivity     | Idle warning                                               | String    | This message is displayed if the user is inactive.                                    |
-| Timeout message to display after end user inactivity     | Idle timeout                                               | String    | This message will be displayed to the user when the live chat ends because of their inactivity for a specific duration of time.                                                                    |
-| Message after failure in establishing connection         | Connection failure                                         | String    | This message will be displayed to the user when there is a failure in connecting with a live agent.                                                                                            |
-| Message after agent has disconnected from the chat       | Agent has disconnected                                     | String    | This message will be displayed to the user when their agent disconnects the chat. (This message will be displayed only if there are other active agents with the capacity to take new chats, otherwise, the message configured in the field **Message after failure in establishing connection** will be displayed) |
-| Message to display after chat ends due to agent inactivity | Agent timeout occurred                                     | String    | This message will be displayed to the user when the Agent Timeout value has been surpassed.   
-|Send chat transcript| **True** or **False** | Boolean |The Send chat transcript field allows you to send the conversation history between the end user and the bot as the initial message to the agent. Since this is a boolean field, pass the value **True** to send the chat transcript to the agent and if you don’t want to send the chat transcript to the agent, pass the value **False**.<br/><br/> Note: In cases where the entire transcript exceeds the character limit of a single message packet in Salesforce, the content will be divided and sent as multiple message packets. For example, if the chat transcript contains 8000 characters and the message packet limit is 4000 characters, the transcript will be divided into two packets of 4000 characters each and sent as separate messages to the agent.|
+| Field Name | Sample Value | Data Type | Description |
+|-----------|--------------|-----------|-------------|
+| Message after agent assignment | `You are now connected to {{liveAgent}}.` | String | Message shown to the end user when an agent is assigned. Use `{{liveAgent}}` to display the agent's name. |
+| Language preference | English | String | Language preferred by the end user to chat with the live agent. |
+| Message to display queue position | `Your queue position is {{position}}` | String | Message shown when the ticket is in queue. Use `{{position}}` to show current queue position. |
+| Message to display updated queue position | `Your current queue position is {{position}}` | String | Message shown when queue position updates. Use `{{position}}` to display the latest position. |
+| Message after agent transfer | `Your chat has been transferred to {{liveAgent}}` | String | Message shown when chat is transferred. Use `{{liveAgent}}` to show new agent's name. |
+| Message to display estimated wait time before agent assignment | `The estimated wait time for the chat to get assigned is {{waitTime}} seconds` | String | Notifies user about estimated wait time. Use `{{waitTime}}` to display the duration. |
+| Display agent name | true | Boolean | When enabled, displays the chat agent’s name on assignment or transfer. |
+| Warning message to display after end user inactivity | Idle warning | String | Message displayed if the user is inactive. |
+| Timeout message to display after end user inactivity | Idle timeout | String | Message shown when live chat ends due to user inactivity. |
+| Message after failure in establishing connection | Connection failure | String | Message shown when there is a failure connecting to a live agent. |
+| Message after agent has disconnected from the chat | Agent has disconnected | String | Message shown when agent disconnects. If no other agent is available, the fallback message from "failure in establishing connection" is used. |
+| Message to display after chat ends due to agent inactivity | Agent timeout occurred | String | Message shown when agent exceeds the configured inactivity threshold. |
+| Send chat transcript | **True** or **False** | Boolean | Whether to send conversation history to the agent. Pass **True** to send, **False** to skip. |
 
 
+:::note
+**For "Send chat transcript":**  
+If the entire transcript exceeds Salesforce's single message character limit, it will be split and sent as multiple messages.  
+For example:  
+If the transcript is **8000 characters** and the limit is **4000**, it will be sent as **two packets** of 4000 characters each.
+:::
                                                                                                         |
 
 **Sample success response**

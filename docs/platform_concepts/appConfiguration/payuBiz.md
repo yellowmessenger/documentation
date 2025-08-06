@@ -216,7 +216,7 @@ If generating UPI intent fails, the **Integration Action Node** returns a Failur
     "result": null,
     "status": "failed",
     "error": "EX117",
-    "message": "Invalid amount #~#Please ensure that you send all mandatory parameters in the transaction request to PayU.<br><div style='font-size: 13px;padding: 0 150px; padding: 0 150px; line-height: 18px;'>Mandatory parameters which must be sent in the transaction are: <br><b>key, txnid, amount, productinfo, firstname, email, phone, surl, furl, hash</b></div>.<br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>The parameters which you have actually sent in the transaction are: <br><b> key, txnid, amount, productinfo, surl, hash, firstname, email, phone</b>.</div><br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>Mandatory parameter missing from your transaction request are: <br><b></b>.</div><br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>Please re-initiate the transaction with all the mandatory parameters.</div></p> "
+    "message": "Invalid amount #~#Please ensure that you send all mandatory parameters in the transaction request to PayU.<br /><div style='font-size: 13px;padding: 0 150px; padding: 0 150px; line-height: 18px;'>Mandatory parameters which must be sent in the transaction are: <br /><b>key, txnid, amount, productinfo, firstname, email, phone, surl, furl, hash</b></div>.<br /><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>The parameters which you have actually sent in the transaction are: <br /><b> key, txnid, amount, productinfo, surl, hash, firstname, email, phone</b>.</div><br /><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>Mandatory parameter missing from your transaction request are: <br /><b></b>.</div><br /><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>Please re-initiate the transaction with all the mandatory parameters.</div></p> "
   },
   "apiResponseStatusCode": 500
 }
@@ -268,8 +268,7 @@ Cutsomer name | Rio | String | Name of the customer. |
 Fail URL | `https://example.com/payment-failed` | String  | URL to redirect to if payment fails.. | 
 From |  +91 98800XXXXX | String  | Enter the WhatsApp number that is connected to the bot. |
 Card description | Mobile charger | String | Deatil of the product |
-Order details | <pre lang="json"> {<br/> "subTotal": 10,<br/> "tax": "variables.Tax_number",<br/> "items": [<br/> {<br/> "amount": 5,<br/> "itemName": "Electric",<br/> "quantity": 1,<br/> "retailerId": "Ath123"<br/> }<br/> ],<br/> "expiration": {<br/> "expirationMessage": "Product link is expired ",<br/> "minutes": 20<br/> }<br/> } </pre> |  Object | Contains complete order details. | 
-Product info | Wireless charger | String |  Information about the product.
+Order details | `{ "subTotal": 10, "tax": "...", "items": [...] }` |  Object | Contains complete order details. |Product info | Wireless charger | String |  Information about the product.
 Success URL | `https://example.com/payment-success` | String | URL to redirect after a successful payment.
 Total amount | 1000 | Number | Total payment amount
 Transaction ID | TXN987654321 | String | Unique identifier for the transaction.

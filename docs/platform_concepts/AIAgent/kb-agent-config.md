@@ -53,8 +53,8 @@ This section allows you to define what the Kb agent should do before performing 
 To enable this functionality, toggle on pre-search interaction from the top-right corner of the section.
 
 **Example**: For financing or document-related queries, the Kb agent can be configured to collect essential user information before performing a search. 
-   * For instance, it first checks if the user's nationality is already available. If not, it prompts the user using `getInput: user_nationality`. 
-   * Next, it verifies whether the finance category has been provided. If the category is missing, the Kb agent will ask the user using `getInput: financeCategory`.
+   * For instance, it first checks if the user's nationality is already available. If not, it prompts the user using `{getInput: user_nationality}`. 
+   * Next, it verifies whether the finance category has been provided. If the category is missing, the Kb agent will ask the user using `{getInput: financeCategory}`.
    * It can also auto-classify finance categories based on keywords in the query such as classifying mentions of vehicle, personal, or real estate loans as retail, and healthcare, travel, education, or wedding-related loans as services.
    * This pre-search setup helps refine results and ensures accurate responses. If the query is not related to loans or financing, the Kb agent skips this step and proceeds directly to the search.
 
@@ -73,7 +73,7 @@ The user's response is stored in a variable, which can then be used in search lo
 **Example:**
 * **getInput: user_nationality**
   → The agent asks: "Can you please share your nationality?"
-  → The user's response is stored in the variable `user_nationalit`y.
+  → The user's response is stored in the variable `user_nationality`.
 * **getInput: financeCategory**
   → The agent asks: "What type of financing are you referring to? (example, Personal, Housing, Travel)
   → The response is saved in the variable `financeCategory`.
@@ -89,8 +89,8 @@ In the Kb agent's pre-search configuration, variables are used to store and reus
 **getInput: user_nationality**
 **Example prompt**: "Can you please tell me your nationality?""
 * Once the user replies with "India", the Kb agent stores that input in the `user_nationality` variable. This value can now be:
- * Reused in other steps of the same conversation. If a user’s nationality is collected early in the conversation and stored in a variable like {user_nationality}, the agent can reuse it later without asking again.
-**Example:** Since your nationality is {user_nationality}, you are eligible for our international loan offers.”
+ * Reused in other steps of the same conversation. If a user’s nationality is collected early in the conversation and stored in a variable like `{user_nationality}`, the agent can reuse it later without asking again.
+**Example:** Since your nationality is `{user_nationality}`, you are eligible for our international loan offers.”
  * Applied as a filter in metadata mapping to return more relevant answers.
 
 ### Metadata mapping
@@ -115,7 +115,7 @@ Choose whether to use a dynamic Variable or static Text for each metadata key.
 
 Type | Description	| When to use |	Example value
 -----|--------------|-------------|---------------
-Variable |	Dynamic value from conversation |	When metadata depends on user input |	{{user_nationality}}
+Variable |	Dynamic value from conversation |	When metadata depends on user input |	`{{user_nationality}}`
 Text |	Static predefined value |	When metadata is always the same | finance
 
 
@@ -124,7 +124,7 @@ Text |	Static predefined value |	When metadata is always the same | finance
    **Example**:
      **Metadata key:** country
      **Type**: Variable
-     **Value**: {{user_nationality}}
+     **Value**: `{{user_nationality}}`
      * This will use the value collected from the user via a getInput action, like "India" or "USA".
 
 2. **Text**:Use this when the metadata value should remain constant and not rely on user input. 

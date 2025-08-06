@@ -2,6 +2,7 @@
 title : Azure AD integration
 sidebar_label : Azure AD
 ---
+import CodeBlock from '@theme/CodeBlock';
 
 Azure Active Directory (Azure AD) enhances user management by enabling **Single Sign-On (SSO)** and personalized app experiences through the use of organizational data APIs. This integration also offers IT administrators comprehensive control over application and resource access, using advanced security features like **Multi-Factor Authentication (MFA)** and conditional access.
 
@@ -116,22 +117,23 @@ The **Access Token** allows secure access to resources within the permissions gr
 
 ---
 
-### **Retrieve User Profile via Graph API**
+### Retrieve User Profile via Graph API
 
 To fetch user details using the **Access Token**, send a GET request to the Microsoft Graph API:
 
-#### **Request:**
+#### Request:
 
-```bash
-curl --location --request GET 'https://graph.microsoft.com/v1.0/me' \
---header 'Authorization: Bearer {accessToken}'
-```
 
-#### **Response Example:**
+<CodeBlock language="bash">
+{`curl --location --request GET 'https://graph.microsoft.com/v1.0/me' \\
+  --header 'Authorization: Bearer {accessToken}'`}
+</CodeBlock>
+
+#### Response Example:
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "@odata.context": "[https://graph.microsoft.com/v1.0/$metadata#users/$entity](https://graph.microsoft.com/v1.0/$metadata#users/$entity)",
   "businessPhones": [],
   "displayName": "Shubhi Saxena",
   "givenName": "Shubhi",
@@ -143,8 +145,6 @@ curl --location --request GET 'https://graph.microsoft.com/v1.0/me' \
   "id": "e4a5dbe5-4750-41e7-8axxxxxxxxx"
 }
 ```
-
----
 
 ### **Other Useful Graph APIs**
 
@@ -239,59 +239,73 @@ Graph Permission: https://docs.microsoft.com/en-us/graph/permissions-reference
 5. If you want to connect multiple accounts, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
 
+### **Obtain Azure AD Login URL**
 
-**Obtain Azure AD** **Login url:**
+```js
+let consent = "&prompt=login";  // prompt=login allows user to choose a login account
 
-    let consent = "&prompt=login"  //prompt=login allow user to choose a logging account
+{
+  "title": "Login",
+  "url": app.azure.auth() + consent
+}
+```
 
-    {
-       "title": "Login",
-       "url": app.azure.auth() + consent                     
+---
+
+### **Response**
+
+```js
+app.log(app.data);
+
+{
+  "event": {
+    "code": "azure-auth-success",
+    "data": {
+      "token_type": "Bearer",
+      "scope": "Calendars.ReadWrite email openid profile User.Read",
+      "expires_in": 3599,
+      "ext_expires_in": 3599,
+      "access_token": "eyJ0eXXXXXXXXXXXXXXXXX",
+      "refresh_token": "aiJ0eXXXXXXXXXXXXXXXX"
     }
+  }
+}
+```
 
-**Response**
+---
 
-    app.log(app.data)
-    {
-       "event": {
-           "code": "azure-auth-success",
-           "data": {
-               "token_type": "Bearer",
-               "scope": "Calendars.ReadWrite email openid profile User.Read",
-               "expires_in": 3599,
-               "ext_expires_in": 3599,
-               "access_token": "eyJ0eXXXXXXXXXXXXXXXXX",
-               "refresh_token": "aiJ0eXXXXXXXXXXXXXXXX"
-           }
-       }
-     }
+**Access Token** can be used to access resources of allowed applications.  
+**Expires in:** 1 hour.
 
-**Access Token** can be used to get access to resources of allowed applications.
-Expire time : 1 hour.
+Azure allows an expired access token to be refreshed using the **Refresh Token** for up to **90 days**.
 
-Azure allows an expired access-token to be refreshed using the **Refresh Token** for a maximum period of time of 90 days.
+---
 
-**Retrieve user profile using AD refresh token & Graph Api**
+### **Retrieve User Profile using Azure AD Access Token**
 
-Request
+#### Request
 
-    curl --location --request GET 'https://graph.microsoft.com/v1.0/me' \
-    --header 'Authorization: Bearer {accessToken}' \
+```bash
+curl --location --request GET 'https://graph.microsoft.com/v1.0/me' \
+  --header 'Authorization: Bearer `{{accessToken}}`'
+```
 
-Response
+#### Response
 
-    {
-        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-        "businessPhones": [],
-        "displayName": "Shubhi Saxena",
-        "givenName": "Shubhi",
-        "jobTitle": null,
-        "mail": "shubhi@bitonictexxxxxxx.onmicrosoft.com",
-        "mobilePhone": null,
-        "surname": "Saxena",
-        "userPrincipalName": "shubhi@bitonictexxxxxxx.onmicrosoft.com",
-        "id": "e4a5dbe5-4750-41e7-8axxxxxxxxx"
-    }
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "businessPhones": [],
+  "displayName": "Shubhi Saxena",
+  "givenName": "Shubhi",
+  "jobTitle": null,
+  "mail": "shubhi@bitonictexxxxxxx.onmicrosoft.com",
+  "mobilePhone": null,
+  "surname": "Saxena",
+  "userPrincipalName": "shubhi@bitonictexxxxxxx.onmicrosoft.com",
+  "id": "e4a5dbe5-4750-41e7-8axxxxxxxxx"
+}
+```
 
 **Other useful Graph APIs:**
 

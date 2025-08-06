@@ -37,7 +37,7 @@ To automatically close an inactive email ticket, follow these steps:
 
     ![](https://i.imgur.com/v2KjiDa.png)
     
-    > - The templates used here do not support dynamic variables like {ticketid} etc. 
+    > - The templates used here do not support dynamic variables like `{ticketid}` etc. 
     > - [Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte) on creating email tempaltes. 
 7. **Save** the changes. 
 
@@ -67,10 +67,10 @@ To send reminders before auto-closing an inactive email ticket, follow these ste
     ![image](https://imgur.com/PCwYbcq.png)
     
     > - Before selecting a reminder mail, you can edit the existing templates or create a new template. 
-    >  - The templates used here do not support dynamic variables like {ticketid} etc. 
+    >  - The templates used here do not support dynamic variables like `{ticketid}` etc. 
     > - [Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte) on creating email tempaltes. 
 
-4. You can set upto **5 email reminders** by clicking **Add reminder**. **Save** the changes. 
+4. You can set up to **5 email reminders** by clicking **Add reminder**. **Save** the changes. 
 
 :::note
 - Trigger time must be more than 0. 

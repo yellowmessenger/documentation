@@ -262,7 +262,7 @@ Follow to steps below to upload documents the using AWS:
 
 For example:
 ```
-arn:aws:s3:::testbucketpritam<br> arn:aws:s3:::testbucketpritam/
+arn:aws:s3:::testbucketpritam<br /> arn:aws:s3:::testbucketpritam/
 ```
 
     
@@ -396,7 +396,7 @@ Client and Resource are two different abstractions within the boto3 SDK for maki
     
 ```    
     “Resource”: “arn:aws:s3:::*”
-    import boto3<br>
+    import boto3<br />
     s3 = boto3.resource(‘s3’)
     for bucket in s3.buckets.all():
     print(bucket.name)
@@ -477,7 +477,7 @@ Client and Resource are two different abstractions within the boto3 SDK for maki
 ```
     import boto3
     from boto3.s3.transfer 
-    import S3Transfer<br> ACCESS_KEY = ‘<YOUR AWS ACCOUNT ACCESS KEY>’
+    import S3Transfer<br /> ACCESS_KEY = ‘<YOUR AWS ACCOUNT ACCESS KEY>’
     SECRET_KEY = ‘<YOUR AWS ACCOUNT SECRET ACCESS KEY>’
     BUCKET_NAME = '<YOUR AWS S3 BUCKET NAME>’
     key = ‘hello1.txt’

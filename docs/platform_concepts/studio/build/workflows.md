@@ -96,7 +96,7 @@ Activates the workflow whenever a customer wants to connect to live agent.  Use 
 
 ![image](https://imgur.com/tQyzbZW.png)
 
-> Example: **When a new chat is created** and it is more than **1 hour** perform {next action}
+> Example: **When a new chat is created** and it is more than **1 hour** perform ``{next action}``
 
 
 #### <a name="chat-property-updated"></a>  2. When a chat property is updated
@@ -109,17 +109,17 @@ Activates the workflow whenever a chat property (such as tags, custom fields, or
 | <ul><li>  **Triggered**: When the Priority of the live chat is updated by the agent </li><li> **Add Condition**: Is (Is / Is not)   </li><li>  **Values**: Low, Medium, High, Urgent     </li></ul> | <ul><li>  **Triggered**: When the Tag of the live chat is updated by the agent </li><li> **Add Condition**: Is (Contains all of / Contains any of / Contains none of)   </li><li>  **Values**: Tag value    </li></ul> | <ul><li>  **Triggered**: When the Custom field of the live chat is updated by the agent </li><li> **Add Condition**: Is ( Is / Contains)   </li><li>  **Values**: Custom field value    </li></ul> |
 
 
-> Example: When the **Priority** of the live chat is updated to *Medium*, perform {next action}
+> Example: When the **Priority** of the live chat is updated to *Medium*, perform ``{next action}``
 
 ![image](https://imgur.com/wYYasjR.png)
 
 
-> Example: When the **Tag** of the live chat is updated to *Agent_inactivity, Customer_inactivity*, perform {next action}
+> Example: When the **Tag** of the live chat is updated to *Agent_inactivity, Customer_inactivity*, perform `{next action}`
 
 ![image](https://imgur.com/tFoB5EF.png)
 
 
-> Example: When the **Custom field** of the live chat (CSAT) is updated to a *value (5)*, perform {next action}
+> Example: When the **Custom field** of the live chat (CSAT) is updated to a *value (5)*, perform `{next action}`
 
 ![image](https://imgur.com/n7rYalV.png)
 
@@ -140,7 +140,7 @@ Activates the workflow whenever an internal note is added to a chat. Use this tr
 
 ![image](https://imgur.com/y3p5LnT.png)
 
-> Example: **When an internal note is added** and it contains **send reminder**, perform {next action}
+> Example: **When an internal note is added** and it contains **send reminder**, perform `{next action}`
 
 
 #### <a name="chat-status-updated"></a>  4. When chat status is updated
@@ -155,7 +155,7 @@ Triggers the workflow when the status of a chat is changed. Use this to automate
 
 ![image](https://imgur.com/Crix38K.png)
 
-> Example: **When chat status is updated** to **Open** and it has been **1 hour**, perform {next action}
+> Example: **When chat status is updated** to **Open** and it has been **1 hour**, perform `{next action}`
 
 
 #### <a name="chat-transferred"></a> 5. When chat is transferred
@@ -164,7 +164,7 @@ Activates the workflow when a chat is transferred to another agent or team. Use 
 
 ![image](https://imgur.com/fNsmc7y.png)
 
-> Example: **When chat is transferred**, perform {next action}
+> Example: **When chat is transferred**, perform `{next action}`
 
 
 #### <a name="customer-inactive"></a> 6. When a customer is inactive in a chat
@@ -178,7 +178,7 @@ Triggers the workflow if a customer becomes inactive or unresponsive in a chat w
 
 ![image](https://imgur.com/ZljORHW.png)
 
-> Example: **When a customer is inactive in a chat** for **3 hour**, perform {next action}
+> Example: **When a customer is inactive in a chat** for **3 hour**, perform `{next action}`
 
 
 #### <a name="agent-inactive"></a> 7. When an agent is inactive in a chat
@@ -192,7 +192,7 @@ Activates the workflow if an agent becomes inactive or unresponsive during a cha
 
 ![image](https://imgur.com/nFljh6E.png)
 
-> Example: **When a agent is inactive in a chat** for **3 hour**, perform {next action}
+> Example: **When a agent is inactive in a chat** for **3 hour**, perform `{next action}`
 
 
 :::info

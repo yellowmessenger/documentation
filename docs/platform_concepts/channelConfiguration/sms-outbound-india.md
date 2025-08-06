@@ -49,7 +49,7 @@ Common details that will be expected during the DLT registration are:
 
 You can create the DLT account with your preferred telecom provider.
 
-Search Google for <_telecom_name DLT registration_> (e.g, Airtel DLT registration) or refer to relevant link below. and Follow the steps as directed by the selected telecom operator.
+Search Google for `<_telecom_name DLT registration_>` (e.g, Airtel DLT registration) or refer to relevant link below. and Follow the steps as directed by the selected telecom operator.
 
 1. [Airtel](https://dltconnect.airtel.in/signup/)
 2. [Jio](https://trueconnect.jio.com/#/home/entity-registration)

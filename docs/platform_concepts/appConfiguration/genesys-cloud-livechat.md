@@ -341,7 +341,7 @@ Make sure to verify all variable mappings and settings to ensure everything func
 
    ![](https://i.imgur.com/pLmOpXi.png)
 
-3. Choose the Topic Name as **v2.detail.events.conversation.{id}.user.start**.
+3. Choose the Topic Name as `v2.detail.events.conversation.{id}.user.start`.
 4. Set the Workflow to **chat-start**.
 5. Enable the trigger using the top-right corner toggle.
    
@@ -412,21 +412,29 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
 
 3. Configure the node based on the descriptions provided in the following table. The variables chosen for these fields must be previously collected in the flow via node. To know more about this in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables).
 
-   | Field name | Data type | Description | Sample value |
-   |------------|-----------|-------------|--------------|
-   | Live chat agent | - | - | Choose **Genesys PureCloud Live agent** in the drop-down |
-   | Account name | String | Choose the Genesys account to which the chats should be transferred | account1 |
-   | Message after ticket assignment | String | The message that will be displayed to the end user after a ticket is successfully assigned to an agent | Requesting live agent connection. |
-   | Name | String | Name of the end user | John |
-   | Mobile | String | Mobile number of the end user | 9800000000 |
-   | Email | String | Email address of the end user. This is a mandatory field | test@gmail.com |
-   | Query | String | The subject/topic/reason why the ticket was created | I have a concern regarding my flight ticket |
-   | Priority | String | The priority of the ticket | MEDIUM |
-   | Genesys Cloud Live Agent Custom Fields | String | Choose the variable where custom fields are stored. To include first name, last name, and nickname as custom fields,use the following params| ``` { "genesysCloudUserFirstName": "Jim", "genesysCloudUserLastName": "James", "genesysCloudUserNickname": "Jam"}```
-   | Advanced options | - | Enable this option to access advanced settings for the Genesis Live Chat integration with Bot. | -
-   | Send chat transcript |  - | Enable this option to automatically send the conversation history between the end user and the bot as the initial message to the agent. If you don’t want to send the chat transcript to the agent, pass the value False. <br/> **Note**: In cases where the entire transcript exceeds the character limit of a single message packet in Salesforce, the content will be divided and sent as multiple message packets. For example, if the chat transcript contains 8000 characters and the message packet limit is 4000 characters, the transcript will be divided into two packets of 4000 characters each and sent as separate messages to the agent. | 
-   | Custom chat transcript | String |  Select your preferred variable to send chat transcripts in the format of your choice. Please indicate your preferred format in the variable. |
+### API Field Configuration Table
 
+| Field name                         | Data type | Description                                                                                                                  | Sample value                                                                                   |
+|-----------------------------------|-----------|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Live chat agent                   | -         | Choose **Genesys PureCloud Live agent** in the drop-down                                                                     | -                                                                                             |
+| Account name                      | String    | Choose the Genesys account to which the chats should be transferred                                                          | account1                                                                                      |
+| Message after ticket assignment   | String    | The message that will be displayed to the end user after a ticket is successfully assigned to an agent                      | Requesting live agent connection.                                                             |
+| Name                              | String    | Name of the end user                                                                                                          | John                                                                                          |
+| Mobile                            | String    | Mobile number of the end user                                                                                                 | 9800000000                                                                                    |
+| Email                             | String    | Email address of the end user. This is a mandatory field                                                                      | test@gmail.com                                                                                |
+| Query                             | String    | The subject/topic/reason why the ticket was created                                                                          | I have a concern regarding my flight ticket                                                   |
+| Priority                          | String    | The priority of the ticket                                                                                                    | MEDIUM                                                                                        |
+| Genesys Cloud Live Agent Custom Fields | String | Choose the variable where custom fields are stored. To include first name, last name, and nickname, use the following:       | ```json { "genesysCloudUserFirstName": "Jim", "genesysCloudUserLastName": "James", "genesysCloudUserNickname": "Jam" } ``` |
+| Advanced options                  | -         | Enable this option to access advanced settings for the Genesys Live Chat integration with Bot                                | -                                                                                             |
+| Send chat transcript              | -         | Enable this to send the conversation history between the end user and the bot to the agent.                                  | -                                                                                             |
+| Custom chat transcript            | String    | Select your preferred variable to send chat transcripts in a custom format                                                   | -                                                                                             |
+
+
+:::note
+**For `Send chat transcript`:**  
+If the transcript exceeds the character limit of a single Salesforce message packet, it will be split.  
+For example, if the limit is **4000** characters and the transcript is **8000**, it will be sent as **two separate packets** of 4000 characters each.
+:::
 
 **Result:**
 
@@ -472,9 +480,8 @@ To end the chat in Genesys when a customer ends the chat in Yellow.ai, you need 
 
     ![](https://i.imgur.com/5XcRTg7.png)
 
-**JSON:**
 
-```
+```json
 {
   "title": "data",
   "type": "object",

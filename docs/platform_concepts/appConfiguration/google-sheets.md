@@ -55,26 +55,18 @@ Create spreadsheet integration node helps user in creating a Google spreadsheet 
 
 <table>
   <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Sample</strong>
-   </td>
+   <td><strong>Parameter</strong></td>
+   <td><strong>Type</strong></td>
+   <td><strong>Sample</strong></td>
   </tr>
   <tr>
-   <td>title
-   </td>
-   <td>string
-   </td>
-   <td>Demo Sheet
-   </td>
+   <td>title</td>
+   <td>string</td>
+   <td>Demo Sheet</td>
   </tr>
   <tr>
-   <td>sheets
-   </td>
-   <td>array
-   </td>
+   <td>sheets</td>
+   <td>array</td>
    <td>
 
 ```json
@@ -110,40 +102,32 @@ Get values from sheet integration node helps user in retrieving values from shee
 
 
 <table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Sample</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><em>majorDimension</em>
-   </td>
-   <td><em>string</em>
-   </td>
-   <td><em>ROWS</em>
-<em>(or)</em>
-<em>COLUMNS</em>
-   </td>
-  </tr>
-  <tr>
-   <td><em>ranges</em>
-   </td>
-   <td><em>string</em>
-   </td>
-   <td><strong><code><em>Sheet1!A1:B2</em></code></strong>
-   </td>
-  </tr>
-  <tr>
-   <td><em>spreadSheetID</em>
-   </td>
-   <td><em>string</em>
-   </td>
-   <td><em>1fExJP4rbjNKpbSHySJl4kOjwJ-mGUUzzsCs_qrC0YgI</em>
-   </td>
-  </tr>
+  <thead>
+    <tr>
+      <th><strong>Parameter</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Sample</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>majorDimension</em></td>
+      <td><em>string</em></td>
+      <td>
+        <em>ROWS<br />(or)<br />COLUMNS</em>
+      </td>
+    </tr>
+    <tr>
+      <td><em>ranges</em></td>
+      <td><em>string</em></td>
+      <td><strong><code><em>Sheet1!A1:B2</em></code></strong></td>
+    </tr>
+    <tr>
+      <td><em>spreadSheetID</em></td>
+      <td><em>string</em></td>
+      <td><em>1fExJP4rbjNKpbSHySJl4kOjwJ-mGUUzzsCs_qrC0YgI</em></td>
+    </tr>
+  </tbody>
 </table>
 
 
@@ -158,57 +142,43 @@ Insert/Update Values in Sheet integration node helps user in inserting or updati
 
 
 <table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Sample</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><em>majorDimension</em>
-   </td>
-   <td><em>string</em>
-   </td>
-   <td><em>ROWS</em>
-<em>(or)</em>
-<em>COLUMNS</em>
-   </td>
-  </tr>
-  <tr>
-   <td><em>range</em>
-   </td>
-   <td><em>string</em>
-   </td>
-   <td><code>Sheet1!A1:B3</code>
-   </td>
-  </tr>
-  <tr>
-   <td>values
-   </td>
-   <td>array
-   </td>
-   <td>
-
-```json
-[
+  <thead>
+    <tr>
+      <th><strong>Parameter</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Sample</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>majorDimension</em></td>
+      <td><em>string</em></td>
+      <td><em>ROWS<br />(or)<br />COLUMNS</em></td>
+    </tr>
+    <tr>
+      <td><em>range</em></td>
+      <td><em>string</em></td>
+      <td><code>Sheet1!A1:B3</code></td>
+    </tr>
+    <tr>
+      <td>values</td>
+      <td>array</td>
+      <td>
+        <pre><code>
+{`[
     [1, 2, 3],
     [4, 5, 6]
-]
-```
-   </td>
-  </tr>
-  <tr>
-   <td><em>spreadSheetID</em>
-   </td>
-   <td><em>string</em>
-   </td>
-   <td><em>1fExJP4rbjNKpbSHySJl4kOjwJ-mGUUzzsCs_qrC0YgI</em>
-   </td>
-  </tr>
+]`}
+        </code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td><em>spreadSheetID</em></td>
+      <td><em>string</em></td>
+      <td><em>1fExJP4rbjNKpbSHySJl4kOjwJ-mGUUzzsCs_qrC0YgI</em></td>
+    </tr>
+  </tbody>
 </table>
-
 
 
 
@@ -221,30 +191,25 @@ Clear values in a sheet integration node helps users in clearing values in a spr
 
 
 <table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Sample</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>ranges
-   </td>
-   <td><em>array</em>
-   </td>
-   <td>["Sheet1!A1:B3","Sheet1!A4:B6"]	
-   </td>
-  </tr>
-  <tr>
-   <td><em>spreadSheetID</em>
-   </td>
-   <td><em>string</em>
-   </td>
-   <td><em>1fExJP4rbjNKpbSHySJl4kOjwJ-mGUUzzsCs_qrC0YgI</em>
-   </td>
-  </tr>
+  <thead>
+    <tr>
+      <th><strong>Parameter</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Sample</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ranges</td>
+      <td><em>array</em></td>
+      <td>["Sheet1!A1:B3","Sheet1!A4:B6"]</td>
+    </tr>
+    <tr>
+      <td><em>spreadSheetID</em></td>
+      <td><em>string</em></td>
+      <td><em>1fExJP4rbjNKpbSHySJl4kOjwJ-mGUUzzsCs_qrC0YgI</em></td>
+    </tr>
+  </tbody>
 </table>
 
 ## References:-
@@ -257,8 +222,4 @@ Clear values in a sheet integration node helps users in clearing values in a spr
 4. [Clear Values in a Sheet](https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values/batchClear)
 
 
-## Sample Experience
 
-Below is a video that depicts how this integration works
-
-&lt;**VIDEO WILL BE UPLOADED WITH UPDATED UI DESIGN LANGUAGE**>

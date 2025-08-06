@@ -100,7 +100,7 @@ Designing an Agent is important in the conversation, data handling, actions, and
 
 5. **Use Variables**
    * Store user responses or API outputs in variables and reuse them across the conversation.
-   * Personalize conversations using variables (example, "Hi {{user_name}}"").
+   * Personalize conversations using variables (example, `"Hi {{user_name}}")`.
    * Follow naming conventions (example, user_name, booking_id) to maintain clarity.
 
 :::info

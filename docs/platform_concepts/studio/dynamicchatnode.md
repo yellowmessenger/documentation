@@ -101,14 +101,14 @@ This option allows you to directly input your own instructions instead of relyin
    * **Wrong** ❌: Summarize the text below as a bullet point list of the most important points.
    * **Correct** ✅:  Summarize the text below as a bullet point list of the most important points.
 
-     """
+     ```
      {text input here}
-     """
+     ```
 
 2. **Provide specific, descriptive, and detailed requirements regarding the desired context, outcome, length, format, style, etc.**
 
    * **Wrong** ❌: Write a poem about OpenAI. 
-   * **Correct** ✅: Write a short inspiring poem about OpenAI, focusing on the recent DALL-E product launch (DALL-E is a text to image ML model) in the style of a {famous poet}
+   * **Correct** ✅: Write a short inspiring poem about OpenAI, focusing on the recent DALL-E product launch (DALL-E is a text to image ML model) in the style of a `{famous poet}`
 
 3. **Minimize the use of vague and imprecise descriptions.**
 
@@ -126,7 +126,7 @@ This option allows you to directly input your own instructions instead of relyin
    * **Correct** ✅:Extract the important entities mentioned in the text below. First extract all company names, then extract all people names, then extract specific topics which fit the content and finally extract general overarching themes
 
      Desired format:
-     Company names:<comma_separated_list_of_company_names>
+     `Company names:<comma_separated_list_of_company_names>`
 
 6. **Instead of just saying what not to do, say what to do instead**
 

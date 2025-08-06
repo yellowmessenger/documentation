@@ -15,18 +15,19 @@ sidebar_label : Chat widget FAQs
 </details>
 
 <details>
-<summary>How to enable chat history conversation?
-</summary>
-<div>
- <div>For <a href="https://cloud.yellow.ai">cloud.yellow.ai</a> platform, ensure that <b>Show history of the conversation</b> is enabled. <br/> <img src= "https://i.imgur.com/crMFACl.png"/> <br/> For "app.yellowmessenger.com" or "app.yellow.ai" platform, ensure that <b>Reset Context for every load</b> checkbox is unchecked in the dashboard settings. <br/> <img src= "https://i.imgur.com/VVSmy15.png"/> <br/> <b>Note:</b> If you want to maintain a history across devices or browsers, you can create an authentication token, which is a unique token, and pass it in the given format, as shown below:
+<summary>How to enable chat history conversation?</summary>
 
+For <a href="https://cloud.yellow.ai">cloud.yellow.ai</a> platform, ensure that <b>Show history of the conversation</b> is enabled.
+<img src="https://i.imgur.com/crMFACl.png"/>
 
-```
+For `app.yellowmessenger.com` or `app.yellow.ai` platform, ensure that <b>Reset Context for every load</b> checkbox is unchecked in the dashboard settings.
+<img src="https://i.imgur.com/VVSmy15.png"/>
+
+<b>Note:</b> If you want to maintain a history across devices or browsers, you can create an authentication token, which is a unique token, and pass it in the given format, as shown below:
+
+```javascript
 if (userIsAuthenticated) {
-
-
  // replace this with your own auth logic and reload the bot with new info.
-  
    window.YellowMessengerPlugin.init({
        ymAuthenticationToken: 'Your_Unique_token'
    });
@@ -34,36 +35,34 @@ if (userIsAuthenticated) {
 }
 ```
 
-
-</div>
- <br/>
-  </div>
 </details>
 
 <details>
 <summary>Is it possible to change the chat widget background colour for bot and agent messages?</summary>
 <div>
  <br/>
- <div>No, the background colour can be changed only for user messages. This can be done by updating the complimentary color in the <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/speech-to-text">chat widget settings</a>.
-</div>
+ <div>No, the background colour can be changed only for user messages. This can be done by updating the complimentary color in the <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/speech-to-text">chat widget settings</a>.</div>
   </div>
 </details>
 
 <details>
 <summary>How to change the font size in the widget?</summary>
-<div>
- <br/>
- <div>To change the font size in the widget, follow these steps :<br/> 1.Navigate to <b>Channels</b> > <b>Chat widget</b> > <b>Widget panel</b>.<br/><img src="https://i.imgur.com/Bf9iQsC.png)" alt="drawing" width="70%"/><br/>2. Expand <b>Font</b> drop-down and select your preffered font size and click <b>Save changes</b>.<br/><img src="https://i.imgur.com/i5RGQAD.png)" alt="drawing" width="70%"/>
-</div>
-  </div>
+
+To change the font size in the widget, follow these steps:
+
+1.  Navigate to <strong>Channels</strong> > <strong>Chat widget</strong> > <strong>Widget panel</strong>.
+    <img src="https://i.imgur.com/Bf9iQsC.png" alt="drawing" width="70%"/>
+
+2.  Expand <strong>Font</strong> drop-down and select your preferred font size and click <strong>Save changes</strong>.
+    <img src="https://i.imgur.com/i5RGQAD.png" alt="drawing" width="70%"/>
+
 </details>
 
 <details>
 <summary>Can we change the color scheme of the chat header gradient from top to bottom?</summary>
 <div>
  <br/>
- <div>The gradient is intentionally applied from left to right for readability reasons. Applying the gradient from top to bottom might make it challenging to read the text (title & description) due to multiple colors. This design decision ensures optimal visibility and a better user experience.
- </div>
+ <div>The gradient is intentionally applied from left to right for readability reasons. Applying the gradient from top to bottom might make it challenging to read the text - title & description due to multiple colors. This design decision ensures optimal visibility and a better user experience.</div>
   </div>
 </details>
 
@@ -71,8 +70,7 @@ if (userIsAuthenticated) {
 <summary>Is it possible to block the users from uploading specific attachment formats?</summary>
 <div>
  <br/>
- <div>Yes, you can control which file formats users are allowed to upload for documents, images, and other files. To manage this, navigate to <b>Chat Widget</b> > <b>Settings</b> > <b>Validate attachments</b> <br/><img src="https://i.imgur.com/LzMKIlP.png" alt="drawing" width="80%"/>
-</div>
+ <div>Yes, you can control which file formats users are allowed to upload for documents, images, and other files. To manage this, navigate to <b>Chat Widget</b> > <b>Settings</b> > <b>Validate attachments</b> <br/><img src="https://i.imgur.com/LzMKIlP.png" alt="drawing" width="80%"/></div>
   </div>
 </details>
 
@@ -131,14 +129,16 @@ if (userIsAuthenticated) {
 
 <details>
 <summary>Is it possible to integrate the Yellow AI chatbot with a NextJS website?</summary>
-<div>
- <br/>
- <div>Yes, you can add the script to any NextJS page, to do so:<br/> * Create a file called static/yellowai.js and paste our script. Note: You need to remove the tags. <br/> * You can now load this file on page (page name). (jsx|tsx) file</div>
 
+Yes, you can add the script to any NextJS page. To do so:
 
-```
+* Create a file called `static/yellowai.js` and paste our script. Note: You need to remove the `<script>` tags.
+* You can now load this file on your page's `.jsx` or `.tsx` file.
+
+```jsx
 import Head from 'next/head';
 import MyComponent from '../components/mycomponent';
+
 export default () => (
  <div>
    <Head>
@@ -148,8 +148,6 @@ export default () => (
  </div>
 )
 ```
- <br/>
-  </div>
 </details>
 
 <details>
@@ -179,9 +177,7 @@ export default () => (
 <details>
 <summary>Is it possible to remove the user's button selection from the list or quick replies in chatbot?</summary>
 <div>
- <br/>
- <div>No. Every message exchanged between a bot, users, and agents needs to be tracked/recorded so that the users are aware of the message sent/selection made. Following are the reasons: <br/>• <b>Providing feedback:</b> When a user selects an option/sends a message, they expect feedback in response. By displaying the messages, users will know that their message has been received. <br/>• <b>Transparency:</b> When a user message is displayed, it builds trust between the user and the chatbot. <br/>• <b>Clarification:</b> At times, the bot may not understand the context of the user's message. Displaying the message in such instances will be essential.
-</div>
+ <div>No. Every message exchanged between a bot, users, and agents needs to be tracked/recorded so that the users are aware of the message sent/selection made. Following are the reasons: <br/>• <b>Providing feedback:</b> When a user selects an option/sends a message, they expect feedback in response. By displaying the messages, users will know that their message has been received. <br/>• <b>Transparency:</b> When a user message is displayed, it builds trust between the user and the chatbot. <br/>• <b>Clarification:</b> At times, the bot may not understand the context of the user's message. Displaying the message in such instances will be essential.</div>
   </div>
 </details>
 
@@ -189,10 +185,7 @@ export default () => (
 <summary>Why does a blank space appear when scrolling in the widget?</summary>
 <div>
  <br/>
- <div>This happens only for bots migrated from V1 ("app.yellowmessenger.com" or "app.yellow.ai" platform) to V2 (cloud.yellow.ai platform). On the "app.yellowmessenger.com" or "app.yellow.ai" platform, you need to disable "Voice First" for the V2 widget as it is not supported. To disable "Voice First" option, click <b>Configuration > Channels > Chat Widget > General > Voice First</b>.<br/> <img src="https://i.imgur.com/lS4ik8c.png"/>
-
-
-</div>
+ <div>This happens only for bots migrated from V1 ("app.yellowmessenger.com" or "app.yellow.ai" platform) to V2 (cloud.yellow.ai platform). On the "app.yellowmessenger.com" or "app.yellow.ai" platform, you need to disable "Voice First" for the V2 widget as it is not supported. To disable "Voice First" option, click <b>Configuration > Channels > Chat Widget > General > Voice First</b>.<img src="https://i.imgur.com/lS4ik8c.png"/></div>
   </div>
 </details>
 
@@ -209,10 +202,7 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 <summary>Can we pass data to the widget for every page of the website?</summary>
 <div>
  <br/>
- <div>Yes, you can pass the data to the widget on its respective page of the website. For more information, see <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-payload">payload</a>.
-
-
-</div>
+ <div>Yes, you can pass the data to the widget on its respective page of the website. For more information, see <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-payload">payload</a>.</div>
   </div>
 </details>
 
@@ -220,21 +210,14 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 <summary>Is it possible to configure the position of the bot to be on right when the user selects Arabic and to the left when the user selects English?</summary>
 <div>
  <br/>
- <div>Yes, in ymConfig, you must set "alignLeft:true".
-
-
-</div>
+ <div>Yes, in ymConfig, you must set "alignLeft:true".</div>
   </div>
 </details>
 
 <details>
 <summary>How can we change the font color in the bot name and description?</summary>
 <div>
- <br/>
- <div>The bot name and description text color is set automatically based on the background color to ensure readability, with a contrast ratio of 4.5+. For example, white text on bright red background is hard to read, so text color is set to black. Slightly darker red shades can be tested to find a readable color combination.
-
-
-</div>
+ <div>The bot name and description text color is set automatically based on the background color to ensure readability, with a contrast ratio of 4.5+. For example, white text on bright red background is hard to read, so text color is set to black. Slightly darker red shades can be tested to find a readable color combination.</div>
   </div>
 </details>
 
@@ -293,9 +276,8 @@ Add an <b>Embed block</b> > Select <b>Embed code</b> > <b>Paste the bot script</
  <br/>
  <div>For web bots, it is not possible to have two bots on the same window simultaneously. However, you can load a default bot initially, and then when a user selects a specific order in which the bot needs to be deployed, you can trigger a new bot using the following code. </div>
 
-```
-window.YellowMessengerPlugin.init({bot: '<botId>'})
-```
+`window.YellowMessengerPlugin.init({bot: '<botId>'})`
+
 Note that, this will replace the previously loaded bot. On Mobile SDK, if you want to maintain a separate session and history for each order, you need to pass the ymAuthToken parameter. Ensure that these approaches allow you to manage different instances of the bot, but only one bot can be active at a time.
   </div>
 </details>
@@ -316,16 +298,15 @@ Note that, this will replace the previously loaded bot. On Mobile SDK, if you wa
   </div>
 </details>
 
+
 <details>
 <summary>Is it possible to drag the chatbot icon and place it anywhere on the website?</summary>
 <div>
- <br/>
  <div>Yes, you need to add <b>floatingIcon: true</b> in the following chat bot script to drag the chatbot icon.</div>
-
 
 ```
 <script type="text/javascript">
-      window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "floatingIcon":true};
+      window.ymConfig = {"bot":"x1657623696077","host":"[https://cloud.yellow.ai](https://cloud.yellow.ai)", "floatingIcon":true};
     (function() {
         var w = window,
             ic = w.YellowMessenger;
@@ -337,7 +318,7 @@ Note that, this will replace the previously loaded bot. On Mobile SDK, if you wa
                 };
             function l() {
                 var e = d.createElement("script");
-                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+                e.type = "text/javascript", e.async = !0, e.src = "[https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js](https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js)";
                 var t = d.getElementsByTagName("script")[0];
                 t.parentNode.insertBefore(e, t)
             }
@@ -347,9 +328,9 @@ Note that, this will replace the previously loaded bot. On Mobile SDK, if you wa
     })();
 </script>
 ```
- <br/>
-  </div>
+</div>
 </details>
+
 
 <details>
 <summary>Is it possible to minimise the callout banner?</summary>
@@ -359,68 +340,46 @@ Note that, this will replace the previously loaded bot. On Mobile SDK, if you wa
   </div>
 </details>
 
+
 <details>
 <summary>How to load the callout banner dynamically in the middle of a chat?</summary>
-<div>
- <br/>
- <div>A callout banner allows you to add a banner to chatbot's conversation. Before starting a chat with the user, the callout banner is shown at the top of the chat window with a description of the chatbot’s purpose. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-access-studio">here</a>
 
-Banners can used to alert the users about new products, services, special offers, and promotions.
+A callout banner allows you to add a banner to the chatbot's conversation. Before starting a chat with the user, the callout banner is shown at the top of the chat window with a description of the chatbot’s purpose. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-access-studio">here</a>.
 
-If the V1 bot consists of a banner and you want to move to V2 dynamically in the middle of th chat conversation, then you need to add a function to display the same banner in V2.
+Banners can be used to alert users about new products, services, special offers, and promotions.
 
-While migrating from V1 to V2 use the following function code to copy the banner from V1 to V2:
+</details>
+
+<details>
+<summary>How to load the callout banner dynamically in the middle of a chat?</summary>
+
+A callout banner allows you to add a banner to the chatbot's conversation. Before starting a chat with the user, the callout banner is shown at the top of the chat window with a description of the chatbot’s purpose. To know more, click <a href="[https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-access-studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-access-studio)">here</a>.
+
+Banners can be used to alert users about new products, services, special offers, and promotions.
+
+If the V1 bot consists of a banner and you want to move to V2 dynamically in the middle of the chat conversation, then you need to add a function to display the same banner in V2.
+
+While migrating from V1 to V2, use the following function code to copy the banner from V1 to V2:
 
 ```
 return new Promise(async (resolve, reject) => {
     try {
-        app.log(app.profile,"in profile");
-        if (app.profile && app.profile.payload && app.profile.payload.widgetVersion && app.profile.payload.widgetVersion=="v2"){
+        app.log(app.profile, "in profile");
+        if (
+            app.profile &&
+            app.profile.payload &&
+            app.profile.payload.widgetVersion === "v2"
+        ) {
             await app.sendEvent({
                 code: "ui-event-update-promotion",
-                data:[{
-                    title: app.renderMessage('indiatour', {}, ''),
-                    options: [
-                        {
-                            title: app.renderMessage('activate_now', {}, 'Activate Now'),
-                            text: `activate channel`
-                        }
-                    ]
-                
-            },
-                    {
-                        title: app.renderMessage('promotion_2', {}, ''),
-                        options: [
-                            {
-                                title: app.renderMessage('download_now', {}, 'Download Now'),
-                                url: `https://watcho.onelink.me/eyNf/4plou2wu`
-                            },
-                        ]
-                    },
-                    {
-                        title: app.renderMessage('promotion_3', {}, ''),
-                        options: [
-                            {
-                                title: app.renderMessage('subscribe', {}, 'Subscribe'),
-                                text: 'Subscribe'
-                            }
-                        ]
-                    },
-            ]
-        })
-        }
-        else{
-        await app.sendEvent({
-            code: "ui-event-update-promotion",
-            data: {
-                quickReplies: [
+                data: [
                     {
                         title: app.renderMessage('indiatour', {}, ''),
                         options: [
-                                                        {
-                               title: app.renderMessage('activate_now', {}, 'Activate Now'),
-                                text: `activate channel`
-                            },
+                            {
+                                title: app.renderMessage('activate_now', {}, 'Activate Now'),
+                                text: "activate channel"
+                            }
                         ]
                     },
                     {
@@ -428,8 +387,8 @@ return new Promise(async (resolve, reject) => {
                         options: [
                             {
                                 title: app.renderMessage('download_now', {}, 'Download Now'),
-                                url: `https://watcho.onelink.me/eyNf/4plou2wu`
-                            },
+                                url: "https://watcho.onelink.me/eyNf/4plou2wu"
+                            }
                         ]
                     },
                     {
@@ -440,88 +399,123 @@ return new Promise(async (resolve, reject) => {
                                 text: 'Subscribe'
                             }
                         ]
-                    },
-                ],
-                "autoPlay": true,
-                "autoPlaySpeed": "4000",
-                hide: true,
-                showPromotionMessage: 'Hi! I am Dia, your <strong>d</strong>2h <strong>I</strong>ntelligent <strong>A</strong>ssistant.',
-                displayShowPromotionBar: true
-            }
-        });
+                    }
+                ]
+            });
+        } else {
+            await app.sendEvent({
+                code: "ui-event-update-promotion",
+                data: {
+                    quickReplies: [
+                        {
+                            title: app.renderMessage('indiatour', {}, ''),
+                            options: [
+                                {
+                                    title: app.renderMessage('activate_now', {}, 'Activate Now'),
+                                    text: "activate channel"
+                                }
+                            ]
+                        },
+                        {
+                            title: app.renderMessage('promotion_2', {}, ''),
+                            options: [
+                                {
+                                    title: app.renderMessage('download_now', {}, 'Download Now'),
+                                    url: "https://watcho.onelink.me/eyNf/4plou2wu"
+                                }
+                            ]
+                        },
+                        {
+                            title: app.renderMessage('promotion_3', {}, ''),
+                            options: [
+                                {
+                                    title: app.renderMessage('subscribe', {}, 'Subscribe'),
+                                    text: 'Subscribe'
+                                }
+                            ]
+                        }
+                    ],
+                    autoPlay: true,
+                    autoPlaySpeed: "4000",
+                    hide: true,
+                    showPromotionMessage: 'Hi! I am Dia, your <strong>d</strong>2h <strong>I</strong>ntelligent <strong>A</strong>ssistant.',
+                    displayShowPromotionBar: true
+                }
+            });
         }
         return resolve();
     } catch (e) {
         app.log(e, 'error in showPromotion');
         return resolve();
     }
-
 });
 ```
-<img src="https://i.imgur.com/VyvR6ZD.png" alt="drawing" width="100%"/></div>
 
- <br/>
-  </div>
+<img src="https://i.imgur.com/VyvR6ZD.png" alt="drawing" width="100%" />
+
 </details>
+
+
+
+
+
+
+
+
+
 
 <details>
 <summary>How to hide the home and input buttons when the user opens the chatbot for first time?</summary>
 <div>
  <br/>
- <div>To hide the home and input buttons when the user opens the chatbot, add the <b>setDisableActionsTimeout</b> property inside the window.ymConfig object.
- </div>
+ <div>To hide the home and input buttons when the user opens the chatbot, add the <b>setDisableActionsTimeout</b> property inside the window.ymConfig object.</div>
   </div>
 </details>
 
 <details>
 <summary>Is it possible to prevent the bot icon from overlapping with CTAs on mobile screens?</summary>
 <div>
- <br/>
- <div>The following are the two options to prevent the bot icon from overlapping:<br/> 1.Write a custom script to override the position.<br/>
-2. Hide the default icon and create a custom entry point or button on the site. Use the <b>window.YellowMessengerPlugin.openBot()</b> function to open the bot when a user clicks on the custom button. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/function-widgets#hide-the-bot-by-default">here</a>.<br/> Note that the chat bubble and notification icon will not be displayed if a custom icon is deployed.
- </div>
-  </div>
+<div>
+  The following are the two options to prevent the bot icon from overlapping:
+  <ol>
+    <li>Write a custom script to override the position.</li>
+    <li>
+      Hide the default icon and create a custom entry point or button on the site.<br />
+      Use the <b>`window.YellowMessengerPlugin.openBot()`</b> function to open the bot when a user clicks on the custom button. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/function-widgets#hide-the-bot-by-default">here</a>.<br />
+      Note that the chat bubble and notification icon will not be displayed if a custom icon is deployed.
+    </li>
+  </ol>
+</div>  
+</div>
 </details>
 
 <details>
-<summary>Can the Bot title, description and logo can be changed dynamically based on website?</summary>
-<div>
- <br/>
- <div>Yes, you can configure different themes for different websites. Set a default theme in Channels > Chat Widget > Widget Panel/Bot icon. Then, based on the user, you can override it on the web and mobile SDK. For the web, you need to pass the following values inside window.ymConfig in the bot script:</div>
+<summary>Can the Bot title, description and logo be changed dynamically based on website?</summary>
 
-```javascript
-`theme: {
-  botName: "", // Text up to 50 characters
-  botDesc: "", // Text up to 50 characters
-  primaryColor: "", // RGB or HEX value
-  secondaryColor: "", // RGB or HEX value
-  botIcon: "", // CDN link
-  botClickIcon: "" // CDN link
-}
-```
+Yes, you can configure different themes for different websites. Set a default theme in `Channels > Chat Widget > Widget Panel/Bot icon`. Then, based on the user, you can override it on the web and mobile SDK.
 
-For the mobile SDK, you need to send the values as mentioned below:
-```c
-let theme = YMTheme()
-theme.botName = ""
-theme.botDesc = ""
-theme.primaryColor = ""
-theme.secondaryColor = ""
-theme.botIcon = ""
-config.theme = theme
+For the web, you need to pass the following values inside `window.ymConfig` in the bot script:
+
+```js
+window.ymConfig = {
+  theme: {
+    botName: "", // Text up to 50 characters
+    botDesc: "", // Text up to 50 characters
+    primaryColor: "", // RGB or HEX value
+    secondaryColor: "", // RGB or HEX value
+    botIcon: "", // CDN link
+    botClickIcon: "" // CDN link
+  }
+};
 ```
-<br/>
-<b>Note</b>: botClickIcon is not applicable for Mobile SDKs since the entry point will be set within the app. On the website, botClickIcon refers to the floating icon displayed when the bot is minimized.
- <br/>
-  </div>
 </details>
+
 
 <details>
 <summary>Is it possible to replace the close (X) button in the chat widget with a drop-down arrow button?</summary>
 <div>
  <br/>
- <div>Yes, it is possible by using a custom script to modify the chat widget’s UI. To implement this change,contact the support team. They can guide you and provide the necessary custom script to help replace the close button with a drop-down arrow.
- </div>
+ <div>Yes, it is possible by using a custom script to modify the chat widget’s UI. To implement this change,contact the support team. They can guide you and provide the necessary custom script to help replace the close button with a drop-down arrow.</div>
   </div>
 </details>
 
@@ -541,10 +535,7 @@ config.theme = theme
 <summary>Is it possible to customise the URL of the PWA bot?</summary>
 <div>
  <br/>
- <div>No, you cannot customise the URL of the PWA bot.
-
-
-</div>
+ <div>No, you cannot customise the URL of the PWA bot.</div>
   </div>
 </details>
 
@@ -552,10 +543,7 @@ config.theme = theme
 <summary>Is it possible to pass the data from the URL to a widget?</summary>
 <div>
  <br/>
- <div>Yes, using payload, you can pass the data.
-
-
-</div>
+ <div>Yes, using payload, you can pass the data.</div>
   </div>
 </details>
 
@@ -578,7 +566,7 @@ export default () => (
  </div>
 )
 ```
- <br/>
+ 
   </div>
 </details>
 
@@ -586,10 +574,7 @@ export default () => (
 <summary>It is possible to automatically open PWA chatbot using chat widget functions?</summary>
 <div>
  <br/>
- <div>No, by default PWA bot will be opened automatically.
-
-
-</div>
+ <div>No, by default PWA bot will be opened automatically.</div>
   </div>
 </details>
 
@@ -597,9 +582,7 @@ export default () => (
 <summary>Why is the date picker not working in the PWA bot, even though it works on the web bot?</summary>
 <div>
  <br/>
- <div>The date picker should work in both the PWA and web bots. If it's not working in the PWA bot, check the following:<br/> * <b>Channel support</b>: Make sure you are testing on a supported channel. Some channels like WhatsApp do not support the date picker. PWA and Web do support it.<br/> * <b>Variable type</b>: Ensure the date is being saved in a variable of type Object. If it is not, the date picker may not function as expected.
-
-</div>
+ <div>The date picker should work in both the PWA and web bots. If it's not working in the PWA bot, check the following:<br/> * <b>Channel support</b>: Make sure you are testing on a supported channel. Some channels like WhatsApp do not support the date picker. PWA and Web do support it.<br/> * <b>Variable type</b>: Ensure the date is being saved in a variable of type Object. If it is not, the date picker may not function as expected.</div>
   </div>
 </details>
 
@@ -615,48 +598,17 @@ export default () => (
   </div>
 </details>
 
-<details>
-<summary>Is it possible to share the same chat session history across PWA and mobile SDK if a script is used to integrate the chatbot?</summary>
-<div>
- <br/>
- On PWA, you can use the same ymAuthenticationToken that you used on the mobile SDK. You can add the same ymAuthenticationToken at the end of the PWA URL to get the same chat session history.<br/>
 
-
- ```
-  https://cloud.yellow.ai/pwa/v2/live/<your_bot_id>?ymAuthenticationToken=<your_user_token>
-
-
-  ```
-
-
- <div>If a script is used to integrate the chatbot, you need to pass the token inside `window.ymConfig` in the script.</div>
-
-
-```
-window.ymConfig = {
-
-
-  ymAuthenticationToken: "your_unique_token"
-
-
-}
-```
-
-
-</div>
-</details>
 
 <details>
 <summary>How do we add ymAuthenticationToken to the PWA script so that we can see the same chat history in the PWA and mobile SDK?</summary>
+
 You need to pass the ymAuthenticationToken in the URL as a query parameter.
 
+`https://cloud.yellow.ai/pwa/v2/live/<your_bot_id>?ymAuthenticationToken=<your_user_token>`
 
- ```
- https://cloud.yellow.ai/pwa/v2/live/<your_bot_id>?ymAuthenticationToken=<your_user_token>
-
-
- ```
 </details>
+
 
 --------
 
@@ -719,21 +671,18 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 </details>
 
 <details>
-<summary>Is possible to display image and text in a single node?</summary>
-<div>
- <br/>
- <div>Yes, you can make use of <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#14-cards">Generic card</a>, and don not include any options in it. You need to include image, and description. Store the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code">function</a> response in var of type array and connect it to a message carousel node.<br/>
-<img src="https://i.imgur.com/UkcRGAy.png)" alt="drawing" width="40%"/>
-</div>
-  </div>
+<summary>Is it possible to display image and text in a single node?</summary>
+
+Yes, you can make use of a <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#14-cards">Generic card</a> and not include any options in it. You need to include an image and a description. Store the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code">function</a> response in a variable of type array and connect it to a message carousel node.
+
+<img src="https://i.imgur.com/UkcRGAy.png" alt="drawing" width="40%"/>
+
 </details>
 
 <details>
 <summary>Is it possible to configure customized icons for carousel (card) buttons?</summary>
 <div>
- <br/>
- <div>Icons are supported only in quick replies. whereas for buttons inside cards, you can use emojis.
-</div>
+ <div>Icons are supported only in quick replies. whereas for buttons inside cards, you can use emojis.</div>
   </div>
 </details>
 
@@ -741,30 +690,24 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 <summary>Is it possible to update the token without refreshing the webpage?</summary>
 <div>
  <br/>
- <div>No, the token and payload are only fetched during page load. Hence, you cannot update the token automatically.
-</div>
+ <div>No, the token and payload are only fetched during page load. Hence, you cannot update the token automatically.</div>
   </div>
 </details>
 
 <details>
 <summary>Even though the agent is not connected to the bot, the app.yellowmessenger.com chatbot displays a green round circle, indicating that the agent is online. Is it possible to change the settings of the bot on the app platform?</summary>
-<div>
- <br/>
- <div>Yes, on "app.yellowmessenger.com" or "app.yellow.ai" platform you can disable it in <b>Configuration > Channels > Chat Widget > General > Show Dot Status in Title</b>.<br/> <img src="https://i.imgur.com/NolCgJx.png"/>
 
+Yes, on "app.yellowmessenger.com" or "app.yellow.ai" platform you can disable it in <strong>Configuration > Channels > Chat Widget > General > Show Dot Status in Title</strong>.
 
-</div>
-  </div>
+<img src="https://i.imgur.com/NolCgJx.png"/>
+
 </details>
 
 <details>
 <summary>Is it possible to change the language of the bot whenever the user switches from one language to another on the website?</summary>
 <div>
  <br/>
- <div>Yes, the language of the bot is changed when a user switches from one language to another on the website. You have to update the bot's language and reinitialize the bot. Note that the language of the chat history cannot be updated, as those messages were already delivered, stored, and fetched from the backend in the respective language.
-
-
-</div>
+ <div>Yes, the language of the bot is changed when a user switches from one language to another on the website. You have to update the bot's language and reinitialize the bot. Note that the language of the chat history cannot be updated, as those messages were already delivered, stored, and fetched from the backend in the respective language.</div>
   </div>
 </details>
 
@@ -772,8 +715,7 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 <summary>What are the minimum compatible versions of the browsers supported by the web widget?</summary>
 <div>
  <br/>
- <div>• Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
-</div>
+ <div>• Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later</div>
   </div>
 </details>
 
@@ -781,81 +723,85 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 <summary>How to add the image in Quick Replies node?</summary>
 <div>
  <br/>
- <div>In the quick reply node, add the image link under the Prefix image. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/quick-replies">here</a> for more information.<br/><img src="https://i.imgur.com/CERBwzb.png"/><img src="https://i.imgur.com/FhUnKaK.png" alt="drawing" width="40%"/>
-</div>
+ <div>In the quick reply node, add the image link under the Prefix image. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/quick-replies">here</a> for more information.<br/><img src="https://i.imgur.com/CERBwzb.png"/><img src="https://i.imgur.com/FhUnKaK.png" alt="drawing" width="40%"/></div>
   </div>
 </details>
+
 
 <details>
-<summary>When an agent is connected to the bot, it is possible to close the conversation and trigger a journey?</summary>
-<div>
- <br/>
- <div>When an agent is connected to the bot, the bot will not trigger any flow. To trigger a particular flow and close the conversation, you need to add the "talk to bot" button in the Callout banner. You can add the button either from the UI or using the function.<br/><b>Add talk to bot button using the function</b><br/>The following is the sample function:
+<summary>When an agent is connected to the bot, is it possible to close the conversation and trigger a journey?</summary>
 
-```
-array = [{
-            title: 'Wish to end your chat with our Live Agent',
-            options: [
-                {
-   
-                 title: 'End Chat', text: "talk to bot"
-                }
-            ]
-        }]
-event : ui-event-update-promotion
-```
-<b>Add Talk to bot button using Automation's Conversation settings</b><br/>To add the banner text for the <b>talk to bot</b> button, follow these steps:<br/> 1. Navigate to <b>Studio > Conversation settings > Callout banner</b>.<br/><img src="https://i.imgur.com/HBKYqOg.png"/><br/>2. Enter the title and button name. Click <b>Update</b>.<br/><img src="https://i.imgur.com/rorMtMu.png" alt="drawing" width="40%"/><img src="https://i.imgur.com/0qqQDEI.png" alt="drawing" width="40%"/><br/>• The callout banner will be updated accordingly.
+When an agent is connected to the bot, the bot will not trigger any flow. To trigger a particular flow and close the conversation, you need to add the "talk to bot" button in the Callout banner. You can add the button either from the UI or using the function.
 
- 
-</div>
-  </div>
+**Add talk to bot button using the function**
+
+The following is the sample function:
+
+```json
+var array = [{
+    "title": "Wish to end your chat with our Live Agent",
+    "options": [
+        {
+            "title": "End Chat",
+            "text": "talk to bot"
+        }
+    ]
+}]
+```
+
+event: ui-event-update-promotion
+
+**Add Talk to bot button using Automation's Conversation settings**
+
+To add the banner text for the **talk to bot** button, follow these steps:
+
+1.  Navigate to **Studio \> Conversation settings \> Callout banner**.
+    \<img src="https://i.imgur.com/HBKYqOg.png"/\>
+
+2.  Enter the title and button name. Click **Update**.
+    \<img src="https://i.imgur.com/rorMtMu.png" alt="drawing" width="40%"/\>\<img src="https://i.imgur.com/0qqQDEI.png" alt="drawing" width="40%"/\>
+
+The callout banner will be updated accordingly.
+
+
 </details>
+
 
 <details>
 <summary>Is it possible to block users from copying bot them and pasting messages in the text field?</summary>
-<div>
- <br/>
- <div>Yes, it is possible to block users from copying bot messages. To implement this, you need to pass <b>disableCopyPaste: true</b> inside the the <b>window.ymConfig</b> chatbot script.
 
+Yes, it is possible to block users from copying bot messages. To implement this, you need to pass `disableCopyPaste: true` inside the the `window.ymConfig` chatbot script.
+
+```js
+window.ymConfig = {"bot":"x1657623696077","host":"[https://cloud.yellow.ai](https://cloud.yellow.ai)", "disableCopyPaste": true};
 ```
-window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "disableCopyPaste": true};
-```
-</div>
-</div>
 </details>
 
 <details>
 <summary>How to disable users from clicking on images in the carousel node?</summary>
-<div>
- <br/>
- <div>To disable users from clicking on images in the carousel node, include <b>disableCardImageClick: true</b> inside the the <b>window.ymConfig</b> chatbot script. 
 
+To disable users from clicking on images in the carousel node, include `disableCardImageClick: true` inside the `window.ymConfig` chatbot script.
+
+```js
+window.ymConfig = {"bot":"x1657623696077","host":"[https://cloud.yellow.ai](https://cloud.yellow.ai)", "disableCardImageClick": true};
 ```
-window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "disableCardImageClick": true};
-```
-</div>
-</div>
 </details>
 
 <details>
 <summary>Can I hide the chat separator when an agent is connected to the bot?</summary>
-<div>
- <br/>
- <div>To hide the chat separator when an agent is connected to the bot, include <b>hideTransferEvent: true</b> inside the the <b>window.ymConfig</b> chatbot script. 
 
+To hide the chat separator when an agent is connected to the bot, include `hideTransferEvent: true` inside the `window.ymConfig` chatbot script.
+
+```js
+window.ymConfig = {"bot":"x1657623696077","host":"[https://cloud.yellow.ai](https://cloud.yellow.ai)", "hideTransferEvent": true };
 ```
-window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "hideTransferEvent": true };
-```
-</div>
-</div>
 </details>
 
 <details>
 <summary>How to retrieve the sender ID on a website if Yellow Messenger authentication is not passed?</summary>
 <div>
  <br/>
- <div>To retrieve the sender ID, go to live bot page, right click and select <b>Inspect</b> > <b>Network</b> > <b>Payload</b> search for update API, you can find the userId within the payload. <br/><img src="https://i.imgur.com/hYbqI5c.png" alt="drawing" width="100%"/>
-</div>
+ <div>To retrieve the sender ID, go to live bot page, right click and select <b>Inspect</b> > <b>Network</b> > <b>Payload</b> search for update API, you can find the userId within the payload. <br/><img src="https://i.imgur.com/hYbqI5c.png" alt="drawing" width="100%"/></div>
   </div>
 </details>
 
@@ -863,9 +809,7 @@ window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "hid
 <summary>How can I start a new conversation when my chat has stopped, and the intent is not working?</summary>
 <div>
  <br/>
- <div>If your chat has stopped and the intent is not working, try the following steps to start a new conversation:<br/>• <b>Click the Home icon</b> – This will reset the conversation and allow you to start fresh.
-<br/>• <b>Clear cache</b> – Clearing your browser or app cache can help resolve issues caused by stored session data.
-</div>
+ <div>If your chat has stopped and the intent is not working, try the following steps to start a new conversation:<br/>• <b>Click the Home icon</b> – This will reset the conversation and allow you to start fresh.<b>Clear cache</b> – Clearing your browser or app cache can help resolve issues caused by stored session data.</div>
   </div>
 </details>
 

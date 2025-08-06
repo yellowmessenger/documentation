@@ -319,6 +319,8 @@ Fetches the details of the specified product id.
 
 **Sample Response:**
 
+```json
+
            {
     "items": [
         {
@@ -417,6 +419,7 @@ Fetches the details of the specified product id.
     },
     "total_count": 1
 }
+```
 
 ### 2.5 Get all the products
 
@@ -424,7 +427,7 @@ Retrieves the  list of all the available products.
 
 **Sample Response:**
 
-```
+```json
 {
   "items": [
     {
@@ -611,7 +614,7 @@ Retrieves the products based on a specific category ID.
 
 **Sample Response:**
 
-```
+```json
        {
   "items": [
     {
@@ -828,10 +831,10 @@ This action helps to add the products to customer's cart.
 | Field Name | Sample Input | Remarks |
 | -------- | -------- | -------- |
 | customertoken | eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.ey     | String Type <br/> Generated using customer login action    |
-|Product Details |{<br/>Qty:3,<br/>Sku:”acer-laptop”<br/>..<br/>..<br/>}| Object Type |
+|Product Details |`{<br/>Qty:3,<br/>Sku:”acer-laptop”<br/>..<br/>..<br/>}`| Object Type |
 
 **Sample Response:**
-```
+```json
            {
   "item_id": 4,
   "sku": "Acer Laptop",
@@ -852,7 +855,7 @@ Fetches the list of products that currently exist in the cart.
 
 **Sample Response:**
 
-```
+```json
             {
   "body": [
     {
@@ -873,7 +876,8 @@ Fetches the list of products that currently exist in the cart.
 Retrieves a list of countries and their regions. This data helps in filling up the billing and shipping details while placing an order.
 
 **Sample response:**
-~~~
+
+```json
 {
   "id": "IN",
   "two_letter_abbreviation": "IN",
@@ -918,7 +922,7 @@ Retrieves a list of countries and their regions. This data helps in filling up t
     }
   ]
 }
-~~~
+```
 
 ### 2.12 Estimate Shipping Cost
 
@@ -929,7 +933,7 @@ This action estimates the shipping cost for the products that exist in the cart 
 | Field Name | Sample Input | Remarks |
 | -------- | -------- | -------- |
 | customertoken | eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.ey|String Type<br/>Generated using customer login action|
-|Address| {<br/> region:”IN”, region_code:”AP”,<br/> street:[“stree1”,”stree2”],<br/> firstname:”John”,<br/> lastname:”Doe”<br/>…<br/>…<br/>}<br/>| Object Type |
+|Address| `{<br/> region:”IN”, region_code:”AP”,<br/> street:[“stree1”,”stree2”],<br/> firstname:”John”,<br/> lastname:”Doe”<br/>…<br/>…<br/>}`<br/>| Object Type |
 
 **Sample Response:**
 
@@ -959,7 +963,7 @@ Updates the shipping and billing information provided by the customer and displa
 | Field Name | Sample Input | Remarks |
 | -------- | -------- | -------- |
 | customertoken | eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.ey|String Type<br/>Generated using customer login action|
-|Address| {<br/> region:”IN”, region_code:”AP”,<br/> street:[“stree1”,”stree2”],<br/> firstname:”John”,<br/> lastname:”Doe”<br/>…<br/>…<br/>}<br/>| Object Type |
+|Address| `{<br/> region:”IN”, region_code:”AP”,<br/> street:[“stree1”,”stree2”],<br/> firstname:”John”,<br/> lastname:”Doe”<br/>…<br/>…<br/>}`<br/>| Object Type |
 
 **Sample Response:**
 
@@ -976,8 +980,8 @@ This action helps in updating the quantity of a particular item in the cart.
 | Field Name | Sample Input | Remarks |
 | -------- | -------- | -------- |
 | customertoken | eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.ey|String Type<br/>Generated using customer login action|
-|Address| {<br/> region:”IN”, region_code:”AP”,<br/> street:[“stree1”,”stree2”],<br/> firstname:”John”,<br/> lastname:”Doe”<br/>…<br/>…<br/>}<br/>| Object Type | 
-|Cart Item| {<br/>sku:”acer-laptop”, qty:”5”,<br/> cartId:”4”<br/>}<br/>|Object Type |
+|Address| `{<br/> region:”IN”, region_code:”AP”,<br/> street:[“stree1”,”stree2”],<br/> firstname:”John”,<br/> lastname:”Doe”<br/>…<br/>…<br/>}`<br/>| Object Type | 
+|Cart Item| `{<br/>sku:”acer-laptop”, qty:”5”,<br/> cartId:”4”<br/>}`<br/>|Object Type |
 |Item id|2|String Type<br/> Retrieve from get cart items action|
 
 **Sample Response:**
@@ -1017,7 +1021,7 @@ This action places an order for the products in the cart and generates an order 
 | -------- | -------- | -------- |
 | customertoken | eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.ey|String Type<br/>Generated using customer login action|
 |Payment Method|check|String Type <br/> Retrieve from “set shipping and billing info” action|
-|Billing Address|{<br/>region:””, region_code:””<br/>}|Object Type|
+|Billing Address| `{<br/>region:””, region_code:””<br/>}` |Object Type|
 
 **Sample Response:** 
 ```

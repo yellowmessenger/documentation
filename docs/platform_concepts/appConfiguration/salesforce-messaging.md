@@ -76,7 +76,7 @@ This integration enables bot users to connect with live agents on the Salesforce
    |Mobile| 9870000000| String| Mobile number of the user|
    Email|test@gmail.com| String | Email address of the user
    Query| I have a concern regarding my flight ticket|String| Subject/topic/reason why the ticket was created|
-   Salesforce messaging custom fields|<pre lang="json">{<br/>"mobile_Number_c": "9999444443",<br/>"email_c": "test@gmail.com"<br/>}<br/></pre>|Array| List of details provided by the user before initiating the chat with the live agent|
+   Salesforce messaging custom fields|<pre lang="json">`{<br/>"mobile_Number_c": "9999444443",<br/>"email_c": "test@gmail.com"<br/>}`<br/></pre>|Array| List of details provided by the user before initiating the chat with the live agent|
   
 
 ## Handle chat sessions in Salesforce

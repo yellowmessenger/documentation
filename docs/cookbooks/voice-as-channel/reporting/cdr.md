@@ -104,7 +104,7 @@ VoIP/IVR providers aim to bill companies accurately for channel usage. Analyzing
 
 1. Navigate to **Insights > Data Explorer > Call Details report**.
 2. Click on **Filters** and select **Callduration**.
-3. Click **+Add buckets > Varied** and create billing buckets by adding Values like <=5s, 15-30s, and >=30s.
+3. Click **+Add buckets > Varied** and create billing buckets by adding Values like `<=5s`, `15-30s`, and `>=30s`.
 
 ![image (32)](https://imgur.com/YERSsH0.png)
 

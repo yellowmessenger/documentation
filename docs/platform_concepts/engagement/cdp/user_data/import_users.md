@@ -147,7 +147,7 @@ For example, if there are two records with the same userId - one in row 10 and a
    ![](https://i.imgur.com/z3VGPUJ.png)
 
 8. Click **Next** to proceed.
-9. In **Tags**, add tags to the entire set of users in the import. By default, a tag with the name {imported_timestamp} - `DDMonYY_HH:MM` - is added to the import. To add more tags, enter the tag name and press Enter.
+9. In **Tags**, add tags to the entire set of users in the import. By default, a tag with the name `{imported_timestamp}` - `DDMonYY_HH:MM` - is added to the import. To add more tags, enter the tag name and press Enter.
 
    ![](https://i.imgur.com/prCfNqu.png)
 

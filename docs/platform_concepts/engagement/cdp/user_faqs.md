@@ -14,8 +14,7 @@ No, the User 360 table structure will not be automatically migrated from Sandbox
 
 <details>
 
-<summary>
-Can I add the same user once their record is deleted?</summary>
+<summary>Can I add the same user once their record is deleted?</summary>
 
 
 Yes, you can add the account again once it has been deleted.
@@ -23,9 +22,7 @@ Yes, you can add the account again once it has been deleted.
 </details>
 
 <details>
-<summary>
-How do I update user contact details or other information directly from a folder or remote server? [OR]
-<br/>How can I sync data from an SFTP integration?</summary>
+<summary>How do I update user contact details or other information directly from a folder or remote server? [OR] <br/>How can I sync data from an SFTP integration? </summary>
 
 
 1. **Create a CSV File** with contact details or other relevant information that you want to add/update. Ensure the filename begins with "userdata_".
@@ -45,8 +42,7 @@ Maximum File Size: Note that the maximum file size allowed for upload is 200MB.
 
 <details>
 
-<summary>
-I can see duplicate phone numbers for my user properties. What should I do?</summary>
+<summary>I can see duplicate phone numbers for my user properties. What should I do?</summary>
 
 User 360 verifies uniqueness solely based on the userId. Therefore, to avoid duplicate phone numbers, make sure that the phone number is set as your userId. This will ensure that each user's phone number is unique in the system.
 </details>
@@ -54,8 +50,7 @@ User 360 verifies uniqueness solely based on the userId. Therefore, to avoid dup
 
 <details>
 
-<summary>
-Can I change the data type in user properties?</summary>
+<summary>Can I change the data type in user properties?</summary>
 
 Once a property is created in User360, you cannot directly alter its data type or delete it.
 
@@ -74,8 +69,7 @@ The second user account, which lacks a valid userId and contains incorrect prope
 
 
 <details>
-<summary> How to add contact details to users in bulk? </summary>
-
+<summary> How to add contact details to users in bulk?</summary>
 You can create a CSV file with contact details and upload the CSV file using [User Data Import](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users).
 
 </details>
@@ -91,7 +85,7 @@ This option is only available for older bots. However, for bots running on execu
 <details>
 <summary>Can I connect a database with User 360?</summary>
 
-Use case: I currently store the details of users who click the "STOP" button to unsubscribe from my campaign. I want to integrate this information with User 360 to ensure that campaigns are not sent to those users. Is it possible to use User360 instead of a separate database to store the list of those who unsubscribed?<br/>
+Use case: I currently store the details of users who click the "STOP" button to unsubscribe from my campaign. I want to integrate this information with User 360 to ensure that campaigns are not sent to those users. Is it possible to use User360 instead of a separate database to store the list of those who unsubscribed?
 
 
 1. **Store user responses directly to User360 table**: You can store the user responses in a user property which saves it directly in User360. This allows you to associate the unsubscribe information with each user profile. For more details, refer to the documentation on [Storing conversation data in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
@@ -100,8 +94,7 @@ Use case: I currently store the details of users who click the "STOP" button to 
 </details>
 
 <details>
-<summary>
-Why is the phone number not saving in User 360? And how can I ensure it gets saved correctly?</summary>
+<summary>Why is the phone number not saving in User 360? And how can I ensure it gets saved correctly?</summary>
 
 
 The phone number may not be saving in User 360 if it is not entered with the country code. It is important to include the country code when capturing phone numbers to ensure proper saving in the system. 
@@ -111,15 +104,13 @@ Additionally, you can enable the **Prefix a calling code** option to automatical
 </details>
 
 <details>
-<summary>
-Can I change the datatype of a user property?</summary>
+<summary>Can I change the datatype of a user property?</summary>
 
 Unfortunately, once created, you cannot modify the data type of a property. It's essential to plan and choose the right datatype from the beginning to ensure accurate data management.
 </details>
 
 <details>
-<summary>
-Can I delete a user from user 360?</summary>
+<summary>Can I delete a user from user 360?</summary>
 
 No, deleting a user from user 360 is not possible. Once a user is created, their data becomes a permanent part of the user 360 database. Be cautious when adding users and ensure the accuracy of the information provided.
 </details>
@@ -153,16 +144,15 @@ To successfully import the phone user property, it is mandatory to include the c
 
 <details>
 <summary>I am unable to upload a CSV file created from Microsoft Excel</summary>
-When saving the file from Excel, select the option to save it as <b>CSV (Comma delimited)</b>. This will ensure that the file is saved in the appropriate CSV format, making it compatible for uploading to the platform.<br/>
+
+When saving the file from Excel, select the option to save it as <b>CSV (Comma delimited)</b>. This will ensure that the file is saved in the appropriate CSV format, making it compatible for uploading to the platform.
 
 <center><img src="/img/cdp/csvFile.png" width="70%"/></center>
 
 </details>
 
 <details>
-<summary>
-How to update a specific user property through CSV import?
-</summary>
+<summary>How to update a specific user property through CSV import?</summary>
 
 1. **Prepare your CSV file**: Ensure that your CSV file contains the necessary columns, including the "UserId" column and the column you want to update.
 

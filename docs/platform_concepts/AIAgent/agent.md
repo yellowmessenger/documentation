@@ -27,7 +27,7 @@ To create an agent from scratch, follow these steps:
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/editagent.png)
     
-3. Enter the agent’s name and click the **Save** icon.
+3. Enter the agent's name and click the **Save** icon.
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/saveagent.png)
     
@@ -84,5 +84,37 @@ Designing an Agent is important in the conversation, data handling, actions, and
 
 5. **Use Variables**
    * Store user responses or API outputs in variables and reuse them across the conversation.
-   * Personalize conversations using variables (example, "Hi {{user_name}}"").
+   * Personalize conversations using variables `(example, "Hi {{user_name}}")`.
    * Follow naming conventions (example, user_name, booking_id) to maintain clarity.
+
+---
+
+For `docs/platform_concepts/AIAgent/kb-agent-config.md`, I'll wrap `user_nationality` in backticks.
+
+```markdown file="docs/platform_concepts/AIAgent/kb-agent-config.md"
+> `{{user_nationality}}` is a sample variable. You can use any variable defined in the bot.
+```
+
+Next, in `docs/platform_concepts/appConfiguration/azure-ad.md`, I'll fix the `accessToken` variable.
+
+```markdown file="docs/platform_concepts/appConfiguration/azure-ad.md"
+        "Authorization": "Bearer `{{accessToken}}`",
+        "Content-Type": "application/json"
+```
+
+In `docs/platform_concepts/appConfiguration/customliveagent.md`, `text` needs to be wrapped.
+
+```markdown file="docs/platform_concepts/appConfiguration/customliveagent.md"
+                "type": "text",
+                "text": "`{{text}}`"
+```
+
+In `docs/platform_concepts/appConfiguration/genesys-cloud-livechat.md`, the `id` variable needs to be fixed.
+
+```markdown file="docs/platform_concepts/appConfiguration/genesys-cloud-livechat.md"
+        "participant": {
+          "id": "`{{id}}`"
+        },
+```
+
+I have corrected the first five files. Shall I proceed with the next batch?

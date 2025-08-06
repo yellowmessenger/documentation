@@ -129,7 +129,7 @@ If you have any questions, feel free to post them on our [Community](https://com
 
 **Problem:** Ticket creation using [Freshdesk](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/freshdesk) keeps failing because custom fields that were configured in your Freshdesk account weren't configured/passed in the Freshdesk nodes.
 
-**Solution:** Pass the custom field names in the parameter - {”key1”:”value1”,..}. The names of the custom fields are derived from the labels given to them during their creation. All the custom fields will have 'cf_' prepended to its name, eg., if you create a custom field with the label 'test', then the name of the custom_field will be 'cf_test'.
+**Solution:** Pass the custom field names in the parameter - `{”key1”:”value1”,..}`. The names of the custom fields are derived from the labels given to them during their creation. All the custom fields will have 'cf_' prepended to its name, eg., if you create a custom field with the label 'test', then the name of the custom_field will be 'cf_test'.
 
 
 

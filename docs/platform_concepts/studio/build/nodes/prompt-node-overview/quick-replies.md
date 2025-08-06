@@ -100,7 +100,7 @@ Refer to the following GIF to see how the Quick replies node works:
 
 You can also pass the data to the quick replies buttons and title using the variable. Use the following code to pass the data:
 
-{{{variables.info}}}, {{{variables.info1}}}
+`{{{variables.info}}}`, `{{{variables.info1}}}`
 
 To pass the data to quick replies buttons, follow these steps:
 

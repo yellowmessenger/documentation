@@ -17,7 +17,7 @@ The following table consists of various data types for variables, along with the
 | --- | --- | --- |
 | Number | For storing numbers, including floating-point numbers. | 10, 3.14, -15 |
 | String | For storing alphanumeric characters. | 'Harry', 'PAN9856', '123starbucks' |
-| Object | For storing batch data such as database, API responses, or results from a date prompt. | {"Name": "Ron", "Phone": 9980808080, "Age": 40} |
+| Object | For storing batch data such as database, API responses, or results from a date prompt. | `{"Name": "Ron", "Phone": 9980808080, "Age": 40}` |
 | Array | For storing a list of multiple values of different data types. | [1,2,3,"Text"], ["india", "+91"] |
 | Boolean | For storing logical data with true or false values (1/0). | true, false |
 
@@ -57,7 +57,7 @@ User: 3 PM
 
   The AI-agent uses these variables to confirm the appointment details with the user.
 
-  > AI-agent: So, you want to book an appointment for {{{variables.appointmentDate}}} on {{{variables.appointmentTime}}}. Can you confirm?
+  > AI-agent: So, you want to book an appointment for `{{{variables.appointmentDate}}}` on `{{{variables.appointmentTime}}}`. Can you confirm?
   > **Sample values**: AI-agent: So, you want to book an appointment for next Friday at 3 PM. Can you confirm??
      User: Yes
 
@@ -90,7 +90,7 @@ Custom variables are created by AI-agent designers to store specific information
 * [Journey variable](#journey-variable)
 * [Global variable](#global-variable) 
 
-:::notes
+:::note
 * By default, both Journey and Global variables expire after 48 hours of inactivity to maintain data freshness and optimize storage.
 * For the WhatsApp channel, Global variable values persist for the lifetime of the user and do not expire after 48 hours. This ensures a seamless and continuous experience across sessions for WhatsApp users.
 :::
@@ -125,7 +125,7 @@ Now, the journey variable `appointmentTime` is set to "2 PM".
 
 * **Finalizing the interaction**:
 
-> AI-agent: You have requested an appointment on {{variables.appointmentDate}} at {{{variables.appointmentTime}}}. Is this correct?
+> AI-agent: You have requested an appointment on `{{variables.appointmentDate}}` at `{{{variables.appointmentTime}}}`. Is this correct?
 User: Yes
 
 In this example, `variables.appointmentDate` and `variables.appointmentTime` are journey variables that hold information relevant to the current booking process. Once the session ends or the appointment is confirmed, these variables can be reset for the next interaction.
@@ -151,7 +151,7 @@ Set the promotion code to 'SUMMER21'. Here, the Global variable 'promoCode' is s
 * **Using the Global Variable in User Interaction**:
 
 > User: Do you have any discount codes?
-AI-agent: Yes, you can use the code {{{variables.promoCode}}} to get a discount on your purchase!.
+AI-agent: Yes, you can use the code `{{{variables.promoCode}}}` to get a discount on your purchase!.
 
 In this example, 'promoCode' is a global variable that holds the current promotion code. Any user interacting with the AI-agent can access this variable, ensuring that the promotion code is consistently communicated to all users.
  
@@ -161,7 +161,7 @@ System variables are pre-defined variables that store information about the user
 
 **Syntax:**
 
-* **System variable**: {{{system_variable_name}}} notation is used to access system variables.
+* **System variable**: `{{{system_variable_name}}}` notation is used to access system variables.
 * **User profile**: You can access the user profile using `{{{profile.field_name}}}`.
 
 The following fields are available in the user profile object:

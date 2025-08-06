@@ -81,7 +81,7 @@ To connect Viber's business channel to your brand, you need to follow these step
 To access your Viber business account, follow these steps:
 	
 1. Ensure that Viber app is installed on your phone.
-2. Replace <<service_ID>> with your account service ID in the generic URL format, viber://chat?service=<<service_ID>>. For example, viber://chat?service=12345
+2. Replace `<<service_ID>>` with your account service ID in the generic URL format, `viber://chat?service=<<service_ID>>`. For example, `viber://chat?service=12345`
 3. Click on the link to navigate to the Viber business account in the app.
 	
 ## Change of Webhooks

@@ -27,7 +27,7 @@ To add an API key:
 
 To fetch a dynamic access token:
 
-1. [Add the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).  In **Key** enter **Authorization** and in **Value** enter the variable name in {{{}}} format, for example {{{auth_token}}}.
+1. [Add the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).  In **Key** enter **Authorization** and in **Value** enter the variable name in `{{{}}}` format, for example `{{{auth_token}}}`.
 
    ![](https://imgur.com/8jcJzHd.png)
 

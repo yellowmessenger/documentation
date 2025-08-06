@@ -317,8 +317,8 @@ In condition node, questions around why, what, No, repeat etc can be answered lo
 | *New feature*  (Private Beta) 
 
 User Response Acknowledgement/Filler Words, if configured for a particular step in the conversational journey, allow the voice bot to acknowledge the user’s response quickly. This acknowledgement is executed prior to processing any backend intent detection/CRM API calls etc that might add to the conversational delay.  
-* **Legacy Behavior**: {User Speech Ends} -> {Bot Processes User Inputs} -> {Bot Proceeds to the next step}.  
-* **New configurable Behavior**: {User Speech Ends } -> {Bot Acknowledges user response by playing a configurable voice/sound like “ok”/”got it”/”mm-hmm”} -> {Bot Processes User Inputs} -> {Bot Proceeds to the next step}
+* **Legacy Behavior**: User Speech Ends -> Bot Processes User Inputs -> Bot Proceeds to the next step.  
+* **New configurable Behavior**: User Speech Ends  -> Bot Acknowledges user response by playing a configurable voice/sound like “ok”/”got it”/”mm-hmm” -> Bot Processes User Inputs -> Bot Proceeds to the next step
 
 
 
