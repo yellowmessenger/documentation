@@ -3,7 +3,7 @@ title: Build your bot conversation flow
 sidebar_label : Build your bot conversation flow
 ---
 
-After [creating your bot](#step-2-create-or-access-your-bot), you can begin building its flow to manage how it interacts with users. Flow creation includes the following steps:
+After [creating your bot](https://docs.yellow.ai/docs/platform_concepts/studio/build/create_chatbot#create-chatbot-manually), you can begin building its flow to manage how it interacts with users. Flow creation includes the following steps:
 
 * [Setup flow triggers](#setup-flow-triggers)
 * [Create bot flows](#create-bot-flows)

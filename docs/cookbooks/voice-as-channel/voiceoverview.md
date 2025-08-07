@@ -5,9 +5,9 @@ sidebar_label : Voice agent overview
 
 
 In this article, you will learn: 
-1. [Introduction to conversational voice AI](#intro) 
-2. [Deploying and understanding voice agents for business](#fundamentals)
-3. [Yellow.ai's complete voice agent solution provided by each module](#ecosystem) 
+1. [Introduction to conversational voice AI](#2-introduction-to-conversational-voice-ai) 
+2. [Deploying and understanding voice agents for business](#3-deploying-and-understanding-voice-agents-for-business)
+3. [Yellow.ai's complete voice agent solution provided by each module](#4-yellowais-complete-voice-bot-solution) 
 
 
 ------

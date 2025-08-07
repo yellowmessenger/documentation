@@ -252,7 +252,7 @@ To configure multi-workspaces, follow the steps :
 
    ![](https://i.imgur.com/9Mswcpr.png)
 
-3. To use Slack APIs, you need to store the accessToken for each workspace by mapping accessToken with [APIs](#5). Set up a flow to capture your **`accessToken <> teamId`** mapping in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/database#1-create-table):
+3. To use Slack APIs, you need to store the accessToken for each workspace by mapping accessToken with [APIs](#api). Set up a flow to capture your **`accessToken <> teamId`** mapping in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/database#1-create-table):
 
 - Add a custom event `slack-oauth-access-token` in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub). You will receive this event each time your app is added to a workspace and will have the following schema:
 

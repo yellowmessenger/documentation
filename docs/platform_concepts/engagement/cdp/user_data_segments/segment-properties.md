@@ -30,7 +30,7 @@ value | Value of the expression. Use + to add multiple values. For example, crea
   
   <img src="https://i.imgur.com/PnSrqvJ.png" width="80%"/>
 
-To create more sophisticated segments you can [combine `and` with `or` conditions](/docs/platform_concepts/engagement/cdp/user_data_segments/segment_usecases#21-segments-with-multiple-conditions-andor). This makes segments more powerful and flexible.
+To create more sophisticated segments you can [combine `and` with `or` conditions](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segment_usecases#segment-with-multiple-conditions). This makes segments more powerful and flexible.
 
 
 Once you create a segment, you can view users in the segment, modify segment condition, download users of the segment, or delete it as explained in the following sections.
@@ -48,4 +48,4 @@ Segments involving date, time, or date-time data types are not real-time; the us
 **What next?**
 
 * Once you've created a segment, [view users in the segment](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_segments#view-segment-users) and know how to use the segment to [run targeted campaigns](/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
-* [Edit segment condition or name](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_segments#edit-user-segment) if needed. If you want to delete, check out [Delete segment](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_segments#2-manually-delete-user-segment).
+* [Edit segment condition or name](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_segments#edit-user-segment) if needed. If you want to delete, check out [Delete segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/archive-user-segment#manually-delete-user-segment).

@@ -161,7 +161,7 @@ Enter the following details for your brand:
 
    4. **Website URL**: Enter the website address of the brand associated with the bot. This should be a publicly available URL starting with `https://` 
    
-   5. Click **Save and next** to proceed to [setting up bot details](#enter-bot-details).
+   5. Click **Save and next** to proceed to [setting up bot details](#step-3-enter-bot-details).
 
    ![](https://i.imgur.com/kTFWTA8.png)
   
@@ -181,7 +181,7 @@ Enter the bot details based on the descriptions provided for each field in the f
    ------ | -----------
    Bot name |  The name of the bot to appear to the end-users. It is recommended to choose a bot name that corresponds with the brand instead of a personal or random name. Do not use words such as personal, test, or demo in bot names.
    Bot logo | 1024x1024 pixel. In conversations, logos appear in 1024 pixel diameter circles. Make sure that your logo appears well in the circle.
-   [Entry points](#11-understand-entry-point) | Select where users can start conversations with the bot. **Local** if the organisation has a physical location, select **Non-Local** otherwise. You can also select both the options.
+   [Entry points](#understand-entry-point) | Select where users can start conversations with the bot. **Local** if the organisation has a physical location, select **Non-Local** otherwise. You can also select both the options.
    Domain |  The organization's domain URL. Use **Add domain** to add multiple domain addresses.
    Regions | Countries and localities in which the bot is allowed to launch the non-local entry points.
    Customer care number | The customer care contact number to display in Google results.

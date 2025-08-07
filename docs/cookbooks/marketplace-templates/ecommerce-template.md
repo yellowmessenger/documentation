@@ -50,7 +50,6 @@ Here are the details of the **Browse products** flow:
 
 
 ### 1.2 Add to cart 
-
 This flow is executed when the bot user selects a product to add to the cart. The user can add each product along with the quantity and proceed to buy once all the required items are added to the cart. 
 
 <center>
@@ -68,7 +67,7 @@ This flow is executed when the bot user selects a product to add to the cart. Th
 
 4. **Shows cart summary**: Calculates the cart price (Price associated with the Product ID * quantity = Total Price) and renders the cart details using the `formatCartSummary` **Function** node along with these options (**Quick replies**) 
 
-   * [Buy now](#buy-now), [Edit cart](#edit-cart), [Clear cart](#clear-cart) and Add more products. It triggers the respective flow based on the input. 
+   * [Buy now](#15-buy-now), [Edit cart](#13-edit-cart), [Clear cart](#14-clear-cart) and Add more products. It triggers the respective flow based on the input. 
 
 
 ![](https://i.imgur.com/wW9pPJP.png)

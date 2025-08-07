@@ -67,7 +67,7 @@ The Voice Input node will only work for voice agents, meaning you must have enab
 
    ![](https://i.imgur.com/n3muuJC.png)
 
-2. In **[Input type](#11-input-type)**, select the type of information you want to capture from the user through voice. <br/>
+2. In **[Input type](#input-type)**, select the type of information you want to capture from the user through voice. <br/>
    To securely **capture PCI-related details**, choose one of the supported types. The platform automatically encrypts PCI data and stores it securely with restricted access.
    - PCI – Card number 
    - PCI – Card security code 
@@ -78,9 +78,9 @@ The Voice Input node will only work for voice agents, meaning you must have enab
    ::: 
 3. In **Bot speaks**, enter the message that the voice agent will say to request the user's phone number.
 4. In **Repeat message**, input the message that the voice agent will repeat if the user's response is unclear or requires verification.
-5. In **[Validator](#12-validator)**, validate the user input against the chosen criteria.
+5. In **[Validator](#validator)**, validate the user input against the chosen criteria.
 6. In **[Capturing the user input](#13-capturing-user-input)**, configure how the voice agent should gather user inputs.
-7. In **[Additional settings](#14-additional-settings)**, adjust configurations to enhance conversation authenticity and emulate human-like interactions.<br/>
+7. In **[Additional settings](#additional-settings)**, adjust configurations to enhance conversation authenticity and emulate human-like interactions.<br/>
    For PCI related inputs, you can Additional Settings to define how PCI data is passed to your API.
     * **Encoding type**: Choose how the PCI input is encoded —`Text`, `Hexadecimal`, or `Base64`.
     * **Card number format**: Choose the format in which users are expected to enter the card number. This helps validate and correctly capture card data.

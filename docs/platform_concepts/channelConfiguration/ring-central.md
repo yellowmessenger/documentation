@@ -7,9 +7,9 @@ Integrate your RingCX Account with IVA Professional to allow agents on RingCentr
 
 This article will help you with the following:
 
-1. [Integrating IVA Professional with RingCX Account](#connect-yellowai-with-ringcentral)
-2. [Displaying RingCX account's chat widget on the website](#display-ringcentrals-chat-widget-on-your-website)
-3. [Creating bot conversational flow](#build-a-bot-conversation-flow)
+1. [Integrating IVA Professional with RingCX Account](#connect-iva-professional-with-ringcx-account)
+2. [Displaying RingCX account's chat widget on the website](#display-ringcx-accounts-chat-widget-on-your-website)
+3. [Creating bot conversational flow](#build-bot-conversation-flow--for-ringcentral)
 
 ## Connect IVA Professional with RingCX Account
 

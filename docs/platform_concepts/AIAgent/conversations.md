@@ -130,7 +130,7 @@ Types of inputs that can be used as Start Triggers:
 
 A prompt is a set of instructions that tells the AI agent what to say or do during a conversation. It guides the conversation flow and helps the agent respond appropriately based on the user’s input
 
-In conversation design, a prompt can be a question, confirmation, statement, [call to action](#configure-prompt-using-actions) (Get input, call worflow, or call fallback), or [Variables](#variables).
+In conversation design, a prompt can be a question, confirmation, statement, [call to action](#step-3-add-actions-in-prompt-section) (Get input, call worflow, or call fallback), or [Variables](#step-5-variables).
 
 Prompts can be used to:
 * Ask the user a question and wait for a reply

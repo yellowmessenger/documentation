@@ -16,7 +16,7 @@ This article focuses on **Call details report** (CDR) for voice agents, a databa
 CDR is a report of telephony data obtained from each call (voice agent conversation with customer) for reporting and analytics purposes. Parameters of every call made through the **yellow telephony system** is recorded in the CDR, making it a reliable source of truth for call-related information.
 
 - CDR fields help businesses gain valuable insights into their call center operations and customer interactions.
-- The CDR table contains several fields that record various details about the call, such as **call duration, caller ID, called number, call status, and call type**. CDR fields are explained in the [last section](#cdr) of this article. 
+- The CDR table contains several fields that record various details about the call, such as **call duration, caller ID, called number, call status, and call type**. CDR fields are explained in the [last section](#4-cdr-fields-and-their-definitions) of this article. 
 - By analyzing CDR data, businesses can **identify trends and patterns** in their call center operations, **improve call quality**, and **enhance customer experience**, make **data-driven decisions** and **optimize** the voice agent operations for maximum efficiency and effectiveness.
 
 Examples of insights you can derive from the auto generated call details report: 

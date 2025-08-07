@@ -2088,7 +2088,7 @@ Explore these selections and easily add them to your cart with just a click.
 
 
 :::note
-You will see only events that you have enabled for the bot. For more details, [see how to activate events](#3-activate-shopify-events-you-wish-to-use-in-yellowai).
+You will see only events that you have enabled for the bot. For more details, [see how to activate events](#activate-shopify-events-you-wish-to-use-in-automation).
 :::
 
 
@@ -2138,7 +2138,7 @@ The availability of events within the integration depends on the scopes you have
  
 ### Activate Shopify events you wish to use in Automation
 
-Apart from the events mentioned in the previous section, you can enable other events that you want to make use in Automation. For a list of events supported in Automation, see [here](#supported-shopify-events-you-can-use-in-studio).
+Apart from the events mentioned in the previous section, you can enable other events that you want to make use in Automation. For a list of events supported in Automation, see [here](#supported-shopify-events-you-can-use-in-automation).
 
 To enable events:
 
@@ -2182,7 +2182,7 @@ To make use of Shopify events in bot flows:
 
 
 4. Choose your **Account name**
-5. Select the respective **Action** that you need to perform. For details of each schema, see [Schema details for different Shopify actions](#schema-details-frr-different-shopify-actions).
+5. Select the respective **Action** that you need to perform.
 
 5. In **Var** pass the parameter variable that contains the required information in the format `variables.objVariableName.key`. 
 

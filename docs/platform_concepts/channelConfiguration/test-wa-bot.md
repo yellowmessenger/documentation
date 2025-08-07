@@ -13,7 +13,6 @@ The following table provides a list of supported and unsupported message formats
 
 Supported message types | Unsupported message types
 ------------ | ------------
-Text | Single/Multi Product Message
 Media - image, document, video | Cart Events for SPM/MPM
 WhatsApp Quick Replies | WhatsApp Pay
 WhatsApp List Messages | WhatsApp template Quick Replies
@@ -70,6 +69,6 @@ To test WA bot from Automation module, follow these steps:
 
    ![](https://imgur.com/kJ0NqTE.png)
    
-* Follow the steps outlined in the testing section of the [Automation module](#test-whatsapp-bot-using-studio-module).
+* Follow the steps outlined in the testing section of the [Automation module](#test-whatsapp-bot-using-automation-module).
 
 
