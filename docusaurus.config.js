@@ -59,6 +59,7 @@ module.exports = {
       logo: {
         alt: "yellow.ai",
         src: "img/Yai-logo-yellow.svg",
+        srcDark: "img/Yellow.ai_Logo-1.png",
        // href: "/",
        // target: "_self",
       },

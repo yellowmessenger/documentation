@@ -331,22 +331,7 @@ If you encounter any errors while saving the certificate, follow these steps:
 4. Look for the name **saveApiCertificates** and click on it.
 5. If you see an error message like *host is invalid*, check the host entry URL. If it starts directly with the domain (e.g., app.yellow.ai), try adding "https://" or "http://" before the domain (e.g., https://app.yellow.ai). This should resolve the issue.
 
-```json
-{
-    "success": true,
-    "message": "Success",
-    "data": {
-        "inserted": [],
-        "updated": [],
-        "invalid": [
-            {
-                "host": "apihmo-mtls.brb.com.br",
-                "error": "Error: Host is invalid\n    at /app/dist/controllers/apiCertificates.js:83:27\n    at step (/app/dist/controllers/apiCertificates.js:33:23)\n    at Object.next (/app/dist/controllers/apiCertificates.js:14:53)\n    at /app/dist/controllers/apiCertificates.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/app/dist/controllers/apiCertificates.js:4:12)\n    at validateCertData (/app/dist/controllers/apiCertificates.js:71:49)\n    at /app/dist/controllers/apiCertificates.js:164:42\n    at step (/app/dist/controllers/apiCertificates.js:33:23)\n    at Object.next (/app/dist/controllers/apiCertificates.js:14:53)\n    at /app/dist/controllers/apiCertificates.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/app/dist/controllers/apiCertificates.js:4:12)\n    at processCertificates (/app/dist/controllers/apiCertificates.js:146:12)\n    at /app/dist/controllers/apiCertificates.js:215:42\n    at step (/app/dist/controllers/apiCertificates.js:33:23)"
-            }
-        ]
-    }
-}
-```
+
 
 * If you encounter any other error, such as "Certificate is invalid", please* check it internally and provide the correct certificate.
 
