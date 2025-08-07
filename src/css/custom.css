@@ -29,18 +29,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary);
-  font-weight: 500; /* Corrected from 55 0 */
+  font-weight: 600; /* Corrected from 55 0 */
   color: var(--color-text);
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
 
 h1 {
-  font-size: clamp(2rem, 4.5vw, 2.5rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
 }
 
 h2 {
-  font-size: clamp(1.75rem, 3.5vw, 2rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
 }
 
 a {
@@ -54,166 +54,11 @@ a:hover {
   text-decoration: underline;
 }
 
+
 /* ================== NAVBAR ================== */
 
-.navbar {
-  z-index: 1000;
-  background-color: var(--ifm-navbar-background-color);
-  position: sticky;
-  top: 0;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.navbar__brand {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-shrink: 0;
-  min-width: 0;
-}
 
-.navbar__brand img {
-  max-height: 40px;
-  width: auto;
-}
-
-.navbar__items {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  flex-wrap: nowrap; /* Keep links on a single line on desktop */
-  gap: 0.5rem;
-  margin-left: 0.5rem;
-  min-width: 0;
-  justify-content: flex-end;
-}
-
-.navbar__item {
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: max-content;
-}
-
-.navbar__link {
-  color: var(--color-text);
-  transition: color 0.2s ease;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.navbar__link:hover {
-  color: var(--color-accent);
-  text-decoration: underline;
-}
-
-/* Style for the active navigation link */
-.navbar__link.navbar__link--active {
-  color: var(--color-accent);
-  font-weight: 600;
-  border-bottom: 2px solid var(--color-accent);
-  padding-bottom: 2px;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-/* Search bar enhancement */
-.DocSearch-Button {
-  height: 40px;
-  width: 250px;
-  font-size: 0.95rem;
-  padding: 0 1rem;
-  border-radius: 6px;
-  border: 1px solid var(--color-divider);
-  background: white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-}
-
-/* CTA BUTTON */
-.cta-button {
-  background-color: var(--color-accent);
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-  margin-left: 0.5rem;
-  white-space: nowrap;
-}
-
-.cta-button:hover {
-  background-color: #155de0;
-}
-
-/* ================== MOBILE NAV ================== */
-
-/* Hide desktop nav and show toggle button on small screens */
-@media (max-width: 996px) {
-  .navbar__items {
-    display: none;
-  }
-  
-  .navbar__toggle {
-    display: block;
-    margin-left: auto;
-    cursor: pointer;
-  }
-
-  .mobile-menu-active {
-    display: block;
-    position: fixed;
-    top: var(--ifm-navbar-height);
-    left: 0;
-    width: 75%;
-    height: calc(100% - var(--ifm-navbar-height));
-    background: var(--color-bg);
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    z-index: 2000;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .mobile-menu-active {
-    transform: translateX(0);
-  }
-
-  .mobile-menu a {
-    padding: 0.75rem 0;
-    font-size: 1.1rem;
-    color: var(--color-text);
-    border-bottom: 1px solid var(--color-divider);
-  }
-
-  .mobile-menu a:hover {
-    color: var(--color-accent);
-  }
-}
-
-/* Hide the mobile menu toggle on larger screens */
-@media (min-width: 997px) {
-  .navbar__toggle {
-    display: none;
-  }
-}
-
-/*
-  Fix for the homepage where the navbar links were hidden.
-  This ensures the homepage mobile toggle and links are visible.
-*/
-@media (max-width: 996px) {
-  .homepage .navbar__toggle {
-    display: block;
-  }
-}
 
 /* ================== HOMEPAGE COMPONENTS ================== */
 
@@ -320,6 +165,33 @@ pre, code {
   }
 }
 
+/* Adjust the right padding of the Table of Contents container */
+.tableOfContents_bqdL {
+  padding-right: 0.5rem; /* Try reducing this value (e.g., 0.5rem, 0.25rem, 0) */
+  /* You can also try adding a margin-right if padding isn't enough */
+  /* margin-right: 0.5rem; */
+}
+
+/* If the padding is coming from the grid column itself, you might need to adjust this */
+.col--3 {
+  /* This class usually controls the column width and its internal spacing */
+  /* You might find padding-right here in Docusaurus's default styles */
+  /* You can override it like this: */
+  /* padding-right: 1rem; */
+}
+
+/* Make all top-level links in the Table of Contents bold (these are usually H2s) */
+.table-of-contents li > .table-of-contents__link {
+  font-weight: 500; /* Use 600 or 700 for a clear bold effect */
+  color: #333;
+}
+
+/* Ensure nested links (H3s, H4s) are not bold by default */
+.table-of-contents ul li > .table-of-contents__link {
+  font-weight: normal;
+}
+
+
 /* ================== SEARCH MODAL ANIMATION ================== */
 
 @keyframes fadeInScale {
@@ -339,4 +211,258 @@ pre, code {
 
 .DocSearch-Container .DocSearch-Backdrop {
   transition: opacity 0.3s ease;
+}
+
+
+
+
+/* --- ADMONITION (NOTE, INFO, WARNING, DANGER) STYLES --- */
+
+/* File: src/css/custom.css */
+
+/* --- ADMONITION (NOTE, INFO, WARNING, DANGER) STYLES --- */
+
+/* Base style for all admonitions */
+.theme-admonition {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem; /* Consistent spacing below each admonition */
+  color: var(--color-text);
+  position: relative;
+}
+
+.admonitionHeading_Gvgb {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+}
+
+/* Hide the default Docusaurus SVG icon for ALL admonitions */
+.admonitionIcon_Rf37 {
+  display: none !important; /* Use !important to ensure it's always hidden */
+}
+
+/* Base style for the new ::before icons */
+.admonitionHeading_Gvgb::before {
+  font-family: 'remixicon' !important; /* Use Remixicon font */
+  font-size: 1.1rem; /* Consistent icon size */
+  line-height: 1;
+  margin-right: 0.5rem; /* Space between icon and heading text */
+  vertical-align: middle;
+  display: inline-block;
+  flex-shrink: 0; /* Prevent icon from shrinking on small screens */
+}
+
+/* Style for 'note' admonition with specified yellow background and best contrast */
+.theme-admonition-note {
+  background-color: #fff0ca; /* Your specified light yellow background */
+  border-left: 4px solid #ca9819; /* Your specified darker yellow/brown border */
+  color: var(--color-text); /* Keep main text color consistent */
+}
+
+.theme-admonition-note .admonitionHeading_Gvgb {
+  color: #8B4513; /* A rich, dark saddle brown for strong contrast with the yellow */
+  font-weight: 600;
+}
+
+.theme-admonition-note .admonitionHeading_Gvgb::before {
+  content: '\eac2'; /* Remixicon: 'file-line' icon */
+  color: #8B4513; /* Icon color matches heading (corrected from fill) */
+}
+
+/* Style for 'info' admonition (general information, important tips) */
+.theme-admonition-info {
+  background-color: #e6f7ff; /* Standard light blue */
+  border-left: 4px solid #1890ff; /* Vibrant blue border */
+}
+
+.theme-admonition-info .admonitionHeading_Gvgb {
+  color: #1890ff; /* Standard blue for heading */
+}
+
+.theme-admonition-info .admonitionHeading_Gvgb::before {
+  content: '\EF44'; /* Remixicon: 'error-warning-fill' (circle with exclamation) */
+  color: #1890ff; /* Icon color matches heading (corrected from fill) */
+}
+
+/* Style for 'tip' admonition (often green, for best practices/tips) */
+.theme-admonition-tip {
+  background-color: #f6ffed; /* Very light green */
+  border-left: 4px solid #52c41a; /* Standard green border */
+}
+
+.theme-admonition-tip .admonitionHeading_Gvgb {
+  color: #52c41a; /* Standard green for heading */
+}
+
+.theme-admonition-tip .admonitionHeading_Gvgb::before {
+  content: '\eb84'; /* Remixicon: 'lightbulb-line' (lightbulb icon) */
+  color: #52c41a; /* Icon color matches heading (corrected from fill) */
+}
+
+/* Style for 'warning' admonition (caution, potential issues) */
+.theme-admonition-warning {
+  background-color: #fffbe6; /* Light yellow */
+  border-left: 4px solid #faad14; /* Standard orange border */
+}
+
+.theme-admonition-warning .admonitionHeading_Gvgb {
+  color: #faad14; /* Standard orange for heading */
+}
+
+.theme-admonition-warning .admonitionHeading_Gvgb::before {
+  content: '\ED19'; /* Remixicon: 'alert-fill' (triangle with exclamation mark) */
+  color: #faad14; /* Icon color matches heading (corrected from fill) */
+}
+
+/* Style for 'danger' or 'alert' admonition (critical, error, breaking changes) */
+.theme-admonition-danger,
+.theme-admonition-alert {
+  background-color: #fff1f0; /* Very light red */
+  border-left: 4px solid #ff4d4f; /* Standard red border */
+}
+
+.theme-admonition-danger .admonitionHeading_Gvgb,
+.theme-admonition-alert .admonitionHeading_Gvgb {
+  color: #ff4d4f; /* Standard red for heading */
+}
+
+.theme-admonition-danger .admonitionHeading_Gvgb::before,
+.theme-admonition-alert .admonitionHeading_Gvgb::before {
+  content: '\e918'; /* Remixicon: 'forbid-line' (circle with slash) */
+  color: #ff4d4f; /* Icon color matches heading (corrected from fill) */
+}
+
+
+
+
+/* File: src/css/custom.css */
+
+/* ================== DARK MODE ================== */
+
+html[data-theme='dark'] {
+  --color-text: #f0f0f0; /* Light text for dark background */
+  --color-text-subtle: #b0b0b0; /* Lighter subtle text */
+  --color-bg: #121212; /* Dark background */
+  --color-divider: #333333; /* Darker divider for contrast */
+  --color-subtle-bg: #1a1a1a; /* Slightly lighter dark background for cards/notes */
+  --ifm-navbar-background-color: #1a1a1a; /* Dark navbar background */
+  
+  /* Adjust accent colors if needed for dark mode visibility */
+  --color-accent: #66b2ff; /* A brighter blue for dark mode accent */
+  --color-accent-hover: #4da6ff; /* Hover state for dark mode accent */
+
+  /* Admonition colors for dark mode */
+  /* Note */
+  --admonition-note-bg: #2a2a2a;
+  --admonition-note-border: #555555;
+  --admonition-note-heading: #cccccc;
+
+  /* Info */
+  --admonition-info-bg: #1a2c3a;
+  --admonition-info-border: #1890ff;
+  --admonition-info-heading: #1890ff;
+
+  /* Tip */
+  --admonition-tip-bg: #203323;
+  --admonition-tip-border: #52c41a;
+  --admonition-tip-heading: #52c41a;
+
+  /* Warning */
+  --admonition-warning-bg: #3a2d1a;
+  --admonition-warning-border: #faad14;
+  --admonition-warning-heading: #faad14;
+
+  /* Danger/Alert */
+  --admonition-danger-bg: #3a1c1c;
+  --admonition-danger-border: #ff4d4f;
+  --admonition-danger-heading: #ff4d4f;
+}
+
+/* Apply dark mode colors to admonitions */
+html[data-theme='dark'] .theme-admonition-note {
+  background-color: var(--admonition-note-bg);
+  border-left-color: var(--admonition-note-border);
+}
+html[data-theme='dark'] .theme-admonition-note .admonitionHeading_Gvgb {
+  color: var(--admonition-note-heading);
+}
+html[data-theme='dark'] .theme-admonition-note .admonitionHeading_Gvgb::before {
+  color: var(--admonition-note-heading);
+}
+
+html[data-theme='dark'] .theme-admonition-info {
+  background-color: var(--admonition-info-bg);
+  border-left-color: var(--admonition-info-border);
+}
+html[data-theme='dark'] .theme-admonition-info .admonitionHeading_Gvgb {
+  color: var(--admonition-info-heading);
+}
+html[data-theme='dark'] .theme-admonition-info .admonitionHeading_Gvgb::before {
+  color: var(--admonition-info-heading);
+}
+
+html[data-theme='dark'] .theme-admonition-tip {
+  background-color: var(--admonition-tip-bg);
+  border-left-color: var(--admonition-tip-border);
+}
+html[data-theme='dark'] .theme-admonition-tip .admonitionHeading_Gvgb { /* Corrected typo: Gv7gb to Gvgb */
+  color: var(--admonition-tip-heading);
+}
+html[data-theme='dark'] .theme-admonition-tip .admonitionHeading_Gvgb::before { /* Corrected typo: Gv7gb to Gvgb */
+  color: var(--admonition-tip-heading);
+}
+
+html[data-theme='dark'] .theme-admonition-warning {
+  background-color: var(--admonition-warning-bg);
+  border-left-color: var(--admonition-warning-border);
+}
+html[data-theme='dark'] .theme-admonition-warning .admonitionHeading_Gvgb {
+  color: var(--admonition-warning-heading);
+}
+html[data-theme='dark'] .theme-admonition-warning .admonitionHeading_Gvgb::before {
+  color: var(--admonition-warning-heading);
+}
+
+html[data-theme='dark'] .theme-admonition-danger,
+html[data-theme='dark'] .theme-admonition-alert {
+  background-color: var(--admonition-danger-bg);
+  border-left-color: var(--admonition-danger-border);
+}
+html[data-theme='dark'] .theme-admonition-danger .admonitionHeading_Gvgb,
+html[data-theme='dark'] .theme-admonition-alert .admonitionHeading_Gvgb {
+  color: var(--admonition-danger-heading);
+}
+html[data-theme='dark'] .theme-admonition-danger .admonitionHeading_Gvgb::before,
+html[data-theme='dark'] .theme-admonition-alert .admonitionHeading_Gvgb::before {
+  color: var(--admonition-danger-heading);
+}
+
+
+/* Table of Contents link color in dark mode (brighter white) */
+html[data-theme='dark'] .table-of-contents a {
+  color: #f8f8f8;
+}
+
+/* Table of Contents link hover color (applies to both light and dark mode) */
+.table-of-contents a:hover {
+  color: var(--color-accent);
+}
+
+/* Ensure hover color is applied correctly in dark mode by making it more specific */
+html[data-theme='dark'] .table-of-contents a:hover {
+  color: var(--color-accent); /* Re-apply accent color for hover in dark mode */
+}
+
+
+
+/* ================== LOGO IMAGE ================== */
+
+
+.navbar__logo img {
+    height: 85%;
+    margin-top: 3px;
 }
