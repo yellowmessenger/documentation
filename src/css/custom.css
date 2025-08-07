@@ -456,3 +456,13 @@ html[data-theme='dark'] .table-of-contents a {
 html[data-theme='dark'] .table-of-contents a:hover {
   color: var(--color-accent); /* Re-apply accent color for hover in dark mode */
 }
+
+
+
+/* ================== LOGO IMAGE ================== */
+
+
+.navbar__logo img {
+    height: 85%;
+    margin-top: 3px;
+}
