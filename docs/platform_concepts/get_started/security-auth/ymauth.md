@@ -10,7 +10,6 @@ Yellow.ai Messenger (YM) authentication facilitates the seamless synchronization
 This enables users to access and review their historical conversations, ensuring a consistent chat experience. Users can seamlessly pick up where they left off, regardless of the device used to log into the AI-agent.
 
     
-### Use cases
 
 1. **Seamless conversations across devices**: Users can switch devices without losing chat history, ensuring a smooth experience.
 2. **Tailored customer support**: Agents use past conversations to provide personalized assistance.
@@ -125,7 +124,7 @@ Validation fails when the token expires due to customer inactivity. In such situ
 1. Add an **event listener** on your platform to identify if the token gets expired in between the conversation of the AI-agent. Use:
     - **Event name**: ym-revalidate-token
     - **Data**: currentToken, refreshUI (true/false value stating if the AI-agent is currently in open state)
-2. Obtain a **new encrypted token** by calling the encrypt API (cURL) mentioned above in [Step #1](#i1).
+2. Obtain a **new encrypted token** by calling the encrypt API (cURL) mentioned above in [Step #1](#step-1-make-an-api-call-to-encrypt-your-token).
 3. Pass the newly generated encryption token to the AI-agent by calling the below **function**.
     - `refreshUI`  flag must be passed as false if you want the AI-agent to remain open and show the loading spinner while the input box is disabled. If it is not false, the AI-agent closes and opens again, which might confuse your customer.
     ```

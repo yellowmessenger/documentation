@@ -5,9 +5,9 @@ sidebar_label : Auto translate (Google API key generation)
 
 
 In this article, you will learn: 
-1. [What is the purpose of auto translate?](#usecase)
-2. [How to enable auto-translate?](#at)
-	- [Steps to generate a google translate API key.](#gt)
+1. [What is the purpose of auto translate?](#auto-translate-functionality)
+2. [How to enable auto-translate?](#enable-auto-translate-settings)
+3. [Steps to generate a google translate API key](#generate-google-translate-api-key)
 
 
 ## <a name="usecase"></a>  Auto-translate functionality 

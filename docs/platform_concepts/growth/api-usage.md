@@ -9,9 +9,9 @@ To view the API usage, follow these steps:
 1. Open **Insights** > **Metrics**.
 2. Select **API Usage** tab.  
 3. On this page, you can monitor the following metrics:
-    - [API usage](#usage)
-    - [API request rate](#reqrate)
-    - [API latency](#latency)
+    - [API usage](#view-api-usage)
+    - [API request rate](#view-api-request-rate)
+    - [API latency](#view-api-latencyy)
 
 ![](https://i.imgur.com/WYdus0e.png)
 

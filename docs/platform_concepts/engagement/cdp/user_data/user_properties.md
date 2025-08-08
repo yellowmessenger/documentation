@@ -50,7 +50,7 @@ String-type properties are limited to a maximum of 255 characters.
 
 | **Property Name** | **Data Type** | **Description** |
 |-------------------|---------------|------------------------|
-| userId | string | Unique identifier for a user. <br/>As per your setting, this could be a mobile number, email address, or any unique identifier. For more details, see [here](#1-userid-as-a-property). |
+| userId | string | Unique identifier for a user. <br/>As per your setting, this could be a mobile number, email address, or any unique identifier. For more details, see [here](#userid-as-a-property). |
 | firstName | string | The first name of the user |
 | lastName | string | Last name of the user |
 | gender | string | Gender of the user |

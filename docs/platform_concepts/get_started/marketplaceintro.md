@@ -15,10 +15,10 @@ Some prime examples of frequently used flows are ‘Chat with an Agent’ or ‘
 
 In this article, you will learn:
 
-1. [How to browse for the required template](#1)
-2. [How to preview and experience a demo of template](#2)
-3. [How to use the selected template in your bot](#3)
-4. [How to edit or delete the flows inside your template](#4)
+1. [How to browse for the required template](#12-search-templates-using-keywords)
+2. [How to preview and experience a demo of template](#21-preview-selected-template)
+3. [How to use the selected template in your bot](#22-use-template-in-your-bot)
+4. [How to edit or delete the flows inside your template](#3-edit-imported-flows)
 
 
 ## <a name="1"></a> 1. Choose a right marketplace template 

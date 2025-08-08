@@ -58,7 +58,7 @@ These are the steps that take place:
 
    ![](https://i.imgur.com/OZU7XCI.png)
 
-2. It then **Merges** the details that are not available in the existing record. For more information, see [Effects of merging on user properties](#effect-of-merging-on-user-properties).
+2. It then **Merges** the details that are not available in the existing record. For more information, see [Effects of merging on user properties](#effects-of-merging-on-user-properties).
 
   <center>
    <img src="https://i.imgur.com/p9cDdHl.png" width="90%"/>

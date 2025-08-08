@@ -59,7 +59,7 @@ You can clear selected filter(s) using **Clear filters**.
 
 You can download comprehensive reports for all campaigns you send out from Yellow.ai’s Engage module. You can use these reports to analyze campaign performance and see the in detailed report of errors (if any).
 
-You can [view report directly on the UI](#view-report) or [download detailed report](#download-campaign-report).
+You can [view report directly on the UI](#understanding-the-downloaded-campaign-report) or [download detailed report](#download-and-analyze-campaign-report).
 
 ***
 

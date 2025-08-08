@@ -4,8 +4,8 @@ sidebar_label : Notification settings
 ---
 
 In this article, you will learn: 
-1. [How to enable inbox notifications?](#1)
-2. [List of available notifications alerts](#2)
+1. [How to enable inbox notifications?](#configure-inbox-notifications)
+2. [List of available notifications alerts](#list-of-notifications)
 
 ------
 All the Inbox updates will be sent to you based on your role (Inbox admin/agent). These alerts will be available on the **Notifications** tab, and they can be helpful to keep a close eye on Inbox activities. The type of notifications that must be displayed on this tab can be configured from the Notification settings.     

@@ -59,7 +59,7 @@ To add the User identification flow to your AI-agent, follow these steps:
 
   <center><img src="https://i.imgur.com/dqW7gKF.png" width="60%"/></center>
 
-3. Select the relevant identification flow - [Phone identification flow](#phone-identifier-flow), [Email identification flow](#email-identifier-flow) or [Custom property flow](#custom-property-flow).
+3. Select the relevant identification flow - [Phone identification flow](#phone-identifier-flow), [Email identification flow](#email-identifier-flow) or [Custom property flow](#custom-property-identifier-flow).
 
    <img src="https://i.imgur.com/BGOG8WX.png" width=""/>
 

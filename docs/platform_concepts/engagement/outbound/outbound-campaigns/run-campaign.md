@@ -59,10 +59,10 @@ You will see template configuration slide screen where you need to configure det
       ![](https://i.imgur.com/0Dl7IUi.gif)
 
 
-   * For SMS, choose the user's phone number variable and map the variables used in the template to the user property variable.For more details, [see here](#21-sms-template).
-   * For Email, choose the variable that contains email Id, select the sender ID (email ID), and map the user variables used in the template. For more details, [see here](#22-email-template).
-   * For WhatsApp or Viber, choose the variable containing WhatsApp number, sender ID, and map the user variables used in the template. For more details, [see here](#23-whatsappviber-template).
-   * For Microsoft Teams, choose the variable containing **Users contact details**, sender ID, and map the user variables used in the template same as [WhatsApp or Viber template](#23-whatsappviber-template).  
+   * For SMS, choose the user's phone number variable and map the variables used in the template to the user property variable.For more details, [see here](#31-sms-campaign).
+   * For Email, choose the variable that contains email Id, select the sender ID (email ID), and map the user variables used in the template. For more details, [see here](#32-email-campaign).
+   * For WhatsApp or Viber, choose the variable containing WhatsApp number, sender ID, and map the user variables used in the template. For more details, [see here](#33-whatsapp-campaign).
+   * For Microsoft Teams, choose the variable containing **Users contact details**, sender ID, and map the user variables used in the template same as [WhatsApp or Viber template](#34-viber-campaign).  
 
 :::note
 * You can select Recipient and other contact details from the user data stored in the **User 360 **module.

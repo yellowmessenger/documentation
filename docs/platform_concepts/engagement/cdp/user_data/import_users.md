@@ -27,7 +27,7 @@ Create a CSV file with user details and ensure that the values passed in the CSV
 - A CSV file cannot exceed 30 MB.
 :::
 
-1.  **Use matching header names**: Ensure that the column names in the CSV file exactly match the column names specified during the creation of the audience table. It also leverages [Auto column Mapping](#auto-mapping-of-csv-columns) feature that simplifies the process of mapping headers by matching them with user properties that have similar names.
+1.  **Use matching header names**: Ensure that the column names in the CSV file exactly match the column names specified during the creation of the audience table. It also leverages auto column Mapping feature that simplifies the process of mapping headers by matching them with user properties that have similar names.
    - These column names are case-sensitive. 
    - Make sure there are no spaces between the column names within the CSV file. Avoid the format where spaces are present between column names, like name , email ,tags.
    - Do not include columns such as 'updated', 'inserted', 'segments' in the CSV file.

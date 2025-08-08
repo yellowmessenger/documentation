@@ -11,7 +11,6 @@ The campaign flow builder consists of five categories of nodes:
 * Entry point
 * Condition
 * Flow control
-* Message 
 * Action
 
 :::note
@@ -40,7 +39,7 @@ You can also reuse an existing flow using More options > **Duplicate**.
    <center><img src="https://i.imgur.com/yplyiKP.png" width="70%"/></center>
 
 
-5. Define the journey using [Flow control](#flow-control), [Conversations](#message-start-conversation), and [Actions](#action).
+5. Define the journey using [Flow control](#flow-control), [Conversations](#message-conversations), and [Actions](#action).
 6. Set the [campaign goal](#add-goal) as required. The campaign ends when the goal is achieved.
 7. Click **Publish**. You will see a pop-up screen asking for confirmation.
 8. Click **Publish** again on the pop-up screen.

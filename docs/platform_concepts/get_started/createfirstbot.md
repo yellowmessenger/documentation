@@ -110,14 +110,14 @@ After setting up the Super Agent, you can configure the Agent with the exact use
 ---
 
 :::note
-Before you begin, make sure your account is upgraded to access all available features on Yellow.ai.
+To access all features on Yellow.ai, you need the premium account.
 :::
 
-The first and most important step in building an AI Agent is configuring the Super Agent. It act as the foundation for how your agent should behave, sound, and interact with users. You define its personality, tone of voice, and overall purpose.
+The first and most important step in building an AI Agent is configuring the tone and persona of your AI agent (Super agent)Super Agent. It act as the foundation for how your agent should behave, sound, and interact with users. You define its personality, tone of voice, and overall purpose.
 
 Whether you are building an agent for chat, voice agent, or multi-turn automation, this setup ensures every interaction aligns with your brand, meets user expectations, and scales effortlessly.
 
-#### Prerequisites
+#### Environment setup before you begin
 
 * Start by building your AI agent in a lower environment- Development or Staging. After testing and approval, publish the agent to the Live or Production environment. 
 * You can only create and test agents in these non-production environments. Once your changes are stable and approved, publish them to the Live or Production environment.

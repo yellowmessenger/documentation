@@ -206,9 +206,9 @@ You cannot update user ID once captured. If the userId is captured again in a fl
 :::
 
 To update existing user properties:
-1. Capture the user property that you want to update using the Variable node or Prompt node, as explained in [Store userId through builder](#store-user-id-through-builder).
+1. Capture the user property that you want to update using the Variable node or Prompt node, as explained in [Store userId through builder](#store-user-properties-from-ai-agent-conversations).
 
-2. Store them in the respective User properties, as explained in [Store user properties through builder](#store-user-properties-through-builder).
+2. Store them in the respective User properties, as explained in [Store user properties through builder](#store-user-properties-from-ai-agent-conversations).
 
   * In Prompt nodes, choose the relevant name under User properties.
 
