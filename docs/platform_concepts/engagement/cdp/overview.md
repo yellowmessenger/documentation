@@ -23,7 +23,7 @@ The following are some key features of User 360 -
 User events refer to specific actions or activities a user performs within a system, app, or platform. These define user behavior, engagements, and interactions. 
 The standard events include user creation, user update, and user deletion. 
 
-You can also create [custom events](/docs/platform_concepts/studio/events/event-hub#-8-custom-events) to capture important activities or conversations and [send events data](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) to yellow.ai. Custom events can include activities such as clicks, page views, form submissions, purchases, logins, searches, interactions with specific features, and more. Tracking user events help businesses gain valuable insights into user engagement, preferences, patterns, and conversion behavior.
+You can also create [custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events) to capture important activities or conversations and [send events data](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) to yellow.ai. Custom events can include activities such as clicks, page views, form submissions, purchases, logins, searches, interactions with specific features, and more. Tracking user events help businesses gain valuable insights into user engagement, preferences, patterns, and conversion behavior.
 
 
 In User 360, you can view and filter events based on specific criteria. For example:

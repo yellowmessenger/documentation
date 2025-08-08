@@ -21,8 +21,8 @@ This integration enables the following key features:
 To set up Viber bot, you need to perform the following:
 
 * [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
-* [Setup a Viber chatbot](#connect)
-* [Test your Viber chatbot](#test)
+* [Setup a Viber chatbot](#setup-viber-chatbot)
+* [Test your Viber chatbot](#test-your-bot-on-viber)
 
 ## Setup Viber chatbot
 

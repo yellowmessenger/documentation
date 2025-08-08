@@ -12,7 +12,6 @@ To set up a WhatsApp channel, you need to have an active WhatsApp business accou
 * Create a WhatsApp Business account
 * Create a Facebook Business Manager account
 * Verify your WhatsApp business account with Facebook
-
 ## Connect your WhatsApp business account
 
 Yellow.ai allows you to add multiple WhatsApp numbers for your business account based on you requirements. This helps businesses that operate with multiple WhatsApp numbers or want to provide support through different contact points. With this capability, you can streamline your communication and efficiently handle conversations from various WhatsApp accounts.
@@ -120,7 +119,7 @@ Make sure that the phone number you provide is not currently connected to any Wh
 
 To add more WhatsApp business accounts, follow these steps:
 
-1.  Click on **+ Add Number** at the top right corner. Follow the steps from step 4 to step 17 in the [Connect your WhatsApp business account](#1-connect-your-whatsapp-business-account) section.
+1.  Click on **+ Add Number** at the top right corner. Follow the steps from step 4 to step 17 in the [Connect your WhatsApp business account](#connect-your-whatsapp-business-account) section.
 
     <img src="https://imgur.com/CtEJDUp.png" alt="drawing" width="90%"/>
 

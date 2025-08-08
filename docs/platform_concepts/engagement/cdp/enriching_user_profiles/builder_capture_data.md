@@ -10,10 +10,10 @@ This data can also be used within the Conversational Studio to deliver personali
 
 
 In this document, we will cover:
-1. [How to store data in user properties?](#id1)
-2. [What are Identified Users?](#id2)
-3. [Using builder to create & update user records in users table](#id3)
-4. [What happens when a new user conflicts with an existing user?](#id4)
+1. [How to store data in user properties?](#1-how-to-store-data-in-user-properties)
+2. [What are Identified Users?](#2-what-are-identified-users)
+3. [Using builder to create & update user records in users table](#3-using-builder-to-create--update-user-records-in-users-table)
+4. [What happens when a new user conflicts with an existing user?](#4-what-happens-when-a-new-user-conflicts-with-an-existing-user)
 
 ## <a name="id1"></a> 1. How to store data in user properties?
 

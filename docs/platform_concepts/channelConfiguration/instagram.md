@@ -56,9 +56,9 @@ Carousel | <ul><li> A maximum of 80 characters are supported for the title and d
 
 To set up Instagram bot, you need to perform the following:
 
-* [Set up a business account on Instagram](#Connect)
+* [Set up a business account on Instagram](#to-connect-facebook-through-your-instagram-account)
 * [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/get_started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
-* [Test your bot](#test)
+* [Test your bot](#test-your-instagram-bot)
 
 :::note
 

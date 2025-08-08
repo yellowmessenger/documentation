@@ -78,19 +78,19 @@ The Automation module offers everything you need to build, integrate, and test y
     href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent-architecture"
     icon="robot"
     title="Start with AI Agent setup"
-    description="Design your conversation by creating Agents, Super Agents, or Knowledge Base Agents, and setting up triggers, prompts, and actions to guide user interactions."
+    description="Design conversations using Super agents, Agents, or Knowledge Base agents"
   />
    <ArticleCard
     href="ttps://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow"
     icon="workflow"
     title="Build backend logic using Workflow builder"
-    description="Use this visual, no-code tool to create business logic flows and connect them to your agent's conversation"
+    description="Create and manage backend logic flows to perform tasks, connect APIs, and drive agent actions during conversations."
   />
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/studio/api/send-receive-apiresponses"
     icon="APIs"
     title="Integrate external systems using APIs"
-    description="Enable your agent to connect with other platforms by setting up external APIs. These APIs can be called from within workflows to allow your agent to perform tasks such as fetching order status or weather updates"
+    description="Enable your agent to connect with other platforms by setting up external APIs."
   />
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/studio/database"
@@ -102,19 +102,19 @@ The Automation module offers everything you need to build, integrate, and test y
     href="https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub"
     icon="Events"
     title="Use Events to trigger background actions"
-    description="Define and manage events to initiate background tasks, connecting with external systems, or sending automated notifications based on specific conditions."
+    description="Define and manage events to trigger background actions like connecting with systems or sending notifications based on specific conditions."
   />
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot"
     icon="Test Copilot"
     title="Test your AI Agent using Copilot"
-    description="Copilot is a conversational testing simulator that allows you test your AI agent's responses in real time. You can create Saved sessions to perform regression testing."
+    description="Simulate and validate your AI agent’s responses in real time using Copilot."
   />
    <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/automated-agent-testing"
     icon="Test suites"
     title="Run end-to-end checks with Test suites"
-    description="Test your agent before going live using built-in tools. Use Knowledge Base tests to check responses to FAQs, replay saved Copilot sessions, or run scenario tests to simulate full conversations and flows."
+    description="Run end-to-end checks before going live using Test Suites."
   />
 </ArticleCardGrid> 
 

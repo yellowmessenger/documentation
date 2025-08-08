@@ -46,7 +46,7 @@ To configure live agents for your voice agent on Yellow.ai, you need to establis
 
 ### Step 2: Design flows to transfer calls
 
-To streamline customer support for your voice agents, you can incorporate flows from the above mentioned [scenarios](#ex).
+To streamline customer support for your voice agents, you can incorporate flows from the above mentioned [scenarios](#scenarios-for-voice-agent-transfer-to-an-agent).
 
 #### 1. Flow to transfer a call to an agent when the fallback limit exceeds
 
@@ -54,12 +54,12 @@ When the voice agent repeatedly fails to understand the user's input or when the
 
 1. Identify the voice input node where the agent transfer should occur. For example, if the voice input node (e.g., phone number) repeatedly triggers fallback scenarios, the agent can automatically transfer the call to a live agent.
 2. Connect the node's **fallback for failure** and **fallback for no response** to the agent transfer.
-3. Establish connection through another voice input or prompt node: If you choose the voice input node, you can simply enter a message in the **Bot asks** field, which will be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#fwd).        
+3. Establish connection through another voice input or prompt node: If you choose the voice input node, you can simply enter a message in the **Bot asks** field, which will be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#step-3-add-call-forwarding-details).        
     ![](https://imgur.com/PaCGx9r.png)
 
 (or)
 
-3. Use an execute flow node to connect to an agent: This can be combined with the second scenario where an intent triggers the *Chat with agen*t flow. In this case, create a new flow called *Chat with agent* and add a prompt node. Enter a message in the **Bot asks** field to be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#fwd).        
+3. Use an execute flow node to connect to an agent: This can be combined with the second scenario where an intent triggers the *Chat with agen*t flow. In this case, create a new flow called *Chat with agent* and add a prompt node. Enter a message in the **Bot asks** field to be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#step-3-add-call-forwarding-details).        
 
     **Main flow**:        
     ![](https://imgur.com/KBtYRxl.png)            
@@ -82,7 +82,7 @@ This flow is activated when the user explicitly expresses the need to speak with
 2. Set up a [new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#configure-start-trigger) with the start trigger configured as the intent `chat with agent`.         
     ![](https://imgur.com/7FLufuj.png)
 
-3. In the flow design, add nodes as needed and end the flow with a prompt node. Enter a message in the **Bot asks** field, which will be played before the call transfer. Click **make prompts smarter** icon and configure the [forwarding details](#fwd).       
+3. In the flow design, add nodes as needed and end the flow with a prompt node. Enter a message in the **Bot asks** field, which will be played before the call transfer. Click **make prompts smarter** icon and configure the [forwarding details](#step-3-add-call-forwarding-details).       
     ![](https://imgur.com/DEwKpvq.png)
 
 ----
