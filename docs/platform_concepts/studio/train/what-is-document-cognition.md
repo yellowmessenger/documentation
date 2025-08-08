@@ -11,14 +11,14 @@ By using the **Documents** feature, you can expect the model to answer queries a
 
 In this article, you will learn:   
 
-1. [How documents can be used?](#uc)   
+1. [Examples where you can use documents](#1-use-case)   
 2. [How to add files to Document section?](#2-add-files-to-document-section)
     - [via. local system](#21-upload-files-from-local-system)
     - [via. URL - integration with customer’s external Knowledge Base](#22-upload-files-from-an-url)   
     - [via. AWS-S3](#23-upload-file-via-aws)
     - [via. Sharepoint](#24-upload-file-via-sharepoint)
-3. [What is Extract QNA?](#3-qna-extract)   
-4. [How to add Acronyms?](#a) 
+3. [What is Extract QNA?](#3-qna-extraction-from-documents)   
+4. [How to add Acronyms?](#4-add-acronyms) 
 
 ----
 
@@ -629,7 +629,7 @@ Once an app is created you can give access to any site to it. You can view all t
 
 ---
 
-## 3. QNA Extract
+## 3. QNA extraction from documents
 
 The Yellow.ai platform can auto-generate questions and answers from the uploaded documents. You can choose between two different models(**Yellow DNLP** and **OpenAI API**) to genereate them.
 
