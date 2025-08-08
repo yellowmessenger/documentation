@@ -14,10 +14,10 @@ For businesses using Amazon Connect for contact center support, the Amazon Conne
 
 Before integrating Amazon Connect Live Chat with Yellow.ai, ensure you have the following details from your AWS account: 
 
-- **[Region](#🌍-region)**: AWS region where your Amazon Connect instance is hosted. Once you login to the console, you can see the Region ID in the Select Region and in the URL.
-- **[Access Key ID & Secret Access Key](#🔐-access-key--secret)**: IAM user credentials with appropriate Amazon Connect permissions.
-- **[Instance ID](#🆔-instance-id)**: Found in your Amazon Connect ARN.
-- **[Contact Flow ID](#🔁-contact-flow-id)**: Unique ID of the contact flow used for chat.
+- **[Region](#-region)**: AWS region where your Amazon Connect instance is hosted. Once you login to the console, you can see the Region ID in the Select Region and in the URL.
+- **[Access Key ID & Secret Access Key](#-access-key--secret)**: IAM user credentials with appropriate Amazon Connect permissions.
+- **[Instance ID](#-instance-id)**: Found in your Amazon Connect ARN.
+- **[Contact Flow ID](#-contact-flow-id)**: Unique ID of the contact flow used for chat.
    1. On **AWS Management**, navigate to the **Amazon Connect console**. 
    2. Go to the **Instances** page console and select your Connect instance. 
    3. On the **Routing** tab, you'll see a list of contact flows. 

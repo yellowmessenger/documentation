@@ -16,7 +16,7 @@ Payload is securely passed in HTTPS post request to secure the information passe
 
 In this article, you will learn:
 
-* [How to pass the payload data](#data)
+* [How to pass the payload data](#1-pass-values-from-the-web-client-to-the-bot)
 
 ## 1. Pass values from the web client to the bot
 

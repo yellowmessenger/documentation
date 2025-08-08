@@ -11,8 +11,8 @@ This section guides you with different ways to customize your chat widget’s vi
 
 In this article, you will learn:
 
-* [How to customize the visiblity of bot icon on the website?](#1-customise-the-appearance-of-your-chat-widget)
-* [How to trigger a flow using functions?](#2-trigger-specific-flow-via-payload)
+* [How to customize the visiblity of bot icon on the website?](#customise-the-appearance-of-your-chat-widget)
+* [How to trigger a flow using functions?](#trigger-specific-flow-using-function-in-the-payload)
 
 ## Customise the appearance of your chat widget 
 
