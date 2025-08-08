@@ -368,5 +368,5 @@ Exporting APIs involves capturing their configuration settings, allowing for sea
 
 #### API working correctly in Postman but returns a 403 error when integrated into the Automation API section
 
-The issue may stem from region-specific URLs being blocked. This could be because the region specific URLs are gettings bloxked, it is recommended to [Whitelist your region specific URL](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/domain-whitelisting#whitelist-domains-to-deploy-chat-widget). For instance, https://r1.cloud.yellow.ai.
+The issue may stem from region-specific URLs being blocked. This could be because the region specific URLs are getting blocked, it is recommended to [Whitelist your region specific URL](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/domain-whitelisting#whitelist-domains-to-deploy-chat-widget). For instance, https://r1.cloud.yellow.ai.
 

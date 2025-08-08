@@ -5,12 +5,6 @@ sidebar_label: Overview
 
 Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). Each node represents a specific point in the conversation where the AI-agent can perform a certain action or respond to a user's input.
 
-In this article, you will learn:
-1. [Types of nodes](#types)
-2. [How to add nodes](#addnode)
-3. [What are the configurations available for nodes](#config)
-4. [How to view Dynamic data](#dynamic)
-
 
 ## <a name="types"></a> 1. Types of nodes
 
@@ -30,7 +24,7 @@ After clicking **+Create flow**, you will be directed to a canvas with a **start
 ![](https://i.imgur.com/RGxw20v.png)
 
 
-## <a name="addnode"></a> 2. Add nodes
+## 2. Add nodes
 ß
 Nodes can be added in two different ways:
 
@@ -114,8 +108,8 @@ Voice bot node options/settings are classified depending upon different uses as 
 
 1.  **Telephony**: For settings related to telephony like call forwarding, calling line identity, etc.
 2.  **Recording**: Recording options such as beep sound after a question is asked.
-3.  **Speech to Text**: You can customise a speech recognition software that enables the recognition and translation of spoken language into text.
-4. **Text-to-Speech**: You can customise the Text-to-Speech (TTS) capabilities to play back text in a spoken voice.
+3.  **Speech to Text**: You can customize a speech recognition software that enables the recognition and translation of spoken language into text.
+4. **Text-to-Speech**: You can customize the Text-to-Speech (TTS) capabilities to play back text in a spoken voice.
 5. **DTMF**: Dual-tone multi-frequency (DTMF) is used for touch tones, it is the sound made when pressing a number key. For cases, where we expect background noise and difficulty in correctly identifying the user utterance for numeric inputs, we can use this feature to record user responses.
 6.  **Conversation**: Yellow cloud provides additional conversational options to further customize and elevate the experience on the IVR channel.
 
@@ -123,7 +117,7 @@ Voice bot node options/settings are classified depending upon different uses as 
 
 :::note
 Most of these options can be configured globally from  [tools and settings](https://docs.yellow.ai/docs/platform_concepts/studio/tools#25-voice).
-If they are configured at the node level, node level customisation takes priority over the global level settings. 
+If they are configured at the node level, node level customization takes priority over the global level settings. 
 :::
 
 

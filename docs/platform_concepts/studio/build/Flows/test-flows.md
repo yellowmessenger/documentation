@@ -5,12 +5,6 @@ sidebar_label: Test flows
 
 You need to test the flow to ensure that the AI-agent functions as expected and delivers a seamless user experience. Testing process helps to identify any bugs, errors, or unexpected behavior in the AI-agent's responses or interactions. It also validates that the designed conversation flows work as intended and ensures that the AI-agent guides users through the conversation.
 
-You can test flows by using the following options based on your requirements:
-
-1. [Test current flow](#test-current-flow)
-2. [Test flow via URL](#test-bot-flow-via-url)
-3. [Test flow via bot script](#test-bot-flow-via-botscript)
-
 ### Test current flow
 
 When there are multiple flows, there is no need to test the entire AI-agent. When there is a change in a specific flow, you can only test the flow that you are modifying/modified.

@@ -152,7 +152,7 @@ To add a new language to your AI-agent, follow these steps:
 
    <img src="https://imgur.com/WJoeF4Y.png" alt="drawing" width="70%"/>
 
-2. Click **+ Add langauge**.
+2. Click **+ Add language**.
 
    <img src="https://imgur.com/WOzhLn0.png" alt="drawing" width="60%"/>
 
@@ -245,7 +245,7 @@ You can add translation keys to nodes in a multilingual AI-agent to ensure the A
 
      <img  src="https://i.imgur.com/J12yhW5.png"  alt="drawing"  width="70%"/>
 
-2. Select the [key](#add-languages-to-your-bot) that is already configured for that text translation (or, [add new translations](#add-translations-for-each-key) as you create each node).
+2. Select the key that is already configured for that text translation (or, [add new translations](#add-translations-for-individual-keys) as you create each node).
 
     ![](https://i.imgur.com/eVy9OuF.png)
 

@@ -33,8 +33,8 @@ If you have multiple AI-agents created, choose the specific AI-agent for which y
 
    ![create flow](https://cdn.yellowmessenger.com/assets/yellow-docs/createfloe.png)   
     
- * [Start from scratch](#manually-create-a-flow): This option allows you to manually create a flow using [key elements](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview#key-elements-to-build-a-flow) without relying on pre-built templates or automated tools.
- * [Create Workflowl](#create-a-workflow): This option allows you to create a flow to run concurrently in the background along with the main flow to perform specific tasks or action.
+ * [Start from scratch](#create-a-workflow-via-workflow-builder-section): This option allows you to manually create a flow using [key elements](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview#key-elements-to-build-a-flow) without relying on pre-built templates or automated tools.
+ * [Create Workflowl](#create-a-workflow-via-workflow-builder-section): This option allows you to create a flow to run concurrently in the background along with the main flow to perform specific tasks or action.
 
 ### Manually create a flow
 
