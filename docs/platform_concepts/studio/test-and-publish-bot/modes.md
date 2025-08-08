@@ -27,7 +27,7 @@ While you can make modifications and publish flows in the Staging environment, i
 -->
 
 
-## Publish AI-agent to go live
+## Publish chatbot to go live
 
 To publish a AI-agent to live mode follow these steps:
 
@@ -48,10 +48,10 @@ To publish a AI-agent to live mode follow these steps:
 4. Change your AI-agent environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. AI-agents with only **Development** and **Live** modes need not do this. When you publish the changes, AI-agent sends the approval request to approvers.
 
 :::info
-To learn about different AI-agent enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env).
+To learn about different AI-agent environments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env).
 :::
 
-## Approve a AI-agent publish request
+## Approve publish request
 
 1. Users with **Approver** access(as provided by **Super Admin**) will receive an email with the content like the image below. Any one of them can approve, to approve click **Review Request**.
 
@@ -79,20 +79,20 @@ To access **Publish selected flow**s, follow these steps:
 2. In the following pop-up, fill the following fields.
 
 * **Flows:** Choose the flows to be published.
-* **Approvers:** Displays the approvers who will aprove the publish.
+* **Approvers:** Displays the approvers who will approve the publish.
 * **Comment:** Add a message to the approvers
 
     
    <img src="https://i.imgur.com/Uem2lET.png" alt="drawing" width="50%"/>
 
-3. Click the **Publish** button. The changes will move to **Staging**. Change your AI-agent environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. AI-agents with only **Development** and **Live** modes need not do this. When you publish the changes, AI-agent sends the approval request to approvers. Click [here](#approve-a-bot-publish-request) to know about approving the publish request.
+3. Click the **Publish** button. The changes will move to **Staging**. Change your AI-agent environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. AI-agents with only **Development** and **Live** modes need not do this. When you publish the changes, AI-agent sends the approval request to approvers. Click [here](#approve-publish-request) to know about approving the publish request.
 
 :::info
 - When you publish your AI-agent in the Sandbox, all the parts like flows, intents, entities, and AI-agent skins will also move to Staging and later to Production.
 - You cannot pick and choose which parts go to Staging; everything you set up in Sandbox will go there when you publish.
 - If you create something new in Staging that wasn't in Sandbox, you can publish it once. The next time you publish from Sandbox, anything you added exclusively in Staging will be lost and won't be in Production.
 
-To learn about different AI-agent enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env).
+To learn about different AI-agent environments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/get_started/publish-env).
 
 :::   
 

@@ -39,7 +39,7 @@ To create a knowledge base agent, follow these steps:
 
 You can add content to the Knowledge base using any of the following sources:
  
-* [Sitemaps or URLs](#add-sitemaps-or-urls): This source allows you to add content directly from your website by either uploading a sitemap or entering specific URLs. It is  useful for importing structured information from documentation sites, support portals, or help centers.
+* [Sitemaps or URLs](#add-sitemap-or-urls-to-your-knowledge-base): This source allows you to add content directly from your website by either uploading a sitemap or entering specific URLs. It is  useful for importing structured information from documentation sites, support portals, or help centers.
      * **Sitemaps**: A sitemap is a XML file that lists all the important pages of a website. 
        * It usually ends in .xml (example, https://example.com/sitemap.xml)
        * It helps fetch content from multiple web pages at once.
@@ -48,8 +48,8 @@ You can add content to the Knowledge base using any of the following sources:
         * Use this option if you want to add only specific web pages to your Knowledge base
         * Useful when your site does not have a sitemap or you want to include select pages only.
 
-* [Upload files](#upload-documents-from-local-system): Upload documents directly (PDF, DOCX, TXT, CSV) to add the content to Knowledge base. 
-* [ServiceNow articles](#service-now-integration): Connect your ServiceNow account to automatically sync and retrieve knowledge articles from the ServiceNow platform.
+* [Upload files](#upload-documents-to-your-knowledge-base): Upload documents directly (PDF, DOCX, TXT, CSV) to add the content to Knowledge base. 
+* [ServiceNow articles](#import-documentation-from-servicenow): Connect your ServiceNow account to automatically sync and retrieve knowledge articles from the ServiceNow platform.
 
 
 ### Add sitemap or URLs to your Knowledge base
