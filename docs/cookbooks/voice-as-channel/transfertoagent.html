@@ -21,8 +21,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
 <script src="/js/FeedbackFooter.js"></script>
-<script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.d410cafc.css">
-<script src="/assets/js/runtime~main.80a8cd81.js" defer="defer"></script>
+<script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.9862c87a.css">
+<script src="/assets/js/runtime~main.689a83b7.js" defer="defer"></script>
 <script src="/assets/js/main.4a0125ac.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -54,19 +54,19 @@ The platform then connects the end user&#x27;s call to the agent, allowing the u
 </ol>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-design-flows-to-transfer-calls">Step 2: Design flows to transfer calls<a href="#step-2-design-flows-to-transfer-calls" class="hash-link" aria-label="Direct link to Step 2: Design flows to transfer calls" title="Direct link to Step 2: Design flows to transfer calls">​</a></h3>
-<p>To streamline customer support for your voice agents, you can incorporate flows from the above mentioned <a href="#ex">scenarios</a>.</p>
+<p>To streamline customer support for your voice agents, you can incorporate flows from the above mentioned <a href="#scenarios-for-voice-agent-transfer-to-an-agent">scenarios</a>.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-flow-to-transfer-a-call-to-an-agent-when-the-fallback-limit-exceeds">1. Flow to transfer a call to an agent when the fallback limit exceeds<a href="#1-flow-to-transfer-a-call-to-an-agent-when-the-fallback-limit-exceeds" class="hash-link" aria-label="Direct link to 1. Flow to transfer a call to an agent when the fallback limit exceeds" title="Direct link to 1. Flow to transfer a call to an agent when the fallback limit exceeds">​</a></h4>
 <p>When the voice agent repeatedly fails to understand the user&#x27;s input or when the conversation goes beyond the agent&#x27;s capabilities, it&#x27;s considered a fallback scenario.  To handle this, you can set the fallback flow to execute the <strong>transfer to agent</strong> flow or set up a <strong>node</strong> to forward the call to an agent.</p>
 <ol>
 <li>Identify the voice input node where the agent transfer should occur. For example, if the voice input node (e.g., phone number) repeatedly triggers fallback scenarios, the agent can automatically transfer the call to a live agent.</li>
 <li>Connect the node&#x27;s <strong>fallback for failure</strong> and <strong>fallback for no response</strong> to the agent transfer.</li>
-<li>Establish connection through another voice input or prompt node: If you choose the voice input node, you can simply enter a message in the <strong>Bot asks</strong> field, which will be played before the call transfer. Use the <strong>make prompts smarter</strong> icon to configure the <a href="#fwd">forwarding details</a>.<br>
+<li>Establish connection through another voice input or prompt node: If you choose the voice input node, you can simply enter a message in the <strong>Bot asks</strong> field, which will be played before the call transfer. Use the <strong>make prompts smarter</strong> icon to configure the <a href="#step-3-add-call-forwarding-details">forwarding details</a>.<br>
 <img decoding="async" loading="lazy" src="https://imgur.com/PaCGx9r.png" alt="" class="img_ev3q"></li>
 </ol>
 <p>(or)</p>
 <ol start="3">
 <li>
-<p>Use an execute flow node to connect to an agent: This can be combined with the second scenario where an intent triggers the <em>Chat with agen</em>t flow. In this case, create a new flow called <em>Chat with agent</em> and add a prompt node. Enter a message in the <strong>Bot asks</strong> field to be played before the call transfer. Use the <strong>make prompts smarter</strong> icon to configure the <a href="#fwd">forwarding details</a>.</p>
+<p>Use an execute flow node to connect to an agent: This can be combined with the second scenario where an intent triggers the <em>Chat with agen</em>t flow. In this case, create a new flow called <em>Chat with agent</em> and add a prompt node. Enter a message in the <strong>Bot asks</strong> field to be played before the call transfer. Use the <strong>make prompts smarter</strong> icon to configure the <a href="#step-3-add-call-forwarding-details">forwarding details</a>.</p>
 <p><strong>Main flow</strong>:<br>
 <img decoding="async" loading="lazy" src="https://imgur.com/KBtYRxl.png" alt="" class="img_ev3q"><br>
 <strong>Chat with agent flow</strong>:<br>
@@ -92,7 +92,7 @@ The platform then connects the end user&#x27;s call to the agent, allowing the u
 <img decoding="async" loading="lazy" src="https://imgur.com/7FLufuj.png" alt="" class="img_ev3q"></p>
 </li>
 <li>
-<p>In the flow design, add nodes as needed and end the flow with a prompt node. Enter a message in the <strong>Bot asks</strong> field, which will be played before the call transfer. Click <strong>make prompts smarter</strong> icon and configure the <a href="#fwd">forwarding details</a>.<br>
+<p>In the flow design, add nodes as needed and end the flow with a prompt node. Enter a message in the <strong>Bot asks</strong> field, which will be played before the call transfer. Click <strong>make prompts smarter</strong> icon and configure the <a href="#step-3-add-call-forwarding-details">forwarding details</a>.<br>
 <img decoding="async" loading="lazy" src="https://imgur.com/DEwKpvq.png" alt="" class="img_ev3q"></p>
 </li>
 </ol>
