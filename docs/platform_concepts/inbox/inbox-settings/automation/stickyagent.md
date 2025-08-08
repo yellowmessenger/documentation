@@ -4,15 +4,13 @@ sidebar_label : Chat assignment for sticky agent
 ---
 
 In this article, you will learn: 
-1. [Use cases where the sticky agent can be used.](#usecase)
-2. [How to set up sticky agent?](#setup)
+1. [Use cases where the sticky agent can be used](#use-cases)
+2. [How to set up sticky agent?](#sticky-agent-functionality)
 
 
 :::note
 This feature is applicable only for live chats (for all the channels like WhatsApp, Instagram, etc.).
 :::
-
-
 
 ## <a name="usecase"></a> Sticky agent functionality 
 

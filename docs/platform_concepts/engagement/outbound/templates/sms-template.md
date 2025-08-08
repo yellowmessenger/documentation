@@ -35,7 +35,7 @@ sidebar_label: SMS template
 
    ![](https://cdn.yellowmessenger.com/VfiEBNhwk6IM1649261672637.png)
 
-4. In **URL click tracking**, select the URLs for which you want to track clicks. Learn more about [URL click tracking](#11-track-url-clicks-in-sms-campaigns). URL click tracking is available only for Premium users.
+4. In **URL click tracking**, select the URLs for which you want to track clicks. Learn more about [URL click tracking](#12-track-url-clicks-in-sms-campaigns). URL click tracking is available only for Premium users.
 
    ![](https://i.imgur.com/1W8LlCr.png)
 
