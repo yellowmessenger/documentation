@@ -29,7 +29,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary);
-  font-weight: 600; /* Corrected from 55 0 */
+  font-weight: 500;
   color: var(--color-text);
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -54,10 +54,9 @@ a:hover {
   text-decoration: underline;
 }
 
-
 /* ================== NAVBAR ================== */
-
-
+/* The default Docusaurus navbar styles are now being used.
+   All custom overrides have been removed to prevent conflicts. */
 
 
 /* ================== HOMEPAGE COMPONENTS ================== */
@@ -118,8 +117,9 @@ a:hover {
 
 pre, code {
   font-family: 'Fira Code', 'Roboto Mono', monospace;
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   border-radius: 4px;
+  color: #1e1e1e;
 }
 
 /* Corrected table styling for responsiveness */
@@ -167,22 +167,12 @@ pre, code {
 
 /* Adjust the right padding of the Table of Contents container */
 .tableOfContents_bqdL {
-  padding-right: 0.5rem; /* Try reducing this value (e.g., 0.5rem, 0.25rem, 0) */
-  /* You can also try adding a margin-right if padding isn't enough */
-  /* margin-right: 0.5rem; */
-}
-
-/* If the padding is coming from the grid column itself, you might need to adjust this */
-.col--3 {
-  /* This class usually controls the column width and its internal spacing */
-  /* You might find padding-right here in Docusaurus's default styles */
-  /* You can override it like this: */
-  /* padding-right: 1rem; */
+  padding-right: 0.5rem;
 }
 
 /* Make all top-level links in the Table of Contents bold (these are usually H2s) */
 .table-of-contents li > .table-of-contents__link {
-  font-weight: 500; /* Use 600 or 700 for a clear bold effect */
+  font-weight: 500;
   color: #333;
 }
 
@@ -213,20 +203,13 @@ pre, code {
   transition: opacity 0.3s ease;
 }
 
-
-
-
-/* --- ADMONITION (NOTE, INFO, WARNING, DANGER) STYLES --- */
-
-/* File: src/css/custom.css */
-
 /* --- ADMONITION (NOTE, INFO, WARNING, DANGER) STYLES --- */
 
 /* Base style for all admonitions */
 .theme-admonition {
   padding: 1rem;
   border-radius: 4px;
-  margin-bottom: 1.5rem; /* Consistent spacing below each admonition */
+  margin-bottom: 1.5rem;
   color: var(--color-text);
   position: relative;
 }
@@ -237,146 +220,133 @@ pre, code {
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Space between icon and text */
+  gap: 0.5rem;
 }
 
 /* Hide the default Docusaurus SVG icon for ALL admonitions */
 .admonitionIcon_Rf37 {
-  display: none !important; /* Use !important to ensure it's always hidden */
+  display: none !important;
 }
 
 /* Base style for the new ::before icons */
 .admonitionHeading_Gvgb::before {
-  font-family: 'remixicon' !important; /* Use Remixicon font */
-  font-size: 1.1rem; /* Consistent icon size */
+  font-family: 'remixicon' !important;
+  font-size: 1.1rem;
   line-height: 1;
-  margin-right: 0.5rem; /* Space between icon and heading text */
+  margin-right: 0.5rem;
   vertical-align: middle;
   display: inline-block;
-  flex-shrink: 0; /* Prevent icon from shrinking on small screens */
+  flex-shrink: 0;
 }
 
 /* Style for 'note' admonition with specified yellow background and best contrast */
 .theme-admonition-note {
-  background-color: #fff0ca; /* Your specified light yellow background */
-  border-left: 4px solid #ca9819; /* Your specified darker yellow/brown border */
-  color: var(--color-text); /* Keep main text color consistent */
+  background-color: #ffe39b;
+  border-left: 4px solid #ca9819;
+  color: var(--color-text);
 }
 
 .theme-admonition-note .admonitionHeading_Gvgb {
-  color: #8B4513; /* A rich, dark saddle brown for strong contrast with the yellow */
+  color: #8B4513;
   font-weight: 600;
 }
 
 .theme-admonition-note .admonitionHeading_Gvgb::before {
-  content: '\eac2'; /* Remixicon: 'file-line' icon */
-  color: #8B4513; /* Icon color matches heading (corrected from fill) */
+  content: '\eac2';
+  color: #8B4513;
 }
 
 /* Style for 'info' admonition (general information, important tips) */
 .theme-admonition-info {
-  background-color: #e6f7ff; /* Standard light blue */
-  border-left: 4px solid #1890ff; /* Vibrant blue border */
+  background-color: #e6f7ff;
+  border-left: 4px solid #1890ff;
 }
 
 .theme-admonition-info .admonitionHeading_Gvgb {
-  color: #1890ff; /* Standard blue for heading */
+  color: #1890ff;
 }
 
 .theme-admonition-info .admonitionHeading_Gvgb::before {
-  content: '\EF44'; /* Remixicon: 'error-warning-fill' (circle with exclamation) */
-  color: #1890ff; /* Icon color matches heading (corrected from fill) */
+  content: '\EF44';
+  color: #1890ff;
 }
 
 /* Style for 'tip' admonition (often green, for best practices/tips) */
 .theme-admonition-tip {
-  background-color: #f6ffed; /* Very light green */
-  border-left: 4px solid #52c41a; /* Standard green border */
+  background-color: #f6ffed;
+  border-left: 4px solid #52c41a;
 }
 
 .theme-admonition-tip .admonitionHeading_Gvgb {
-  color: #52c41a; /* Standard green for heading */
+  color: #52c41a;
 }
 
 .theme-admonition-tip .admonitionHeading_Gvgb::before {
-  content: '\eb84'; /* Remixicon: 'lightbulb-line' (lightbulb icon) */
-  color: #52c41a; /* Icon color matches heading (corrected from fill) */
+  content: '\eb84';
+  color: #52c41a;
 }
 
 /* Style for 'warning' admonition (caution, potential issues) */
 .theme-admonition-warning {
-  background-color: #fffbe6; /* Light yellow */
-  border-left: 4px solid #faad14; /* Standard orange border */
+  background-color: #fffbe6;
+  border-left: 4px solid #faad14;
 }
 
 .theme-admonition-warning .admonitionHeading_Gvgb {
-  color: #faad14; /* Standard orange for heading */
+  color: #faad14;
 }
 
 .theme-admonition-warning .admonitionHeading_Gvgb::before {
-  content: '\ED19'; /* Remixicon: 'alert-fill' (triangle with exclamation mark) */
-  color: #faad14; /* Icon color matches heading (corrected from fill) */
+  content: '\ED19';
+  color: #faad14;
 }
 
 /* Style for 'danger' or 'alert' admonition (critical, error, breaking changes) */
 .theme-admonition-danger,
 .theme-admonition-alert {
-  background-color: #fff1f0; /* Very light red */
-  border-left: 4px solid #ff4d4f; /* Standard red border */
+  background-color: #fff1f0;
+  border-left: 4px solid #ff4d4f;
 }
 
 .theme-admonition-danger .admonitionHeading_Gvgb,
 .theme-admonition-alert .admonitionHeading_Gvgb {
-  color: #ff4d4f; /* Standard red for heading */
+  color: #ff4d4f;
 }
 
 .theme-admonition-danger .admonitionHeading_Gvgb::before,
 .theme-admonition-alert .admonitionHeading_Gvgb::before {
-  content: '\e918'; /* Remixicon: 'forbid-line' (circle with slash) */
-  color: #ff4d4f; /* Icon color matches heading (corrected from fill) */
+  color: #ff4d4f;
 }
-
-
-
-
-/* File: src/css/custom.css */
 
 /* ================== DARK MODE ================== */
 
 html[data-theme='dark'] {
-  --color-text: #f0f0f0; /* Light text for dark background */
-  --color-text-subtle: #b0b0b0; /* Lighter subtle text */
-  --color-bg: #121212; /* Dark background */
-  --color-divider: #333333; /* Darker divider for contrast */
-  --color-subtle-bg: #1a1a1a; /* Slightly lighter dark background for cards/notes */
-  --ifm-navbar-background-color: #1a1a1a; /* Dark navbar background */
+  --color-text: #f0f0f0;
+  --color-text-subtle: #b0b0b0;
+  --color-bg: #121212;
+  --color-divider: #333333;
+  --color-subtle-bg: #1a1a1a;
+  --ifm-navbar-background-color: #1a1a1a;
   
-  /* Adjust accent colors if needed for dark mode visibility */
-  --color-accent: #66b2ff; /* A brighter blue for dark mode accent */
-  --color-accent-hover: #4da6ff; /* Hover state for dark mode accent */
+  --color-accent: #66b2ff;
+  --color-accent-hover: #4da6ff;
 
-  /* Admonition colors for dark mode */
-  /* Note */
   --admonition-note-bg: #2a2a2a;
   --admonition-note-border: #555555;
   --admonition-note-heading: #cccccc;
 
-  /* Info */
   --admonition-info-bg: #1a2c3a;
   --admonition-info-border: #1890ff;
   --admonition-info-heading: #1890ff;
 
-  /* Tip */
   --admonition-tip-bg: #203323;
   --admonition-tip-border: #52c41a;
   --admonition-tip-heading: #52c41a;
 
-  /* Warning */
   --admonition-warning-bg: #3a2d1a;
   --admonition-warning-border: #faad14;
   --admonition-warning-heading: #faad14;
 
-  /* Danger/Alert */
   --admonition-danger-bg: #3a1c1c;
   --admonition-danger-border: #ff4d4f;
   --admonition-danger-heading: #ff4d4f;
@@ -409,10 +379,10 @@ html[data-theme='dark'] .theme-admonition-tip {
   background-color: var(--admonition-tip-bg);
   border-left-color: var(--admonition-tip-border);
 }
-html[data-theme='dark'] .theme-admonition-tip .admonitionHeading_Gvgb { /* Corrected typo: Gv7gb to Gvgb */
+html[data-theme='dark'] .theme-admonition-tip .admonitionHeading_Gvgb {
   color: var(--admonition-tip-heading);
 }
-html[data-theme='dark'] .theme-admonition-tip .admonitionHeading_Gvgb::before { /* Corrected typo: Gv7gb to Gvgb */
+html[data-theme='dark'] .theme-admonition-tip .admonitionHeading_Gvgb::before {
   color: var(--admonition-tip-heading);
 }
 
@@ -441,7 +411,6 @@ html[data-theme='dark'] .theme-admonition-alert .admonitionHeading_Gvgb::before 
   color: var(--admonition-danger-heading);
 }
 
-
 /* Table of Contents link color in dark mode (brighter white) */
 html[data-theme='dark'] .table-of-contents a {
   color: #f8f8f8;
@@ -456,8 +425,6 @@ html[data-theme='dark'] .table-of-contents a {
 html[data-theme='dark'] .table-of-contents a:hover {
   color: var(--color-accent); /* Re-apply accent color for hover in dark mode */
 }
-
-
 
 /* ================== LOGO IMAGE ================== */
 
