@@ -99,7 +99,7 @@ Follow the steps below to create a report using two datasources:
 4. Click the join option and select the type of join operation from inner, left, right, or full join.      
     ![image](https://imgur.com/k3pXget.png)        
 
-> Refer the [above section](#joins)  to understand joins in detail. 
+> Refer the [above section](#types-of-table-joins)  to understand joins in detail. 
 
 
 5. Under **Select join criteria**, select a column present in both the tables for combining. 

@@ -11,11 +11,11 @@ The user metrics section provides valuable insights about the users of your bot.
 
 | Metric | Description|
 | -------- | -------- |
-| [User traffic](#traffic) | This metric includes the number of users visiting your bot, the number of messages sent to your bot, and the duration of the chat.|
-| [User retention](#retention) | This metric compares the number of new users versus old users.|
-| [Users by demographics](#demography) | User data classified based on the location from where the bot is being used. |
-| [User retention](#ret) and [User engagement](#eng) trends | This metric analyzes the retention and engagement trends specifically for mobile and web platforms. |
-| [WhatsApp consumption](#wac) | This metric provides insights into the consumption patterns of a selected WhatsApp phone number. |
+| [User traffic](#user-traffic) | This metric includes the number of users visiting your bot, the number of messages sent to your bot, and the duration of the chat.|
+| [User retention](#user-retention) | This metric compares the number of new users versus old users.|
+| [Users by demographics](#users-by-demographics) | User data classified based on the location from where the bot is being used. |
+| [User retention](#user-retention) and [User engagement](#user-engagement-trend) trends | This metric analyzes the retention and engagement trends specifically for mobile and web platforms. |
+| [WhatsApp consumption](#whatsapp-consumption) | This metric provides insights into the consumption patterns of a selected WhatsApp phone number. |
 
 
 To view user metrics, follow these steps: 

@@ -16,10 +16,10 @@ To try the Inbox demo, click [here](https://docs.yellow.ai/docs/platform_concept
 
 ### Explore Inbox capabilities
 
-1. [Powerful inbox functionalities](#i2): Navigate the Inbox and explore tools for efficient query management.  
-2. [Real-time notifications](#i4): Stay updated on key actions and changes in your Inbox.  
-3. [Orchestrator bot integration](#i5): Learn how the orchestrator AI agent unifies query handling across multiple AI agents.  
-4. [Mobile support for Android & iOS](#and_ios): Manage customer conversations on the go via YellowAI Partner mobile app.
+1. [Powerful inbox functionalities](#powerful-inbox-functionalities): Navigate the Inbox and explore tools for efficient query management.  
+2. [Real-time notifications](#real-time-notifications): Stay updated on key actions and changes in your Inbox.  
+3. [Orchestrator bot integration](#orchestrator-bot-feature-in-inbox): Learn how the orchestrator AI agent unifies query handling across multiple AI agents.  
+4. [Mobile support for Android & iOS](#inbox-on-android-and-ios): Manage customer conversations on the go via YellowAI Partner mobile app.
 
 ---
 

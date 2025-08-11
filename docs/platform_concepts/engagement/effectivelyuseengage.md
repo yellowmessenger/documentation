@@ -5,11 +5,11 @@ sidebar_label: Engage best practices
 
 In this article, you will learn how to - 
 
-* [Identify the right audience](#1identify-the-right-audience)
+* [Identify the right audience](#1-identify-the-right-audience)
 * [Set up goals and objectives](#2-setup-goals-and-objectives)
 * [Identify the message to be conveyed](#3-identify-the-message-to-be-conveyed)
-* [Monitor and analyze the campaign](#4-analyse-campaign-performance)
-* [Best practices to drive customer engagement](#5-best-practices-to-engage-customers)
+* [Monitor and analyze the campaign](#4-analyze-campaign-performance)
+* [Best practices to drive customer engagement](#5-drive-customer-engagement-best-practices)
 
 ## 1. Identify the right audience
 

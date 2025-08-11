@@ -9,8 +9,8 @@ This document explains how the search works in the chats section when an agent o
 
     
 In this article, you will learn:
-1. [How to search chats?](#search) 
-2. [How to filter chats?](#filter)
+1. [How to search chats?](#1-search-chats) 
+2. [How to filter chats?](#2-filter-chats)
    
 
 To navigating to the Chats section, click **Overview** > **Inbox**. Select **Chats**.    

@@ -13,7 +13,7 @@ The following are the different steps involved in a WhatsApp template:
 3. Use the approved template in your campaign.
 
 :::note
-Important update: FBM made changes to WhatsApp authentication templates for businesses in India. [Click here](#6-important-update-changes-to-whatsapp-authentication-templates-for-businesses-in-india) for more details.
+Important update: FBM made changes to WhatsApp authentication templates for businesses in India. [Click here](#8-important-update-changes-to-whatsapp-authentication-templates-for-businesses-outside-india) for more details.
 :::
 
 
@@ -66,7 +66,7 @@ To create a WhatsApp template and send for approval, follow these steps:
 
    ![](https://i.imgur.com/jknxfcv.png)
 
-8. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#6-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
+8. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
 
    ![](https://i.imgur.com/63SeUhj.png)
 

@@ -60,7 +60,7 @@ There are two distinct scenarios to consider based on the channel (live chats/em
 
 This is a relatively straightforward process. The userID can take any value that you intend to track within the flow (phone number, email, SSN, etc). 
 
-> To capture the userId in the bot flows, you can proceed with the [steps mentioned below](#uiprocess).
+> To capture the userId in the bot flows, you can proceed with the [steps mentioned below](#set-userid-using-the-user-properties).
 
 
 #### 2. Using both email and live chat:
