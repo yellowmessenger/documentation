@@ -149,11 +149,11 @@ To retrieve the Contact Flow ID:
   | Field Name                  | Description                                                                                                                           |         
   | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | 
   | **Account Name**            | A unique name for the Amazon Connect account. Use only lowercase alphanumeric characters and underscores (_). The same name will be used in the production environment as well. Example value: `support_team_account`                     |
-  | **[Region](#region)**                  | The AWS region where your Amazon Connect instance is hosted.    <br/>Example value:  `us-east-1`                                |
-  | **[Access Key ID](#🔐-access-key--secret)**           | AWS access key ID for an IAM user with required permissions for Amazon Connect.    <br/>Example value: `AKIAIOSFODNN7EXAMPLE`           |
-  | **[Secret Access Key](#🔐-access-key--secret)**       | AWS secret access key corresponding to the above key. Keep this confidential.  <br/>Example value: `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY` |
-  | **[Contact Flow ID](#🔐-access-key--secret)**         | The ID of the contact flow that defines the chat experience.<br/>Example value: `12345678-1234-1234-1234-123456789012`     |
-  | **[Instance ID](#🆔-instance-id)**             | Unique identifier of your Amazon Connect instance. <br/>Example value: `abcd1234-ef56-gh78-ij90-klmnopqrstuv`     |
+  | **[Region](#-region)**                  | The AWS region where your Amazon Connect instance is hosted.    <br/>Example value:  `us-east-1`                                |
+  | **[Access Key ID](#-access-key--secret)**           | AWS access key ID for an IAM user with required permissions for Amazon Connect.    <br/>Example value: `AKIAIOSFODNN7EXAMPLE`           |
+  | **[Secret Access Key](#-access-key--secret)**       | AWS secret access key corresponding to the above key. Keep this confidential.  <br/>Example value: `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY` |
+  | **[Contact Flow ID](#-contact-flow-id)**         | The ID of the contact flow that defines the chat experience.<br/>Example value: `12345678-1234-1234-1234-123456789012`     |
+  | **[Instance ID](#-instance-id)**             | Unique identifier of your Amazon Connect instance. <br/>Example value: `abcd1234-ef56-gh78-ij90-klmnopqrstuv`     |
   | **Polling Timeout (ms)**    | Time in milliseconds to wait for a response before timing out (before auto-closing chat). <br/>Example value: `30000`                                    |
   | **Chat Duration (minutes)** | Maximum time in minutes that a chat session can remain active. (default: 25 hours, configurable: 60–10,080 minutes)  <br/>Example value: `60`                                       |
 

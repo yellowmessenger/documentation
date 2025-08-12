@@ -89,7 +89,7 @@ This flow allows users to edit the current cart details - change the quantity or
 4. **Edit item**: Allows editing the quantity (for that product ID) using **Quick replies** (and **WhatsApp list**). 
    Stores the new quantity using the `editcart` function in a variable and updates it in the database (user details). 
 5. **Remove item**: Removes the item from the cart using the `editcart` function and the new cart summary is updated in the database (user details).
-6. **Shows options to proceed**: Shows these **Quick replies** and clicking on it executes the respective flow [Buy now](#buy-now), [Clear cart](#clear-cart) and [Add more products](#add-to-cart).
+6. **Shows options to proceed**: Shows these **Quick replies** and clicking on it executes the respective flow [Buy now](#15-buy-now), [Clear cart](#14-clear-cart) and [Add more products](#12-add-to-cart).
 
 ### 1.4 Clear cart
 

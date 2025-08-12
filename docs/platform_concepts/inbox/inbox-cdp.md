@@ -88,7 +88,7 @@ The choice of a unique userId for customers in Inbox should be based on the spec
 
 A **userId** is a unique identifier assigned to every customer, serving as a distinctive label for individual users. It plays a crucial role in recognizing users across various points of interaction, enabling the capture and updating of user data. UserIds can take the form of various unique identifiers, here are some considerations to help you decide: Phone number, Email address, External markers (Employee number, Loan ID, Account number), etc.
 
-Learn more about UserIDs [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#1-userid-as-a-property). 
+Learn more about UserIDs [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#userid-as-a-property). 
 :::
 
 

@@ -36,7 +36,7 @@ This article provides how to create campaigns for any channel. The process for c
 
 4. Select your preferred **Message template** using the respective radio button. For more details, see [Templates overview](/docs/platform_concepts/engagement/outbound/templates/overview).
 
-   * [WhatsApp](/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate)
+   * [WhatsApp](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate)
    * [Email](/docs/platform_concepts/engagement/outbound/templates/email-template)
    * [SMS](/docs/platform_concepts/engagement/outbound/templates/sms-template)
    * [Mobile push](/docs/platform_concepts/engagement/outbound/templates/mobilepush)
@@ -90,7 +90,7 @@ You will see template configuration slide screen where you need to configure det
 
    * Create a new segment using **+ Add new segment**. For more details, see [Users module and segment creation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview).
 
-8.  **Schedule** your Campaign: Define when to send the campaign (Timezone: Asia/Kolkata). For detailed procedure, see [Schedule message](#3-schedule-message).  From the options, select 
+8.  **Schedule** your Campaign: Define when to send the campaign (Timezone: Asia/Kolkata). For detailed procedure, see [Schedule message](#4-schedule-message).  From the options, select 
 
     * **Once** to run the campaign for one occurrence.
     * **Now** to run after 10 min once you schedule the campaign.
@@ -107,7 +107,7 @@ You will see template configuration slide screen where you need to configure det
 
    ii. Set the duration (in hours/days) for which you want to track the goal in **Track the goal for**. For example, if there is a sale in a couple of days, you can set it to track for two days to get the count of messages delivered before the sale ends.
 
-10. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add up to five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
+10. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add up to five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#7-test-campaigns-recommended).
 
 11.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
 
@@ -396,7 +396,7 @@ The following are the benefits of testing a campaign before launching -
 #### Test campaign
 
 
-1. Once you Schedule a campaign, you will see an option to Test campaign in Step 8 of [Create campaign](#2-create-campaign), Review and launch.
+1. Once you Schedule a campaign, you will see an option to Test campaign in Step 8 of [Create campaign](#2-create-outbound-campaign), Review and launch.
 
    ![](https://i.imgur.com/CzxSZrO.png)
 

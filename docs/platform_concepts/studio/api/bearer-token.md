@@ -59,7 +59,7 @@ return  token.token_type + " " + token.access_token;
   * **Select variable**: Create/choose the variable in which you want to store the parsed response. Here the variable would be auth_token.
   * **Add function**: Choose the function created in step 
 
-6. Include another [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode) and [add](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#create-new-api)/or [fetch the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#use-existing-api) (created in step 1). In the **Dynamic variable**, fetch the auth_token variable (created in step 5).
+6. Include another [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode) and [add](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#add-a-new-api)/or [fetch the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#use-existing-api) (created in step 1). In the **Dynamic variable**, fetch the auth_token variable (created in step 5).
 
    <img src="https://i.imgur.com/vX3vb7O.png" alt="drawing" width="80%"/>
 

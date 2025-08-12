@@ -90,7 +90,7 @@ Before using this node, ensure the following requirements are met:
 
 * A **WhatsApp template message** must be approved by **Meta (Facebook)**.
   Learn how to create and submit templates:
-  [Create WhatsApp Templates →](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#docusaurus_skipToContent_fallback)
+  [Create WhatsApp Templates →](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate)
 
 * Your bot must be connected to a **WhatsApp Infrastructure**. Without this, the WhatsApp option will not be available in the node.
 
