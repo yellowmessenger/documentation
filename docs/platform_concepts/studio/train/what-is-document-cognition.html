@@ -22,8 +22,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
 <script src="/js/FeedbackFooter.js"></script>
 <script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.9862c87a.css">
-<script src="/assets/js/runtime~main.689a83b7.js" defer="defer"></script>
-<script src="/assets/js/main.4a0125ac.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a1641c53.js" defer="defer"></script>
+<script src="/assets/js/main.27c3ff26.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -35,7 +35,7 @@ When you have multiple documents(20+) containing mostly(~70%) text, it is humanl
 <!-- -->By using the <strong>Documents</strong> feature, you can expect the model to answer queries and take you to the right page/paragraph content with ~75-85% accuracy depending on the type and size of documents.</p>
 <p>In this article, you will learn:</p>
 <ol>
-<li><a href="#uc">How documents can be used?</a></li>
+<li><a href="#1-examples-where-you-can-use-documents">Examples where you can use documents</a></li>
 <li><a href="#2-add-files-to-document-section">How to add files to Document section?</a>
 <ul>
 <li><a href="#21-upload-files-from-local-system">via. local system</a></li>
@@ -44,12 +44,12 @@ When you have multiple documents(20+) containing mostly(~70%) text, it is humanl
 <li><a href="#24-upload-file-via-sharepoint">via. Sharepoint</a></li>
 </ul>
 </li>
-<li><a href="#3-qna-extract">What is Extract QNA?</a></li>
-<li><a href="#a">How to add Acronyms?</a></li>
+<li><a href="#3-qna-extraction-from-documents">What is Extract QNA?</a></li>
+<li><a href="#4-add-acronyms">How to add Acronyms?</a></li>
 </ol>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-use-case">1. Use case<a href="#1-use-case" class="hash-link" aria-label="Direct link to 1. Use case" title="Direct link to 1. Use case">​</a></h2>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p><strong>Prerequisite</strong></p><p>These use cases can be leveraged only after the Documents are successfully uploaded on the Documents section.
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-examples-where-you-can-use-documents">1. Examples where you can use Documents<a href="#1-examples-where-you-can-use-documents" class="hash-link" aria-label="Direct link to 1. Examples where you can use Documents" title="Direct link to 1. Examples where you can use Documents">​</a></h2>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>These use cases can be leveraged only after the Documents are successfully uploaded on the Documents section.
 To upload the document in the Document section:</p><ul>
 <li>Open <strong>Automation</strong>&gt; <strong>Train</strong> &gt; <strong>Document</strong>.</li>
 <li>Add the required file.</li>
@@ -456,7 +456,7 @@ You need to create a credential file at <code>~/.aws/credentials</code>. and add
 <li>Click the <strong>upload</strong> button, and your docs will be scheduled for sync.</li>
 </ol>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-qna-extract">3. QNA Extract<a href="#3-qna-extract" class="hash-link" aria-label="Direct link to 3. QNA Extract" title="Direct link to 3. QNA Extract">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-qna-extraction-from-documents">3. QNA extraction from documents<a href="#3-qna-extraction-from-documents" class="hash-link" aria-label="Direct link to 3. QNA extraction from documents" title="Direct link to 3. QNA extraction from documents">​</a></h2>
 <p>The Yellow.ai platform can auto-generate questions and answers from the uploaded documents. You can choose between two different models(<strong>Yellow DNLP</strong> and <strong>OpenAI API</strong>) to genereate them.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="yellow-dnlp">Yellow DNLP:<a href="#yellow-dnlp" class="hash-link" aria-label="Direct link to Yellow DNLP:" title="Direct link to Yellow DNLP:">​</a></h4>
 <p>The T5(Text-to-Text Transfer Transformer) model is a pre-trained language model developed by Google that can handle a wide range of natural language processing tasks, including question generation. To do so, the model is fine-tuned on specific datasets such as SQuAD(Stanford Question Answering Dataset) and TriviaQA, where it learns to generate questions when given an answer or a piece of text.</p>
@@ -491,7 +491,7 @@ You need to create a credential file at <code>~/.aws/credentials</code>. and add
 <p>Click <strong>Create</strong>. This question will be added to the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs" target="_blank" rel="noopener noreferrer">FAQ</a> section.</p>
 </li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-4-add-acronyms"><a name="a"></a> 4. Add acronyms<a href="#-4-add-acronyms" class="hash-link" aria-label="Direct link to -4-add-acronyms" title="Direct link to -4-add-acronyms">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-add-acronyms">4. Add acronyms<a href="#4-add-acronyms" class="hash-link" aria-label="Direct link to 4. Add acronyms" title="Direct link to 4. Add acronyms">​</a></h2>
 <p>There are cases when we expect the user to search for certain text, but the entered text is not present in our documents in that searched format.
 For example, if we have a document where it is written The “United States of America” but the user searches for the  USA, US etc.
 In these cases, acronyms and synonyms can be configured to accept USA and US as input. This will look for the United States of America in documents and provide the results accordingly.</p>
@@ -510,6 +510,6 @@ In these cases, acronyms and synonyms can be configured to accept USA and US as 
 <p>Acronyms have been configured.</p>
 <p><img decoding="async" loading="lazy" src="https://i.imgur.com/x1uAHN4.png" alt="" class="img_ev3q"></p>
 </li>
-</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/platform_concepts/studio/train/add-faqs"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">FAQ AI-agents</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/platform_concepts/studio/train/synonyms"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Synonyms</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-use-case" class="table-of-contents__link toc-highlight">1. Use case</a></li><li><a href="#2-add-files-to-document-section" class="table-of-contents__link toc-highlight">2. Add files to Document section</a><ul><li><a href="#21-upload-files-from-local-system" class="table-of-contents__link toc-highlight">2.1 Upload files from local system</a></li><li><a href="#22-upload-files-from-an-url" class="table-of-contents__link toc-highlight">2.2 Upload files from an URL</a></li><li><a href="#23-upload-file-via-aws" class="table-of-contents__link toc-highlight">2.3 Upload file via. AWS</a></li><li><a href="#24-upload-file-via-sharepoint" class="table-of-contents__link toc-highlight">2.4 Upload file via. SharePoint</a></li></ul></li><li><a href="#3-qna-extract" class="table-of-contents__link toc-highlight">3. QNA Extract</a></li><li><a href="#-4-add-acronyms" class="table-of-contents__link toc-highlight"><a></a> 4. Add acronyms</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"></div></footer></div>
+</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/platform_concepts/studio/train/add-faqs"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">FAQ AI-agents</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/platform_concepts/studio/train/synonyms"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Synonyms</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-examples-where-you-can-use-documents" class="table-of-contents__link toc-highlight">1. Examples where you can use Documents</a></li><li><a href="#2-add-files-to-document-section" class="table-of-contents__link toc-highlight">2. Add files to Document section</a><ul><li><a href="#21-upload-files-from-local-system" class="table-of-contents__link toc-highlight">2.1 Upload files from local system</a></li><li><a href="#22-upload-files-from-an-url" class="table-of-contents__link toc-highlight">2.2 Upload files from an URL</a></li><li><a href="#23-upload-file-via-aws" class="table-of-contents__link toc-highlight">2.3 Upload file via. AWS</a></li><li><a href="#24-upload-file-via-sharepoint" class="table-of-contents__link toc-highlight">2.4 Upload file via. SharePoint</a></li></ul></li><li><a href="#3-qna-extraction-from-documents" class="table-of-contents__link toc-highlight">3. QNA extraction from documents</a></li><li><a href="#4-add-acronyms" class="table-of-contents__link toc-highlight">4. Add acronyms</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"></div></footer></div>
 </body>
 </html>

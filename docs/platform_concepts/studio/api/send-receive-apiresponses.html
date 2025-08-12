@@ -22,8 +22,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
 <script src="/js/FeedbackFooter.js"></script>
 <script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.9862c87a.css">
-<script src="/assets/js/runtime~main.689a83b7.js" defer="defer"></script>
-<script src="/assets/js/main.4a0125ac.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a1641c53.js" defer="defer"></script>
+<script src="/assets/js/main.27c3ff26.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -51,7 +51,7 @@
 <p>Test the API response, for steps, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#test-the-api" target="_blank" rel="noopener noreferrer">here</a>.</p>
 </li>
 <li>
-<p>Store the API response in a variable for future use. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response" target="_blank" rel="noopener noreferrer">here</a> for the steps.</p>
+<p>Store the API response in a variable for future use. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#steps-to-store-api-response" target="_blank" rel="noopener noreferrer">here</a> for the steps.</p>
 </li>
 <li>
 <p>Display the API response to the end user by following the steps mentioned <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response" target="_blank" rel="noopener noreferrer">here</a>.</p>
@@ -78,7 +78,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="parse-api-response-within-the-api-node">Parse API response within the API node<a href="#parse-api-response-within-the-api-node" class="hash-link" aria-label="Direct link to Parse API response within the API node" title="Direct link to Parse API response within the API node">​</a></h3>
 <p>You can parse an API response as you recieve it and display only the required info to the end user.</p>
 <ol>
-<li><a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys" target="_blank" rel="noopener noreferrer">Build a flow</a> for your use case, include an <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response" target="_blank" rel="noopener noreferrer">API node</a>. <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response" target="_blank" rel="noopener noreferrer">Store the response of the API node in a variable</a>.</li>
+<li><a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys" target="_blank" rel="noopener noreferrer">Build a flow</a> for your use case, include an <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response" target="_blank" rel="noopener noreferrer">API node</a>. <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#steps-to-store-api-response" target="_blank" rel="noopener noreferrer">Store the response of the API node in a variable</a>.</li>
 <li>Go to the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code" target="_blank" rel="noopener noreferrer">Functions</a> section, fetch the variable created in the previous step and <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-new-function" target="_blank" rel="noopener noreferrer">write a custom logic</a> to parse the API response.</li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="code-snippet-for-parsing">Code snippet for parsing<a href="#code-snippet-for-parsing" class="hash-link" aria-label="Direct link to Code snippet for parsing" title="Direct link to Code snippet for parsing">​</a></h3>
@@ -124,7 +124,7 @@
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">return new Promise(resolve =&gt; {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">let weatherResponse = data.variables.weather_response;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">let weatherDescription = weatherResponse.weather[0].description;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">let temperature = weatherResponse.main.temp;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">let output = {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">weatherDescription: weatherDescription,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">temperature: temperature</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">};</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">resolve(output);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">});</span><br></span></code></pre></div></div>
 <ol start="2">
 <li>
-<p>Go to <strong>Automation</strong> &gt; <strong>Build</strong> &gt; to the respective flow and <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response" target="_blank" rel="noopener noreferrer">store the response of this API node in a variable</a>.</p>
+<p>Go to <strong>Automation</strong> &gt; <strong>Build</strong> &gt; to the respective flow and <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#steps-to-store-api-response" target="_blank" rel="noopener noreferrer">store the response of this API node in a variable</a>.</p>
 </li>
 <li>
 <p>Add a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node" target="_blank" rel="noopener noreferrer">function node</a> to the flow and pass the function you created in step 1. <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables" target="_blank" rel="noopener noreferrer">Store the response of this function node in a variable</a> depending on its data type.</p>
