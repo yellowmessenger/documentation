@@ -33,7 +33,7 @@ This is where a [Variables Node](https://docs.yellow.ai/docs/platform_concepts/s
 
 ## <a name="id2"></a> 2. What are Identified Users?
 
-When userId has been set for a user, that user becomes identified. To know what a userId is,and it's importance, you can [read this document](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#1-userid-as-a-property).
+When userId has been set for a user, that user becomes identified. To know what a userId is,and it's importance, you can [read this document](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#userid-as-a-property).
 
 As soon as a user is identified, it starts showing up as a record in the users table. All updates made to this user, in builder, also show up in the users table. 
 

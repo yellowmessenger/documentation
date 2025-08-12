@@ -7,9 +7,9 @@ This article explains how to set up inbox configuration to process email tickets
 Once this configuration is complete, any emails sent to the support email will be converted into tickets and will be available on the **Tickets** page which will be automatically assigned to an inbox agent for resolution.
 
 There are three steps to be followed in the given order: 
-1. [Create an email channel(email ID)](#1)
-2. [Link  email channel to Inbox (with forwarding address)](#22)
-3. [Enable email ticketing from settings](#2)
+1. [Create an email channel (email ID)](#1-set-up-email-channel)
+2. [Link  email channel to Inbox (with forwarding address)](#2-set-mail-forwarding)
+3. [Enable email ticketing from settings](#3-enable-email-ticketing-settings)
 
 
 

@@ -87,10 +87,7 @@ This flow is activated when the user explicitly expresses the need to speak with
 
 ----
 
-
-### <a name="fwd"></a>  Step 3: Add call forwarding details
-
-
+### Step 3: Add call forwarding details
 
 
 To configure call forwarding options at the [node level](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes#32-configure-node-for-a-voice-bot) for each node, follow the steps below: 

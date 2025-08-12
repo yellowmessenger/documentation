@@ -79,7 +79,7 @@ The Voice Input node will only work for voice agents, meaning you must have enab
 3. In **Bot speaks**, enter the message that the voice agent will say to request the user's phone number.
 4. In **Repeat message**, input the message that the voice agent will repeat if the user's response is unclear or requires verification.
 5. In **[Validator](#validator)**, validate the user input against the chosen criteria.
-6. In **[Capturing the user input](#13-capturing-user-input)**, configure how the voice agent should gather user inputs.
+6. In **[Capturing the user input](#capturing-user-input)**, configure how the voice agent should gather user inputs.
 7. In **[Additional settings](#additional-settings)**, adjust configurations to enhance conversation authenticity and emulate human-like interactions.<br/>
    For PCI related inputs, you can Additional Settings to define how PCI data is passed to your API.
     * **Encoding type**: Choose how the PCI input is encoded —`Text`, `Hexadecimal`, or `Base64`.

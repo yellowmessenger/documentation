@@ -64,7 +64,7 @@ You can trigger a specific flow by using the flow slug in the AI-agent script. T
 
 To test AI-agent flow using botscript, follow these steps:
 
-1. Copy the flow slug of the desired flow, as explained in the [Test AI-agent flow via URL](#test-bot-flow-via-url) section.
+1. Copy the flow slug of the desired flow, as explained in the [Test AI-agent flow via URL](#test-ai-agent-flow-via-url) section.
 2. Copy the botscript. For more information on how to copy the botscript, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#deploy-chat-widget). 
 3. In `window.ymConfig`, pass the `triggerJourney` parameter and specify the path of the copied flow.
 

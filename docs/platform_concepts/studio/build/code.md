@@ -70,7 +70,7 @@ The table below lists all parameters associated with accessing user information:
 
 | **User property name** | **arg** | **Data type** | **Description** |
 |-------------------|-------------------|---------------|------------------------|
-| userId | data.user.userId | string | Retrieves the unique identifier of the user as configured in User 360. This could be a mobile number, email, or any other identifier. For more details, visit [documentation](#1-userid-as-a-property). |
+| userId | data.user.userId | string | Retrieves the unique identifier of the user as configured in User 360. This could be a mobile number, email, or any other identifier. For more details, visit [documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#userid-as-a-property). |
 | firstName | data.user.firstName | string | Retrieves the first name of the user. |
 | lastName | data.user.lastName | string | Retrieves the last name of the user.|
 | gender | data.user.gender | string |  Retrieves the gender of the user. |

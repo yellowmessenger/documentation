@@ -57,6 +57,18 @@ You can change the status directly from the Status column in the file list witho
 
 ![Update status](/files/updatestatus.gif)
 
+### Set status for new files
+
+This setting allows you to define the default status for any new files added to the system, either through manual upload or automatic sync from connected sources.
+
+**When this option is helpful**
+
+If your AI agent is already live and has an active sync schedule, this setting ensures that any new files added during the sync are automatically set the status as Published. This helps keep your AI agent updated with the latest content instantly.
+
+ <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/statusforfiles.png" alt="drawing" width="60%"/>
+
+* **Draft**: The file is updated in Staging and Sandbox environments.
+* **Published**: The file is Updated in Production or Live environments.
 
 ---
 

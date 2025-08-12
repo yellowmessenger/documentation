@@ -49,7 +49,7 @@ Bots that have records in the old Users Module will see a data migration window.
 2. Once the data is downloaded, click **Migrate data**. You will see the Data migration screen. 
 3. Map Old user properties to the  New user properties.
 
-   Under New user property, you will see [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#1-userid-as-a-property) and pre-defined [System properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties).
+   Under New user property, you will see [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#userid-as-a-property) and pre-defined [System properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties).
 
 * To create a [Custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties), click **+ Add new user property**.
 
