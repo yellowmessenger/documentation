@@ -17,7 +17,7 @@ The platform then connects the end user's call to the agent, allowing the user t
 
 
 
-#### <a name="ex"></a>  Scenarios for voice agent transfer to an agent
+#### Scenarios for voice agent transfer to an agent
 
 There are various situations in which transferring a call to a human agent becomes necessary. The Yellow.ai platform offers a dedicated flow that can be configured for seamless call transfers. Here are two common scenarios:
 
@@ -59,7 +59,7 @@ When the voice agent repeatedly fails to understand the user's input or when the
 
 (or)
 
-3. Use an execute flow node to connect to an agent: This can be combined with the second scenario where an intent triggers the *Chat with agen*t flow. In this case, create a new flow called *Chat with agent* and add a prompt node. Enter a message in the **Bot asks** field to be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#step-3-add-call-forwarding-details).        
+3. Use an execute flow node to connect to an agent: This can be combined with the second scenario where an intent triggers the *Chat with agent flow. In this case, create a new flow called *Chat with agent* and add a prompt node. Enter a message in the **Bot asks** field to be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#step-3-add-call-forwarding-details).        
 
     **Main flow**:        
     ![](https://imgur.com/KBtYRxl.png)            

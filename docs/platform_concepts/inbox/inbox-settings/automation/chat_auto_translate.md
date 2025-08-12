@@ -5,12 +5,12 @@ sidebar_label : Auto translate (Google API key generation)
 
 
 In this article, you will learn: 
-1. [What is the purpose of auto translate?](#auto-translate-functionality)
+1. [What is the purpose of auto translate?](#auto-translate-overview)
 2. [How to enable auto-translate?](#enable-auto-translate-settings)
 3. [Steps to generate a google translate API key](#generate-google-translate-api-key)
 
 
-## <a name="usecase"></a>  Auto-translate functionality 
+## Auto-translate overview 
 
 With the Auto translate feature agents can talk with customers who speak different languages. With auto-translation, messages will automatically be translated to the preferred language of both parties.
 You can see its functioning on the [chat screen](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#translate). 
@@ -47,7 +47,7 @@ Assume, the user has typed a sentence and the language is detected as French (us
 
 ------
 
-## <a name="at"></a> Enable auto-translate settings 
+## Enable auto-translate settings 
 
 
 Follow the steps below to enable auto-translate: 
@@ -75,7 +75,7 @@ To Auto translate messages, you must first set  **Translate user message** to **
 
 ---
 
-### <a name="gt"></a> Generate google translate API key 
+### Generate google translate API key 
 
 Follow the below steps to generate the google translate API key: 
 

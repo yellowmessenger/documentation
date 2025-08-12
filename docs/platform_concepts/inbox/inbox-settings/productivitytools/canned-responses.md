@@ -6,9 +6,9 @@ sidebar_label : Chat/ticket canned responses
 Canned responses are displayed on the [chat screen](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#1-chat-screen) when the agent presses # (hash key), configure these responses in this section . 
 
 In this article, you will learn:
-1. [How to add canned responses for chat and email?](#add)
-2. [How to delete canned responses?](#delete)
-3. [How to use canned reponse in chat/ticket screen?](#can)
+1. [How to add canned responses for chat and email?](#add-canned-responses)
+2. [How to delete canned responses?](#add-canned-responses)
+3. [How to use canned response in chat/ticket screen?](#use-canned-response-on-the-chatticket-screen)
 
 ---
 
@@ -24,7 +24,7 @@ Based on the requirement, canned responses can be added or edited by an inbox ad
 
 -------
 
-## <a name="add"></a> Add canned responses 
+## Add canned responses 
 
 Follow the steps below to add a canned response:
 
@@ -79,7 +79,7 @@ Bulk upload of canned response is currently not supported via the user interface
 
 ------
 
-## <a name="delete"></a> Edit/Delete canned response
+## Edit/Delete canned response
 
 To edit/delete a canned response, click the 3 dots beside the Template name you wish to edit.
 
@@ -89,7 +89,7 @@ To edit/delete a canned response, click the 3 dots beside the Template name you 
 
 ------
 
-## <a name="can"></a> Use canned response on the chat/ticket screen 
+## Use canned response on the chat/ticket screen 
 
 Saved/configured canned responses will be available in the chats/ticket section automatically, you can them by clicking canned response icon or by typing **#** followed by the required tag. 
 

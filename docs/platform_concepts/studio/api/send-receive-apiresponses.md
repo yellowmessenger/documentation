@@ -21,7 +21,7 @@ The [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-
    ![](https://i.imgur.com/jl5DNLS.png)
 
 5. Test the API response, for steps, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#test-the-api).
-6. Store the API response in a variable for future use. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response) for the steps.
+6. Store the API response in a variable for future use. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#steps-to-store-api-response) for the steps.
 7. Display the API response to the end user by following the steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response).
 
 ### Sending diverse data forms through API
@@ -64,7 +64,7 @@ There are two ways by which you can parse an API response in Yellow.ai.
 
 You can parse an API response as you recieve it and display only the required info to the end user.
 
-1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case, include an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response). [Store the response of the API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
+1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case, include an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response). [Store the response of the API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#steps-to-store-api-response).
 2. Go to the [Functions](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) section, fetch the variable created in the previous step and [write a custom logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-new-function) to parse the API response. 
 
 ### Code snippet for parsing
@@ -237,7 +237,7 @@ resolve(output);
 });
 ```
                                           
-2. Go to **Automation** > **Build** > to the respective flow and [store the response of this API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
+2. Go to **Automation** > **Build** > to the respective flow and [store the response of this API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#steps-to-store-api-response).
 3. Add a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) to the flow and pass the function you created in step 1. [Store the response of this function node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) depending on its data type.
 
     <img src="https://i.imgur.com/4PTK4Q9.png" alt="drawing" width="90%"/>

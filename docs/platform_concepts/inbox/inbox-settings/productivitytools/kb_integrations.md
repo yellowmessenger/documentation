@@ -5,8 +5,8 @@ sidebar_label : Support portal integrations
 
 In this article, you will learn: 
 
-1. [How to integrate a Chatbot in your support portal?](#bot)
-2. [How to integrate GTM to your support portal?](#gtm)
+1. [How to integrate a Chatbot in your support portal?](#1-integrate-support-portal-with-chat-botswidgets)
+2. [How to integrate GTM to your support portal?](#2-integrate-kb-with-google-tag-managergtm)
 
 ------------
 
@@ -21,7 +21,7 @@ Currently Chat bot integration and Google tag manager integration are enabled.
 
 ---------
 
-##  <a name="bot"></a>  1. Integrate support portal with chat bots(widgets)
+##  1. Integrate support portal with chat bots(widgets)
 
 
 AI agents (widgets) that are built on the yellow.ai platform or any other app can be integrated into the support portal to help the end-users to use bot functionalities, and connect with the bot or the live agent faster.
@@ -70,7 +70,7 @@ To connect a chat bot, follow the below steps:
 -------------
 
 
-##  <a name="gtm"></a>  2. Integrate KB with google tag manager(GTM)
+##  2. Integrate KB with google tag manager(GTM)
 
 
 Google Tag Manager(GTM) is a tag management system where you can quickly and easily update measurement codes and their related code fragments collectively known as **Tags** on your website or mobile app.

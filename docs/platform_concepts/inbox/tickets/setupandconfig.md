@@ -13,7 +13,7 @@ There are three steps to be followed in the given order:
 
 
 
-## <a name="1"></a>  1. Set up Email channel  
+## 1. Set up Email channel  
 
 
 Configure the email channel from the channels module, follow the below steps:
@@ -41,7 +41,7 @@ That is, the emails sent to the email ID will be available on the yellow.ai plat
 
 -----
 
-## <a name="22"></a>  2. Set mail forwarding 
+## 2. Set mail forwarding 
 
 To forward mails from the email chatbox to the yellow.ai platform, follow the below steps: 
 
@@ -84,7 +84,7 @@ To forward mails from the email chatbox to the yellow.ai platform, follow the be
 
 ------
 
-## <a name="2"></a>  3. Enable email ticketing settings 
+## 3. Enable email ticketing settings 
 
 The email ticketing toggle must be enabled from the Inbox settings. Explained in detail [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing)
 

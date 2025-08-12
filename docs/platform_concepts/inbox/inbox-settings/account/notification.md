@@ -15,7 +15,7 @@ All the Inbox updates will be sent to you based on your role (Inbox admin/agent)
 ![](https://i.imgur.com/5jrkOpD.png)
 
 
-## <a name="1"></a> Configure inbox notifications 
+## Configure inbox notifications 
 
 Follow the below steps to configure notifications: 
 
@@ -44,7 +44,7 @@ Notifications are not in real-time, so delays are expected. When a new chat is a
 -------------
 
 
-## <a name="2"></a> List of notifications 
+## List of notifications 
 
 You will start receiving notifications on the notifications tab. Following is a list of the common inbox notifications and their descriptions: 
 

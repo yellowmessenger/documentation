@@ -99,7 +99,7 @@ Activates the workflow whenever a customer wants to connect to live agent.  Use 
 > Example: **When a new chat is created** and it is more than **1 hour** perform ``{next action}``
 
 
-#### <a name="chat-property-updated"></a>  2. When a chat property is updated
+#### 2. When a chat property is updated
 
 Activates the workflow whenever a chat property (such as tags, custom fields, or priority) changes. Use this trigger to automate responses or updates based on these modifications.
 

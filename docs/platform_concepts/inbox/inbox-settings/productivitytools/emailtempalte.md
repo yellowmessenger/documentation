@@ -5,14 +5,14 @@ featured: true
 ---
 
 In this article, you will learn: 
-1. [How to create email templates?](#2)
-2. [How to use email templates?](#3)
+1. [How to create email templates?](#create-email-template)
+2. [How to use email templates?](#use-email-templates-to-respond-to-email-tickets)
 
 -------------
 
-## <a name="1"></a> Email templates overview
+## Email templates overview
 
-Email templates are pre built tempaltes that can be sent to the customers directly while creating and responding to the [email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro). 
+Email templates are pre built templates that can be sent to the customers directly while creating and responding to the [email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro). 
 
 HTML email branding templates can help support teams (Inbox agents) communicate with customers by: 
 - Providing a consistent and professional look and feel for all of the company emails.
@@ -22,7 +22,7 @@ HTML email branding templates can help support teams (Inbox agents) communicate 
 
 --------------
 
-## <a name="2"></a>  1. Create Email Template
+## Create Email Template
 
 :::note
 Only Inbox admins can create email templates.
@@ -72,7 +72,7 @@ Dynamic variables populate the email with relevant data, such as the agent’s n
 
 1. Click the **Variables** icon at the top of the template editor.
 2. From the list of variables, click **Add** to insert them into your template.                           
-![image](https://imgur.com/CCYH9Ks.png)
+   ![image](https://imgur.com/CCYH9Ks.png)
 
 **Example**
 
@@ -137,7 +137,7 @@ All created email templates will be visible on the **Settings** page. From here,
 -----------------------------
 
 
-## <a name="3"></a>  2. Use email templates to respond to email tickets
+## Use email templates to respond to email tickets
 
 :::note
 Inbox admins and agents can use email templates while responding to or creating new email tickets.

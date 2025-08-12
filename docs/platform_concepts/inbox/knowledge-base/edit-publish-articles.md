@@ -5,12 +5,7 @@ sidebar_label : Edit & publish articles
 
 When creating support articles, multiple updates and reviews are often necessary before publishing to ensure quality and accuracy. Here's how you can effectively manage, edit, and publish articles in the support portal.
 
-In this article, you will learn:
-1. [How to publish new articles to your support portal?](#1)
-2. [How to edit an existing article?](#2)
-3. [How to unpublish an existing article?](#3)
-
-## <a name="1"></a> 1. Publish an article
+## 1. Publish an article
 
 Follow the given steps to publish new articles to your support portal:  
 
@@ -36,7 +31,7 @@ Follow the given steps to publish new articles to your support portal:
 
 ----------
 
-## <a name="2"></a> 2. Editing an article
+## 2. Editing an article
 
 Follow the below steps to edit articles on the support portal:
 
@@ -59,7 +54,7 @@ Follow the below steps to edit articles on the support portal:
 
 ------------
 
-## <a name="3"></a>  3. Un-publishing an article
+## 3. Un-publishing an article
 
 To remove the article from being visible to the users on the support portal, follow the given steps: 
 

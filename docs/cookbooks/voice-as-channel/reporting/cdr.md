@@ -117,7 +117,7 @@ VoIP/IVR providers aim to bill companies accurately for channel usage. Analyzing
 
 
 
-##  <a name="cdr"></a> 4. CDR fields and their definitions
+##  4. CDR fields and their definitions
 
 
 The CDR report provides the following information:

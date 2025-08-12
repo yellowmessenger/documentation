@@ -11,7 +11,7 @@ By using the **Documents** feature, you can expect the model to answer queries a
 
 In this article, you will learn:   
 
-1. [Examples where you can use documents](#1-use-case)   
+1. [Examples where you can use documents](#1-examples-where-you-can-use-documents)   
 2. [How to add files to Document section?](#2-add-files-to-document-section)
     - [via. local system](#21-upload-files-from-local-system)
     - [via. URL - integration with customer’s external Knowledge Base](#22-upload-files-from-an-url)   
@@ -24,11 +24,9 @@ In this article, you will learn:
 
 
 
-##  1. Use case
+##  1. Examples where you can use Documents
 
 :::note
-
-**Prerequisite**
 
 These use cases can be leveraged only after the Documents are successfully uploaded on the Documents section. 
 To upload the document in the Document section:
@@ -674,7 +672,7 @@ To extract questions and answers from your docs, follow these steps:
 6. Click **Create**. This question will be added to the [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) section.
 
 
-## <a name="a"></a> 4. Add acronyms 
+## 4. Add acronyms 
 
 There are cases when we expect the user to search for certain text, but the entered text is not present in our documents in that searched format. 
     For example, if we have a document where it is written The “United States of America” but the user searches for the  USA, US etc. 

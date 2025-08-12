@@ -3,10 +3,6 @@ title: Managing categories, folders and articles
 sidebar_label : Manage categories, folders & articles
 ---
 
-In this article, you will learn:
-1. [How to manage categories?](#category)
-2. [How to manage a folder?](#folder)
-3. [How to manage an article?](#article)
 
 The support portal is another medium to automate the incoming support queries by making it easier for the customers to find information about their issues which in turn reduces the number of tickets raised for the support agent
 support portals are designed in a way to make customers find information easily without needing help. Hence the support portal has to be structured in a well-defined & intuitive manner.

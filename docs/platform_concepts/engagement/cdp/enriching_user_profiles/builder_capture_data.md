@@ -15,7 +15,7 @@ In this document, we will cover:
 3. [Using builder to create & update user records in users table](#3-using-builder-to-create--update-user-records-in-users-table)
 4. [What happens when a new user conflicts with an existing user?](#4-what-happens-when-a-new-user-conflicts-with-an-existing-user)
 
-## <a name="id1"></a> 1. How to store data in user properties?
+## 1. How to store data in user properties?
 
 User properties are available in all nodes of the builder under **"User properties"**.
 
@@ -31,7 +31,7 @@ This is where a [Variables Node](https://docs.yellow.ai/docs/platform_concepts/s
 
 <img src="https://i.imgur.com/NWnn7uW.png" alt="drawing" width="60%"/>
 
-## <a name="id2"></a> 2. What are Identified Users?
+## 2. What are Identified Users?
 
 When userId has been set for a user, that user becomes identified. To know what a userId is,and it's importance, you can [read this document](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#userid-as-a-property).
 
@@ -43,7 +43,7 @@ Therefore, while making relevant updates to a user, make sure it is already iden
 **userId**, is available as a property under **User Properties**, in every builder node.
 :::
 
-## <a name="id3"></a> 3. Using builder to create & update user records in users table
+## 3. Using builder to create & update user records in users table
 
 As mentioned above, to create a user record in the users table through builder, you need to identify that user. To do that, you need to set it’s **userId**, which is available as a property under **User Properties**, in every builder node.
 
@@ -56,7 +56,7 @@ You can achieve this by storing the response in email property and then by click
 ![](https://i.imgur.com/ty7LQKU.png)
 
 
-## <a name="id4"></a> 4. What happens when a new user conflicts with an existing user?
+## 4. What happens when a new user conflicts with an existing user?
 
 A conflict happens when you identify a user with a userId that already exists in the users table.
 

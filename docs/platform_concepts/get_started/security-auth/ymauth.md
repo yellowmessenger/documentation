@@ -49,7 +49,7 @@ This guide outlines how organizations can configure YM authentication, enabling 
 
 Steps to configure YM authentication token are mentioned below: 
 
-### <a name="i1"></a>  Step 1: Make an API call to encrypt your token
+### Step 1: Make an API call to encrypt your token
 
 **Here is the API (cURL request) to encrypt your token**: 
 

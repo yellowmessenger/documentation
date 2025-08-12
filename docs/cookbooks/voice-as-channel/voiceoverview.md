@@ -20,7 +20,7 @@ In this article, you will learn:
 - Contact the platform team for support and pricing details.
 :::
 
-## <a name="intro"></a> 2. Introduction to conversational voice AI
+## 2. Introduction to conversational voice AI
 
 To begin with, let's understand Conversational AI before delving into its subset, Conversational Voice AI.
 
@@ -56,7 +56,7 @@ To assist businesses in providing better virtual assistants, Yellow offers voice
 
 ----
 
-## <a name="fundamentals"></a> 3. Deploying and understanding voice agents for business
+## 3. Deploying and understanding voice agents for business
 
 
 Yellow AI offers top-notch voice agents that can be easily integrated with a business's phone lines. These voice agents simulate human-like conversations and can perform various tasks, including answering questions, providing information, and completing transactions.
@@ -76,7 +76,7 @@ Here's how voice agents work end-to-end:
 
 -----
 
-## <a name="ecosystem"></a>  4. Yellow.ai's Complete Voice Bot Solution
+## 4. Yellow.ai's Complete Voice Bot Solution
 
 
 Yellow.ai offers a complete voice agent solution that integrates speech recognition and speech synthesis technologies into their product ecosystem. This comprehensive solution simplifies the process of creating and deploying voice agents for businesses. Let's take a closer look at the different products in the ecosystem.

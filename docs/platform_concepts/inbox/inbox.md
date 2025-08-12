@@ -35,7 +35,7 @@ Inbox transforms customer support with a clean UI, centralized context, and supp
 
 ---
 
-## <a name="i2"></a> Powerful inbox functionalities
+## Powerful inbox functionalities
 
 Log in to the [Yellow.ai platform](https://cloud.yellow.ai/auth/login) and open **Inbox**.
 
@@ -60,7 +60,7 @@ Inbox settings applied in **Development (Sandbox/Staging)** mode do not carry ov
 
 ---
 
-## <a name="i4"></a> Real-time notifications
+## Real-time notifications
 
 Stay on top of important updates based on your [user role](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) (Admin, Supervisor, or Agent):
 
@@ -83,7 +83,7 @@ Manage your notification preferences from the [notification settings page](https
 
 ---
 
-## <a name="i5"></a> Orchestrator bot feature in Inbox
+## Orchestrator bot feature in Inbox
 
 Use the [Orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/build/create_chatbot#create-orchestrator-bot) feature to unify multiple AI agents under one Inbox:
 
@@ -103,7 +103,7 @@ Unification works only for AI agents created on the cloud.yellow.ai platform. AI
 
 ---
 
-## <a name="and_ios"></a> Inbox on Android and iOS
+## Inbox on Android and iOS
 
 Access Inbox on the go with the **YellowAI Partner** app for Android and iOS. Agents can stay responsive, resolve queries faster, and collaborate seamlessly—anytime, anywhere.
 

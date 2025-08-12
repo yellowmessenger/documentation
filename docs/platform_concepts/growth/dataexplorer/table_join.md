@@ -15,7 +15,7 @@ You can create a join query (report) in **Insights > Data Explorer** by using th
 
 -----------
 
-## <a name="joins"></a>  Types of table joins 
+## Types of table joins 
 
 You can join two tables using the following joins: 
 

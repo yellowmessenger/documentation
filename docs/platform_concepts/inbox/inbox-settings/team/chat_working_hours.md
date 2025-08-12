@@ -9,15 +9,10 @@ By enabling **Working Hours** in the Inbox settings, you can set the available n
 By default, there are no working hours defined, so SLA calculations are not affected. However, when working hours are set, this calculation method comes into effect.
 
 
-In this section, you can specify unique working hours for each day of the week or/and set different working hours for each of your groups.
 
 
-In this article, you will learn:
-1. [Use case](#usecase)
-2. [Steps to set working hours for your agent groups](#steps) 
 
-
-## <a name="usecase"></a> 1. Use case
+## 1. Use case
 
 When your team's working hours are set to 9 AM - 5 PM and a customer is requesting a resolution of a query at 6 PM, the customer cannot connect to any agent nor the ticket will be created/ queued. 
 To avoid such a situation, you can display an automated message to the customer which explains the situation why live agents cannot converse with them, for a better user experience.
@@ -47,7 +42,7 @@ If working hours toggle is enabled and there is no timelimit set for any group, 
 ---
 
 
-## <a name="steps"></a> 2. Set working hours
+## 2. Set working hours
 
 Follow the below steps to set working hours: 
 

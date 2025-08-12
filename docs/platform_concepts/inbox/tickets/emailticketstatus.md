@@ -4,9 +4,6 @@ sidebar_label: Email ticket statuses
 featured: true
 ---
 
-In this article, you will learn: 
-1. [The pre-defined statuses in email ticketing](#1)
-2. [Transitioning of statuses from different views](#2)
 
 
 These statuses will affect everything from SLA timers to workflows, as an increment to this users will be allowed to create their own statuses to accommodate more complex use cases but the system-defined statuses remain the same. 
@@ -18,7 +15,7 @@ This feature can be disabled on the [settings](https://docs.yellow.ai/docs/platf
 
 
 
-## <a name="1"></a> 1. Predefined email ticket status 
+## Predefined email ticket status 
 
 - The following are the **default statuses**: 
 

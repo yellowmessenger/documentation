@@ -13,12 +13,6 @@ Only Inbox admins can create and modify custom statuses.
 
   
 
-In this article, you will learn:
-
-1. [How to add custom status?](#add)
-2. [How to modify/delete custom status?](#modify)
-3. [How to view this data in reports?](#report)
-
 
 -------
 
@@ -45,7 +39,7 @@ On the custom status settings, admins can create a custom status for the agents 
 
 ----
 
-## <a name="add"></a> 2. Add custom status
+## 2. Add custom status
 
 You can create a custom status and map it to a default status(Away/Busy). With this, the admins can track why (reason like Lunch, documentation, etc.) the agents were Away/Busy. Follow the given steps to add/modify/delete custom status:
 

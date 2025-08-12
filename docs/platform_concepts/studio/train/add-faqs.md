@@ -157,7 +157,7 @@ You can the add FAQs in multiple languages, follow the given steps:
 
     <img src="https://imgur.com/39PjTGm.png" alt="drawing" width="60%"/>
 
-4. Your AI-agent's language settings have been successfully updated. You can [add FAQs](#1-add-faqs-add-faqs) in different languages.
+4. Your AI-agent's language settings have been successfully updated. You can [add FAQs](#add-faqs-in-bulk) in different languages.
 
 
 ## Train and test FAQs
