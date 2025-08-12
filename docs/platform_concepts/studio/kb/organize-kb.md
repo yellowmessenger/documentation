@@ -46,9 +46,8 @@ After import, all files are saved in **Draft** mode by default. You can select m
 
 To update the status of individual files, use the **Status** column in the file list without needing to open or republish each file separately.
 
-* **Draft**: The file is saved but not yet published.
-* **Published**: The file is live and available for the AI agent to access during search.
-* **Archived**: The file is no longer active but you can retain it if needed in the future.
+* **Draft**: The file is saved and can be accessed by the AI agent in Staging and Sandbox environments.
+* **Published**: The file is live and can be accessed by the AI agent in the Production environment.
 
 :::note
 The file mode (Draft, Published, or Archived) remains same across all environments—Development, Testing, or Production. Once a file is published, it is available to the AI agent in all environments without needing separate actions.
@@ -57,6 +56,7 @@ The file mode (Draft, Published, or Archived) remains same across all environmen
 You can change the status directly from the Status column in the file list without needing to republish the file separately.
 
 ![Update status](/files/updatestatus.gif)
+
 
 ---
 
