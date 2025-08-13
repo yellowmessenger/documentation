@@ -23,9 +23,9 @@ When using the **API node** in AI-agent flows, we need to consider the below fun
 
 There are three ways by which you can add an API to the API node: 
 
-* [Connect API via cURL/JSON](#import-API) using **Import API**
-* [Add API via the interface](#create-new-API) using **Create new API**.
-* [Reuse an existing API](#use-existing-API) with **Use existing API**
+* [Connect API via cURL/JSON](#import-a-curl-script) using **Import API**
+* [Add API via the interface](#add-an-api-using-the-api-page) using **Create new API**.
+* [Reuse an existing API](#reuse-preconfigured-apis) with **Use existing API**
 
 <img src="https://imgur.com/3m3re6g.png" alt="drawing" width="90%"/>
 
@@ -72,7 +72,7 @@ The API name you choose should be alphanumeric, contain no spaces, and have a mi
    - The API details, such as **Headers**, **Params**, and any **Dynamic Variables** needed for real-time data, will automatically populate in the API node.
 
 
-## Add an API using the interface
+## Add an API using the API page
 
 You can use the *Create new API* option to add an API through a user-friendly interface. With this, you can add requests, headers, parameters, and body content manually. Use this option if you do not have any pre-written scripts.
 
@@ -135,7 +135,7 @@ Here you can configure advanced settings like timeout, retries, redirects, and m
 
 ## Reuse preconfigured APIs
 
-You can reuse pre-configured APIs without re-adding or re-configuring them. This works if the API is added through the [through API node](#create-new-api) or through the [API section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
+You can reuse pre-configured APIs without re-adding or re-configuring them. This works if the API is added through the [through API node](#add-an-api-using-the-api-page) or through the [API section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
 
 This is very efficient when you need to apply the same API in various stages of the conversation flows.
 
@@ -211,7 +211,7 @@ Depending on the response datatype, you can use the following syntax to fetch or
 To display the received API response: 
 
 1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) after the API node.
-2. Select the variable created in the [previous section](#store-the-api-response) (step 2) to retrieve the API response.
+2. Select the variable created in the [previous section](#store-api-responses) (step 2) to retrieve the API response.
 
     ![](https://i.imgur.com/RudXA5G.png)
 

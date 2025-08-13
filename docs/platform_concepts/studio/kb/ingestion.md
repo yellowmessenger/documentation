@@ -100,7 +100,7 @@ To add a sitemaps or URLs, follow these steps:
 
     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/newfolder.png" alt="drawing" width="80%"/>
     
-5. To keep your Knowledge base up to date going forward, you can [schedule regular syncs](#schedule-sync) by configuring:
+5. To keep your Knowledge base up to date going forward, you can [schedule regular syncs](#schedule-sync-for-imports-based-on-url-sitemap-and-servicenow) by configuring:
    * **Frequency**: Choose from Hourly, Daily, or Weekly.
    * **Time**: Choose the time (in UTC) for the sync to run.
 
@@ -146,7 +146,7 @@ You can add website content to your Knowledge base by providing specific URLs. T
         3. Select a folder or subfolder to store the crawled content or click **+ Create new folder** to organize your files.
         <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/cretefodurl.png" alt="drawing" width="80%"/>
 
-        4. To keep content up to date going forward, you can [schedule regular syncs](#schedule-sync) by configuring:
+        4. To keep content up to date going forward, you can [schedule regular syncs](#schedule-sync-for-imports-based-on-url-sitemap-and-servicenow) by configuring:
             * **Frequency**: Hourly, Daily, or Weekly.
             * **Time**: Choose the time (in UTC) for the sync to run.
             
@@ -172,7 +172,7 @@ You can add website content to your Knowledge base by providing specific URLs. T
 
         <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/cretefodurl.png" alt="drawing" width="80%"/>
 
-    3. To keep content up to date, you can [schedule regular syncs](#schedule-sync) by choosing the:
+    3. To keep content up to date, you can [schedule regular syncs](#schedule-sync-for-imports-based-on-url-sitemap-and-servicenow) by choosing the:
         * **Frequency**: Hourly, Daily, or Weekly.
         * **Time**: Choose the time (in UTC) for the sync to run.
         

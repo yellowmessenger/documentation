@@ -21,7 +21,7 @@ In this article, you will learn:
 4. [How to edit or delete the flows inside your template](#3-edit-imported-flows)
 
 
-## <a name="1"></a> 1. Choose a right marketplace template 
+## 1. Choose a right marketplace template 
 
 ### 1.1 Open marketplace 
 
@@ -79,7 +79,7 @@ Templates are categorized into 7 different collections. You can explore template
 
 ## 2. View & import template
 
-### <a name="2"></a> 2.1 Preview selected template 
+### 2.1 Preview selected template 
 
 1. To see a template, click on any template name (or View icon). 
 
@@ -99,7 +99,7 @@ Templates are categorized into 7 different collections. You can explore template
 
 
 
-### <a name="3"></a> 2.2 Use template in your bot
+### 2.2 Use template in your bot
 
 1. To import the template, click on any template name (or Use template icon). 
 
@@ -124,7 +124,7 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ex
 3. Flows will be imported and trained automatically for your bot. 
 
 
-## <a name="4"></a> 3. Edit imported flows 
+## 3. Edit imported flows 
 
 
 To edit imported flows, go to **Automation** > **Build** > **Flows** and edit the flow. Learn more about flows and how to edit flows [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). 

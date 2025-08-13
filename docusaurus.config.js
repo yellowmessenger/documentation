@@ -119,6 +119,12 @@ module.exports = {
     [
       "docusaurus-preset-openapi",
       {
+      sitemap: {
+        changefreq: 'weekly',
+        priority: 0.5,
+        ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
+      },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
         },

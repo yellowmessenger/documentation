@@ -9,14 +9,14 @@ After creating a [support portal](https://docs.yellow.ai/docs/platform_concepts/
 
 
 In this article, you will learn:
-1. [How to add the Support portal website's title and default language?](#title)
-2. [How to connect Support portal to a custom subdomain?](#domain)
-3. [How to customize Support portal website's banner branding?](#brand)
+1. [How to add the Support portal website's title and default language?](#1-set-support-portal-title-and-default-language)
+2. [How to connect Support portal to a custom subdomain?](#2-connect-support-portal-to-a-subdomain)
+3. [How to customize Support portal website's banner branding?](#3-customize-banner-branding)
 
 
 ---
 
-## <a name="title"></a> 1. Set Support portal title and default language
+## 1. Set Support portal title and default language
 
 Follow the below steps to add the Support portal website's title and set the default language:
 
@@ -40,7 +40,7 @@ Follow the below steps to add the Support portal website's title and set the def
 
 ---
 
-## <a name="domain"></a> 2. Connect support portal to a subdomain
+## 2. Connect support portal to a subdomain
 
 Businesses generally host their support portal within their website to make access easier for their customers.   
 
@@ -96,7 +96,7 @@ The place to add these records will vary based on your domain hosting service. F
 
 ---
 
-## <a name="brand"></a> 3. Customize banner branding
+## 3. Customize banner branding
 
 The support portal is an extension of the main website, the business or the customer can customize the support portal site by the business's primary design and theme.
 To customize the site’s banner, logo, and favicon, follow the steps below: 

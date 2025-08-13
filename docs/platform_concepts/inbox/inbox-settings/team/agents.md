@@ -8,13 +8,9 @@ After a user is provided with [inbox agent access](https://docs.yellow.ai/docs/p
 Further, you can classify the type of requests (live chat/email ticket) that these agent can receive on [Group settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups). 
 
 
-In this article, you will learn:
-
-1. [To configure agent settings](#1)
-2. [To configure agent UI settings](#2)
 
 
-## <a name="1"></a> 1. View agent details 
+## 1. View agent details 
 
 Follow the given steps to configure agent settings:
 
@@ -74,7 +70,7 @@ To modify the concurrency of multiple agents at once:
 
 ----
 
-## <a name="2"></a> 2. Configure chat screen UI for agents 
+## 2. Configure chat screen UI for agents 
 
 Admin can provide (enable/disable) special permissions for agents interface by clicking the **+Configure agent UI** button.
 

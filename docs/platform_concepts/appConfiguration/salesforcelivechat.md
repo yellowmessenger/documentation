@@ -27,7 +27,7 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
    ![](https://i.imgur.com/nCJ9Tdd.png)
 
 
-3. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
+3. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (`_`).
 Fill in the required fields. 
 
 4. In **Organization Id**, enter the unique identifier of the Salesforce account that represents a particular organization. To fetch this, refer to the following steps:
@@ -96,7 +96,7 @@ Fill in the required fields.
     **Enable sticky agent** | Enable this option to assign chats to a specific agent based on the agent ID provided in the Raise Ticket.
     **Disconnect chat from** | Enable this to immediately close tickets for users waiting in the queue but not yet assigned to an agent.
     **Send queue updates event to** | Enable this to inform users about their queue position with real-time updates sent as events to the bot, allowing developers to customize bot flows based on the queue status.
-    **Customise chat headers** | Enable this to personalize the bot headers with agent names and descriptions. The bot headers will be restored ot orginal settings once the ticket is closed.
+    **Customise chat headers** | Enable this to personalize the bot headers with agent names and descriptions. The bot headers will be restored ot original settings once the ticket is closed.
 
 10. Once you're done, click **Connect**.
 11. If you have multiple accounts, click on **+ Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
@@ -256,6 +256,6 @@ apiresponse represents the raw response from the Salesforce create ticket API
 
 ### Reference
 
-https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_API_requests.htm
+[Salesforce Chat REST API Resources](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_API_requests.htm)
 
 

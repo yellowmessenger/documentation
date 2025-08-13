@@ -4,15 +4,15 @@ sidebar_label : Chat assignment for sticky agent
 ---
 
 In this article, you will learn: 
-1. [Use cases where the sticky agent can be used](#use-cases)
-2. [How to set up sticky agent?](#sticky-agent-functionality)
+1. [Use cases where the sticky agent can be used](#sticky-agent-functionality)
+2. [How to set up sticky agent?](#setup-sticky-agents)
 
 
 :::note
 This feature is applicable only for live chats (for all the channels like WhatsApp, Instagram, etc.).
 :::
 
-## <a name="usecase"></a> Sticky agent functionality 
+## Sticky agent functionality 
 
 The sticky agent is a type of ticket (live chat) assignment where the customers can connect to an agent, of their choice (agents they are familiar with/ have conversed with before). This helps to provide a consistent and better experience, reduce conflicts and achieve faster resolution. It is used in Industries where the customer and agent relationship is crucial and it is expected that customers are to be mapped to their specific point of contact (agent/counselor/representative). 
 For example - Real estate, Concierge services, Travel consultancy, Financial Services, Education, Healthcare, etc.
@@ -38,7 +38,7 @@ We believe that customers should not be left empty handed and should at least be
 
 ----
 
-## <a name="setup"></a> Setup & implementation
+## Setup sticky agents
 
 Follow the below steps to set up sticky agents: 
 

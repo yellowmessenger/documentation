@@ -30,7 +30,7 @@ Agents can only search for the chats that are assigned to/transferred/collaborat
 :::
 
 
-## <a name="search"></a> 1. Search chats
+## 1. Search chats
 
 :::note
 Any type of chat (My chats, Active chats, Queued chats, Open chats, Resolved chats, Missed chats, and custom views, etc.) is searchable, and the results displayed are of global search. Except for bot messages, if the search and filtering are performed under the chat type as bot messages, then the search results are local to bot messages
@@ -99,7 +99,7 @@ When a user does a message search and clicks on any of the search results, they 
 
 
 
-## <a name="filter"></a> 2. Filter chats
+## 2. Filter chats
 
 Filters enable you to search your chat list to quickly find specific messages to and from your customers. Filters make it particularly easy to find things like keywords, the exact needs of a user, etc.
 

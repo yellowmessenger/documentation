@@ -7,9 +7,6 @@ There are different methods to create email tickets in Inbox.
 - Ideally, an email ticket is created when an end user sends an email to the [configured email address](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) requesting customer support. This email is automatically converted into an email ticket and auto-assigned to a live agent.   
 - Alternative method is to create email tickets manually. 
 
-In this article, you will learn: 
-1. [How to create email tickets manually?](#1)
-2. [What are the options available to format ticket body?](#2)
 
 -----
 
@@ -21,7 +18,7 @@ Manual tickets are created by the inbox agents when in scenarios where they are 
 
 ----
 
-## <a name="1"></a>  Create email tickets 
+## Create email tickets 
 
 
 To create an email ticket, follow the steps below: 
@@ -60,7 +57,7 @@ To create an email ticket, follow the steps below:
 -----------
 
 
-## <a name="2"></a> Ticket body formatting options
+## Ticket body formatting options
 
 The following are some key features available in the Yellow.ai inbox tickets screen to enhance the user experience (a.k.a Inbox/email text editor).
 

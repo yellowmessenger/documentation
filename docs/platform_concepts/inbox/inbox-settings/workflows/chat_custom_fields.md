@@ -5,17 +5,9 @@ sidebar_label : Chat/ticket custom fields
 
 
 
-In this article, you will learn: 
-1. [Function of custom fields.](#1)
-2. [How to add custom fields?](#2)
-3. [How to download custom field report?](#3)
-4. [How to capture custom field event on Automation?](#4)
 
 
----
-
-
-## <a name="1"></a> 1. Custom field in chat/ticket details
+## 1. Custom field in chat/ticket details
 
 **What are custom fields?**
 
@@ -45,7 +37,7 @@ Custom fields can be added to tickets and are used to track business-specific in
 
 
 
-## <a name="2"></a> 2. Add custom fields 
+## 2. Add custom fields 
 
 Follow the given steps to add new custom fields:
 
@@ -58,7 +50,7 @@ Follow the given steps to add new custom fields:
 
 4. Click **+Add custom field**.
 5. Add the required custom field details as per your requirement.
-    - **Custom field type**: Select from the dropdown ([explained below](#cftypes))
+    - **Custom field type**: Select from the dropdown ([explained below](#2-add-custom-fields))
         ![](https://i.imgur.com/6BMzMfs.jpg)
     - **Field name**: Type the name that must appear on the ticket details page.
     - **Placeholder**: This is the placeholder text that appears on the input bar on the ticket details page. Example: Enter phone number here, Type user name. 
@@ -87,7 +79,7 @@ Read-only option is not available for email custom fields.
 
 
 -------
-### <a name="cftypes"></a> Types of custom fields
+### Types of custom fields
 
 |  Custom field |                          Application                         |
 |:-------------:|:------------------------------------------------------------:|
@@ -164,7 +156,7 @@ When **Required to close ticket** is enabled:
 
 ----
 
-## <a name="3"></a>  3. Download custom fields report
+## 3. Download custom fields report
 
 There is a column dedicated to each custom field in the [chat archives report](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report).
 
@@ -180,7 +172,7 @@ Provide different names for all the custom fields to avoid reporting confusions.
 
 ------
 
-## <a name="4"></a>  4. Event to identify custom field inputs
+## 4. Event to identify custom field inputs
 
 When a custom field is updated in the platform, an event `ticket-update` is triggered, with the `changeType` set as `change_custom_field`. This event can be captured and utilized by activating it in **Automation** on **Events**. 
 

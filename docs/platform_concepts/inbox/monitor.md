@@ -4,9 +4,9 @@ sidebar_label : Monitor inbox
 ---
 
 In the Monitor section you can effectively track the productivity of your entire support team. This section consists of three tabs that allow you to monitor progress in different areas:
-1. [Chat trends](#chats): Provides insights into live chats and their trends.
-2. [Email trends](#email): Offers analysis and trends related to email tickets.
-3. [Team](#team): Allows you to monitor and evaluate the performance of your support team.
+1. [Chat trends](#1-monitor-live-chat-activities): Provides insights into live chats and their trends.
+2. [Email trends](#2-monitor-email-ticket-activities): Offers analysis and trends related to email tickets.
+3. [Team](#3-monitor-team-activities): Allows you to monitor and evaluate the performance of your support team.
 
 ![](https://cdn.yellowmessenger.com/assets/yellow-docs/monitormainscreen.png)
 
@@ -25,7 +25,7 @@ In the Monitor section you can effectively track the productivity of your entire
 
 ---
 
-## <a name="chats"></a> 1. Monitor live chat activities
+## 1. Monitor live chat activities
 
 The chat trends tab provides valuable insights into live chat activity and performance metrics, enabling admins/supervisors to monitor trends and optimize chat support operations effectively.
 
@@ -159,7 +159,7 @@ Real-time chat activity is displayed in a table within the Inbox. This table pro
 
 ---
 
-## <a name="email"></a> 2. Monitor email ticket activities
+## 2. Monitor email ticket activities
 
 Admins can effectively monitor the handling of email tickets by utilizing the features available in the email trends tab. This tab is specifically designed to accommodate the asynchronous nature of email communication, where conversations can span over several days before reaching a resolution. 
 
@@ -214,7 +214,7 @@ You can quickly see the count of email tickets in various states such as **Unass
 
 ---
 
-## <a name="team"></a> 3. Monitor team activities
+## 3. Monitor team activities
 
 The Teams tab provides a consolidated view of agents and groups in one place, with real-time data.
 

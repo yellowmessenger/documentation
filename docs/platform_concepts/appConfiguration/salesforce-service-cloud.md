@@ -6,7 +6,7 @@ sidebar_label : Salesforce CRM
 
 Salesforce is a cloud-based software company that provides a range of business solutions. At its core, Salesforce offers Customer Relationship Management (CRM) software, which helps businesses manage and analyze customer interactions and data. The CRM system allows companies to track sales, marketing efforts, customer service, and other aspects of their operations.
 
-In addition to CRM, Salesforce has various subsidiaries and products that extend its capabilities. For instance, they offer live chat solutions to facilitate real-time customer support and engagement. Yellow.ai supports integration with Salesforce CRM and [Salesforce Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforcelivechat#21-chat-with-salesforce-live-agent). 
+In addition to CRM, Salesforce has various subsidiaries and products that extend its capabilities. For instance, they offer live chat solutions to facilitate real-time customer support and engagement. Yellow.ai supports integration with Salesforce CRM and [Salesforce Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforcelivechat). 
 
 
 ## Table of contents

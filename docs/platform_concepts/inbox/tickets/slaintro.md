@@ -3,12 +3,6 @@ title: Service-level agreement (SLA) policies for email tickets
 sidebar_label: Service-level agreement
 ---
 
-In this article, you will learn: 
-1. [Overview of SLA for email tickets](#1 )
-2. [How to use filters to view SLAs](#2)
-3. [How to analyze reports related to SLAs](#3)
-
-
 :::info
 SLAs and SLA reminders are applicable only for email tickets (not live chats).
 :::
@@ -19,7 +13,7 @@ SLAs and SLA reminders are applicable only for email tickets (not live chats).
 ## <a name="1"></a> 1. Service level agreement for email tickets 
 
 
-A service level agreement (SLA) is a contract between your organisation and your customers, defining the types and standards of services that are offered.
+A service level agreement (SLA) is a contract between your organization and your customers, defining the types and standards of services that are offered.
 SLAs lay out the metrics by which a service is measured, and remedies or penalties to be followed when the agreed-on service levels are not achieved.
 
 These SLAs are set for email tickets on the Inbox settings page.

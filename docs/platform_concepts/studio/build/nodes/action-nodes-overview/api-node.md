@@ -25,7 +25,7 @@ You can use the API node when your chatbot needs to communicate with external sy
 
 To configure API, follow the below steps:
 
-1. Drag and drop the API node in the flow editor. For more detailed information on how to add an API to the API node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
+1. Drag and drop the API node in the flow editor. For more detailed information on how to add an API to the API node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#steps-to-store-api-response).
 
     ![](https://imgur.com/7eCFauj.png)
 

@@ -3,14 +3,14 @@ title: Search, sort and filter tickets
 sidebar_label : Search and filter
 ---
 
-In this article, you will learn how to [search](#1), [sort](#2), and [filter](#3) the email tickets. 
+In this article, you will learn how to [search](#), [sort](#search-ticket), and [filter](#filters-tickets) the email tickets. 
 
 
 ![](https://cdn.yellowmessenger.com/assets/yellow-docs/tsort.png)
 
 ------
 
-## <a name="3"></a>  Filters tickets 
+## Filters tickets 
 
 With **Filters** you can refine the ticket list according to a particular condition. 
 
@@ -68,7 +68,7 @@ Click **Clear filters** on the filters panel or on the results page.
 -------
 
 
-##  <a name="2"></a>  Sort tickets 
+##  Sort tickets 
 
 You can sort the list of tickets based on **dates** by clicking **Last modified** dropdown: 
 - **Due Date**:  The latest date for the agent's response  
@@ -83,7 +83,7 @@ You can sort the list of tickets based on **dates** by clicking **Last modified*
 
 -------
 
-## <a name="1"></a>  Search for/within a ticket 
+##  Search ticket 
 
 :::note
 * **Admins** have the ability to search for any ticket.

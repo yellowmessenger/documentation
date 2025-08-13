@@ -3,10 +3,6 @@ title: Change status, Assign/Reassign, and Merge tickets in bulk
 sidebar_label : Bulk actions on tickets
 ---
 
-In this article, you will learn: 
-1. [How to change the status of multiple tickets?](#1) 
-2. [How to assign tickets to a group/agent?](#11)
-3. [How to merge multiple tickets into one ticket?](#2)
 
 
 An Inbox agent's daily operations may involve performing the same task multiple times. For example, transferring a certain number of tickets to another agent or changing the status of multiple tickets.
@@ -21,7 +17,7 @@ Not more than 20 tickets can be selected at once for any of the bulk actions.
 
 ----
 
-## <a name="1"></a>  Change status of tickets in bulk 
+## Change status of tickets in bulk 
 
 To select tickets in bulk and perform bulk actions on them, follow the steps below:
 
@@ -53,7 +49,7 @@ To select tickets in bulk and perform bulk actions on them, follow the steps bel
 
 -----------
 
-##  <a name="11"></a>  Assign tickets to a group/agent in bulk 
+##  Assign tickets to a group/agent in bulk 
 
 You can select multiple tickets and assign them to one agent /group. Follow the steps below: 
 
@@ -75,7 +71,7 @@ You can select multiple tickets and assign them to one agent /group. Follow the 
 
 -------
 
-## <a name="2"></a>  Merge multiple tickets into one ticket
+## Merge multiple tickets into one ticket
 
 Multiple tickets from the same customer can be merged into a single ticket and it can be resolved by one agent. To merge tickets, follow the steps below: 
 

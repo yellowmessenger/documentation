@@ -11,7 +11,7 @@ To view the API usage, follow these steps:
 3. On this page, you can monitor the following metrics:
     - [API usage](#view-api-usage)
     - [API request rate](#view-api-request-rate)
-    - [API latency](#view-api-latencyy)
+    - [API latency](#view-api-latency)
 
 ![](https://i.imgur.com/WYdus0e.png)
 
@@ -47,7 +47,7 @@ All metrics can be filtered and viewed for a specific time period. Select the ti
 -----
 
 
-## <a name="usage"></a> View API usage
+## View API usage
 
 The graph below displays API usage categorized by different status codes. This data is calculated on an API level.
 
@@ -66,7 +66,7 @@ The graph below displays API usage categorized by different status codes. This d
 -------
 
 
-## <a name="reqrate"></a> View API request rate
+## View API request rate
 
 This graph displays the API request rate, which represents the number of API requests made by the bot to other systems in order to retrieve information needed for accurate user intent responses.
 
@@ -75,7 +75,7 @@ This graph displays the API request rate, which represents the number of API req
 
 ---
 
-## <a name="latency"></a>  View API latency
+## View API latency
 
 API latency measures the amount of time it takes for an API to respond when called from the bot. This metric indicates the speed at which users receive the desired information. Examples include:
 - Track their order

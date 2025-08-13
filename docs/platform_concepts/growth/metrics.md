@@ -82,7 +82,7 @@ User metrics are measured across all channels. However, if you want to obtain re
 -----
 
 
-## <a name="traffic"></a> User traffic
+## User traffic
 
 > User traffic is calculated for all the channels.
 
@@ -102,7 +102,7 @@ This widget provides comprehensive metrics to understand the user traffic to you
 
 ---
 
-## <a name="retention"></a> User retention
+## User retention
 
 > User retention is calculated for all the channels.
 
@@ -116,7 +116,7 @@ This widget illustrates the distribution between new users and returning users w
 
 ---
 
-## <a name="demography"></a> Users By Demographics
+## Users By Demographics
 
 
 This widget provides insights into the user demographics of your bot based on selected parameters.
@@ -140,7 +140,7 @@ Users who interact with the bot come from different locations, sources, and camp
 
 ---
 
-## <a name="ret"></a>  User retention trend
+## User retention trend
 
 > User retention trend is calculated for Web & Mobile.
 
@@ -150,7 +150,7 @@ This widget demonstrates the types of users who visit the bot within a specific 
 
 -----
 
-## <a name="eng"></a> User engagement trend
+## User engagement trend
 
 > User engagement trend is calculated for Web & Mobile.
 
@@ -167,7 +167,7 @@ The widget allows you to analyze the conversion rates between each stage of enga
 ----
 
 
-## <a name="wac"></a> WhatsApp consumption
+## WhatsApp consumption
 
 > WhatsApp consumption is calculated only for WhatsApp bots.
 
