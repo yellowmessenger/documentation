@@ -128,7 +128,7 @@ Chats can be saved/downloaded in CSV and PDF format to the local system.
 For non-standard WhatsApp message types (such as WhatsApp-specific templates), the "reply-to" reference is not displayed in public chat transcripts due to security restrictions.
    * **For logged-in agents**:  Agents can view the original templated message and the reply reference inside the Inbox as expected. The image below shows that for logged-in agents, WhatsApp template messages and their linked replies appear in the Inbox with full content and context:
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/Whatstemplate.png)
-   * **For transcript viewers**: Users viewing only the public transcript will not see the original templated message. The reply will appear as a new message instead of being linked to the original, as the sensitive template content cannot be exposed in public links. The image below shows that in the public chat transcript, WhatsApp template messages are not displayed:
+   * **For transcript viewers**: Users viewing only the public transcript will not see the original templated message. The reply will appear without highlighted template, due to security reasons. The image below shows that in the public chat transcript, WhatsApp template messages are not displayed:
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/public-transcript.png)
 If your use case requires this reference to be visible in a transcript, please contact the Inbox support team.
 
