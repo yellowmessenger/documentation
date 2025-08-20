@@ -68,6 +68,27 @@ We’ve completely revamped the Knowledge Base module to help you manage and del
 
 [**Read the full documentation →**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
 
+---
+
+
+## **Integration**
+
+Custom Live Chat Integration – New Display Control Options
+We’ve introduced two new configuration options to give you more control over the live chat experience when users are in the queue:
+
+* **Hide Home Button When User is in Queue** – Removes the home button from the chat interface while a user is waiting in the queue, keeping them focused on the current conversation.
+* **Hide Input Box When User is in Queue** – Disables the message input box while a user is waiting in the queue, preventing premature responses before an agent joins.
+
+:::note
+For existing configurations, these options will be disabled by default. You can enable them manually by editing your integration account.
+These enhancements help you create a cleaner and more guided chat experience for users during wait times.
+:::
+
+[Learn where to configure these options](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/customliveagent#connect-custom-live-chat-account-to-yellowai)
+
+
+---
+
 
 ## **Engage**
 
