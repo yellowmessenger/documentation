@@ -10,8 +10,6 @@ The migration process requires the following assets:
 * **Source WABA**: The account where the phone number is currently registered.
 * **Source phone number**: The phone number that is currently registered with the source WABA.
 * **Destination WABA**: The account to which the new phone number will be migrated.
-* **Destination phone number**: The new phone number to which the current phone number is to be transferred.
-
 
 :::note
 * The source Business Solution Provider (BSP) has to disable two-factor authentication (2FA) for the older WhatsApp Business Account (WABA) number to allow the Yellow.ai team to initiate the migration.
