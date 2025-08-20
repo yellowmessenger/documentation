@@ -3,6 +3,149 @@ title: WhatsApp pricing policy
 sidebar_label: WhatsApp pricing policy
 ---
 
+
+
+
+
+# WhatsApp Pricing Model (June 2025 Update)
+
+Meta has introduced a **new per-message pricing model** for WhatsApp Business Platform and APIs.
+This marks a significant shift from the previous **per-conversation** billing model.
+
+
+
+## Key Changes (Effective July 1, 2025)
+
+* **Billing & Pricing**
+
+  * Conversations → **Messages**
+  * Business-initiated → **Paid messages**
+  * User-initiated → **Free messages**
+  * Referral-initiated → **Deprecated**
+
+  [Learn more about WhatsApp pricing policy](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/).
+
+* **Analytics & Reporting**
+
+  * `conversation_analytics` field **deprecated in Graph API v25.0 (late 2025)**
+  * All new metrics will be **message-based**
+  * Historical conversation data must be **exported before cutoff**
+
+* **Template Management**
+
+  * Utility templates must meet a **stricter, non-promotional definition**
+  * Expect possible **re-categorization notices** from WhatsApp
+
+---
+
+## Changes required from Service Provider
+
+### 1. Billing and Cost Management
+
+* Update all **pricing calculations** from conversation-based to per-message billing.
+* Review and update **contracts and SLAs** to reflect per-message pricing.
+* Adapt billing systems to account for **free service/utility messages**.
+
+### 2. Template Management
+
+* Audit and **re-categorize templates**.
+* Ensure **utility templates** remain non-promotional and user-specific.
+* Prepare for re-categorization enforcement by WhatsApp.
+
+### 3. Reporting & Analytics
+
+* Shift dashboards from **conversation-based IDs** → **message-based IDs**.
+* Educate **finance and analytics teams** about the new KPIs.
+* Maintain **parallel logic** for transition until old data is phased out.
+
+
+## Pricing Model Comparison
+
+| **Feature/Aspect**                  | **Before July 1, 2025**              | **After July 1, 2025**                      |
+| ----------------------------------- | ------------------------------------ | ------------------------------------------- |
+| **Pricing Model**                   | Per-conversation (24h session)       | Per-message                                 |
+| **Utility Template Messages (CSW)** | Charged if outside free tier         | Free if sent within customer service window |
+| **Service Conversations**           | Free up to 1,000/month, then charged | Unlimited free                              |
+| **Volume Tiers**                    | Not available                        | Available for utility & authentication      |
+| **Template Category Definition**    | Broader definition                   | Stricter (non-promotional, user-specific)   |
+| **Webhook/Analytics Fields**        | Conversation-based IDs (`CBP`)       | Message-based IDs (`PMP`)                   |
+| **Authentication Rates**            | Per conversation, limited markets    | Per message, expanded to more markets       |
+| **Marketing Messages Lite API**     | Conversation-based rates             | Cloud API marketing rates apply             |
+
+📌 **Glossary**
+
+* **CBP** = Conversation-Based Pricing
+* **PMP** = Per-Message Pricing
+* **CSW** = Customer Service Window
+
+---
+
+## Transition Guidance
+
+* Export all **conversation analytics data** you may need before **Graph API v25.0** is released.
+* Expect **non-comparability** between pre-July 1 (CBP) and post-July 1 (PMP) data.
+* During migration, maintain **dual tracking** of CBP and PMP to ensure continuity in dashboards and billing reports.
+
+
+## Benefits of Per-Message Pricing
+
+* **Simpler billing** – charges directly tied to message volume.
+* **Unlimited free service messaging** within CSW.
+* **Expanded global coverage** for authentication messages.
+* **Volume discounts** available for high-utility use cases.
+
+
+## Action Checklist ✅
+
+* [ ] Update billing logic to per-message model.
+* [ ] Export historical conversation analytics.
+* [ ] Re-categorize existing templates.
+* [ ] Update reporting dashboards and train teams.
+* [ ] Review customer contracts for new billing rules.
+
+:::note
+⚠️ **Important:** After **July 1, 2025**, WhatsApp **will no longer support conversation-based pricing, analytics, or referral categories**.
+:::
+
+
+
+
+### Old vs. New WhatsApp Pricing Model
+
+| Scenario                                                           | Old Model (Conversation-based)                    | New Model (Per-message)                 |
+| ------------------------------------------------------------------ | ------------------------------------------------- | --------------------------------------- |
+| **Two messages, same category** (e.g., 2 utility)                  | 1 Utility conversation                            | 2 Utility messages                      |
+| **Two messages, different categories** (e.g., marketing + utility) | 1 Marketing conversation + 1 Utility conversation | 1 Marketing message + 1 Utility message |
+| **Single mixed message** (utility + marketing content)             | 1 Marketing conversation                          | 1 Marketing message                     |
+
+---
+
+### What this means for businesses
+
+* **More transparency:** Costs now scale directly with the volume and type of messages sent.
+* **Granular control:** Marketing and utility spends can be tracked and optimized separately.
+* **Budget predictability:** Teams can forecast spend with higher accuracy, especially for large-scale campaigns.
+* **Operational shift:** Businesses may need to rethink engagement strategies to avoid unnecessary message sends that could increase costs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
 WhatsApp has introduced a new pricing policy for the messages that are delivered through its business platform and APIs based on the conversation initiator (user-initiated or business-initiated) and category.
 
 The new WhatsApp pricing model is based on 24-hour conversation sessions, while the older model is based on the number of template messages sent outside the user window.
@@ -116,3 +259,4 @@ To view the template category in the platform, click <a href="https://docs.yello
 </details>
 
 
+-->

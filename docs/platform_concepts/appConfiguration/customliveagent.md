@@ -47,6 +47,12 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
 | **API timeout (in seconds)**   | The maximum time, in seconds, to wait for an API response before timing out. (Default is 10 seconds.) |
 | **Ticket queue message**       | The message displayed to users when they are in the ticket queue.                                    |
 | **Send conversation history JSON** | Enable this option to allow sending conversation history (in JSON format) to the integrated account. For example, when providing context to support agents, debugging and analysis, and so on. |
+| **Hide home button when user is in queue** | When enabled, the Home button is hidden while the user is waiting in the live chat queue. This prevents users from navigating away from the chat flow and ensures they remain in the queue until an agent responds. Default: Disabled. 
+| Hide input box when user is in queue | When enabled, the chat input box is hidden while the user is in the live chat queue. This helps avoid sending additional messages before the conversation begins with an agent. Default: Disabled
+
+:::note
+For older configurations, the options, `Hide home button when user is in queue` and `Hide input box when user is in queue` are disabled by default. You can edit the integration account to enable it manually.
+:::
 
 5.  Click **Connect**.
 6.  If you have multiple accounts, click **+Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
