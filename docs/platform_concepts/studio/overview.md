@@ -52,13 +52,16 @@ You can use the Automation module when You want to:
 
 **Watch the introductory video on Automation:**
 
-<div className="video-container">
+<div style={{ position:"relative", paddingBottom:"56.25%", height:0, overflow:"hidden", maxWidth:"100%", borderRadius:"12px" }}>
   <iframe
     src="https://www.youtube.com/embed/Bn8TuQgTmIA?si=a7oZMdnmaAh6xgOL"
+    style={{ position:"absolute", top:0, left:0, width:"100%", height:"100%" }}
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen></iframe>
+    allowFullScreen
+  />
 </div>
+
 
 
 ### Access Automation
@@ -79,51 +82,51 @@ The Automation module offers everything you need to build, integrate, and test y
 
 
  Here is a components you will use during the AI agent creation process:
-
 <ArticleCardGrid>
   <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent-architecture"
+    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent-persona"
+    icon="user"
+    title="Define your AI Agent persona"
+    description="Set the tone, style, and behavior of your AI agent to align with your brand voice."
+  />
+  <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent"
     icon="robot"
-    title="Start with AI Agent setup"
-    description="Design conversations using Super agents, Agents, or Knowledge Base agents"
-  />
-   <ArticleCard
-    href="ttps://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow"
-    icon="workflow"
-    title="Build backend logic using Workflow builder"
-    description="Create and manage backend logic flows to perform tasks, connect APIs, and drive agent actions during conversations."
+    title="Configure different Agents"
+    description="Create agents for each use case and define how the each agent handles it end to end."
   />
   <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/studio/api/send-receive-apiresponses"
-    icon="APIs"
-    title="Integrate external systems using APIs"
-    description="Enable your agent to connect with other platforms by setting up external APIs."
+    href="https://docs.yellow.ai/docs/platform_concepts/KnowledgeBase/intro"
+    icon="book"
+    title="Create a Knowledge Base Agent"
+    description="Build knowledge-driven agents by uploading documents and FAQs for instant query handling."
   />
   <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/studio/database"
-    icon="Database"
-    title="Store and fetch data using Database"
-    description="Create and manage structured tables to store or retrieve user data as part of the conversation."
-  />
-  <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub"
-    icon="Events"
-    title="Use Events to trigger background actions"
-    description="Define and manage events to trigger background actions like connecting with systems or sending notifications based on specific conditions."
+    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation"
+    icon="eye"
+    title="Preview your AI Agent"
+    description="Quickly test and experience how your agent responds before going live."
   />
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot"
     icon="Test Copilot"
-    title="Test your AI Agent using Copilot"
-    description="Simulate and validate your AI agent’s responses in real time using Copilot."
+    title="Test your AI Agent with Copilot"
+    description="Simulate real conversations and validate agent performance in real time."
   />
-   <ArticleCard
+  <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/automated-agent-testing"
-    icon="Test suites"
-    title="Run end-to-end checks with Test suites"
-    description="Run end-to-end checks before going live using Test Suites."
+    icon="check-circle"
+    title="Run end-to-end checks with Test Suites"
+    description="Automate testing across multiple scenarios to ensure reliability before launch."
   />
-</ArticleCardGrid> 
+  <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/studio/publish-agent"
+    icon="upload"
+    title="Publish your AI Agent"
+    description="Go live by publishing your agent to production and start engaging with users."
+  />
+</ArticleCardGrid>
+
 
  
 <!-- ## Create your first AI-agent    
