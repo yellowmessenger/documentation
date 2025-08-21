@@ -9,8 +9,8 @@ With Automated testing, you can:
 
 - Generate test cases from your Knowledge base
 - Replay saved Copilot sessions 
-- Retest past user conversations (Comming soon)
-- Simulate end-to-end flows with scenario-based testing (Comming soon)
+- Retest past user conversations 
+- Simulate end-to-end flows with scenario-based testing
 
 It helps bot developers, QA engineers, conversation designers, and product owners who need to validate AI agent performance with every change or deployment across different environments.
 
@@ -25,8 +25,9 @@ Manual testing whether through preview windows or live sessions is time consumin
 * **Cross-environment validation**: Run tests across environments—like sandbox and production—to detect issues before they impact users.
 * **Automated regression checks**: Revalidates existing test cases to ensure that updates to prompts, workflows, or configurations do not break previously functioning interactions.
 
-**Limitation**
+**Limitations**
 
+* Test cases can only be executed in lower-tier environments such as Sandbox or Development. Testing is not available in Production or Live environments.
 * You can run up to 200 test cases in a single execution. Each test is evaluated based on configurable thresholds such as Accuracy and Empathy with optional support for custom evaluation rules.
 
 ### Types of test cases
@@ -39,8 +40,11 @@ Automated AI agent testing supports four test case types, each designed to valid
 2. **[Copilot saved session](#test-copilot-saved-session)**: Copilot saved session test case allows you to capture and save user-agent interactions during a conversation within the AI Copilot. These saved sessions are useful for testing and debugging purposes. When a session is saved, it records the complete conversation between the user and the AI agent, including prompts, responses, and conversation context.
 
     Once a session is saved in the Copilot Saved Session test case, it can be tested to evaluate how the AI agent performs based on that specific conversation.
-3. **Past conversation**: This allows you to select actual conversations from production or other environments and retest them across different environments like sandbox and production to identify inconsistencies.  It is particularly useful for debugging failed conversations or comparing performance across sandbox and production. It helps you compare performance, identify discrepancies, and confirm whether recent fixes have resolved previous issues. 
-4. **Scenario-based testing**: Scenario tests simulate complete, goal-driven user journeys, such as booking a ticket or raising a refund request. You can define user attributes like name, location, preferences, or intent to set up the context. Based on the goal and context, the test agent emulates a user persona and engages in a conversation with the AI agent to check if it handles real conversations.
+3. **[Scenario-based testing](#scenario-based-testing)**: Scenario based testing simulates goal-driven user journeys, such as booking a ticket or raising a refund request. You can define user attributes like name, location, preferences, or intent to set up the context.  The AI agent then uses this context to generate up to 10 scenarios per agent using this information.
+
+If the auto-generated scenarios do not cover specific cases you want to test, you can create custom scenarios. You provide key details, and the AI fills in the remaining conversation flow, which you can edit further to match your exact requirements. These scenarios help test how well the agent handles changing inputs, context management, and different types of queries.
+
+Testing works on a credit system with a daily limit of 2,000 credits. Credits can be used for Knowledge Base, Copilot sessions, and Scenario-based tests. Each Knowledge Base test case consumes 1 credit per test case, while each Copilot session and Scenario-based test case consumes 10 credits.
   
 ### Test case settings
 
@@ -340,3 +344,111 @@ To view report, follow these steps:
 This allows you to compare expected vs actual behavior and ensures if the AI handled the conversation correctly.
 
    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/copilotconversation.png)    
+
+
+### Scenario based testing
+
+#### Prerequisites
+
+* You need to [create an agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent#create-an-agent) before starting scenario-based testing.
+* Test scenarios can only be generated if your agent has configured start trigger or prompt. If your agent is created without these configurations, the **Generate** button will be disabled.
+<center><img src="https://cdn.yellowmessenger.com/assets/yellow-docs/disablegenerate.png" alt="drawing" width="40%"/></center>
+
+
+To test a scenario, follow these steps:
+
+1. Navigate to **Automation** > **Test suites**.
+  
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/testsuite.png)
+    
+2. Click on **Scenarios** > Test cases > **Generate** to create a list of test cases.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/scenario-generate.png)
+
+* A maximum of 10 scenarios will be generated per agent.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/scenarios10.png)
+   
+#### Configure Set criteria for scenario-based test case
+
+After generating test case, you need to configure *Set criteria*.
+
+To configure set criteria, follow these steps:
+
+1. In the **Scenarios** tab, select the testcases and click on **Set criteria** for the test case you want to configure.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/scenariocriteria.png)
+
+2. Set the Evaluation rules and click **Save**.
+    1. **Accuracy**: Set the empathy level on the slider. This determines how the AI agent's responses match the expected behavior.<br/>**Value**: 75 – This is the suggested setting for optimal empathy.
+    2. **Empathy**: Set the empathy level on the slider. This ensures the AI responds in a friendly, human-like tone.<br/> **Value**: 75 – This is the suggested setting for optimal empathy.
+    3. **Rules**: Define rules that the AI agent should follow during test case evaluation. <br/>**Example:**
+       * Your questions must be phrased differently and varied each time to make it human-like.
+       * If the user expresses anger or frustration immediately skip to cancellation.
+    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/seteval.png)
+
+3. **Set Simulation rules**: Add the rules to guide how the AI simulates user interactions during testing.
+   * If the user provides incomplete information, simulate a natural follow-up question instead of re-asking the original question.
+   * Always rephrase questions in a human-like manner to avoid repetition and mimic natural conversation patterns.
+ 
+     ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/simulationset.png)
+     
+#### Run a test case for Scenarios
+
+To run a test case for scenario, follow these steps:
+
+1. Go to the **Scenarios** tab. Use the checkboxes to select one or more test cases that you want to run and click **Run test cases*.
+
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/scenarioruncase.png)
+
+2. **Enter an execution name** for the test run. By default, the name will be auto-filled based on the current date and time.
+
+      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/scenariorun.png" alt="drawing" width="70%"/>
+      
+4. Click **Run** to start the test execution.      
+      
+5. Click **Check reports** to view the results of the test case execution.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/scenarioreport.png" alt="drawing" width="50%"/>
+   
+#### Test Report Overview
+
+In the **Report** section, you will see a summary of the test execution, which includes:
+
+- **Status (Passed/Failed):** Indicates whether the overall test scenario was successfully executed or not.  
+- **Success:** The number or percentage of test cases that met the expected outcome.  
+- **Failure:** The number or percentage of test cases that did not meet the expected outcome.  
+- **Accuracy:** Measures how closely the AI agent’s responses matched the expected responses.  
+- **Empathy Score:** Evaluates the AI agent’s ability to respond in a human-like, empathetic manner.  
+- **Clear Communication:** Assesses whether the AI agent’s responses were easy to understand, concise, and free of ambiguity.  
+    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/reportsview.png)
+    
+#### View Scenarios report
+
+After running a scenario test, you can access detailed reports to evaluate how the AI agent performed against the expected behavior.
+
+To view report, follow these steps:
+
+1. Click the **Execution name link**.
+
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/execution-name-link.png)
+
+* This opens the complete report, which provides a comprehensive overview of the AI agent’s performance, including:
+  * **Accuracy Score** – How closely the AI agent’s responses matched the expected answers.  
+  * **Empathy Score** – How effectively the AI agent demonstrated understanding and human-like empathy.  
+  * **Clear Communication** – Whether responses were easy to understand, concise, and free of ambiguity.  
+  * **Hallucination** – Instances where the AI agent generated incorrect or fabricated information.  
+  * **Follow-up Handling** – How well the AI agent managed related or subsequent user queries.  
+
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/report-details-scenario.png)
+   
+2. Click on **Analyse conversation** to review detailed interaction-level analysis. 
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/analyzescenario.png)
+
+3. In conversation analysis, the following key fields are available:
+   * **Scenario title**: The name of the specific test scenario that was executed. This helps you identify which scenario's conversation you are reviewing.
+   * **Scenario summary**: A short description of what the scenario is designed to test, giving quick context about the conversation's purpose.
+   * **Expected outcome**: The ideal or correct response the AI agent should provide during the test, based on the predefined scenario setup.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/Analyze-conv.png)

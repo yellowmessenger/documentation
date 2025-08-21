@@ -11,6 +11,7 @@ The following are the different protocols for sending emails:
 
 1. SMTP
 2. HTTP-based Email API
+3. Connect with Microsoft (OAuth)
 
 ### Email SMTP
 
@@ -39,7 +40,7 @@ You can add sender email acount either by configuring the SMTP of the brand’s 
 
 ### Set up SMTP-based email account (Basic)
 
-This setup allows our platform to send emails on behalf of the email domain. For more information on how to setup Email channel, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig).
+This setup allows our platform to send emails on behalf of the email domain. 
 
 To set up SMTP server on the yellow.ai platform, follow these steps:
 
@@ -153,7 +154,11 @@ To add an email alias account, follow these steps:
 
     ![](https://imgur.com/Mqd2sQI.png)
 
-4. In the *Add Email* section, enter the following details: 
+4. Choose the account type as **Configure account**.  
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/configureaccount.png)    
+
+5. In the *Add Email* section, enter the following details: 
 
    <img src="https://imgur.com/0Feopoh.png" alt="drawing" width="80%"/>
 * In the email field, enter the email address of the alias account.
@@ -173,12 +178,16 @@ To configure an SMTP using JSON, follow these steps:
 2. Click **Add email**
 
     ![](https://imgur.com/Mqd2sQI.png)
+
+3. Select **Configure account**.  
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/configureaccount.png)
 	
-3. In the *Add email* section, select **Advanced** to add the SMTP details of the email address in the JSON code for which you want to send emails.
+4. In the *Add email* section, select **Advanced** to add the SMTP details of the email address in the JSON code for which you want to send emails.
 
     <img src="https://imgur.com/QSeK2vf.png" alt="drawing" width="80%"/>
 
-4. Copy the below JSON code, paste it in the *Advanced configuration* section, and click **Save**.
+5. Copy the below JSON code, paste it in the *Advanced configuration* section, and click **Save**.
 
 ```js
 {
@@ -238,6 +247,47 @@ For emails to be sent from smtp.gmail.com, make sure you have followed these 2 s
 ### Web-based email account (API)
 
 Reach out to the [yellow.ai team](mailto:vishnu@yellow.ai) for setting up an email account. The process will cover domain/subdomain authentication and dedicated IP address procurement, among others.
+
+### Setup Email channel with OAuth
+
+You can configure your email account with Microsoft OAuth to establish a secure and seamless connection between your email service and the AI agent. This setup allows the agent to send and receive emails without the need to store passwords.
+
+Before setting up the Email channel with OAuth, ensure you complete the following prerequisites:
+
+1. Log in to the [Microsoft Azure](https://portal.azure.com/) portal.
+2. Generate and copy the following values from your app registration:
+    * Client ID
+    * Client Secret
+    * Tenant ID
+
+To connect an email account with OAuth, follow these steps:
+
+1. On the left navigation bar, click **Extensions**.
+
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **Email**.
+
+    ![](https://imgur.com/LTrbjIP.png)
+
+3. Click **Add email**
+
+    ![](https://imgur.com/Mqd2sQI.png)
+
+4. Select **Connect with Microsoft** as the account type.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/emailchannel1.png)
+
+5.  In the *Add Email* section, enter the following details: 
+    * **Configuration objective**: Select the purpose of the current email account - Campaigns or Support ticketing. You can select both if needed.
+    * **Email ID**: Enter the email address of the alias account.
+    * **Client ID**: Paste the Client ID from Azure app registration.
+    * **Client secret**: Enter the secret key generated in Azure to authenticate your application.
+    * **Tenant ID**: Provide the tenant ID where your application is registered.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/microsoftchannel.png)
+
+6. Click **Connect**.    
 	
 ## Test your bot on Email
 
