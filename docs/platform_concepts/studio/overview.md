@@ -84,46 +84,46 @@ The Automation module offers everything you need to build, integrate, and test y
  Here is a components you will use during the AI agent creation process:
 <ArticleCardGrid>
   <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent-persona"
+    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent-architecture"
     icon="user"
-    title="Define your AI Agent persona"
-    description="Set the tone, style, and behavior of your AI agent to align with your brand voice."
+    title="Start with AI Agent setup"
+    description="Design conversations using Super agents, Agents, or Knowledge Base agents."
   />
   <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent"
+    href="ttps://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow"
     icon="robot"
-    title="Configure different Agents"
-    description="Create agents for each use case and define how the each agent handles it end to end."
+    title="Build backend logic using Workflow builder"
+    description="Create and manage backend logic flows to perform tasks and connect APIs."
   />
   <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/KnowledgeBase/intro"
+    href="https://docs.yellow.ai/docs/platform_concepts/studio/api/send-receive-apiresponses"
     icon="book"
-    title="Create a Knowledge Base Agent"
-    description="Build knowledge-driven agents by uploading documents and FAQs for instant query handling."
+    title="Integrate external systems using APIs"
+    description="Enable your agent to connect with other platforms by setting up external APIs."
   />
   <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation"
+    href="https://docs.yellow.ai/docs/platform_concepts/studio/database"
     icon="eye"
-    title="Preview your AI Agent"
-    description="Quickly test and experience how your agent responds before going live."
+    title="Store and fetch data using Database"
+    description="Create and manage structured tables to store or retrieve user data."
+  />
+  <ArticleCard
+    href="https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub"
+    icon="Events"
+    title="Use Events to trigger background actions"
+    description="Define and manage events to trigger background actions like connecting with systems or sending notifications."
   />
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot"
-    icon="Test Copilot"
-    title="Test your AI Agent with Copilot"
-    description="Simulate real conversations and validate agent performance in real time."
+    icon="check-circle"
+    title="Test your AI Agent using Copilot"
+    description="Simulate and validate your AI agent’s responses in real time using Copilot."
   />
   <ArticleCard
     href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/automated-agent-testing"
-    icon="check-circle"
-    title="Run end-to-end checks with Test Suites"
-    description="Automate testing across multiple scenarios to ensure reliability before launch."
-  />
-  <ArticleCard
-    href="https://docs.yellow.ai/docs/platform_concepts/studio/publish-agent"
     icon="upload"
-    title="Publish your AI Agent"
-    description="Go live by publishing your agent to production and start engaging with users."
+    title="Run end-to-end checks with Test suites"
+    description="Run end-to-end checks before going live using Test Suites."
   />
 </ArticleCardGrid>
 

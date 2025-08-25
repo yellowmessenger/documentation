@@ -250,15 +250,29 @@ Reach out to the [yellow.ai team](mailto:vishnu@yellow.ai) for setting up an ema
 
 ### Setup Email channel with OAuth
 
-You can configure your email account with Microsoft OAuth to establish a secure and seamless connection between your email service and the AI agent. This setup allows the agent to send and receive emails without the need to store passwords.
+You can configure your email account with Microsoft OAuth to establish a secure and seamless connection between your email service and the AI agent. This allows the agent to send and receive emails without storing passwords.
 
-Before setting up the Email channel with OAuth, ensure you complete the following prerequisites:
+#### Generate credentials on azure portal
 
 1. Log in to the [Microsoft Azure](https://portal.azure.com/) portal.
-2. Generate and copy the following values from your app registration:
-    * Client ID
-    * Client Secret
-    * Tenant ID
+
+2. Go to **App registrations**.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/app-registrations.png)
+
+4. Select your registered application.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/select-account.png)
+
+5. In your registered application, copy **Client ID** and **Tenant ID**.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cleint-tenant.png)
+
+6. Go to **Certificates & secrets** > **Client secrets** > copy the **Client secret ID**.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/client-secrets.png)   
+
+#### Configure Email channel with OAuth 
 
 To connect an email account with OAuth, follow these steps:
 
@@ -281,9 +295,9 @@ To connect an email account with OAuth, follow these steps:
 5.  In the *Add Email* section, enter the following details: 
     * **Configuration objective**: Select the purpose of the current email account - Campaigns or Support ticketing. You can select both if needed.
     * **Email ID**: Enter the email address of the alias account.
-    * **Client ID**: Paste the Client ID from Azure app registration.
-    * **Client secret**: Enter the secret key generated in Azure to authenticate your application.
-    * **Tenant ID**: Provide the tenant ID where your application is registered.
+    * **Client ID**: Paste the Client ID copied from [step 5 of Generate credentials on azure portal](#generate-credentials-on-azure-portal)
+    * **Client secret**: Enter the copied secret ID key generated in Azure to authenticate your application.
+    * **Tenant ID**: Paste the Tenant ID copied from [step 5 of Generate credentials on azure portal](#generate-credentials-on-azure-portal) where your application is registered.
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/microsoftchannel.png)
 
