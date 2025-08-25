@@ -252,7 +252,7 @@ Reach out to the [yellow.ai team](mailto:vishnu@yellow.ai) for setting up an ema
 
 You can configure your email account with Microsoft OAuth to establish a secure and seamless connection between your email service and the AI agent. This allows the agent to send and receive emails without storing passwords.
 
-#### Generate credentials on azure portal
+#### **Generate credentials on azure portal**
 
 1. Log in to the [Microsoft Azure](https://portal.azure.com/) portal.
 
@@ -266,13 +266,13 @@ You can configure your email account with Microsoft OAuth to establish a secure 
 
 5. In your registered application, copy **Client ID** and **Tenant ID**.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cleint-tenant.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/mask-client-id.png)
 
 6. Go to **Certificates & secrets** > **Client secrets** > copy the **Client secret value**.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/client-secrets.png)   
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/screte-value1.png)   
 
-#### Configure Email channel with OAuth 
+#### **Configure Email channel with OAuth**
 
 To connect an email account with OAuth, follow these steps:
 
@@ -290,7 +290,7 @@ To connect an email account with OAuth, follow these steps:
 
 4. Select **Connect with Microsoft** as the account type.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/emailchannel1.png)
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/emailchannel1.png" alt="drawing" width="70%"/>
 
 5.  In the *Add Email* section, enter the following details: 
     * **Configuration objective**: Select the purpose of the current email account - Campaigns or Support ticketing. You can select both if needed.
@@ -299,7 +299,7 @@ To connect an email account with OAuth, follow these steps:
     * **Client secret**: Enter the copied secret value generated in Azure to authenticate your application.
     * **Tenant ID**: Paste the Tenant ID copied from [step 5 of Generate credentials on azure portal](#generate-credentials-on-azure-portal) where your application is registered.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/microsoftchannel.png)
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/microsoftchannel.png" alt="drawing" width="70%"/>
 
 6. Click **Connect**.    
 	

@@ -146,7 +146,7 @@ Content-Type: application/json
 
 ### Create ticket
 
-| URL    | `{{domainName}}/createTicket/{{companyName}}` |
+| URL    | `{{domainName}}createTicket/{{companyName}}` |
 | ------ | --------------------------------------------- |
 | METHOD | POST                                          |
 
