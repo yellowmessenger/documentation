@@ -12,7 +12,8 @@ Due to our website's CSP (Content Security Policy) guidelines, the Web View cann
 :::
 
 ### Prerequisite
-* Before getting started, get the Webview node enabled for your bot. To enable the Webview node, please raise a ticket on DevRev.
+
+* Before getting started, get the Webview node enabled for your bot. To enable the Webview node, contact [support team](mailto:support@yellow.ai).
 
 ## Steps to configure the Webview
 
