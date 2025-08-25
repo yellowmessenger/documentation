@@ -1588,6 +1588,7 @@ module.exports = {
             "platform_concepts/appConfiguration/google-sheets",
             "platform_concepts/appConfiguration/gpt3",
             "platform_concepts/appConfiguration/jira",
+            "platform_concepts/appConfiguration/json-webtoken",
             "platform_concepts/appConfiguration/leadSquared-wa-connector",
             // "platform_concepts/appConfiguration/llm",
             "platform_concepts/appConfiguration/microsoft-graph",
