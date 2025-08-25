@@ -268,7 +268,7 @@ You can configure your email account with Microsoft OAuth to establish a secure 
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cleint-tenant.png)
 
-6. Go to **Certificates & secrets** > **Client secrets** > copy the **Client secret ID**.
+6. Go to **Certificates & secrets** > **Client secrets** > copy the **Client secret value**.
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/client-secrets.png)   
 
@@ -296,7 +296,7 @@ To connect an email account with OAuth, follow these steps:
     * **Configuration objective**: Select the purpose of the current email account - Campaigns or Support ticketing. You can select both if needed.
     * **Email ID**: Enter the email address of the alias account.
     * **Client ID**: Paste the Client ID copied from [step 5 of Generate credentials on azure portal](#generate-credentials-on-azure-portal)
-    * **Client secret**: Enter the copied secret ID key generated in Azure to authenticate your application.
+    * **Client secret**: Enter the copied secret value generated in Azure to authenticate your application.
     * **Tenant ID**: Paste the Tenant ID copied from [step 5 of Generate credentials on azure portal](#generate-credentials-on-azure-portal) where your application is registered.
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/microsoftchannel.png)
