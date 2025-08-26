@@ -338,7 +338,7 @@ module.exports = {
       items: [
         {
           type: "category",
-          label: "AI agent",
+          label: "Prompt-based AI agents",
               link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
           collapsed: true,
           items: [
@@ -392,7 +392,7 @@ module.exports = {
         },
            {
               type: "category",
-              label: "Chatbot (Non-AI agent)",
+              label: "Rule-based conversations (Non-AI agent)",
               link: {type: 'doc', id: 'platform_concepts/studio/build/chatbot'},
               collapsed: true,
               items: [
