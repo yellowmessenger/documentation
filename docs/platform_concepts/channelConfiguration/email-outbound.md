@@ -260,15 +260,15 @@ You can configure your email account with Microsoft OAuth to establish a secure 
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/app-registrations.png)
 
-4. Select your registered application.
+3. Select your registered application.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/select-account.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/mask-client-id.png)
 
-5. In your registered application, copy **Client ID** and **Tenant ID**.
+4. In your registered application, copy **Client ID** and **Tenant ID**.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/mask-client-id.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/maskids.png)
 
-6. Go to **Certificates & secrets** > **Client secrets** > copy the **Client secret value**.
+5. Go to **Certificates & secrets** > **Client secrets** > copy the **Client secret value**.
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/screte-value1.png)   
 
