@@ -22,8 +22,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
 <script src="/js/FeedbackFooter.js"></script>
 <script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.9862c87a.css">
-<script src="/assets/js/runtime~main.5b4cc602.js" defer="defer"></script>
-<script src="/assets/js/main.9aa07c70.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.f9c4b529.js" defer="defer"></script>
+<script src="/assets/js/main.ca4ea193.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -138,6 +138,117 @@
 <ol start="5">
 <li>Click <strong>Save changes</strong>.</li>
 </ol>
-<img src="https://imgur.com/C5sBTm8.png" alt="drawing" width="75%"></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/platform_concepts/get_started/security-auth/oauth"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">SSO with OAuth &amp; SAML</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/platform_concepts/get_started/security-auth/chattranscriptsecurity"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">IP whitelisting (chat transcript)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#ym-authentication-overview" class="table-of-contents__link toc-highlight">YM authentication overview</a><ul><li><a href="#who-can-use-ym-auth" class="table-of-contents__link toc-highlight">Who can use YM Auth</a></li></ul></li><li><a href="#ym-authentication-workflow" class="table-of-contents__link toc-highlight">YM authentication workflow</a><ul><li><a href="#step-1-make-an-api-call-to-encrypt-your-token" class="table-of-contents__link toc-highlight">Step 1: Make an API call to encrypt your token</a></li><li><a href="#step-2-include-the-encrypted-token-in-the-ai-agent-script" class="table-of-contents__link toc-highlight">Step 2: Include the encrypted token in the AI-agent script</a></li><li><a href="#step-3-validate-the-token-for-successfailure" class="table-of-contents__link toc-highlight">Step 3: Validate the token for success/failure</a></li></ul></li><li><a href="#enable-ym-authentication-within-yellowai" class="table-of-contents__link toc-highlight">Enable YM authentication within yellow.ai</a><ul><li><a href="#ym-authentication-managed-by-yellowai" class="table-of-contents__link toc-highlight">YM authentication managed by Yellow.ai</a></li><li><a href="#ym-authentication-managed-using-your-own-key" class="table-of-contents__link toc-highlight">YM authentication managed using your own key</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"></div></footer></div>
+<img src="https://imgur.com/C5sBTm8.png" alt="drawing" width="75%">
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="identity-provider-setup-for-sso-with-yellowai">Identity Provider Setup for SSO with Yellow.ai<a href="#identity-provider-setup-for-sso-with-yellowai" class="hash-link" aria-label="Direct link to Identity Provider Setup for SSO with Yellow.ai" title="Direct link to Identity Provider Setup for SSO with Yellow.ai">​</a></h2>
+<p>Yellow.ai supports Single Sign-On (SSO) integration with multiple identity providers. This guide outlines the setup steps and the information you need to share with Yellow.ai for successful configuration.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="microsoft-azure-ad">Microsoft Azure AD<a href="#microsoft-azure-ad" class="hash-link" aria-label="Direct link to Microsoft Azure AD" title="Direct link to Microsoft Azure AD">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="redirect-urls-to-whitelist">Redirect URLs to Whitelist<a href="#redirect-urls-to-whitelist" class="hash-link" aria-label="Direct link to Redirect URLs to Whitelist" title="Direct link to Redirect URLs to Whitelist">​</a></h3>
+<ul>
+<li><code>https://cloud.yellow.ai/api/sso/oauth/handle-redirect</code></li>
+<li><code>https://app.yellow.ai/api/sso/oauth/handle-redirect</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-setup">Step-by-Step Setup<a href="#step-by-step-setup" class="hash-link" aria-label="Direct link to Step-by-Step Setup" title="Direct link to Step-by-Step Setup">​</a></h4>
+<ol>
+<li>
+<p>Sign in to <a href="https://portal.azure.com" target="_blank" rel="noopener noreferrer">Microsoft Azure</a>.</p>
+</li>
+<li>
+<p>Navigate to <strong>App Services</strong> → <strong>Manage Azure Active Directory</strong>.</p>
+</li>
+<li>
+<p>In the left pane, click <strong>App registrations</strong> → <strong>New registration</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Create</strong> page:</p>
+<ul>
+<li>Enter your application details.</li>
+<li>Under <strong>Redirect URI</strong>, select <strong>Web</strong> and enter the URLs listed above.</li>
+<li>Click <strong>Register</strong>.</li>
+</ul>
+</li>
+<li>
+<p>After registration:</p>
+<ul>
+<li>Copy the <strong>Application ID</strong> (Client ID).</li>
+<li>Copy the <strong>Directory ID</strong> (Tenant ID).</li>
+</ul>
+</li>
+<li>
+<p>Go to <strong>Certificates &amp; Secrets</strong> → <strong>New Client Secret</strong>.</p>
+<ul>
+<li>Add a description and expiration time.</li>
+<li>Click <strong>Add</strong> and copy the generated value (Client Secret).</li>
+</ul>
+</li>
+<li>
+<p>Ensure all intended Yellow.ai users are granted access to this Azure AD application.</p>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="information-required-by-yellowai">Information Required by Yellow.ai<a href="#information-required-by-yellowai" class="hash-link" aria-label="Direct link to Information Required by Yellow.ai" title="Direct link to Information Required by Yellow.ai">​</a></h4>
+<ul>
+<li>Client ID</li>
+<li>Client Secret</li>
+<li>Tenant ID</li>
+<li>Tenant Domain</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="okta">Okta<a href="#okta" class="hash-link" aria-label="Direct link to Okta" title="Direct link to Okta">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="redirect-urls-to-whitelist-1">Redirect URLs to Whitelist<a href="#redirect-urls-to-whitelist-1" class="hash-link" aria-label="Direct link to Redirect URLs to Whitelist" title="Direct link to Redirect URLs to Whitelist">​</a></h3>
+<ul>
+<li><code>https://cloud.yellow.ai/api/sso/oauth/handle-redirect</code></li>
+<li><code>https://app.yellow.ai/api/sso/oauth/handle-redirect</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-setup-1">Step-by-Step Setup<a href="#step-by-step-setup-1" class="hash-link" aria-label="Direct link to Step-by-Step Setup" title="Direct link to Step-by-Step Setup">​</a></h4>
+<p>Follow Okta’s official guide: <a href="https://developer.okta.com/docs/guides/implement-oauth-for-okta/" target="_blank" rel="noopener noreferrer">Implement OAuth for Okta</a>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="information-required-by-yellowai-1">Information Required by Yellow.ai<a href="#information-required-by-yellowai-1" class="hash-link" aria-label="Direct link to Information Required by Yellow.ai" title="Direct link to Information Required by Yellow.ai">​</a></h3>
+<ul>
+<li>Okta Domain</li>
+<li>Client ID</li>
+<li>Client Secret</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="red-hat-sso">Red Hat SSO<a href="#red-hat-sso" class="hash-link" aria-label="Direct link to Red Hat SSO" title="Direct link to Red Hat SSO">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="redirect-urls-to-whitelist-2">Redirect URLs to Whitelist<a href="#redirect-urls-to-whitelist-2" class="hash-link" aria-label="Direct link to Redirect URLs to Whitelist" title="Direct link to Redirect URLs to Whitelist">​</a></h3>
+<ul>
+<li><code>https://cloud.yellow.ai/api/sso/oauth/handle-redirect</code></li>
+<li><code>https://app.yellow.ai/api/sso/oauth/handle-redirect</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-setup-2">Step-by-Step Setup<a href="#step-by-step-setup-2" class="hash-link" aria-label="Direct link to Step-by-Step Setup" title="Direct link to Step-by-Step Setup">​</a></h4>
+<p>Follow Red Hat’s official documentation: <a href="https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.0/html/server_administration_guide/clients" target="_blank" rel="noopener noreferrer">Managing Clients – Red Hat SSO</a>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="information-required-by-yellowai-2">Information Required by Yellow.ai<a href="#information-required-by-yellowai-2" class="hash-link" aria-label="Direct link to Information Required by Yellow.ai" title="Direct link to Information Required by Yellow.ai">​</a></h4>
+<ul>
+<li>Realm</li>
+<li>Client ID</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="google">Google<a href="#google" class="hash-link" aria-label="Direct link to Google" title="Direct link to Google">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="redirect-urls-to-whitelist-3">Redirect URLs to Whitelist<a href="#redirect-urls-to-whitelist-3" class="hash-link" aria-label="Direct link to Redirect URLs to Whitelist" title="Direct link to Redirect URLs to Whitelist">​</a></h4>
+<ul>
+<li><code>https://cloud.yellow.ai/api/sso/oauth/handle-redirect</code></li>
+<li><code>https://app.yellow.ai/api/sso/oauth/handle-redirect</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-setup-3">Step-by-Step Setup<a href="#step-by-step-setup-3" class="hash-link" aria-label="Direct link to Step-by-Step Setup" title="Direct link to Step-by-Step Setup">​</a></h4>
+<ol>
+<li>
+<p>In the <a href="https://console.cloud.google.com" target="_blank" rel="noopener noreferrer">Google Cloud Console</a>, create a new OAuth client.</p>
+</li>
+<li>
+<p>On the <strong>OAuth Consent Screen</strong>, select the following scopes:</p>
+<ul>
+<li><code>openid</code></li>
+<li><code>userinfo.email</code></li>
+<li><code>userinfo.profile</code></li>
+</ul>
+</li>
+<li>
+<p>Configure the redirect URLs listed above.</p>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="information-required-by-yellowai-3">Information Required by Yellow.ai<a href="#information-required-by-yellowai-3" class="hash-link" aria-label="Direct link to Information Required by Yellow.ai" title="Direct link to Information Required by Yellow.ai">​</a></h4>
+<ul>
+<li>Client ID</li>
+<li>Client Secret</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/platform_concepts/get_started/security-auth/oauth"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">SSO with OAuth &amp; SAML</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/platform_concepts/get_started/security-auth/chattranscriptsecurity"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">IP whitelisting (chat transcript)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#ym-authentication-overview" class="table-of-contents__link toc-highlight">YM authentication overview</a><ul><li><a href="#who-can-use-ym-auth" class="table-of-contents__link toc-highlight">Who can use YM Auth</a></li></ul></li><li><a href="#ym-authentication-workflow" class="table-of-contents__link toc-highlight">YM authentication workflow</a><ul><li><a href="#step-1-make-an-api-call-to-encrypt-your-token" class="table-of-contents__link toc-highlight">Step 1: Make an API call to encrypt your token</a></li><li><a href="#step-2-include-the-encrypted-token-in-the-ai-agent-script" class="table-of-contents__link toc-highlight">Step 2: Include the encrypted token in the AI-agent script</a></li><li><a href="#step-3-validate-the-token-for-successfailure" class="table-of-contents__link toc-highlight">Step 3: Validate the token for success/failure</a></li></ul></li><li><a href="#enable-ym-authentication-within-yellowai" class="table-of-contents__link toc-highlight">Enable YM authentication within yellow.ai</a><ul><li><a href="#ym-authentication-managed-by-yellowai" class="table-of-contents__link toc-highlight">YM authentication managed by Yellow.ai</a></li><li><a href="#ym-authentication-managed-using-your-own-key" class="table-of-contents__link toc-highlight">YM authentication managed using your own key</a></li></ul></li><li><a href="#identity-provider-setup-for-sso-with-yellowai" class="table-of-contents__link toc-highlight">Identity Provider Setup for SSO with Yellow.ai</a><ul><li><a href="#microsoft-azure-ad" class="table-of-contents__link toc-highlight">Microsoft Azure AD</a></li><li><a href="#redirect-urls-to-whitelist" class="table-of-contents__link toc-highlight">Redirect URLs to Whitelist</a></li></ul></li><li><a href="#okta" class="table-of-contents__link toc-highlight">Okta</a><ul><li><a href="#redirect-urls-to-whitelist-1" class="table-of-contents__link toc-highlight">Redirect URLs to Whitelist</a></li><li><a href="#information-required-by-yellowai-1" class="table-of-contents__link toc-highlight">Information Required by Yellow.ai</a></li><li><a href="#red-hat-sso" class="table-of-contents__link toc-highlight">Red Hat SSO</a></li><li><a href="#redirect-urls-to-whitelist-2" class="table-of-contents__link toc-highlight">Redirect URLs to Whitelist</a></li><li><a href="#google" class="table-of-contents__link toc-highlight">Google</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"></div></footer></div>
 </body>
 </html>
