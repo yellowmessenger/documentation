@@ -90,7 +90,7 @@ This feature is supported across:
 ### Behavior
 
 
-By default, MM Lite follows the delivery mechanism defined in **Global settings**. If enabled, all supported campaigns will use MM Lite unless explicitly overridden.
+By default, MM Lite follows the delivery mechanism defined in Global settings (**Settings** > **Engage** > **WhatsApp API Preferences**). If enabled, all supported campaigns will use MM Lite unless explicitly overridden.
 
 
 You can override the global MM Lite setting at the following points:

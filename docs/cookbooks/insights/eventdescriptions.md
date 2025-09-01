@@ -389,7 +389,7 @@ Following are the events tracked on the user engagement events table:
 
 | Event                   | Description                                                                                                         |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------|
-| agent-session           | Fired when a new agent session is created. An agent session is initiated with the creation of the first ticket and lasts for 24 hours. Any subsequent tickets created within this timeframe are considered part of the same agent session. Therefore, the number of agent sessions will always be less than or equal to the number of tickets created |
+| agent-session           | Fired when a live agent actively participates in a conversation. An agent session starts when the agent sends the first response to a ticket and continues for 24 hours from that point. Any additional tickets created during this 24-hour window are counted as part of the same agent session. If a ticket is closed without any agent response, no agent session is created. Therefore, the number of agent sessions will always be less than or equal to the number of tickets created. |
 | agent-transfer          | Fired when a chat conversation is transferred to a live agent                                                       |
 | banner-cta-clicked      | Fired when the User clicks on the link configured in the callout banner                                            |
 | bot-closed              | Fired when the Bot is closed by the user (close button)                                                             |

@@ -1,11 +1,10 @@
 ---
-title: JSON Web Token Integration
+title: JSON Web Token (JWT) Integration
 sidebar_label: JSON web token
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## JSON Web Token (JWT) Integration
 
 This guide explains how to integrate JWT authentication with your application. JWTs allow the secure exchange of information between a client and server using a signed, compact token.
 
@@ -56,11 +55,21 @@ A JWKS is a JSON object containing an array of keys:
 }
 ```
 
-
-
 :::info
 JWTs are a compact, URL-safe means of representing claims to be transferred between two parties. They are commonly used for authentication and authorization in APIs.
 :::
+
+
+### Public webhook URL
+
+```html
+https://{region}.cloud.yellow.ai/api/galaxy/miscellaneous/jwks/{botId}
+```
+
+**Example**
+
+`https://r3.cloud.yellow.ai/api/galaxy/miscellaneous/jwks/x1753349177435`
+
 
 ---
 
@@ -207,3 +216,78 @@ except jwt.InvalidTokenError:
 
 </TabItem> 
 </Tabs>
+
+---
+
+Here’s a **clear, professional guide** for configuring the **JSON Web Token Action Node**:
+
+---
+
+## **Configuring JSON Web Token (JWT) Action Node**
+
+The JWT node allows you to **sign** (create) and **verify** (decode) JSON Web Tokens. Follow the instructions below based on your chosen action:
+
+
+### **1. Sign JWT**
+
+This action creates a signed JWT token from a JSON payload.
+
+**Steps:**
+
+1. **Account Name**:
+   Select the configured JWT account from the dropdown.
+
+2. **Action**:
+   Choose **Sign JWT**.
+
+3. **JWT Payload (object)**:
+
+   * Select or provide the **JSON object** that you want to sign.
+   * Example:
+
+     ```json
+     {
+       "userId": "12345",
+       "role": "admin"
+     }
+     ```
+
+   This payload will be encoded and signed using your account's secret key.
+
+4. **Parse API Response (Optional)**:
+
+   * If you want to process the generated token (e.g., extract parts of it), select a function here.
+
+5. **Output**:
+   The node returns a signed JWT string. Store it in a variable for later use (e.g., for authentication or API calls).
+
+---
+
+### **2. Verify JWT**
+
+This action verifies an existing JWT token and decodes its payload.
+
+**Steps:**
+
+1. **Account Name**:
+   Select the configured JWT account from the dropdown.
+
+2. **Action**:
+   Choose **Verify JWT**.
+
+3. **JWT Token (string)**:
+
+   * Select the variable containing the **signed JWT string** you want to verify.
+   * Alternatively, click **Or** to enter the token manually.
+
+4. **Parse API Response (Optional)**:
+
+   * You can choose a function to extract or process specific values from the decoded payload.
+
+5. **Output**:
+   The node returns:
+
+   * The **decoded JSON object** if verification succeeds.
+   * An error if the token is invalid or expired.
+
+
