@@ -92,6 +92,13 @@ These enhancements help you create a cleaner and more guided chat experience for
 
 ## **Engage**
 
+### MM Lite Global Setting
+You can now enable MM Lite once at the global level under **Settings** > **Engage** > **Preferences**.
+No need to configure it for every campaign—though you can still override it at the campaign level if needed.
+
+For more details, see [Engage settings](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud)
+
+
 ###  Smarter WhatsApp Message Delivery with MM Lite API Integration  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 We’ve added **MM Lite API** support to outbound campaigns, flows, and notification APIs.

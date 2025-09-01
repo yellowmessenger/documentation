@@ -252,7 +252,7 @@ Each key (e.g., button1Text) should exactly match the variable name in your temp
 
 This contains the list of available pre-configuration that will be validated before sending the messages to the user.
 
-By default, Yellow.ai uses the value defined in the global settings. To override this behavior, include the apiPreference field under the config object in your API request.
+By default, Yellow.ai uses the value defined in the global settings. To override this behavior, include the `apiPreference` field under the config object in your API request.
 
 :::note
 The MM Lite API is an intelligent delivery enhancement that leverages Meta’s infrastructure to optimize the timing of message delivery.
