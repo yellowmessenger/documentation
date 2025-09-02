@@ -337,7 +337,7 @@ Here is how the Super Agent, Agent, and Knowledge Base Agent would collaborate t
  
 To set up your AI agent, follow these steps:
 
-#### Step 1: Define the Super agent
+**#### Step 1: Define the Super agent**
 
 i. [Set up the agent persona](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona#update-profile-settings)
 * Define the set of tasks the Super Agent should handle and route. Example, booking, cancellation, support.
@@ -354,34 +354,33 @@ iii. [Set Welcome and Fallback messages](https://docs.yellow.ai/docs/platform_co
 iv.[ Define custom rules](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona#add-rules-to-follow-during-conversation)
 * Implement custom rules to enforce business logic. For example, require users to provide mandatory information, such as their email address or phone number, before proceeding with a transaction.
 
-#### Step 2: Create individual agents
+**#### Step 2: Create individual agents**
 
 [Set up dedicated agents for each use case](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent#create-an-agent). For example, create separate agents for booking a flight, canceling a ticket, or checking refund status.  This allows each agent to focus on a specific area of expertise.
   
-
-#### Step 3: Add Start trigger
+**#### Step 3: Add Start trigger**
 
 The [Start trigger](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#start-trigger) initiates the conversation between the AI Agent and the user.
 **Examples:**
 * A greeting like “Hi” or “Hello.”
 * A specific keyword like “Book flight.”
 
-#### Step 4: Add Prompts
+**#### Step 4: Add Prompts**
 
 Prompts are the messages your AI Agent sends to the user. You can make them static (simple messages) or dynamic (interactive messages with actions).
 
-#### Add Actions in Prompts
+**#### Add Actions in Prompts**
 
-While adding or editing a prompt, you can attach actions so the bot can collect inputs, trigger workflows, or store data.
-i. **[Fetch user details](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)**: Use prompts to trigger backend processes or workflows. For example, after the user enters their travel date and destination, the AI Agent can trigger a workflow to check flight availability.
-ii. **[Trigger Workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#call-a-workflow-in-prompt)**: Use this when you want the AIagent to run backend processes. Example: Calling an API to check flight availability after the user enters the date and destination.
+While adding or editing a prompt, you can attach actions so the bot can collect inputs, trigger workflows, or store data.<br/>
+i. **[Fetch user details](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)**: Use prompts to trigger backend processes or workflows. For example, after the user enters their travel date and destination, the AI Agent can trigger a workflow to check flight availability.<br/>
+ii. **[Trigger Workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#call-a-workflow-in-prompt)**: Use this when you want the AIagent to run backend processes. Example: Calling an API to check flight availability after the user enters the date and destination.<br/>
 iii. **[Variables](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#variables)**: Store user inputs, such as travel dates, names, or booking IDs, as variables. These variables can be used to pass data between agents, workflows, and other components of the system.
 
-#### Step 5: Connect the Flow
+**#### Step 5: Connect the flow**
 
 Link your prompts together in a logical order. Example: Greeting **→** Ask for travel date **→** Ask for destination **→** Trigger workflow to search **→** Show results.
 
-#### Step 6: Preview and test using Copilot
+**#### Step 6: Preview and test using Copilot**
 
 Before deploying the AI Agent, thoroughly test it to ensure it functions correctly and meets user expectations. Use the [Preview or Copilot](https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation) to test the AI Agent. These tools allow you to simulate user interactions and identify any issues or areas for improvement.
 
