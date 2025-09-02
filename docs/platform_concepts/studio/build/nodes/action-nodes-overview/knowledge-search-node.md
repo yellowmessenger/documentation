@@ -7,7 +7,7 @@ Knowledge search node allows the AI-agent to retrieve answers from a website or 
 
 Using the Knowledge search node offers the following benefits:
 
-* **Access to up-to-date information**: The AI-agent can retrieve data from the linked websites or uploaded documnets, to ensure that the information provided is correct and relevant.
+* **Access to up-to-date information**: The AI-agent can retrieve data from the linked websites or uploaded documents, to ensure that the information provided is correct and relevant.
 * **Efficient query handling**:  The AI-agent can handle  contextual queries or specific user queries by searching through knowledge sources to resolve them.
 
 
