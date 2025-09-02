@@ -194,3 +194,106 @@ To enable:
 <img src="https://imgur.com/C5sBTm8.png" alt="drawing" width="75%"/>
 
 
+
+---
+
+## Identity Provider Setup for SSO with Yellow\.ai
+
+Yellow\.ai supports Single Sign-On (SSO) integration with multiple identity providers. This guide outlines the setup steps and the information you need to share with Yellow\.ai for successful configuration.
+
+
+### Microsoft Azure AD
+
+### Redirect URLs to Whitelist
+
+* `https://cloud.yellow.ai/api/sso/oauth/handle-redirect`
+* `https://app.yellow.ai/api/sso/oauth/handle-redirect`
+
+#### Step-by-Step Setup
+
+1. Sign in to [Microsoft Azure](https://portal.azure.com).
+2. Navigate to **App Services** → **Manage Azure Active Directory**.
+3. In the left pane, click **App registrations** → **New registration**.
+4. On the **Create** page:
+
+   * Enter your application details.
+   * Under **Redirect URI**, select **Web** and enter the URLs listed above.
+   * Click **Register**.
+5. After registration:
+
+   * Copy the **Application ID** (Client ID).
+   * Copy the **Directory ID** (Tenant ID).
+6. Go to **Certificates & Secrets** → **New Client Secret**.
+
+   * Add a description and expiration time.
+   * Click **Add** and copy the generated value (Client Secret).
+7. Ensure all intended Yellow\.ai users are granted access to this Azure AD application.
+
+#### Information Required by Yellow\.ai
+
+* Client ID
+* Client Secret
+* Tenant ID
+* Tenant Domain
+
+---
+
+## Okta
+
+### Redirect URLs to Whitelist
+
+* `https://cloud.yellow.ai/api/sso/oauth/handle-redirect`
+* `https://app.yellow.ai/api/sso/oauth/handle-redirect`
+
+#### Step-by-Step Setup
+
+Follow Okta’s official guide: [Implement OAuth for Okta](https://developer.okta.com/docs/guides/implement-oauth-for-okta/).
+
+### Information Required by Yellow\.ai
+
+* Okta Domain
+* Client ID
+* Client Secret
+
+---
+
+### Red Hat SSO
+
+### Redirect URLs to Whitelist
+
+* `https://cloud.yellow.ai/api/sso/oauth/handle-redirect`
+* `https://app.yellow.ai/api/sso/oauth/handle-redirect`
+
+#### Step-by-Step Setup
+
+Follow Red Hat’s official documentation: [Managing Clients – Red Hat SSO](https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.0/html/server_administration_guide/clients).
+
+#### Information Required by Yellow\.ai
+
+* Realm
+* Client ID
+
+---
+
+### Google
+
+#### Redirect URLs to Whitelist
+
+* `https://cloud.yellow.ai/api/sso/oauth/handle-redirect`
+* `https://app.yellow.ai/api/sso/oauth/handle-redirect`
+
+#### Step-by-Step Setup
+
+1. In the [Google Cloud Console](https://console.cloud.google.com), create a new OAuth client.
+2. On the **OAuth Consent Screen**, select the following scopes:
+
+   * `openid`
+   * `userinfo.email`
+   * `userinfo.profile`
+3. Configure the redirect URLs listed above.
+
+#### Information Required by Yellow\.ai
+
+* Client ID
+* Client Secret
+
