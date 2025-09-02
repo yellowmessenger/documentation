@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
 <script src="/js/FeedbackFooter.js"></script>
 <script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.9862c87a.css">
-<script src="/assets/js/runtime~main.f9c4b529.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ba7e3667.js" defer="defer"></script>
 <script src="/assets/js/main.ca4ea193.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -163,7 +163,7 @@ The KB Agent handles queries related to the product or services. It fetches info
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-ai-agent">Configuration AI agent<a href="#configuration-ai-agent" class="hash-link" aria-label="Direct link to Configuration AI agent" title="Direct link to Configuration AI agent">​</a></h3>
 <p><img decoding="async" loading="lazy" src="https://cdn.yellowmessenger.com/assets/yellow-docs/ai-agent-configuration.png" alt="" class="img_ev3q"></p>
 <p>To set up your AI agent, follow these steps:</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-define-the-super-agent">Step 1: Define the Super agent<a href="#step-1-define-the-super-agent" class="hash-link" aria-label="Direct link to Step 1: Define the Super agent" title="Direct link to Step 1: Define the Super agent">​</a></h4>
+<p><strong>#### Step 1: Define the Super agent</strong></p>
 <p>i. <a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona#update-profile-settings" target="_blank" rel="noopener noreferrer">Set up the agent persona</a></p>
 <ul>
 <li>Define the set of tasks the Super Agent should handle and route. Example, booking, cancellation, support.</li>
@@ -182,25 +182,25 @@ The KB Agent handles queries related to the product or services. It fetches info
 <ul>
 <li>Implement custom rules to enforce business logic. For example, require users to provide mandatory information, such as their email address or phone number, before proceeding with a transaction.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-create-individual-agents">Step 2: Create individual agents<a href="#step-2-create-individual-agents" class="hash-link" aria-label="Direct link to Step 2: Create individual agents" title="Direct link to Step 2: Create individual agents">​</a></h4>
+<p><strong>#### Step 2: Create individual agents</strong></p>
 <p><a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent#create-an-agent" target="_blank" rel="noopener noreferrer">Set up dedicated agents for each use case</a>. For example, create separate agents for booking a flight, canceling a ticket, or checking refund status.  This allows each agent to focus on a specific area of expertise.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-add-start-trigger">Step 3: Add Start trigger<a href="#step-3-add-start-trigger" class="hash-link" aria-label="Direct link to Step 3: Add Start trigger" title="Direct link to Step 3: Add Start trigger">​</a></h4>
+<p><strong>#### Step 3: Add Start trigger</strong></p>
 <p>The <a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#start-trigger" target="_blank" rel="noopener noreferrer">Start trigger</a> initiates the conversation between the AI Agent and the user.
 <strong>Examples:</strong></p>
 <ul>
 <li>A greeting like “Hi” or “Hello.”</li>
 <li>A specific keyword like “Book flight.”</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-add-prompts">Step 4: Add Prompts<a href="#step-4-add-prompts" class="hash-link" aria-label="Direct link to Step 4: Add Prompts" title="Direct link to Step 4: Add Prompts">​</a></h4>
+<p><strong>#### Step 4: Add Prompts</strong></p>
 <p>Prompts are the messages your AI Agent sends to the user. You can make them static (simple messages) or dynamic (interactive messages with actions).</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="add-actions-in-prompts">Add Actions in Prompts<a href="#add-actions-in-prompts" class="hash-link" aria-label="Direct link to Add Actions in Prompts" title="Direct link to Add Actions in Prompts">​</a></h4>
-<p>While adding or editing a prompt, you can attach actions so the bot can collect inputs, trigger workflows, or store data.
-i. <strong><a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input" target="_blank" rel="noopener noreferrer">Fetch user details</a></strong>: Use prompts to trigger backend processes or workflows. For example, after the user enters their travel date and destination, the AI Agent can trigger a workflow to check flight availability.
-ii. <strong><a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#call-a-workflow-in-prompt" target="_blank" rel="noopener noreferrer">Trigger Workflow</a></strong>: Use this when you want the AIagent to run backend processes. Example: Calling an API to check flight availability after the user enters the date and destination.
+<p><strong>#### Add Actions in Prompts</strong></p>
+<p>While adding or editing a prompt, you can attach actions so the bot can collect inputs, trigger workflows, or store data.<br>
+i. <strong><a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input" target="_blank" rel="noopener noreferrer">Fetch user details</a></strong>: Use prompts to trigger backend processes or workflows. For example, after the user enters their travel date and destination, the AI Agent can trigger a workflow to check flight availability.<br>
+ii. <strong><a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#call-a-workflow-in-prompt" target="_blank" rel="noopener noreferrer">Trigger Workflow</a></strong>: Use this when you want the AIagent to run backend processes. Example: Calling an API to check flight availability after the user enters the date and destination.<br>
 iii. <strong><a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#variables" target="_blank" rel="noopener noreferrer">Variables</a></strong>: Store user inputs, such as travel dates, names, or booking IDs, as variables. These variables can be used to pass data between agents, workflows, and other components of the system.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-connect-the-flow">Step 5: Connect the Flow<a href="#step-5-connect-the-flow" class="hash-link" aria-label="Direct link to Step 5: Connect the Flow" title="Direct link to Step 5: Connect the Flow">​</a></h4>
+<p><strong>#### Step 5: Connect the flow</strong></p>
 <p>Link your prompts together in a logical order. Example: Greeting <strong>→</strong> Ask for travel date <strong>→</strong> Ask for destination <strong>→</strong> Trigger workflow to search <strong>→</strong> Show results.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-preview-and-test-using-copilot">Step 6: Preview and test using Copilot<a href="#step-6-preview-and-test-using-copilot" class="hash-link" aria-label="Direct link to Step 6: Preview and test using Copilot" title="Direct link to Step 6: Preview and test using Copilot">​</a></h4>
+<p><strong>#### Step 6: Preview and test using Copilot</strong></p>
 <p>Before deploying the AI Agent, thoroughly test it to ensure it functions correctly and meets user expectations. Use the <a href="https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation" target="_blank" rel="noopener noreferrer">Preview or Copilot</a> to test the AI Agent. These tools allow you to simulate user interactions and identify any issues or areas for improvement.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/platform_concepts/studio/overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Overview</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/platform_concepts/AIAgent/agentpersona"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Define AI agent persona</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#ai-agent-overview" class="table-of-contents__link toc-highlight">AI Agent overview</a></li><li><a href="#ai-agent-components" class="table-of-contents__link toc-highlight">AI Agent components</a><ul><li><a href="#super-agent" class="table-of-contents__link toc-highlight">Super agent</a></li><li><a href="#agent" class="table-of-contents__link toc-highlight">Agent</a></li><li><a href="#knowledge-base-agent" class="table-of-contents__link toc-highlight">Knowledge Base agent</a></li></ul></li><li><a href="#how-ai-agent-component-works-together" class="table-of-contents__link toc-highlight">How AI agent component works together</a><ul><li><a href="#configuration-ai-agent" class="table-of-contents__link toc-highlight">Configuration AI agent</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"></div></footer></div>
 </body>
 </html>
