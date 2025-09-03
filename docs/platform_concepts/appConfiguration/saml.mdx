@@ -1,0 +1,161 @@
+---
+title: SAML integration for AI agent
+sidebar_label: SAML integration
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+SAML (Security Assertion Markup Language) authentication allows you to authenticate users during their conversations with our AI agent. It ensures that only logged-in users can access specific journeys, such as viewing calendars, personal records, or restricted enterprise information.
+
+This guide explains how to configure SAML authentication for your AI agent, including prerequisites, mandatory fields, session management, and the authentication flow.
+
+## When to Use SAML Authentication
+Use SAML authentication if you want to:
+* Restrict AI agent access to authenticated users only.
+* Enable single sign-on (SSO) with your enterprise identity provider such as Azure AD, Okta, or JumpCloud and align with your organization's security policies.
+
+## Prerequisites
+Before configuring SAML authentication, ensure that you have:
+* An active identity provider (IdP) such as Azure AD, Okta, or JumpCloud.
+* Admin access to configure an application on the IdP.
+* Access to the following details from your IdP:
+   * **Authorization URL** (IdP SSO login endpoint)
+   * **IdP Certificate** (X.509 certificate, usually downloadable from IdP metadata)
+   * **Audience / Entity ID**
+
+## Configure SAML for AI agent authentication
+
+### 1. Create a SAML Application in Your IdP
+
+1. Log in to your identity provider (Azure, Okta, JumpCloud, etc.).
+2. Create a new SAML application.
+3. Add the following configuration values in the IdP:
+    * **Redirect URI**: Provide the AI agents [Redirect URI](#add-redirection-uri).
+    * **Audience**: Use the Audience value provided by the agent platform.
+4. Download the **IdP Certificate** or copy it from the metadata.
+
+
+### 2. Configure your SAML in the Yellow.ai cloud platform
+
+1. Switch to development (Sandbox/Staging) environment, go to **Extensions** > **Integrations** > **Tools & utilities**.
+2. Click **Generic SAML**. You can also use the search bar to find the integration. 
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/saml-connected.png)
+3. Fill in the following mandatory fields:
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/add-account.png)
+    * **Account name** – A unique identifier for this SAML setup (e.g., "AzureSSO").
+    * **Authorization URL** – The IdP login endpoint.
+    * **IdP certificate** – Paste the X.509 certificate from the IdP.
+    * **Audience** – Enter the unique identifier for the Service Provider (SP). This is a crucial security field that specifies the application this SAML assertion is intended for. The application will reject any assertion where the Audience URI does not match its own ID. This value is provided by the SP and is often a URL. (It is typically a URL or a Uniform Resource Name (URN), such as `https://yourapp.com/saml/metadata` or `urn:google:workspace`.)
+    * **Session expiry (in hours)**: Set how long a user’s authenticated session remains valid. After the session expires, users will be prompted to re-authenticate via SAML before continuing restricted conversation flows. Default value is 3 hours and maximum value is 6 hours.
+4. Click **Connect**.
+
+## Add Redirection URI
+
+The **Redirection URI** is the endpoint on our AI agent platform where the identity provider (IdP) sends the authentication response after a user logs in. This URI is to ensure that the authentication handshake is completed successfully.
+
+
+1. On the **Generic SAML Integration** configuration page, click the **Redirection URI** displayed on the right to copy it.
+2. Add this URI to your **Identity Provider (IdP) configuration**. This step is mandatory—authentication will not succeed unless the Redirect URI is registered with the IdP.
+
+
+**Example format**:
+
+```
+https://r6.cloud.yellow.ai/api/galaxy/genericsaml
+```
+
+
+## Adding Redirect URI to Your Identity Provider (IdP)
+
+After copying the **Redirect URI** from the Generic SAML Integration page, you must add it to your IdP configuration. This ensures the IdP knows where to send authentication responses after a user successfully signs in.
+
+:::note
+The **Redirect URI differs by region and environment**.  
+Make sure you copy the URI directly from your **Generic SAML Integration configuration page** in the platform.  
+Do not reuse values from another environment (e.g., staging vs. production) or region, as authentication will fail if mismatched.
+:::
+
+
+<Tabs groupId="idp-tabs" defaultValue="azure" values={[
+  {label: 'Azure AD', value: 'azure'},
+  {label: 'Okta', value: 'okta'},
+  {label: 'JumpCloud', value: 'jumpcloud'},
+]}>
+
+<TabItem value="azure">
+
+### Azure Active Directory (Azure AD)  
+
+1. Sign in to the [Azure portal](https://portal.azure.com).  
+2. Navigate to **Azure Active Directory** > **Enterprise Applications**.  
+3. Select your application or create a new one for the AI agent.  
+4. Under **Manage**, go to **Single sign-on** > **Basic SAML Configuration**.  
+5. In the **Reply URL (Assertion Consumer Service URL)** field, paste the copied Redirect URI.  
+6. Save the configuration.  
+
+
+</TabItem>
+
+<TabItem value="okta">
+
+### Okta  
+
+1. Sign in to the [Okta Admin Console](https://admin.okta.com).  
+2. Go to **Applications** > **Applications** and select your app.  
+3. Under the **General** tab, click **Edit**.  
+4. In the **Single sign-on URL** field, paste the Redirect URI.  
+5. Save the changes.  
+
+
+</TabItem>
+
+<TabItem value="jumpcloud">
+
+### JumpCloud  
+
+1. Sign in to the [JumpCloud Admin Portal](https://console.jumpcloud.com).  
+2. Navigate to **User Authentication** > **SSO Applications**.  
+3. Select your app or create a new SAML app.  
+4. In the **ACS URL (Assertion Consumer Service URL)** field, paste the Redirect URI.  
+5. Save the configuration.  
+
+
+</TabItem>
+
+</Tabs>
+
+
+---
+
+
+
+## Add SAML Authentication in your agent Flow
+
+Once SAML configuration is complete, you can enable authentication in your agent flow as explained below:
+
+ ![](https://cdn.yellowmessenger.com/assets/yellow-docs/flow-chart.png)
+
+1. Navigate to the specific Flow where you want to add authentication process.
+2. In the agent flow, add an **Integration** node and select **Generic SAML**.
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/select-saml.png"/>
+3. Choose the **Account name** associated with your SAML configuration.
+4. In the **Action** field, you can set one of the following:
+    * **Check user session** – Verifies if the user is already logged in.
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/generic-saml.png" width="70%"/>
+    * **Generate SAML request** – Initiates a new authentication request.
+    <img src="https://i.ibb.co/Y7pn8C2n/1.png" width="70%"/>
+5. In **Parse API response**, choose the desired function (needed only if you want the AI agent to automatically extract and process values from the SAML response).
+
+
+### Troubleshooting
+
+
+| Issue                            | Possible Cause                       | Resolution                                                    |
+| -------------------------------- | ------------------------------------ | ------------------------------------------------------------- |
+| Authentication fails immediately | Redirect URI mismatch                | Ensure Redirect URI matches in both IdP and AI agent configuration |
+| Certificate validation error     | Expired or incorrect IdP Certificate | Download a fresh certificate from the IdP                     |
+| Users logged out too soon        | Short session expiry configured      | Increase session expiry up to 6 hours                         |
+| AI agent not redirecting              | Missing Check User Session node      | Ensure the flow includes session validation                   |
+
+
