@@ -13,7 +13,7 @@ This guide explains how to configure SAML authentication for your AI agent, incl
 ## When to Use SAML Authentication
 Use SAML authentication if you want to:
 * Restrict AI agent access to authenticated users only.
-* Enable single sign-on (SSO) with your enterprise identity provider such as Azure AD, Okta, or JumpCloud and align with your organization's security policies.
+* Enable single sign-on (SSO) with any identity provider.
 
 ## Prerequisites
 Before configuring SAML authentication, ensure that you have:
@@ -22,7 +22,7 @@ Before configuring SAML authentication, ensure that you have:
 * Access to the following details from your IdP:
    * **Authorization URL** (IdP SSO login endpoint)
    * **IdP Certificate** (X.509 certificate, usually downloadable from IdP metadata)
-   * **Audience / Entity ID**
+   * **Audience**
 
 ## Configure SAML for AI agent authentication
 
@@ -128,7 +128,21 @@ Do not reuse values from another environment (e.g., staging vs. production) or r
 
 ---
 
+## Enable SAML success and failure events
 
+After integrating SAML, it is important to track whether authentication attempts succeed or fail. To ensure your AI agent is notified of the authentication status, enable the `generic-saml-success` and `generic-saml-failure` events.
+
+To enable:
+1. Go to **Automation** > **Events** > **Integration**
+2. Search for the SAML events mentioned above.
+   * `generic-saml-success`: Triggered when the SAML authentication request completes successfully.
+   * `generic-saml-failure`: Triggered when the SAML authentication request fails.
+3. Click the **More options** icon and select **Enable**.
+
+   <img src="https://i.ibb.co/LDN4XmPc/2.png"/>
+
+
+---
 
 ## Add SAML Authentication in your agent Flow
 
@@ -148,14 +162,20 @@ Once SAML configuration is complete, you can enable authentication in your agent
 5. In **Parse API response**, choose the desired function (needed only if you want the AI agent to automatically extract and process values from the SAML response).
 
 
+:::note
+You can write custom functions to process success and failure events. The authentication response is passed to the AI agent through the `{{{data}}}` object variable. In your function, you can extract details such as authentication status, error messages, or user attributes and use them to guide the conversation flow or handle fallbacks.
+:::
+
+---
+
 ### Troubleshooting
 
 
 | Issue                            | Possible Cause                       | Resolution                                                    |
 | -------------------------------- | ------------------------------------ | ------------------------------------------------------------- |
-| Authentication fails immediately | Redirect URI mismatch                | Ensure Redirect URI matches in both IdP and AI agent configuration |
+| Authentication fails immediately | You will see proper reason in Failure event              | Ensure Redirect URI matches in both IdP and AI agent configuration |
 | Certificate validation error     | Expired or incorrect IdP Certificate | Download a fresh certificate from the IdP                     |
 | Users logged out too soon        | Short session expiry configured      | Increase session expiry up to 6 hours                         |
-| AI agent not redirecting              | Missing Check User Session node      | Ensure the flow includes session validation                   |
+| AI agent not redirecting              | Missing Check User Session node, Redirect URI mismatch     | Ensure the flow includes session validation                   |
 
 

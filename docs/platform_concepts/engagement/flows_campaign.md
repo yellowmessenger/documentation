@@ -1,536 +1,176 @@
 ---
 sidebar_label: Create Flow campaign manually
-title: Create Flow campaign
+title: How to Create a Flow Campaign
 ---
 
+Flow campaigns allow you to create automated, multi-step user journeys that are triggered by specific user actions or segment changes. This guide will walk you through the concepts, a step-by-step tutorial, and a detailed reference for all available options.
 
-## Create Flow campaign manually
+### The structure of a Flow Campaign
 
-The campaign flow builder consists of five categories of nodes:
+A Flow campaign is a visual workflow built from nodes. These nodes are organized into four main categories that define how and when users enter the flow, the path they take, and the actions they experience.
 
-* Entry point
-* Condition
-* Flow control
-* Action
+1.  **Entry Rule:** The trigger that starts the journey for a user (e.g., performing an event or entering a segment).
+2.  **Condition:** Checkpoints that filter users into different paths based on their properties or behavior.
+3.  **Flow Control:** Nodes that manage the timing and progression of the journey, such as adding delays.
+4.  **Action & Message:** The communications sent to the user (like WhatsApp messages or emails) or actions performed on their profile (like API calls).
 
-:::note
-You cannot edit an ongoing Flow campaign directly. You can only pause the current campaign and create a new one from scratch if you want to target a different set of users or segments. Additionally, users who are already in the campaign cannot be removed or stopped.
+:::note Important
+An active Flow campaign cannot be edited directly. To make changes, you must pause the current campaign and create a new one. Users who are already in a campaign journey cannot be removed.
 :::
 
-To create a flow, follow these steps:
+---
+## Building your first Flow Campaign
 
-1. On the left navigation bar, go to **Engage** > **Flows**.
+This tutorial will guide you through creating and launching a basic flow campaign.
 
-2. Click on **Create flow** > **Create from scratch**.
+1.  **Navigate to Flows:** From the main menu, go to **Engage** > **Flows**.
+2.  **Create a New Flow:** Click **Create flow** and choose **Create from scratch**.
+    ![](https://i.imgur.com/i9NZiqL.png)
+3.  **Name Your Campaign:** Click on the "Untitled workflow" title at the top and give your campaign a descriptive name.
+    <center><img src="https://i.imgur.com/yplyiKP.png" width="70%"/></center>
+4.  **Define the Entry Rule:** Click the first node (e.g., **User events**) to configure what triggers the campaign. For this quickstart, you can leave the default.
+    <center><img src="https://i.imgur.com/qlLGKvj.png" width="70%"/></center>
+5.  **Build Your Journey:** Drag and drop nodes from the right-hand panel to create your user journey. Connect a **Message** node (like **WhatsApp**) to the **Entry Rule** node.
+6.  **Set a Campaign Goal (Optional):** Click **Add new goal to flow** to define a conversion event. The campaign journey will end for any user who achieves this goal.
+7.  **Publish Your Campaign:**
+    * Click **Publish** in the top-right corner.
+    * Confirm by clicking **Publish** again in the pop-up window.
+    ![](https://i.imgur.com/XOoCuIQ.png)
 
-  ![](https://i.imgur.com/i9NZiqL.png)
-  
+---
 
-:::note
-You can also reuse an existing flow using More options > **Duplicate**.
+## Understanding different nodes in Flow Campaign
+
+This section provides a detailed breakdown of every node available in the Flow campaign builder.
+
+### Entry rule nodes
+
+Entry Rules are the starting point of every campaign, defining the trigger that enrolls a user into the journey.
+
+<center><img src="https://i.imgur.com/gwgWer5.png" width="60%"/></center>
+
+#### **User Events**
+Triggers the flow when a user performs a specific action.
+
+| Option                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Campaign triggers when user** | Choose the event that qualifies the user. Learn more about [activating events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#1-activatedeactivate-event).                                                                                                                                                                                                                                                                     |
+| **After event, campaign triggers** | <ul><li>**Immediately:** Triggers the campaign instantly.</li><li>**At a specific time:** Triggers on a future date for all qualified users.</li><li>**After a delay:** Triggers after a set number of hours, days, or weeks. You can also use an event property for dynamic delays (e.g., 2 days before a `renewal_date` property).</li></ul> |
+| **Campaign frequency & duration** | <ul><li>**Run this campaign:** Choose `Once per user` or `Every time when the event happens`.</li><li>**Start/End:** Set the active date and time range for the campaign.</li></ul>                                                                                                                                                                                                                       |
+| **Target audience** | Filter who is eligible for the campaign. Choose **All users** or select **One or more segments** to target specific user groups.                                                                                                                                                                                                                                                                                                                    |
+
+#### **User Enters/Exits a Segment**
+Triggers the flow when a user is added to or removed from a specific segment. The configuration options are the same as for **User Events**.
+
+:::note Segment Refresh Times
+Segments created using date or time properties are only refreshed once daily at midnight. They will not trigger campaigns in real-time throughout the day.
 :::
 
-3. Select the rule when users should enter the flow. 
+#### **User Present in a Segment**
+Triggers the flow for all users who are currently in a segment at a specific scheduled time.
 
-   <center><img src="https://i.imgur.com/qlLGKvj.png" width="70%"/></center>
+| Option                      | Description                                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **User segment** | Choose the segment of users to target, or select **All users**.                                         |
+| **Select start date and time** | Choose the specific date and time to run the campaign for the selected users.                         |
 
-4. Click on the Untitled workflow (the default name) and enter the campaign name.
+---
+### Condition Nodes
 
-   <center><img src="https://i.imgur.com/yplyiKP.png" width="70%"/></center>
-
-
-5. Define the journey using [Flow control](#flow-control), [Conversations](#message-conversations), and [Actions](#action).
-6. Set the [campaign goal](#add-goal) as required. The campaign ends when the goal is achieved.
-7. Click **Publish**. You will see a pop-up screen asking for confirmation.
-8. Click **Publish** again on the pop-up screen.
-
-   ![](https://i.imgur.com/XOoCuIQ.png)
-
-:::note
-Once the flow is published, do not modify the segment condition.
-:::
-
-## Entry rule
-
-This is the starting point of the flow where you can configure the criteria based on which a user can enter the flow.
-
-### User events 
-Select this to trigger the flow when a specific user event occurs.
-
-To set an event for which the user qualifies to enter the flow:
-
-* On the flow builder screen, click on the **User events** node.
-
-   <center><img src="https://i.imgur.com/gwgWer5.png" width="60%"/></center>
-
-
-
-| Option | Description |
-| ------ | ------------ |
-| **Campaign triggers when user**  | Choose the event for which the user qualifies to enter the flow. Learn more about [how to activate events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#1-activatedeactivate-event) and [how to add custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-event). |
-**After event, campaign triggers** | <ul><li>Choose *Immediately* to trigger the campaign right after the event has occurred.</li><li>Choose **At a specific time** to trigger the campaign on a specific date for the qualified users. <br/><img src="https://i.imgur.com/SdcMiVJ.png" width="50%"/></li><li>Choose **After a delay** to trigger the campaign after a specific number of hours, days, or weeks from the event occurred time. <img src="/img/cdp/afteraDelay.png" width="60%"/><br/> You can also define a custom property (Click **Add property input**) by which you want to trigger the campaign. <br/><img src="/img/cdp/addPropertyInput.png" width="60%"/> <br/>1. Set the duration in minutes, hours, days or weeks. <br/>2. Choose when to remind - Before or After, and <br/>3. Enter your preferred event property in the last box. <img src="/img/cdp/property2.png" width="60%"/><br/>For example, send a notification 2 days before a subscription renewal date, Send a greeting on the customer's birthdate, send a reminder 30 minutes before the appointment, or send a “Thank You” message an hour after the flight departure.</li></ul> | 
-| **Campaign frequency & duration** | Setup when to run the campaign.<br/><ol><li>In **Run this campaign**, choose between *Once per user* or *Every time when the event happens*.</li><li>In **Start** and **End**, set the duration of the campaign (date and time).</li></ol> | 
-| **Target audience** | <ul><li>If you want the campaign to be applicable for specific users groups, select **One or more segments** and choose your preferred user segments.</li><li> If you want the campaign to be enabled for all users, select **All users**. </li></ul> | 
-
-***
-
-
-### User entered a segment
-
-Select this to trigger the flow when a user enters a segment.
-
-To trigger the campaign when a user enters a segment, on the flow builder screen, click on the **User enters segment** node.
-
-
-
-<center><img src="https://i.imgur.com/NuiRCDg.png" width="50%"/></center>
-
-Option | Description
---------- | --------
-**User entered segment** | Triggers the campaign when the user enters a specific segment. Select your preferred segment in the respective box.
-After entering segment, campaign triggers | Once a user enters the segment, choose when to schedule the campaign - Immediately, At a specific time, or After a delay.
-**Frequency & duration** | Set the campaign's frequency and duration.
-**Run this campaign** | Choose whether to run the campaign only *Once per user* or *Every time event happens*.
-**Start** / **End** | Choose the duration of the campaign using the calendar boxes. It should be a future duration.
-**Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the campaign applicable to all users.
-
-:::note
-* Segments created using the date, time, or date-time data types refresh only at midnight. For example, if you set up a campaign to trigger every 5 minutes or every hour, the segment's user list won't receive real-time updates. The user list will be refreshed at midnight.
-:::
-
-
-
-*** 
-
-### User exited a segment
-
-Select this to trigger the flow when a user exits a segment.
-
-To trigger the campaign when a user exits a segment, on the flow builder screen, click on the **User exited segment** node.
-
-<center><img src="https://i.imgur.com/b8lQP7O.png" width="60%"/></center>
-
-Option | Description
---------- | --------
-**User exited a segment** | Triggers the campaign when the user exits a specific segment. Select the segment in the respective box.
-After exiting segment, campaign triggers | Once a user exits the segment, choose when to schedule the campaign - Immediately, At a specific time, or After a delay.
-**Campaign frequency & duration** | Set the campaign frequency and duration.
-**Run this campaign** | Choose whether to run the campaign only *Once per user* or *Every time event happens* (every time a user exits a segment).
-**Start** / **End** | Choose the duration of the campaign using the calendar boxes.
-**Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the campaign applicable to all users.
-
-
-:::note
-Segments created using the date, time, or date-time data types refresh only at midnight. For example, if you set up a campaign to trigger every 5 minutes or every hour, the segment's user list won't receive real-time updates. The user list will be refreshed at midnight.
-:::
-
-
-***
-
-### User present in a segment 
-Select this to trigger the flow when a user is in a particular segment.
-
-<center><img src="https://i.imgur.com/Uu1Nvu3.png" width="60%"/></center>
-
-Option | Description
--------- | ---------
-**User segment** | Triggers the campaign only when the user is in a specific segment. Select your preferred segment in the Select segment box.<br/>[OR]<br/>To enable it for all users, select *All users*.
-**Select start date and time** | Choose the date and time when you want to run the campaign.
-
-***
-
-## Condition to trigger flow campaign
-
-This section helps you set the qualifying condition for users to enter a specific step of the flow. You can choose the target audience based on their user property values, current segments, event occurrence, or opt-in status.
+Condition nodes act as checkpoints to filter users and create different paths within your flow.
 
 <center><img src="https://i.imgur.com/FSaF7NN.png" width="60%"/></center>
 
+* **User Property Check:** Checks if a user's profile attribute matches a specific value (e.g., `Country` is `USA`).
+* **Is in Segment Check:** Checks if the user is a member of a specific segment.
+* **Has Done Event Check:** Checks if the user has performed a certain event in the past.
+* **Opt-in Check:** Checks if the user has opted in to receive notifications on a specific channel.
 
-### User property check 
-Checks if the user property matches a specific value. You can validate the value using the operators `is`, `isn't`, `contains`, or `doesn't contain`.
+---
+### Flow control nodes
 
-<center><img src="https://i.imgur.com/FTZZu9W.png" width="60%"/></center>
-
-### Is in segment check 
-Checks if the user is in a specific segment.
-
-<center><img src="https://i.imgur.com/86MrZhE.png" width="60%"/></center>
-
-### Has done event check
-Checks if a specific event has occurred to the user. 
-
-<center><img src="https://i.imgur.com/qAT2pKH.png" width="60%"/></center>
-
-### Opt in check 
-Checks if the user has opted in for notifications of a specific channel.
-
-<center><img src="https://i.imgur.com/glD5AoC.png" width="60%"/></center>
-
-***
-
-## Flow control
-
-This section allows you to control the movement of the user within a flow. You can choose to wait for a specific duration before proceeding to the next point of the flow or end the flow if there are no further flows.
+Flow Control nodes manage the timing and progression of a user's journey.
 
 <center><img src="https://i.imgur.com/sHqUUZF.png" width="60%"/></center>
 
+* **Wait for this duration:** Pauses the user's journey for a relative amount of time (e.g., wait for 3 days).
+* **Wait until a specific timestamp:** Pauses the user's journey until a specific future date and time.
+* **End flow:** Marks the end of a specific path in the journey. This is optional.
 
-### Wait until a specific timestamp
+---
+### Message nodes
 
-This allows you to set a future timestamp (date and time) for which the user has to wait at a specific point in the flow before proceeding to the next action.
-
-1. Drag-and-drop **Wait until a timestamp** to the preferred step of the flow.
-
-<center><img src="https://i.imgur.com/5VWceBf.png" width="60%"/></center>
-
-2. Click on the calendar box and select your preferred date and time. To set the current date and time, click **Now**.
-3. Click **Ok** to save.
-
-### Wait for this duration
-
-This allows you to define a relative duration during which the user must wait at a specific point in the flow before proceeding to the next action. You can set the duration either in  days, hours, or minutes.
-
-1. Drag-and-drop **Wait until this duration** to the desired step of the flow.
-
-<center><img src="https://i.imgur.com/SLRRaCa.png" width="60%"/></center>
-
-2. Choose your preferred duration in **Days**, **Hours**, or **Minutes**. For example, setting 12 days, takes the next action configured in the flow after this duration. 
-
-
-### End flow
-
-Drag-and-drop **End flow** to the last step of your flow. However, this step is optional and signifies the completion of the flow.
-
-* Drag-and-drop **End flow** to the end of the flow.
-
-<center><img src="https://i.imgur.com/6wFfp5M.png" width="50%"/></center>
-
-***
-
-## Message (Conversations)
-
-This category lets you configure conversations across different channels. You can also configure different actions based on the message delivery status. For example, after sending a WhatsApp notification to announce a new product launch, you can nudge users who have read the notification by sending a discount coupon after 24 hours. Increase user engagement and ROI by sending out different messages when the user reads the message and clicks on the CTA used in the message template.
-
-### Prerequisites
-
-Before adding channels to a flow, ensure the following:
-
-1. The senderID/channel is configured.
-2. A template is available for that channel.
-
-
-### Channels configuration
-
-Use this to send a WhatsApp notification. You can set when to proceed to the next step of the flow using **Add wait up to** - Immediately, Duration, or Timestamp.
+Message nodes are used to send communications to users on various channels. Before adding channels to a flow, ensure the senderID is configured and templates for that channel are available.
 
 <center><img src="https://i.imgur.com/PruprxG.png" width="30%"/></center>
 
-* **Immediately**: Proceed to the next step of the flow immediately after sending the message. 
-* **Duration**: Proceed to the next step after a specific number of days, hours, or minutes from the message sent time. 
-* **Timestamp**: Proceed to the next step on a specific date and time.
-
-#### 1. WhatsApp channel configuration
-
+#### **1. WhatsApp channel configuration**
 1. In **From**, choose the sender's number.
-2. In **To**, choose the variable that contains the WhatsApp number of the user.
-
-<center><img src="https://i.imgur.com/a2DsA8x.png" width="50%"/></center>
-
-3. In **Templates**, you can select from the following options:
-
-   * **AI generated**: Choose this option to generate templates dynamically using advanced AI technology. You can configure all the necessary options, including *Include emoji, Include quick reply buttons*, and *Consider brand guidelines*.
-
-   
-   <center><img src="https://i.imgur.com/VWPy22v.png" width="50%"/></center>
-
-   * **Existing templates**: Select this option to choose from manually created templates and choose your preferred **Template**. You can also see the preview of each template using the eye icon. You need to Map template variables to properties.
-
+2. In **To**, choose the variable that contains the user's WhatsApp number.
+   <center><img src="https://i.imgur.com/a2DsA8x.png" width="50%"/></center>
+3. In **Templates**, select **Existing templates** and choose your template. Map any variables to user properties, event properties, or static text. Or, select **AI generated** to create templates dynamically.
    <center><img src="https://i.imgur.com/7zgzxbP.png" width="70%"/></center>
-
-   #### Map template variables to user or event properties
-
-   If there are variables in the template, you will see an option to map those variables to user or event properties. To map:
-
-   a. Click on the specific Map variable option you want to configure.
-
-   <img src="https://i.imgur.com/pWwPkw6.png"/>
-
-   b. To map a user property, select **User property** and choose the desired property from the dropdown.
-
-   <img src="https://i.imgur.com/AwgdgKB.png" width="50%"/>
-
-   c. To map an event property, select **Event property**, and enter the relevant event variable.
-
-   <img src="https://i.imgur.com/Pg1iZFA.png" width="50%"/>
-
-   d. To map a static text, select **Static text** and enter the text that you want to replace with for the variable.
-
-   <img src="https://i.imgur.com/QpwCHL0.png" width="50%"/>
-
-
-4. If your template includes media content, you can add it in the **Template media** section.
-
-   * In **Template media**, select *Dynamic* to send personalized media to each user, and choose the dynamic variable that contains the media file.
-
+4. In **Template media** (if applicable), choose **Static** to upload one file for all users, or **Dynamic** to use a variable containing a media URL for personalized content.
    <center><img src="https://i.imgur.com/GEh50DO.png" width="50%"/></center>
-
-   * Select *Static* to send a single media file for all users. Upload the static file using the **+Upload** option.
-
-    <center><img src="https://i.imgur.com/oAvPu7k.png" width="50%"/></center>
-
-
-5. In the **API reference**, choose the desired option.
-  <center> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/templates.png" width="50%"/> </center> 
-
-   * Select **Meta Cloud** to send campaigns exactly at the scheduled date and time, or 
-   * Select **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicable only for marketing templates)
-
+5. In **API preference**, choose how the message is delivered:
+   * **Default**: Uses the [org-level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud) configured for API preference.
+   * **Meta Cloud:** Sends the campaign exactly at the scheduled time.
+   * **MM Lite:** Allows Meta to optimize the delivery time based on user engagement potential (for marketing templates only).
+   <center> <img src="https://i.ibb.co/b5J0MT82/3.png" width="50%"/> </center>
    :::note
-      * This option is only available for customers who are onboarded to MM Lite and is supported only for MARKETING templates
-      * By default, it applies the configured [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level).
+   The MM Lite option is only available for eligible customers and is supported only for MARKETING templates.
    :::
+6. Enable **During workflow business hours** to send the message only during your configured business hours.
 
-6. Enable **During workflow business hours** to send the message only during business hours.
-
-#### 2. SMS channel configuration
-
+#### **2. SMS channel configuration**
 1. In **From**, choose the sender's number.
-2. In **To**, choose the variable that contains the mobile number of the user.
+2. In **To**, choose the variable that contains the user's mobile number.
+3. In **Templates**, choose the desired SMS template.
+4. Map any **Template variables** as needed.
+5. Enable **During workflow business hours** to send only during business hours.
 
-<center><img src="https://i.imgur.com/RdJwTtk.png" width="50%"/></center>
+#### **3. Email channel configuration**
+1. In **From**, choose the sender's email address.
+2. In **To**, choose the variable that contains the user's email address.
+3. In **CC** and **BCC**, add any additional recipient addresses.
+4. In **Templates**, choose your email template.
+5. Map any **Template variables** as needed.
+6. Enable **During workflow business hours** to send only during business hours.
 
-3. In **Templates**, choose the SMS template that you want to use.
-4. In **Template variables**, map each variable in the template with user properties, event properties, or static text. For more information, see [Map variables to user or event properties](#map-template-variables-to-user-or-event-properties-1).
-
-<center><img src="https://i.imgur.com/QvVZwi4.png" width="50%"/></center>
-
-5. Enable **During workflow business hours** to send the message only during business hours.
-
-#### 3. Email channel configuration
-
-1. In **From**, choose the sender's number.
-2. In **To**, choose the variable that contains the email address of the user.
-
-<center><img src="https://i.imgur.com/ykOxSYJ.png" width="50%"/></center>
-
-4. In **CC**, add the email addresses to which you want to send a copy of the email. Recipients in the CC field are visible to all the recipients of the email.
-5. In **BCC**, add other email addresses to which you want to send the email copy.  Recipients in the BCC field won't be visible to anyone else.
-6. In **Templates**, choose the email template that you want to use for sending the message.
-7. If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).
-7. Enable **During workflow business hours** to send the message only during business hours.
-
-<!--
-#### 4. GBM channel configuration
-
-1. In **Template**, choose the GBM template that you want to use for the notification. To know how to create a template, see [GBM template](/docs/platform_concepts/engagement/outbound/templates/gbm-template).
-
-  <center><img src="https://i.imgur.com/YXtLI03.png" width="50%"/></center>
-
-2.  If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).
-3. If your template includes media content, you can add it in the **Template media** section. [Know more about](#add-media-content-in-your-template---static-or-dynamic)
-
--->
-
-#### 4. Push notification channel configuration
-
-*  In **Template**, choose the push notification template that you want to use for the notification.
-
+#### **4. Push notification channel configuration**
+* In **Template**, choose the push notification template you want to use.
   <center><img src="https://i.imgur.com/HAv4z3J.png" width="50%"/></center>
 
-#### 6. Line channel configuration
-
-1. In **Template**, choose the Line template that you want to use for the notification. To know how to create a template, see [Line template](/docs/platform_concepts/engagement/outbound/templates/linetemplate).
-
-   <center><img src="https://i.imgur.com/cqSqHJ9.png" width="50%"/></center>
-
-2.  If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).
-
-3. If your template includes media content, you can add it in the **Template media** section. [Know more about](#add-media-content-in-your-template---static-or-dynamic)
-
-
-#### 5. Voice call channel configuration
-
+#### **5. Voice Call Channel Configuration**
 1. Check **Enable answering machine detection (AMD)** to automatically identify answering machines.
-2. In **AI-agent flow**, choose the welcome flow to be triggered (Automation) for the current channel.
-3. In **From**, choose the IVR number(s) through which the voice call is made. When multiple IVRs are added, calls are made from any of those numbers randomly.
+2. In **AI-agent flow**, choose the welcome flow to be triggered for the call.
+3. In **From**, choose the IVR number(s) to make the call from.
 4. In **To**, choose the variable that contains the user identifier.
 
-<center><img src="https://i.imgur.com/lBvitpz.png" width="50%"/></center>
+#### **Define flows based on delivery status**
+After sending a message, you can create different paths based on its delivery status. This allows for powerful follow-up actions.
 
+<center><img src="https://i.imgur.com/QNZQ4GA.png" width="50%"/></center>
 
-#### 6. RCS channel configuration
+* **Supported Statuses:** Include `Delivered`, `Read`, `Replied`, `Button clicked`, `Answered`, and more, depending on the channel.
+* **Wait Time:** For each status, you can proceed to the next step `Immediately`, after a `Duration`, or at a specific `Timestamp`.
+* **Use Case Example:** If a message `Status` is `Read`, but the user doesn't reply, you can wait for 24 hours and then send a follow-up reminder.
 
-:::note
-**Limitations**:
-- Currently only text and card templates are supported.
-- UI support for Template creation is coming soon, till then raise a ticket with support team to whitelist new templates.
-- Template approval will take 24hrs.
-:::
+---
+### Action nodes
 
-1. In **To**, choose the variable that contains the mobile number of the user.
-<center><img src="https://i.imgur.com/GSnNQPx.png" width="50%"/></center>
+Action nodes perform tasks that don't involve sending a message.
 
-2. In **Template**, choose the RCS template that you want to use for sending the message.
-3. If there are variables in the template, you will see an option to map those variables to user or event properties. In **Template variables**, associate each variable with a user or event property as explained here.
-4. Enable **During workflow business hours** to trigger messages only during business hours.
+* **API Call:** Make a request to any internal or external API during the flow.
+* **Update User Property:** Change the value of a property on the user's profile (e.g., set `subscription_status` to `active`).
+  :::note
+  You can only update custom user properties, not default system properties.
+  :::
 
+---
+### Add goal
 
-:::note
-For a detailed help doc on how to create an outbound campaign via Voice channel, see [this article](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/OBcampaign/setupOBC).
-:::
+Setting a goal defines the primary conversion event for your campaign. When a user achieves the goal, they are automatically exited from the flow.
 
-
-
-### Map template variables to user or event properties
-
-When using templates that contain variables, you can map those variables to user or event properties, or you can choose a static text replacement for a variable. This gives you control over how you customize your template content.
-
-To map template variables:
-
-1. Click on the specific Map variable option you want to configure.
-
-   <img src="https://i.imgur.com/pWwPkw6.png"/>
-
-2. To map a user property, select **User property** and choose the desired property from the dropdown. For URLs, you can just append the user property to the configured URL.
-
-   <img src="https://i.imgur.com/AwgdgKB.png" width="50%"/>
-
-3. To map an event property, select **Event property**, and enter the relevant event variable (key name). For URLs, you can just append the event property.
-
-   <img src="https://i.imgur.com/Pg1iZFA.png" width="50%"/>
-
-4. To map a static text, select **Static text** and enter the text that you want to replace with for the variable.
-
-   <img src="https://i.imgur.com/QpwCHL0.png" width="50%"/>
-
-### Add media content in your template - Static or Dynamic
-
-If your template includes media content, you can customize how this media is sent to users based on the template type. In the "Template Media" section:
-
-In the **Template media** section:
-
-* Select *Dynamic* to send personalized media to each user, and choose the dynamic variable that contains the media file.
-
-   <center><img src="https://i.imgur.com/GEh50DO.png" width="50%"/></center>
-
-* Select *Static* to send a single media file for all users. Upload the static file using the **+Upload** option or paste the URL of the media file.
-
-    <center><img src="https://i.imgur.com/oAvPu7k.png" width="50%"/></center>
-
-
-
-### Define flows based on delivery statuses
-
-This helps you to automate campaign triggers based on the delivery status of your messages to achieve more effective marketing outcomes. You can also have customizable wait times. If users don't take action within the specified period, trigger follow-up actions like reminders. This can maximize engagement and campaign effectiveness.
-
-<center>
-<img src="https://i.imgur.com/QNZQ4GA.png" width="50%"/></center>
-
-
-The following table provides the delivery statuses supported for different channels:
-
-<center>
-<img src="https://i.imgur.com/XW0qyTI.png" width="30%"/></center>
-
-Channel | Supported statuses
----------- | ---------------
-WhatsApp/Email/ Google Business Message | Delivered, Not delivered, Read, Replied, and Button clicked.
-Push notification | Delivered, Not delivered, Clicked, and Impression.
-SMS | Delivered, and Not delivered.
-Voice | Answered, Not answered, Busy, and Failed to connect.
-
-The following table provides the different wait time supported:
-
-<center>
- <img src="https://i.imgur.com/NBm6d4w.png" width="30%"/></center>
-
-Wait time | Description
---------- | -----------
-Immediately | Select this option to trigger the next action in the flow or launch a campaign instantly without any delay when a specific delivery status is identified. 
-Duration | Choose this option to set a custom time duration before triggering the next action or campaign. For example, you can wait for 1 hour, 1 day, or any other specified time frame to allow users to interact with the message before proceeding with the campaign.
-Timestamp | Choose this option to set a specific date and time for the next action or campaign to be triggered.
-
-
-#### Use cases:
-
-Below are some examples that illustrate how to effectively use the feature:
-
-* **Delivery Status: Delivered**:<br/>Use Case: After a promotional message is delivered, wait for 24 hours to see if the message is read by any of the recipients. If the user does not read the message during this time, send a reminder to prompt their attention and increase the chances of interaction.
-
-* **Delivery Status: Read**:<br/>
-   Use Case: After a message is read by a user, wait for 24 hours to see if the user interacts with the message using the call-to-action (CTA). If the user does not take any action, even after the 24-hour period, send an automatic reminder to re-engage them with the content and encourage them to respond to the CTA.
-
-* **Delivery Status: Replied**:<br/>
-   Use Case: After a user clicks on a button in the message, wait for 12 hours to see if they complete the desired action, such as signing up for an event or making a purchase. If the action is not completed, send a follow-up message with more information or a special discount to entice them to complete the action.
-
-* **Delivery Status: Button Clicked**: <br/>
-   Use Case: If a user clicks on a survey link but does not complete the survey, wait for 48 hours to see if they return to complete it. If no response is received, send a gentle reminder with a shortened survey or an incentive to increase survey completion rates.
-
-
-
-
-*** 
-
-## Action
-
-This section helps you configure other actions in the campaign's flow, such as adding users to segments and making API calls.
-
-### API call
-
-Use this to call any internal or external API in between flows. For more information about APIs, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
-
-### Update user property
-
-During Flow campaign interactions, you can update user properties. This includes user details such as subscription status, preferences, or gather other relevant information. This enables you to create highly personalized experiences for each user, enhancing user engagement and enriching your user data for better insights and decision-making.
-
-:::note
-
-You can only update custom user properties and the tags property. However, modifying standard user properties, which are available by default, is restricted to avoid any unintended changes that might impact the user experience in a Flow campaign. 
-:::
-
-To update a user property in a flow campaign:
-
-1. In **Action**, select **Update user property** and drag it to the desired position in the flow.
-
-  <center> <img src="https://i.imgur.com/FUujXCR.png" width="70%"/></center>
-
-2. In **Property name**, choose the custom property that you want to update.
-3. In **New value**, enter a new value that you want to assign to the selected property.
-4. For a **Date** property, you will see two options:
-
-   * Select **Real-time value** to set the date when the user reaches the step in the Flow campaign.
-   * Select **Custom** to set a static date of your preference.
- 
- <center><img src="https://i.imgur.com/YxsLQAe.png" width="60%"/></center>
-
-***
-
-## Add goal
-
-A goal is an activity that a user performs after receiving the campaign message. You can also set the objective of a flow campaign. Once a user achieves a goal, the flow automatically exits the user from the campaign.
-
-For example:
-Product promotion: 
-
-1. **E-commerce Campaign:**
-   - **Description:** Promote new products via messaging.
-   - **Goal:** Track clicks on product links.
-
-2. **Event Registration Campaign:**
-   - **Description:** Encourage event sign-ups.
-   - **Goal:** Track clicks on "Register Now" button.
-
-To add a goal:
-
-1. In the campaign flow builder, click **Add new goal to flow**.
-
-   <center><img src="https://i.imgur.com/jp1Clr2.png" width="40%"/></center>
-
-2. In **Name**, enter a name for the goal.
-3. In **Event**, choose the event that you want to associate with the goal. See [how to add events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-event).
-4. In **Goal validity**, set the validity of the goal using any of the following:
-
-   i. Choose *Duration* to set the validity of the goal in Hours, Days or Weeks and enter your preferred value in the respective text box.
-   
-   ii. Choose a *Timestamp* to end the validity on a specific date and time. Select your preferred date and time using the calendar box.
-
+* **Goal Event:** Choose a user event that signifies success (e.g., `purchase_completed`).
+* **Goal Validity:** Set a time limit for the user to achieve the goal after entering the campaign. This can be a relative **Duration** (e.g., 7 days) or a fixed **Timestamp**.

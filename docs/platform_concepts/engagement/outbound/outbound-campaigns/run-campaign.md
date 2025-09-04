@@ -65,7 +65,7 @@ You will see template configuration slide screen where you need to configure det
    * For Microsoft Teams, choose the variable containing **Users contact details**, sender ID, and map the user variables used in the template same as [WhatsApp or Viber template](#34-viber-campaign).  
 
 :::note
-* You can select Recipient and other contact details from the user data stored in the **User 360 **module.
+* You can select Recipient and other contact details from the user data stored in the **User 360** module.
 * To update your audience list, save your campaign as a draft and go to the **User 360** module. you can return and finish it anytime.
 :::
 
@@ -73,6 +73,7 @@ You will see template configuration slide screen where you need to configure det
   
 
 6. In the **API reference**, select your preferred delivery method. This setting applies only to WhatsApp campaigns.
+   * Choose **Default** to apply the organization level setting configured in [WhatsApp API preference](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings).
    * Choose **Meta Cloud** to send campaigns exactly at the scheduled date and time, or 
    * Choose **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicable only for WhatsApp marketing campaigns)
    
@@ -176,31 +177,36 @@ This section guides you on how to configure template for each channel -
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the WhatsApp number (mobile number) of the user.
 
-   <img src="https://i.imgur.com/94QMG8p.png" width="350"/>
+   <center><img src="https://i.ibb.co/V0hcZLTc/image.png" width="40%"/></center>
 
 2. In **Sender ID**, choose the WhatsApp business number from which you want to send the campaign.
    
    <img src="https://i.imgur.com/sNtatZX.png"/>
 
-3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link.
+3. In API preference, choose your preferred delivery method for sending WhatsApp messages.
+   * **Default**: Uses your organization-level WhatsApp API preference and applies it automatically based on the selected template category.
+   * **MM Lite**: Uses Meta’s smart delivery to optimize message timing, helping you reach customers when they are most likely to engage.
+   * **Meta Cloud**: Sends messages through the standard Meta Cloud API without delivery-time optimization.
+   <center><img src="https://i.ibb.co/pvqss4Hx/4.png" width="40%"/></center>
+4. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link.
 
 4. To monitor URL clicks, select **URL click tracking** for variables that contain URLs.
 
-   <img src="https://i.imgur.com/QkqZcQr.png" class="center" width="60%"/>
+   <center><img src="https://i.imgur.com/QkqZcQr.png" class="center" width="60%"/></center>
 
 5. Use **Media** to configure personalized media for the campaign.
    *  **Static** media: Select to send a common media file to all the recipients. Use **Browse** to upload the media file.
-   *  **Dynamic** media: Select this option to send personalized media to each user. Map the column from the database where you have included these details. For instance, you can send WhatsApp campaigns with personalized video media to your customers.<br/> <br/>To insert a property dynamic URL:<br/>a. [Create a user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) with the data type set as URL.<br/><img src="https://i.imgur.com/l1CSdNF.png" width="60%"/><br/>b. [Store the image URL for each user to that user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).<br/>c. Associate the media with this user property when scheduling the campaign.<img src="https://i.imgur.com/umvqXL4.png" width="50%"/>
+   *  **Dynamic** media: Select this option to send personalized media to each user. Map the column from the database where you have included these details. For instance, you can send WhatsApp campaigns with personalized video media to your customers.<br/> <br/>To insert a property dynamic URL:<br/>a. [Create a user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) with the data type set as URL.<br/><center><img src="https://i.imgur.com/l1CSdNF.png" width="60%"/></center><br/>b. [Store the image URL for each user to that user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).<br/>c. Associate the media with this user property when scheduling the campaign.<center><img src="https://i.imgur.com/umvqXL4.png" width="50%"/></center>
 
 ### 3.4 Viber campaign 
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's WhatsApp number (mobile number).
 
-   <img src="https://i.imgur.com/94QMG8p.png" width="350"/>
+   <center><img src="https://i.ibb.co/JFKy4x31/image.png" width="350"/></center>
 
 2. In **Sender ID**, choose the WhatsApp business number from which you want to send the campaign.
    
-   <img src="https://i.imgur.com/sNtatZX.png"/>
+   <center><img src="https://i.imgur.com/sNtatZX.png"/></center>
 
 3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link.
 

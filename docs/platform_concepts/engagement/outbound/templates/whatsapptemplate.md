@@ -47,7 +47,7 @@ To create a WhatsApp template and send for approval, follow these steps:
 
    :::note
    Automatic category updates may apply to approved templates that were not initially reviewed according to Meta’s template category guidelines. Affected businesses are notified in advance through various channels, such as webhooks or email.
-   * **Recent Policy Update **(Effective April 16, 2025)<br/>If a template is approved as Utility but is determined to be Marketing:
+   * **Recent Policy Update** (Effective April 16, 2025)<br/>If a template is approved as Utility but is determined to be Marketing:
       * **Before April 16**: You’ll receive a 1-day advance notice before the category change.
       * **After April 16**:
          * No prior notice will be given.
