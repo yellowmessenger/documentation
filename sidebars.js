@@ -268,19 +268,21 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/getting-started'},
       collapsed: true,
       items: [
-        {
-          type: "category",
-          label: "Signup & Onboarding",
-          collapsed: true,
-          items: [
-            "platform_concepts/get_started/account-setup",
-            "platform_concepts/get_started/login",
-           // "platform_concepts/Getting Started/yellowg",
-            "platform_concepts/get_started/platform-offerings",
-           // "platform_concepts/get_started/keyboard-shortcuts",
+        "platform_concepts/get_started/login",
+        // {
+        //   type: "category",
+        //   label: "Signup & Onboarding",
+        //   link: {type: 'doc', id: 'platform_concepts/get_started/login'},
+        //   collapsed: true,
+        //   items: [
+        //     //"platform_concepts/get_started/account-setup",
+        //     //"platform_concepts/get_started/login",
+        //    // "platform_concepts/Getting Started/yellowg",
+        //     //"platform_concepts/get_started/platform-offerings",
+        //    // "platform_concepts/get_started/keyboard-shortcuts",
 
-          ],
-        },
+        //   ],
+        // },
             "platform_concepts/get_started/createfirstbot",
 
   /*      {
@@ -294,18 +296,7 @@ module.exports = {
           ]
         },
 */
-      {
-        type: "category",
-        label: "User & account management",
-        link: {type: 'doc', id: 'platform_concepts/get_started/add-bot-collaborators'},
-        collapsed: true,
-        items: [
-          "platform_concepts/get_started/user-account-settings", 
-          "platform_concepts/get_started/upgrade",  
-          // "platform_concepts/get_started/acl",
-        ],
-      },
-
+     
 
 
       
@@ -338,7 +329,7 @@ module.exports = {
       items: [
         {
           type: "category",
-          label: "Prompt-based AI agents",
+          label: "Build your AI agent",
               link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent-architecture'},
           collapsed: true,
           items: [
@@ -349,19 +340,10 @@ module.exports = {
               link: {type: 'doc', id: 'platform_concepts/AIAgent/agent'},
               collapsed: true,
               items: [
-                {
-                  type: "category",
-                  label: "Configure AI agent conversations",
-                  link: {type: 'doc', id: 'platform_concepts/AIAgent/conversations'},
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/AIAgent/get-input",
-                    "platform_concepts/AIAgent/call-workflow",
-                    "platform_concepts/AIAgent/call-fallback",
-                    "platform_concepts/AIAgent/aigent-variables",
-    
-                  ],
-                },
+                "platform_concepts/AIAgent/get-input",
+                "platform_concepts/AIAgent/call-workflow",
+                "platform_concepts/AIAgent/call-fallback",
+                "platform_concepts/AIAgent/aigent-variables",
 
               ],
             },            
@@ -637,7 +619,21 @@ module.exports = {
             },
 
               ],
-            },         
+            }, 
+            
+            
+            {
+              type: "category",
+              label: "User & account management",
+              link: {type: 'doc', id: 'platform_concepts/get_started/add-bot-collaborators'},
+              collapsed: true,
+              items: [
+                "platform_concepts/get_started/user-account-settings", 
+                "platform_concepts/get_started/upgrade",  
+                // "platform_concepts/get_started/acl",
+              ],
+            },
+      
 
  
 // Knowledge (KB studio + KB inbox)

@@ -196,7 +196,7 @@ You need to create a backend workflow that accepts location inputs, calls a weat
 
      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/callworkflow.png)
 
-2. Use a Variable node at the start of the workflow to define the input parameters needed for the API. For this use case, define: **latitude** and** longitude**.
+2. Use a Variable node at the start of the workflow to define the input parameters needed for the API. For this use case, define: **latitude** and **longitude**.
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/variableskill.png)
 
@@ -239,6 +239,8 @@ Once the workflow is defined, connect it to your conversation using the **Call w
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/loading.png)
 
 4. Click **Save** to complete the configuration.
+
+* To download the API logs, click [here](https://docs.yellow.ai/docs/cookbooks/studio/downloadapilogs).
     
 Refer to the following GIF to see the complete process of fetching weather updates using an API via a workflow:
 

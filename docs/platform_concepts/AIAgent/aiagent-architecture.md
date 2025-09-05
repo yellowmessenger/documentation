@@ -183,10 +183,7 @@ Here’s how the KB Agent works within the overall agentic system:
    The KB Agent searches through connected sources (such as help articles, FAQs, or manuals), extracts the most relevant content, and delivers a well-structured, summarized response.
 
 3. **Dynamic rerouting (if needed)**
-   If the user transitions from an informational query to an actionable one (example, "Okay, cancel my booking"), the Super a    gent reroutes the conversation to the appropriate functional agent. --> -->
-
-
-## AI Agent overview
+   If the user transitions from an informational query to an actionable one (example, "Okay, cancel my booking"), the Super a    gent reroutes the conversation to the appropriate functional agent. -->
 
 AI Agent builder is a no-code platform that simplifies the creation and deployment of intelligent AI agents. This platform simplifies the development process, by writing the prompts without extensive coding or technical expertise.
 
@@ -201,8 +198,7 @@ With the AI Agent builder, it eliminates the need for complex setup:
 
 * **Simple setup**: – Define your goal and select the tools or integrations you need.
 * **Faster setup** – Build AI agents in minutes without writing scripts or creating complex flows.
-* **Dynamic handling** – The agent can manage complex use cases and workflows without pre-configuration.
-
+* **Dynamic handling** – The agent dynamically manages responses and actions based on the use case.
 
 AI Agents help businesses complete tasks, answer questions, and automate processes by using:
 
@@ -280,7 +276,7 @@ Knowledge Base Agents are designed to handle information-based queries by levera
 ## How AI agent component works together
 
 
-<center><img src="https://cdn.yellowmessenger.com/assets/yellow-docs/Components-flowchart.png" alt="drawing" width="40%"/></center>
+<center><img src="https://cdn.yellowmessenger.com/assets/yellow-docs/Ai-Agent-Interactive-Flowchart.png" alt="drawing" width="90%"/></center>
    
    
 
@@ -323,24 +319,30 @@ Here is how the Super Agent, Agent, and Knowledge Base Agent would collaborate t
     * The "Refund Policy" intent is sent to the Knowledge Base agent.
     * The KB Agent accesses the knowledge base, performs a search for the refund policy, and retrieves the relevant information.
 
-4. **Super Agent – Combining responses**
+4. **Response to the User**
 
-   * The Super Agent gathers the outputs from both components.
-   * Once both the Agent and the KB Agent have completed their respective tasks, their responses are combined and delivered back to the user in a single, smooth conversation. The user receives confirmation:
-   > "Your flight has been successfully cancelled. According to our refund policy, you will receive the refund within 5–7 business days."
+   The Super Agent decides at the beginning which component will handle each part of the request..
+
+   * **User**: "I want to cancel my booking."
+       Super agent will route specific agent for cancellation.
+     > **Response**: Your flight has been successfully cancelled.
+   
+   * **User**: "According to the refund policy, when will I receive the refund?"
+    Super agent routes this to the Knowledge Base agent to fetch and display the data to the user.
+     > **Response**: According to our refund policy, you will receive the refund within 5–7 business days."
 
 ----
 
 ### Configuration AI agent
 
-  ![](https://cdn.yellowmessenger.com/assets/yellow-docs/ai-agent-configuration.png)
+  ![](https://cdn.yellowmessenger.com/assets/yellow-docs/configuration-process.png)
  
 To set up your AI agent, follow these steps:
 
-**#### Step 1: Define the Super agent**
+#### **Step 1: Define the Super agent**
 
 i. [Set up the agent persona](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona#update-profile-settings)
-* Define the set of tasks the Super Agent should handle and route. Example, booking, cancellation, support.
+* Define the role and scope of the Super Agent (for example, booking, cancellation, support).
 * Choose the tone and style of communication (example, formal, friendly, witty).
 
 ii. [Integrate a Large Language Model](https://docs.yellow.ai/docs/platform_concepts/studio/LLM-central-configuration) (LLM)
@@ -354,34 +356,42 @@ iii. [Set Welcome and Fallback messages](https://docs.yellow.ai/docs/platform_co
 iv.[ Define custom rules](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona#add-rules-to-follow-during-conversation)
 * Implement custom rules to enforce business logic. For example, require users to provide mandatory information, such as their email address or phone number, before proceeding with a transaction.
 
-**#### Step 2: Create individual agents**
+#### **Step 2: Create individual agents**
 
 [Set up dedicated agents for each use case](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent#create-an-agent). For example, create separate agents for booking a flight, canceling a ticket, or checking refund status.  This allows each agent to focus on a specific area of expertise.
   
-**#### Step 3: Add Start trigger**
+
+#### **Step 3: Add Start trigger**
 
 The [Start trigger](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#start-trigger) initiates the conversation between the AI Agent and the user.
 **Examples:**
 * A greeting like “Hi” or “Hello.”
 * A specific keyword like “Book flight.”
 
-**#### Step 4: Add Prompts**
+#### **Step 4: Add Prompts**
 
 Prompts are the messages your AI Agent sends to the user. You can make them static (simple messages) or dynamic (interactive messages with actions).
 
-**#### Add Actions in Prompts**
+#### **Add Actions in Prompts**
 
 While adding or editing a prompt, you can attach actions so the bot can collect inputs, trigger workflows, or store data.<br/>
-i. **[Fetch user details](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)**: Use prompts to trigger backend processes or workflows. For example, after the user enters their travel date and destination, the AI Agent can trigger a workflow to check flight availability.<br/>
-ii. **[Trigger Workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#call-a-workflow-in-prompt)**: Use this when you want the AIagent to run backend processes. Example: Calling an API to check flight availability after the user enters the date and destination.<br/>
+i. **[Fetch user details](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)**: Use prompts to gather required information directly from the user, such as travel date, destination, or booking ID. This ensures the AI Agent has the necessary data to proceed with the next step.<br/>
+ii. **[Trigger Workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#call-a-workflow-in-prompt)**: Use this when you want the AI Agent to initiate backend processes after collecting inputs. For example, once the user provides a travel date and destination, the agent can trigger a workflow or API call to check flight availability.<br/>
 iii. **[Variables](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations#variables)**: Store user inputs, such as travel dates, names, or booking IDs, as variables. These variables can be used to pass data between agents, workflows, and other components of the system.
 
-**#### Step 5: Connect the flow**
+#### **Step 5: Preview agent**
 
-Link your prompts together in a logical order. Example: Greeting **→** Ask for travel date **→** Ask for destination **→** Trigger workflow to search **→** Show results.
+You can [preview your AI Agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation#preview-via-agent-builder) to test and experience how it interacts with users in real time. The preview simulates live conversations, allowing you to:
+* Validate if prompts, workflows, and conversation rules are functioning as intended.
+* Observe how the conversation flows from one step to another.
+* Identify and fix issues before publishing the agent.
 
-**#### Step 6: Preview and test using Copilot**
+#### **Step 6: Test your agent with Copilot**
 
-Before deploying the AI Agent, thoroughly test it to ensure it functions correctly and meets user expectations. Use the [Preview or Copilot](https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation) to test the AI Agent. These tools allow you to simulate user interactions and identify any issues or areas for improvement.
+Before deployment, validate your AI Agent to ensure it behaves as intended and provides a consistent user experience. [Copilot](https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation) allows you to simulate real user interactions, helping you:
+* Test diverse scenarios and input variations.
+* Identify issues, errors, or gaps in the conversation flow.
+
+
 
 
