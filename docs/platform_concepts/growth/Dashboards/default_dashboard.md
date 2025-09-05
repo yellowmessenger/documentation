@@ -9,6 +9,10 @@ In Insights > Dashboard, you can see the default dashboards created by yellow.ai
 To view the Dashboards page, on the left navigation bar, click  **Insights** > **Dashboards**. 
 
 
+:::note
+Report data is displayed according to the AI agent’s configured timezone.
+:::
+
 **Date filter for default dashboard**:
 
 You can filter default dashboard data by date range.
@@ -62,7 +66,10 @@ You can filter Inbox Agent Performance Data with two filters: date and ticket pr
 * **Date filter**: This allows you to focus your analysis based on specific date ranges 
 * **Ticket priority filter**: This allows you to customize the dashboard based on ticket priority according to urgency or importance. 
 
+:::note
 
+- Date and time mentioned in Inbox reports follow the timezone configured for your AI agent (bot).
+:::
 
 ---------
 

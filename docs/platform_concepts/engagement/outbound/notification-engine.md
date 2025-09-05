@@ -299,11 +299,12 @@ To explicitly choose MM Lite for message delivery, set the `apiPreference` to `"
 ```
 
 > ⚠️ Note:
-> MM Lite is only available for onboarded customers and is currently supported only for **Meta-approved MARKETING templates**.
+> * MM Lite is only available for onboarded customers and is currently supported only for **Meta-approved MARKETING templates**.
+> * By default, `apiPreference` considers your organization-level setting set in [WhatsApp API preference](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud)
 
 :::note
 Automatic category updates may apply to approved templates that were not initially reviewed according to Meta’s template category guidelines. Affected businesses are notified in advance through various channels, such as webhooks or email.
-  * **Recent Policy Update **(Effective April 16, 2025)<br/>If a template is approved as Utility but is determined to be Marketing:
+  * **Recent Policy Update** (Effective April 16, 2025)<br/>If a template is approved as Utility but is determined to be Marketing:
     * **Before April 16**: You’ll receive a 1-day advance notice before the category change.
     * **After April 16**:
        * No prior notice will be given.

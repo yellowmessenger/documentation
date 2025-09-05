@@ -109,7 +109,7 @@ No change in how you build your campaigns — just choose the API reference whil
 
 #### How it works
 
-* **Default**: Follows your [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level)
+* **Default**: Follows your [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud)
 * **Customizable**: You can override this setting when configuring individual WhatsApp campaigns (Outbound, Flows, or Notification APIs).
 
 
@@ -119,23 +119,28 @@ No change in how you build your campaigns — just choose the API reference whil
 * Works with **Meta-approved MARKETING templates**
 
 
-#### How to enable
+#### How to enable MM lite
 
 If your account is managed by Yellow\.ai:
 
 * Your CSM will contact you
 * Or, reach out to your CSM to request access
 
-**For more details, refer to **
+**For more details, refer to**
 * [**Org level setting**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level)
 * [**Outbound campaigns documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)
 * [**Flow campaign documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
 * [**Notification API documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
 * [**Notification API reports**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#4-reports)
    
-:::info
-* This feature is currently in beta and will be available in production soon.
-:::
+
+### How to choose MM Lite for each WhatsApp campaign:
+
+* [Flow campaign](http://localhost:3001/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
+* [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#33-whatsapp-campaign)
+* [Notification API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
+
+
 
 ### Deprecated Engage Overview Page
 The Engage Overview page has been deprecated as part of our ongoing efforts to streamline the platform. 
