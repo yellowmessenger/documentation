@@ -3,7 +3,7 @@ title: Monitor chat, email trends and teams
 sidebar_label : Monitor inbox
 ---
 
-In the Monitor section you can effectively track the productivity of your entire support team. This section consists of three tabs that allow you to monitor progress in different areas:
+In the Monitor section you can track the productivity of your entire support team. This section consists of three tabs that allow you to monitor progress in different areas:
 1. [Chat trends](#1-monitor-live-chat-activities): Provides insights into live chats and their trends.
 2. [Email trends](#2-monitor-email-ticket-activities): Offers analysis and trends related to email tickets.
 3. [Team](#3-monitor-team-activities): Allows you to monitor and evaluate the performance of your support team.
@@ -11,9 +11,11 @@ In the Monitor section you can effectively track the productivity of your entire
 ![](https://cdn.yellowmessenger.com/assets/yellow-docs/monitormainscreen.png)
 
 :::note
-- All the values displayed in the Monitor section are **updated automatically** after every 60 seconds. To view real-time values, refresh your browser.
-- Live chats and email tickets in the Inbox are retained for a maximum of **6 months**. After this period, they will be archived. While the data will no longer be accessible on the platform (active store), it will still be available on the servers (cold store) until the contract's validity expires.
+- All values displayed in the Monitor section are **updated automatically** every 60 seconds. To view real-time values, refresh your browser.  
+- Live chats and email tickets in the Inbox are retained for a maximum of **6 months**. After this period, they are archived. While the data will no longer be accessible on the platform (active store), it will remain available on the servers (cold store) until the contract expires.  
+- All values shown in Inbox reports are based on the **AI agent’s configured timezone**.  
 :::
+
 
 :::info
 

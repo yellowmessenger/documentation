@@ -8,6 +8,13 @@ In Insights > Dashboard, you can see the default dashboards created by yellow.ai
 
 To view the Dashboards page, on the left navigation bar, click  **Insights** > **Dashboards**. 
 
+:::note
+
+:::note
+Report data is displayed according to the AI agent’s configured timezone.
+:::
+
+:::
 
 **Date filter for default dashboard**:
 
