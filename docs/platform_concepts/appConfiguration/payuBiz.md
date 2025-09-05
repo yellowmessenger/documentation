@@ -25,10 +25,6 @@ To connect your PayU account with yellow.ai, follow these steps:
 - For comprehensive guide to [PayU Dashboard, see here](https://docs.payu.in/docs/generate-merchant-key-and-salt-on-payu-dashboard)
 :::
 
-
-
-
-
 ### 1.2 Connect PayU Business to yellow.ai 
 
 In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.

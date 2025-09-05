@@ -176,7 +176,7 @@ Admins can invite users to access the bots under a particular subscription plan.
 
 ***
 
-## View exported templates 
+<!-- ## View exported templates 
 
 Suppose you have utilized a pre-built bot template from the Marketplace to create your bot according to your specific use case. If you wish to publish the bot and retain a copy of this template, you can easily download it and view all the relevant details in this section.
 
@@ -188,7 +188,7 @@ Suppose you have utilized a pre-built bot template from the Marketplace to creat
 
 :::note
 Other team members who are not part of this organization won't have access to these downloaded templates. This ensures the security and privacy of your organization's bot templates.
-:::
+::: -->
 
 ---
 

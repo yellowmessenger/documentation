@@ -11,30 +11,41 @@ import ArticleCardGrid from '@site/src/components/ArticleCardGrid';
 ---
 
 
+## Getting started 
 
-## Overview
+[Yellow.ai](https://cloud.yellow.ai/) is a leading enterprise platform for AI-driven customer service automation. It enables organizations to deliver human-like, autonomous conversations across channels like chat, voice, email, and messaging.
 
-The [Yellow.ai Agentic Platform](https://cloud.yellow.ai) enables organizations to build, deploy, and manage AI-powered conversational agents at scale. Designed for flexibility and performance, the platform supports a wide range of use cases across industries such as healthcare, retail, finance, and telecommunications.
+**At a very high level, Yellow.ai helps businesses:**
 
-This page provides an overview of the platform architecture and its components. Each section explains how the platform's capabilities can be configured to meet enterprise requirements—including automation, integrations, knowledge access, and user experience—while ensuring security and scalability.
-
-
-### How are AI-agents different from Bots?  
-
-| Feature                            | AI Agents                                                                                   | Bots                                                                           |
-| ---------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Operational Basis**              | Powered by large language models (LLMs); flexible, not restricted to predefined paths       | Structured, rule-based flows; limited to pre-configured frameworks             |
-| **Response Generation**            | Dynamically generates responses based on context, without relying on pre-configured replies | Generates responses based on specific keywords or predefined utterances        |
-| **Workflow Automation**            | Can automate tasks dynamically, even when workflows are not explicitly configured           | Executes tasks only within predefined workflows                                |
-| **Handling of Unexpected Queries** | Handles complex or unexpected queries by dynamically interpreting and responding            | Limited ability, often requiring escalation for unrecognized inputs            |
-| **Adaptability and Flexibility**   | Highly adaptable, adjusts responses and actions based on real-time inputs                   | Limited; follows set paths, may struggle with deviations from the flow         |
-| **User Experience**                | Provides seamless experience with real-time insights and decision-making                    | May lead to repetitive responses or fallback when encountering unknown queries |
-| **Escalation Need**                | Rarely required, as AI agents handle a wide range of scenarios autonomously                 | Frequent for complex queries outside of defined responses                      |
+* Automate customer and employee interactions with AI agents for support, sales, onboarding, and workflow execution
+* Provide omnichannel support across chat, voice, email, and messaging
+* Offer seamless integrations with business tools like Zendesk, Salesforce, Genesys, Workday, SAP, and more
+* Drive efficiency and cost savings through automation and smarter workflows
+* Deliver personalized, context-aware experiences with agentic AI that learns and adapts over time
+* Scale globally with multilingual and multi-region capabilities
+* Ensure enterprise-grade security and compliance (GDPR, SOC 2, HIPAA-ready)
+* Empower teams with AI-driven analytics and insights to measure performance and improve decision-making
+* Improve agent productivity with AI copilots, smart routing, and suggested responses
 
 
-Use this guide to understand how to effectively utilize the Yellow.ai Agentic Platform to support your business workflows and customer engagement strategies.
+### Challenges in Customer Support
 
+#### Challenge with Traditional support
 
+A single poor support experience can be costly—96% of customers report leaving a brand because of it. Traditional models often create these negative experiences due to three persistent challenges:
+* **Long wait times**: Customers expect instant answers, but human teams have schedules. This leads to frustrating delays and missed opportunities, especially outside of business hours.
+* **Inconsistent answers**: The quality of support can vary from one user to another, resulting in unreliable information and a fragmented customer experience.
+* **High operational costs**: Scaling a human support team is expensive. As your business grows, hiring and training more agents leads to rapidly increasing costs that can limit your growth.
+
+#### Yellow.ai solution: AI-Powered & Scalable
+
+Our AI agents are designed to solve these exact challenges, creating a support experience that is instant, consistent, and infinitely scalable.
+
+* **24/7 Instant resolutions**: AI agents work around the clock, eliminating wait times by providing immediate answers to the majority of queries, day or night.
+* **Consistent & Accurate responses**: Powered by your own knowledge base, our agents deliver a single source of truth. Every answer is accurate, on-brand, and reliable for every customer.
+* **Efficient Scaling**: By automating routine inquiries, AI agents handle most of your support volume. This allows you to scale your operations and grow your business without the linear increase in headcount and operational costs.
+
+---
 
 ## Platform Architecture
 
@@ -42,162 +53,126 @@ Use this guide to understand how to effectively utilize the Yellow.ai Agentic Pl
 The Yellow.ai Agentic Platform is a modular and scalable solution built to support complex enterprise requirements. It enables the creation and management of intelligent, context-aware AI agents that integrate seamlessly with enterprise ecosystems, ensuring high performance across industries such as healthcare, retail, banking, and telecommunications.
 
    ![platform_architecture](https://cdn.yellowmessenger.com/assets/yellow-docs/yellow.png)
-
+   
+   
 ### The Three Pillars of Yellow.ai: Automate, Assist, Analyze
 
-At Yellow.ai, everything is built around a simple, powerful idea: helping you improve every customer interaction, one step at a time. That’s where our three core pillars — **Automate**, **Assist**, and **Analyze** — come in. Together, they form a continuous improvement cycle that helps your AI system get smarter with every conversation.
+At Yellow.ai, our platform is built on a simple yet powerful architecture: a continuous improvement cycle designed to make your AI agents smarter with every customer interaction. This is achieved through three core pillars— **Automate**, **Assist**, and **Analyze**. They work together as a flywheel, where data from one pillar powers the intelligence of the others, ensuring your automation grows more effective over time.
 
-Whether you're building workflows, supporting your agents, or tracking performance, these pillars are designed to grow with your business needs.
-
-
-
-
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agent-engine.png)
-
-
+Whether your goal is to build powerful workflows, strengthen your support teams, or analyze performance, these pillars work together to provide a seamless, end-to-end conversational AI solution.
 
 #### 1. **Automate**
-Free up your team’s time by letting the system take care of the repetitive stuff. From customer support to internal operations, Automate helps you deploy intelligent AI agents, handle tasks across channels, and reduce manual effort.
 
-Here’s what you’ll use under Automate:
+The Automate pillar is where you build, test, and deploy your Dynamic AI Agents. It provides a prompt-based environment to design engaging conversations and a powerful knowledge framework to ensure your agents deliver accurate, context-aware answers across all channels.
 
-* **AI Agent Builder** – Design engaging, dynamic conversations without writing code. [Learn more](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent_intro)
-* **Agentic RAG** – Let our agent pull from documents, knowledge bases, and more to give smart, accurate answers.
-* **AI Copilot for Debugging** – Spot issues in your bot flows and get smart suggestions to fix them. [Learn more](https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot)
-* **Agent Marketplace** – Pick from ready-to-use templates so you can launch faster.
+**Here is what you will use under Automate:**
 
+* **[AI Agent Builder](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent_intro)**: Design sophisticated, multi-turn conversations and workflows using a visual, drag-and-drop interface. [Learn more](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent_intro)
+* **[Knowledge Base](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)**: Ingest your documents, websites, and internal knowledge sources, allowing our Agentic RAG to provide precise answers from your own data.
+* **[AI Co-pilot](https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot) & [Automated testing](https://docs.yellow.ai/docs/platform_concepts/AIAgent/automated-agent-testing)**: Debug your AI agents in real-time with smart suggestions, and run automated test suites to ensure accuracy and performance before going live.
 
 
 #### 2. **Assist**
-When things get complex, your team steps in—and we make sure they’re equipped. Assist gives your agents the right tools, insights, and AI support to resolve issues faster and better.
 
-Here’s what supports you in Assist:
+When conversations require human expertise, the Assist pillar equips your support team with AI-powered tools to resolve issues more quickly and effectively. The goal is to create a seamless collaboration between your AI agents and human experts.
 
-   * **Agent Assist** – AI suggests the best responses while your agents chat with users. [Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentassistbot)
-   * **Human Helpdesk Escalation** – Pass chats to agents with full context, without starting over. [Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox)
-   * **User 360** – See everything you need to know about your customer in one place. [Learn more](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview)
+**Here is what supports you in Assist:**
 
-
+* **[Agent Assist](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentassistbot)**: Empower your human agents with AI-suggested responses, summaries, and actions while they chat with users in real-time.
+* **[User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview)**: Provide agents with a complete view of the customer's history and context, delivered seamlessly from the AI agent.
+* **[Human Helpdesk Escalation](https://docs.yellow.ai/docs/platform_concepts/inbox)**: Transfer chats from AI to human agents with full conversational history, ensuring a smooth and context-aware handoff.
 
 #### 3. **Analyze**
-   You can’t improve what you don’t measure. Analyze helps you make sense of your data, find patterns, and spot opportunities to do more—whether that’s improving automation, fine-tuning responses, or helping your team perform better.
 
-Here’s how you gain visibility with Analyze:
+You can't improve what you don't measure. The Analyze pillar is a powerful analytics suite that provides deep insights into every conversation. It helps you understand performance, identify patterns, and spot opportunities for improvement.
 
-* **Quantitative Analytics** – Track numbers like resolution time, CSAT, automation rates, and more. [Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/intro)
-* **Qualitative Insights** – Understand what’s working—and what’s not—based on real user conversations. [Go deeper with Analyze](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro)
-* **Self-Learning KB/Flows** – Your AI gets smarter over time by learning from missed queries. [Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion)
-* **Custom Dashboards** – Build dashboards to focus on what matters most to your team. [Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/custom_dashboards)
+**Here’s how you gain visibility with Analyze:**
+
+* **[Quantitative Analytics](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/intro)**: Track key metrics like resolution time, customer satisfaction (CSAT), automation rates, and goal completion in real-time.
+* **[Qualitative Insights](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro)**: Go beyond numbers to understand why conversations succeed or fail, based on actual user interactions and sentiment analysis.
+* **[Custom Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/custom_dashboards)**: Build and share dashboards that focus on the KPIs that matter most to your team and business goals.
+   
+----
+
+### Yellow.ai product offerings 
+
+Yellow.ai provides a comprehensive suite of AI-powered solutions designed to help enterprises automate and optimize customer interactions:
+
+* **Omnichannel support**: Deploy agents on 35+ voice and text channels.
+* **LLM-powered Agents**: Utilizes advanced LLMs for dynamic, human-like conversations and reasoning.
+* **Enterprise-Grade**: Built with robust security, scalability, and integration capabilities.
+* **Low-Code/No-Code**: An intuitive visual builder for both technical and non-technical users.
+* **End-to-End Solution**: A single platform for building, managing, and optimizing all your conversational AI needs.
 
 ---
 
-## Key Components of the Platform
-* **Enterprise-Grade Agents**: Purpose-built AI agents designed for diverse industry use cases, including healthcare, retail, financial services, real estate, media, HR, and IT service management.
-* **Advanced AI Capabilities**: Support for multi-agent workflows that are context-aware, multi-lingual, and multi-modal—enabling natural and adaptive interactions.
-* **Omnichannel Communication**: Deliver unified customer experiences across 40+ channels including WhatsApp, Web Chat, Facebook Messenger, Instagram, SMS, Email, Microsoft Teams, Voice, and Mobile Apps.
-* **Voice AI**: Equipped with Emotion AI, intelligent interruption handling, and human-like conversational flow for enhanced voice interactions.
-* **Personalized Campaigns**: Enables hyper-targeted engagement through intelligent segmentation and dynamic content strategies.
-* **Multi-LLM Architecture**: Supports a range of large language models (LLMs) including GPT-4.0, GPT-4.5, Claude 3, DeepSeek, and enterprise-trained custom models.
-* **Security and Compliance**: Designed with enterprise-grade security protocols, compliance frameworks, content moderation, and robust data privacy practices.
+## Sign up and create your first AI agent
 
+Now that you understand what Yellow.ai offers and how the platform helps automate customer experiences, the next step is to get started hands-on. To begin, you will need to:
 
+* **Sign up for a Yellow.ai account** – Access the platform using your business credentials and set up your workspace.
+* **Create your first AI agent** – Use the no-code agent builder to define the agent’s role, goal, and persona.
 
+### Sign up for a Yellow.ai account 
 
+**If you are new to the yellow.ai platform, here's how to sign up:**
 
-:::note
-We also offer a code-based App Platform (app.yellow.ai) with a limited feature set. However, for a more robust experience and access to the full capabilities of Yellow.ai, we recommend migrating to our Cloud Platform.
+1. Go to [Cloud Platform](https://cloud.yellow.ai) > click **Sign up with Email**.
+   
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/sign-up.png)
 
+2. Provide your business details: First name, last name, business phone number, company email address and the login password.
+3. Click **Sign up**.
+    ![](https://imgur.com/XjcxAfF.png)
 
-To begin your migration, refer to our [migration guide](https://docs.yellow.ai/docs/cookbooks/migration-guide). For any assistance, please reach out to your designated point of contact (POC)..
-:::
+   :::note 
+   * Only official email addresses are accepted for sign up. Personal emails will not be validated. For any issues, [contact us](https://yellow.ai/contact-us/).
+   * Include your contact number with the country code.
+   ::: 
 
-------------
+4. Check your inbox for a verification email and click **Verify email**.
 
+   <img src="https://imgur.com/w1GlPwM.png" alt="drawing" width="60%"/>
+   
+### Create your first AI agent
 
+After signing up, you can create your first AI agnet. 
 
-## Benefits of yellow.ai
+To create an AI agent, follow these steps:
 
-#### Build AI Agents That Evolve with Every Interaction
-   At Yellow.ai, we help you do more than just deploy automation—we empower you to build intelligent, adaptive AI agents that evolve with every customer interaction. Our platform is designed to reduce effort, improve outcomes, and future-proof your operations.
+1. Choose the **Subscription** and appropriate **Data storage region** where your agent’s data will be hosted and click **Next**.
 
-#### Automate with Intelligence
-Create AI agents that do the heavy lifting—so your teams can focus on what matters.
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/selectregion.png" alt="drawing" width="50%"/>
 
-* Design and launch AI agents without writing code, using intuitive, prompt-based workflows.
-* Automate up to 90% of customer interactions with AI agents that understand and adapt to evolving intents.
-* Proactively resolve queries with intelligent triggers based on user behavior and message patterns.
-* Accelerate operations across channels, from support to service requests, with 24/7 AI responsiveness.
+2. Define the following details and click **Next**.
 
-[**Explore Automation documentation ➝**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+   | Field Name | Description|
+   ------------|--------------
+   Name | Enter a unique name for your AI agent.
+   Choose avatar | Select an animated avatar to visually represent your AI agent.
+   Select a persona | This defines the agent’s tone and communication style. You can select from the following personas:<br/>* **Polite and persuasive**: Ideal for sales agents.<br/>* **Empathetic and helpful**: Best suited for support agents.<br/>  **Witty**: Best for marketing agents.
+   Role |  Describe the role of the AI agent in less than 400 characters. <br/>For example, you are a banking assistant who helps users with Yellow Banking-related queries. Your role is focused on assisting with personal loans-guiding users to apply loan, checking loan status, and answering loan specific questions for better accuracy and support.  
 
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/createpage.png)  
 
-#### Assist with Human + AI Synergy
-Support your teams with the right tools at the right moment.
+3. Provide either your website URL or upload documents. This content will be used to train the AI agent.
 
-* Deliver real-time, context-aware support to agents, improving speed and accuracy.
-* Use AI tools like tone adjustment, sentiment detection, and agent coaching to elevate customer conversations.
-* Seamlessly escalate from bot to human—ensuring customers always reach the right resource.
-* Centralize support with live agent tools across chat, email, and more—powered by deep CRM integrations or standalone AI helpdesk.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/knowledgeai1.png)
+   
+* After adding the knowledge source, your AI agent will be created and ready for further configuration. 
+   
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/settingAI.png)
+     
+* You will be redirected to the **Copilot** page, where you can Start typing your question or query based on the knowledge you have stored to retrieve relevant information.
 
-[**Explore Assist documentation ➝**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentassistbot)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/copliot.png)
+   
+After setting up the AI agent, you can configure the following:
 
-
-#### Analyze for Continuous Improvement
-Turn every interaction into insight—and every insight into impact.
-
-* Track 20+ real-time metrics with dashboards, user journeys, and outcome-based analysis.
-* Surface gaps and trends across conversations to fine-tune automation and agent effectiveness.
-* Explore both quantitative and qualitative insights to inform strategy and improve ROI.
-* Customize dashboards and access data explorers for advanced business intelligence.
-
-[**Explore Analyze documentation ➝**](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro)
-
-
-
-#### Unify Channels & Campaigns
-Meet your customers where they are—every time.
-
-* Launch omnichannel campaigns across messaging, email, and voice from one platform.
-* Connect to 35+ communication channels with one-time setup and consistent AI-agent behavior.
-* Personalize engagement at scale with AI-powered customer segmentation and targeting.
-
-[**Explore Engage documentation ➝**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)
-
-[**Explore Channels documentation ➝**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)
-
-
-
-#### Scale with Confidence
-Built for enterprise-grade performance, security, and extensibility.
-
-* Deploy with confidence—on Cloud or On-Premise—with flexible architecture options.
-* Plug into 150+ pre-built integrations or extend via APIs and SDKs to fit your ecosystem.
-* Achieve secure, compliant AI operations with ISO, HIPAA, SOC2, and GDPR certifications.
-
-[**Explore Integrations documentation ➝**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview)
-
-#### Speak Every Language, Support Every User
-Go global with multilingual AI agents that localize and personalize.
-
-* Communicate naturally with customers in 135+ languages.
-* Maintain brand consistency while adapting tone and vocabulary for each region.
-
-[**See supported languages ➝**](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)
-
-#### Get Expert Support, Every Step of the Way
-From setup to scale, we’ve got you covered.
-
-* Gain access to dedicated support for upgraded AI agents.
-* Work with a team that brings deep domain knowledge and best practices.
-* Reduce risk, lower costs, and launch faster with professional services and expert guidance.
-
-
-
-
-
-
-
-
+* [Super Agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona)
+* [Agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent)
+* [Knowledge Base agent](http://localhost:3000/docs/platform_concepts/AIAgent/kb-agent-config)
+* [Copilot preview](http://localhost:3000/docs/platform_concepts/AIAgent/manage-conversation#ai-copilot)
 
 --------------------
 

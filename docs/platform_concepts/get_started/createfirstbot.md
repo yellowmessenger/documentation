@@ -109,28 +109,27 @@ After setting up the Super Agent, you can configure the Agent with the exact use
 
 ---
 
-:::note
-To access all features on Yellow.ai, you need the premium account.
-:::
+Your AI Agent starts with a personality. Use Super Agent to define its tone and persona, shaping how it communicates and engages with users.
 
-The first and most important step in building an AI Agent is configuring the tone and persona of your AI agent (Super agent)Super Agent. It act as the foundation for how your agent should behave, sound, and interact with users. You define its personality, tone of voice, and overall purpose.
+Once configured, the agent delivers consistent chat, voice, and multi-turn interactions—aligned with your brand, meeting user expectations, and scaling with ease.
 
-Whether you are building an agent for chat, voice agent, or multi-turn automation, this setup ensures every interaction aligns with your brand, meets user expectations, and scales effortlessly.
 
-#### Environment setup before you begin
 
-* Start by building your AI agent in a lower environment- Development or Staging. After testing and approval, publish the agent to the Live or Production environment. 
-* You can only create and test agents in these non-production environments. Once your changes are stable and approved, publish them to the Live or Production environment.
-* Depending on your subscription plan, you may have access to two or three environments. Use the environment switcher in the top-right corner to move between them.
-   * **Freemium** plan contains Development and Live environments
-   * **Premium** plan contains Sandbox, Staging, and Production environments.
+#### Switch to your base environment
+All AI Agent development and testing should be done in non-production environments (Development, Sandbox, or Staging). You then need to validate the AI agent throughly before publishing. 
 
+Once an agent is ready, publish it to the Live/Production environment to make it available to end users.
+
+1. Use the environment switcher in the top-right corner to move between environments.
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/environment.png)
 
 
 ## Create a new AI Agent (for Super Admins)
 
-Only Super admins can create a new AI agent. If you are a Super admin, follow these steps:
+Only Super admins can create a new AI agent. 
+
+
+To create an AI agent, follow these steps:
 
 1. Login to [Yellow.ai](https://cloud.yellow.ai/) platform.
 

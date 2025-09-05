@@ -1,6 +1,6 @@
 ---
 title: Define AI agent persona   
-sidebar_label: Define AI agent persona  
+sidebar_label: Define Super agent 
 ---
 
 The AI agent persona sets the tone, personality, and behavior of your agent—shaping how it communicates with users throughout the conversation. A well-defined persona ensures interactions feel consistent, natural, and aligned with your brand voice.
@@ -19,28 +19,28 @@ rules to follow throughout conversations.
 
 ## Configure AI agent persona 
 
-* To configure AI agent persona, go to **Automation** > **AI agent lab** > **Agents**. Here you can update:
-   * [Profile settings](#update-profile-settings) 
-   * [Query handling behavior](#how-ai-agent-handles-queries) 
+To configure AI agent persona,follow the below steps:
+
+1. Go to **Automation** > **AI agent lab** > **Agents**. 
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agentlab.png)
+   
+2. You can update, the following:
+   * [Profile settings](#profile-settings) 
+   * [Query handling behavior](#how-ai-agent-handles-queries)    
 
 
 ### Update profile settings
 
 The profile setting contains the core identity of your agent which includes name, persona, role, scope, and underlying model. These attributes are cloned from the selected template at the time of creation, but you can update them anytime to better fit your use case.
 
-
-
 To edit the AI agent profile settings:
 
 1. Click the **Edit** icon next to the AI agent details.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/editsuperagent.png)
-
-* The **Edit superagnet profile** pop-up is displayed. 
-
-   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/editsuperprofile.png" alt="drawing" width="70%"/>
+      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/editmaya.png)
+      
+* The Edit superagnet profile pop-up is displayed.
 
 2. In the profile pop-up, you can update the following information:
 
@@ -52,22 +52,21 @@ To edit the AI agent profile settings:
    **Model** | Select the preferred Language Learning Model (LLM) that suits your AI agent. This helps the agent respond better based on your use case, such as customer support, sales assistance, or general queries. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/LLM-central-configuration).
    **Persona** | Agent persona defines how the AI agent should interact with users. A consistent persona helps to create engaging and aligned interactions. You can select from the following personas: <ul><li>**Polite and persuasive**: Ideal for sales agents.</li><li>**Empathetic and helpful**: Best suited for support agents.</li><li>**Witty**: Best for marketing agents.</li></ul>
    **Describe your AI agent's role** | Describe the role of the AI agent in less than 400 characters. For example, you are a banking assistant who helps users with Yellow Banking-related queries. Your role is focused on assisting with personal loans-guiding users to apply loan, checking loan status, and answering loan specific questions for better accuracy and support.
-
-
+   
 ### How AI agent handles queries
 
-Use this section to configure the agent’s conversational behavior—from how it greets users to how it responds during interactions and manages unanswered queries.
+Use this section to configure the agent’s conversational behavior from how it greets users to how it responds during interactions and manages unanswered queries.
 
-   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/handle.png" alt="drawing" width="80%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/handlequeries1.png" alt="drawing" width="100%"/>
 
 ### Define Welcome message
 
 The welcome message is your AI agent’s first response to users. Set the tone, introduce what the agent can help with, and guide users on what to do next. 
 
 You can choose to:
-* trigger a welcome flow 
-* send a static custom welcome message, or 
-* use Instruct Super Agent to craft a personalized welcome by providing direct instructions to the AI. 
+* Trigger a welcome flow 
+* Send a static custom welcome message, or 
+* Use Instruct Super Agent to craft a personalized welcome by providing direct instructions to the AI. 
 
 
 **To add a welcome message**:
@@ -79,29 +78,28 @@ You can choose to:
     * Trigger welcome flow
     * Send message
   
-      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/welcomechoose.png" alt="drawing" width="90%"/>
+      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/trigger.png" alt="drawing" width="90%"/>
 
-* Option 1: **Instruct superagent**
+   #### Option 1: **Instruct superagent**
    * Write a custom welcome message.
    * Use variables to personalize the greeting.
    * Enable **Show suggestions with welcome message** to display quick replies based on role and persona.
 
      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instructAI.png" alt="drawing" width="80%"/>
 
- * Option 2: **Trigger welcome flow**
+   #### Option 2: **Trigger welcome flow**
     * Select an existing or predefined conversation flow to initiate the chat.
 
       <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/triggerwelcome.png" alt="drawing" width="80%"/>
 
 
-* Option 3: **Send a message**
+   #### Option 3: **Send a message**
    * Provide a simple greeting message. 
 *Example: Hey, I'm Mia from Yellow Banking. How can I assist with your banking needs today?*
-  * You can also enable **Show suggestions with welcome message** toggle to add quick replies.
+   * You can also enable **Show suggestions with welcome message** toggle to add quick replies.
 
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/sendmessage.png" alt="drawing" width="80%"/>
-
-   
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/sendmessage.png" alt="drawing" width="80%"/>
+     
 #### Add rules to follow during conversation
 
 You can define conversation rules to guide how the AI agent responds during conversations. These rules ensure consistent interactions and help control how the agent should behave in different situations.
@@ -117,18 +115,54 @@ To add rules, follow below steps:
 
 1. Click **+Add**.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/addrules.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agentrules.png)
 
 2. Enter a rule (example, Always introduce yourself by name in the first message).
 
-     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/addrules1.png" alt="drawing" width="80%"/>
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/agentrulesdefine.png" alt="drawing" width="80%"/>
 
 3. Repeat Step 2 to add more rules.
 4. Click **Save**.
 
+### AI Safety & Conduct
+  
+Safeguards every AI interaction by configuring filters that ensure the AI agent communicates ethically, avoids harmful topics, and handles sensitive data responsibly. These safety checks act as guardrails to prevent issues such as hallucinations, offensive replies, or inappropriate responses.
+
+#### Configure AI safety & conduct settings
+
+1. Go to **AI Safety & Conduct**.
+
+2. Click **Manage**.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/safety.png)
+   
+3. Enable following settings based on your requirement.   
+
+   **Customer Query Filters**
+
+     These filters apply to incoming user messages. They help prevent unsafe or inappropriate interactions from progressing by detecting and blocking harmful content early.
+
+   1. **Banned Topics**: Blocks conversations around restricted or prohibited subjects (example, weapons, self-harm, terrorism). Keeps the AI agent from engaging in or encouraging conversations that could lead to legal risks.
+
+    2. **Violence**: Detects and blocks messages that contain violent, abusive, or harmful language. Ensures user interactions remain respectful and emotionally safe, especially in customer service or public-facing bots.
+
+    3. **Sexual Content**: Filters out messages with sexually explicit or inappropriate language. Essential for maintaining a professional, inclusive, and respectful tone especially in regulated industries like education, healthcare, or finance.
+
+    **AI Response Filters**
+
+    These filters apply to the AI agent's own responses. They prevent the agent from generating outputs that are offensive, biased, or overly sensitive.
+
+    1. **Sensitivity**: Detects and removes personal or sensitive data (example, names, contact info) from AI responses. Helps ensure compliance with data privacy regulations like GDPR, HIPAA, etc.
+
+    2. **Toxicity**: Flags and blocks AI-generated content that is offensive, aggressive, or harmful. Prevents reputational damage or user distress caused by unintended toxic replies.
+
+    3. **Bias**: Detects and reduces unfair, biased, or discriminatory language in AI responses. Promotes fairness and inclusivity, especially in AI models trained on large datasets that may contain societal biases.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/AIsafety.png)
+
 ### How to handle unanswered queries?
 
-There may be times when the AI agent cannot answer a query due to various limitations (e.g., no knowledge base match, API failure, or validation error). You can configure fallback behaviors for such cases.
+There may be times when the AI agent cannot answer a query due to various limitations (example, no knowledge base match, API failure, or validation error). You can configure fallback behaviors for such cases.
 
 
 The AI agent may fail to respond in the following cases:
@@ -148,21 +182,7 @@ To configure fallback handling:
    | Option                    | Description |
    | ------------------------- | ------------ |
    | **Instruct Super Agent**  | Write a custom fallback message. <br/> Example: *I am still learning and could not help with that. Please contact [support@yellow.ai](mailto:support@yellow.ai).<br/> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instructagent.png" alt="drawing" width="70%"/> |
-   | **Trigger Fallback Flow** | Select a fallback conversation flow to guide the user when the agent cannot respond.<br/> ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/fallback.png)    |
-
-  
-#### Retries for information validation failures
-
-You can configure how many times the AI agent should retry when a user provides invalid input before triggering fallback.
-
-**Limitation**
-
-* Maximum retries supported: 5. After max retries, the fallback rules are triggered.
-
-**To configure**:
-
-1. Go to **Retries for Information validation failures**.
-2. Set the number of retry attempts.
+   | **Trigger Fallback Flow** | Select a fallback conversation flow to guide the user when the agent cannot respond.<br/> ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/fallback.png)    | 
    
 ---
 
@@ -170,7 +190,7 @@ You can configure how many times the AI agent should retry when a user provides 
 
 Here are a few sample examples showing how Agent persona helps improve user experience in different industries:
 
-#### ✈️ Travel Industry
+#### ✈️ **Travel Industry**
 
 **Example: “Yellow Travels” – Friendly, Insightful, Service-Oriented**
 A travel platform defines its AI agent with a warm, conversational tone and a helpful demeanor.
@@ -181,7 +201,7 @@ A travel platform defines its AI agent with a warm, conversational tone and a he
 * Result: Higher CSAT and reduced customer drop-offs during peak season.
 
 
-####  🏥 Healthcare Support
+####  🏥 **Healthcare Support**
 
 **Example: “CareBot” – Calm, Professional, Empathetic**
 A digital health provider creates a bot with a carefully crafted persona: neutral, factual, but emotionally aware.
@@ -192,7 +212,7 @@ A digital health provider creates a bot with a carefully crafted persona: neutra
 * Result: Increased usage of digital triage and better patient retention in self-service flows.
 
 
-####  🛒 E-commerce
+####  🛒 **E-commerce**
 
 **Example: “ModaBot” – Trendy, Assertive, Fast-Paced**
 A fashion brand’s bot uses short, stylish responses to match the brand tone.
@@ -203,7 +223,7 @@ A fashion brand’s bot uses short, stylish responses to match the brand tone.
 * Result: More upsells via personalized suggestions and stronger brand loyalty in DMs.
 
 
-####  💼 Financial Services
+####  💼 **Financial Services**
 
 **Example: “SecureBank Assistant” – Formal, Reliable, Minimalist**
 The bank defines a no-nonsense, security-first persona to reduce ambiguity in financial interactions.
