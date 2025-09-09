@@ -1665,6 +1665,7 @@ module.exports = {
             "platform_concepts/appConfiguration/billdesk",
             "platform_concepts/appConfiguration/camspay",
             "platform_concepts/appConfiguration/cashfree",
+            "platform_concepts/appConfiguration/ccavenue-payment",
             "platform_concepts/appConfiguration/instamojo",
             "platform_concepts/appConfiguration/paytm",
             "platform_concepts/appConfiguration/payuBiz",
