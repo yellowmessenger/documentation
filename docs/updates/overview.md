@@ -15,7 +15,162 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 
 ***
 
-## **Knowledgebase**
+## Cloud platform redefined for better experience
+
+We’ve redesigned the Yellow.ai workspace with a cleaner theme and improved navigation to give you a smoother, more intuitive experience.
+
+**What’s new:**
+
+* **New navigation** – Faster access to modules with improved grouping and organization.
+* **New theme & Typography** – Refreshed design with modern colors, Lato fonts, and redesigned buttons for improved usability.
+
+   ![](/files/platform-new-changes.gif)
+
+## **Integration**
+
+### Ccavenue
+
+CcAvenue is a leading payment gateway that enables businesses to securely accept online payments through credit cards, debit cards, net banking, and other methods.
+
+We’ve added a new configuration option in the CcAvenue integration to simplify payment collection directly within conversations:
+
+* **Generate Quick Invoice**: Allows AI agents to create and share invoice payment links with users during a conversation.
+
+[Learn where to configure these options](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/ccavenue-payment)
+
+### Custom Live Chat Integration
+
+Custom Live Chat Integration – New Display Control Options
+
+We’ve introduced two new configuration options to give you more control over the live chat experience when users are in the queue:
+
+* **Hide Home Button When User is in Queue** – Removes the home button from the chat interface while a user is waiting in the queue, keeping them focused on the current conversation.
+* **Hide Input Box When User is in Queue** – Disables the message input box while a user is waiting in the queue, preventing premature responses before an agent joins.
+
+:::note
+For existing configurations, these options will be disabled by default. You can enable them manually by editing your integration account.
+These enhancements help you create a cleaner and more guided chat experience for users during wait times.
+:::
+
+[Learn where to configure these options](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/customliveagent#connect-custom-live-chat-account-to-yellowai)
+
+### JSON Web Token (JWT) Integration
+
+We’ve added support for JWT (JSON Web Token) authentication, enabling a more secure way to exchange information between your applications and Yellow.ai.
+
+**With this integration, you can:**
+
+* Configure JWT-based authentication to protect APIs and integrations.
+* Use signed tokens to ensure data integrity and security during client–server communication.
+* Standardize authentication flows with a widely adopted, compact, and URL-safe format.
+
+**Where to find it**:
+
+Navigate to **Integrations** > **JSON Web Token** (JWT) to set up and configure.
+
+[Learn how to integrate JWT](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/json-webtoken)
+
+-----
+
+## **Engage**
+
+### MM Lite Global Setting
+
+You can now enable MM Lite once at the global level under **Settings** > **Engage** > **Preferences**.
+No need to configure it for every campaign—though you can still override it at the campaign level if needed.
+
+For more details, see [Engage settings](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud)
+
+
+###  Smarter WhatsApp Message Delivery with MM Lite API Integration  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+
+We’ve added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
+This smart delivery feature uses Meta’s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they’re most likely to engage.
+
+No change in how you build your campaigns — just choose the API reference while configuring WhatsApp campaign, Meta takes care of the rest.
+
+
+#### How it works
+
+* **Default**: Follows your [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud)
+* **Customizable**: You can override this setting when configuring individual WhatsApp campaigns (Outbound, Flows, or Notification APIs).
+
+
+#### Who gets it
+
+* Available **only for customers onboarded to MM Lite**
+* Works with **Meta-approved MARKETING templates**
+
+
+#### How to enable MM lite
+
+If your account is managed by Yellow\.ai:
+
+* Your CSM will contact you
+* Or, reach out to your CSM to request access
+
+**For more details, refer to**
+* [**Org level setting**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level)
+* [**Outbound campaigns documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)
+* [**Flow campaign documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
+* [**Notification API documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
+* [**Notification API reports**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#4-reports)
+   
+
+### How to choose MM Lite for each WhatsApp campaign:
+
+* [Flow campaign](http://localhost:3001/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
+* [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#33-whatsapp-campaign)
+* [Notification API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
+
+
+
+### Deprecated Engage Overview Page
+
+The Engage Overview page has been deprecated as part of our ongoing efforts to streamline the platform. 
+
+
+-----
+
+## **Insights**
+
+
+### WhatsApp Consumption Report Aligned with New Pricing (Effective July 1, 2025)
+
+We’ve updated your WhatsApp consumption report to  ensure your reporting remains accurate and consistent with Meta’s new pricing model, effective **July 1, 2025**.
+
+#### What’s changed
+
+* **Per-message billing**: Charges are now calculated **per message** instead of per conversation.
+* **Free utility messages**: Utility template messages sent within an **open customer service window** are now free.
+* **Improved reporting**: New fields provide more clarity on **billable vs free messages**.
+
+### Reporting changes for better alignment with Meta:
+
+* **New message categories**: "User Initiated" and "Business Initiated" have been replaced with **"Paid" and "Free"**, consistent with Meta’s dashboard.
+* **Raw data table updates**:
+
+  * Added: `message_type` (e.g., Utility, Marketing)
+  * Added: `message_category` (Paid or Free)
+* **Deprecated**: “Referral Initiated” will no longer appear in reports.
+
+
+📚 [Learn more about the new pricing on Meta’s official page](https://developers.facebook.com/docs/whatsapp/pricing/updates-to-pricing)
+📩 Questions? Reach out to your Account Manager or contact us at **[support@yellow.ai](mailto:support@yellow.ai)**
+
+
+-----
+
+## **Channels**
+
+
+### Email Channel – OAuth Support
+
+You can now configure the Email channel with Microsoft OAuth for a more secure and seamless connection between your email service and the AI agent. This configuration enables the agent to send and receive emails securely.
+
+[Learn more about Email channel OAuth support](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound#setup-email-channel-with-oauth)
+
+<!-- ## **Knowledgebase**
 
 ### Conversational Knowledge Base (KB) **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
@@ -379,6 +534,6 @@ Cleaner data. Sharper control. Just the way it should be.
 
 ### Sender Email Logic Update in Email Ticketing  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-We’ve cleaned up how the "From" address is picked when replying to tickets. Agents can also see clear From/To details while composing—no more guesswork.
+We’ve cleaned up how the "From" address is picked when replying to tickets. Agents can also see clear From/To details while composing—no more guesswork. -->
 
 
