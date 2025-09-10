@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import SearchBar from '@theme/SearchBar';
+import Hero from '@site/src/components/Hero/Hero';
 
 // --- SVG Icons for Feature Cards (from lucide.dev) ---
 const RocketIcon = (props) => (
@@ -104,41 +104,40 @@ export default function Home() {
 
   return (
     <Layout
-      title={`Welcome to ${siteConfig.title}`}
-      description="Comprehensive documentation for Yellow.ai platform."
+      title="Yellow.ai Documentation"
+      description="Comprehensive documentation for Yellow.ai platform - Agentic AI for Autonomous, Human-Like Conversations"
     >
-      <main className={styles.homeWrapper}>
-        <header className={styles.homeHero} style={{ overflow: 'hidden', paddingBottom: '4rem' }}>
-          <div className={styles.homeHeroInner}>
-            <h1 className={styles.homeHeroTitle} style={{ overflowWrap: 'break-word', wordBreak: 'break-word' }}>
-              Agentic AI for Autonomous, Human-Like Conversations
-            </h1>
-            <p className={styles.homeHeroSubtitle}>
-              Explore comprehensive guides, API references, and step-by-step tutorials to unlock the full potential of the Yellow.ai Agentic Platform.
-            </p>
-          </div>
-        </header>
-
+      {/* Hero Section - now contains your preferred content */}
+      <Hero />
+      
+      {/* Explore More Topics Section 
+      <main className={styles.homeWrapper} style={{ paddingTop: '2rem' }}>
         <section className={styles.homeSection}>
-          <div className={styles.homeGrid}>
-            {topics.map((topic, idx) => (
-              <a key={idx} href={topic.url} className={styles.homeCard}>
-                <div className={styles.homeIconWrapper}>
-                  {topic.Icon ? (
-                    <topic.Icon className={styles.homeIcon} />
-                  ) : (
-                    <img src={topic.imageUrl} alt={topic.title} className={styles.homeIcon} />
-                  )}
-                </div>
-                <div className={styles.homeCardContent}>
-                  <h2 className={styles.homeCardTitle}>{topic.title}</h2>
-                  <p className={styles.homeCardDesc}>{topic.description}</p>
-                </div>
-              </a>
-            ))}
+          <div className="container">
+            <h2 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2rem', fontWeight: '600' }}>
+              Explore More Topics
+            </h2>
+            <div className={styles.homeGrid}>
+              {topics.map((topic, idx) => (
+                <a key={idx} href={topic.url} className={styles.homeCard}>
+                  <div className={styles.homeIconWrapper}>
+                    {topic.Icon ? (
+                      <topic.Icon className={styles.homeIcon} />
+                    ) : (
+                      <img src={topic.imageUrl} alt={topic.title} className={styles.homeIcon} />
+                    )}
+                  </div>
+                  <div className={styles.homeCardContent}>
+                    <h3 className={styles.homeCardTitle}>{topic.title}</h3>
+                    <p className={styles.homeCardDesc}>{topic.description}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
         </section>
-      </main>
+      </main> */}
+      
     </Layout>
   );
 }
