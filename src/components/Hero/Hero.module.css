@@ -1,0 +1,454 @@
+/* Hero Section Styles - Langfuse-inspired design */
+
+.hero {
+  position: relative;
+  padding: 6rem 0 4rem;
+  background: var(--ifm-color-background-base, #ffffff);
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--ifm-color-emphasis-200, #f1f5f9);
+  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  border-radius: 24px;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.badgeText {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ifm-color-text-base, #1e293b);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Title */
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  color: var(--ifm-color-text-base, #1e293b);
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--ifm-color-text-secondary, #64748b);
+  margin: 0 0 3rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+/* Search Container with DocSearch */
+.searchContainer {
+  margin: 0 0 4rem 0;
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+  display: flex;
+  justify-content: center;
+}
+
+/* DocSearch Custom Styling for Hero */
+.searchContainer :global(.DocSearch) {
+  max-width: 100%;
+}
+
+.searchContainer :global(.DocSearch-Button) {
+  width: 100%;
+  max-width: 500px;
+  height: 56px;
+  margin: 0 auto;
+  border: 2px solid var(--ifm-color-emphasis-200, #e2e8f0);
+  border-radius: 14px;
+  background: var(--ifm-color-background-base, #ffffff);
+  color: var(--ifm-color-text-base, #1e293b);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  padding: 0 1rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.searchContainer :global(.DocSearch-Button):hover {
+  border-color: var(--ifm-color-primary, #3b82f6);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: var(--ifm-color-background-base, #ffffff);
+}
+
+.searchContainer :global(.DocSearch-Button-Container) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.searchContainer :global(.DocSearch-Search-Icon) {
+  width: 20px;
+  height: 20px;
+  color: var(--ifm-color-text-secondary, #64748b);
+  margin-right: 12px;
+}
+
+.searchContainer :global(.DocSearch-Button-Placeholder) {
+  font-size: 16px;
+  color: var(--ifm-color-text-secondary, #64748b);
+  flex: 1;
+  text-align: left;
+}
+
+.searchContainer :global(.DocSearch-Button-Keys) {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.searchContainer :global(.DocSearch-Button-Key) {
+  background: var(--ifm-color-emphasis-200, #f1f5f9);
+  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  font-size: 12px;
+  color: var(--ifm-color-text-secondary, #64748b);
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  margin-left: 0.25rem;
+}
+
+/* Dark theme adjustments */
+[data-theme='dark'] .searchContainer :global(.DocSearch-Button) {
+  background: var(--ifm-color-emphasis-100, #1e293b);
+  border-color: var(--ifm-color-emphasis-300, #334155);
+  color: var(--ifm-color-text-base, #f8fafc);
+}
+
+[data-theme='dark'] .searchContainer :global(.DocSearch-Button):hover {
+  border-color: var(--ifm-color-primary, #3b82f6);
+  background: var(--ifm-color-emphasis-100, #1e293b);
+}
+
+[data-theme='dark'] .searchContainer :global(.DocSearch-Button-Key) {
+  background: var(--ifm-color-emphasis-300, #334155);
+  border-color: var(--ifm-color-emphasis-400, #475569);
+  color: var(--ifm-color-text-secondary, #94a3b8);
+}
+
+/* Modal styling overrides */
+:global(.DocSearch-Modal) {
+  max-width: 600px !important;
+}
+
+/* Responsive adjustments for search */
+@media (max-width: 768px) {
+  .searchContainer :global(.DocSearch-Button) {
+    max-width: 100%;
+    height: 52px;
+    font-size: 14px;
+  }
+  
+  .searchContainer :global(.DocSearch-Button-Placeholder) {
+    font-size: 14px;
+  }
+}
+
+/* Quick Setup Section */
+.quickStart {
+  margin: 0 0 4rem 0;
+}
+
+.quickStartTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ifm-color-text-base, #1e293b);
+  margin: 0 0 2rem 0;
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--ifm-color-background-base, #ffffff);
+  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out both;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary, #3b82f6);
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardStep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--ifm-color-primary, #3b82f6);
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.cardContent {
+  flex: 1;
+  text-align: left;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-color-text-base, #1e293b);
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  color: var(--ifm-color-text-secondary, #64748b);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cardArrow {
+  width: 20px;
+  height: 20px;
+  stroke: var(--ifm-color-text-secondary, #64748b);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.card:hover .cardArrow {
+  transform: translate(2px, -2px);
+  stroke: var(--ifm-color-primary, #3b82f6);
+}
+
+
+
+/* Code Preview */
+.codePreview {
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--ifm-color-emphasis-100, #f8fafc);
+  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.codeButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.codeDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-400, #cbd5e1);
+}
+
+.codeDot:first-child { background: #ef4444; }
+.codeDot:nth-child(2) { background: #f59e0b; }
+.codeDot:nth-child(3) { background: #10b981; }
+
+.codeTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ifm-color-text-secondary, #64748b);
+}
+
+.codeContent {
+  background: var(--ifm-color-emphasis-100, #f8fafc);
+  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+}
+
+.codeBlock {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ifm-color-text-base, #1e293b);
+  background: transparent;
+  overflow-x: auto;
+}
+
+/* Background Elements */
+.backgroundGrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask: radial-gradient(circle at center, white 20%, transparent 80%);
+  -webkit-mask: radial-gradient(circle at center, white 20%, transparent 80%);
+}
+
+.backgroundGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode support */
+[data-theme='dark'] .hero {
+  background: var(--ifm-color-background-base);
+}
+
+[data-theme='dark'] .badge {
+  background: var(--ifm-color-emphasis-300);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] .searchInput {
+  background: var(--ifm-color-background-base);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] .card {
+  background: var(--ifm-color-background-surface);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] .codeHeader,
+[data-theme='dark'] .codeContent {
+  background: var(--ifm-color-background-surface);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0 2rem;
+    min-height: auto;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+
+  .codeBlock {
+    font-size: 12px;
+    padding: 1rem;
+  }
+}
+
+
