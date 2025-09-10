@@ -26,7 +26,7 @@ To configure AI agent persona,follow the below steps:
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agentlab.png)
    
 2. You can update, the following:
-   * [Profile settings](#profile-settings) 
+   * [Profile settings](#update-profile-settings) 
    * [Query handling behavior](#how-ai-agent-handles-queries)    
 
 

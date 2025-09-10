@@ -55,7 +55,7 @@ To create an agent from scratch, follow these steps:
 
    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/AGENTS.png)
    
-#### Step 3: [Add Actions in Prompt section](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)
+#### Step 3: [Add Actions in Prompt section](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent-architecture#add-actions-in-prompts)
 
 Within prompts, use Get Input actions to collect user information such as name, email, or booking details.
 
