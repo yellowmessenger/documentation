@@ -1,5 +1,5 @@
 ---
-title : Enhance your CX with Yellow.ai's voice agent today!
+title : Voice AI agent
 sidebar_label : Voice agent
 ---
 
@@ -23,16 +23,16 @@ sidebar_label : Voice agent
 
 :::
 
-
-<div className="video-container">
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "12px", boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}>
   <iframe
     src="https://www.youtube.com/embed/EOhOQ0ZhOgI?si=NT5cfKzlBSc7_TOV"
+    title="YouTube video"
+    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowFullScreen
   />
 </div>
-
 
 
 

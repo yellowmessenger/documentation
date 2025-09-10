@@ -8,12 +8,17 @@ Salesforce is a cloud-based software company that provides a range of business s
 
 In addition to CRM, Salesforce has various subsidiaries and products that extend its capabilities. For instance, they offer live chat solutions to facilitate real-time customer support and engagement. Yellow.ai supports integration with Salesforce CRM and [Salesforce Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforcelivechat). 
 
+:::note
+To configure Salesforce CRM, the user account must have Super Admin–level permissions.
+:::
 
 ## Table of contents
 
 1. [What Salesforce actions are available on Yellow.ai?](#salesforce-actions-that-can-be-managed-from-yellowai)
 2. [How to connect Salesforce CRM with Yellow.ai?](#connect-salesforce-crm-with-yellowai)
 3. [How to use Salesforce CRM from Yellow.ai?](#manage-your-salesforce-crm-through-bot-conversations)
+
+
 
 
 
@@ -26,7 +31,7 @@ After integrating with Salesforce CRM, you can perform the following tasks direc
 | createRecord                    | Creates a record in the integrated Salesforce account. The following are the different types of available records:<br/> 1. Accounts<br/>2. Contacts<br/>3. Opportunities<br/>4. Leads<br/>5. Cases<br/>6. Campaigns<br/>7. Products and Price Books<br/>8. Tasks<br/>9. Events<br/>10. Custom<br/>11. Objects<br/>12. Documents and Attachments                                                                                                     |
 | updateRecord                    | Updates a record in the integrated Salesforce account.                                                                                                       |
 | searchRecord                    | Looks for a particular info in the integrated Salesforce account.                                                                                            |
-| Query by SOQL                   | Query and retrieve data from the Salesforce database. You can create SQL queries by refering to the following links: <br/> [Link 1](https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_soql) <br/> [Link 2](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm)                                                                                                       |
+| Query by SQL                   | Query and retrieve data from the Salesforce database. You can create SQL queries by referring to the following links: <br/> [Link 1](https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_soql) <br/> [Link 2](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm)                                                                                                       |
 | Get User Details by Owner ID    | In Salesforce, each user has a unique identifier known as the Owner Id. This process involves using the Owner Id of a record (e.g., Account, Contact, or Opportunity) to fetch details about the user who owns that particular record. |
 
 
@@ -35,7 +40,9 @@ After integrating with Salesforce CRM, you can perform the following tasks direc
 **Prerequisites:**
 
 1. An active Salesforce CRM account
-2. An active yellow.ai account.
+2. An active yellow.ai account
+3. Super Admin access
+
 
 To connect your Salesforce CRM account with Yellow.ai, follow these steps:
 
@@ -114,7 +121,7 @@ To carry out a certain action in your Salesforce account, follow these steps:
       "icon": "50d"
     }
   ],
-
+}
 ```
 
 

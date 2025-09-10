@@ -55,7 +55,7 @@ To create an agent from scratch, follow these steps:
 
    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/AGENTS.png)
    
-#### Step 3: [Add Actions in Prompt section](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)
+#### Step 3: [Add Actions in Prompt section](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent-architecture#add-actions-in-prompts)
 
 Within prompts, use Get Input actions to collect user information such as name, email, or booking details.
 
@@ -130,7 +130,7 @@ Types of inputs that can be used as Start Triggers:
 
 A prompt is a set of instructions that tells the AI agent what to say or do during a conversation. It guides the conversation flow and helps the agent respond appropriately based on the user’s input
 
-In conversation design, a prompt can be a question, confirmation, statement, [call to action](#add-actions-to-your-ai-agent-prompts) (Get input, call worflow, or call fallback), or [Variables](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aigent-variables).
+In conversation design, a prompt can be a question, confirmation, statement, [call to action](#step-3-add-actions-in-prompt-section) (Get input, call worflow, or call fallback), or [Variables](#step-5-variables).
 
 Prompts can be used to:
 * Ask the user a question and wait for a reply
