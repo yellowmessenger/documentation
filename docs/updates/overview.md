@@ -17,14 +17,40 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 
 ## Cloud platform redefined for better experience
 
-We’ve redesigned the Yellow.ai workspace with a cleaner theme and improved navigation to give you a smoother, more intuitive experience.
+We’ve redesigned the Yellow.ai workspace with a cleaner theme and improved navigation to give you a smoother, more intuitive experience. This update reduces clutter in the left navigation and provides an overall better workflow.
 
-**What’s new:**
+### Highlights of this redesign:
 
-* **New navigation** – Faster access to modules with improved grouping and organization.
-* **New theme & Typography** – Refreshed design with modern colors, Lato fonts, and redesigned buttons for improved usability.
+* **New Navigation** for faster access to modules with improved grouping and organization.  
+* **New Theme & Typography** with refreshed colors, fonts, and redesigned buttons for improved usability.  
+* **Automation module is now renamed to Build** for AI agents.  
+* **Distinct structures for AI and Non-AI agents** to provide tailored workflows.  
+* **All features are organized within their respective sections** on each page for intuitive access.  
 
    ![](/files/platform-new-changes.gif)
+
+#### 1. What's changed in the navigation for brands using AI Agents
+The **Build** section is focused on agent-centric components:
+
+* **Agents:** Manage AI agents individually.  
+* **Tools:** Access utilities and integrations to support agents.  
+* **Test Suites:** Validate agent performance across scenarios.  
+
+   ![](/img/ai-agent.gif)
+
+#### 2. What's changed in the navigation for brands using Non-AI Agents
+For brands using Non-AI agents, the **Automation module** now contains only **Build, Train, and Test** at the top level.  
+
+* **Build:** Existing features (Flows, Workflows, Functions, API, Events, Translations) are now grouped under Build.  
+* **Train:** Intents, Entities, FAQs, Documents, Synonyms, Small Talk, Context Management.  
+* **Test:** Test Intents, Test FAQs, Test Knowledge Base.  
+   ![](/img/non-aigent.gif)
+
+
+#### 3. Database moved to Data & Knowledge
+The **Database** has been moved to the **Data & Knowledge** section as it serves as a central DB tool for all modules, including AI and Non-AI agents.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/data-base.png)
+
 
 ## **Integration**
 
