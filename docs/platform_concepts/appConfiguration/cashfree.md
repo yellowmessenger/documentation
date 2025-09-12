@@ -10,10 +10,15 @@ Yellow.ai Integration with Cashfree Payment Gateway allows you to generateTransa
 
 1. Login to your Cashfree dashboard and copy the App ID and Secret.
 2. On the [Cloud platform](https://cloud.yellow.ai), navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **Cashfree**. You can also search for the Cashfree app.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/connected-cashfree.png)
+
 3. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
-4. Paste the **App Id ** and **Secret key**.
+4. Paste the **App Id** and **Secret key**.
 4. Choose the API base URL according to the type of Cashfree account that has been configured.
 5. To connect more accounts, click **+ Add account** and follow the above mentioned steps to connect each account. You can add a maximum of 15 merchant accounts.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cashfree-details.png)
 
 
 ## Enable Cashfree related events for the bot

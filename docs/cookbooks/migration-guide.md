@@ -1,4 +1,4 @@
----
+<!-- ---
 title: App to cloud migration guide
 sidebar_label : App to cloud migration guide
 ---
@@ -291,4 +291,4 @@ Additionally, we offer training materials to help you master the yellow.ai platf
 If you prefer personalized training sessions with our experts, please reach out to academy@yellow.ai.
 
 We hope this guide assists you in successfully migrating your bots from app.yellow.ai to cloud.yellow.ai. 
-
+ -->

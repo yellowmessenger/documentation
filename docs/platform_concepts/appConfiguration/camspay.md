@@ -14,6 +14,9 @@ In a two-tier environment, you can connect an integration app in the Development
 :::
 
 1. On the [cloud platform](https://cloud.yellow.ai), navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **Camspay**. You can also search for the Camspay Payment using the Search box.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/camspay.png)
+
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 3. Enter your Camspay Payment account's **Merchant ID**, **Subbiller ID**, **API key**, **Encryption-Decryption key**, and the **API Base URL** captured from the Camspay.                                                
 ![](https://imgur.com/c6AuqI7.png)                                

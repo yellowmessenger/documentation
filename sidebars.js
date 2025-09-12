@@ -29,7 +29,7 @@ module.exports = {
   cookbooks: [
 
     "cookbooks/getting_started", 
-    "cookbooks/migration-guide",
+    // "cookbooks/migration-guide",
     "cookbooks/botregion",
     "cookbooks/customapps",
   

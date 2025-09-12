@@ -23,7 +23,7 @@ To connect your Airpay account with Yellow.ai, follow these steps:
 
 1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment**  > **Stripe**.
 
-   ![](https://i.imgur.com/kZCOqgT.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/stripe.png)
 
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 
@@ -52,9 +52,10 @@ The webhook URL serves as a callback endpoint where Stripe can send notification
 Enable the following event under Events section:
 
 1. In Development/Staging environment, go to **Automation** > **Event** > **Custom events**.
+
 2. Navigate to the `stripe-payment-gateway` event, click on the more options icon and select **Activate**.
  
-  ![alt_text](https://i.imgur.com/X8d0WQR.png "image_tooltip")
+  ![alt_text](https://cdn.yellowmessenger.com/assets/yellow-docs/custom-events.png "image_tooltip")
 
 Event | Description
 ----- | -----------

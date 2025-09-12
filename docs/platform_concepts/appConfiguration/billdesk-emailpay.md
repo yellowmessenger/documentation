@@ -19,7 +19,7 @@ In a two-tier environment, you can connect an integration app in the Development
 
 1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment** > **BillDesk EmailPay**. You can also use the Search box to easily find the required integration.
 
-   ![](https://i.imgur.com/2eX2GdQ.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/billdesk-emailpay.png)
 
 
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).

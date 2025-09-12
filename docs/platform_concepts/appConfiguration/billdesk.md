@@ -18,14 +18,14 @@ You can connect your account only in development environment and not in live. Fo
 
 3. On the [Cloud platform](https://cloud.yellow.ai), navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **BillDesk**. You can also search for the Cashfree app.
 
-   ![](https://imgur.com/hzMCuo1.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/billdesk.png)
 
 
 4. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 5. Enter **Key ID**, **Client ID**, **Merchant ID**, **BillDesk public key CDN URL**, **API base URL** and click **Connect**.
 6. To connect multiple accounts, click **+ Add account** and follow the instructions mentioned above. You can connect upto 15 accounts per integration.
 
-   ![alt_text](https://cdn.yellowmessenger.com/NsZFcYu9H3md1666156528149.png "image_tooltip")
+   ![alt_text](https://cdn.yellowmessenger.com/assets/yellow-docs/billdesk-details.png "image_tooltip")
 
 
 
