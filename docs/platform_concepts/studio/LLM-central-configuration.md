@@ -3,126 +3,224 @@ title: LLM configuration
 sidebar_label: LLM configuration
 ---
 
-LLM (Large Language Model) configuration allows you to centrally manage LLM models and accounts for all LLM-powered features, such as the Dynamic chat node, Conversations, Agent AI, and Knowledge Base (KB).
+LLM (Large Language Model) configuration is the central hub for managing all LLM accounts and models used across the Yellow.ai platform. Instead of setting up models separately in each feature, you can configure them once and reuse them across modules such as AI Agents, Knowledge Base, Dynamic Chat nodes, and Super Agent.
 
-This centralized setup allows you to use different accounts and configurations for various LLM modules based on your requirements and eliminates the need for repeated configurations.
+By default, every workspace includes a Yellow-provided account (GPT-4.1) so you can start using LLM-powered features immediately. If you prefer, you can connect your own provider accounts (OpenAI, Azure OpenAI, AWS Bedrock, Anthropic) and assign them to specific modules or environments.
 
-#### Capabilities of LLM configuration
+This centralized setup helps:
 
-With LLM configuration, you can:
+* Applies config to all modules where LLMs are used.
+* Assign different accounts or models to Sandbox, Staging, or Production.
+* Avoid repetitive setup across features
+* Manage usage limits, roles, and audit logs in one place.
 
-* Create, edit, switch models, and disconnect LLM accounts.
-* Associate LLM accounts at the environment level:
-  * Two tier environment - Develpoment and Live
-  * Three tier environment - Sandbox, Staging, and Production
 
-The Yellow account is preconfigured with **Gpt 4o mini** account and enabled across all environments by default. The Knowledge Base (KB) uses our proprietary in-house model by default, but you can switch to a different model if needed.
+This document explains how to configure and manage LLM accounts on the Yellow.ai platform. It covers:  
 
-### Access LMM configuration
+* [Yellow-provided default accounts](#default-yellow-account)  
+* [Configure your preferred LLM account](#configure-your-preferred-llm-account)  
+* [Environment-specific configuration](#environment-specific-configuration)  
+* [Usage limits](#usage-limits)  
+* [Access control and audit logs](#access-control-and-audit)  
 
-You can access the LLM configuration in two ways:
+---
 
-#### **From the Settings section**
+### Default Yellow Account
 
-   1. Go to **Settings** > **LLM configuration**.
+Every bot on the Yellow.ai platform comes with a default LLM account provided by Yellow.ai. This account is pre-configured with the platform's preferred model (GPT-4.1).  
 
-      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/LLMi.png)
-    
-#### **Directly from the specific LLM-powered module**
+With the default account:  
 
-   1. Navigate to the specific LLM-Powered module (Dynamic chat node, Conversations, Agent AI, or Knowledge Base (KB)).
+* No manual configuration is required—you can start using LLM-powered features like AI Agents, prompts, workflows, and Knowledge Base Agents right away.  
 
-   2. Click the highlighted icon that you see on that page.
+---
 
-      <img  src="https://i.imgur.com/RKhl6Re.png"  alt="drawing"  width="100%"/>
-      
-       * This will redirect you to the LLM Configuration page.
-    
-### Manage LLM accounts
+### Configure Your Preferred LLM Account
 
-In the LLM configuration section, Super admin can create, edit, and disconnect LLM accounts, switch models across all the environments. 
+Yellow.ai allows you to connect and use your own LLM provider accounts instead of the default Yellow-provided one.  
 
-#### Add LLM account
+**Supported providers include:**  
 
-You can view the default Yellow account before adding a new account. If needed, you can create your own LLM account to manage LLM-powered features.
+* OpenAI  
+* Azure OpenAI  
+* AWS Bedrock  
+* Anthropic  
 
-To add the LLM account, follow these steps:
+To use a customer-owned account, add the provider credentials via the **LLM Configuration** section in platform settings.  
 
-1. Go to **Settings** > **LLM configuration**.
+:::note
+When using your own LLM provider account, you are responsible for maintaining sufficient quota and availability to meet your traffic requirements.
+:::
 
-2. Click **Account list**.
+---
 
-    ![](https://i.imgur.com/baASqg2.png)
+### Environment-Specific Configuration
 
-3. Click **+ Add account**.
+The **LLM Configuration** page allows you to assign different LLM accounts and models for each environment—**Sandbox**, **Staging**, and **Production**.  
 
-    ![image](https://imgur.com/mdldiG4.png)
+**This setup ensures:**  
 
-4. In **Give account name**, enter a name for your LLM account.
-5. In **LLM provider**, choose your preferred LLM provider.
-6. In **API key**,  get the API key and resource from GPT 3.5 or GPT 4.
+* **Safe testing** – Experiment with new models or accounts in Sandbox or Staging before moving them to Production.  
+* **Customization** – Each environment can have its own account or model settings based on traffic, cost, or performance requirements.  
 
-      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/LLMdetails.png)
+---
 
-7. Click **Connect**.
+### Usage Limits
 
-#### Edit LLM account
+When using Yellow-provided LLM accounts, default rate limits are applied to ensure platform stability and fair usage across all bots.  
 
-You can update the details of an existing LLM account or provider if needed. You cannot edit/delete the default Yellow account.
+**The limits include:**  
 
-1. Go to **Account list** > **Add account**.
+* **Per-request token limit:** Maximum tokens allowed in a single request.  
+* **Per-user, per-minute limit:** Maximum number of LLM calls a single user can make per minute.  
+* **Per-agent, per-minute limit:** Maximum number of LLM calls across all agents under one AI Agent.  
 
-2. Navigate to the account you want to edit and click **Edit details**.
+:::note
+If you expect higher traffic or plan to go live with Yellow-provided credentials, request a production environment limit increase from the [Yellow.ai support team](mailto:support@yellow.ai) in advance.
+:::
 
-     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/editdetails.png)
+---
 
-3. Add the required account details and click **Save**.
+### Access Control and Audit
 
-     <img  src="https://cdn.yellowmessenger.com/assets/yellow-docs/editllm.png"  alt="drawing"  width="80%"/>
+**Role-based access**  
 
-#### Disconnect LLM account
+* Only users with the **Admin** role can add, update, or delete LLM accounts.  
+* **Super Admin** privileges are required to make changes to LLM configuration in the Production environment.  
 
-You cannot disconnect the default Yellow account. However, you can disconnect any other account you have created. 
+**Audit logging**  
 
-Before disconnecting, ensure another account is created to handle all LLM features.
+* All configuration changes—such as account additions, deletions, or updates—are automatically logged.  
+* These logs are available under **Audit Logs** in **Settings**.  
 
-1. Select an alternative account that you want the module to use.
-  
-2. Go to **Account list** > **+ Add account**.
+---
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/addccount.png)
+## Access LLM Configuration
 
-3. Navigate to the account you want to disconnect, then click **Disconnect** to remove the account.
+You can access LLM configuration in two ways:  
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/disllm.png)
+### From the Settings Section  
 
-#### Edit LLM configuration 
+1. Go to **Settings > LLM Configuration**.  
 
-By default, the Yellow account details are displayed for each environment. However, you can update the existing LLM model or account as needed for each environment.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/LLM-access.png)  
 
-For example, you can set GPT 4.0 model in Staging environment and GPT 3.5 model in Production.
+### Directly from an LLM-Powered Module  
 
-1. Navigate to the specific feature where you want to edit the configuration.
+1. Navigate to a specific LLM-powered module (Dynamic Chat Node, Conversations, Agent AI, or Knowledge Base).  
+2. Click the highlighted icon on the page.  
 
-2. Expand the drop-down menu and click the **Edit** icon corresponding to the specific environment.
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/agents-llm.png" alt="drawing" width="100%"/>  
 
-    ![](https://i.imgur.com/BexB0a9.png)
+   * This will redirect you to the **LLM Configuration** page.  
 
-2. Update the **Account name** and **Model** as needed.
- 
-    <img  src="https://cdn.yellowmessenger.com/assets/yellow-docs/editaccountd.png"  alt="drawing"  width="80%"/>
+---
 
-3. Click **Save**.
+## Manage LLM Accounts
 
-## FAQ
+In the **LLM Configuration** section, a **Super Admin** can create, edit, and disconnect LLM accounts, and switch models across environments.  
+
+### Add LLM Account
+
+You can view the default Yellow account before adding a new one. If needed, you can create your own account to manage LLM-powered features.  
+
+1. Go to **Settings > LLM Configuration**.  
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/LLM-access.png)  
+
+2. Click **Account List**.  
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/account-list.png)  
+
+3. Click **+ Add Account**.  
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/add-llm.png)  
+
+4. Enter an **Account name**.  
+5. In **LLM provider**, select your preferred provider.  
+6. Enter the **API key** and resource (for example, from GPT-3.5 or GPT-4).  
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/llm-account-add.png)  
+
+7. Click **Connect**.  
+
+---
+
+### Edit LLM Account
+
+You can update the details of an existing LLM account or provider if needed. You cannot edit or delete the default Yellow account.  
+
+1. Go to **Account List** > **Add Account**.  
+2. Navigate to the account you want to edit and click **Edit details**.  
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/edit-llm-details1.png)  
+
+3. Update the required account details and click **Save**.  
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/edit-llm-details.png" alt="drawing" width="80%"/>  
+
+---
+
+### Disconnect LLM Account
+
+You cannot disconnect the default Yellow account. However, you can disconnect any other account you have created.  
+
+Before disconnecting, ensure another account is available to handle all LLM features.  
+
+1. Select an alternative account that you want the module to use.  
+2. Go to **Account List** > **+ Add Account**.  
+3. Navigate to the account you want to disconnect, then click **Disconnect**.  
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/disconnect-llm.png)  
+
+---
+
+### Edit LLM Configuration  
+
+By default, the Yellow account details are displayed for each environment. You can update the existing LLM model or account as needed.  
+
+For example: set the GPT-4.0 model in **Staging** and GPT-3.5 in **Production**.  
+
+1. Navigate to the specific feature where you want to edit the configuration.  
+2. Expand the drop-down menu and click the **Edit** icon corresponding to the environment.  
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/edit-config.png)  
+
+3. Update the **Account name** and **Model** as needed.  
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/update-llm.png" alt="drawing" width="80%"/>  
+
+4. Click **Save**.  
+
+---
+
+## FAQs
 
 <details>
- <summary>Is an LLM Required to Use Yellow.ai?</summary>
+ <summary>Is an LLM required to use Yellow.ai?</summary>
  <div>
-  <div> 
-     No, a Large Language Model (LLM) is not required to use Yellow.ai. The platform offers a wide range of features and functionalities that work independently of LLM integration.<br/>
-     However, integrating an LLM can enhance the platform’s capabilities, particularly for handling complex queries, generating dynamic responses, and improving FAQ interactions.
-</div>
-  <br/>
-   </div>
+  No. The platform offers a wide range of features that work independently of LLM integration.  
+  However, integrating an LLM enhances capabilities such as handling complex queries, generating dynamic responses, and improving FAQ interactions.
+ </div>
+</details>
+
+<details>
+ <summary>What happens if usage exceeds the platform rate limits?</summary>
+ <div>
+  Requests that exceed the threshold will be rejected. For per-minute limits, the quota resets automatically after one minute.
+ </div>
+</details>
+
+<details>
+ <summary>How can I check which rate limit is being hit?</summary>
+ <div>
+  You can verify this in the conversation logs, which indicate the type of rate limit that was exceeded.
+ </div>
+</details>
+
+<details>
+ <summary>If I publish a bot, will the LLM configuration from a lower environment move to the upper environment?</summary>
+ <div>
+  No. LLM configuration is not tied to the publish process. You must manually configure the settings in the Production environment.
+ </div>
 </details>

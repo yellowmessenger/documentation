@@ -23,11 +23,11 @@ To connect your Airpay account with Yellow.ai, follow these steps:
 
 1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment** > **Airpay**.
 
-   ![](https://i.imgur.com/rjslSEg.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/airpay.png)
 
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 
-   ![](https://i.imgur.com/rAKmXqE.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/airpay-details.png)
 
 3. Enter the **Merchant ID**, **Access token** and **Airpay base URL**.
 4. Click **Connect**. 

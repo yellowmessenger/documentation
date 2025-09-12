@@ -55,14 +55,19 @@ You need to integrate first with Development/Staging or Sandbox environment. Onc
 
 
 1. On the [Cloud platform](https://cloud.yellow.ai), Navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **Instamojo**.
-2. In G**ive account name,** enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/instomojo.png)
+
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 3. Enter the **Client ID** and **Client Secret** that was captured using the previous section.
-4. For sandbox environment use ```https://test.instamojo.com``` as baseUrl and for production env use ```https://api.instamojo.com``` as baseUrl
-3. To add multiple accounts, click ***+ Add account** and follow the above mentioned steps. You can add a maximum of 5 merchant accounts.
+4. In Instamojo base URL. for sandbox environment use ```https://test.instamojo.com``` as baseUrl and for production env use ```https://api.instamojo.com``` as baseUrl.
+3. To add multiple accounts, click **+ Add account** and follow the above mentioned steps. You can add a maximum of 5 merchant accounts.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/add-account-insto.png)
 
 ----
 
-## 3. Enable Instamojo related events for the bot
+## Enable Instamojo related events for the bot
 
 **Instamojo payment status event**: Indicates an update in the payment status. . Instamojo primarily recognizes the following payment status values: Pending, Sent, Failed, and Completed.
 
@@ -70,7 +75,7 @@ You need to integrate first with Development/Staging or Sandbox environment. Onc
 * To trigger a bot flow using the activated event, click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-5-trigger-bot-flows-with-integration-events).
 
 
-## 5. Perform Instamojo actions from your AI Agent
+## Perform Instamojo actions from your AI Agent
 
 This integration enables the bot to perform the following Instamojo actions:
 

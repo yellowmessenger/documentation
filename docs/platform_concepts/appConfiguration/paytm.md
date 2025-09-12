@@ -18,14 +18,14 @@ To integrate the Paytm payment gateway, follow these steps:
 
 1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment**  > **Paytm**. You can also search the integration by name **Paytm** using the Search box.
 
-   ![](https://i.imgur.com/m3s8TjA.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/paytm.png)
 
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
    
-   ![](https://i.imgur.com/4e8mqVP.jpg)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/paytm-details.png)
 
 3. In **Merchant ID**,  enter the Merchant ID provided by the client or Paytm SPOC.  
-4. I **Merchant Key** enter the Merchant Key provided by the client or Paytm SPOC.
+4. In **Merchant Key** enter the Merchant Key provided by the client or Paytm SPOC.
 5. In **API Domain**, If you intend to use the staging domain of Paytm, enter `https://securegw-stage.paytm.in`. If you're using the production domain, enter `https://securegw.paytm.in`.
 
 6. In **Channel ID**, enter the Channel ID provided by the client or Paytm SPOC.
@@ -43,7 +43,7 @@ The webhook URL serves as a callback endpoint where Paytm can send notifications
 1. Go to the connected Paytm integration and copy the webhook URL. 
 2. Add domain URL. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same. (r1 = MEA, r2 = Jakarta, r3 = Singapore, r4= USA, r5 = Europe)
 
-   ![](https://i.imgur.com/17C5i0Y.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/paytm-webhook.png)
 
 
 3. Login to your Paytm account and navigate to the Webhook URL Configuration section and add the provided webhook URL.

@@ -43,12 +43,15 @@ To connect your Stripe account with Yellow.ai, follow these steps:
 1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment**  > **Razorpay**. You can also search for **Razorpay** in the search box.
 
 
-    ![](https://i.imgur.com/MkSznUm.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/razorpay.png)
 
 
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 3. In **Key ID** and **Key secret**, enter the respective values that you downloaded using the steps mentioned in the previous section.
 4. CLick **Connect**.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/razorpay-details.png)
+
 5. To add another account, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
 ### 1.3 Configure webhook URL in Razorpay Dashboard 
@@ -57,6 +60,8 @@ The Webhook URL serves as a callback URL where Razorpay can send notifications o
 
 1. Copy the webhook URL and the API key mentioned in the **Instructions** section of the Razorpay Integration Card. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.  (r1 = MEA, r2 = Jakarta, r3 = Singapore, r4= USA, r5 = Europe)
 <br/>For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is MEA. If the bot belongs to India, you can use origin domain itself.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/razorpay.png)
 
 2. Log into the [Razorpay Dashboard](https://dashboard.razorpay.com/#/access/signin) and navigate to **Settings** → **Webhooks**.
 3. Click **+ Add New Webhook** on the right corner.
@@ -88,7 +93,7 @@ Enable Razorpay events in your bot to trigger flows based on event occurrences, 
 1. In Development/Staging environment, go to **Automation** > **Event** > **Integrations**.
 2. Activate the event, **Razorpay Payment Status**. Click on the more options icon and select *Activate*. If there are multiple accounts, you need to activate for each account separately. 
 
- ![](https://i.imgur.com/RohTZsg.png)
+ ![](https://cdn.yellowmessenger.com/assets/yellow-docs/razor-activate.png)
 
 3. A journey with its trigger point as this event should be created in **Automation**. Based on the received event data, an appropriate message will be displayed to the end user.
 

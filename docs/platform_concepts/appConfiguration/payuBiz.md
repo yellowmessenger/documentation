@@ -31,12 +31,12 @@ In a two-tier environment, you can connect an integration app in the Development
 
 1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment**  > **PayU Business**.
 
-   ![](https://i.imgur.com/WOrjMUu.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/payu.png)
 
 
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 
-   ![](https://i.imgur.com/lhhX7rr.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/payu-details.png)
 
 3. In **Salt value**, enter the unique hash for each transaction, which is then used to verify the authenticity of the transaction. The Salt Value is provided by PayU and should be kept confidential.
 4. Enter the **Client ID**, enter your PayU account's client ID.
@@ -65,7 +65,7 @@ To receive real-time notifications about payment status updates, you need to set
 
 Copy the webhook URL and the API key mentioned in the **Instructions** section of the PayUBiz Integration section in the yellow.ai platform.
 
-   ![](https://i.imgur.com/2cyhP5e.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/payu-webhook.png)
 
 
 Use the webhook URL specific to your region -  [India](https://cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [MEA](https://r1.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [Jakarta](https://r2.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [Singapore](https://r3.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D),[ USA](https://r4.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), and [Europe](https://r5.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D).
@@ -81,9 +81,9 @@ PayUBiz will whitelist the webhook URL provided by the merchant in their systems
 ### 1.4 Enable PayU event to receive event in bot 
 
 1. On the [Cloud Platform](https://cloud.yellow.ai) go to Staging/Development environment.
-2. On the left navigation bar, click **Automation** > **Event** > **Integrations** and search for `Payu Biz Payment Status`.
+2. On the left navigation bar, click **Automation** > **Build** > **Event** > **Integrations** and search for `PayU Payment Status`.
 
-   ![](https://i.imgur.com/vI6zufl.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/payu-event.png)
 
 3. Click on the more options icon and select **Activate**. If you have connected multiple accounts, you need to enable the event for each account.
 
