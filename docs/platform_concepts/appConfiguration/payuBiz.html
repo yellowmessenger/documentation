@@ -21,9 +21,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
 <script src="/js/FeedbackFooter.js"></script>
-<script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.9bd9be9e.css">
-<script src="/assets/js/runtime~main.03727d16.js" defer="defer"></script>
-<script src="/assets/js/main.14813155.js" defer="defer"></script>
+<script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.958bef79.css">
+<script src="/assets/js/runtime~main.126d87ee.js" defer="defer"></script>
+<script src="/assets/js/main.7ab11fca.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -53,11 +53,11 @@
 <ol>
 <li>
 <p>Navigate to the Development/Staging environment and go to <strong>Extensions</strong> &gt; <strong>Integrations</strong> &gt; <strong>Payment</strong>  &gt; <strong>PayU Business</strong>.</p>
-<p><img decoding="async" loading="lazy" src="https://i.imgur.com/WOrjMUu.png" alt="" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://cdn.yellowmessenger.com/assets/yellow-docs/payu.png" alt="" class="img_ev3q"></p>
 </li>
 <li>
 <p>In <strong>Give account name</strong>, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).</p>
-<p><img decoding="async" loading="lazy" src="https://i.imgur.com/lhhX7rr.png" alt="" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://cdn.yellowmessenger.com/assets/yellow-docs/payu-details.png" alt="" class="img_ev3q"></p>
 </li>
 <li>
 <p>In <strong>Salt value</strong>, enter the unique hash for each transaction, which is then used to verify the authenticity of the transaction. The Salt Value is provided by PayU and should be kept confidential.</p>
@@ -84,7 +84,7 @@ Example:</p><ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="13-configure-webhook-url">1.3 Configure webhook URL<a href="#13-configure-webhook-url" class="hash-link" aria-label="Direct link to 1.3 Configure webhook URL" title="Direct link to 1.3 Configure webhook URL">​</a></h3>
 <p>To receive real-time notifications about payment status updates, you need to set up a webhook URL</p>
 <p>Copy the webhook URL and the API key mentioned in the <strong>Instructions</strong> section of the PayUBiz Integration section in the yellow.ai platform.</p>
-<p><img decoding="async" loading="lazy" src="https://i.imgur.com/2cyhP5e.png" alt="" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://cdn.yellowmessenger.com/assets/yellow-docs/payu-webhook.png" alt="" class="img_ev3q"></p>
 <p>Use the webhook URL specific to your region -  <a href="https://cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D" target="_blank" rel="noopener noreferrer">India</a>, <a href="https://r1.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D" target="_blank" rel="noopener noreferrer">MEA</a>, <a href="https://r2.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D" target="_blank" rel="noopener noreferrer">Jakarta</a>, <a href="https://r3.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D" target="_blank" rel="noopener noreferrer">Singapore</a>,<a href="https://r4.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D" target="_blank" rel="noopener noreferrer"> USA</a>, and <a href="https://r5.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D" target="_blank" rel="noopener noreferrer">Europe</a>.</p>
 <p>To ensure secure communication and enable PayU Business to send payment status updates, you must get the webhook URL whitelisted. Contact the <a href="mailto:integration@payu.in" target="_blank" rel="noopener noreferrer">PayU Integration team</a> for assistance.</p>
 <p>PayUBiz will whitelist the webhook URL provided by the merchant in their systems. You also need to get the webhook URL whitelisted from the can write to the <a href="mailto:integration@payu.in" target="_blank" rel="noopener noreferrer">PayU Integration team</a> for more information.</p>
@@ -94,8 +94,8 @@ Example:</p><ul>
 <p>On the <a href="https://cloud.yellow.ai" target="_blank" rel="noopener noreferrer">Cloud Platform</a> go to Staging/Development environment.</p>
 </li>
 <li>
-<p>On the left navigation bar, click <strong>Automation</strong> &gt; <strong>Event</strong> &gt; <strong>Integrations</strong> and search for <code>Payu Biz Payment Status</code>.</p>
-<p><img decoding="async" loading="lazy" src="https://i.imgur.com/vI6zufl.png" alt="" class="img_ev3q"></p>
+<p>On the left navigation bar, click <strong>Automation</strong> &gt; <strong>Build</strong> &gt; <strong>Event</strong> &gt; <strong>Integrations</strong> and search for <code>PayU Payment Status</code>.</p>
+<p><img decoding="async" loading="lazy" src="https://cdn.yellowmessenger.com/assets/yellow-docs/payu-event.png" alt="" class="img_ev3q"></p>
 </li>
 <li>
 <p>Click on the more options icon and select <strong>Activate</strong>. If you have connected multiple accounts, you need to enable the event for each account.</p>
