@@ -2,7 +2,7 @@
 /* Langfuse-inspired design system with CSS variables */
 :root {
   /* Langfuse Font Stack - System fonts for optimal readability */
-  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji";
+  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Lato, Helvetica, sans-serif, "Helvetica Neue", sans-serif, "Segoe UI Emoji";
   --font-mono: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
 
   /* Langfuse Light Mode Color System */
@@ -90,20 +90,20 @@ h6 { font-size: var(--text-base); }
 @media (min-width: 1024px) {
   h1 { font-size: 48px; }
   h2 { font-size: 40px; }
-  h3 { font-size: 31px; }
-  h4 { font-size: 25px; }
+  h3 { font-size: 35px; }
+  h4 { font-size: 21px; }
   h5 { font-size: 20px; }
   h6 { font-size: 16px; }
 }
 
 a {
-  color: var(--primary);
+  color: var(--ifm-color-primary, #3b82f6);
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--ifm-color-primary-dark, #2563eb);
   text-decoration: underline;
 }
 
@@ -253,7 +253,7 @@ menu__link--sublist-caret:after {
 /* ================== LANGFUSE-STYLE TOP-LEVEL CATEGORIES ================== */
 /* Style top-level categories (tutorials, cookbooks, platform_concepts, updates, glossary) like Langfuse */
 .menu > .menu__list > .menu__list-item {
-  margin-bottom: 5px; /* Langfuse spacing between top-level items */
+  margin-bottom: 8px; /* Enhanced: Increased from 5px for better separation */
 }
 
 /* Top-level category headers - Langfuse style with icons */
@@ -261,9 +261,9 @@ menu__link--sublist-caret:after {
   display: flex !important;
   align-items: center;
   gap: 12px; /* Space between icon and text */
-  padding: 12px 16px; /* Langfuse padding */
-  margin: 0 16px; /* Langfuse horizontal margins */
-  border-radius: 8px; /* Langfuse border radius */
+  padding: 14px 20px; /* Enhanced: Increased from 12px 16px */
+  margin: 0 20px; /* Enhanced: Increased from 0 16px */
+  border-radius: 10px; /* Enhanced: More rounded */
   font-size: 15px !important; /* Langfuse font size */
   font-weight: 500 !important; /* Langfuse font weight */
   color: var(--muted-foreground) !important;
@@ -373,19 +373,19 @@ menu__link--sublist-caret:after {
 /* ================== SUB-LEVEL NAVIGATION STYLING ================== */
 /* Sub-menu styling - nested under top-level categories */
 .menu > .menu__list > .menu__list-item .menu__list {
-  padding: 8px 0 16px 0; /* Langfuse sub-menu padding */
-  margin: 0 16px; /* Match parent margins */
+  padding: 12px 0 20px 0; /* Enhanced: Increased spacing */
+  margin: 0 20px; /* Enhanced: Match parent margins */
   border-left: 1px solid var(--border);
   position: relative;
 }
 
 /* Sub-menu items */
 .menu > .menu__list > .menu__list-item .menu__list .menu__list-item {
-  margin: 1px 0; /* Minimal spacing for sub-items */
+  margin: 2px 0; /* Enhanced: Increased from 1px */
 }
 
 .menu > .menu__list > .menu__list-item .menu__list .menu__link {
-  padding: 8px 16px; /* Langfuse sub-item padding */
+  padding: 10px 20px; /* Enhanced: Increased from 8px 16px */
   margin: 0; /* No margins for sub-items */
   font-size: 14px !important;
   font-weight: 400 !important;
@@ -487,28 +487,13 @@ menu__link--sublist-caret:after {
 /* Use Docusaurus's built-in arrow functionality (like docs.yellow.ai) */
 /* No custom arrow overrides needed */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ================== LANGFUSE-STYLE BREADCRUMBS ================== */
 /* Clean breadcrumb container matching Langfuse design */
 .theme-doc-breadcrumbs,
 .breadcrumbsContainer_Z_bl {
-  margin: 0 0 2rem 0;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--border);
+  margin: 0 0 2.5rem 0; /* Enhanced: Increased bottom margin */
+  padding: 1.5rem 0; /* Enhanced: Increased padding */
+  border-bottom: 2px solid var(--border); /* Enhanced: Thicker border */
 }
 
 .breadcrumbs {
@@ -525,14 +510,10 @@ menu__link--sublist-caret:after {
   display: flex;
   align-items: center;
   font-weight: 400;
+  padding: 0.25rem 0; /* Enhanced: Add some vertical padding */
 }
 
-.breadcrumbs__item:not(:last-child)::after {
-  content: "/";
-  margin: 0 0.5rem;
-  color: var(--muted-foreground);
-  opacity: 0.5;
-}
+/* Use default Docusaurus breadcrumb separators */
 
 .breadcrumbs__link {
   color: var(--muted-foreground);
@@ -570,24 +551,25 @@ menu__link--sublist-caret:after {
 
 .docItemCol_VOVn {
   max-width: 100%;
-  padding: 0 3rem; /* Increased from 2rem for more breathing room */
+  padding: 0 4rem; /* Enhanced: Increased from 3rem for more breathing room */
 }
 
 /* Article content styling */
 .theme-doc-markdown {
-  max-width: 1200px;
+  max-width: 1000px; /* Enhanced: Slightly narrower for better reading */
   margin: 0 auto;
   padding: 0;
 }
 
 /* Main content headers - Langfuse style */
 .theme-doc-markdown h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem; /* Enhanced: Slightly larger */
   font-weight: 700;
   line-height: 1.1;
-  margin: 2rem 0 1.5rem 0;
+  margin: 3rem 0 2rem 0; /* Enhanced: More top margin, more bottom margin */
   color: var(--foreground);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em; /* Enhanced: Tighter letter spacing */
+  scroll-margin-top: 2rem; /* Enhanced: Better scroll positioning for anchor links */
 }
 
 /* Fix double horizontal lines after H1 */
@@ -597,75 +579,101 @@ menu__link--sublist-caret:after {
 }
 
 .theme-doc-markdown h2 {
-  font-size: 1.875rem;
+  font-size: 2rem; /* Enhanced: Slightly larger */
   font-weight: 600;
   line-height: 1.2;
-  margin: 2rem 0 1rem 0;
+  margin: 2.5rem 0 1.25rem 0; /* Enhanced: Increased margins */
   color: var(--foreground);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border); /* Enhanced: Thicker border */
+  padding-bottom: 0.75rem; /* Enhanced: More padding */
+  scroll-margin-top: 2rem; /* Enhanced: Better scroll positioning for anchor links */
 }
 
 .theme-doc-markdown h3 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.3;
-  margin: 1.5rem 0 1rem 0;
+  margin: 2rem 0 1.25rem 0; /* Enhanced: Increased margins */
   color: var(--foreground);
+  scroll-margin-top: 2rem; /* Enhanced: Better scroll positioning for anchor links */
+}
+
+.theme-doc-markdown h4 {
+  font-size: 1.25rem; /* Enhanced: Added H4 styling */
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 1.75rem 0 1rem 0; /* Enhanced: Better spacing */
+  color: var(--foreground);
+  scroll-margin-top: 2rem; /* Enhanced: Better scroll positioning for anchor links */
 }
 
 /* Paragraph and text styling */
 .theme-doc-markdown p {
   font-size: 16px;
-  line-height: 1.7;
-  margin: 1rem 0;
+  line-height: 1.8; /* Enhanced: Increased from 1.7 for better readability */
+  margin: 1.5rem 0; /* Enhanced: Increased spacing between paragraphs */
   color: var(--foreground);
   font-weight: 400;
+  max-width: 70ch; /* Enhanced: Optimal reading width - around 70 characters */
 }
 
 /* Code blocks - Langfuse style */
 .theme-doc-markdown pre {
   background-color: var(--muted);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
+  border-radius: 12px; /* Enhanced: More rounded like Langfuse */
+  padding: 2rem; /* Enhanced: Increased from 1.5rem */
+  margin: 2rem 0; /* Enhanced: Increased from 1.5rem */
   overflow-x: auto;
   font-size: 14px;
+  line-height: 1.6; /* Enhanced: Better code readability */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Enhanced: Subtle shadow */
 }
 
-.theme-doc-markdown code {
+.theme-doc-markdown code:not(pre code) {
   background-color: var(--muted);
   border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 0.125rem 0.25rem;
+  border-radius: 6px; /* Enhanced: More rounded */
+  padding: 0.25rem 0.5rem; /* Enhanced: Increased padding */
   font-size: 14px;
   font-weight: 500;
-  color: var(--foreground);
+  color: var(--primary); /* Enhanced: Primary color */
+  font-family: var(--font-mono);
 }
 
 /* Lists styling */
 .theme-doc-markdown ul,
 .theme-doc-markdown ol {
-  margin: 1rem 0;
-  padding-left: 1.5rem;
+  margin: 1.5rem 0; /* Enhanced: Increased from 1rem */
+  padding-left: 1.75rem; /* Enhanced: Slightly more indentation */
 }
 
 .theme-doc-markdown li {
-  margin: 0.5rem 0;
-  line-height: 1.7;
+  margin: 0.75rem 0; /* Enhanced: Increased from 0.5rem */
+  line-height: 1.8; /* Enhanced: Better line height */
   color: var(--foreground);
 }
 
 /* Links styling */
 .theme-doc-markdown a {
-  color: var(--primary);
+  color: var(--ifm-color-primary, #3b82f6) !important;
   text-decoration: none;
   font-weight: 500;
+  transition: all 0.2s ease; /* Enhanced: Smooth transitions */
+  border-bottom: 1px solid transparent; /* Enhanced: Subtle underline effect */
 }
 
 .theme-doc-markdown a:hover {
-  text-decoration: underline;
+  color: var(--ifm-color-primary-dark, #2563eb) !important;
+  text-decoration: underline; /* Enhanced: Show underline on hover */
+  border-bottom-color: var(--ifm-color-primary, #3b82f6); /* Enhanced: Custom underline */
+  transform: translateY(-1px); /* Enhanced: Subtle lift effect */
+}
+
+.theme-doc-markdown a:focus {
+  outline: 2px solid var(--primary); /* Enhanced: Better accessibility */
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Mobile TOC styling - Langfuse style */
@@ -702,24 +710,27 @@ menu__link--sublist-caret:after {
 
 /* Footer navigation - Langfuse style */
 .pagination-nav {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
+  margin-top: 4rem; /* Enhanced: Increased from 3rem */
+  padding-top: 2.5rem; /* Enhanced: Increased padding */
+  border-top: 2px solid var(--border); /* Enhanced: Thicker border */
 }
 
 .pagination-nav__link {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1rem;
+  border: 2px solid var(--border); /* Enhanced: Thicker border */
+  border-radius: 12px; /* Enhanced: More rounded */
+  padding: 1.5rem; /* Enhanced: Increased padding */
   text-decoration: none;
   transition: all 0.2s ease;
   background-color: var(--background);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Enhanced: Subtle shadow */
 }
 
 .pagination-nav__link:hover {
   background-color: var(--muted);
   border-color: var(--primary);
   text-decoration: none;
+  transform: translateY(-2px); /* Enhanced: Subtle lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced: Enhanced shadow on hover */
 }
 
 .pagination-nav__sublabel {
@@ -779,23 +790,38 @@ menu__link--sublist-caret:after {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .docItemCol_VOVn {
-    padding: 0 1rem;
+    padding: 0 1.5rem; /* Enhanced: Increased from 1rem */
+  }
+  
+  .theme-doc-markdown {
+    max-width: 100%; /* Enhanced: Full width on mobile */
+  }
+  
+  .theme-doc-markdown p {
+    max-width: 100%; /* Enhanced: Remove character limit on mobile */
   }
   
   .theme-doc-markdown h1 {
-    font-size: 1.875rem;
+    font-size: 2rem; /* Enhanced: Larger on mobile */
+    margin: 2rem 0 1.5rem 0;
   }
   
   .theme-doc-markdown h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem; /* Enhanced: Larger on mobile */
+  }
+  
+  /* Enhanced: Better mobile sidebar spacing */
+  .menu > .menu__list > .menu__list-item > .menu__link {
+    padding: 12px 16px;
+    margin: 0 12px;
   }
 }
 
 /* Table of Contents styling - Sticky like Langfuse */
 .table-of-contents {
-  border-left: 2px solid var(--border);
-  padding-left: 1rem;
-  margin-left: 1rem;
+  border-left: 3px solid var(--border); /* Enhanced: Thicker accent line */
+  padding-left: 1.5rem; /* Enhanced: More padding */
+  margin-left: 1.5rem; /* Enhanced: More margin */
   position: sticky !important; /* Sticky positioning */
   top: 2rem !important; /* Stick with some top spacing */
   max-height: calc(100vh - 4rem) !important; /* Max height with spacing */
@@ -807,16 +833,29 @@ menu__link--sublist-caret:after {
   font-size: 14px;
   text-decoration: none;
   display: block;
-  padding: 2px 0;
+  padding: 6px 0; /* Enhanced: Increased from 2px for better click targets */
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
 .table-of-contents a:hover {
   color: var(--foreground);
+  background-color: var(--muted); /* Enhanced: Background on hover */
+  padding-left: 0.5rem; /* Enhanced: Indent on hover */
+  transform: translateX(4px); /* Enhanced: Subtle hover animation */
 }
 
 .table-of-contents a.table-of-contents__link--active {
   color: var(--primary);
   font-weight: 500;
+  background-color: var(--accent); /* Enhanced: Active background */
+  padding-left: 0.5rem; /* Enhanced: Active indent */
+}
+
+.table-of-contents a:focus {
+  outline: 2px solid var(--primary); /* Enhanced: Better accessibility */
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Additional TOC container sticky behavior */
@@ -855,6 +894,19 @@ menu__link--sublist-caret:after {
 
 .markdown li {
   margin-bottom: 0.25rem;
+}
+
+/* ================== ENHANCED GLOBAL IMPROVEMENTS ================== */
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus states for menu links */
+.menu__link:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* ================== DARK MODE ================== */
@@ -958,7 +1010,6 @@ html[data-theme='dark'] .table-of-contents a:hover {
 html[data-theme='dark'] .table-of-contents a.table-of-contents__link--active {
   color: var(--primary);
 }
-
 
 /* === LATEST UPDATES SECTION === */
 .updatesSection {

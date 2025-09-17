@@ -39,7 +39,7 @@ module.exports = {
       placeholder: "Search docs",
     },
     prism: {
-      //theme: require("prism-react-renderer/themes/github"),
+      theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("./src/plugins/prism_themes/monokai"),
     },
     colorMode: {
@@ -83,10 +83,10 @@ module.exports = {
           activeBasePath: "/api",
         },
         {
-          to: "/whats-new",
+          to: "docs/updates/overview",
           label: "What's New",
           position: "left",
-          activeBasePath: "/whats-new",
+          activeBasePath: "docs/whats_new",
         },
         {
           to: "docs/tutorials/basics",
@@ -119,12 +119,6 @@ module.exports = {
     [
       "docusaurus-preset-openapi",
       {
-      sitemap: {
-        changefreq: 'weekly',
-        priority: 0.5,
-        ignorePatterns: ['/tags/**'],
-        filename: 'sitemap.xml',
-      },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
         },
@@ -141,9 +135,7 @@ module.exports = {
             anonymizeIP: true,
           },
         theme: {
-         
           customCss: require.resolve("./src/css/custom.css"),
-          
         },
       },
     ],

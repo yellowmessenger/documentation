@@ -99,7 +99,7 @@ After completing the integration, you must enable the Notification API Engine in
 
 ## Related Resources
 
-- [Yellow.ai Integrations Overview](/docs/platform_concepts/appConfiguration/integrations)  
+- [Yellow.ai Integrations Overview](/docs/platform_concepts/appConfiguration/overview)  
 - [LeadSquared WhatsApp Business API Docs](https://www.leadsquared.com/)  
 
 

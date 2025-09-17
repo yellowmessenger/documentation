@@ -100,7 +100,6 @@ The next alerts start as per the configured time.
     
 #### Add recipients
 
-* **Role-based recipients**: Select roles from the dropdown. All users assigned to the selected role will receive the alert.
 * **Email ID configuration**: Add individual email addresses to the list. Alerts will be sent only to these specified users.
 * **Roles & email IDs**: Alerts will be sent to individuals from both the selected roles and the added email IDs.
 

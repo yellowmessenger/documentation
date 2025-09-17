@@ -19,7 +19,7 @@ const Hero = () => {
       title: "Understand the Core Concepts",
       description: "Get a 2-minute overview of the main platform components",
       icon: "🧠",
-      link: "/docs/platform_concepts/overview",
+      link: "/docs/platform_concepts/getting-started",
       step: "2"
     },
     {
@@ -76,7 +76,7 @@ const Hero = () => {
                   key={index}
                   to={card.link}
                   className={styles.card}
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className={styles.cardStep}>{card.step}</div>
                   <div className={styles.cardIcon}>{card.icon}</div>

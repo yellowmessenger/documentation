@@ -27,7 +27,6 @@ We’ve redesigned the Yellow.ai workspace with a cleaner theme and improved nav
 * **Distinct structures for AI and Non-AI agents** to provide tailored workflows.  
 * **All features are organized within their respective sections** on each page for intuitive access.  
 
-   ![](/files/platform-new-changes.gif)
 
 #### 1. What's changed in the navigation for brands using AI Agents
 The **Build** section is focused on agent-centric components:

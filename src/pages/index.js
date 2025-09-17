@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import Hero from '@site/src/components/Hero/Hero';
+import { updates, config } from '@site/src/data/updates';
 
 // --- SVG Icons for Feature Cards (from lucide.dev) ---
 const RocketIcon = (props) => (
@@ -99,6 +100,190 @@ const topics = [
   },
 ];
 
+// What's New Updates Component
+const WhatsNewUpdates = () => {
+  // Get updates from the data file, filter if needed, and limit the number shown
+  const displayUpdates = config.showOnlyNew 
+    ? updates.filter(update => update.badge === 'new').slice(0, config.maxUpdates)
+    : updates.slice(0, config.maxUpdates);
+
+  const getBadgeClass = (badge) => {
+    const badgeMap = {
+      'new': 'updateBadgeNew',
+      'updated': 'updateBadgeUpdated',
+      'security': 'updateBadgeSecurity'
+    };
+    return badgeMap[badge] || 'updateBadgeUpdated';
+  };
+
+  return (
+    <section className="updatesSection">
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
+        <div className="updatesHeader">
+          <h3 className="updatesTitle" style={{
+            fontSize: '1.5rem',
+            fontWeight: '600',
+            color: 'var(--ifm-color-text-base, #1e293b)',
+            margin: '0 0 2rem 0'
+          }}>What's New</h3>
+          <p className="updatesSubtitle">
+            Stay up to date with the latest features, improvements, and enhancements to the Yellow.ai platform.
+          </p>
+        </div>
+        
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+          gap: '1.5rem', 
+          maxWidth: '900px', 
+          margin: '0 auto' 
+        }}>
+          {displayUpdates.map((update, index) => (
+            <div key={index} className="updateCard" style={{
+              background: 'var(--ifm-color-background-base, #ffffff)',
+              border: '1px solid var(--ifm-color-emphasis-200, #e2e8f0)',
+              borderRadius: '12px',
+              padding: '1.5rem',
+              transition: 'all 0.3s ease',
+              position: 'relative',
+              overflow: 'hidden',
+              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+              animationDelay: `${index * 100}ms`,
+              cursor: 'pointer'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+              e.currentTarget.style.borderColor = 'var(--ifm-color-primary, #3b82f6)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
+              e.currentTarget.style.borderColor = 'var(--ifm-color-emphasis-200, #e2e8f0)';
+            }}
+            onClick={() => window.location.href = update.link}
+            >
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                height: '3px',
+                background: update.badge === 'new' ? 'linear-gradient(90deg, #10b981, #059669)' : 'linear-gradient(90deg, #3b82f6, #2563eb)',
+                transform: 'scaleX(0)',
+                transformOrigin: 'left',
+                transition: 'transform 0.3s ease'
+              }}></div>
+              
+              <div style={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                justifyContent: 'space-between',
+                marginBottom: '1rem',
+                gap: '1rem'
+              }}>
+                <div>
+                  <div style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--ifm-color-text-secondary, #64748b)',
+                    fontWeight: '500'
+                  }}>{update.date}</div>
+                  <div style={{
+                    fontSize: '0.75rem',
+                    color: 'var(--ifm-color-text-secondary, #94a3b8)',
+                    fontFamily: 'ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace',
+                    background: 'var(--ifm-color-emphasis-100, #f1f5f9)',
+                    padding: '0.125rem 0.375rem',
+                    borderRadius: '4px',
+                    marginTop: '0.25rem',
+                    display: 'inline-block'
+                  }}>Latest</div>
+                </div>
+                <div style={{
+                  fontSize: '0.75rem',
+                  fontWeight: '600',
+                  padding: '0.25rem 0.5rem',
+                  borderRadius: '12px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px',
+                  background: update.badge === 'new' ? 'linear-gradient(135deg, #10b981, #059669)' : 'linear-gradient(135deg, #3b82f6, #2563eb)',
+                  color: 'white'
+                }}>{update.type}</div>
+              </div>
+              
+              <div>
+                <h4 style={{
+                  fontSize: '1.1rem',
+                  fontWeight: '600',
+                  margin: '0 0 0.5rem 0',
+                  color: 'var(--ifm-color-text-base, #1e293b)',
+                  lineHeight: '1.4'
+                }}>{update.title}</h4>
+                <p style={{
+                  fontSize: '0.9rem',
+                  color: 'var(--ifm-color-text-secondary, #64748b)',
+                  margin: '0 0 1rem 0',
+                  lineHeight: '1.4'
+                }}>{update.description}</p>
+              </div>
+              
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: '1rem',
+                marginTop: 'auto'
+              }}>
+                <div style={{
+                  fontSize: '0.75rem',
+                  fontWeight: '500',
+                  color: 'var(--ifm-color-text-secondary, #94a3b8)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px'
+                }}>{update.category}</div>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.25rem',
+                  fontSize: '0.875rem',
+                  fontWeight: '500',
+                  color: 'var(--ifm-color-primary, #3b82f6)',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease',
+                  cursor: 'pointer'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.color = 'var(--ifm-color-primary-dark, #2563eb)';
+                  e.target.style.textDecoration = 'underline';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.color = 'var(--ifm-color-primary, #3b82f6)';
+                  e.target.style.textDecoration = 'none';
+                }}
+                >
+                  Learn more
+                  <svg style={{ width: '12px', height: '12px', transition: 'transform 0.2s ease' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="updatesFooter">
+          <a href="/docs/updates/overview" className="viewAllUpdates">
+            View All Updates
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
@@ -109,6 +294,9 @@ export default function Home() {
     >
       {/* Hero Section - now contains your preferred content */}
       <Hero />
+      
+      {/* What's New Updates Section */}
+      <WhatsNewUpdates />
       
       {/* Explore More Topics Section 
       <main className={styles.homeWrapper} style={{ paddingTop: '2rem' }}>
