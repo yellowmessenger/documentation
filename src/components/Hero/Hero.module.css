@@ -227,12 +227,29 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   border-color: var(--ifm-color-primary, #3b82f6);
   text-decoration: none;
   color: inherit;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
 }
 
 .cardStep {
@@ -261,10 +278,11 @@
 }
 
 .cardTitle {
-  font-size: 1.1rem;
+  font-size: 1.1rem !important;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
   color: var(--ifm-color-text-base, #1e293b);
+  transition: all 0.2s ease;
 }
 
 .cardDescription {
@@ -272,6 +290,7 @@
   color: var(--ifm-color-text-secondary, #64748b);
   margin: 0;
   line-height: 1.4;
+  transition: all 0.2s ease;
 }
 
 .cardArrow {
@@ -282,7 +301,7 @@
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
-  transition: transform 0.3s ease;
+  transition: all 0.2s ease;
   flex-shrink: 0;
 }
 
