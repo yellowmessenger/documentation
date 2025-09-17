@@ -1,0 +1,744 @@
+import React, { useState, useEffect } from 'react';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import styles from './highlights.module.css';
+
+// --- NEW DATA: FEATURE HIGHLIGHTS ---
+const featureHighlights = [
+  {
+    id: 'platform-redesign',
+    title: 'Cloud Platform Redefined for a Better Experience',
+    shortDescription: 'A redesigned workspace with a cleaner theme and improved navigation for a smoother, more intuitive experience.',
+    fullDescription: 'We\'ve redesigned the Yellow.ai workspace with a cleaner theme and improved navigation to give you a smoother, more intuitive experience. This update reduces clutter in the left navigation and provides an overall better workflow, with refreshed colors, fonts, and distinct structures for AI and Non-AI agents.',
+    image: 'https://docs.yellow.ai/assets/images/ai-agent-802ebc79e4fb161e23bcb43d275d9ffe.gif',
+    category: 'Platform',
+    badge: 'Major Update',
+    date: 'September 8, 2025',
+    link: '/docs/updates/overview#cloud-platform-redefined-for-better-experience',
+    highlights: [
+      'New Navigation for faster access to modules',
+      'Refreshed theme, typography, and colors',
+      'Automation module is now named Build',
+      'Distinct workflows for AI and Non-AI agents'
+    ]
+  },
+  {
+    id: 'ai-agent-revamp',
+    title: 'Automate Revamp: A Simpler Way to Build Gen AI Agents',
+    shortDescription: 'An reimagined AI agent setup experience that is more guided, efficient, and powerful.',
+    fullDescription: 'Define your AI agent’s behavior using natural language. Design large, multi-functional AI assistants with ease using our modular Super Agent architecture. This structure keeps logic clean, reusable, and scalable.',
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/superagent.png',
+    category: 'AI Agents',
+    badge: 'Enhancement',
+    date: 'September 2025',
+    link: '/docs/platform_concepts/AIAgent/agentpersona',
+    highlights: [
+      'Define agent behavior using natural language',
+      'Modular Super Agent & Agent architecture',
+      'Improved conversation design with building blocks',
+      'Seamlessly connect to external systems with Workflows'
+    ]
+  },
+].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date (newest first)
+
+// --- NEW DATA: RECENT UPDATES ---
+const allUpdates = [
+  {
+    title: 'PCI-Compliant Data Capture in Question Nodes',
+    description: 'Securely capture sensitive payment data across Web, WhatsApp, and Voice channels with PCI DSS compliance.',
+    fullDescription: 'As part of our commitment to security, Yellow.ai now supports PCI-compliant data capture in question nodes. Input fields for card number, CVV, and PIN can be marked as PCI data, which is automatically encrypted, logged securely, and handled per PCI DSS guidelines.',
+    type: 'Security Update',
+    contentType: 'major',
+    badge: 'updated',
+    date: 'July 10, 2025',
+    link: '/docs/platform_concepts/studio/build/nodes/prompt-node-overview/question-node#collecting-pci-details-using-question-node',
+    category: 'AI Agent',
+    icon: '🛡️',
+    highlights: [
+      'PCI classification for specific input fields',
+      'Multi-Channel Support across Web, WhatsApp, and Voice',
+      'API-Only Access for PCI variables with secure deletion'
+    ]
+  },
+  {
+    title: 'MM Lite Preference for WhatsApp Campaigns',
+    description: 'WhatsApp campaigns now support MM Lite API for smarter, Meta-powered message delivery.',
+    fullDescription: 'We\'ve added MM Lite API support to outbound campaigns, flows, and notification APIs. This smart delivery feature uses Meta\'s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they\'re most likely to engage.',
+    type: 'Enhancement',
+    contentType: 'major',
+    badge: 'updated',
+    date: 'August 28, 2025',
+    link: '/docs/updates/overview#mm-lite-global-setting',
+    category: 'Engage',
+    icon: '📱',
+    highlights: [
+      'Smart delivery timing optimization',
+      'Global setting configuration available',
+      'Campaign-level override options'
+    ]
+  },
+  {
+    title: 'Ccavenue Integration',
+    description: 'New option to generate Quick Invoice links during conversations for seamless payment collection.',
+    fullDescription: 'CcAvenue is a leading payment gateway that enables businesses to securely accept online payments. We\'ve added a new "Generate Quick Invoice" option to simplify payment collection directly within conversations.',
+    type: 'Integration',
+    badge: 'new',
+    date: 'September 9, 2025',
+    link: '/docs/platform_concepts/appConfiguration/ccavenue-payment',
+    category: 'Integrations',
+    icon: '💳'
+  },
+  {
+    title: 'New Display Controls in Custom Live Chat',
+    description: 'Added options to hide the home button and input box while a user is waiting in the agent queue.',
+    type: 'Integration',
+    badge: 'updated',
+    date: 'August 25, 2025',
+    link: '/docs/platform_concepts/appConfiguration/customliveagent#connect-custom-live-chat-account-to-yellowai',
+    category: 'Integrations',
+    icon: '💬'
+  },
+  {
+    title: 'JSON Web Token (JWT) Integration',
+    description: 'Added support for JWT authentication to secure APIs and integrations with signed tokens.',
+    fullDescription: 'We\'ve added support for JWT authentication, enabling a more secure way to exchange information. Use signed tokens to ensure data integrity and standardize authentication flows across your applications.',
+    type: 'Integration',
+    badge: 'new',
+    date: 'August 25, 2025',
+    link: '/docs/platform_concepts/appConfiguration/json-webtoken',
+    category: 'Integrations',
+    icon: '🔐'
+  },
+  {
+    title: 'WhatsApp Consumption Report Updates',
+    description: 'Updated WhatsApp reporting to align with Meta\'s new per-message pricing model, effective July 1, 2025.',
+    fullDescription: 'We\'ve updated your WhatsApp consumption report to ensure accuracy with Meta\'s new pricing model. Changes include per-message billing, free utility messages within an open customer service window, and new reporting categories ("Paid" and "Free").',
+    type: 'Enhancement',
+    badge: 'updated',
+    date: 'July 23, 2025',
+    link: '/docs/updates/overview#whatsapp-consumption-report-aligned-with-new-pricing-effective-july-1-2025',
+    category: 'Insights',
+    icon: '📊'
+  },
+  {
+    title: 'Email Channel OAuth Support',
+    description: 'Configure the Email channel with Microsoft OAuth for a more secure and seamless connection.',
+    type: 'Enhancement',
+    badge: 'updated',
+    date: 'August 20, 2025',
+    link: '/docs/platform_concepts/channelConfiguration/email-outbound#setup-email-channel-with-oauth',
+    category: 'Channels',
+    icon: '📧'
+  },
+  {
+    title: 'Redesigned Topic Details Page',
+    description: 'Refreshed design and improved terminology on the Topic Details page in the Analyze module.',
+    type: 'Enhancement',
+    badge: 'updated',
+    date: 'September 2025',
+    link: '/docs/platform_concepts/analyze/indepthinsights',
+    category: 'Analyze',
+    icon: '📈'
+  },
+  {
+    title: 'Message Redaction in Chats',
+    description: 'Safeguard sensitive customer data with message redaction directly from the Inbox.',
+    type: 'Security Update',
+    badge: 'updated',
+    date: 'Jun 23, 2025',
+    link: '/docs/platform_concepts/inbox/inbox-settings/team/agents#message-redaction-to-protect-sensitive-information-with-controlled-visibility',
+    category: 'Inbox',
+    icon: '🔒'
+  },
+  {
+    title: 'Sunset Notice: Legacy Analytics Screens',
+    description: 'As part of our upcoming Analytics revamp, we are streamlining the UI by removing a few legacy screens.',
+    fullDescription: 'We are removing the User Journeys, Health, User Data, and User Trends screens to reduce clutter. Key metrics from these pages will remain available in the Overview dashboard. This is part of our broader effort to deliver cleaner insights and a more intuitive interface.',
+    type: 'Enhancement',
+    badge: 'updated',
+    date: 'July 2, 2025',
+    link: '/docs/updates/2025/april-q2#sunset-notice-clearing-the-path-for-a-smarter-analytics-experience-',
+    category: 'Insights',
+    icon: '🌅'
+  }
+].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date (newest first)
+
+export default function WhatsNewOverview() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedContentType, setSelectedContentType] = useState('All');
+  const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'timeline'
+  const [expandedCard, setExpandedCard] = useState(null);
+  const [expandedUpdates, setExpandedUpdates] = useState(new Set());
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  // Get unique categories and content types
+  const categories = ['All', ...new Set(allUpdates.map(update => update.category))];
+  const contentTypes = ['All', 'Major Features'];
+
+  // Filter updates by category and content type
+  const filteredUpdates = allUpdates
+    .filter(update => {
+      const categoryMatch = selectedCategory === 'All' || update.category === selectedCategory;
+      const contentTypeMatch = selectedContentType === 'All' || 
+        (selectedContentType === 'Major Features' && update.contentType === 'major');
+      return categoryMatch && contentTypeMatch;
+    })
+    .sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date (newest first)
+
+  // For timeline view, combine major updates and recent changes
+  const getTimelineData = () => {
+    if (viewMode !== 'timeline') return filteredUpdates;
+    
+    // Convert feature highlights to timeline format
+    const majorUpdatesForTimeline = featureHighlights.map(feature => ({
+      ...feature,
+      description: feature.shortDescription,
+      fullDescription: feature.fullDescription,
+      type: 'Major Update',
+      contentType: 'major',
+      category: feature.category,
+      icon: feature.icon || '🚀', // Use specific icon if available, fallback to rocket
+      isMajorUpdate: true,
+      highlights: feature.highlights
+    }));
+
+    // Combine and sort by date (newest first)
+    const combined = [...majorUpdatesForTimeline, ...filteredUpdates];
+    return combined.sort((a, b) => new Date(b.date) - new Date(a.date));
+  };
+
+  const timelineData = getTimelineData();
+
+  const toggleCard = (cardId) => {
+    setExpandedCard(expandedCard === cardId ? null : cardId);
+  };
+
+  const toggleUpdateExpansion = (updateTitle) => {
+    const newExpanded = new Set(expandedUpdates);
+    if (newExpanded.has(updateTitle)) {
+      newExpanded.delete(updateTitle);
+    } else {
+      newExpanded.add(updateTitle);
+    }
+    setExpandedUpdates(newExpanded);
+  };
+
+  const openImageModal = (imageSrc) => {
+    setSelectedImage(imageSrc);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
+
+  // Close modal on escape key
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        closeImageModal();
+      }
+    };
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, []);
+
+  return (
+    <Layout
+      title="What's New"
+      description="Stay up to date with the latest improvements and new capabilities in Yellow.ai"
+    >
+      <div className={styles.container}>
+        {/* Hero Section */}
+        <div className={styles.hero}>
+          <div className={styles.heroContent}>
+            <h1 className={styles.heroTitle}>
+              What's New in <span className={styles.gradient}>Yellow.ai</span>
+            </h1>
+            <p className={styles.heroSubtitle}>
+              We're constantly evolving with new features and enhancements to help you achieve more with our Agentic AI.
+            </p>
+          </div>
+        </div>
+
+        {/* Quick Stats Bar */}
+        <div className={styles.quickStats}>
+          <div className={styles.statItem}>
+            <span className={styles.statIcon}>📈</span>
+            <span className={styles.statValue}>{allUpdates.length + featureHighlights.length}+</span>
+            <span>Updates</span>
+          </div>
+          <div className={styles.statDivider}></div>
+          <div className={styles.statItem}>
+            <span className={styles.statIcon}>🚀</span>
+            <span className={styles.statValue}>{featureHighlights.length}</span>
+            <span>Major Features</span>
+          </div>
+          <div className={styles.statDivider}></div>
+          <div className={styles.statItem}>
+            <span className={styles.statIcon}>📅</span>
+            <span className={styles.statValue}>Today</span>
+            <span>Last Updated</span>
+          </div>
+        </div>
+
+        <div className={styles.heroDivider}></div>
+
+        {/* Controls Section */}
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <div className={styles.sectionControls}>
+              <div className={styles.viewToggle}>
+                <button 
+                  className={`${styles.viewButton} ${viewMode === 'grid' ? styles.active : ''}`}
+                  onClick={() => setViewMode('grid')}
+                >
+                  <svg className={styles.toggleIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="3" y="3" width="7" height="7"/>
+                    <rect x="14" y="3" width="7" height="7"/>
+                    <rect x="3" y="14" width="7" height="7"/>
+                    <rect x="14" y="14" width="7" height="7"/>
+                  </svg>
+                  <span>Grid</span>
+                </button>
+                <button 
+                  className={`${styles.viewButton} ${viewMode === 'timeline' ? styles.active : ''}`}
+                  onClick={() => setViewMode('timeline')}
+                >
+                  <svg className={styles.toggleIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 2v20"/>
+                    <circle cx="12" cy="6" r="2"/>
+                    <circle cx="12" cy="12" r="2"/>
+                    <circle cx="12" cy="18" r="2"/>
+                  </svg>
+                  <span>Timeline</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Filters */}
+          <div className={styles.filterSection}>
+            <div className={styles.filterGroup}>
+              <div className={styles.filterContainer}>
+                {categories.map(category => (
+                  <button
+                    key={category}
+                    className={`${styles.filterButton} ${selectedCategory === category ? styles.active : ''}`}
+                    onClick={() => setSelectedCategory(category)}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </div>
+            
+            <div className={styles.filterGroup}>
+              <div className={styles.filterContainer}>
+                {contentTypes.map(contentType => (
+                  <button
+                    key={contentType}
+                    className={`${styles.filterButton} ${selectedContentType === contentType ? styles.active : ''}`}
+                    onClick={() => setSelectedContentType(contentType)}
+                  >
+                    {contentType}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {viewMode === 'grid' ? (
+          <>
+            {/* Major Updates - Grid View */}
+            <section className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <h2 className={styles.sectionTitle}>
+                  <span className={styles.sectionIcon}>🚀</span>
+                  Major Updates
+                </h2>
+                <p className={styles.sectionSubtitle}>
+                  Discover the most impactful updates that are transforming how you build and deploy AI agents
+                </p>
+              </div>
+              
+              <div className={styles.highlightsGrid}>
+                {featureHighlights.map((feature, index) => (
+                  <div 
+                    key={feature.id} 
+                    className={`${styles.highlightCard} ${expandedCard === feature.id ? styles.expanded : ''}`}
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <div className={styles.cardHeader}>
+                      <div className={`${styles.cardBadge} ${
+                        feature.badge === 'New Feature' ? styles.newFeature :
+                        feature.badge === 'Enhancement' ? styles.enhancement :
+                        feature.badge === 'Major Update' ? styles.majorUpdate : ''
+                      }`}>{feature.badge}</div>
+                      <span className={styles.cardDate}>{feature.date}</span>
+                    </div>
+                    
+                    {feature.image && (
+                      <div className={styles.cardImageContainer}>
+                        <img 
+                          src={feature.image} 
+                          alt={feature.title}
+                          className={styles.cardImage}
+                          onClick={() => openImageModal(feature.image)}
+                        />
+                      </div>
+                    )}
+                    
+                    <div className={styles.cardContent}>
+                      <h3 className={styles.cardTitle}>{feature.title}</h3>
+                      <p className={styles.cardDescription}>
+                        {expandedCard === feature.id ? feature.fullDescription : feature.shortDescription}
+                      </p>
+                      
+                      {expandedCard === feature.id && feature.highlights && (
+                        <ul className={styles.highlightsList}>
+                          {feature.highlights.map((highlight, idx) => (
+                            <li key={idx} className={styles.highlightItem}>{highlight}</li>
+                          ))}
+                        </ul>
+                      )}
+                      
+                      <div className={styles.expandLinkContainer}>
+                        <a 
+                          className={styles.expandLink}
+                          onClick={() => toggleCard(feature.id)}
+                          role="button"
+                          tabIndex={0}
+                        >
+                          {expandedCard === feature.id ? '▲ Show Less' : '▼ Show More Details'}
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div className={styles.cardFooter}>
+                      <span className={styles.cardCategoryBadge}>{feature.category}</span>
+                      <div className={styles.cardActions}>
+                        <Link to={feature.link} className={styles.readMoreButton}>
+                          Read Docs →
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Recent Changes - Grid View */}
+            <section className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <h2 className={styles.sectionTitle}>
+                  <span className={styles.sectionIcon}>✨</span>
+                  Recent Updates
+                </h2>
+              </div>
+
+              <div className={`${styles.updatesContainer} ${styles.grid}`}>
+                {filteredUpdates.map((update, index) => {
+                  const isExpanded = expandedUpdates.has(update.title);
+                  const hasExpandableContent = update.fullDescription || update.highlights || update.image;
+                  
+                  return (
+                    <div 
+                      key={`${update.title}-${index}`} 
+                      className={`${styles.updateCard} ${isExpanded ? styles.expanded : ''}`}
+                      style={{ animationDelay: `${index * 50}ms` }}
+                    >
+                      <div className={styles.updateContent}>
+                        <div className={styles.updateHeader}>
+                          <div className={styles.updateMeta}>
+                            <span className={styles.updateIcon}>{update.icon}</span>
+                            <span className={`${styles.updateBadge} ${styles[update.badge]}`}>
+                              {update.badge}
+                            </span>
+                            <span className={styles.updateDate}>{update.date}</span>
+                          </div>
+                        </div>
+                        
+                        {update.image && isExpanded && (
+                          <div className={styles.updateImageContainer}>
+                            <img 
+                              src={update.image} 
+                              alt={update.title}
+                              className={styles.updateImage}
+                              onClick={() => openImageModal(update.image)}
+                            />
+                          </div>
+                        )}
+                        
+                        <h3 className={styles.updateTitle}>{update.title}</h3>
+                        <p className={styles.updateDescription}>
+                          {isExpanded && update.fullDescription ? update.fullDescription : update.description}
+                        </p>
+                        
+                        {isExpanded && update.highlights && (
+                          <ul className={styles.updateHighlights}>
+                            {update.highlights.map((highlight, idx) => (
+                              <li key={idx} className={styles.updateHighlightItem}>{highlight}</li>
+                            ))}
+                          </ul>
+                        )}
+                        
+                        <div className={styles.expandSection}>
+                          {hasExpandableContent ? (
+                            <button 
+                              className={styles.expandButton}
+                              onClick={() => toggleUpdateExpansion(update.title)}
+                            >
+                              {isExpanded ? '▲ Show Less' : '▼ Show More'}
+                            </button>
+                          ) : (
+                            <div className={styles.expandSpacer}></div>
+                          )}
+                        </div>
+                        
+                        <div className={styles.updateFooter}>
+                          <span className={styles.updateCategory}>{update.category}</span>
+                          <Link to={update.link} className={styles.updateLink}>
+                            Learn more
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          </>
+        ) : (
+          /* Unified Timeline View */
+          <section className={styles.section}>
+            <div className={styles.sectionHeader}>
+              <h2 className={styles.sectionTitle}>
+                <span className={styles.sectionIcon}>📅</span>
+                Update Timeline
+              </h2>
+              <p className={styles.sectionSubtitle}>
+                All updates in chronological order
+              </p>
+            </div>
+
+            <div className={`${styles.updatesContainer} ${styles.timeline}`}>
+              {timelineData.map((item, index) => {
+                const isExpanded = item.isMajorUpdate ? expandedCard === item.id : expandedUpdates.has(item.title);
+                const hasExpandableContent = item.fullDescription || item.highlights || item.image;
+                const uniqueKey = item.isMajorUpdate ? item.id : item.title;
+                
+                // Determine marker style based on update type
+                const getMarkerClass = () => {
+                  if (item.isMajorUpdate) return styles.majorUpdate;
+                  if (item.type === 'Security Update') return styles.securityUpdate;
+                  return styles.regularUpdate;
+                };
+
+                // Determine card style
+                const cardClass = `${styles.updateCard} ${styles.timelineItem} ${
+                  item.isMajorUpdate ? styles.majorUpdateCard : ''
+                } ${isExpanded ? styles.expanded : ''}`;
+                
+                return (
+                  <div 
+                    key={`${uniqueKey}-${index}`} 
+                    className={cardClass}
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    <div className={`${styles.timelineMarker} ${getMarkerClass()}`}>
+                      <span className={styles.timelineIcon}>{item.icon}</span>
+                    </div>
+                    
+                    <div className={styles.updateContent}>
+                      <div className={styles.updateHeader}>
+                        <div className={styles.updateMeta}>
+                          <span className={styles.updateIcon}>{item.icon}</span>
+                          <span className={`${styles.updateBadge} ${item.isMajorUpdate ? styles.majorUpdate : styles[item.badge]}`}>
+                            {item.isMajorUpdate ? 'Major Update' : item.badge}
+                          </span>
+                          <span className={styles.updateDate}>{item.date}</span>
+                        </div>
+                      </div>
+                      
+                      {item.image && isExpanded && (
+                        <div className={styles.updateImageContainer}>
+                          <img 
+                            src={item.image} 
+                            alt={item.title}
+                            className={styles.updateImage}
+                            onClick={() => openImageModal(item.image)}
+                          />
+                        </div>
+                      )}
+                      
+                      <h3 className={styles.updateTitle}>{item.title}</h3>
+                      <p className={styles.updateDescription}>
+                        {isExpanded && item.fullDescription ? item.fullDescription : item.description}
+                      </p>
+                      
+                      {isExpanded && item.highlights && (
+                        <ul className={styles.updateHighlights}>
+                          {item.highlights.map((highlight, idx) => (
+                            <li key={idx} className={styles.updateHighlightItem}>{highlight}</li>
+                          ))}
+                        </ul>
+                      )}
+                      
+                      <div className={styles.updateFooter}>
+                        <div className={styles.updateFooterLeft}>
+                          <span className={styles.updateCategory}>{item.category}</span>
+                          {hasExpandableContent && (
+                            <button 
+                              className={styles.expandButton}
+                              onClick={() => item.isMajorUpdate ? toggleCard(item.id) : toggleUpdateExpansion(item.title)}
+                            >
+                              {isExpanded ? '▲ Show Less' : '▼ Show More'}
+                            </button>
+                          )}
+                        </div>
+                        <Link to={item.link} className={styles.updateLink}>
+                          Learn more →
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
+        {/* Historical Updates Navigation */}
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>
+              <span className={styles.sectionIcon}>🕰</span>
+              Historical Updates
+            </h2>
+            <p className={styles.sectionSubtitle}>
+              Browse previous updates organized by time period
+            </p>
+          </div>
+          
+          <div className={styles.historicalNav}>
+            <div className={styles.yearSection}>
+              <h3 className={styles.yearTitle}>2025</h3>
+              <div className={styles.releaseLinks}>
+                <Link to="/docs/updates/2025/april-q2" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>Q2 Updates</span>
+                  <span className={styles.releaseDescription}>Apr, May, Jun updates</span>
+                </Link>
+                <Link to="/docs/updates/2025/q12025" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>Q1 Updates</span>
+                  <span className={styles.releaseDescription}>Jan, Feb, Mar updates</span>
+                </Link>
+              </div>
+            </div>
+            
+            <div className={styles.yearSection}>
+              <h3 className={styles.yearTitle}>2024</h3>
+              <div className={styles.releaseLinks}>
+                <Link to="/docs/updates/2024/dec24" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>December 2024</span>
+                  <span className={styles.releaseDescription}>Year-end features</span>
+                </Link>
+                <Link to="/docs/updates/2024/sep2024" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>September 2024</span>
+                  <span className={styles.releaseDescription}>Insights revamp</span>
+                </Link>
+                <Link to="/docs/updates/2024/aug2024" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>August 2024</span>
+                  <span className={styles.releaseDescription}>Platform improvements</span>
+                </Link>
+                <Link to="/docs/updates/2024/july2024" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>July 2024</span>
+                  <span className={styles.releaseDescription}>Summer updates</span>
+                </Link>
+                <Link to="/docs/updates/2024/june24" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>June 2024</span>
+                  <span className={styles.releaseDescription}>Mid-year features</span>
+                </Link>
+                <Link to="/docs/updates/2024/may2024" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>May 2024</span>
+                  <span className={styles.releaseDescription}>Spring updates</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className={styles.yearSection}>
+              <h3 className={styles.yearTitle}>2023</h3>
+              <div className={styles.releaseLinks}>
+                <Link to="/docs/updates/2023/dec2023" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>December 2023</span>
+                  <span className={styles.releaseDescription}>Year-end updates</span>
+                </Link>
+                <Link to="/docs/updates/2023/nov2023" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>November 2023</span>
+                  <span className={styles.releaseDescription}>Fall updates</span>
+                </Link>
+                <Link to="/docs/updates/2023/oct2023" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>October 2023</span>
+                  <span className={styles.releaseDescription}>Autumn features</span>
+                </Link>
+                <Link to="/docs/updates/2023/sep2023" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>September 2023</span>
+                  <span className={styles.releaseDescription}>Updates</span>
+                </Link>
+                <Link to="/docs/updates/2023/aug2023" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>August 2023</span>
+                  <span className={styles.releaseDescription}>Summer enhancements</span>
+                </Link>
+                <Link to="/docs/updates/2023/jul2023" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>July 2023</span>
+                  <span className={styles.releaseDescription}>Mid-year updates</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className={styles.yearSection}>
+              <h3 className={styles.yearTitle}>2022</h3>
+              <div className={styles.releaseLinks}>
+                <Link to="/docs/updates/2022/dec2022" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>December 2022</span>
+                  <span className={styles.releaseDescription}>Year-end updates</span>
+                </Link>
+                <Link to="/docs/updates/2022/nov2022" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>November 2022</span>
+                  <span className={styles.releaseDescription}>Fall updates</span>
+                </Link>
+                <Link to="/docs/updates/2022/oct2022" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>October 2022</span>
+                  <span className={styles.releaseDescription}>Autumn features</span>
+                </Link>
+                <Link to="/docs/updates/2022/sep_updates" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>September 2022</span>
+                  <span className={styles.releaseDescription}>Platform updates</span>
+                </Link>
+                <Link to="/docs/updates/2022/aug" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>August 2022</span>
+                  <span className={styles.releaseDescription}>Summer updates</span>
+                </Link>
+                <Link to="/docs/updates/2022/july" className={styles.releaseLink}>
+                  <span className={styles.releasePeriod}>July 2022</span>
+                  <span className={styles.releaseDescription}>Mid-year updates</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Image Modal */}
+        {selectedImage && (
+          <div className={styles.modal} onClick={closeImageModal}>
+            <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+              <button className={styles.modalClose} onClick={closeImageModal}>×</button>
+              <img src={selectedImage} alt="Enlarged view" className={styles.modalImage} />
+            </div>
+          </div>
+        )}
+      </div>
+    </Layout>
+  );
+}
+
