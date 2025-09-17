@@ -39,7 +39,7 @@ module.exports = {
       placeholder: "Search docs",
     },
     prism: {
-      theme: require("prism-react-renderer/themes/github"),
+      //theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("./src/plugins/prism_themes/monokai"),
     },
     colorMode: {
