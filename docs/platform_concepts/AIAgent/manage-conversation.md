@@ -99,3 +99,30 @@ To preview the AI agent, follow these steps:
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/preview.png)
 
+### Preview agent on a connected channel
+
+You can test how your AI Agent responds on a supported channel (like WhatsApp) before making it available to end users.
+
+To preview agent in a respective channel, follow these steps:
+
+1. Go to **Agents** and choose the agent you want to preview on a connected channel.
+
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/select-agents.png)
+     
+2. Provide a **Tester name** and **WhatsApp number**, then click **Test**.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/add-number.png" width="60%"/>
+   
+3. Read the instructions and click **Got it**.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/got-it.png" width="50%"/>
+    
+4. A notification link will appear on your device. Click it to open the WhatsApp app.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/test-WA.png)
+
+* The WhatsApp app will show a generic template with your flow name and test instructions.
+
+5. Test the Agent on WhatsApp to check whether it is responding as expected.
+   
+

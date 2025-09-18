@@ -23,18 +23,18 @@ When creating an input, different input types can be selected based on the use c
 
 To create a input, follow these steps:
 
-1. Go to **Agent** > **Prompt** > click on **Actions** > **Get input**.
+1. Go to **Agents** > **Prompt** > click on **Actions** > **Get input**.
 
-  ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/getinput.png)
+  ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/get-ipnut.png)
 
 2. Click **+ Create input**.
 
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/createinput.png" alt="drawing" width="50%"/>
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/create-input1.png" alt="drawing" width="40%"/>
 
 
 3. Select your preferred input type based on the use case.
 
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/chooseinput.png" alt="drawing" width="60%"/>
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/choose-inputtype.png" alt="drawing" width="50%"/>
 
 
 ### Get name input
@@ -51,7 +51,7 @@ Description | Provide additional details or context about the input field. This 
 Validation | Enter the validation rules to ensure the user provides valid input.<br/> Examples: – Allow upto 50 characters.<br/>– Reject names containing numbers.
 Others | Enable **Mark User Input as Optional** checkbox:<br/> * If checked, the user is not required to provide their name.<br/> * If unchecked, the bot will prompt the user until a valid name is provided.
 
-![Get input name](/files/getinputname.gif)
+![Get input name](/files/name-input.gif)
 
 ### Email
 
@@ -163,3 +163,119 @@ Validation | Ensures that the user input follows specific rules or formats.<br/>
 Others | Use the **Mark user input as optional** checkbox to allow users to skip this question if they prefer not to provide the information.
 
 ![Custom input](/files/custominput.gif)
+
+### Location
+
+Use the **Get Location input** action to collect and store a user’s location during a conversation. The collected location is stored as an object variable and can be used for tasks such as coordinating delivery services, suggesting nearby options, or validating service availability based on the user’s area.
+
+The table below describes the fields available in the Location action:
+
+Field name | Description
+-----------|------------
+Variable name (Mandatory) | Define the variable where the user’s location will be stored. Example: user_Location.
+Data type | Default data type is displayed. For quick reply input, it is set as Object.
+Description	| Allows the user to provide additional details about the purpose of collecting the Location. Example: "Please share your current address for delivery".
+Select allowed countries | Allows you to restrict the location input to specific country codes. Useful when services are limited to certain regions.
+Add custom instruction | Optionally add more specific instructions or hints to guide the user in providing their location.
+Mark user input as optional	| If this option is selected, the user is not required to provide their location. If unchecked, the agent will prompt the user until valid location data is shared.
+
+  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/locationinoput.png" alt="drawing" width="70%"/>
+  
+-----  
+
+### Dynamic rich media
+
+Dynamic rich media is used to display interactive, visually rich options to users such as carousels or cards that are generated dynamically. These responses are fetched via APIs or from functions via workflow.
+
+You can use Dynamic rich media when:
+
+* You want to personalize the experience with updated, real-time data.
+* The options are not static and need to change based on API responses.
+* You want to display content in a more engaging and structured format, such as a carousel or card layout.
+
+**Examples**:
+
+It is useful in scenarios where user options need to be customized for example:
+
+* Displaying a list of available resorts or hotels
+* Showing product recommendations
+* Listing support ticket summaries
+* Offering multilingual responses based on user preferences
+
+
+The table below describes the fields available in the Dynamic rich media action:
+
+Field name | Description
+-----------|------------
+Input name (Mandatory) | Define the name of the input field where the user’s response will be stored. 
+Data type | Default data type is displayed. In this case, it is a String, meaning it only accepts text values.
+Description | Provide details of what this input is about.
+Linked workflow | Select the workflow you created to fetch and format the data.
+
+#### How to configure Dynamic rich media
+
+**Use case example**: Displaying images fetched from an API in cards format.
+
+To configure dynamic rich media, follow these steps:
+
+#### Step 1: Define Workflow
+
+1. In the **Start node**, select **Event** as the start trigger type.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/workflowstart.png)
+   
+2. Add an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to fetch images and store the response in a variable of type object.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/getAPI-image.png)
+    
+3. Add a [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/function-node) to extract the image URL and name, and format them for display. Store the response in a variable.
+
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/image-function.png)
+     
+4. Add an **Output node**, select **Return a value**, and choose the variable where the response is stored.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/format-image.png)
+    
+    
+#### Step 2: Call Workflow in Prompt section
+
+1. In prompt section, trigger the Workflow to fetch the images.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/call-workflow-prompt.png)
+    
+#### Step 3: Use Dynamic rich media to display
+
+
+1. Go to **Prompts** section > **Actions** > **Get input**.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-input.png)
+     
+2. Select **Dynamic rich media** action.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/dynamic.png" alt="drawing" width="60%"/>
+
+3. Define the following fileds:
+    i. **Input name**: Enter the Input name, Description, and configured workflow.
+    ii. **Describe what this input is about:** Provide details of what this input is about.
+    iii. **Linked worklfow**: Select the workflow you created to fetch and format the data.
+    
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/dynamic-resort-fetch.png" alt="drawing" width="60%"/>
+    
+This how the image will be fetch and displayed in cards format:
+
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cards-display.png)
+        
+
+      
+
+   
+
+
+  
+
+
+
+
+
+

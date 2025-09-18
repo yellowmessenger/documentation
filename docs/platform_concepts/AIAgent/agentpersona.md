@@ -21,9 +21,9 @@ rules to follow throughout conversations.
 
 To configure AI agent persona,follow the below steps:
 
-1. Go to **Automation** > **AI agent lab** > **Agents**. 
+1. Go to **Home** > **Agents** > **Super agent**. 
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agentlab.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/super-agent.png)
    
 2. You can update, the following:
    * [Profile settings](#update-profile-settings) 
@@ -38,7 +38,7 @@ To edit the AI agent profile settings:
 
 1. Click the **Edit** icon next to the AI agent details.
 
-      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/editmaya.png)
+      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/edit-super-agent.png)
       
 * The Edit superagnet profile pop-up is displayed.
 
@@ -47,17 +47,18 @@ To edit the AI agent profile settings:
    **Option** | **Description**
    ------- | ----------
    **Agent name**| Choose a name that suits your business and resonates with users.
-   **Avatar** | Choose a avatar or upload a custom icon that represents your business.
+   **Avatar** | Choose an avatar or upload a custom icon that represents your business.
    **Company** | Enter the name of the business the AI agent represents. For example: Yellow travels.
    **Model** | Select the preferred Language Learning Model (LLM) that suits your AI agent. This helps the agent respond better based on your use case, such as customer support, sales assistance, or general queries. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/LLM-central-configuration).
    **Persona** | Agent persona defines how the AI agent should interact with users. A consistent persona helps to create engaging and aligned interactions. You can select from the following personas: <ul><li>**Polite and persuasive**: Ideal for sales agents.</li><li>**Empathetic and helpful**: Best suited for support agents.</li><li>**Witty**: Best for marketing agents.</li></ul>
+   **Channels** | Configure the communication channels (example, WhatsApp, Voice) where your AI agent will interact with users on that specific channel.
    **Describe your AI agent's role** | Describe the role of the AI agent in less than 400 characters. For example, you are a banking assistant who helps users with Yellow Banking-related queries. Your role is focused on assisting with personal loans-guiding users to apply loan, checking loan status, and answering loan specific questions for better accuracy and support.
    
 ### How AI agent handles queries
 
 Use this section to configure the agent’s conversational behavior from how it greets users to how it responds during interactions and manages unanswered queries.
 
-   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/handlequeries1.png" alt="drawing" width="100%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/handle-queries.png" alt="drawing" width="100%"/>
 
 ### Define Welcome message
 
@@ -78,19 +79,19 @@ You can choose to:
     * Trigger welcome flow
     * Send message
   
-      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/trigger.png" alt="drawing" width="90%"/>
+      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/welcome.png" alt="drawing" width="90%"/>
 
    #### Option 1: **Instruct superagent**
    * Write a custom welcome message.
    * Use variables to personalize the greeting.
    * Enable **Show suggestions with welcome message** to display quick replies based on role and persona.
 
-     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instructAI.png" alt="drawing" width="80%"/>
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instruct-agent.png" alt="drawing" width="80%"/>
 
    #### Option 2: **Trigger welcome flow**
     * Select an existing or predefined conversation flow to initiate the chat.
 
-      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/triggerwelcome.png" alt="drawing" width="80%"/>
+      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/select-flow.png" alt="drawing" width="80%"/>
 
 
    #### Option 3: **Send a message**
@@ -98,7 +99,7 @@ You can choose to:
 *Example: Hey, I'm Mia from Yellow Banking. How can I assist with your banking needs today?*
    * You can also enable **Show suggestions with welcome message** toggle to add quick replies.
 
-     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/sendmessage.png" alt="drawing" width="80%"/>
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/send-message.png" alt="drawing" width="80%"/>
      
 #### Add rules to follow during conversation
 
@@ -115,11 +116,11 @@ To add rules, follow below steps:
 
 1. Click **+Add**.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agentrules.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/rules-add.png)
 
 2. Enter a rule (example, Always introduce yourself by name in the first message).
 
-     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/agentrulesdefine.png" alt="drawing" width="80%"/>
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/rules-add-step.png" alt="drawing" width="80%"/>
 
 3. Repeat Step 2 to add more rules.
 4. Click **Save**.
@@ -134,7 +135,7 @@ Safeguards every AI interaction by configuring filters that ensure the AI agent 
 
 2. Click **Manage**.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/safety.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/manage-safety.png)
    
 3. Enable following settings based on your requirement.   
 
@@ -175,14 +176,20 @@ To configure fallback handling:
 
 1. Click **Manage**.
 
-     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/manage.png)
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/fallaback-manage.png)
 
 2. Choose how the agent should respond:
 
    | Option                    | Description |
    | ------------------------- | ------------ |
-   | **Instruct Super Agent**  | Write a custom fallback message. <br/> Example: *I am still learning and could not help with that. Please contact [support@yellow.ai](mailto:support@yellow.ai).<br/> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instructagent.png" alt="drawing" width="70%"/> |
-   | **Trigger Fallback Flow** | Select a fallback conversation flow to guide the user when the agent cannot respond.<br/> ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/fallback.png)    | 
+   | **Instruct Super Agent**  | Write a custom fallback message. <br/> Example: *I am still learning and could not help with that. Please contact [support@yellow.ai](mailto:support@yellow.ai).<br/> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instruct-agent-now.png" alt="drawing" width="70%"/> |
+   | **Trigger Fallback Flow** | Select a fallback conversation flow to guide the user when the agent cannot respond.<br/> ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/fallack-con.png)    | 
+
+### Live transfer agent
+
+When the AI agent is unable to resolve user queries or requires human assistance, you can configure a Live Agent Transfer flow. This ensures a smooth handover from the AI agent to a human agent for continued support.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/live-agent-transfer.png)
    
 ---
 

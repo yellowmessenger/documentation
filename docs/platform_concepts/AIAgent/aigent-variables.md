@@ -24,7 +24,7 @@ Example: Save the user’s name as `getInput: user_name`.
 ### Manage Global variables
 
 
-**The Global Components section offers a unified view of all variables available to your AI agent.**
+The Global Components section offers a unified view of all variables available to your AI agent.
 
 It includes session variables, system variables, User 360, and output variables—all of which help manage conversation context and ensure consistent, personalized interactions. This includes:
 
@@ -40,7 +40,7 @@ You can view, update, and test how data is use across the AI agent's conversatio
 * **Edit values**: Modify the values of session or input variables for testing and preview purposes.
 * **Delete variables:** Remove unwanted or outdated variables to keep your variable list clean and relevant.
 * **Search variables**: Allows you to quickly search specific variables used in your AI agent’s conversation.
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/global1.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/global-components.png)
 
 
 ### Pass variables in conversation

@@ -31,6 +31,6 @@ This ensures that the user receives a meaningful next step even when the AI agen
 
 1. Go to **Agents** > **Prompts** > **Go to fallback**.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/fallback1.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/call-fallback.png)
       
 2. Select the fallback flow that you have configured.
