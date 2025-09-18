@@ -3,21 +3,15 @@ title: Call logs
 sidebar_label : Call logs
 ---
 
-This report provides a single view of both AI Agent and Human Agent interactions. It helps you analyze performance, conversation outcomes, and user sentiment across channels, giving a comprehensive picture of your contact center effectiveness.
+This page provides detailed insights into every call handled through the platform. It includes information such as call direction, participants, duration, and resolution status.
+
+This report helps administrators, supervisors, and analysts monitor call activity, troubleshoot issues, and evaluate performance.
 
 :::note
 The log data refreshes automatically every 30 minutes.
 :::
 
----
 
-# Call Logs Report
-
-## Overview
-
-This page provides detailed insights into every call handled through the platform. It includes information such as call direction, participants, duration, and resolution status.
-
-This report helps administrators, supervisors, and analysts monitor call activity, troubleshoot issues, and evaluate performance.
 
 ---
 
