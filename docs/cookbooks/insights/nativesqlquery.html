@@ -22,8 +22,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
 <script src="/js/FeedbackFooter.js"></script>
 <script src="/js/bot.js"></script><link rel="stylesheet" href="/assets/css/styles.45a9a06e.css">
-<script src="/assets/js/runtime~main.e68b77f9.js" defer="defer"></script>
-<script src="/assets/js/main.279fc890.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.8f30136e.js" defer="defer"></script>
+<script src="/assets/js/main.72fb2c37.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -40,27 +40,27 @@
 <ul>
 <li>To get all the columns from the messages database:</li>
 </ul>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">SELECT * FROM messages;</span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">SELECT * FROM messages;</span><br></span></code></pre></div></div>
 <p><strong><img decoding="async" loading="lazy" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdkYT_U9FpPrULqYNYDTCPojqvkx5q7Uv0QG1SYj9XMhevwxyozR6iM_NMvsXZpzjfFSkUhqOajuLfI4ZXKscFdBD2lpxq0JgJiQhERtTCvdNXlKxTQItPiHq0nBWFG7vKIJOwSUbsVCDSW-HbXg1maRa6k?key=AX9O8V865aZREOersNhPyg" alt="" class="img_ev3q"></strong></p>
 <ul>
 <li>To get specified columns (date, UID, and session ID):</li>
 </ul>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">SELECT __time AS CreatedDate, uid AS UID, sessionId AS SessionID FROM messages;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">SELECT __time AS CreatedDate, uid AS UID, sessionId AS SessionID FROM messages;</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
 <p><strong><img decoding="async" loading="lazy" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeGejFtyREOg7s2RvR1RP2d770GxpFSMqW4WtsunALVxlSOxfVYjpHhKMynNRyeNYLOC1nxXzuzbvaEb8mW-BFn77RZq3iHIXp8MfAN_JV39JqrwUhPwo6f1plHHn0hxVI6pfmmSPrSeczxIoUNiDrsVmNk?key=AX9O8V865aZREOersNhPyg" alt="" class="img_ev3q"></strong></p>
 <ul>
 <li>To create new columns with static values (e.g., bot ID and bot name):</li>
 </ul>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">SELECT &quot;x1689236272568&quot; AS BOTID, &quot;Bhavana&quot; AS BOTNAME, uid AS UID FROM messages;</span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">SELECT &quot;x1689236272568&quot; AS BOTID, &quot;Bhavana&quot; AS BOTNAME, uid AS UID FROM messages;</span><br></span></code></pre></div></div>
 <p><strong><img decoding="async" loading="lazy" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcXSx4bpmGlhRs9_wb4kdhC4lGeW9kqmo3wZCbnoOOLcg5rJzaYp6v1EjPNznXt1gqPAfkMkOjKIgz6ckAozlWB2TN31g_U-YWWl5pe5xbDm1LvvgLEU2W1Q2tjlPv7b4pu3GoIIyf00MBqcqTrHavPc1s?key=AX9O8V865aZREOersNhPyg" alt="" class="img_ev3q"></strong></p>
 <ul>
 <li>To get the count of each user in the database based on the UID:</li>
 </ul>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">SELECT COUNT(*) AS total_users, uid AS UID FROM messages GROUP BY uid;</span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">SELECT COUNT(*) AS total_users, uid AS UID FROM messages GROUP BY uid;</span><br></span></code></pre></div></div>
 <p><strong><img decoding="async" loading="lazy" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcm0ab2W1U6WvT1wDILrz6hxpARcm6QnizTrU1bNbRlazD3xHcaFKO42ZqnqkK6lFcr3tjm_7XylozFLNhhQ888M1OXE0hAriYUloOodZRxaRvTJgKrAA5TUbhBwaQb72kslWtxEs2jWYeEbva32Lp3vAE?key=AX9O8V865aZREOersNhPyg" alt="" class="img_ev3q"></strong></p>
 <ul>
 <li>To get chat details through the messages database:</li>
 </ul>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">SELECT __time AS CreatedDate, &quot;x1689236272568&quot; AS BOTID, uid AS UID, messageType AS MessageType, sessionId AS SessionID, journey AS Journey, step AS Step FROM messages;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">SELECT __time AS CreatedDate, &quot;x1689236272568&quot; AS BOTID, uid AS UID, messageType AS MessageType, sessionId AS SessionID, journey AS Journey, step AS Step FROM messages;</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
 <p><strong><img decoding="async" loading="lazy" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdLa_LXOrPCrMVoWRFYU8EAZd5zWcexpvQXhllJ8VEwUx8YLvZLGmxghL5vpFSKVVFJD-0zZyYm4OgVcpfRzBsaX-FryG56GxvLQmYIyA1sxM63a98yCc3WeNO1HFyGSWGQ38K-UQ2_81wwgTjrPwhzRLPt?key=AX9O8V865aZREOersNhPyg" alt="" class="img_ev3q"></strong></p>
 <ol start="3">
 <li>Save the query and create dashboards to filter the data based on the timestamp for further use cases.</li>
