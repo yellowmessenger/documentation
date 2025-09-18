@@ -19,17 +19,17 @@ To create an agent from scratch, follow these steps:
 
 #### Step 1: Create a new Agent
 
-1. Navigate to **Automation** > **AI agent lab** > **Agents** > **+ New agent**.
+1. Navigate to **Build** > **Agents** > **Agents** > **+ New agent**.
 
-     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/AIagentlab.png)
+     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/new0-agent.png)
      
 2. By default, the agent name is auto-filled. To rename the agent, click the **Edit** icon next to the name.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/editagent.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/edit-agent.png)
     
 3. Enter the agent's name and click the **Save** icon.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/saveagent.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/save-agent.png)
     
 * The newly created agent will display under the Agents section.
    
@@ -92,7 +92,7 @@ The conversation design is modular and built with flexibility in mind. You can c
 
 You can set up agent conversations using [Start trigger](#start-trigger) and [Prompts](#prompts), which define how and when the AI agent initiates and responds during a conversation.
 
-   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/AGENTS.png)
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/agents-view.png)
 
 
 ### Start trigger
@@ -112,7 +112,7 @@ Types of inputs that can be used as Start Triggers:
 * When the user says they want to apply for a loan, such as: "I want to apply for a loan", "Help me get a loan", "Apply for personal loan", or similar variations.
 * When the user wants to cancel a flight ticket, such as: "I want to cancel my flight ticket", "Help me cancel my flight", "Need to cancel my plane ticket", "Cancel my trip booking", or similar variations.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/starttrigger.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/start-trigger.png)
 
 ### Prompts
 
@@ -144,11 +144,7 @@ While writing the prompts, consider the following best practices:
 
 Below is a sample screenshot showing how prompts are written:
 
-  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/promptsample1.png" alt="drawing" width="90%"/>  
-
-  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/demo-icp.png" alt="drawing" width="90%"/> 
-
-  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/loanemi.png" alt="drawing" width="90%"/> 
+  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/prompt-sample.png" alt="drawing" width="90%"/> 
 
 ---
 
@@ -165,4 +161,4 @@ In the Prompt section, you can add the following actions:
 :::tip
 You can quickly access the above actions by using the`@` shortcut key.
 :::
-  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/getactions.png" alt="drawing" width="80%"/>
+  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/actions-prompt.png" alt="drawing" width="80%"/>
