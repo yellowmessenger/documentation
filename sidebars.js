@@ -875,6 +875,7 @@ module.exports = {
           ],
         }, 
         "platform_concepts/analyze/chat-logs",
+        "platform_concepts/analyze/call-logs",
         "platform_concepts/analyze/analyseoverview",
         "platform_concepts/analyze/training-performance",
       ],

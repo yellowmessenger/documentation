@@ -589,6 +589,84 @@ html[data-theme="dark"] .admonition-note .admonition-heading h5 {
    12. API REFERENCE PAGE STYLES (PROFESSIONAL REDESIGN)
    ========================================================================== */
 
+/* API Documentation Headings - Smaller sizes to match Help docs exactly */
+.theme-api-markdown h1,
+[class*="theme-api"] h1,
+.openapi h1,
+.redoc h1 {
+  font-size: 1.75rem !important; /* 28px - Smaller than Help docs */
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  margin: 2rem 0 1.5rem 0 !important;
+  color: var(--ifm-color-text) !important;
+  letter-spacing: -0.01em !important;
+  scroll-margin-top: 2rem !important;
+}
+
+.theme-api-markdown h2,
+[class*="theme-api"] h2,
+.openapi h2,
+.redoc h2 {
+  font-size: 1.5rem !important; /* 24px - Reduced from Help docs */
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  margin: 1.75rem 0 1rem 0 !important;
+  color: var(--ifm-color-text) !important;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300) !important;
+  padding-bottom: 0.5rem !important;
+  scroll-margin-top: 2rem !important;
+}
+
+.theme-api-markdown h3,
+[class*="theme-api"] h3,
+.openapi h3,
+.redoc h3 {
+  font-size: 1.25rem !important; /* 20px - Reduced from Help docs */
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin: 1.5rem 0 1rem 0 !important;
+  color: var(--ifm-color-text) !important;
+  scroll-margin-top: 2rem !important;
+}
+
+.theme-api-markdown h4,
+[class*="theme-api"] h4,
+.openapi h4,
+.redoc h4 {
+  font-size: 1rem !important; /* 16px - Reduced from Help docs */
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  margin: 1.25rem 0 0.75rem 0 !important;
+  color: var(--ifm-color-text) !important;
+  scroll-margin-top: 2rem !important;
+}
+
+.theme-api-markdown h5,
+[class*="theme-api"] h5,
+.openapi h5,
+.redoc h5 {
+  font-size: 0.875rem !important; /* 14px - Smaller headings */
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  margin: 1rem 0 0.5rem 0 !important;
+  color: var(--ifm-color-text) !important;
+  scroll-margin-top: 2rem !important;
+}
+
+.theme-api-markdown h6,
+[class*="theme-api"] h6,
+.openapi h6,
+.redoc h6 {
+  font-size: 0.75rem !important; /* 12px - Smallest headings */
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  margin: 1rem 0 0.5rem 0 !important;
+  color: var(--ifm-color-text-secondary) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  scroll-margin-top: 2rem !important;
+}
+
 .theme-api-markdown code {
   font-family: "Nunito", sans-serif;
   background-color: var(--ifm-menu-color-background-active);
@@ -649,6 +727,23 @@ html[data-theme="dark"] .theme-api-markdown code {
    13. DARK MODE API STYLES
    ========================================================================== */
 
+/* Dark mode heading styles for API docs */
+html[data-theme="dark"] .theme-api-markdown h1,
+html[data-theme="dark"] .theme-api-markdown h2,
+html[data-theme="dark"] .theme-api-markdown h3,
+html[data-theme="dark"] .theme-api-markdown h4,
+html[data-theme="dark"] .theme-api-markdown h5 {
+  color: var(--foreground);
+}
+
+html[data-theme="dark"] .theme-api-markdown h6 {
+  color: var(--muted-foreground);
+}
+
+html[data-theme="dark"] .theme-api-markdown h2 {
+  border-bottom-color: var(--border);
+}
+
 html[data-theme="dark"] .theme-api-markdown th {
   color: #9ca3af;
   border-bottom-color: #374151;
@@ -669,6 +764,113 @@ html[data-theme="dark"] .theme-api-markdown span[style*="opacity:0.6"] {
 }
 
 
+
+/* API Documentation - Mobile Responsive Headings */
+@media (max-width: 768px) {
+  .theme-api-markdown h1,
+  [class*="theme-api"] h1,
+  .openapi h1,
+  .redoc h1 {
+    font-size: 1.5rem !important; /* 24px - Mobile size */
+    margin: 1.5rem 0 1rem 0 !important;
+  }
+  
+  .theme-api-markdown h2,
+  [class*="theme-api"] h2,
+  .openapi h2,
+  .redoc h2 {
+    font-size: 1.25rem !important; /* 20px - Mobile size */
+    margin: 1.5rem 0 0.75rem 0 !important;
+  }
+  
+  .theme-api-markdown h3,
+  [class*="theme-api"] h3,
+  .openapi h3,
+  .redoc h3 {
+    font-size: 1.125rem !important; /* 18px - Mobile sub-sections */
+    margin: 1.25rem 0 0.75rem 0 !important;
+  }
+  
+  .theme-api-markdown h4,
+  [class*="theme-api"] h4,
+  .openapi h4,
+  .redoc h4 {
+    font-size: 0.875rem !important; /* 14px - Mobile minor headings */
+    margin: 1rem 0 0.5rem 0 !important;
+  }
+}
+
+/* Additional broad targeting for OpenAPI documentation - ensure coverage */
+article h1, article h2, article h3, article h4, article h5, article h6,
+.openapi-explorer h1, .openapi-explorer h2, .openapi-explorer h3, .openapi-explorer h4,
+div[class*="openapi"] h1, div[class*="openapi"] h2, div[class*="openapi"] h3, div[class*="openapi"] h4,
+div[class*="redoc"] h1, div[class*="redoc"] h2, div[class*="redoc"] h3, div[class*="redoc"] h4,
+div[class*="swagger"] h1, div[class*="swagger"] h2, div[class*="swagger"] h3, div[class*="swagger"] h4,
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  font-size: inherit !important;
+}
+
+/* Specifically target API route pages */
+div[data-testid] h1, div[data-testid] h2, div[data-testid] h3, div[data-testid] h4 {
+  font-size: inherit !important;
+}
+
+/* Force smaller sizes for ALL headings in API sections */
+.layout-api h1, .layout-api h2, .layout-api h3, .layout-api h4 {
+  font-size: inherit !important;
+}
+
+/* MOST SPECIFIC targeting for API documentation headings */
+body .markdown h1,
+body [role="main"] h1,
+body article h1,
+html body .markdown h1 {
+  font-size: 1.75rem !important; /* 28px */
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.2 !important;
+}
+body .markdown h2,
+body [role="main"] h2,
+body article h2,
+html body .markdown h2 {
+  font-size: 1.5rem !important; /* 24px */
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.3 !important;
+}
+body .markdown h3,
+body [role="main"] h3,
+body article h3,
+html body .markdown h3 {
+  font-size: 1.25rem !important; /* 20px */
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.4 !important;
+}
+body .markdown h4,
+body [role="main"] h4,
+body article h4,
+html body .markdown h4 {
+  font-size: 1rem !important; /* 16px */
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.5 !important;
+}
+body .markdown h5,
+html body .markdown h5 {
+  font-size: 0.875rem !important; /* 14px */
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.5 !important;
+}
+body .markdown h6,
+html body .markdown h6 {
+  font-size: 0.75rem !important; /* 12px */
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.5 !important;
+}
 
 /* ==========================================================================
    14. SEARCH BOX (REDESIGNED)

@@ -23,20 +23,21 @@ const featureHighlights = [
     ]
   },
   {
-    id: 'ai-agent-revamp',
-    title: 'Automate Revamp: A Simpler Way to Build Gen AI Agents',
-    shortDescription: 'An reimagined AI agent setup experience that is more guided, efficient, and powerful.',
-    fullDescription: 'Define your AI agent’s behavior using natural language. Design large, multi-functional AI assistants with ease using our modular Super Agent architecture. This structure keeps logic clean, reusable, and scalable.',
-    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/superagent.png',
-    category: 'AI Agents',
+    id: 'call-logs-unified',
+    title: 'Introducing Voice AI Calls in Call Logs',
+    shortDescription: 'Faster, simpler, and more collaborative way to review and analyze Voice AI calls.',
+    fullDescription: 'Call Logs bring everything you need to review and analyze calls into one place. With streamlined access, advanced filters, complete visibility, and built-in collaboration, both customers and developers can save time, work more efficiently, and sync insights with ease.',
+    image: '/img/call-logs.gif',
+    category: 'Analyze',
     badge: 'Enhancement',
-    date: 'September 2025',
-    link: '/docs/platform_concepts/AIAgent/agentpersona',
+    date: 'September 16, 2025',
+    link: '/docs/platform_concepts/analyze/call-logs',
     highlights: [
-      'Define agent behavior using natural language',
-      'Modular Super Agent & Agent architecture',
-      'Improved conversation design with building blocks',
-      'Seamlessly connect to external systems with Workflows'
+      'Instantly access call transcripts or recordings with a single click',
+      'Advanced filters from Data Explorer, now in Call Logs',
+      'Detailed call metadata and debug logs at your fingertips',
+      'Add comments and share feedback directly within the platform',
+      'Sync latest data on demand and export reports with ease'
     ]
   },
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date (newest first)
