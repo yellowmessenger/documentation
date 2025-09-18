@@ -5,6 +5,14 @@
   --font-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Lato, Helvetica, sans-serif, "Helvetica Neue", sans-serif, "Segoe UI Emoji";
   --font-mono: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
 
+  /* Override Docusaurus/Infima heading font sizes - Force smaller API docs headings */
+  --ifm-h1-font-size: 1.75rem;   /* 28px - Smaller than default */
+  --ifm-h2-font-size: 1.5rem;    /* 24px - Smaller than default */
+  --ifm-h3-font-size: 1.25rem;   /* 20px - Smaller than default */
+  --ifm-h4-font-size: 1rem;      /* 16px - Smaller than default */
+  --ifm-h5-font-size: 0.875rem;  /* 14px - Smaller than default */
+  --ifm-h6-font-size: 0.75rem;   /* 12px - Smaller than default */
+
   /* Langfuse Light Mode Color System */
   --background: hsl(0, 0%, 100%);
   --foreground: hsl(222.2, 47.4%, 11.2%);
@@ -53,14 +61,22 @@
 /* Large screens - Desktop scaling */
 @media (min-width: 1024px) {
   :root {
-    --text-2xl: 24px;
-    --text-3xl: 31px;
-    --text-4xl: 36px;
-    --text-5xl: 48px;
+    --text-2xl: 16px; /* Reduced from 24px */
+    --text-3xl: 20px; /* Reduced from 31px */
+    --text-4xl: 24px; /* Reduced from 36px */
+    --text-5xl: 28px; /* Reduced from 48px */
   }
 }
 
 /* ================== GENERAL TYPOGRAPHY ================== */
+/* Global heading consistency - fallback for any missed classes */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--foreground);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
 /* Langfuse typography system with responsive scaling */
 
 body {
@@ -86,14 +102,14 @@ h4 { font-size: var(--text-2xl); }
 h5 { font-size: var(--text-xl); }
 h6 { font-size: var(--text-base); }
 
-/* Large screen adjustments */
+/* Large screen adjustments - REDUCED SIZES for API docs consistency */
 @media (min-width: 1024px) {
-  h1 { font-size: 48px; }
-  h2 { font-size: 40px; }
-  h3 { font-size: 35px; }
-  h4 { font-size: 21px; }
-  h5 { font-size: 20px; }
-  h6 { font-size: 16px; }
+  h1 { font-size: 28px; } /* Reduced from 48px */
+  h2 { font-size: 24px; } /* Reduced from 40px */
+  h3 { font-size: 20px; } /* Reduced from 35px */
+  h4 { font-size: 16px; } /* Reduced from 21px */
+  h5 { font-size: 14px; } /* Reduced from 20px */
+  h6 { font-size: 12px; } /* Reduced from 16px */
 }
 
 a {
@@ -561,15 +577,15 @@ menu__link--sublist-caret:after {
   padding: 0;
 }
 
-/* Main content headers - Langfuse style */
+/* Main content headers - Optimized Typography Scale */
 .theme-doc-markdown h1 {
-  font-size: 2.5rem; /* Enhanced: Slightly larger */
+  font-size: 2.25rem; /* 36px - Perfect for page titles */
   font-weight: 700;
   line-height: 1.1;
-  margin: 3rem 0 2rem 0; /* Enhanced: More top margin, more bottom margin */
+  margin: 3rem 0 2rem 0;
   color: var(--foreground);
-  letter-spacing: -0.03em; /* Enhanced: Tighter letter spacing */
-  scroll-margin-top: 2rem; /* Enhanced: Better scroll positioning for anchor links */
+  letter-spacing: -0.02em;
+  scroll-margin-top: 2rem;
 }
 
 /* Fix double horizontal lines after H1 */
@@ -579,32 +595,52 @@ menu__link--sublist-caret:after {
 }
 
 .theme-doc-markdown h2 {
-  font-size: 2rem; /* Enhanced: Slightly larger */
+  font-size: 1.75rem; /* 28px - Major sections */
   font-weight: 600;
   line-height: 1.2;
-  margin: 2.5rem 0 1.25rem 0; /* Enhanced: Increased margins */
+  margin: 2.5rem 0 1.25rem 0;
   color: var(--foreground);
-  border-bottom: 2px solid var(--border); /* Enhanced: Thicker border */
-  padding-bottom: 0.75rem; /* Enhanced: More padding */
-  scroll-margin-top: 2rem; /* Enhanced: Better scroll positioning for anchor links */
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.75rem;
+  scroll-margin-top: 2rem;
 }
 
 .theme-doc-markdown h3 {
-  font-size: 1.5rem;
+  font-size: 1.375rem; /* 22px - Sub-sections */
   font-weight: 600;
   line-height: 1.3;
-  margin: 2rem 0 1.25rem 0; /* Enhanced: Increased margins */
+  margin: 2rem 0 1.25rem 0;
   color: var(--foreground);
-  scroll-margin-top: 2rem; /* Enhanced: Better scroll positioning for anchor links */
+  scroll-margin-top: 2rem;
 }
 
 .theme-doc-markdown h4 {
-  font-size: 1.25rem; /* Enhanced: Added H4 styling */
+  font-size: 1.125rem; /* 18px - Minor headings */
   font-weight: 600;
   line-height: 1.4;
-  margin: 1.75rem 0 1rem 0; /* Enhanced: Better spacing */
+  margin: 1.75rem 0 1rem 0;
   color: var(--foreground);
-  scroll-margin-top: 2rem; /* Enhanced: Better scroll positioning for anchor links */
+  scroll-margin-top: 2rem;
+}
+
+.theme-doc-markdown h5 {
+  font-size: 1rem; /* 16px - Small headings */
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 1.5rem 0 0.75rem 0;
+  color: var(--foreground);
+  scroll-margin-top: 2rem;
+}
+
+.theme-doc-markdown h6 {
+  font-size: 0.875rem; /* 14px - Smallest headings */
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 1.25rem 0 0.5rem 0;
+  color: var(--muted-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  scroll-margin-top: 2rem;
 }
 
 /* Paragraph and text styling */
@@ -802,12 +838,21 @@ menu__link--sublist-caret:after {
   }
   
   .theme-doc-markdown h1 {
-    font-size: 2rem; /* Enhanced: Larger on mobile */
+    font-size: 1.875rem; /* 30px - Smaller on mobile */
     margin: 2rem 0 1.5rem 0;
   }
   
   .theme-doc-markdown h2 {
-    font-size: 1.75rem; /* Enhanced: Larger on mobile */
+    font-size: 1.5rem; /* 24px - Responsive size */
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .theme-doc-markdown h3 {
+    font-size: 1.25rem; /* 20px - Mobile sub-sections */
+  }
+  
+  .theme-doc-markdown h4 {
+    font-size: 1rem; /* 16px - Mobile minor headings */
   }
   
   /* Enhanced: Better mobile sidebar spacing */
