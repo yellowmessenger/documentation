@@ -14,13 +14,13 @@ Follow the below guidelines from our conversation design experts to build a bot 
 
 
 ## 1.	Build Conversation based on the persona	
-* Create a persona and fix the bot's favourite topics. 
+* Create a persona and fix the bot's favorite topics. 
 * Set the tone, phrases, lingo inline with the bot's persona.
 
 
 ## 2.	User Adoption	
 * Build conversations according to your needs.
-* Findability: Where does the user find the bot?
+* Discoverability: Where does the user find the bot?
 * More Channels, More Awesome.
 * Horizontal Expansion
 * Vertical Expansion
