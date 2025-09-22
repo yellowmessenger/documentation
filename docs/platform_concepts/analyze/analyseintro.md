@@ -1,19 +1,20 @@
 ---
-title: Introduction to Analyze
-sidebar_label: Analyze
+title: Introduction to Analytics
+sidebar_label: Analytics
 ---
 
-## Analyze overview
+## Analytics overview
 
-**Analyze** is an AI-powered module designed to help businesses monitor and interpret every conversation that happens within their Yellow.ai platform. Whether the conversation is between a user and an **AI agent**, or between a user and a **human agent**, Analyze brings clarity, structure, and actionable insights to each interaction.
+**Analytics** is an AI-powered module designed to help businesses monitor and interpret every conversation that happens within their Yellow.ai platform. Whether the conversation is between a user and an **AI agent**, or between a user and a **human agent**, Analyze brings clarity, structure, and actionable insights to each interaction.
 
 It solves a fundamental challenge: **understanding and scaling customer interactions at volume**. With thousands of conversations occurring every day, manually reviewing each one is time-consuming and impractical. Analyze simplifies this by organizing data, highlighting problem areas, and recommending next steps—turning complex conversation data into business intelligence.           
 
 
-> **Flagship Feature: Topics**  
+> **Flagship Feature: Topics**
+
 > The **Topics** sub-module is the centerpiece of Analyze. This **gated feature** uses Yellow.ai’s in-house LLM to automatically categorize conversations, detect user sentiment, generate article suggestions, and identify automation opportunities. It helps businesses uncover what customers are talking about—at scale.
 
-**Why use analyze?**        
+**Why use analytics?**        
 
 - Quickly understand what users are asking about
 - Measure how well the AI agent is resolving queries
@@ -26,7 +27,7 @@ It solves a fundamental challenge: **understanding and scaling customer interact
 
 ---
 
-## Access Analyze
+## Access Analytics
 
 To access the Analyze module, you must have **any one** of the following permissions:
 - Super admin
@@ -40,9 +41,9 @@ To access the Analyze module, you must have **any one** of the following permiss
 
 ---
 
-## Analyze in-depth
+## Analytics in-depth
 
-Analyze consists of four powerful sub-modules:
+Analytics consists of four powerful sub-modules:
 
 
 ### 1. Topics
@@ -105,10 +106,10 @@ You can fine-tune your conversational design and measure performance beyond just
 
 -----
 
-## How analyze works for Voice ai-agents? 
+## How Analytics works for Voice ai-agents? 
 
 Conversations with Voice AI agents are stored in two ways:
 - **SAML Tag Links**: Clicking the tag redirects you to the corresponding voice recording, which you can listen to directly.
 - **Text Transcripts**: Conversations may also be transcribed and displayed as readable text.
 
-Regardless of how the conversation is stored in the UI (as audio or text), all interactions are transcribed, analyzed and displayed within **Analyze**.
+Regardless of how the conversation is stored in the UI (as audio or text), all interactions are transcribed, analyzed and displayed within **Analytics**.

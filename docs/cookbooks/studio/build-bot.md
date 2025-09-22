@@ -1,79 +1,155 @@
 ---
-title : Build a bot with FAQ and Customer Support
-sidebar_label : Build a bot with FAQ and Customer Support
+title : Create AI agent for a sample use cases
+sidebar_label : AI agent creation with sample use cases
 ---
 
-This step-by-step guide helps you create a chat bot with FAQ and customer support.
+This guide walks you through the process of designing and configuring the Yellow Travels AI Agent step by step. It is designed for first-time users to build and deploy their own AI agent.
 
-1. On the **Overview switcher**, click **Automation**.
+By the end of this guide, you will be able to:
 
-![](https://i.imgur.com/tCFgOdr.png)
+| Configuration | Description |
+|---------------|-------------|
+| **Create the Yellow travels AI agent** | Set up the Super Agent and individual agents (for booking, cancellation, refunds). |
+| **Configure start triggers and prompts** | Define how conversations begin and how the agent collects user details in a step-by-step flow. |
+| **Build workflows and APIs** | Store and manage booking data in a database, and fetch real-time data (such as flight or refund status) via APIs. |
+| **Test and publish your agent** | Validate flows, check error handling, and finally deploy your agent live for end-users. |
 
-2. On the left sidebar, click the **Train** section and go to the **FAQs** tab.
+---
 
-![](https://i.imgur.com/PNwWUBi.png)
+## Yellow travels AI Agent use case
 
-3. Add a category for your FAQs by clicking the **+** icon. Provide a name to your category and click **Create category**.
+Yellow Travels AI Agent is a conversational assistant built on the Yellow.ai platform to help customers with their travel needs. It automates flight bookings, hotel bookings, cancellations, and refund queries. It also allows handoff to live agents when required.
 
-![](https://i.imgur.com/cp3AcrV.png)
+Travel businesses handle thousands of repetitive queries such as booking tickets, checking refund status, or canceling reservations. Instead of relying on human agents, the AI agent:
 
-4. [Add FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-1-add-faqs) to that specific category. You can also [add faqs in bulk](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-2-add-faqs-in-bulk).
-8. Train the bot to understand the FAQs by clicking the **Train intents** button on the top right corner.
+- Reduces manual effort by automating common requests.
+- Generates quick responses from stored records.
+- Improves customer satisfaction by providing 24/7 support.
+- Escalates when a live human agent is required.
 
-![](https://i.imgur.com/HlUbhk2.png)
+---
 
+## What does the Yellow Travels AI Agent do?
 
-After adding FAQs and training your bot on the same, go to the builder by clicking **Build** on the top left corner.
+The AI agent is designed with four dedicated agents, each representing a real-life scenario in the travel journey:
 
-![](https://i.imgur.com/aZRSHfd.png)
+| Agent | Description | Example Conversation | Backend Action |
+|-------|-------------|-----------------------|----------------|
+| **Book a flight ticket** | Collects passenger details, trip info (departure, destination, date), generates a booking ID, and stores details in the database. | I want to book a flight from Delhi to Mumbai on 22nd Sept. | Stores details in travelDB and sends confirmation. |
+| **Book a hotel ticket** | Captures hotel stay details (location, check-in/out date, guest info), confirms booking, and captures data. | Book a hotel in Goa from 1st to 3rd Oct for 2 guests. | Calls workflow to store hotel booking details. |
+| **Cancel a flight ticket** | Asks for booking ID, verifies it, and updates cancellation status. | Cancel my flight with Booking ID 12345. | Updates DB and shares cancellation confirmation. |
+| **Check refund status** | Takes the booking ID, checks refund progress, and informs user. | What's the refund status for Booking ID 12345? | Fetches refund info from DB/CRM and shares update. |
 
+---
 
-5. Click **+Create new flow** to create a new flow followed by **+ Create from scratch** in the following pop-up.
+## How to configure AI agent
 
-![](https://i.imgur.com/QtL334V.png)
+### Step 1: Configure Super agent
 
+The Super Agent acts as the master controller for your AI Agent. It defines the persona, rules, and fallback behavior that apply across conversations.
 
-6. Fill in the following fields and click **Create**.
+1. [Create your AI agent](https://docs.yellow.ai/docs/platform_concepts/get_started/createfirstbot) based on your use case.
+2. Go to **Super agent**.
+3. [Review and edit](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona#update-profile-settings) the following details (these attributes are cloned from the chosen template but editable anytime):
 
+| Attribute | Description | Example |
+|-----------|-------------|---------|
+| Name | Enter the name of the super agent | Yellow Travels Bot |
+| Persona | Defines agent’s tone and behavior | Friendly travel assistant |
+| Role | Purpose of the agent | Help users book, cancel, and manage travel |
+| Scope | Boundaries of what the agent can and cannot do | Handles only travel-related tasks |
+| Model | LLM powering the responses | GPT-powered model (default template) |
 
+4. Define the [welcome flow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona#define-welcome-message).  
+   Example:  
+   *"Hi, I’m Yellow Travels Bot! I can help you book flights, cancel bookings, or check refund status. What would you like to do today?"*
 
-| Field Name | Description | 
-| -------- | -------- | 
-| Flow name | Provide a name to the flow | 
-|Flow Description| Describe the purpose of the flow|
-|Category| This an optional field where you can choose the category to which your flow belongs to. If the flow doesn't fall under any of the existing categories, click + Create Category to create a new one. <br/>![](https://i.imgur.com/Hp6GIsJ.png)|
+5. Add **conversation rules** (optional). Example:  
+   - Always respond within 50 words.  
+   - Follow step-by-step guidance.  
 
-Enable **Create as a workflow** if you'd like this flow to [function as a workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#-21-workflow---a-variant-of-flow) and click **Create**.
+6. Configure [Fallback behavior](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona#how-to-handle-unanswered-queries) and [Live agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/transfer-live-agent) transfer.
 
+---
 
-![](https://i.imgur.com/sJ3PTHt.png)
+### Step 2: Create individual Agents
 
+Create one agent per use case:
 
-7. [Add a Quick Replies node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) to the flow to get buttons interface.
+- Flight ticket booking agent  
+- Cancel booking agent  
 
-![](https://i.imgur.com/PpFPS7n.png)
+[**Configure Agent documentation →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent#create-an-agent)
 
-8. Add buttons to the **Quick replies** node and populate them with the questions you added in the **FAQ** section.
-15. Populate the **Bot asks** section with the question you'd like the bot to ask the end user.
+---
 
-![](https://i.imgur.com/qh69S16.png)
+### Step 3: Configure Start trigger
 
+Set how conversations should begin for each agent.
 
-Until this step, the bot would automatically fetch answers from FAQs to reply to the user queries. If the bot doesn't understand, the chat can be transferred to a live agent. Follow the below-mentioned steps to add a live agent to attend your user queries.
+**Example triggers for Flight Booking:**
 
-9. In the same flow, set the fallback to the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/raise-ticket) node.  This will transfer the chat to a live agent. The live agent can attend the user queries from the [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox) module. To know more about how the live chat agent function works, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo).
+- "I want to book a flight"  
+- "Help me book a flight"  
+- "Book a ticket for my trip"  
 
-![](https://i.imgur.com/stH4NCN.png)
+[**Start trigger documentation →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent#start-trigger)
 
+---
 
-10. Fill in the fields and set [Text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) nodes to display relevant messages for **Ticket closed** and **Error**.
+### Step 4: Build Prompt — step-by-step
 
-![](https://i.imgur.com/OWo4sdS.png)
+Prompts guide the conversation by collecting user input, validating it, and performing actions.
 
+**Sample sequence for booking a flight:**
 
+1. Collect user details:  
+   - `getInput: full_name`
+   - `getInput: mail_ID`  
+   - `getInput: phone_number`  
 
+2. Collect trip details:  
+   - `getInput: departure_city`  
+   - `getInput: departure_destination`
+   - `getInput: dateOfTravel`
 
+3. Generate booking ID and store details:  
+   - Generate random bookingID.  
+   - `callWorkflow: travelDB` (pass collected variables).  
 
+4. Send confirmation message:  
+   *Thanks `{full_name}!` Your flight from `{departure_city}` to `{departure_destination}` on `{dateOfTravel}` is booked. Booking ID: `{bookingID}`. We emailed the details to `{mail_ID}`.*
 
+**Map prompts to actions:**
 
+- [Get input](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)  
+- [Validation](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)  
+- [Set variable](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aigent-variables)  
+- [Call workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow)  
+- [Add dynamic rich media](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input#dynamic-rich-media)  
+- [Transfer to Live agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/transfer-live-agent)  
 
+---
+
+### Step 5: Preview & Test
+
+- [Agent builder preview](https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation#preview-via-agent-builder)  
+- [Copilot simulation](https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation#ai-copilot)  
+- [Preview on channel](https://docs.yellow.ai/docs/platform_concepts/AIAgent/manage-conversation#preview-agent-on-a-connected-channel)  
+
+**Testing:**  
+- Manual testing with [Copilot](https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot).  
+- Automated [Test suites](https://docs.yellow.ai/docs/platform_concepts/AIAgent/automated-agent-testing#scenario-based-testing).  
+
+Check:  
+- Input parsing.  
+- DB entries.  
+- Confirmation messages.  
+- Fallback.  
+- Live agent handoff.  
+
+---
+
+### Step 6: Publish AI agent
+
+After successful testing, click **Publish** on the Agent page.  

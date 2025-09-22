@@ -28,6 +28,8 @@ module.exports = {
 
   cookbooks: [
 
+    "cookbooks/studio/build-bot",
+
     "cookbooks/getting_started", 
     // "cookbooks/migration-guide",
     "cookbooks/botregion",
@@ -859,10 +861,11 @@ module.exports = {
     //analyze module starts here 
     {
       type: "category",
-      label: "Analyze",
+      label: "Analytics",
       link: {type: 'doc', id: 'platform_concepts/analyze/analyseintro'},
       collapsed: true,
       items: [
+        'platform_concepts/analyze/analytics-overview',
         //Topics 
         {
           type: "category",
