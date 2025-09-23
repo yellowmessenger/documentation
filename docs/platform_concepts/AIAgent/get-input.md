@@ -18,6 +18,8 @@ When creating an input, different input types can be selected based on the use c
 * **[Carousel](#carousel)** – Displays multiple options in a scrollable format.
 * **[Date](#date)** – Allows users to select or input a date.
 * **[Custom](#custom)** – Enables a more flexible input type tailored to specific needs.
+* **[Location](#location)** - Captures the user’s location based on the user input.
+* **[Dynamic rich media](#dynamic-rich-media)** - Displays interactive options like cards with images and action buttons that are generated dynamically.
 
 ### Create input
 
@@ -68,7 +70,8 @@ Validation | Ensures the user input follows the correct format. The current vali
 Example of User Input |	Provide an example of a valid email address, such as "johndoe@gmail.com", to guide users in entering the correct format.
 Others | Enable **Mark user input as optional** checkbox:<br/>*	If checked, users are not required to provide an email address.<br/>* If unchecked, the bot will prompt the user until they enter a valid email.
 
-![Email id](/files/emailid.gif)
+![Email input](/files/email_input.gif)
+
 
 ### Phone
 
@@ -86,7 +89,7 @@ Validation | Ensures the user input follows the correct format. In this case, us
 Always save number with country code | If this option is enabled, the system will store the phone number with a country code, even if the user does not provide it.
 Mark user input as optional | If checked, the user is not required to provide their phone number. If unchecked, the bot will prompt the user until a valid phone number is provided.
 
-![Phone number](/files/phonenumber.gif)
+![Phone input](/files/phone-input.gif)
 
 ### Add Quick reply buttons to the AI agent
 

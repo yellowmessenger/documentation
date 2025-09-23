@@ -28,15 +28,15 @@ You can configure the Kb agent in multiple ways to enhance the Super agent's per
 
 To access the knowledge base agent, follow these steps:
 
-1. Go to **Automation** > **Agents** > **Knowledge base agent**.
+1. Go to **Build** > **Agents** > **Knowledge base agent**.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/kb-agent.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/kbagent.png)
 
 ## Configure Knowledge base agent
 
 Knowledge base agent configuration section defines how the agent behaves during a conversation. It consists of various configurations that help the agent understand when to trigger, how it collects and uses user input, filters responses, manages follow-up questions, and formats the final output.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/KBagentactions.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/kb-agent-fileds.png)
 
 The following are key sections:
 
@@ -44,7 +44,7 @@ The following are key sections:
 
 This section defines when to trigger the Kb agent during a conversation. This setting is predefined and cannot be modified. In case, you need to trigger the Kb in such cases, you can add it in agent rules section.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/starttriggerkb.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/kb-start-trigger.png)
 
 ### Pre-search interaction
 
@@ -58,7 +58,7 @@ To enable this functionality, toggle on pre-search interaction from the top-righ
    * It can also auto-classify finance categories based on keywords in the query such as classifying mentions of vehicle, personal, or real estate loans as retail, and healthcare, travel, education, or wedding-related loans as services.
    * This pre-search setup helps refine results and ensures accurate responses. If the query is not related to loans or financing, the Kb agent skips this step and proceeds directly to the search.
 
-    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/pre-search.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/pre-search-inetraction.png)
         
 #### getInput action in pre-search interaction
 
@@ -135,7 +135,7 @@ Text |	Static predefined value |	When metadata is always the same | finance
     **Value**: finance
     * This applies the filter "finance" to every search, regardless of what the user says.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/metadataval.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/metadata-mapping.png)
 
 ### Summarisation guidelines
 
@@ -146,7 +146,7 @@ Examples of summarisation styles:
 * **Logical reasoning**: To explain a policy or rule step-by-step.
 * **Format content** – To highlight important content using formatting like bold, italics, or headers.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/summaryguidelines.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/summ-guide.png)
 
 ### Follow-up questions
 
@@ -161,7 +161,7 @@ To enable this behavior, turn on the Follow-up questions toggle in the configura
 **When the Kb agent successfully answers the query**:
 The agent can ask a thoughtful follow-up question related to the topic to keep the conversation flowing. **Example**: After providing refund policy details. "Would you like to know how to track your refund status?"."
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/follow-up.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/follow-up-question.png)
 
 ### Other configurations
 
@@ -175,4 +175,4 @@ Show links in response as hyperlinks |	When enabled, any URLs in the response ar
 Show links used for summarisation | When enabled, the Kb agent displays the source links it referred to while generating the summary. | If enabled, users might see a source like: “Based on information from `https://example.com/policy` at the end of the response.
 Show images and videos in responses | When enabled, the agent can include embedded images or videos in its answers. | A refund policy response could include a video thumbnail or an image chart explaining timelines.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/otherconfig.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/other-confog.png)
