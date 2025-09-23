@@ -18,6 +18,8 @@ When creating an input, different input types can be selected based on the use c
 * **[Carousel](#carousel)** – Displays multiple options in a scrollable format.
 * **[Date](#date)** – Allows users to select or input a date.
 * **[Custom](#custom)** – Enables a more flexible input type tailored to specific needs.
+* **[Location](#location)** - Captures the user’s location based on the user input.
+* **[Dynamic rich media](#dynamic-rich-media)** - Displays interactive options like cards with images and action buttons that are generated dynamically.
 
 ### Create input
 
