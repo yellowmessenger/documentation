@@ -66,16 +66,14 @@ Shopify is an e-commerce platform that lets merchants worldwide to build and cus
 
 You need to use the API token to establish integration with Yellow.ai as explained below:
 
-1. Go to the [yellow.ai platform].
-2. Go to the bot and navigate to **Integrations**.
+1. Login to [yellow.ai platform](https://cloud.yellow.ai/).
+2. Go to **Integrations** > **Retail & ecommerce** > **Shopify shop**. Alternatively, you can use the Search box to find the integration app.
 
-   
-   <img src="https://i.imgur.com/ctLEU4H.png" alt="drawing" width="65%"/>
+  ![](https://cdn.yellowmessenger.com/assets/yellow-docs/shopify.png)
 
-3. Type shopify in the **Search** box, and select **Shopify Shop** from the list.
-4. Scroll down to **Add account** and fill in the required details.
+3. To **Add account**, fill in the required details.
 
-   ![](https://i.imgur.com/UFJlKRz.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/shopify-details.png)
 
    Option | Description
    ------ | -----------
@@ -83,11 +81,10 @@ You need to use the API token to establish integration with Yellow.ai as explain
    **Shop Name** | Name of your shop in Shopify. The shop name should be taken from the Shopify store URL, for example if the merchant store URL is yellowxyz.myshopify.com,the shop name would be yellowxyz.
    **Admin API Access Token** | Copy and paste this from your Shopify store (refer step 8). Please only enter the Admin API access token that is displayed during the app creation process on Shopify.
    **API Secret Key** | Copy and paste this from your Shopify store (refer step 8)
+   **Subscription topics** | Allows you to select events from the drop-down list. These events represent specific actions in your Shopify store, such as customer creation, order fulfillment, refunds, or product creation. While creating an account, you need to select the required events. Based on your selection, these events will appear in the [Events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) section of your Yellow.ai platform. 
    **Domain name** |Domain name refers to the URL or web address that directs customers to your online store. Enter the domain name to enable Yellow to ingest the script on the store and capture user-related events for User 360. For example, yellowxyz.myshopify.com.
 
-
-
-5. Click **Connect**.
+4. Click **Connect**.
 
    If the integration is successful, You can see the **Shopify Shop** app on the **Integrations** page. With this, the connection has been established between the integration app and your Shopify account.
 
