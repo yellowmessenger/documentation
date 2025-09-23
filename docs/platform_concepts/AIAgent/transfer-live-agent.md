@@ -39,7 +39,7 @@ To configure Transfer to Live agent, follow these steps:
 
      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/live-chat-action.png)
      
-#### Step 4: Conversation nandoff in Inbox
+#### Step 4: Conversation handoff in Inbox
 
 Once the transfer to live agent action is triggered, the conversation is handed over to the live agent. 
 

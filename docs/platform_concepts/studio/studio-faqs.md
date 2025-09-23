@@ -1,6 +1,6 @@
 ---
-title: Chatbot FAQs
-sidebar_label: Chatbot FAQs
+title: FAQs on Rule-based agents
+sidebar_label: FAQs (Rule-based agents)
 ---
 
 :::note
