@@ -273,7 +273,7 @@ Image URL | `https://example.com/product-image.jpg` | String  | URL of the produ
 UDF1(User defined fileds), UDF2, ......, UDF5 | Custom metadata | String | User-defined fields for passing metadata.
 Vpa name | rio@upi | String | Virtual Payment Address (VPA) name.
 
-Preview the WhatsApp bot to verify the WhatsApp payment link:
+Preview the WhatsApp AI agent to verify the WhatsApp payment link:
 
   ![](https://cdn.yellowmessenger.com/assets/WApay.png)
 
