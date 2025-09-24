@@ -1,23 +1,333 @@
 ---
-title: What's new in the Cloud Platform
-sidebar_label: Latest releases
+title: Release History
+sidebar_label: Release history
 featured: true
 ---
 
+# Release History
 
+Explore our comprehensive archive of platform updates, feature releases, and improvements from previous quarters. This historical overview showcases the continuous evolution of our platform capabilities and enhancements delivered to enhance your experience.
 
-
-![](https://i.imgur.com/hIGEIJL.png)
-
-📢 Stay up to date with the latest improvements and new capabilities. 
-
-At Yellow.ai, we're continuously evolving — guided by your feedback, market needs, and emerging technologies — to make your experience more intuitive, efficient, and powerful. Explore what's new below.
+<div style={{
+  background: "var(--ifm-color-background-surface)",
+  borderRadius: "8px",
+  padding: "1.5rem",
+  marginBottom: "2rem",
+  border: "1px solid var(--ifm-color-emphasis-200)"
+}}>
+  <div style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "1rem",
+    marginBottom: "1rem"
+  }}>
+    <div style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "0.5rem"
+    }}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{opacity: 0.7}}>
+        <path d="M3 4.5H21V6H3V4.5ZM3 11.25H15V12.75H3V11.25ZM3 18H9V19.5H3V18Z" fill="currentColor"/>
+      </svg>
+      <span style={{
+        fontSize: "0.875rem",
+        fontWeight: "600",
+        color: "var(--ifm-color-text-base)",
+        letterSpacing: "0.025em"
+      }}>Categories</span>
+    </div>
+  </div>
+  <div style={{display: "flex", gap: "0.5rem", flexWrap: "wrap"}}>
+    <button 
+      className="filter-btn active" 
+      data-category="all"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { item.style.display = 'block'; });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-primary)",
+        color: "white",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
+        transition: "all 0.2s ease",
+        border: "none",
+        cursor: "pointer"
+      }}>All Updates</button>
+    <button 
+      className="filter-btn" 
+      data-category="platform"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { 
+          if (item.getAttribute('data-category') === 'platform') { 
+            item.style.display = 'block'; 
+          } else { 
+            item.style.display = 'none'; 
+          }
+        });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-emphasis-100)",
+        color: "var(--ifm-color-text-base)",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        border: "1px solid transparent"
+      }}>Platform</button>
+    <button 
+      className="filter-btn" 
+      data-category="integrations"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { 
+          if (item.getAttribute('data-category') === 'integrations') { 
+            item.style.display = 'block'; 
+          } else { 
+            item.style.display = 'none'; 
+          }
+        });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-emphasis-100)",
+        color: "var(--ifm-color-text-base)",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        border: "1px solid transparent"
+      }}>Integrations</button>
+    <button 
+      className="filter-btn" 
+      data-category="engage"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { 
+          if (item.getAttribute('data-category') === 'engage') { 
+            item.style.display = 'block'; 
+          } else { 
+            item.style.display = 'none'; 
+          }
+        });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-emphasis-100)",
+        color: "var(--ifm-color-text-base)",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        border: "1px solid transparent"
+      }}>Engage</button>
+    <button 
+      className="filter-btn" 
+      data-category="insights"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { 
+          if (item.getAttribute('data-category') === 'insights') { 
+            item.style.display = 'block'; 
+          } else { 
+            item.style.display = 'none'; 
+          }
+        });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-emphasis-100)",
+        color: "var(--ifm-color-text-base)",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        border: "1px solid transparent"
+      }}>Insights</button>
+    <button 
+      className="filter-btn" 
+      data-category="channels"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { 
+          if (item.getAttribute('data-category') === 'channels') { 
+            item.style.display = 'block'; 
+          } else { 
+            item.style.display = 'none'; 
+          }
+        });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-emphasis-100)",
+        color: "var(--ifm-color-text-base)",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        border: "1px solid transparent"
+      }}>Channels</button>
+    <button 
+      className="filter-btn" 
+      data-category="agent-ai"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { 
+          if (item.getAttribute('data-category') === 'agent-ai') { 
+            item.style.display = 'block'; 
+          } else { 
+            item.style.display = 'none'; 
+          }
+        });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-emphasis-100)",
+        color: "var(--ifm-color-text-base)",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        border: "1px solid transparent"
+      }}>Agent AI</button>
+    <button 
+      className="filter-btn" 
+      data-category="analyze"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { 
+          if (item.getAttribute('data-category') === 'analyze') { 
+            item.style.display = 'block'; 
+          } else { 
+            item.style.display = 'none'; 
+          }
+        });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-emphasis-100)",
+        color: "var(--ifm-color-text-base)",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        border: "1px solid transparent"
+      }}>Analyze</button>
+    <button 
+      className="filter-btn" 
+      data-category="inbox"
+      onClick={(e) => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.release-item');
+        buttons.forEach(btn => { btn.classList.remove('active'); btn.style.background = 'var(--ifm-color-emphasis-100)'; btn.style.color = 'var(--ifm-color-text-base)'; });
+        e.target.classList.add('active');
+        e.target.style.background = 'var(--ifm-color-primary)';
+        e.target.style.color = 'white';
+        items.forEach(item => { 
+          if (item.getAttribute('data-category') === 'inbox') { 
+            item.style.display = 'block'; 
+          } else { 
+            item.style.display = 'none'; 
+          }
+        });
+      }}
+      style={{
+        padding: "0.5rem 1rem",
+        background: "var(--ifm-color-emphasis-100)",
+        color: "var(--ifm-color-text-base)",
+        borderRadius: "6px",
+        fontSize: "0.875rem",
+        fontWeight: "500",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        border: "1px solid transparent"
+      }}>Inbox</button>
+  </div>
+</div>
 
 ***
 
-## Cloud platform redefined for better experience
+<div className="release-item" data-category="platform" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h2 style={{margin: 0}}>Cloud platform redefined for better experience</h2>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #10b981, #059669)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>MAJOR UPDATE</span>
+</div>
 
-We’ve redesigned the Yellow.ai workspace with a cleaner theme and improved navigation to give you a smoother, more intuitive experience. This update reduces clutter in the left navigation and provides an overall better workflow.
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Platform</span>
+</div>
+
+We've redesigned the Yellow.ai workspace with a cleaner theme and improved navigation to give you a smoother, more intuitive experience. This update reduces clutter in the left navigation and provides an overall better workflow.
 
 ### Highlights of this redesign:
 
@@ -50,10 +360,37 @@ For brands using Non-AI agents, the **Automation module** now contains only **Bu
 The **Database** has been moved to the **Data & Knowledge** section as it serves as a central DB tool for all modules, including AI and Non-AI agents.
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/data-base.png)
 
+</div>
 
-## **Integration**
+## **Integration** {#integration}
 
-### Ccavenue
+<div className="release-item" data-category="integrations" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Ccavenue</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #3b82f6, #2563eb)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>NEW</span>
+</div>
+
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Integrations</span>
+</div>
 
 CcAvenue is a leading payment gateway that enables businesses to securely accept online payments through credit cards, debit cards, net banking, and other methods.
 
@@ -62,8 +399,35 @@ We’ve added a new configuration option in the CcAvenue integration to simplify
 * **Generate Quick Invoice**: Allows AI agents to create and share invoice payment links with users during a conversation.
 
 [Learn where to configure these options](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/ccavenue-payment)
+</div>
 
-### Custom Live Chat Integration
+<div className="release-item" data-category="integrations" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Custom Live Chat Integration</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #f59e0b, #d97706)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>ENHANCEMENT</span>
+</div>
+
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Integrations</span>
+</div>
 
 Custom Live Chat Integration – New Display Control Options
 
@@ -78,10 +442,37 @@ These enhancements help you create a cleaner and more guided chat experience for
 :::
 
 [Learn where to configure these options](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/customliveagent#connect-custom-live-chat-account-to-yellowai)
+</div>
 
-### JSON Web Token (JWT) Integration
+<div className="release-item" data-category="integrations" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>JSON Web Token (JWT) Integration</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #3b82f6, #2563eb)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>NEW</span>
+</div>
 
-We’ve added support for JWT (JSON Web Token) authentication, enabling a more secure way to exchange information between your applications and Yellow.ai.
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Integrations</span>
+</div>
+
+We've added support for JWT (JSON Web Token) authentication, enabling a more secure way to exchange information between your applications and Yellow.ai.
 
 **With this integration, you can:**
 
@@ -94,23 +485,76 @@ We’ve added support for JWT (JSON Web Token) authentication, enabling a more s
 Navigate to **Integrations** > **JSON Web Token** (JWT) to set up and configure.
 
 [Learn how to integrate JWT](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/json-webtoken)
+</div>
 
 -----
 
-## **Engage**
+## **Engage** {#engage}
 
-### MM Lite Global Setting
+<div className="release-item" data-category="engage" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>MM Lite Global Setting</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #f59e0b, #d97706)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>ENHANCEMENT</span>
+</div>
+
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Engage</span>
+</div>
 
 You can now enable MM Lite once at the global level under **Settings** > **Engage** > **Preferences**.
 No need to configure it for every campaign—though you can still override it at the campaign level if needed.
 
 For more details, see [Engage settings](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud)
+</div>
 
+<div className="release-item" data-category="engage" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Smarter WhatsApp Message Delivery with MM Lite API Integration</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #f59e0b, #d97706)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>ENHANCEMENT</span>
+</div>
 
-###  Smarter WhatsApp Message Delivery with MM Lite API Integration  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Engage</span>
+</div>
 
-We’ve added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
-This smart delivery feature uses Meta’s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they’re most likely to engage.
+We've added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
+This smart delivery feature uses Meta's intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they're most likely to engage.
 
 No change in how you build your campaigns — just choose the API reference while configuring WhatsApp campaign, Meta takes care of the rest.
 
@@ -148,21 +592,51 @@ If your account is managed by Yellow\.ai:
 * [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#33-whatsapp-campaign)
 * [Notification API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
 
+</div>
 
 
-### Deprecated Engage Overview Page
+
+<div className="release-item" data-category="engage" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Deprecated Engage Overview Page</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #ef4444, #dc2626)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>DEPRECATED</span>
+</div>
+
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Engage</span>
+</div>
 
 The Engage Overview page has been deprecated as part of our ongoing efforts to streamline the platform. 
 
+</div>
 
 -----
 
-## **Insights**
+## **Insights** {#insights}
 
 
 ### WhatsApp Consumption Report Aligned with New Pricing (Effective July 1, 2025)
+**Important Update** • Insights
 
-We’ve updated your WhatsApp consumption report to  ensure your reporting remains accurate and consistent with Meta’s new pricing model, effective **July 1, 2025**.
+We've updated your WhatsApp consumption report to  ensure your reporting remains accurate and consistent with Meta's new pricing model, effective **July 1, 2025**.
 
 #### What’s changed
 
@@ -186,10 +660,35 @@ We’ve updated your WhatsApp consumption report to  ensure your reporting remai
 
 -----
 
-## **Channels**
+## **Channels** {#channels}
 
+<div className="release-item" data-category="channels" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Email Channel – OAuth Support</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #f59e0b, #d97706)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>ENHANCEMENT</span>
+</div>
 
-### Email Channel – OAuth Support
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Channels</span>
+</div>
 
 You can now configure the Email channel with Microsoft OAuth for a more secure and seamless connection between your email service and the AI agent. This configuration enables the agent to send and receive emails securely.
 
@@ -246,7 +745,8 @@ We’ve completely revamped the Knowledge Base module to help you manage and del
 * **Independent publishing workflow**: Publish Knowledge Base updates without redeploying the entire bot.
 
 
-[**Read the full documentation →**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
+[**Read the full documentation →**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview) -->
+</div>
 
 ---
 
@@ -273,66 +773,82 @@ These enhancements help you create a cleaner and more guided chat experience for
 ## **Engage**
 
 ### MM Lite Global Setting
+**Enhancement** • Engage
+
 You can now enable MM Lite once at the global level under **Settings** > **Engage** > **Preferences**.
 No need to configure it for every campaign—though you can still override it at the campaign level if needed.
 
 For more details, see [Engage settings](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud)
 
 
-###  Smarter WhatsApp Message Delivery with MM Lite API Integration  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
-
-We’ve added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
-This smart delivery feature uses Meta’s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they’re most likely to engage.
-
-No change in how you build your campaigns — just choose the API reference while configuring WhatsApp campaign, Meta takes care of the rest.
-
-
-#### How it works
-
-* **Default**: Follows your [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage-settings#5-whatsapp-api-preferences-mm-lite-or-meta-cloud)
-* **Customizable**: You can override this setting when configuring individual WhatsApp campaigns (Outbound, Flows, or Notification APIs).
-
-
-#### Who gets it
-
-* Available **only for customers onboarded to MM Lite**
-* Works with **Meta-approved MARKETING templates**
-
-
-#### How to enable MM lite
-
-If your account is managed by Yellow\.ai:
-
-* Your CSM will contact you
-* Or, reach out to your CSM to request access
-
-**For more details, refer to**
-* [**Org level setting**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level)
-* [**Outbound campaigns documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)
-* [**Flow campaign documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
-* [**Notification API documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
-* [**Notification API reports**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#4-reports)
-   
-
-### How to choose MM Lite for each WhatsApp campaign:
-
-* [Flow campaign](http://localhost:3001/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
-* [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#33-whatsapp-campaign)
-* [Notification API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
 
 
 
-### Deprecated Engage Overview Page
+<div className="release-item" data-category="engage" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Deprecated Engage Overview Page</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #ef4444, #dc2626)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>DEPRECATED</span>
+</div>
+
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Engage</span>
+</div>
+
 The Engage Overview page has been deprecated as part of our ongoing efforts to streamline the platform. 
 
+</div>
 
 ---
 
-## **Agent AI**
+## **Agent AI** {#agent-ai}
 
-### Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+<div className="release-item" data-category="agent-ai" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #f59e0b, #d97706)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>ENHANCEMENT</span>
+</div>
 
-We’ve reimagined the AI agent setup experience to be more guided, efficient, and powerful—so you spend less time configuring and more time delivering intelligent conversations.
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Agent AI</span>
+</div>
+
+We've reimagined the AI agent setup experience to be more guided, efficient, and powerful—so you spend less time configuring and more time delivering intelligent conversations.
 
 
 
@@ -369,6 +885,8 @@ Build smarter, more natural conversations using intuitive building blocks:
 
 
 ### PCI-Compliant Data Capture Now Supported in Question Nodes  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+**Security Enhancement** • Agent AI
+
 As part of our ongoing commitment to security and compliance, Yellow.ai now supports PCI-compliant data capture across multiple channels using question nodes, in addition to the previously supported voice input nodes. You can then use the API node to transfer PCI-sensitive information securely.
 
 #### Key enhancements
@@ -386,15 +904,41 @@ As part of our ongoing commitment to security and compliance, Yellow.ai now supp
 [**Learn how to capture PCI card data securely using Question node**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-node-overview/question-node#collecting-pci-details-using-question-node)
 
 [**Learn how to store PCI data using the API**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node)
+</div>
 
 ---
 
 ## **Insights**
 
+<div className="release-item" data-category="insights" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>WhatsApp Consumption Report Aligned with New Pricing (Effective July 1, 2025)</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #f59e0b, #d97706)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>IMPORTANT UPDATE</span>
+</div>
 
-### WhatsApp Consumption Report Aligned with New Pricing (Effective July 1, 2025)
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Insights</span>
+</div>
 
-We’ve updated your WhatsApp consumption report to  ensure your reporting remains accurate and consistent with Meta’s new pricing model, effective **July 1, 2025**.
+We've updated your WhatsApp consumption report to  ensure your reporting remains accurate and consistent with Meta's new pricing model, effective **July 1, 2025**.
 
 #### What’s changed
 
@@ -418,8 +962,9 @@ We’ve updated your WhatsApp consumption report to  ensure your reporting remai
 
 
 ### Access Control–Based Filters for Monitor and Reporting  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+**Enhancement** • Insights
 
-We’re making monitoring and reporting more secure and relevant by applying **access control–based filters**. Supervisors will now see only data related to their assigned teams across both the **Monitor** and **Analytics** sections.
+We're making monitoring and reporting more secure and relevant by applying **access control–based filters**. Supervisors will now see only data related to their assigned teams across both the **Monitor** and **Analytics** sections.
 
 
 #### **Monitor Section Updates**
@@ -450,12 +995,14 @@ We’re making monitoring and reporting more secure and relevant by applying **a
 
 
 ### Name change: Dataops is not renamed to Data export **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+**Enhancement** • Insights
 
 Data Operations (DataOps) has been renamed to Data Export to better reflect its functionality.
 
 ### Sunset Notice: Clearing the Path for a Smarter Analytics Experience **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+**Deprecation** • Insights
 
-As we prepare for a major revamp of our Analytics module, we’re streamlining the experience by removing a few legacy screens over the next two weeks. These updates are part of our broader effort to deliver cleaner insights, modern visualizations, and a more intuitive interface.
+As we prepare for a major revamp of our Analytics module, we're streamlining the experience by removing a few legacy screens over the next two weeks. These updates are part of our broader effort to deliver cleaner insights, modern visualizations, and a more intuitive interface.
 
 Here’s what’s changing:
 
@@ -484,17 +1031,44 @@ These screens haven’t seen active usage since January 2025 and aren’t tied t
 
 #### What’s Next?
 
-We’re reimagining Analytics to support faster decision-making with smarter, cleaner, and more relevant insights. Stay tuned for upcoming releases with exciting upgrades.
+We're reimagining Analytics to support faster decision-making with smarter, cleaner, and more relevant insights. Stay tuned for upcoming releases with exciting upgrades.
+</div>
 
 
 
 ---
 
-## **Analyze**
+## **Analyze** {#analyze}
 
-### Redesigned Topic Details Page **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+<div className="release-item" data-category="analyze" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Redesigned Topic Details Page</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #f59e0b, #d97706)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>ENHANCEMENT</span>
+</div>
 
-We’ve introduced a refreshed design and improved terminology on the Topic Details page in the **Analyze** module to make insights easier to understand and act on.
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Analyze</span>
+</div>
+
+We've introduced a refreshed design and improved terminology on the Topic Details page in the **Analyze** module to make insights easier to understand and act on.
 
 ![topics](https://cdn.yellowmessenger.com/assets/yellow-docs/gif.gif)
 
@@ -513,6 +1087,7 @@ To ensure faster access to actionable insights and smoother navigation:
 
 
 [**Continue reading →**](https://docs.yellow.ai/docs/platform_concepts/analyze/indepthinsights)
+</div>
 
 ---
 
@@ -520,12 +1095,37 @@ To ensure faster access to actionable insights and smoother navigation:
 
 ---
 
-## **Inbox**
+## **Inbox** {#inbox}
 
+<div className="release-item" data-category="inbox" style={{marginBottom: "3rem"}}>
+<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
+  <h3 style={{margin: 0}}>Redact sensitive messages in Chats</h3>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "linear-gradient(90deg, #ef4444, #dc2626)",
+    color: "white",
+    borderRadius: "12px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    flexShrink: 0,
+    marginLeft: "1rem"
+  }}>SECURITY ENHANCEMENT</span>
+</div>
 
-### Redact sensitive messages in Chats
+<div style={{marginBottom: "1.5rem"}}>
+  <span style={{
+    padding: "0.25rem 0.75rem",
+    background: "var(--ifm-color-emphasis-100)",
+    color: "var(--ifm-color-text-secondary)",
+    borderRadius: "4px",
+    fontSize: "0.75rem",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  }}>Inbox</span>
+</div>
 
-We’ve introduced Message Redaction to help you safeguard sensitive customer data directly from the Inbox. Agents can now mark specific text messages as sensitive, ensuring private information is masked across chat views, transcripts, and logs — while remaining securely stored for audits and compliance.
+We've introduced Message Redaction to help you safeguard sensitive customer data directly from the Inbox. Agents can now mark specific text messages as sensitive, ensuring private information is masked across chat views, transcripts, and logs — while remaining securely stored for audits and compliance.
 
 :::info
 * *Message Redaction is a gated feature.* To enable it for your account, please [contact Yellow.ai Support](mailto:support@yellow.ai).
@@ -542,6 +1142,7 @@ We’ve introduced Message Redaction to help you safeguard sensitive customer da
 
 
 ### Monitor & Reporting Access Control Updates  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+**Enhancement** • Inbox
 
 Supervisors now get scoped views across Monitor, Reporting, and Team tabs—ensuring visibility is limited to their assigned teams.
 
@@ -559,6 +1160,8 @@ Cleaner data. Sharper control. Just the way it should be.
 
 ### Sender Email Logic Update in Email Ticketing  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-We’ve cleaned up how the "From" address is picked when replying to tickets. Agents can also see clear From/To details while composing—no more guesswork. -->
+We've cleaned up how the "From" address is picked when replying to tickets. Agents can also see clear From/To details while composing—no more guesswork. -->
+</div>
+
 
 

@@ -872,6 +872,11 @@
   color: #1565c0;
 }
 
+.updateBadge.Enhancement {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
 .contentTypeBadge {
   padding: 4px 8px;
   border-radius: 12px;

@@ -113,6 +113,7 @@ const WhatsNewUpdates = () => {
   const getBadgeClass = (badge) => {
     const badgeMap = {
       'new': 'updateBadgeNew',
+      'Enhancement': 'updateBadgeUpdated',
       'updated': 'updateBadgeUpdated',
       'security': 'updateBadgeSecurity'
     };

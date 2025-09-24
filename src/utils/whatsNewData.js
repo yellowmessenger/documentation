@@ -27,7 +27,7 @@ export const featureHighlights = [
     fullDescription: 'The Analytics Overview delivers a unified snapshot of conversation performance across AI agents and human agents. It brings together usage trends, resolution insights, sentiment analysis, containment metrics, and agent involvement into one place. With flexible filters by time range and channel, stakeholders can quickly evaluate efficiency, user experience, and engagement, while clear visual dashboards highlight patterns and opportunities for improvement.',
     image: '/img/analytics-overview.gif',
     category: 'Analytics',
-    badge: 'New',
+    badge: 'Major Update',
     date: 'September 22, 2025',
     link: '/docs/platform_concepts/analyze/analytics-overview',
     highlights: [
@@ -63,12 +63,23 @@ export const featureHighlights = [
 // --- RECENT UPDATES DATA ---
 export const allUpdates = [
   {
+  title: "Limit WhatsApp Notifications per User",
+  description: "Control how many WhatsApp notifications an individual user can receive within a set time period.",
+  fullDescription: "The **WhatsApp Notification Limit per User** setting ensures users are not overwhelmed with messages by capping how many notifications they can receive within a defined interval. This helps balance timely engagement with user experience. You can configure the maximum number of notifications, set the time interval in days, and toggle the limit on or off as needed.",
+  type: "Engage",
+  badge: "Enhancement",
+  date: "September 22, 2025",
+  link: "/docs/platform_concepts/engagement/engage-settings",
+  category: "Engage",
+  icon: "💬"
+},
+  {
     title: 'PCI-Compliant Data Capture in Question Nodes',
     description: 'Securely capture sensitive payment data across Web, WhatsApp, and Voice channels with PCI DSS compliance.',
     fullDescription: 'As part of our commitment to security, Yellow.ai now supports PCI-compliant data capture in question nodes. Input fields for card number, CVV, and PIN can be marked as PCI data, which is automatically encrypted, logged securely, and handled per PCI DSS guidelines.',
     type: 'Security Update',
     contentType: 'major',
-    badge: 'updated',
+    badge: 'Enhancement',
     date: 'July 10, 2025',
     link: '/docs/platform_concepts/studio/build/nodes/prompt-node-overview/question-node#collecting-pci-details-using-question-node',
     category: 'AI Agent',
@@ -85,7 +96,7 @@ export const allUpdates = [
     fullDescription: 'We\'ve added MM Lite API support to outbound campaigns, flows, and notification APIs. This smart delivery feature uses Meta\'s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they\'re most likely to engage.',
     type: 'Enhancement',
     contentType: 'major',
-    badge: 'updated',
+    badge: 'Enhancement',
     date: 'August 28, 2025',
     link: '/docs/updates/overview#mm-lite-global-setting',
     category: 'Engage',
@@ -111,7 +122,7 @@ export const allUpdates = [
     title: 'New Display Controls in Custom Live Chat',
     description: 'Added options to hide the home button and input box while a user is waiting in the agent queue.',
     type: 'Integration',
-    badge: 'updated',
+    badge: 'Enhancement',
     date: 'August 25, 2025',
     link: '/docs/platform_concepts/appConfiguration/customliveagent#connect-custom-live-chat-account-to-yellowai',
     category: 'Integrations',
@@ -133,7 +144,7 @@ export const allUpdates = [
     description: 'Updated WhatsApp reporting to align with Meta\'s new per-message pricing model, effective July 1, 2025.',
     fullDescription: 'We\'ve updated your WhatsApp consumption report to ensure accuracy with Meta\'s new pricing model. Changes include per-message billing, free utility messages within an open customer service window, and new reporting categories ("Paid" and "Free").',
     type: 'Enhancement',
-    badge: 'updated',
+    badge: 'Enhancement',
     date: 'July 23, 2025',
     link: '/docs/updates/overview#whatsapp-consumption-report-aligned-with-new-pricing-effective-july-1-2025',
     category: 'Insights',
@@ -143,7 +154,7 @@ export const allUpdates = [
     title: 'Email Channel OAuth Support',
     description: 'Configure the Email channel with Microsoft OAuth for a more secure and seamless connection.',
     type: 'Enhancement',
-    badge: 'updated',
+    badge: 'Enhancement',
     date: 'August 20, 2025',
     link: '/docs/platform_concepts/channelConfiguration/email-outbound#setup-email-channel-with-oauth',
     category: 'Channels',
@@ -153,7 +164,7 @@ export const allUpdates = [
     title: 'Redesigned Topic Details Page',
     description: 'Refreshed design and improved terminology on the Topic Details page in the Analyze module.',
     type: 'Enhancement',
-    badge: 'updated',
+    badge: 'Enhancement',
     date: 'September 2025',
     link: '/docs/platform_concepts/analyze/indepthinsights',
     category: 'Analyze',
@@ -163,7 +174,7 @@ export const allUpdates = [
     title: 'Message Redaction in Chats',
     description: 'Safeguard sensitive customer data with message redaction directly from the Inbox.',
     type: 'Security Update',
-    badge: 'updated',
+    badge: 'Enhancement',
     date: 'Jun 23, 2025',
     link: '/docs/platform_concepts/inbox/inbox-settings/team/agents#message-redaction-to-protect-sensitive-information-with-controlled-visibility',
     category: 'Inbox',
@@ -174,7 +185,7 @@ export const allUpdates = [
     description: 'As part of our upcoming Analytics revamp, we are streamlining the UI by removing a few legacy screens.',
     fullDescription: 'We are removing the User Journeys, Health, User Data, and User Trends screens to reduce clutter. Key metrics from these pages will remain available in the Overview dashboard. This is part of our broader effort to deliver cleaner insights and a more intuitive interface.',
     type: 'Enhancement',
-    badge: 'updated',
+    badge: 'Enhancement',
     date: 'July 2, 2025',
     link: '/docs/updates/2025/april-q2#sunset-notice-clearing-the-path-for-a-smarter-analytics-experience-',
     category: 'Insights',
@@ -197,7 +208,7 @@ export const getRecentUpdatesForHomePage = (limit = 5) => {
     description: feature.shortDescription,
     type: feature.badge, // "Major Update", "New", "Enhancement"
     badge: feature.badge === 'Major Update' ? 'new' : 
-           feature.badge === 'Enhancement' ? 'updated' : 'new',
+           feature.badge === 'Enhancement' ? 'Enhancement' : 'new',
     date: feature.date,
     link: feature.link,
     category: feature.category
@@ -259,11 +270,10 @@ export const getLastUpdatedDisplay = () => {
   } else if (updateDateOnly.getTime() === yesterdayOnly.getTime()) {
     return 'Yesterday';
   } else {
-    // Format as readable date (e.g., "Sep 22, 2025")
+    // Format as readable date (e.g., "Sep 22")
     return updateDate.toLocaleDateString('en-US', {
       month: 'short',
-      day: 'numeric',
-      year: 'numeric'
+      day: 'numeric'
     });
   }
 };
