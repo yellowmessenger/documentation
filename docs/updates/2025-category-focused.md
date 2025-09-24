@@ -79,7 +79,7 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-## 🏗️ **Platform & Infrastructure**
+## 🏗️ **Platform & Infrastructure** {#platform--infrastructure}
 
 <div style={{
   border: '1px solid var(--ifm-color-emphasis-200)',
@@ -126,7 +126,7 @@ Complete workspace redesign with cleaner theme and improved navigation.
 
 </div>
 
-[**📖 Full Documentation**](./overview.md#cloud-platform-redefined-for-better-experience) • [**🎥 Watch Demo**](#)
+[**📖 Full Documentation**](./overview.md#cloud-platform-redefined) • [**🎥 Watch Demo**](#)
 
 ---
 
@@ -141,7 +141,7 @@ Database moved to "Data & Knowledge" section for better organization across all 
 
 ---
 
-## 🔌 **Integrations & Connectivity**
+## 🔌 **Integrations & Connectivity** {#integrations--connectivity}
 
 <div style={{
   border: '1px solid var(--ifm-color-emphasis-200)',
@@ -423,7 +423,7 @@ Refreshed terminology and layout for better insights understanding.
 
 ---
 
-## 📧 **Communication & Engagement**
+## 📧 **Communication & Engagement** {#communication--engagement}
 
 <div style={{
   border: '1px solid var(--ifm-color-emphasis-200)',
@@ -497,7 +497,7 @@ Microsoft OAuth integration for secure email channel connections.
 
 ---
 
-## 🔒 **Security & Compliance**
+## 🔒 **Security & Compliance** {#security--compliance}
 
 <div style={{
   background: 'linear-gradient(135deg, #fef2f2, #fecaca)',

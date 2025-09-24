@@ -53,7 +53,7 @@ import TabItem from '@theme/TabItem';
   <p style={{color: 'var(--ifm-color-text-secondary)', marginBottom: '1rem'}}>
     Complete UI overhaul with cleaner navigation and improved user experience
   </p>
-  <a href="#platform-redesign" style={{
+  <a href="../overview#cloud-platform-redefined" style={{
     color: 'var(--ifm-color-primary)',
     textDecoration: 'none',
     fontWeight: 'bold'
@@ -82,7 +82,7 @@ import TabItem from '@theme/TabItem';
   <p style={{color: 'var(--ifm-color-text-secondary)', marginBottom: '1rem'}}>
     Unified dashboard tracking AI and human agent performance
   </p>
-  <a href="#analytics-overview" style={{
+  <a href="/docs/platform_concepts/analyze/analytics-overview" style={{
     color: 'var(--ifm-color-primary)',
     textDecoration: 'none',
     fontWeight: 'bold'
@@ -111,7 +111,7 @@ import TabItem from '@theme/TabItem';
   <p style={{color: 'var(--ifm-color-text-secondary)', marginBottom: '1rem'}}>
     Enhanced call analysis with streamlined access and collaboration
   </p>
-  <a href="#call-logs" style={{
+  <a href="/docs/platform_concepts/analyze/call-logs" style={{
     color: 'var(--ifm-color-primary)',
     textDecoration: 'none',
     fontWeight: 'bold'
@@ -149,7 +149,7 @@ Completely redesigned workspace with cleaner navigation and improved user experi
 - 🤖 Distinct AI vs Non-AI agent workflows
 - ⚡ Faster access to modules
 
-[**📖 Full Documentation**](#platform-redesign)
+[**📖 Full Documentation**](../overview#cloud-platform-redefined)
 
 </div>
 
@@ -169,7 +169,7 @@ Generate Quick Invoice links during conversations for seamless payment collectio
 - 🔒 Secure payment processing
 - 💬 In-conversation payments
 
-[**🛠️ Setup Guide**](#ccavenue)
+[**🛠️ Setup Guide**](../overview#ccavenue)
 
 </div>
 

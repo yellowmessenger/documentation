@@ -300,21 +300,23 @@ Explore our comprehensive archive of platform updates, feature releases, and imp
 ***
 
 <div className="release-item" data-category="platform" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h2 style={{margin: 0}}>Cloud platform redefined for better experience</h2>
+### Cloud platform redefined for better experience {#cloud-platform-redefined}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #10b981, #059669)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>MAJOR UPDATE</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -365,21 +367,23 @@ The **Database** has been moved to the **Data & Knowledge** section as it serves
 ## **Integration** {#integration}
 
 <div className="release-item" data-category="integrations" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Ccavenue</h3>
+### Ccavenue {#ccavenue}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #3b82f6, #2563eb)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>NEW</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -402,21 +406,23 @@ We’ve added a new configuration option in the CcAvenue integration to simplify
 </div>
 
 <div className="release-item" data-category="integrations" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Custom Live Chat Integration</h3>
+### Custom Live Chat Integration {#custom-live-chat}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #f59e0b, #d97706)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>ENHANCEMENT</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -445,21 +451,23 @@ These enhancements help you create a cleaner and more guided chat experience for
 </div>
 
 <div className="release-item" data-category="integrations" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>JSON Web Token (JWT) Integration</h3>
+### JSON Web Token (JWT) Integration {#jwt}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #3b82f6, #2563eb)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>NEW</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -492,21 +500,23 @@ Navigate to **Integrations** > **JSON Web Token** (JWT) to set up and configure.
 ## **Engage** {#engage}
 
 <div className="release-item" data-category="engage" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>MM Lite Global Setting</h3>
+### MM Lite Global Setting {#mm-lite-global}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #f59e0b, #d97706)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>ENHANCEMENT</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -526,21 +536,23 @@ For more details, see [Engage settings](https://docs.yellow.ai/docs/platform_con
 </div>
 
 <div className="release-item" data-category="engage" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Smarter WhatsApp Message Delivery with MM Lite API Integration</h3>
+### Smarter WhatsApp Message Delivery with MM Lite API Integration {#mm-lite-api}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #f59e0b, #d97706)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>ENHANCEMENT</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -597,21 +609,23 @@ If your account is managed by Yellow\.ai:
 
 
 <div className="release-item" data-category="engage" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Deprecated Engage Overview Page</h3>
+### Deprecated Engage Overview Page {#deprecated-engage-overview}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #ef4444, #dc2626)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>DEPRECATED</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -663,21 +677,23 @@ We've updated your WhatsApp consumption report to  ensure your reporting remains
 ## **Channels** {#channels}
 
 <div className="release-item" data-category="channels" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Email Channel – OAuth Support</h3>
+### Email Channel – OAuth Support {#email-oauth}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #f59e0b, #d97706)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>ENHANCEMENT</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -785,21 +801,23 @@ For more details, see [Engage settings](https://docs.yellow.ai/docs/platform_con
 
 
 <div className="release-item" data-category="engage" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Deprecated Engage Overview Page</h3>
+### Deprecated Engage Overview Page (Legacy) {#deprecated-engage-overview-legacy}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #ef4444, #dc2626)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>DEPRECATED</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -821,21 +839,23 @@ The Engage Overview page has been deprecated as part of our ongoing efforts to s
 ## **Agent AI** {#agent-ai}
 
 <div className="release-item" data-category="agent-ai" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents</h3>
+### Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents {#automate-revamp}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #f59e0b, #d97706)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>ENHANCEMENT</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -884,7 +904,9 @@ Build smarter, more natural conversations using intuitive building blocks:
 ---
 
 
-### PCI-Compliant Data Capture Now Supported in Question Nodes  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### PCI-Compliant Data Capture Now Supported in Question Nodes {#pci-compliance} 
+
+![](https://img.shields.io/badge/-Enhancement-ff9800)
 **Security Enhancement** • Agent AI
 
 As part of our ongoing commitment to security and compliance, Yellow.ai now supports PCI-compliant data capture across multiple channels using question nodes, in addition to the previously supported voice input nodes. You can then use the API node to transfer PCI-sensitive information securely.
@@ -911,21 +933,23 @@ As part of our ongoing commitment to security and compliance, Yellow.ai now supp
 ## **Insights**
 
 <div className="release-item" data-category="insights" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>WhatsApp Consumption Report Aligned with New Pricing (Effective July 1, 2025)</h3>
+### WhatsApp Consumption Report Aligned with New Pricing (Effective July 1, 2025) {#whatsapp-pricing}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #f59e0b, #d97706)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>IMPORTANT UPDATE</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -1041,21 +1065,23 @@ We're reimagining Analytics to support faster decision-making with smarter, clea
 ## **Analyze** {#analyze}
 
 <div className="release-item" data-category="analyze" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Redesigned Topic Details Page</h3>
+### Redesigned Topic Details Page {#topic-details}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #f59e0b, #d97706)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>ENHANCEMENT</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",
@@ -1098,21 +1124,23 @@ To ensure faster access to actionable insights and smoother navigation:
 ## **Inbox** {#inbox}
 
 <div className="release-item" data-category="inbox" style={{marginBottom: "3rem"}}>
-<div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1rem"}}>
-  <h3 style={{margin: 0}}>Redact sensitive messages in Chats</h3>
+### Redact sensitive messages in Chats {#message-redaction}
+
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "1.5rem"
+}}>
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "linear-gradient(90deg, #ef4444, #dc2626)",
     color: "white",
     borderRadius: "12px",
     fontSize: "0.75rem",
-    fontWeight: "bold",
-    flexShrink: 0,
-    marginLeft: "1rem"
+    fontWeight: "bold"
   }}>SECURITY ENHANCEMENT</span>
-</div>
-
-<div style={{marginBottom: "1.5rem"}}>
+  
   <span style={{
     padding: "0.25rem 0.75rem",
     background: "var(--ifm-color-emphasis-100)",

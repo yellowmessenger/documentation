@@ -34,7 +34,7 @@ The Overview dashboard includes filters that let you customize the data view. Th
   * **Voice** – Filter to only see insights from voice interactions.
   * **Web chat** – Focus exclusively on chat-based conversations.
 
-  ![](/img/analytics-overview.gif)
+  <!-- ![](/img/analytics-overview.gif). -->
 
 ---
 

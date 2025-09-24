@@ -125,7 +125,7 @@ Complete workspace redesign with cleaner theme and improved navigation.
 
 </div>
 
-[**📖 Full Documentation**](../overview.md#platform-redesign) • [**🎥 Watch Demo**](#)
+[**📖 Full Documentation**](../overview.md#cloud-platform-redefined) • [**🎥 Watch Demo**](#)
 
 ---
 
@@ -381,7 +381,7 @@ Unified dashboard tracking adoption, performance, and engagement across AI and h
 
 </div>
 
-[**📊 Dashboard Guide**](../overview.md#analytics-overview)
+[**📊 Dashboard Guide**](/docs/platform_concepts/analyze/analytics-overview)
 
 ---
 
@@ -471,7 +471,7 @@ Smart delivery timing optimization using Meta's intelligence.
 
 </div>
 
-[**📱 WhatsApp Guide**](../overview.md#mm-lite)
+[**📱 WhatsApp Guide**](../overview.md#mm-lite-global)
 
 </div>
 

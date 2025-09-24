@@ -108,7 +108,7 @@ Complete workspace redesign with cleaner navigation and improved user experience
 
 </div>
 
-[**📖 Complete Documentation**](../overview.md#platform-redesign) • [**🎥 Demo Video**](#) • [**💬 Community Discussion**](#)
+[**📖 Complete Documentation**](../overview.md#cloud-platform-redefined) • [**🎥 Demo Video**](#) • [**💬 Community Discussion**](#)
 
 ---
 

@@ -12,7 +12,7 @@ export const featureHighlights = [
     category: 'Platform',
     badge: 'Major Update',
     date: 'September 8, 2025',
-    link: '/docs/updates/overview#cloud-platform-redefined-for-better-experience',
+    link: '/docs/updates/overview#cloud-platform-redefined',
     highlights: [
       'New Navigation for faster access to modules',
       'Refreshed theme, typography, and colors',
@@ -98,7 +98,7 @@ export const allUpdates = [
     contentType: 'major',
     badge: 'Enhancement',
     date: 'August 28, 2025',
-    link: '/docs/updates/overview#mm-lite-global-setting',
+    link: '/docs/updates/overview#mm-lite-global',
     category: 'Engage',
     icon: '📱',
     highlights: [
