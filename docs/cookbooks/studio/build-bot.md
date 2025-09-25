@@ -5,39 +5,23 @@ sidebar_label : AI agent creation with sample use cases
 
 This guide walks you through the process of designing and configuring the Yellow Travels AI Agent step by step. It is designed for first-time users to build and deploy their own AI agent.
 
-By the end of this guide, you will be able to:
-
-| Configuration | Description |
-|---------------|-------------|
-| **Create the Yellow travels AI agent** | Set up the Super Agent and individual agents (for booking, cancellation, refunds). |
-| **Configure start triggers and prompts** | Define how conversations begin and how the agent collects user details in a step-by-step flow. |
-| **Build workflows and APIs** | Store and manage booking data in a database, and fetch real-time data (such as flight or refund status) via APIs. |
-| **Test and publish your agent** | Validate flows, check error handling, and finally deploy your agent live for end-users. |
 
 ---
 
 ## Yellow travels AI Agent use case
 
+In this guide, we are considering the Yellow Travels use case to demonstrate how an AI Agent can be built and configured on the Yellow.ai platform.
+
 Yellow Travels AI Agent is a conversational assistant built on the Yellow.ai platform to help customers with their travel needs. It automates flight bookings, hotel bookings, cancellations, and refund queries. It also allows handoff to live agents when required.
 
-Travel businesses handle thousands of repetitive queries such as booking tickets, checking refund status, or canceling reservations. Instead of relying on human agents, the AI agent:
 
-- Reduces manual effort by automating common requests.
-- Generates quick responses from stored records.
-- Improves customer satisfaction by providing 24/7 support.
-- Escalates when a live human agent is required.
-
----
-
-## What does the Yellow Travels AI Agent do?
-
-The AI agent is designed with four dedicated agents, each representing a real-life scenario in the travel journey:
+### Sample scenarios of Yellow travels
 
 | Agent | Description | Example Conversation | Backend Action |
 |-------|-------------|-----------------------|----------------|
 | **Book a flight ticket** | Collects passenger details, trip info (departure, destination, date), generates a booking ID, and stores details in the database. | I want to book a flight from Delhi to Mumbai on 22nd Sept. | Stores details in travelDB and sends confirmation. |
-| **Book a hotel ticket** | Captures hotel stay details (location, check-in/out date, guest info), confirms booking, and captures data. | Book a hotel in Goa from 1st to 3rd Oct for 2 guests. | Calls workflow to store hotel booking details. |
 | **Cancel a flight ticket** | Asks for booking ID, verifies it, and updates cancellation status. | Cancel my flight with Booking ID 12345. | Updates DB and shares cancellation confirmation. |
+| **Book a hotel room** | Captures hotel stay details (location, check-in/out date, guest info), confirms booking, and captures data. | Book a hotel in Goa from 1st to 3rd Oct for 2 guests. | Calls workflow to store hotel booking details. |
 | **Check refund status** | Takes the booking ID, checks refund progress, and informs user. | What's the refund status for Booking ID 12345? | Fetches refund info from DB/CRM and shares update. |
 
 ---
@@ -81,6 +65,8 @@ Create one agent per use case:
 
 [**Configure Agent documentation →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent#create-an-agent)
 
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-new-agent.png)
+
 ---
 
 ### Step 3: Configure Start trigger
@@ -94,6 +80,8 @@ Set how conversations should begin for each agent.
 - "Book a ticket for my trip"  
 
 [**Start trigger documentation →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agent#start-trigger)
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/start-trger.png)
 
 ---
 
@@ -122,12 +110,14 @@ Prompts guide the conversation by collecting user input, validating it, and perf
 
 **Map prompts to actions:**
 
-- [Get input](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)  
-- [Validation](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input)  
-- [Set variable](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aigent-variables)  
-- [Call workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow)  
-- [Add dynamic rich media](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input#dynamic-rich-media)  
-- [Transfer to Live agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/transfer-live-agent)  
+* Use [Get input](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input) to capture user responses.
+* Use Validation (built-in or custom) to validate email/phone/date.
+* Use [Set variable](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aigent-variables) to store temporary values.
+* Use [Call workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow) fetch details to database, call payment, generate booking ID, call external APIs.
+* Use [Dynamic rich media](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input#dynamic-rich-media) (cards/carousel) to show flight/hotel options fetched from an API.
+* Use [Transfer to Live agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/transfer-live-agent) action when the agent cannot resolve the issue or the user asks for human help.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/promot-deatils.png)
 
 ---
 
@@ -141,7 +131,8 @@ Prompts guide the conversation by collecting user input, validating it, and perf
 - Manual testing with [Copilot](https://docs.yellow.ai/docs/platform_concepts/AICopilot/copilot).  
 - Automated [Test suites](https://docs.yellow.ai/docs/platform_concepts/AIAgent/automated-agent-testing#scenario-based-testing).  
 
-Check:  
+**What to check in tests**:
+
 - Input parsing.  
 - DB entries.  
 - Confirmation messages.  
