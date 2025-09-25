@@ -33,20 +33,13 @@ module.exports = {
     "cookbooks/getting_started", 
     // "cookbooks/migration-guide",
     "cookbooks/botregion",
+    "cookbooks/yellowaisupport",
     "cookbooks/customapps",
   
 
     //Voice
 
-    {
-      type: "category",
-      label: "Voice",
-      collapsed: true,
-      items: [
-        "cookbooks/Voice/voicebottroubleshooting", 
-        "cookbooks/Voice/uifn",
-      ],
-    },
+  
 
     // Studio  
     {
@@ -87,6 +80,8 @@ module.exports = {
         "cookbooks/studio/error_page",
         "cookbooks/email_issue",
         "cookbooks/studio/whatsapp-issues",
+        "cookbooks/Voice/voicebottroubleshooting", 
+
       ],
     }, 
 
@@ -237,7 +232,6 @@ module.exports = {
     }, 
 
     //End of genai advance
-    "cookbooks/yellowaisupport",
 
   ], // user guides end here
 
@@ -853,6 +847,7 @@ module.exports = {
             "platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen",
           ],
         },
+        "platform_concepts/engagement/engage-settings",
         "platform_concepts/engagement/engage_faqs",
         "platform_concepts/engagement/engage_troubleshooting",
       ],
@@ -1341,6 +1336,8 @@ module.exports = {
         },
         //Webrtc testing
         "cookbooks/voice-as-channel/WebrtcTesting",
+        "cookbooks/Voice/uifn",
+
         // FAQs 
         "cookbooks/voice-as-channel/voicefaqs",
       ],

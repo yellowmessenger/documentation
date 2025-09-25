@@ -33,9 +33,9 @@ Transfers within the Yellow.ai Inbox are tracked using the `agent-transfer` even
 
 ### Using the chat handoff node
 
-When working with 3rd-party inboxes, it is important to track sessions where the AI agent was unable to resolve the query and the issue was escalated—similar to how it's done within the Yellow.ai Inbox. This is achieved by logging the `agent-session` event.
+When working with 3rd-party inboxes, it is important to track sessions where the AI agent was unable to resolve the query and the issue was escalated—similar to how it's done within the Yellow.ai Inbox. This is achieved by logging the `agent-transfer` event.
 
-With **Bot Developer** access, you can configure the **Chat Handoff** node just before the ticket creation node (e.g., for Zendesk, ServiceNow, Intercom, etc.). When this node is triggered, it logs the `agent-session` event in the [**User Engagement Events**](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#user-engagement-events) table.
+With **Bot Developer** access, you can configure the **Chat Handoff** node just before the ticket creation node (e.g., for Zendesk, ServiceNow, Intercom, etc.). When this node is triggered, it logs the `agent-transfer` event in the [**User Engagement Events**](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#user-engagement-events) table.
 
 <p align="center"><img src="https://imgur.com/ix6sMpU.png" alt="Chat Handoff Flow" width="60%"/></p>
 
@@ -44,7 +44,7 @@ This setup enables visibility into sessions that involved agent intervention—e
 
 #### Example: Tracking Agent Sessions via Zendesk
 
-When a ticket is raised in **Zendesk**, the **Chat Handoff** node is triggered just before the handoff. Once the passive or offline ticket is created, agents typically respond via email, call, or other channels. This handoff is recorded as an `agent-session` event in the **User engagement events** table, making it measurable.
+When a ticket is raised in **Zendesk**, the **Chat Handoff** node is triggered just before the handoff. Once the passive or offline ticket is created, agents typically respond via email, call, or other channels. This handoff is recorded as an `agent-transfer` event in the **User engagement events** table, making it measurable.
 
 <p align="center"><img src="https://imgur.com/CvniYAF.png" alt="Chat Handoff Node Zendesk" width="100%"/></p>
 

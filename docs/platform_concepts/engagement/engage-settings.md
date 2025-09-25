@@ -112,7 +112,7 @@ Your chosen API will be applied by default. You can override it when creating in
 
 ---
 
-6. ## Limit WhatsApp Notifications per User
+## 6. Limit WhatsApp Notifications per User
 
 The **WhatsApp Notification Limit per User** setting helps you control how many notifications an individual user can receive within a specified time interval. This ensures that users are not over-messaged, while still allowing you to reach them with timely updates.  
 
