@@ -4,6 +4,62 @@
 // --- FEATURE HIGHLIGHTS DATA (Major Updates) ---
 export const featureHighlights = [
   {
+    id: 'data-purge-retention',
+    title: 'Take Control of Your Data with Retention & Purge',
+    shortDescription: 'Manage the full data lifecycle with automated retention policies and one-time purge capabilities to ensure compliance and reduce risk.',
+    fullDescription: `The **Data Purge & Retention** feature gives organizations complete control over the data lifecycle, ensuring **compliance**, reducing risk, and improving **system efficiency**.
+
+**Note:** This is a **gated feature**. To enable it for your account, please contact your **Customer Success Manager** or reach out to **Yellow.ai Support**.
+
+You now have **two powerful tools** to manage your data:
+
+### Automated Data Retention (UI Setting)
+
+**Purpose:** Retention is an ongoing, automated process for deleting old records.
+
+**How it works:**
+- A **Super Admin** can configure a retention period directly in the admin UI.
+- A daily background job automatically deletes records older than the chosen timeframe (e.g., 30, 60, or 180 days).
+
+**Important:** Once enabled, the retention policy is **permanent** and cannot be changed.
+
+**Best for:** Helping active clients stay compliant with data protection laws without manual intervention.
+
+### One-Time Data Purge (Backend Operation)
+
+**Purpose:** Purge is a one-time, irreversible process to delete a bot's data completely.
+
+**How it works:**
+- This internal-only process deletes data across **40+ system tables**, including inbox logs, video chats, analytics, and the bot's logic itself.
+
+**Critical:**
+- The Purge action is **irreversible**, and data **cannot be recovered**.
+- The bot is **permanently disabled** after the purge is complete.
+
+**Best for:** Fulfilling contractual obligations for **complete data removal** during client offboarding.
+
+### Supported Features
+
+This feature currently supports over **29 system tables** across multiple databases, including **Elasticsearch, Postgres, TiDB, and MongoDB**.
+
+**Access & Permissions:**
+- **Retention Policies:** Can only be configured by users with **Super Admin** permissions.
+- **Purge Function:** An internal backend operation; **cannot** be triggered by end customers.`,
+    image: 'https://i.ibb.co/3mZHvpwp/2.png',
+    category: 'Platform',
+    badge: 'New Feature',
+    date: 'September 26,2025',
+    link: '/docs/platform_concepts/settings/general-settings',
+    highlights: [
+      'Automated Retention: Set permanent policies for daily cleanup of old records',
+      'One-Time Purge: Completely remove all bot data and logic for client offboarding',
+      'Compliance Ready: Helps meet HIPAA and other regulations by controlling data retention',
+      'Super Admin Only: Secure access controls prevent unauthorized data operations',
+      'Broad Database Coverage: Supports 29 system tables across multiple database types'
+    ]
+  },
+
+  {
     id: 'platform-redesign',
     title: 'Cloud Platform Redefined for a Better Experience',
     shortDescription: 'A redesigned workspace with a cleaner theme and improved navigation for a smoother, more intuitive experience.',

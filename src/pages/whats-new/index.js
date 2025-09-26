@@ -16,6 +16,53 @@ export default function WhatsNewOverview() {
   const [expandedUpdates, setExpandedUpdates] = useState(new Set());
   const [selectedImage, setSelectedImage] = useState(null);
 
+  // Function to render formatted description with markdown-like support
+  const renderFormattedDescription = (description) => {
+    const lines = description.split('\n');
+    const elements = [];
+    
+    lines.forEach((line, index) => {
+      const trimmedLine = line.trim();
+      
+      if (!trimmedLine) {
+        elements.push(<br key={`br-${index}`} />);
+        return;
+      }
+      
+      // Handle headings (###)
+      if (trimmedLine.startsWith('### ')) {
+        elements.push(
+          <h4 key={index} className={styles.markdownHeading}>
+            {trimmedLine.replace('### ', '')}
+          </h4>
+        );
+      }
+      // Handle bullet points (-)
+      else if (trimmedLine.startsWith('- ')) {
+        elements.push(
+          <div key={index} className={styles.markdownBullet}>
+            <span className={styles.bulletPoint}>• </span>
+            <span dangerouslySetInnerHTML={{
+              __html: trimmedLine.replace('- ', '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            }} />
+          </div>
+        );
+      }
+      // Handle regular paragraphs
+      else {
+        elements.push(
+          <p key={index} className={styles.markdownParagraph}>
+            <span dangerouslySetInnerHTML={{
+              __html: trimmedLine.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            }} />
+          </p>
+        );
+      }
+    });
+    
+    return elements;
+  };
+
   // Get unique categories and content types
   const categories = ['All', ...new Set(allUpdates.map(update => update.category))];
   const contentTypes = ['All', 'Major Features'];
@@ -236,9 +283,9 @@ export default function WhatsNewOverview() {
                     
                     <div className={styles.cardContent}>
                       <h3 className={styles.cardTitle}>{feature.title}</h3>
-                      <p className={styles.cardDescription}>
-                        {expandedCard === feature.id ? feature.fullDescription : feature.shortDescription}
-                      </p>
+                      <div className={styles.cardDescription}>
+                        {renderFormattedDescription(expandedCard === feature.id ? feature.fullDescription : feature.shortDescription)}
+                      </div>
                       
                       {expandedCard === feature.id && feature.highlights && (
                         <ul className={styles.highlightsList}>
@@ -316,9 +363,9 @@ export default function WhatsNewOverview() {
                         )}
                         
                         <h3 className={styles.updateTitle}>{update.title}</h3>
-                        <p className={styles.updateDescription}>
-                          {isExpanded && update.fullDescription ? update.fullDescription : update.description}
-                        </p>
+                        <div className={styles.updateDescription}>
+                          {renderFormattedDescription(isExpanded && update.fullDescription ? update.fullDescription : update.description)}
+                        </div>
                         
                         {isExpanded && update.highlights && (
                           <ul className={styles.updateHighlights}>
