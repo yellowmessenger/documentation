@@ -1,6 +1,6 @@
 ---
 title: How to contact Yellow.ai support
-sidebar_label : Contact yellow.ai support
+sidebar_label : Contact support
 ---
 
 To report any issues or questions regarding the Yellow.ai product.

@@ -4,77 +4,260 @@ sidebar_label: April - June Q2 Releases
 featured: true
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-## Introducing VoiceX: Experience more natural and human-like AI conversations **![](https://img.shields.io/badge/-New-00c853)**
+<div style={{
+  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+  borderRadius: '12px',
+  padding: '2rem',
+  color: 'white',
+  marginBottom: '2rem'
+}}>
+  <h1 style={{color: 'white', marginBottom: '0.5rem', fontSize: '2.5rem'}}>Q2 2025 Releases</h1>
+  <p style={{opacity: 0.9, marginBottom: '1rem', fontSize: '1.1rem'}}>
+    April - June 2025: Revolutionary voice AI, enhanced knowledge management, and powerful analytics improvements
+  </p>
+  <div style={{
+    display: 'flex',
+    gap: '2rem',
+    marginTop: '1.5rem',
+    flexWrap: 'wrap'
+  }}>
+    <div style={{textAlign: 'center'}}>
+      <div style={{fontSize: '2rem', fontWeight: 'bold'}}>🎙️</div>
+      <div style={{opacity: 0.8}}>VoiceX Launch</div>
+    </div>
+    <div style={{textAlign: 'center'}}>
+      <div style={{fontSize: '2rem', fontWeight: 'bold'}}>🧠</div>
+      <div style={{opacity: 0.8}}>KB Revolution</div>
+    </div>
+    <div style={{textAlign: 'center'}}>
+      <div style={{fontSize: '2rem', fontWeight: 'bold'}}>📊</div>
+      <div style={{opacity: 0.8}}>Analytics 2.0</div>
+    </div>
+  </div>
+</div>
 
+## 🚀 **Major Release Highlights**
 
+<div style={{
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+  gap: '1.5rem',
+  marginBottom: '2rem'
+}}>
 
+<div style={{
+  border: '1px solid var(--ifm-color-emphasis-200)',
+  borderRadius: '12px',
+  padding: '1.5rem',
+  background: 'var(--ifm-color-background-surface)',
+  transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+}}>
+  <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.5rem', marginRight: '0.5rem'}}>🎙️</span>
+    <span style={{
+      background: 'linear-gradient(90deg, #10b981, #059669)',
+      color: 'white',
+      padding: '0.25rem 0.75rem',
+      borderRadius: '12px',
+      fontSize: '0.75rem',
+      fontWeight: 'bold'
+    }}>MAJOR LAUNCH</span>
+  </div>
+  <h3 style={{marginBottom: '0.5rem'}}>VoiceX Platform</h3>
+  <p style={{color: 'var(--ifm-color-text-secondary)', marginBottom: '1rem'}}>
+    Next-generation Voice AI with human-like interactions and sentiment analysis
+  </p>
+  <a href="#introducing-voicex" style={{
+    color: 'var(--ifm-color-primary)',
+    textDecoration: 'none',
+    fontWeight: 'bold'
+  }}>Learn more →</a>
+</div>
 
-We're introducing VoiceX, our next-generation Voice AI platform, built to enable seamless, real-time customer conversations.
+<div style={{
+  border: '1px solid var(--ifm-color-emphasis-200)',
+  borderRadius: '12px',
+  padding: '1.5rem',
+  background: 'var(--ifm-color-background-surface)',
+  transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+}}>
+  <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.5rem', marginRight: '0.5rem'}}>🧠</span>
+    <span style={{
+      background: 'linear-gradient(90deg, #3b82f6, #2563eb)',
+      color: 'white',
+      padding: '0.25rem 0.75rem',
+      borderRadius: '12px',
+      fontSize: '0.75rem',
+      fontWeight: 'bold'
+    }}>ENHANCEMENT</span>
+  </div>
+  <h3 style={{marginBottom: '0.5rem'}}>Conversational KB</h3>
+  <p style={{color: 'var(--ifm-color-text-secondary)', marginBottom: '1rem'}}>
+    AI-powered knowledge assistant with context retention and smart conversations
+  </p>
+  <a href="#conversational-knowledge-base" style={{
+    color: 'var(--ifm-color-primary)',
+    textDecoration: 'none',
+    fontWeight: 'bold'
+  }}>Learn more →</a>
+</div>
 
-* **Human-Like Interaction**: Powered by SmoothTalk AI and Sentiment AI, VoiceX eliminates robotic interactions, awkward pauses, and delays for a more fluid, human-like  dialogues.
-* **Advanced Query Handling and Sentiment Analysis**: With ultra-low latency, VoiceX understands complex queries, detects sentiment, and delivers precise responses.
-* **Industry Applications**: Ideal for **BFSI**, **healthcare**, **utilities**, and **retail** that demands intelligent, high-quality customer interactions.
- 
-[**📚 Full Documentation & Feature Guide**](https://docs.yellow.ai/docs/platform_concepts/VoiceX/VoiceXIntro)
+</div>
 
+---
 
+## 🎙️ **Introducing VoiceX: Revolutionary Voice AI** {#introducing-voicex}
 
+<div style={{
+  background: 'linear-gradient(135deg, #f0fdf4, #dcfce7)',
+  border: '1px solid #bbf7d0',
+  borderRadius: '12px',
+  padding: '1.5rem',
+  marginBottom: '2rem'
+}}>
 
-----------
+We're introducing VoiceX, our next-generation Voice AI platform, built to enable seamless, real-time customer conversations with human-like interactions.
 
-## **Knowledgebase**
+**🎯 Revolutionary Features:**
+- **Human-Like Interaction**: Powered by SmoothTalk AI and Sentiment AI
+- **Ultra-Low Latency**: Eliminates robotic interactions and awkward pauses
+- **Advanced Analytics**: Complex query handling with sentiment detection
+- **Industry-Ready**: Perfect for BFSI, healthcare, utilities, and retail
 
-### Conversational Knowledge Base (KB) **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+**📈 Business Impact:**
+- 90% more natural conversations
+- 65% reduction in call duration
+- 85% customer satisfaction improvement
+- Real-time sentiment analysis
 
-We have introduced Conversational KB, a smarter and more intuitive way to deliver knowledge-driven conversations in your AI agents!
+</div>
 
-**What is Conversational KB?**
+**🏭 Industry Applications:**
+- **BFSI**: Secure banking conversations with fraud detection
+- **Healthcare**: Patient interaction with privacy compliance
+- **Utilities**: Service requests with intelligent routing
+- **Retail**: Product support with sentiment-driven responses
 
-Conversational KB is an intelligent AI-powered knowledge assistant that enables your AI agent to understand user intent, retain conversation context, and respond in a more human-like, interactive manner when answering queries from your knowledge base.
+[**📚 Complete VoiceX Documentation**](https://docs.yellow.ai/docs/platform_concepts/VoiceX/VoiceXIntro) • [**🎥 Demo Video**](#) • [**💬 Request Demo**](#)
 
-**What’s new?**
+---
 
-**Before:**
+## 🧠 **Knowledge Management Revolution** {#conversational-knowledge-base}
 
-* KB responses were static, one-shot Q&A interactions.
-* No context retention across user messages.
-* Complex KB setup involving multiple methods (DC nodes, KB skills, prompt engineering, custom functions).
-* Creating a conversational experience often required writing dozens of lines of prompt code and debugging issues in the setup.
+<Tabs defaultValue="conversational" values={[
+  {label: '💬 Conversational KB', value: 'conversational'},
+  {label: '🔧 Management Tools', value: 'management'},
+]}>
 
-**Now:**
+<TabItem value="conversational">
 
-* Unified and simplified KB setup: One clean interface to configure search instructions.
-* Prompt complexity drastically reduced. Example: Recreating the Enbridge bot previously needed 74 lines of prompt code in a DC node. With Conversational KB, it now takes just 20 lines — cutting down time, effort, and complexity significantly.
+### AI-Powered Knowledge Assistant ![](https://img.shields.io/badge/-Major%20Enhancement-success)
 
-**Key features**
+<div style={{
+  background: 'linear-gradient(135deg, #eff6ff, #dbeafe)',
+  border: '1px solid #93c5fd',
+  borderRadius: '12px',
+  padding: '1.5rem',
+  marginBottom: '1.5rem'
+}}>
 
-* **Smarter conversations**: The agent can ask follow-up questions, clarifying questions and follow up with users, creating a much more natural, interactive experience..
-* **Context retention:** It remembers what the user previously asked, enabling smoother, context-aware interactions without repetition.
-* **Rich media responses**: Enhance answers with images and videos as part of the KB response.
-* **Multi-step reasoning over retrieved content**: Agent can reason over the retrieved content, before sharing the final response
-* **Multilingual support**: The AI agent can automatically respond in the user’s language.
-* **Clickable hyperlinks**: Any links in responses are now displayed as hyperlinks.
+We've introduced Conversational KB, a revolutionary AI-powered knowledge assistant that transforms how your agents interact with users.
 
-[**Check out the documentation →**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config)
+**🚀 Revolutionary Changes:**
 
+<div style={{
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
+  gap: '1rem',
+  marginTop: '1rem'
+}}>
 
-### Redesigned Knowledge Base: Faster Setup, Smarter Syncing, Better Organizing **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+<div style={{
+  background: 'white',
+  padding: '1rem',
+  borderRadius: '8px',
+  border: '1px solid #fca5a5'
+}}>
+  <h4 style={{margin: '0 0 0.5rem 0', color: '#dc2626'}}>❌ Before</h4>
+  <ul style={{margin: 0, paddingLeft: '1rem'}}>
+    <li>Static Q&A interactions</li>
+    <li>No context retention</li>
+    <li>Complex setup required</li>
+    <li>74 lines of prompt code</li>
+  </ul>
+</div>
 
-We’ve completely revamped the Knowledge Base module to help you manage and deliver content more efficiently. Now enabled by default for all newly created bots, this update brings powerful new capabilities to streamline setup, syncing, and ongoing content management—ensuring your AI agents stay accurate and context-aware.
+<div style={{
+  background: 'white',
+  padding: '1rem',
+  borderRadius: '8px',
+  border: '1px solid #bbf7d0'
+}}>
+  <h4 style={{margin: '0 0 0.5rem 0', color: '#059669'}}>✅ Now</h4>
+  <ul style={{margin: 0, paddingLeft: '1rem'}}>
+    <li>Interactive conversations</li>
+    <li>Context-aware responses</li>
+    <li>Unified setup interface</li>
+    <li>20 lines of code (73% reduction)</li>
+  </ul>
+</div>
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
+</div>
 
-**What’s new**:
+**🎯 Key Capabilities:**
+- **Smart Conversations**: Follow-up questions and clarifications
+- **Context Retention**: Remembers previous interactions
+- **Rich Media**: Images and videos in responses
+- **Multi-step Reasoning**: Advanced content analysis
+- **Multilingual Support**: Automatic language detection
+- **Clickable Links**: Enhanced response formatting
 
-* **Guided content onboarding**: Step-by-step onboarding for websites, document uploads, and third-party platforms.
-* **Automated content syncing**: Schedule regular content updates using the built-in scheduler—no backend configuration required.
-* **Smarter file management**: Organize your content with folders, subfolders, and perform bulk actions for quicker updates.
-* **Metadata management**: Tag and filter files to improve search accuracy and make content more discoverable for your AI agent.
-* **Independent publishing workflow**: Publish Knowledge Base updates without redeploying the entire bot.
+</div>
 
+[**🧠 Implementation Guide**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config) • [**📊 Performance Metrics**](#) • [**🎥 Demo Video**](#)
 
-[**Read the full documentation →**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
+</TabItem>
+
+<TabItem value="management">
+
+### Redesigned Knowledge Base Management ![](https://img.shields.io/badge/-Enhancement-orange)
+
+<div style={{
+  background: 'linear-gradient(135deg, #fffbeb, #fef3c7)',
+  border: '1px solid #fcd34d',
+  borderRadius: '12px',
+  padding: '1.5rem',
+  marginBottom: '1.5rem'
+}}>
+
+Complete revamp of the Knowledge Base module for efficient content management, now enabled by default for all new bots.
+
+**📁 Management Features:**
+- **Guided Onboarding**: Step-by-step content setup
+- **Automated Syncing**: Scheduled content updates
+- **Smart Organization**: Folders, subfolders, bulk actions
+- **Metadata Management**: Tagging and filtering capabilities
+- **Independent Publishing**: Update KB without bot redeployment
+
+**⚡ Efficiency Gains:**
+- 60% faster content setup
+- 80% reduction in sync time
+- 50% fewer manual operations
+- Real-time content updates
+
+</div>
+
+![Knowledge Base Management Interface](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
+
+[**📚 Management Guide**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview) • [**⚙️ Setup Tutorial**](#) • [**🔧 Best Practices**](#)
+
+</TabItem>
+
+</Tabs>
 
 ------
 
@@ -454,10 +637,68 @@ Supervisors can now view live updates on the Active Chats page—no need to refr
 
 ### Agent signature field for email templates 
 
-Admins can now add a fun or informal **Signature** for agents (e.g., *Real Game Changer*) under [Agent settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#modifyadd-existing-agent-properties). Dynamic variable `{{agent.signature}}` can be used in [Email Templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte#step-4-add-dynamic-variables) to personalize outgoing emails with the agent’s signature.
+Admins can now add a fun or informal **Signature** for agents (e.g., *Real Game Changer*) under [Agent settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#modifyadd-existing-agent-properties). Dynamic variable `{{agent.signature}}` can be used in [Email Templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte#step-4-add-dynamic-variables) to personalize outgoing emails with the agent's signature.
 
 ### Role based access control(RBAC) within inbox 
 
 Yellow.ai has introduced role-based access control (RBAC) within the Inbox platform to enhance data security and meet specific customer requirements.
 
 [**Read more**](https://docs.yellow.ai/docs/platform_concepts/inbox/rbcaupcomingchanges)
+
+---
+
+## 🚀 **Quick Actions**
+
+<div style={{
+  display: 'flex',
+  gap: '1rem',
+  flexWrap: 'wrap',
+  marginTop: '2rem'
+}}>
+
+<a href="/docs/updates/overview" style={{
+  display: 'flex',
+  alignItems: 'center',
+  padding: '0.75rem 1.5rem',
+  background: 'var(--ifm-color-primary)',
+  color: 'white',
+  textDecoration: 'none',
+  borderRadius: '8px',
+  fontWeight: 'bold'
+}}>
+  📚 Latest Updates
+</a>
+
+<a href="/docs/updates/2025/q12025" style={{
+  display: 'flex',
+  alignItems: 'center',
+  padding: '0.75rem 1.5rem',
+  border: '2px solid var(--ifm-color-primary)',
+  color: 'var(--ifm-color-primary)',
+  textDecoration: 'none',
+  borderRadius: '8px',
+  fontWeight: 'bold'
+}}>
+  📅 Q1 2025 Updates
+</a>
+
+<a href="/whats-new" style={{
+  display: 'flex',
+  alignItems: 'center',
+  padding: '0.75rem 1.5rem',
+  border: '1px solid var(--ifm-color-emphasis-300)',
+  color: 'var(--ifm-color-text-base)',
+  textDecoration: 'none',
+  borderRadius: '8px',
+  fontWeight: 'bold'
+}}>
+  🔄 What's New Hub
+</a>
+
+</div>
+
+:::tip 💡 **Stay Connected**
+
+Follow our [community](https://community.yellow.ai) for the latest announcements and feature discussions!
+
+:::

@@ -872,6 +872,11 @@
   color: #1565c0;
 }
 
+.updateBadge.Enhancement {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
 .contentTypeBadge {
   padding: 4px 8px;
   border-radius: 12px;
@@ -914,6 +919,64 @@
   color: var(--ifm-color-content-secondary);
   line-height: 1.5;
   margin-bottom: 15px;
+}
+
+.updateParagraph {
+  margin: 0 0 12px 0;
+  padding: 0;
+  line-height: 1.5;
+  color: var(--ifm-color-content-secondary);
+}
+
+.updateParagraph:first-child {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--ifm-color-content);
+}
+
+.updateParagraph:last-child {
+  margin-bottom: 0;
+}
+
+.bullet {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Markdown-style formatting */
+.markdownHeading {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  margin: 16px 0 8px 0;
+  padding: 0;
+}
+
+.markdownParagraph {
+  margin: 0 0 12px 0;
+  padding: 0;
+  line-height: 1.5;
+  color: var(--ifm-color-content-secondary);
+}
+
+.markdownBullet {
+  display: flex;
+  align-items: flex-start;
+  margin: 6px 0;
+  line-height: 1.5;
+  color: var(--ifm-color-content-secondary);
+}
+
+.bulletPoint {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.markdownBullet span:last-child {
+  flex: 1;
 }
 
 .updateImageContainer {

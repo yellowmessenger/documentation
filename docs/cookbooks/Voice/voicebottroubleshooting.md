@@ -1,6 +1,7 @@
 ---
-title: Troubleshooting Voice Bots
-sidebar_label : Troubleshooting voice bots    
+title: Troubleshooting Voice agents
+sidebar_label : Voice agents troubleshooting
+keywords: ["voice bot"]
 ---
 
 

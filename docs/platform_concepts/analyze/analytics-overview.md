@@ -34,6 +34,7 @@ The Overview dashboard includes filters that let you customize the data view. Th
   * **Voice** – Filter to only see insights from voice interactions.
   * **Web chat** – Focus exclusively on chat-based conversations.
 
+  <!-- ![](/img/analytics-overview.gif). -->
 
 ---
 
@@ -43,7 +44,7 @@ This section highlights metrics derived from conversations analyzed by AI.
 
 * **Total conversations** – Total conversations handled by your AI agent and human agents.
 * **Analyzed conversations** – Subset of conversations reviewed by AI for insights.
-* **Top discussed topics** – The most frequently occurring categories detected in analyzed conversations. Click on the box to redirect to the **Topics** page. This provides clear view of what topics users are most engaging.
+
 
 ---
 
@@ -53,6 +54,11 @@ Resolution rate represents the percentage of conversations that were successfull
 **What it shows**
 * A timeline view of resolved conversations, helping you analyze resolution trends over time.
 * A comparison of resolution performance between AI Agents and Human Agents, so you can see how much each contributes to overall query resolution.
+
+> Resolution Rate = Resolved conversations ÷ Total analyzed conversations
+> A conversation is considered resolved when the user does not express dissatisfaction for any topic within it. Conversations where only some topics are resolved are not included in this metric.
+
+---
 
 ### Resolution Rate Split
 
@@ -73,6 +79,18 @@ Resolution rate split provides a breakdown of analyzed conversations by their re
 * **All (default)** – Shows outcomes across both AI and Human agents.
 * **AI Agent** – Focuses on outcomes where the AI Agent handled the conversation.
 * **Human Agent** – Focuses on outcomes where a live agent handled the conversation.
+
+--- 
+
+### Top discussed topics 
+
+Displays the most frequently occurring categories in analyzed conversations, along with their occurrence count (Topic – Count). This gives you a clear view of what users engage with the most. 
+
+Click the link on this card to navigate to Conversations > Topics for the full list of topics and detailed counts.
+
+   <img src="https://iili.io/KaD4MgV.md.png" width="35%"/>
+
+---
 
 ### Containment Rate
 
