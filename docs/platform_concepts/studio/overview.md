@@ -245,7 +245,7 @@ The Super Agent coordinates these interactions by analyzing the user’s intent 
 
 The [Knowledge Base agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config) is a specialized AI-driven component designed to handle knowledge-intensive queries. It retrieves, summarizes, and delivers answers from knowledge sources like documents, FAQs, or external systems. It also supports follow-up questions, multilingual responses, and context-aware answers.
 
-### Rule-based flows
+### Rule-based agents
 
 Rule-based agents, also known as node-based flows, are a key component of the agentic architecture. Unlike AI agents that rely on LLMs for contextual reasoning, rule-based agents operate through predefined paths and mapped intents. They are best suited for scenarios where interactions must follow a structured, predictable sequence such as authentication, form-filling, or survey collection.
 
