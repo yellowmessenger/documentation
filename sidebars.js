@@ -27,39 +27,25 @@ module.exports = {
   //cookbook- user guides 
 
   cookbooks: [
-
+    // First topic - Build bot guide
     "cookbooks/studio/build-bot",
-
+    
+    // Keep these as separate topics as requested
     "cookbooks/getting_started", 
-    // "cookbooks/migration-guide",
     "cookbooks/botregion",
+    "cookbooks/yellowaisupport",
     "cookbooks/customapps",
-  
 
-    //Voice
-
+    // Automation & Rule-based Agent
     {
       type: "category",
-      label: "Voice",
+      label: "Automation & Rule-based Agent",
       collapsed: true,
       items: [
-        "cookbooks/Voice/voicebottroubleshooting", 
-        "cookbooks/Voice/uifn",
-      ],
-    },
-
-    // Studio  
-    {
-      type: "category",
-      label: "Automation",
-      collapsed: true,
-      items: [
-        // "cookbooks/conversation-design",
         "cookbooks/studio/newcard",
         "cookbooks/studio/trigger-whatsappresponse",
         "cookbooks/studio/retriev-dbinfo",
         "cookbooks/studio/multilingual-bot",
-        "cookbooks/studio/build-bot",
         "cookbooks/studio/hide-input",
         "cookbooks/studio/dynamic-quickreplies",
         "cookbooks/studio/dynamic-callout-banner",
@@ -72,43 +58,45 @@ module.exports = {
         "cookbooks/studio/ticket-assignedevent",
         "cookbooks/studio/webview-node",
         "cookbooks/studio/user-inactivity",
-        //  "cookbooks/studio/debug-logs",
-        "cookbooks/studio/error_page",
         "cookbooks/studio/userinitiateddisconnection",
       ],
     }, 
+
+    // AI & Advanced Features
     {
       type: "category",
-      label: "Troubleshooting Guide",
-      // link: {type: 'doc', id: 'platform_concepts/get_started/marketplaceintro'},
+      label: "AI & Advanced Features",
       collapsed: true,
       items: [
-        "cookbooks/platform_notload",
-        "cookbooks/studio/error_page",
-        "cookbooks/email_issue",
-        "cookbooks/studio/whatsapp-issues",
+        "cookbooks/Gen-AI-beginner",
+        {
+          type: "category",
+          label: "Gen AI (Advanced level)",
+          link: {type: 'doc', id: 'cookbooks/Gen-AI-Advanced-Level/genaiadvancedoverview'},
+          collapsed: true,
+          items: [
+            {
+              type: "category",
+              label: "Gen AI bot development lifecycle",
+              link: {type: 'doc', id: 'cookbooks/Gen-AI-Advanced-Level/botdevlifecycle'},
+              collapsed: true,
+              items: [
+                "cookbooks/Gen-AI-Advanced-Level/genai-kb",
+                "cookbooks/Gen-AI-Advanced-Level/genai-orchllm",
+              ],
+            }, 
+            "cookbooks/Gen-AI-Advanced-Level/commonchallengs",
+            "cookbooks/Gen-AI-Advanced-Level/bestpractices",
+            "cookbooks/Gen-AI-Advanced-Level/genai-bottroubleshooting",
+          ],
+        }, 
       ],
     }, 
 
-    // Marketplace
+    // Conversations & Support
     {
       type: "category",
-      label: "Marketplace",
-      link: {type: 'doc', id: 'platform_concepts/get_started/marketplaceintro'},
-      collapsed: true,
-      items: [
-        "cookbooks/marketplace-templates/edtech-template",
-        "cookbooks/marketplace-templates/ecommerce-template",
-        "cookbooks/marketplace-templates/saas",
-        "cookbooks/marketplace-templates/bfsi",
-        "cookbooks/marketplace-templates/healthcare_template"
-      ],
-    }, 
-
-    // inbox
-    {
-      type: "category",
-      label: "Inbox",
+      label: "Conversations & Support",
       collapsed: true,
       items: [
         "cookbooks/inbox/custom-usecases",
@@ -130,16 +118,14 @@ module.exports = {
         "cookbooks/inbox/chathistory",
       ],
     },    
-    // end of inbox 
 
-    //insights 
+    // Analytics & Insights
     {
       type: "category",
-      label: "Insights",
+      label: "Analytics & Insights",
       collapsed: true,
       items: [
         "cookbooks/insights/convissue",
-        //  "cookbooks/insights/eventdescriptions",
         "cookbooks/insights/botagentfedback",
         "cookbooks/insights/fixdataerrors",
         "cookbooks/insights/nativesqlquery",
@@ -153,27 +139,24 @@ module.exports = {
         "cookbooks/insights/botperformancemetrics",
       ],
     }, 
-    //end of insights 
 
-    //engage
+    // User Engagement
     {
       type: "category",
-      label: "Engage",
+      label: "User Engagement",
       collapsed: true,
       items: [
-        // "cookbooks/Upgrade_new_engage_app",
         "cookbooks/engage/email-outbound-101",
         "cookbooks/engage/app-template",
         "cookbooks/engage/optout-campaigns",
         "cookbooks/engage/shopify-events",
       ],
     }, 
-    //end of engage 
 
-    //channels 
+    // Channels & Integrations
     {
       type: "category",
-      label: "Channels",
+      label: "Channels & Integrations",
       collapsed: true,
       items: [
         "cookbooks/channels/Viber-business",
@@ -193,51 +176,39 @@ module.exports = {
             "cookbooks/channels/chatwidget-mobile-sdk",
           ],
         },
-      ],
-    },  
-
-    //end of channels 
-
-    // Integrations
-    {
-      type: "category",
-      label: "Integrations",
-      collapsed: true,
-      items: [
         "cookbooks/integrations/parseapi",
         "cookbooks/integrations/google-sheets",
       ],
-    }, 
-    //end of integrations
+    },  
 
-    //Gen AI Beginner
-    "cookbooks/Gen-AI-beginner",
-    //end of Gen AI Beginner
-
+    // Templates & Examples
     {
       type: "category",
-      label: "Gen AI (Advanced level)",
-      link: {type: 'doc', id: 'cookbooks/Gen-AI-Advanced-Level/genaiadvancedoverview'},
+      label: "Templates & Examples",
+      link: {type: 'doc', id: 'platform_concepts/get_started/marketplaceintro'},
       collapsed: true,
       items: [
-        {
-          type: "category",
-          label: "Gen AI bot development lifecycle",
-          link: {type: 'doc', id: 'cookbooks/Gen-AI-Advanced-Level/botdevlifecycle'},
-          collapsed: true,
-          items: [
-            "cookbooks/Gen-AI-Advanced-Level/genai-kb",
-            "cookbooks/Gen-AI-Advanced-Level/genai-orchllm",
-          ],
-        }, 
-        "cookbooks/Gen-AI-Advanced-Level/commonchallengs",
-        "cookbooks/Gen-AI-Advanced-Level/bestpractices",
-        "cookbooks/Gen-AI-Advanced-Level/genai-bottroubleshooting",
+        "cookbooks/marketplace-templates/edtech-template",
+        "cookbooks/marketplace-templates/ecommerce-template",
+        "cookbooks/marketplace-templates/saas",
+        "cookbooks/marketplace-templates/bfsi",
+        "cookbooks/marketplace-templates/healthcare_template"
       ],
     }, 
 
-    //End of genai advance
-    "cookbooks/yellowaisupport",
+    // Troubleshooting Guide
+    {
+      type: "category",
+      label: "Troubleshooting Guide",
+      collapsed: true,
+      items: [
+        "cookbooks/platform_notload",
+        "cookbooks/studio/error_page",
+        "cookbooks/email_issue",
+        "cookbooks/studio/whatsapp-issues",
+        "cookbooks/Voice/voicebottroubleshooting", 
+      ],
+    }, 
 
   ], // user guides end here
 
@@ -853,6 +824,7 @@ module.exports = {
             "platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen",
           ],
         },
+        "platform_concepts/engagement/engage-settings",
         "platform_concepts/engagement/engage_faqs",
         "platform_concepts/engagement/engage_troubleshooting",
       ],
@@ -1341,6 +1313,8 @@ module.exports = {
         },
         //Webrtc testing
         "cookbooks/voice-as-channel/WebrtcTesting",
+        "cookbooks/Voice/uifn",
+
         // FAQs 
         "cookbooks/voice-as-channel/voicefaqs",
       ],
@@ -1424,6 +1398,16 @@ module.exports = {
         "platform_concepts/aicopilot",
       ],
     },
+
+    {
+          type: "category",
+          label: "Settings",
+          collapsed: true,
+          items: [
+            "platform_concepts/settings/general-settings",
+          
+          ],
+        },
 
   ], 
   // Docs tab ends here

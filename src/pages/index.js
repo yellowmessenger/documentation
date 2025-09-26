@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import Hero from '@site/src/components/Hero/Hero';
-import { updates, config } from '@site/src/data/updates';
+import { getRecentUpdatesForHomePage, config } from '@site/src/utils/whatsNewData';
 
 // --- SVG Icons for Feature Cards (from lucide.dev) ---
 const RocketIcon = (props) => (
@@ -102,14 +102,18 @@ const topics = [
 
 // What's New Updates Component
 const WhatsNewUpdates = () => {
-  // Get updates from the data file, filter if needed, and limit the number shown
+  // Get the most recent updates dynamically from What's New page data
+  const allUpdates = getRecentUpdatesForHomePage(config.maxUpdates);
+  
+  // Filter if needed based on config
   const displayUpdates = config.showOnlyNew 
-    ? updates.filter(update => update.badge === 'new').slice(0, config.maxUpdates)
-    : updates.slice(0, config.maxUpdates);
+    ? allUpdates.filter(update => update.badge === 'new')
+    : allUpdates;
 
   const getBadgeClass = (badge) => {
     const badgeMap = {
       'new': 'updateBadgeNew',
+      'Enhancement': 'updateBadgeUpdated',
       'updated': 'updateBadgeUpdated',
       'security': 'updateBadgeSecurity'
     };
