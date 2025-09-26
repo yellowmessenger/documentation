@@ -32,7 +32,6 @@ module.exports = {
 
     "cookbooks/getting_started", 
     // "cookbooks/migration-guide",
-    "cookbooks/botregion",
     "cookbooks/customapps",
   
 
@@ -471,6 +470,7 @@ module.exports = {
             "platform_concepts/studio/test-and-publish-bot/modes",
           ],
         },
+        "cookbooks/botregion",
         "platform_concepts/studio/LLM-central-configuration",
         "platform_concepts/studio/build/workflows",
         {
