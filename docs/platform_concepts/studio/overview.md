@@ -210,7 +210,7 @@ The Automation module allows you to design and manage AI agents by combining AI-
    
 ----
 
-## Overview of Agentic architecture in the Automation module
+## Overview of Agentic architecture
 
 The Agentic architecture in Yellow.ai’s Automation module orchestrates conversations by combining AI-driven intelligence, rule-based logic, and workflows.
 
@@ -245,7 +245,7 @@ The Super Agent coordinates these interactions by analyzing the user’s intent 
 
 The [Knowledge Base agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config) is a specialized AI-driven component designed to handle knowledge-intensive queries. It retrieves, summarizes, and delivers answers from knowledge sources like documents, FAQs, or external systems. It also supports follow-up questions, multilingual responses, and context-aware answers.
 
-### Rule-based flows within the AI agent
+### Rule-based flows
 
 Rule-based agents, also known as node-based flows, are a key component of the agentic architecture. Unlike AI agents that rely on LLMs for contextual reasoning, rule-based agents operate through predefined paths and mapped intents. They are best suited for scenarios where interactions must follow a structured, predictable sequence such as authentication, form-filling, or survey collection.
 
