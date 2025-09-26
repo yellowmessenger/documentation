@@ -5,7 +5,6 @@ sidebar_label : AI agent creation with sample use cases
 
 This guide walks you through the process of designing and configuring the Yellow Travels AI Agent step by step. It is designed for first-time users to build and deploy their own AI agent.
 
-
 ---
 
 ## Yellow travels AI Agent use case
@@ -17,12 +16,12 @@ Yellow Travels AI Agent is a conversational assistant built on the Yellow.ai pla
 
 ### Sample scenarios of Yellow travels
 
-| Agent | Description | Example Conversation | Backend Action |
-|-------|-------------|-----------------------|----------------|
+| Agent | Description | Example Conversation | 
+|-------|-------------|-----------------------|
 | **Book a flight ticket** | Collects passenger details, trip info (departure, destination, date), generates a booking ID, and stores details in the database. | I want to book a flight from Delhi to Mumbai on 22nd Sept. | Stores details in travelDB and sends confirmation. |
-| **Cancel a flight ticket** | Asks for booking ID, verifies it, and updates cancellation status. | Cancel my flight with Booking ID 12345. | Updates DB and shares cancellation confirmation. |
-| **Book a hotel room** | Captures hotel stay details (location, check-in/out date, guest info), confirms booking, and captures data. | Book a hotel in Goa from 1st to 3rd Oct for 2 guests. | Calls workflow to store hotel booking details. |
-| **Check refund status** | Takes the booking ID, checks refund progress, and informs user. | What's the refund status for Booking ID 12345? | Fetches refund info from DB/CRM and shares update. |
+| **Cancel a flight ticket** | Asks for booking ID, verifies it, and updates cancellation status. | Cancel my flight with Booking ID 12345. |
+| **Book a hotel room** | Captures hotel stay details (location, check-in/out date, guest info), confirms booking, and captures data. | Book a hotel in Goa from 1st to 3rd Oct for 2 guests. | 
+| **Check refund status** | Takes the booking ID, checks refund progress, and informs user. | What's the refund status for Booking ID 12345? |
 
 ---
 

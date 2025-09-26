@@ -295,7 +295,7 @@ The KB Agent handles queries related to the product or services. It fetches info
 **Example:** Explaining refund policies or terms and conditions.
 
 
-**Example: How Super agent, Agent, and Knowledge Base Agent work together**
+<!-- **Example: How Super agent, Agent, and Knowledge Base Agent work together**
 
 
 **User**: "I want to cancel my flight and also tell me the refund policy."
@@ -329,7 +329,7 @@ Here is how the Super Agent, Agent, and Knowledge Base Agent would collaborate t
    
    * **User**: "According to the refund policy, when will I receive the refund?"
     Super agent routes this to the Knowledge Base agent to fetch and display the data to the user.
-     > **Response**: According to our refund policy, you will receive the refund within 5–7 business days."
+     > **Response**: According to our refund policy, you will receive the refund within 5–7 business days." -->
 
 ----
 
