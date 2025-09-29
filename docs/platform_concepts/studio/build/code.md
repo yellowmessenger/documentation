@@ -1,5 +1,5 @@
 ---
-title: Add custom logic to your chatbot or AI agent with Functions
+title: Add custom logic to your Rule-based agents or AI agent with Functions
 sidebar_label : Add custom logic with Functions
 keywords : [code, function, math, calculations]
 ---
