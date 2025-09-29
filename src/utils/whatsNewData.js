@@ -19,7 +19,7 @@ You now have **two powerful tools** to manage your data:
 
 **How it works:**
 - A **Super Admin** can configure a retention period directly in the admin UI.
-- A daily background job automatically deletes records older than the chosen timeframe (e.g., 30, 60, or 180 days).
+- A daily background job automatically deletes records older than the chosen timeframe (30, 60, or 180 days).
 
 **Important:** Once enabled, the retention policy is **permanent** and cannot be changed.
 
@@ -30,13 +30,55 @@ You now have **two powerful tools** to manage your data:
 **Purpose:** Purge is a one-time, irreversible process to delete a bot's data completely.
 
 **How it works:**
-- This internal-only process deletes data across **40+ system tables**, including inbox logs, video chats, analytics, and the bot's logic itself.
+- This internal-only process deletes data across **29 system tables**, including inbox logs, video chats, and analytics.
 
-**Critical:**
+**Warning:**
 - The Purge action is **irreversible**, and data **cannot be recovered**.
-- The bot is **permanently disabled** after the purge is complete.
 
 **Best for:** Fulfilling contractual obligations for **complete data removal** during client offboarding.
+
+### Supported Tables
+
+The feature currently supports **29 system tables** across multiple databases:
+
+**Elasticsearch**
+- Notification Reports  
+- User Feedbacks  
+- CDR Reports  
+- Search Bar Analytics  
+- WhatsApp Consumptions  
+- Latency Metrics  
+- LLM API Usage  
+- Bot Events Analysis / Conversation Events  
+- Model Conversation Analysis / Contained Resolution Analysis  
+- Bot Latency Metrics  
+- Conversational Tags  
+- Voice Unidentified Utterance  
+- KB ML Reports  
+- Analytics  
+- Chat Tickets  
+- Email Tickets  
+- Video Chats  
+- Voice Call Logs  
+- Sidechat Messages  
+- User 360  
+
+**Postgres**
+- Customer Table (v2)  
+
+**TiDB**
+- User 360  
+
+**MongoDB**
+- Agent Activity  
+- Agent Availability  
+- Audit Logs  
+- Custom Tables (v1)  
+- Call Details Report  
+- Chat Tickets  
+- Messages (Chat Transcript)  
+- User Profiles  
+- Notification Report  
 
 ### Supported Features
 
@@ -47,7 +89,7 @@ This feature currently supports over **29 system tables** across multiple databa
 - **Purge Function:** An internal backend operation; **cannot** be triggered by end customers.`,
     image: 'https://i.ibb.co/3mZHvpwp/2.png',
     category: 'Platform',
-    badge: 'New Feature',
+    badge: 'Major Update',
     date: 'September 26,2025',
     link: '/docs/platform_concepts/settings/general-settings',
     highlights: [
