@@ -256,14 +256,14 @@ module.exports = {
             "platform_concepts/AIAgent/kb-agent-config",
             {
               type: "category",
-              label: "Rule-based conversations (Non-AI agent)",
+              label: "Rule-based agents",
               link: {type: 'doc', id: 'platform_concepts/studio/build/chatbot'},
               collapsed: true,
               items: [
                 "platform_concepts/studio/build/create_chatbot",
                 {
                   type: "category",
-                  label: "Configure chatbot conversations",
+                  label: "Configure Rule-based agents conversations",
                   collapsed: true,
                   items: [
                     {
@@ -375,7 +375,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Training chatbot data ",
+                  label: "Training Rule-based agents data ",
                   collapsed: true,
                   items: [
                     "platform_concepts/studio/train/intents",
@@ -391,7 +391,7 @@ module.exports = {
                 "platform_concepts/studio/train/orchllm",
                 {
                   type: "category",
-                  label: "Connect external APIs to Chatbot/AI agent",
+                  label: "Connect external APIs to Rule-based agents/AI agent",
                   collapsed: true,
                   items: [
                     {
@@ -411,7 +411,7 @@ module.exports = {
                 },        
                 {
                   type: "category",
-                  label: "Test and publish Chatbot",
+                  label: "Test and publish Rule-based agents",
                   collapsed: true,
                   items: [
                     "platform_concepts/studio/test-and-publish-bot/bot-logs",  
@@ -1106,6 +1106,7 @@ module.exports = {
             "platform_concepts/appConfiguration/microsoft-dynamics",
             "platform_concepts/appConfiguration/salesforce-service-cloud",
             "platform_concepts/appConfiguration/zoho-crm",
+            "platform_concepts/appConfiguration/creatio-crm",
           ],
         },
         {

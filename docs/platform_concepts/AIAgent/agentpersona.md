@@ -3,7 +3,7 @@ title: Define Super agent
 sidebar_label: Define Super agent 
 ---
 
-The AI agent persona sets the tone, personality, and behavior of your agent—shaping how it communicates with users throughout the conversation. A well-defined persona ensures interactions feel consistent, natural, and aligned with your brand voice.
+The Super agent persona sets the tone, personality, and behavior of your agent—shaping how it communicates with users throughout the conversation. A well-defined persona ensures interactions feel consistent, natural, and aligned with your brand voice.
 
 <!-- 
 The Agent persona helps you define how the agent greets users, handles queries, manages unanswered questions and
