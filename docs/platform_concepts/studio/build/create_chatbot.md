@@ -1,13 +1,13 @@
 ---
-title: Create & configure your chatbot from scratch
-sidebar_label : Create & configure chatbot 
+title: Create & configure your Rule-based agents from scratch
+sidebar_label : Create & configure Rule-based agents
 ---
 
-This guide will walk you through the process of creating different types of chatbot on the Yellow.ai platform.
+This guide will walk you through the process of creating different types of Rule-based agents on the Yellow.ai platform.
 
-### Create Chatbot manually
+### Create Rule-based agents manually
 
-To create a Chatbot, follow these steps:
+To create a Rule-based agents, follow these steps:
 
 1. Go to the **Overview** page > click **Chatbot** drop-down > + **Create AI agent**.
 
@@ -200,23 +200,23 @@ To delete a child bot, follow these steps:
 
       <img src="https://imgur.com/0tiZ3xd.png" alt="drawing" width="60%"/>
 
-* This will remove the child bot from the parent bot.
+* This will remove the child agent from the parent agent.
 
-### Configure Inbox for Orchestrator bot 
+### Configure Inbox for Orchestrator agent 
 
-This is where you manage all the customer queries. By selecting the **Unify inbox to all child bots** option, support tickets received by the child bots are consolidated and made accessible in the parent bot's Inbox. This unified inbox streamlines the process of managing and responding to all customer queries.
+This is where you manage all the customer queries. By selecting the **Unify inbox to all child agents** option, support tickets received by the child agents are consolidated and made accessible in the parent agent's Inbox. This unified inbox streamlines the process of managing and responding to all customer queries.
 
-**Watch the video on how to configure Inbox for Orchestrator bot:**
+**Watch the video on how to configure Inbox for Orchestrator agent:**
 
 <iframe width="720" height="315" src="https://www.youtube.com/embed/dZ1zYsBXKs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
 :::note
-Unified inbox will only work for bots built on the cloud platform (that is, cloud.yellow.ai) and it does not work for the bots built on app with cloud (or vice versa).
+Unified inbox will only work for agents built on the cloud platform (that is, cloud.yellow.ai) and it does not work for the agents built on app with cloud (or vice versa).
 :::
 
   <img src="https://imgur.com/MOVQdM3.png" alt="drawing" width="50%"/>
 
-###  Add channels to orchestrator bot
+###  Add channels to orchestrator agent
 
 You can [add the following channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)to your orchestrator:
 

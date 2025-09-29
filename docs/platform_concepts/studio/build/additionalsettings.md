@@ -1,6 +1,6 @@
 ---
-title: Chatbot Conversation settings
-sidebar_label: Chatbot Conversation settings
+title: Rule-based agents Conversation settings
+sidebar_label: Rule-based agents Conversation settings
 tags: [conversation settings]
 ---
 
