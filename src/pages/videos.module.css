@@ -1,9 +1,113 @@
-.videoContainer {
-    text-align: center;
-    width: 100%;
-    margin: 40px 0;
+/* Hero Section */
+.videosHero {
+  background: linear-gradient(135deg, var(--ifm-color-primary-light) 0%, var(--ifm-color-primary) 100%);
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 2rem;
 }
 
 .videosTitle {
-    margin-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.videosSubtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Category Section */
+.categoryTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+  margin-bottom: 0.75rem;
+}
+
+.categoryDescription {
+  font-size: 1.1rem;
+  color: var(--ifm-color-content-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Video Card Enhancements */
+.video-card-title {
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  color: var(--ifm-heading-color);
+}
+
+.video-card-description {
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.video-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.video-duration {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Call to Action Section */
+.ctaSection {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.ctaSection h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.ctaSection p {
+  font-size: 1.1rem;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .videosTitle {
+    font-size: 2.25rem;
+  }
+  
+  .videosSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .categoryTitle {
+    font-size: 1.75rem;
+  }
+  
+  .videosHero {
+    padding: 3rem 0;
+  }
+  
+  .ctaSection {
+    padding: 2rem 1.5rem;
+  }
 }

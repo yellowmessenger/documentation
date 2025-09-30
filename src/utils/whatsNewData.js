@@ -11,11 +11,9 @@ export const featureHighlights = [
 
 **Note:** This is a **gated feature**. To enable it for your account, please contact your **Customer Success Manager** or reach out to **Yellow.ai Support**.
 
-You now have **two powerful tools** to manage your data:
-
 ### Automated Data Retention (UI Setting)
 
-**Purpose:** Retention is an ongoing, automated process for deleting old records.
+**Purpose:** Retention is an ongoing, automated process for deleting data on a recurring basis.
 
 **How it works:**
 - A **Super Admin** can configure a retention period directly in the admin UI.
@@ -25,9 +23,11 @@ You now have **two powerful tools** to manage your data:
 
 **Best for:** Helping active clients stay compliant with data protection laws without manual intervention.
 
+**Learn more:** <a href="/docs/platform_concepts/settings/general-settings">Data Retention Settings</a>
+
 ### One-Time Data Purge (Backend Operation)
 
-**Purpose:** Purge is a one-time, irreversible process to delete a bot's data completely.
+**Purpose:** Purge is a one-time, irreversible process to delete data completely.
 
 **How it works:**
 - This internal-only process deletes data across **29 system tables**, including inbox logs, video chats, and analytics.
@@ -39,66 +39,41 @@ You now have **two powerful tools** to manage your data:
 
 ### Supported Tables
 
-The feature currently supports **29 system tables** across multiple databases:
+This feature currently supports over **29 system tables** across different database types.
 
-**Elasticsearch**
-- Notification Reports  
-- User Feedbacks  
-- CDR Reports  
-- Search Bar Analytics  
-- WhatsApp Consumptions  
-- Latency Metrics  
-- LLM API Usage  
-- Bot Events Analysis / Conversation Events  
-- Model Conversation Analysis / Contained Resolution Analysis  
-- Bot Latency Metrics  
-- Conversational Tags  
-- Voice Unidentified Utterance  
-- KB ML Reports  
-- Analytics  
-- Chat Tickets  
-- Email Tickets  
-- Video Chats  
-- Voice Call Logs  
-- Sidechat Messages  
-- User 360  
+### ✅ Supported Tables
+- **Reporting & Analytics:** Notification Reports, CDR Reports, Search Bar Analytics, KB ML Reports, Analytics
+- **Communication:** WhatsApp Consumptions, Email Tickets, Video Chats, Voice Call Logs, Sidechat Messages  
+- **Performance & Monitoring:** Latency Metrics, Bot Latency Metrics, LLM API Usage
+- **User & Agent Management:** User Feedbacks, User 360, Customer Table, Agent Activity, Agent Availability
+- **Conversation Analysis:** AI Agent Events Analysis, Model Conversation Analysis, Conversational Tags, Voice Unidentified Utterance
+- **Ticketing & Support:** Chat Tickets, Call Details Report, Messages (Chat Transcript), User Profiles
+- **System & Security:** Audit Logs, Custom Tables, Notification Report
 
-**Postgres**
-- Customer Table (v2)  
+### ❌ Not Supported Tables  
+- **Core Events:** Agent Event, API Event, Bot Event, User Event, Bot Events Analysis
+- **Communication:** Messages, Call Recordings, Messages (Chat Transcript)
+- **Data Storage:** Customer Table, Knowledge Base Articles, Custom Tables
+- **System:** Audit Logs, Notification Reports (Split By BotId), events_by_userid
 
-**TiDB**
-- User 360  
 
-**MongoDB**
-- Agent Activity  
-- Agent Availability  
-- Audit Logs  
-- Custom Tables (v1)  
-- Call Details Report  
-- Chat Tickets  
-- Messages (Chat Transcript)  
-- User Profiles  
-- Notification Report  
-
-### Supported Features
-
-This feature currently supports over **29 system tables** across multiple databases, including **Elasticsearch, Postgres, TiDB, and MongoDB**.
 
 **Access & Permissions:**
 - **Retention Policies:** Can only be configured by users with **Super Admin** permissions.
 - **Purge Function:** An internal backend operation; **cannot** be triggered by end customers.`,
-    image: 'https://i.ibb.co/3mZHvpwp/2.png',
-    category: 'Platform',
-    badge: 'Major Update',
-    date: 'September 26,2025',
-    link: '/docs/platform_concepts/settings/general-settings',
     highlights: [
       'Automated Retention: Set permanent policies for daily cleanup of old records',
       'One-Time Purge: Completely remove all bot data and logic for client offboarding',
       'Compliance Ready: Helps meet HIPAA and other regulations by controlling data retention',
       'Super Admin Only: Secure access controls prevent unauthorized data operations',
       'Broad Database Coverage: Supports 29 system tables across multiple database types'
-    ]
+    ],
+    image: 'https://i.ibb.co/3mZHvpwp/2.png',
+    category: 'Platform',
+    badge: 'Major Update',
+    date: 'September 26,2025',
+    link: '/docs/platform_concepts/settings/general-settings',
+    
   },
 
   {
