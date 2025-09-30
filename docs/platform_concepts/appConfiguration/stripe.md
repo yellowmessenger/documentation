@@ -5,7 +5,7 @@ sidebar_label : Stripe Payment
 
 
 
-Yellow.ai Integration with Stripe Payment Gateway  allows the bot to generate Stripe payment links and view a specific payment status. 
+Yellow.ai Integration with Stripe Payment Gateway allows the AI agent to generate Stripe payment links and view a specific payment status. 
 
 ## Connecting Stripe payment with yellow.ai
 
@@ -46,7 +46,7 @@ The webhook URL serves as a callback endpoint where Stripe can send notification
    <img src="https://i.imgur.com/xZ5YYSO.png" width="80%"/>
 
 
-## Receiving Stripe payment status event in your bot
+## Receiving Stripe payment status event in your AI agent
 
 
 Enable the following event under Events section:
@@ -63,9 +63,9 @@ Stripe Payment Status | In case of payments/refunds the status can be checked wi
  
 
    
-## Generate Stripe payment link through bot conversation 
+## Generate Stripe payment link through AI agent conversation 
 
-Once the Stripe account is connected, you can generate the paument link directly in bot conversations.
+Once the Stripe account is connected, you can generate the payment link directly in AI agent conversations.
 
 1. Go to Development/Staging environment and navigate to **Automation** > **Build** > Select the flow where you want to add the Generate payment link node.
 
@@ -84,7 +84,7 @@ Once the Stripe account is connected, you can generate the paument link directly
  Product name*  | String | Choose a variable that contains the name of the product to be included in the payment link.
  After Completion type | String | The action to be taken after the payment is completed. You can choose to redirect the user to a specific URL or display a custom message.
  URL or Custom Message | String | For Redirect URL: Enter the URL to which the user should be redirected. <br/> For Show Custom Message: Enter the custom message that you want to display to the user.
- Parse API response | - | Choose the function that you want to use to parse and handle the response received from the API after completing the payment. Parsing the API response allows the bot to extract relevant information and take appropriate actions based on the response.
+ Parse API response | - | Choose the function that you want to use to parse and handle the response received from the API after completing the payment. Parsing the API response allows the AI agent to extract relevant information and take appropriate actions based on the response.
 
 
 
