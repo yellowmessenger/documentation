@@ -3,19 +3,19 @@ title: General settings
 sidebar_label: General settings
 ---
 
-## Data retention setting
+## Data retention
 
 
 
 
 The **Retention** setting helps automate the cleanup of old records based on a configured retention period. This helps ensure compliance with contractual and regulatory requirements by automatically removing data older than 30, 60 or 180 days.
 
-Think of this as an automatic cleanup crew for your old data. Your Super Admin can now set a retention period (for example, 60 days). Every day, a background job will automatically find and delete any records older than that period.
+Think of this as an automatic cleanup crew for your old data. Your Super Admin can now set a retention period (for example, 60 days). Every day, the system removes records older than the defined retention period.
 
 
 > Only Super admins can configure data retention.
 
-#### Here is how Data retention setting works:
+#### Here is how Data retention works:
 - When enabled, retention will **automatically delete records** older than the selected timeframe.  
 - Once a retention period is set, it **cannot be modified or disabled**.  
 - The retention job will run automatically **once every day** in the background. On each run, the system checks all supported tables and **deletes any record older than the configured retention period** 
@@ -38,42 +38,37 @@ Enabling retention is permanent and cannot be reversed. Carefully evaluate compl
 
 This currently supports **29 system tables** across multiple databases:
 
-**Elasticsearch**
-- Notification Reports  
-- User Feedbacks  
-- CDR Reports  
-- Search Bar Analytics  
-- WhatsApp Consumptions  
-- Latency Metrics  
-- LLM API Usage  
-- Bot Events Analysis / Conversation Events  
-- Model Conversation Analysis / Contained Resolution Analysis  
-- Bot Latency Metrics  
-- Conversational Tags  
-- Voice Unidentified Utterance  
-- KB ML Reports  
-- Analytics  
-- Chat Tickets  
-- Email Tickets  
-- Video Chats  
-- Voice Call Logs  
-- Sidechat Messages  
-- User 360  
+| ✅ Supported                                          | ❌ Not Supported                        |
+|-------------------------------------------------------|----------------------------------------|
+| Notification Reports                                  | Agent Event                            |
+| User Feedbacks                                        | API Event                              |
+| CDR Reports                                           | Bot Event                              |
+| Search Bar Analytics                                  | Messages                               |
+| WhatsApp Consumptions                                 | User Event                             |
+| Latency Metrics                                       | Bot Events Analysis / Conversation Events |
+| LLM API Usage                                         | Customer Table                         |
+| AI Agent Events Analysis / Conversation Events        | Knowledge Base Articles                |
+| Model Conversation Analysis / Contained Resolution Analysis | Custom Tables                       |
+| Bot Latency Metrics                                   | Audit Logs                             |
+| Conversational Tags                                   | Messages (Chat Transcript)             |
+| Voice Unidentified Utterance                          | Call Recordings                        |
+| KB ML Reports                                         | Notification Reports (Split By BotId)  |
+| Analytics                                             | events_by_userid                       |
+| Chat Tickets                                          |                                        |
+| Email Tickets                                         |                                        |
+| Video Chats                                           |                                        |
+| Voice Call Logs                                       |                                        |
+| Sidechat Messages                                     |                                        |
+| User 360                                              |                                        |
+| Customer Table                                        |                                        |
+| Agent Activity                                        |                                        |
+| Agent Availability                                    |                                        |
+| Audit Logs                                            |                                        |
+| Custom Tables                                         |                                        |
+| Call Details Report                                   |                                        |
+| Chat Tickets                                          |                                        |
+| Messages (Chat Transcript)                            |                                        |
+| User Profiles                                         |                                        |
+| Notification Report                                   |                                        |
 
-**Postgres**
-- Customer Table (v2)  
-
-**TiDB**
-- User 360  
-
-**MongoDB**
-- Agent Activity  
-- Agent Availability  
-- Audit Logs  
-- Custom Tables (v1)  
-- Call Details Report  
-- Chat Tickets  
-- Messages (Chat Transcript)  
-- User Profiles  
-- Notification Report  
 

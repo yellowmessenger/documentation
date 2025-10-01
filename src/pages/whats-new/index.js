@@ -438,10 +438,6 @@ export default function WhatsNewOverview() {
                     className={cardClass}
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    <div className={`${styles.timelineMarker} ${getMarkerClass()}`}>
-                      <span className={styles.timelineIcon}>{item.icon}</span>
-                    </div>
-                    
                     <div className={styles.updateContent}>
                       <div className={styles.updateHeader}>
                         <div className={styles.updateMeta}>
