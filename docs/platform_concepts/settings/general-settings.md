@@ -46,7 +46,7 @@ This currently supports **29 system tables** across multiple databases:
 | Search Bar Analytics                                  | Messages                               |
 | WhatsApp Consumptions                                 | User Event                             |
 | Latency Metrics                                       | Bot Events Analysis / Conversation Events |
-| LLM API Usage                                         | Customer Table                         |
+| LLM API Usage                                         | Customer Table (v1)                        |
 | AI Agent Events Analysis / Conversation Events        | Knowledge Base Articles                |
 | Model Conversation Analysis / Contained Resolution Analysis | Custom Tables                       |
 | Bot Latency Metrics                                   | Audit Logs                             |

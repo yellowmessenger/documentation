@@ -53,7 +53,7 @@ This feature currently supports over **29 system tables** across different datab
 ### ❌ Not Supported Tables  
 - **Core Events:** Agent Event, API Event, Bot Event, User Event, Bot Events Analysis
 - **Communication:** Messages, Call Recordings, Messages (Chat Transcript)
-- **Data Storage:** Customer Table, Knowledge Base Articles, Custom Tables
+- **Data Storage:** Customer Table (v1), Knowledge Base Articles, Custom Tables
 - **System:** Audit Logs, Notification Reports (Split By BotId), events_by_userid
 
 

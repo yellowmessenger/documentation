@@ -20,21 +20,21 @@ To access **all resources** including bot building courses, virtual classroom se
 ## 🎯 Learning Progress
 
 <div class="progress-indicator">
-  <div class="progress-step completed">
-    <span class="progress-number">1</span>
-    <span class="progress-label">Setup Account</span>
-  </div>
-  <div class="progress-step active">
-    <span class="progress-number">2</span>
-    <span class="progress-label">Platform Overview</span>
+  <div class="progress-step">
+    <span class="progress-number">✅</span>
+    <span class="progress-label">Sign Up</span>
   </div>
   <div class="progress-step">
-    <span class="progress-number">3</span>
-    <span class="progress-label">Team Collaboration</span>
+    <span class="progress-number">🏗️</span>
+    <span class="progress-label">Platform Tour</span>
   </div>
   <div class="progress-step">
-    <span class="progress-number">4</span>
-    <span class="progress-label">Customization</span>
+    <span class="progress-number">👥</span>
+    <span class="progress-label">Add Collaborators</span>
+  </div>
+  <div class="progress-step">
+    <span class="progress-number">🎨</span>
+    <span class="progress-label">Customize Bot</span>
   </div>
 </div>
 
@@ -46,10 +46,8 @@ To access **all resources** including bot building courses, virtual classroom se
 
 <div class="tutorial-video-card">
   <div class="video-card-header">
-    <div class="video-thumbnail">
-      <img src="https://img.youtube.com/vi/2fdv1Ip3DKI/maxresdefault.jpg" alt="Sign up to Yellow.ai" />
-      <div class="play-button">▶</div>
-      <div class="video-duration">6:32</div>
+    <div class="video-embed-container">
+      <iframe src="https://www.youtube.com/embed/2fdv1Ip3DKI" title="Sign up to Yellow.ai" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
   <div class="video-card-body">
@@ -71,11 +69,8 @@ To access **all resources** including bot building courses, virtual classroom se
     </div>
     
     <div class="video-actions">
-      <button class="btn-watch-video" onclick="openVideoModal('2fdv1Ip3DKI', 'Sign up to Yellow.ai and create your first bot')">
-        🎬 Watch Video
-      </button>
-      <a href="https://www.youtube.com/watch?v=2fdv1Ip3DKI" target="_blank" class="btn-watch-youtube">
-        📺 Watch on YouTube
+      <a href="https://www.youtube.com/watch?v=2fdv1Ip3DKI" target="_blank" class="btn-watch-video">
+        🎬 Watch on YouTube
       </a>
     </div>
   </div>
@@ -83,10 +78,8 @@ To access **all resources** including bot building courses, virtual classroom se
 
 <div class="tutorial-video-card">
   <div class="video-card-header">
-    <div class="video-thumbnail">
-      <img src="https://img.youtube.com/vi/69LmMc4QwME/maxresdefault.jpg" alt="Platform overview" />
-      <div class="play-button">▶</div>
-      <div class="video-duration">8:45</div>
+    <div class="video-embed-container">
+      <iframe src="https://www.youtube.com/embed/69LmMc4QwME" title="Platform overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
   <div class="video-card-body">
@@ -109,11 +102,8 @@ To access **all resources** including bot building courses, virtual classroom se
     </div>
     
     <div class="video-actions">
-      <button class="btn-watch-video" onclick="openVideoModal('69LmMc4QwME', 'Platform overview')">
-        🎬 Watch Video
-      </button>
-      <a href="https://www.youtube.com/watch?v=69LmMc4QwME" target="_blank" class="btn-watch-youtube">
-        📺 Watch on YouTube
+      <a href="https://www.youtube.com/watch?v=69LmMc4QwME" target="_blank" class="btn-watch-video">
+        🎬 Watch on YouTube
       </a>
     </div>
   </div>
@@ -121,10 +111,8 @@ To access **all resources** including bot building courses, virtual classroom se
 
 <div class="tutorial-video-card">
   <div class="video-card-header">
-    <div class="video-thumbnail">
-      <img src="https://img.youtube.com/vi/mWGuhIOE4xI/maxresdefault.jpg" alt="Bot collaborators" />
-      <div class="play-button">▶</div>
-      <div class="video-duration">7:20</div>
+    <div class="video-embed-container">
+      <iframe src="https://www.youtube.com/embed/mWGuhIOE4xI" title="Bot collaborators" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
   <div class="video-card-body">
@@ -146,11 +134,8 @@ To access **all resources** including bot building courses, virtual classroom se
     </div>
     
     <div class="video-actions">
-      <button class="btn-watch-video" onclick="openVideoModal('mWGuhIOE4xI', 'Add bot collaborators with role-based access')">
-        🎬 Watch Video
-      </button>
-      <a href="https://www.youtube.com/watch?v=mWGuhIOE4xI" target="_blank" class="btn-watch-youtube">
-        📺 Watch on YouTube
+      <a href="https://www.youtube.com/watch?v=mWGuhIOE4xI" target="_blank" class="btn-watch-video">
+        🎬 Watch on YouTube
       </a>
     </div>
   </div>
@@ -158,10 +143,8 @@ To access **all resources** including bot building courses, virtual classroom se
 
 <div class="tutorial-video-card">
   <div class="video-card-header">
-    <div class="video-thumbnail">
-      <img src="https://img.youtube.com/vi/Q5uKVYSeKh4/maxresdefault.jpg" alt="Chatbot customization" />
-      <div class="play-button">▶</div>
-      <div class="video-duration">9:15</div>
+    <div class="video-embed-container">
+      <iframe src="https://www.youtube.com/embed/Q5uKVYSeKh4" title="Chatbot customization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
   <div class="video-card-body">
@@ -183,11 +166,8 @@ To access **all resources** including bot building courses, virtual classroom se
     </div>
     
     <div class="video-actions">
-      <button class="btn-watch-video" onclick="openVideoModal('Q5uKVYSeKh4', 'Customizing the Look and Feel of the Chatbot')">
-        🎬 Watch Video
-      </button>
-      <a href="https://www.youtube.com/watch?v=Q5uKVYSeKh4" target="_blank" class="btn-watch-youtube">
-        📺 Watch on YouTube
+      <a href="https://www.youtube.com/watch?v=Q5uKVYSeKh4" target="_blank" class="btn-watch-video">
+        🎬 Watch on YouTube
       </a>
     </div>
   </div>
@@ -195,47 +175,6 @@ To access **all resources** including bot building courses, virtual classroom se
 
 </div>
 
-<!-- Video Modal -->
-<div id="videoModal" class="video-modal" onclick="closeVideoModal()">
-  <div class="video-modal-content" onclick="event.stopPropagation()">
-    <div class="video-modal-header">
-      <h3 id="videoModalTitle"></h3>
-      <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
-    </div>
-    <div class="video-modal-body">
-      <iframe id="videoModalFrame" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-
-<script>
-function openVideoModal(videoId, title) {
-  const modal = document.getElementById('videoModal');
-  const frame = document.getElementById('videoModalFrame');
-  const titleElement = document.getElementById('videoModalTitle');
-  
-  titleElement.textContent = title;
-  frame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-}
-
-function closeVideoModal() {
-  const modal = document.getElementById('videoModal');
-  const frame = document.getElementById('videoModalFrame');
-  
-  modal.style.display = 'none';
-  frame.src = '';
-  document.body.style.overflow = 'auto';
-}
-
-// Close modal on escape key
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    closeVideoModal();
-  }
-});
-</script>
 
 ---
 
