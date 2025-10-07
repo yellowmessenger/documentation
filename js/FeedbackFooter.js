@@ -29,12 +29,16 @@ if (typeof window !== 'undefined') {
       };
       
       // Send to analytics
-      if (window.gtag) {
-        window.gtag('event', 'feedback_submitted', {
-          feedback_type: type,
-          page_path: this.currentPage,
-          ...additionalData
-        });
+      if (window.gtag && typeof window.gtag === 'function') {
+        try {
+          window.gtag('event', 'feedback_submitted', {
+            feedback_type: type,
+            page_path: this.currentPage,
+            ...additionalData
+          });
+        } catch (error) {
+          console.warn('Google Analytics gtag error:', error);
+        }
       }
       
       // Store locally for debugging
@@ -144,7 +148,7 @@ if (typeof window !== 'undefined') {
       }
 
       // Check if feedback element already exists
-      const existingFooter = document.getElementById("feedbackFooter");
+      const existingFooter = document.querySelector(".feedback-container");
       if (existingFooter) {
         // If feedback is already rendered and working, don't re-render
         if (feedbackRendered) {
@@ -154,51 +158,66 @@ if (typeof window !== 'undefined') {
         
         console.log('Existing feedback element found, repositioning after article content');
         
-        // Look for pagination navigation first (this indicates end of article)
-        const paginationNav = document.querySelector('.pagination-nav');
-        if (paginationNav) {
-          // Move the existing feedback element above pagination nav (after article)
-          paginationNav.parentNode.insertBefore(existingFooter, paginationNav);
-          existingFooter.style.display = 'block';
-          feedbackRendered = true;
-          console.log('Feedback element repositioned after article content (above pagination)');
-          return;
-        }
-        
-        // Fallback: Look for article content end markers
-        let articleEnd = null;
-        
-        // Try different selectors to find the end of article content
-        const endSelectors = [
-          '[class*="docItemContainer"] > div:last-child',
-          'main > div:last-child',
-          '[class*="docItemContainer"] > *:last-child',
-          'main > *:last-child',
-          '[class*="docItemContainer"]',
-          'main'
-        ];
-        
-        for (const selector of endSelectors) {
-          articleEnd = document.querySelector(selector);
-          if (articleEnd) {
-            console.log('Found article end with selector:', selector);
-            break;
+        // Function to reposition existing feedback element
+        function repositionExistingFeedback() {
+          // First, try to find pagination navigation (best indicator of article end)
+          const paginationNav = document.querySelector('.pagination-nav');
+          if (paginationNav) {
+            paginationNav.parentNode.insertBefore(existingFooter, paginationNav);
+            existingFooter.style.display = 'block';
+            console.log('Existing feedback repositioned above pagination navigation');
+            return true;
           }
+          
+          // Try to find the end of article content using multiple strategies
+          const articleSelectors = [
+            'article > div:last-child',
+            '[class*="docItemContainer"] > div:last-child',
+            '[class*="docItemContainer"] > *:last-child',
+            'main > div:last-child',
+            'main > *:last-child',
+            '.markdown > div:last-child',
+            '.markdown > *:last-child',
+            '[class*="markdown"] > div:last-child',
+            '[class*="markdown"] > *:last-child',
+            'article',
+            '[class*="docItemContainer"]',
+            'main'
+          ];
+          
+          for (const selector of articleSelectors) {
+            const element = document.querySelector(selector);
+            if (element && element.parentNode) {
+              element.parentNode.insertBefore(existingFooter, element.nextSibling);
+              existingFooter.style.display = 'block';
+              console.log('Existing feedback repositioned after element:', selector);
+              return true;
+            }
+          }
+          
+          return false;
         }
         
-        if (articleEnd) {
-          // Insert after the last article element
-          articleEnd.parentNode.insertBefore(existingFooter, articleEnd.nextSibling);
-          existingFooter.style.display = 'block';
-          feedbackRendered = true;
-          console.log('Feedback element repositioned after article content');
-          return;
-        } else {
-          // If no clear article end found, just ensure it's visible
-          existingFooter.style.display = 'block';
-          feedbackRendered = true;
-          return;
+        // Try to reposition immediately
+        let repositioned = repositionExistingFeedback();
+        
+        // If repositioning failed, try again after a short delay
+        if (!repositioned) {
+          setTimeout(() => {
+            if (!repositioned) {
+              repositioned = repositionExistingFeedback();
+            }
+            
+            // If still not repositioned, just ensure it's visible
+            if (!repositioned) {
+              existingFooter.style.display = 'block';
+              console.log('Existing feedback made visible (could not reposition)');
+            }
+          }, 100);
         }
+        
+        feedbackRendered = true;
+        return;
       }
     
     const container = findFeedbackContainer();
@@ -262,7 +281,7 @@ if (typeof window !== 'undefined') {
         setTimeout(() => {
           feedbackRendered = false; // Reset flag to allow re-rendering
           tryRenderFeedback();
-        }, 200);
+        }, 300); // Increased delay for better DOM readiness
       });
       
       // Also listen for pushstate/replacestate (Docusaurus navigation)
@@ -275,7 +294,7 @@ if (typeof window !== 'undefined') {
         setTimeout(() => {
           feedbackRendered = false;
           tryRenderFeedback();
-        }, 200);
+        }, 300);
       };
       
       history.replaceState = function(...args) {
@@ -284,7 +303,7 @@ if (typeof window !== 'undefined') {
         setTimeout(() => {
           feedbackRendered = false;
           tryRenderFeedback();
-        }, 200);
+        }, 300);
       };
       
       // Additional check for Docusaurus-specific navigation
@@ -613,71 +632,134 @@ if (typeof window !== 'undefined') {
     
     const wrapper = document.createElement("div");
     wrapper.innerHTML = `
-      <div class="feedback-container">
-        <span>Was this page helpful?</span>
-        <div class="feedback-options">
-          <button class="feedback-btn yes" id="liked_docs" onclick="thumb_up_flow()" title="Yes" aria-label="Yes, this page was helpful" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--border-default, #e5e7eb); color: var(--grayscale-11, #374151); flex-wrap: wrap;">
+        <span style="font-weight: 500; color: var(--grayscale-12, #111827);">Was this page helpful?</span>
+        <div class="feedback-options" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="feedback-btn yes" id="liked_docs" onclick="thumb_up_flow()" title="Yes" aria-label="Yes, this page was helpful" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--border-default, #e5e7eb); color: var(--grayscale-12, #111827); transition: all 0.2s ease; font-weight: 500;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s ease;">
               <path d="M7 10v12"></path>
               <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path>
             </svg>
             Yes
           </button>
-          <button class="feedback-btn no" id="disliked_docs" onclick="thumb_down_flow()" title="No" aria-label="No, this page needs improvement" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <button class="feedback-btn no" id="disliked_docs" onclick="thumb_down_flow()" title="No" aria-label="No, this page needs improvement" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--border-default, #e5e7eb); color: var(--grayscale-12, #111827); transition: all 0.2s ease; font-weight: 500;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s ease;">
               <path d="M17 14V2"></path>
               <path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z"></path>
             </svg>
             No
           </button>
         </div>
-        <div class="feedback-message" style="display: none;"></div>
+        <div class="feedback-message" style="display: none; margin-left: 0.5rem; animation: fadeIn 0.3s ease-in;"></div>
       </div>
     `;
     
-    // Try to position after article content (above pagination nav)
-    const paginationNav = document.querySelector('.pagination-nav');
-    if (paginationNav) {
-      paginationNav.parentNode.insertBefore(wrapper, paginationNav);
-      console.log('Feedback component positioned after article content (above pagination)');
-    } else {
-      // Fallback: Try to find article content end in multiple ways
-      let articleEnd = null;
+    // Add hover effects and interactive styles
+    const yesBtn = wrapper.querySelector('.feedback-btn.yes');
+    const noBtn = wrapper.querySelector('.feedback-btn.no');
+    
+    if (yesBtn) {
+      yesBtn.addEventListener('mouseenter', () => {
+        yesBtn.style.background = 'var(--grayscale-a3, rgba(0, 0, 0, 0.04))';
+        yesBtn.style.transform = 'translateY(-1px)';
+        const svg = yesBtn.querySelector('svg');
+        if (svg) svg.style.transform = 'scale(1.1)';
+      });
+      yesBtn.addEventListener('mouseleave', () => {
+        yesBtn.style.background = 'transparent';
+        yesBtn.style.transform = 'translateY(0)';
+        const svg = yesBtn.querySelector('svg');
+        if (svg) svg.style.transform = 'scale(1)';
+      });
+      yesBtn.addEventListener('mousedown', () => {
+        yesBtn.style.transform = 'translateY(0)';
+      });
+    }
+    
+    if (noBtn) {
+      noBtn.addEventListener('mouseenter', () => {
+        noBtn.style.background = 'var(--grayscale-a3, rgba(0, 0, 0, 0.04))';
+        noBtn.style.transform = 'translateY(-1px)';
+        const svg = noBtn.querySelector('svg');
+        if (svg) svg.style.transform = 'scale(1.1)';
+      });
+      noBtn.addEventListener('mouseleave', () => {
+        noBtn.style.background = 'transparent';
+        noBtn.style.transform = 'translateY(0)';
+        const svg = noBtn.querySelector('svg');
+        if (svg) svg.style.transform = 'scale(1)';
+      });
+      noBtn.addEventListener('mousedown', () => {
+        noBtn.style.transform = 'translateY(0)';
+      });
+    }
+    
+    // Function to position the feedback element correctly
+    function positionFeedbackElement() {
+      // First, try to find pagination navigation (best indicator of article end)
+      const paginationNav = document.querySelector('.pagination-nav');
+      if (paginationNav) {
+        paginationNav.parentNode.insertBefore(wrapper, paginationNav);
+        console.log('Feedback positioned above pagination navigation');
+        return true;
+      }
       
-      // Try different selectors to find the end of article content
-      const endSelectors = [
+      // Try to find the end of article content using multiple strategies
+      const articleSelectors = [
+        // Look for common article content containers
+        'article > div:last-child',
         '[class*="docItemContainer"] > div:last-child',
-        'main > div:last-child',
         '[class*="docItemContainer"] > *:last-child',
+        'main > div:last-child',
         'main > *:last-child',
+        // Look for specific content elements
+        '.markdown > div:last-child',
+        '.markdown > *:last-child',
+        '[class*="markdown"] > div:last-child',
+        '[class*="markdown"] > *:last-child',
+        // Look for any content that might be the end
+        'article',
         '[class*="docItemContainer"]',
         'main'
       ];
       
-      for (const selector of endSelectors) {
-        articleEnd = document.querySelector(selector);
-        if (articleEnd) {
-          console.log('Found article end with selector:', selector);
-          break;
+      for (const selector of articleSelectors) {
+        const element = document.querySelector(selector);
+        if (element) {
+          // Try to insert after this element
+          if (element.parentNode) {
+            element.parentNode.insertBefore(wrapper, element.nextSibling);
+            console.log('Feedback positioned after element:', selector);
+            return true;
+          }
         }
       }
       
-      if (articleEnd) {
-        // Insert after the last article element
-        articleEnd.parentNode.insertBefore(wrapper, articleEnd.nextSibling);
-        console.log('Feedback component positioned after article content');
-      } else {
-        // Try to find the main content area and append at the end
-        const mainContent = document.querySelector('main, [class*="docItemContainer"], [class*="content"]');
-        if (mainContent) {
-          mainContent.appendChild(wrapper);
-          console.log('Feedback component added to main content area');
-        } else {
-          // Final fallback to container
-          container.appendChild(wrapper);
-          console.log('Feedback component added to container (no clear article end found)');
+      return false;
+    }
+    
+    // Try to position immediately
+    let positioned = positionFeedbackElement();
+    
+    // If positioning failed, try again after a short delay (for SPA navigation)
+    if (!positioned) {
+      setTimeout(() => {
+        if (!positioned) {
+          positioned = positionFeedbackElement();
         }
-      }
+        
+        // Final fallback if still not positioned
+        if (!positioned) {
+          const mainContent = document.querySelector('main, [class*="docItemContainer"], [class*="content"]');
+          if (mainContent) {
+            mainContent.appendChild(wrapper);
+            console.log('Feedback added to main content area (fallback)');
+          } else {
+            container.appendChild(wrapper);
+            console.log('Feedback added to container (final fallback)');
+          }
+        }
+      }, 100);
     }
     
     console.log('Feedback component successfully added to page');
@@ -711,7 +793,7 @@ if (typeof window !== 'undefined') {
     console.log('Body classes:', document.body.className);
     console.log('Should show feedback:', shouldShowFeedback());
     console.log('Has already submitted:', FeedbackManager.hasAlreadySubmitted());
-    console.log('Existing feedback element:', !!document.getElementById("feedbackFooter"));
+    console.log('Existing feedback element:', !!document.querySelector(".feedback-container"));
     console.log('Feedback rendered flag:', feedbackRendered);
     console.log('=== END DEBUG ===');
   };
