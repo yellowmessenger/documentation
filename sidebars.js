@@ -248,6 +248,7 @@ module.exports = {
               items: [
                 "platform_concepts/AIAgent/get-input",
                 "platform_concepts/AIAgent/call-workflow",
+                "platform_concepts/AIAgent/call-agent",
                 "platform_concepts/AIAgent/transfer-live-agent",
                 "platform_concepts/AIAgent/call-fallback",
                 "platform_concepts/AIAgent/aigent-variables",

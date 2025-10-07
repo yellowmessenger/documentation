@@ -27,7 +27,7 @@ This document explains how to configure and manage LLM accounts on the Yellow.ai
 
 ### Default Yellow Account
 
-Every bot on the Yellow.ai platform comes with a default LLM account provided by Yellow.ai. This account is pre-configured with the platform's preferred model (GPT-4.1).  
+Every AI agent on the Yellow.ai platform comes with a default LLM account provided by Yellow.ai. This account is pre-configured with the platform's preferred model (GPT-4.1).  
 
 With the default account:  
 
@@ -67,7 +67,7 @@ The **LLM Configuration** page allows you to assign different LLM accounts and m
 
 ### Usage Limits
 
-When using Yellow-provided LLM accounts, default rate limits are applied to ensure platform stability and fair usage across all bots.  
+When using Yellow-provided LLM accounts, default rate limits are applied to ensure platform stability and fair usage across all AI agents.  
 
 **The limits include:**  
 
@@ -219,7 +219,7 @@ For example: set the GPT-4.0 model in **Staging** and GPT-3.5 in **Production**.
 </details>
 
 <details>
- <summary>If I publish a bot, will the LLM configuration from a lower environment move to the upper environment?</summary>
+ <summary>If I publish a AI agent, will the LLM configuration from a lower environment move to the upper environment?</summary>
  <div>
   No. LLM configuration is not tied to the publish process. You must manually configure the settings in the Production environment.
  </div>
