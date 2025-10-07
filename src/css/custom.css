@@ -1604,7 +1604,7 @@ html[data-theme='dark'] .theme-doc-sidebar-item-link-level-5 .menu__link:hover {
 .table-of-contents a.table-of-contents__link--active {
   color: var(--primary);
   font-weight: 500;
-  background-color: var(--accent); /* Enhanced: Active background */
+  background-color: var(--muted); /* Enhanced: Active background */
   padding-left: 0.5rem; /* Enhanced: Active indent */
 }
 
@@ -1650,6 +1650,266 @@ html[data-theme='dark'] .theme-doc-sidebar-item-link-level-5 .menu__link:hover {
 
 .markdown li {
   margin-bottom: 0.25rem;
+}
+
+/* ================== FEEDBACK COMPONENT STYLING ================== */
+/* Style the existing feedback element with improved design */
+#feedbackFooter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-default, #e5e7eb);
+  color: var(--grayscale-11, #3b3b3b);
+  font-family: 'Inter', system-ui, sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feedbackFooter__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.feedback-header h3 {
+  font-size: 0.9rem;
+  color: var(--grayscale-12, #1a1a1a);
+  margin: 0;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.feedbackButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedbackButtons button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  padding: 0.45rem 1rem;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid var(--border-default, #e5e7eb);
+  color: var(--grayscale-12, #1a1a1a);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.feedbackButtons button:hover {
+  background: var(--grayscale-a3, rgba(0, 0, 0, 0.06));
+  transform: translateY(-1px);
+}
+
+.feedbackButtons button:active {
+  transform: translateY(0);
+}
+
+.feedbackButtons button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent, #635bff);
+}
+
+.feedbackButtons button svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  transition: transform 0.2s ease;
+}
+
+.feedbackButtons button:hover svg {
+  transform: scale(1.1);
+}
+
+#liked_docs svg {
+  stroke: var(--accent, #635bff);
+}
+
+#disliked_docs svg {
+  stroke: var(--red-11, #d32f2f);
+}
+
+/* Dark mode support for feedback */
+html[data-theme='dark'] #feedbackFooter {
+  --grayscale-11: #e5e5e5;
+  --grayscale-12: #ffffff;
+  --grayscale-a3: rgba(255, 255, 255, 0.06);
+  --grayscale-a4: rgba(255, 255, 255, 0.04);
+  --border-default: rgba(255, 255, 255, 0.1);
+}
+
+/* Professional Radio Button Styling for Feedback */
+.feedback-form {
+  margin-top: 1rem;
+}
+
+.feedback-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.feedback-radio-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.75rem;
+  border: 1px solid var(--border-default, rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.feedback-radio-option:hover {
+  background: var(--grayscale-a3, rgba(0, 0, 0, 0.06));
+  border-color: var(--accent, #635bff);
+}
+
+.feedback-radio {
+  margin: 0;
+  margin-right: 0.75rem;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent, #635bff);
+  cursor: pointer;
+}
+
+.feedback-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--grayscale-11, #3b3b3b);
+  cursor: pointer;
+  flex: 1;
+}
+
+.feedback-radio-label i {
+  font-size: 1rem;
+  color: var(--grayscale-10, #6b6b6b);
+  width: 16px;
+  text-align: center;
+}
+
+.feedback-radio-option:has(.feedback-radio:checked) {
+  background: var(--accent, #635bff);
+  border-color: var(--accent, #635bff);
+  color: white;
+}
+
+.feedback-radio-option:has(.feedback-radio:checked) .feedback-radio-label {
+  color: white;
+}
+
+.feedback-radio-option:has(.feedback-radio:checked) .feedback-radio-label i {
+  color: white;
+}
+
+.feedback-form-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.feedback-submit-btn {
+  background: var(--accent, #635bff);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.feedback-submit-btn:hover {
+  background: #5a52e6;
+  transform: translateY(-1px);
+}
+
+.feedback-submit-btn:active {
+  transform: translateY(0);
+}
+
+.feedback-skip-btn {
+  background: transparent;
+  color: var(--grayscale-11, #3b3b3b);
+  border: 1px solid var(--border-default, rgba(0, 0, 0, 0.1));
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.feedback-skip-btn:hover {
+  background: var(--grayscale-a3, rgba(0, 0, 0, 0.06));
+  border-color: var(--grayscale-8, #8b8b8b);
+}
+
+/* Dark mode support for radio buttons */
+html[data-theme='dark'] .feedback-radio-option {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme='dark'] .feedback-radio-option:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent, #635bff);
+}
+
+html[data-theme='dark'] .feedback-radio-label {
+  color: #e5e5e5;
+}
+
+html[data-theme='dark'] .feedback-radio-label i {
+  color: #b3b3b3;
+}
+
+html[data-theme='dark'] .feedback-skip-btn {
+  color: #e5e5e5;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme='dark'] .feedback-skip-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive design for feedback */
+@media (max-width: 640px) {
+  #feedbackFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .feedbackFooter__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .feedback-form-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .feedback-submit-btn,
+  .feedback-skip-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* ================== ENHANCED GLOBAL IMPROVEMENTS ================== */

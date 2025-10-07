@@ -503,7 +503,7 @@ html[data-theme="dark"] .admonition-note .admonition-heading h5 {
 }
 
 /* ==========================================================================
-   11. FEEDBACK COMPONENT
+   11. ENHANCED FEEDBACK COMPONENT
    ========================================================================== */
 
 .feedbackFooter__cont {
@@ -514,75 +514,303 @@ html[data-theme="dark"] .admonition-note .admonition-heading h5 {
 }
 
 .feedbackFooter__content {
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
-  background: var(--ifm-background-surface-color);
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 16px;
-  padding: 2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
   text-align: center;
 }
 
-.feedbackFooter__content h3 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.125rem;
-  font-weight: 600;
+.feedback-header h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.5;
 }
 
 .feedbackButtons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .feedbackButtons button {
+  /* Base styles matching the utility pattern */
+  --accent: #3b82f6;
+  --grayscale-11: #6b7280;
+  --grayscale-12: #111827;
+  --grayscale-a4: #f3f4f6;
+  --border-default: #e5e7eb;
+  
   background-color: transparent;
-  border: 2px solid var(--ifm-color-emphasis-300);
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
+  border: 1px solid var(--border-default);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--grayscale-11);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  height: 2rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  gap: 0.5rem;
+  white-space: nowrap;
+  font-family: inherit;
+  outline: none;
+  position: relative;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.feedbackButtons button i {
-  font-size: 1.5rem;
+/* Mobile/touch device adjustments */
+@media (pointer: coarse) {
+  .feedbackButtons button {
+    height: 2.25rem; /* h-9 equivalent */
+  }
 }
 
 .feedbackButtons button:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--ifm-global-shadow-md);
+  background-color: var(--grayscale-a4);
+  color: var(--grayscale-12);
+  transition: none;
+}
+
+.feedbackButtons button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.feedbackButtons button:active {
+  background-color: var(--grayscale-a4);
+  transform: none;
+}
+
+.feedbackButtons button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.feedbackButtons button svg {
+  pointer-events: none;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
 }
 
 .feedbackButtons button#liked_docs:hover {
-  background-color: var(--ifm-color-success);
-  border-color: var(--ifm-color-success);
-  color: #fff;
+  background-color: #10b981;
+  border-color: #10b981;
+  color: white;
 }
 
 .feedbackButtons button#disliked_docs:hover {
-  background-color: var(--ifm-color-danger);
-  border-color: var(--ifm-color-danger);
-  color: #fff;
+  background-color: #ef4444;
+  border-color: #ef4444;
+  color: white;
 }
 
-.feedbackThanks {
+/* Follow-up feedback options */
+.feedback-followup {
+  animation: slideInUp 0.4s ease-out;
+}
+
+.feedback-followup h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.feedback-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.feedback-option {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.feedback-option:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-option i {
+  font-size: 1.2rem;
+  color: var(--ifm-color-primary);
+  flex-shrink: 0;
+}
+
+.feedback-skip {
+  background: transparent;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: var(--ifm-color-emphasis-600);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.feedback-skip:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-500);
+}
+
+/* Thank you message */
+.feedback-thanks {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  color: var(--ifm-color-success);
+  animation: slideInUp 0.4s ease-out;
 }
 
-.feedbackThanks h3 {
+.feedback-thanks-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--ifm-color-success) 0%, #22c55e 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounceIn 0.6s ease-out 0.2s both;
+}
+
+.feedback-thanks-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.feedback-thanks h3 {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.feedback-thanks p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.feedback-thanks-animate {
+  animation: slideInUp 0.4s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .feedbackFooter__content {
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+  }
+  
+  .feedbackButtons {
+    gap: 0.5rem;
+  }
+  
+  .feedbackButtons button {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.8125rem;
+    min-width: 70px;
+    height: 36px;
+  }
+  
+  .feedback-options {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .feedback-option {
+    padding: 0.875rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .feedback-header h3 {
+  color: #d1d5db;
+}
+
+[data-theme='dark'] .feedbackButtons button {
+  --grayscale-11: #9ca3af;
+  --grayscale-12: #f9fafb;
+  --grayscale-a4: #374151;
+  --border-default: #4b5563;
+  
+  background-color: transparent;
+  border-color: var(--border-default);
+  color: var(--grayscale-11);
+}
+
+[data-theme='dark'] .feedbackButtons button:hover {
+  background-color: var(--grayscale-a4);
+  color: var(--grayscale-12);
+}
+
+[data-theme='dark'] .feedbackButtons button:active {
+  background-color: #1f2937;
+}
+
+[data-theme='dark'] .feedbackButtons button:focus-visible {
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+[data-theme='dark'] .feedback-option:hover {
+  background: var(--ifm-color-emphasis-200);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ==========================================================================
