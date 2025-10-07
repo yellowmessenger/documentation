@@ -441,8 +441,8 @@ menu__link--sublist-caret:after {
 
 /* Active menu item - Langfuse style */
 .menu__link--active {
-  background-color: var(--accent) !important;
-  color: var(--accent-foreground) !important;
+  background-color: var(--muted) !important;
+  color: var(--primary) !important;
   font-weight: 500;
   border-left: 2px solid var(--primary); /* Active indicator like Langfuse */
   padding-left: 10px; /* Compensate for border */
@@ -532,8 +532,8 @@ menu__link--sublist-caret:after {
 }
 
 .theme-doc-sidebar-item-category-level-3 .menu__link--active {
-  background-color: var(--accent) !important;
-  color: var(--accent-foreground) !important;
+  background-color: var(--muted) !important;
+  color: var(--primary) !important;
   font-weight: 600 !important;
 }
 
@@ -571,8 +571,8 @@ menu__link--sublist-caret:after {
 }
 
 .theme-doc-sidebar-item-category-level-4 .menu__link--active {
-  background-color: var(--accent) !important;
-  color: var(--accent-foreground) !important;
+  background-color: var(--muted) !important;
+  color: var(--primary) !important;
   font-weight: 600 !important;
 }
 
@@ -610,8 +610,8 @@ menu__link--sublist-caret:after {
 }
 
 .theme-doc-sidebar-item-category-level-5 .menu__link--active {
-  background-color: var(--accent) !important;
-  color: var(--accent-foreground) !important;
+  background-color: var(--muted) !important;
+  color: var(--primary) !important;
   font-weight: 600 !important;
 }
 
@@ -645,8 +645,8 @@ menu__link--sublist-caret:after {
 }
 
 .theme-doc-sidebar-item-link-level-4 .menu__link--active {
-  background-color: var(--accent) !important;
-  color: var(--accent-foreground) !important;
+  background-color: var(--muted) !important;
+  color: var(--primary) !important;
   font-weight: 500 !important;
   border-left: 2px solid var(--primary);
 }
@@ -668,8 +668,8 @@ menu__link--sublist-caret:after {
 }
 
 .theme-doc-sidebar-item-link-level-5 .menu__link--active {
-  background-color: var(--accent) !important;
-  color: var(--accent-foreground) !important;
+  background-color: var(--muted) !important;
+  color: var(--primary) !important;
   font-weight: 500 !important;
   border-left: 2px solid var(--primary);
 }
@@ -1968,8 +1968,8 @@ html[data-theme='dark'] .menu__link:hover {
 }
 
 html[data-theme='dark'] .menu__link--active {
-  background-color: var(--accent) !important;
-  color: var(--accent-foreground) !important;
+  background-color: var(--muted) !important;
+  color: var(--primary) !important;
 }
 
 html[data-theme='dark'] .menu__list-item-collapsible > .menu__link {

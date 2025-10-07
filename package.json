@@ -20,7 +20,7 @@
     "@docusaurus/preset-classic": "^3.9.1",
     "@docusaurus/theme-search-algolia": "^3.9.1",
     "classnames": "^2.2.6",
-    "docusaurus-preset-openapi": "^0.7.6",
+    "docusaurus-preset-openapi": "^0.7.7",
     "html-minifier-terser": "^5.1.1",
     "path": "^0.12.7",
     "prism-react-renderer": "^2.4.1",
