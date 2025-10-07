@@ -159,7 +159,6 @@ module.exports = {
 
 clientModules: [
   require.resolve('./src/client-modules/client-module'), // This is your existing one
-  require.resolve('./static/js/feedbackFooter.js'),              // Add this new line for the feedback script
 ],
 
   
@@ -168,6 +167,7 @@ clientModules: [
   
   scripts: [
     "/js/FeedbackFooter.js", // feedback footer
+    "/js/feedback-debug.js", // feedback debug helper
     "/js/bot.js", // connect support bot
     //"/js/bot.html", // connect support bot
   ],
