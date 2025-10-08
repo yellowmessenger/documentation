@@ -850,7 +850,7 @@ paths:
                             additionalProperties:
                               type: string
                               description: "Key is the userId, value is the botId"
-  '/engagements/audience/update':
+  '/engagements/audience/update/{audienceID}':
     post:
       security:
         - ApiKeyAuth: []
@@ -967,7 +967,7 @@ paths:
         '401':
           description: Unauthorized request. Check your API key.
 
-  /engagements/notifications/v2 /push-carousel:
+  /engagements/notifications/v2/push-carousel:
     post:
       security:
         - ApiKeyAuth: []
@@ -1448,30 +1448,30 @@ paths:
         '400':
           description: "Invalid request"
 
-  '/api/v1/tickets':
+  '/api/ticketing/ticket':
     get:
       security:
         - ApiKeyAuth: []        
       tags: 
         - Email Ticket                    
-      summary: Get list of tickets
+      summary: Get tickets
       description: |
         Fetches a paginated list of tickets created in the past 30 days. By default, it returns the latest 50 tickets.
       parameters:
-        - name: page
-          in: query
-          description: The page number to retrieve.
-          required: false
-          schema:
-            type: integer
-            default: 1
-        - name: per_page
-          in: query
-          description: Number of tickets per page.
-          required: false
-          schema:
-            type: integer
-            default: 50
+       - name: botId
+         in: query
+         required: true
+         schema:
+            type: string
+         example: x1744276526472
+         description: Unique bot identifier.
+       - name: jsonQuery
+         in: query
+         required: true
+         schema:
+            type: string
+            example: '{"pageNumber":1,"size":10}'
+         description: JSON-encoded pagination parameters.      
       responses:
         '200':
           description: A list of tickets retrieved successfully.
@@ -1510,12 +1510,42 @@ paths:
                       total_tickets:
                         type: integer
                         example: 500
+
         '400':
-          description: Bad request. Invalid parameters provided.
-        '401':
-          description: Unauthorized. API key required.
+          description: Bad Request — invalid or missing parameters.
+          content:
+            application/json:
+              examples:
+                missingBotId:
+                  summary: Missing botId
+                  value:
+                    error: "botId is required"
+                    status: 400
+                invalidJsonQuery:
+                  summary: Invalid JSON in jsonQuery
+                  value:
+                    error: "Invalid JSON in jsonQuery"
+                    status: 400
+                missingPagination:
+                  summary: Missing pageNumber or size
+                  value:
+                    error: "pageNumber and size are required"
+                    status: 400
+
+        '403':
+          description: Forbidden — user not authorized to access the resource.
+          content:
+            application/json:
+              examples:
+                missingAuth:
+                  summary: Missing or invalid API key
+                  value:
+                    error: "The user does not have access"
+                    status: 403
+
         '500':
-          description: Internal server error.
+          description: Internal Server Error — something went wrong on the server.
+
 
 
  

@@ -1821,11 +1821,11 @@ html[data-theme='dark'] #feedbackFooter {
 }
 
 .feedback-submit-btn {
-  background: var(--accent, #635bff);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  background: var(--ifm-color-primary, #0066cc) !important;
+  color: white !important;
+  border: none !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 8px !important;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -1833,7 +1833,7 @@ html[data-theme='dark'] #feedbackFooter {
 }
 
 .feedback-submit-btn:hover {
-  background: #5a52e6;
+  background: var(--ifm-color-primary-dark, #0052a3) !important;
   transform: translateY(-1px);
 }
 
