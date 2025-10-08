@@ -14,13 +14,16 @@ if (typeof window !== 'undefined') {
     currentPage: window.location.pathname,
 
     hasAlreadySubmitted() {
-      const stored = localStorage.getItem(`article_feedback_${this.currentPage}`);
+      const currentPage = window.location.pathname;
+      const stored = localStorage.getItem(`article_feedback_${currentPage}`);
       return stored === 'true';
     },
 
     markAsSubmitted() {
       this.hasSubmitted = true;
-      localStorage.setItem(`article_feedback_${this.currentPage}`, 'true');
+      const currentPage = window.location.pathname;
+      const storageKey = `article_feedback_${currentPage}`;
+      localStorage.setItem(storageKey, 'true');
     },
 
     trackFeedback(type, additionalData = {}) {
@@ -88,14 +91,15 @@ if (typeof window !== 'undefined') {
       return;
     }
 
-    // Check if feedback has already been submitted for this article
-    const alreadySubmitted = FeedbackManager.hasAlreadySubmitted();
-    const submittedFeedback = localStorage.getItem(`article_feedback_${FeedbackManager.currentPage}`);
+    // Check if feedback has already been submitted for this specific article
+    const currentPage = window.location.pathname;
+    const storageKey = `article_feedback_${currentPage}`;
+    const alreadySubmitted = localStorage.getItem(storageKey) === 'true';
 
     const wrapper = document.createElement("div");
     
-    if (alreadySubmitted && submittedFeedback) {
-      // Show thank you message if feedback was already submitted
+    if (alreadySubmitted) {
+      // Show thank you message if feedback was already submitted for this article
       wrapper.innerHTML = `
         <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #374151); flex-wrap: wrap;">
           <span style="font-weight: 500; color: var(--ifm-font-color-base, #111827); font-size: 1.25rem;">Was this article helpful?</span>
@@ -106,7 +110,7 @@ if (typeof window !== 'undefined') {
         </div>
       `;
     } else {
-      // Show normal feedback buttons
+      // Show normal feedback buttons for this article
       wrapper.innerHTML = `
         <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #374151); flex-wrap: wrap;">
           <span style="font-weight: 500; color: var(--ifm-font-color-base, #111827); font-size: 1.25rem;">Was this article helpful?</span>
@@ -355,6 +359,15 @@ if (typeof window !== 'undefined') {
     const currentPage = window.location.pathname;
     localStorage.removeItem(`article_feedback_${currentPage}`);
     console.log('Cleared feedback storage for:', currentPage);
+    feedbackRendered = false;
+    setTimeout(renderFeedbackElement, 100);
+  };
+
+  // Clear all feedback storage for debugging
+  window.clearAllFeedbackStorage = function() {
+    const keys = Object.keys(localStorage).filter(key => key.startsWith('article_feedback_'));
+    keys.forEach(key => localStorage.removeItem(key));
+    console.log('Cleared all feedback storage:', keys);
     feedbackRendered = false;
     setTimeout(renderFeedbackElement, 100);
   };

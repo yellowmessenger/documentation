@@ -48,7 +48,7 @@ The following table provides descriptions of different delivery status of Outbou
 Delivery status | Description
 --------------- | -----------
 Triggered | Message has been sent to the downstream service and is yet to send from there.
-Scheduled | Message has been queued to be sent. For example, single tick on Whatsapp.
+Scheduled | Message has been queued to be sent.
 Sent | Message has been sent. For example, single tick on WhatsApp.
 Delivered | Message has been delivered. For example, double tick on WhatsApp. 
 Read | Message has been read. On Whatsapp this is trackable only when end-user has blue ticks - read receipt turned on. This status includes both messages that have been read and messages that have been replied to by the recipient.
