@@ -2375,3 +2375,49 @@ html[data-theme='dark'] .table-of-contents a.table-of-contents__link--active {
     font-size: 0.875rem;
   }
 }
+
+/* ================== FEEDBACK SYSTEM STYLING ================== */
+/* Override feedback button SVG colors for better visibility */
+#liked_docs svg {
+  stroke: #10b981 !important; /* Green color for thumb up */
+}
+
+#disliked_docs svg {
+  stroke: #ef4444 !important; /* Red color for thumb down */
+}
+
+/* Dark mode support for feedback buttons */
+[data-theme='dark'] #liked_docs svg {
+  stroke: #34d399 !important; /* Lighter green for dark mode */
+}
+
+[data-theme='dark'] #disliked_docs svg {
+  stroke: #f87171 !important; /* Lighter red for dark mode */
+}
+
+/* Feedback radio button styling */
+.feedback-radio-option:hover {
+  background: var(--ifm-color-emphasis-200, rgba(0, 0, 0, 0.08)) !important;
+  border-color: var(--ifm-color-primary, #0066cc) !important;
+}
+
+.feedback-radio-option input[type="radio"]:checked + .feedback-radio-label {
+  color: var(--ifm-color-primary, #0066cc) !important;
+  font-weight: 600;
+}
+
+.feedback-radio-option:has(input[type="radio"]:checked) {
+  background: var(--ifm-color-primary-lightest, rgba(0, 102, 204, 0.1)) !important;
+  border-color: var(--ifm-color-primary, #0066cc) !important;
+}
+
+/* Submit button hover effects */
+.feedback-submit-btn:hover {
+  background: var(--ifm-color-primary-dark, #0052a3) !important;
+  transform: translateY(-1px);
+}
+
+.feedback-skip-btn:hover {
+  background: var(--ifm-color-emphasis-100, rgba(0, 0, 0, 0.04)) !important;
+  border-color: var(--ifm-color-emphasis-400, #d1d5db) !important;
+}
