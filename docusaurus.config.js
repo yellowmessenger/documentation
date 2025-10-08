@@ -131,10 +131,7 @@ module.exports = {
   ],
 
   scripts: [
-    "/js/feedback-quick-test.js",
     "/js/FeedbackFooter.js",
-    "/js/feedback-debug.js",
-    "/js/feedback-page-debug.js",
     "/js/bot.js",
   ],
 };
