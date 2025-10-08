@@ -1,5 +1,4 @@
 const path = require("path");
-// const {components} = require('./src/plugins/components');
 
 module.exports = {
   title: "yellow.ai",
@@ -7,50 +6,26 @@ module.exports = {
   url: "https://docs.yellow.ai",
   baseUrl: "/",
   favicon: "img/favicon.svg",
-  trailingSlash: false, // to control trailing slash on the page url
+  trailingSlash: false,
   organizationName: "yellowmessenger",
   projectName: "documentation",
-  // customFields: {
-  //   components: {
-  //     inputs: components("inputs"),
-  //     processors: components("processors"),
-  //     conditions: components("conditions"),
-  //     outputs: components("outputs"),
-  //     caches: components("caches"),
-  //     rate_limits: components("rate_limits"),
-  //     buffers: components("buffers"),
-  //     metrics: components("metrics"),
-  //     tracers: components("tracers"),
-  //   },
-  // },
+
   themeConfig: {
     algolia: {
       apiKey: "b91fb91a4d3a5067f2f5165bb92c9fa8",
       indexName: "ym_docs",
       appId: "LWOORM11IH",
-
-      // Optional: see doc section below
       contextualSearch: true,
-
-      // Optional: Algolia search parameters
       searchParameters: {},
-
-      //... other Algolia params
       placeholder: "Search docs",
     },
     prism: {
-      //theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("./src/plugins/prism_themes/monokai"),
     },
     colorMode: {
       defaultMode: "light",
       disableSwitch: false,
-      defaultMode: 'light',
-      // Optional: If true, the user's OS preference (light/dark)
-      // will override the defaultMode.
       respectPrefersColorScheme: false,
-
-
     },
     image: "img/og_img.png",
     metadata: [{ name: "twitter:card", content: "summary" }],
@@ -60,8 +35,6 @@ module.exports = {
         alt: "yellow.ai",
         src: "img/Yai-logo-yellow.svg",
         srcDark: "img/Yellow.ai_Logo-1.png",
-       // href: "/",
-       // target: "_self",
       },
       items: [
         {
@@ -94,12 +67,6 @@ module.exports = {
           position: "right",
           activeBasePath: "docs/tutorials",
         },
-      /*  {
-          to: "docs/glossary/advanced-virtual-assistants",
-          label: "Glossary",
-          position: "right",
-          activeBasePath: "docs/glossary",
-        }, */
         {
           to: "https://community.yellow.ai",
           label: "Community",
@@ -115,16 +82,17 @@ module.exports = {
     },
     footer: { links: [] },
   },
+
   presets: [
     [
       "docusaurus-preset-openapi",
       {
-      sitemap: {
-        changefreq: 'weekly',
-        priority: 0.5,
-        ignorePatterns: ['/tags/**'],
-        filename: 'sitemap.xml',
-      },
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
+        },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
         },
@@ -132,43 +100,41 @@ module.exports = {
           path: "api/petstore.yaml",
           routeBasePath: "/api",
         },
-          gtag: {
-            trackingID: 'G-NDQJKXFGTV',
-            anonymizeIP: true,
-          },
         theme: {
-         
           customCss: require.resolve("./src/css/custom.css"),
-          
         },
       },
     ],
   ],
+
   plugins: [
-    // path.resolve(__dirname, "./src/plugins/cookbooks"),
     path.resolve(__dirname, "./src/plugins/redirects"),
+    path.resolve(__dirname, "./src/plugins/webpack-dev-server"),
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: "G-NDQJKXFGTV",
+        anonymizeIP: true,
+      },
+    ],
   ],
+
   stylesheets: [
     "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css",
     "https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap",
   ],
+
   onBrokenLinks: "log",
-  // clientModules: [require.resolve('./static/js/client-module.ts')],
 
-  // docusaurus.config.js
+  clientModules: [
+    require.resolve("./src/client-modules/client-module"),
+  ],
 
-clientModules: [
-  require.resolve('./src/client-modules/client-module'), // This is your existing one
-],
-
-  
-  //clientModules: [require.resolve('./src/client-modules/client-module')],
-
-  
   scripts: [
-    "/js/FeedbackFooter.js", // feedback footer
-    "/js/feedback-debug.js", // feedback debug helper
-    "/js/bot.js", // connect support bot
-    //"/js/bot.html", // connect support bot
+    "/js/feedback-quick-test.js",
+    "/js/FeedbackFooter.js",
+    "/js/feedback-debug.js",
+    "/js/feedback-page-debug.js",
+    "/js/bot.js",
   ],
 };
