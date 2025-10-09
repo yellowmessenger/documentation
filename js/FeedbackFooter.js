@@ -67,6 +67,8 @@ if (typeof window !== 'undefined') {
     if (pathname !== lastPathname) {
       feedbackRendered = false;
       lastPathname = pathname;
+      // Reset global feedback state when navigating to different articles
+      FeedbackManager.hasSubmitted = false;
     }
 
     const excludedPaths = ['/', '/whats-new', '/api', '/search', '/404.html'];
@@ -183,14 +185,16 @@ if (typeof window !== 'undefined') {
   }
 
   function thumb_up_flow() {
-    if (FeedbackManager.hasSubmitted) return;
+    // Check if feedback already submitted for THIS specific article
+    if (FeedbackManager.hasAlreadySubmitted()) return;
     FeedbackManager.trackFeedback('positive');
     FeedbackManager.markAsSubmitted();
     showFeedbackThanks('positive');
   }
 
   function thumb_down_flow() {
-    if (FeedbackManager.hasSubmitted) return;
+    // Check if feedback already submitted for THIS specific article
+    if (FeedbackManager.hasAlreadySubmitted()) return;
     showNegativeFeedbackOptions();
   }
 
@@ -257,7 +261,8 @@ if (typeof window !== 'undefined') {
   }
 
   function submitNegativeFeedback() {
-    if (FeedbackManager.hasSubmitted) return;
+    // Check if feedback already submitted for THIS specific article
+    if (FeedbackManager.hasAlreadySubmitted()) return;
     
     const selectedOption = document.querySelector('input[name="feedback-reason"]:checked');
     if (!selectedOption) {
@@ -314,6 +319,8 @@ if (typeof window !== 'undefined') {
 
     window.addEventListener('popstate', () => {
       feedbackRendered = false;
+      // Reset global feedback state when navigating
+      FeedbackManager.hasSubmitted = false;
       setTimeout(renderFeedbackElement, 100);
     });
 
@@ -321,6 +328,8 @@ if (typeof window !== 'undefined') {
     history.pushState = function(...args) {
       originalPushState.apply(history, args);
       feedbackRendered = false;
+      // Reset global feedback state when navigating
+      FeedbackManager.hasSubmitted = false;
       setTimeout(renderFeedbackElement, 100);
     };
 
@@ -328,6 +337,8 @@ if (typeof window !== 'undefined') {
     history.replaceState = function(...args) {
       originalReplaceState.apply(history, args);
       feedbackRendered = false;
+      // Reset global feedback state when navigating
+      FeedbackManager.hasSubmitted = false;
       setTimeout(renderFeedbackElement, 100);
     };
   }
