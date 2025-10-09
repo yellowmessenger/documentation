@@ -1470,8 +1470,11 @@ paths:
          required: true
          schema:
             type: string
-            example: '{"pageNumber":1,"size":10}'
-         description: JSON-encoded pagination parameters.      
+            example: '%7B%22pageNumber%22%3A1%7D'
+         description: |
+            URL-encoded JSON object specifying pagination parameters.  
+            Example decoded value: `{"pageNumber":1}`  
+            Note: Only `pageNumber` is supported.      
       responses:
         '200':
           description: A list of tickets retrieved successfully.
