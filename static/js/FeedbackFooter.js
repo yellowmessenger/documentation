@@ -13,28 +13,66 @@ if (typeof window !== 'undefined') {
     hasSubmitted: false,
     currentPage: window.location.pathname,
 
+    getCurrentPath() {
+      return window.location.pathname.replace(/\/$/, ''); // normalize trailing slash
+    },
+
+    // Utility function for smooth fade-in animation
+    fadeIn(element, duration = 300) {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(-10px)';
+      element.style.transition = `opacity ${duration}ms ease-in-out, transform ${duration}ms ease-in-out`;
+      
+      // Force reflow
+      element.offsetHeight;
+      
+      element.style.opacity = '1';
+      element.style.transform = 'translateY(0)';
+    },
+
+    // Utility function for smooth fade-out animation
+    fadeOut(element, duration = 200) {
+      element.style.transition = `opacity ${duration}ms ease-in-out, transform ${duration}ms ease-in-out`;
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(-5px)';
+      
+      setTimeout(() => {
+        if (element.parentNode) {
+          element.parentNode.removeChild(element);
+        }
+      }, duration);
+    },
+
     hasAlreadySubmitted() {
-      const currentPage = window.location.pathname;
-      const stored = localStorage.getItem(`article_feedback_${currentPage}`);
+      const currentPage = this.getCurrentPath();
+      const storageKey = `article_feedback_${currentPage}`;
+      const stored = localStorage.getItem(storageKey);
+      console.log('Checking submission status for key:', storageKey, 'Value:', stored);
       return stored === 'true';
     },
 
     markAsSubmitted() {
       this.hasSubmitted = true;
-      const currentPage = window.location.pathname;
+      const currentPage = this.getCurrentPath();
       const storageKey = `article_feedback_${currentPage}`;
       localStorage.setItem(storageKey, 'true');
+      console.log('Marked as submitted with storage key:', storageKey);
     },
 
     trackFeedback(type, additionalData = {}) {
-      // Send to analytics with improved error handling
+      const currentPage = this.getCurrentPath();
+      // Send to analytics with improved error handling and GA4 structure
       this.safeGtag('event', 'feedback_submitted', {
+        event_category: 'Documentation Feedback',
+        event_label: type,
+        page_path: currentPage,
         feedback_type: type,
-        page_path: this.currentPage,
+        timestamp: new Date().toISOString(),
         ...additionalData
       });
       
-      console.log('Feedback submitted:', { type, page: this.currentPage, ...additionalData });
+      console.log('Feedback submitted:', { type, page: currentPage, ...additionalData });
+      console.log('Storage key:', `article_feedback_${currentPage}`);
     },
     
     // Safe gtag wrapper with proper error handling
@@ -63,7 +101,7 @@ if (typeof window !== 'undefined') {
   let lastPathname = window.location.pathname;
 
   function shouldShowFeedback() {
-    const pathname = window.location.pathname;
+    const pathname = FeedbackManager.getCurrentPath();
     if (pathname !== lastPathname) {
       feedbackRendered = false;
       lastPathname = pathname;
@@ -94,7 +132,7 @@ if (typeof window !== 'undefined') {
     }
 
     // Check if feedback has already been submitted for this specific article
-    const currentPage = window.location.pathname;
+    const currentPage = FeedbackManager.getCurrentPath();
     const storageKey = `article_feedback_${currentPage}`;
     const alreadySubmitted = localStorage.getItem(storageKey) === 'true';
 
@@ -104,7 +142,7 @@ if (typeof window !== 'undefined') {
       // Show thank you message if feedback was already submitted for this article
       wrapper.innerHTML = `
         <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #374151); flex-wrap: wrap;">
-          <span style="font-weight: 500; color: var(--ifm-font-color-base, #111827); font-size: 1.25rem;">Was this article helpful?</span>
+          <span class="feedback-question" style="font-weight: 500; color: var(--ifm-font-color-base, #111827); font-size: 1.25rem;">Was this article helpful?</span>
           <div class="feedback-thanks" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-color-primary, #0066cc); font-weight: 500;">
             <span>✅</span>
             <span>Thank you for your feedback!</span>
@@ -115,17 +153,17 @@ if (typeof window !== 'undefined') {
       // Show normal feedback buttons for this article
       wrapper.innerHTML = `
         <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #374151); flex-wrap: wrap;">
-          <span style="font-weight: 500; color: var(--ifm-font-color-base, #111827); font-size: 1.25rem;">Was this article helpful?</span>
+          <span class="feedback-question" style="font-weight: 500; color: var(--ifm-font-color-base, #111827); font-size: 1.25rem;">Was this article helpful?</span>
           <div class="feedback-options" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <button class="feedback-btn yes" id="liked_docs" onclick="thumb_up_flow()" title="Yes" aria-label="Yes, this page was helpful" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #111827); transition: all 0.2s ease; font-weight: 500;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s ease;">
+            <button class="feedback-btn yes" id="liked_docs" onclick="thumb_up_flow()" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #111827); transition: all 0.2s ease; font-weight: 500; position: relative;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s ease;" aria-hidden="true">
                 <path d="M7 10v12"></path>
                 <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path>
               </svg>
               Yes
             </button>
-            <button class="feedback-btn no" id="disliked_docs" onclick="thumb_down_flow()" title="No" aria-label="No, this page needs improvement" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #111827); transition: all 0.2s ease; font-weight: 500;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s ease;">
+            <button class="feedback-btn no" id="disliked_docs" onclick="thumb_down_flow()" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #111827); transition: all 0.2s ease; font-weight: 500; position: relative;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s ease;" aria-hidden="true">
                 <path d="M17 14V2"></path>
                 <path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z"></path>
               </svg>
@@ -160,9 +198,6 @@ if (typeof window !== 'undefined') {
         const svg = yesBtn.querySelector('svg');
         if (svg) svg.style.transform = 'scale(1)';
       });
-      yesBtn.addEventListener('mousedown', () => {
-        yesBtn.style.transform = 'translateY(0)';
-      });
     }
 
     if (noBtn) {
@@ -178,28 +213,91 @@ if (typeof window !== 'undefined') {
         const svg = noBtn.querySelector('svg');
         if (svg) svg.style.transform = 'scale(1)';
       });
-      noBtn.addEventListener('mousedown', () => {
-        noBtn.style.transform = 'translateY(0)';
-      });
     }
   }
 
   function thumb_up_flow() {
     // Check if feedback already submitted for THIS specific article
     if (FeedbackManager.hasAlreadySubmitted()) return;
-    FeedbackManager.trackFeedback('positive');
-    FeedbackManager.markAsSubmitted();
-    showFeedbackThanks('positive');
+    
+    const feedbackContainer = document.querySelector('.feedback-container');
+    if (!feedbackContainer) return;
+    
+    showPositiveFeedbackOptions(feedbackContainer);
   }
 
   function thumb_down_flow() {
     // Check if feedback already submitted for THIS specific article
     if (FeedbackManager.hasAlreadySubmitted()) return;
-    showNegativeFeedbackOptions();
+    
+    const feedbackContainer = document.querySelector('.feedback-container');
+    if (!feedbackContainer) return;
+    
+    showNegativeFeedbackOptions(feedbackContainer);
   }
 
-  function showNegativeFeedbackOptions() {
-    const feedbackContainer = document.querySelector('.feedback-container');
+  function showPositiveFeedbackOptions(feedbackContainer = null) {
+    if (!feedbackContainer) {
+      feedbackContainer = document.querySelector('.feedback-container');
+    }
+    if (!feedbackContainer) return;
+
+    const feedbackOptions = feedbackContainer.querySelector('.feedback-options');
+    const feedbackMessage = feedbackContainer.querySelector('.feedback-message');
+    
+    if (feedbackOptions) {
+      feedbackOptions.style.display = 'none';
+    }
+    
+    if (feedbackMessage) {
+      feedbackMessage.innerHTML = `
+        <div class="feedback-followup">
+          <h3 id="positive-feedback-title" style="color: var(--ifm-font-color-base, #111827); margin-bottom: 1rem;">Great! Any additional feedback?</h3>
+          <form class="feedback-form">
+            <div class="feedback-text-group" style="margin-bottom: 1.5rem;">
+              <textarea 
+                name="feedback-text" 
+                placeholder="Tell us more about what you liked (optional)"
+                class="feedback-textarea"
+                aria-label="Additional feedback about what you liked"
+                aria-labelledby="positive-feedback-title"
+                style="width: 100%; min-height: 80px; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; font-size: 0.9rem; font-family: inherit; resize: vertical; background: var(--ifm-color-emphasis-100, #f9fafb); color: var(--ifm-font-color-base, #111827);"
+              ></textarea>
+            </div>
+            
+            <div class="feedback-form-actions" style="display: flex; gap: 0.75rem;">
+              <button type="button" class="feedback-submit-btn" onclick="submitPositiveFeedback()" style="background: var(--ifm-color-primary, #0066cc); color: white; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
+                Submit feedback
+              </button>
+              <button type="button" class="feedback-skip-btn" onclick="showFeedbackThanks('positive')" style="background: transparent; color: var(--ifm-font-color-base, #111827); border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
+                Skip
+              </button>
+            </div>
+          </form>
+        </div>
+      `;
+      feedbackMessage.style.display = 'block';
+      
+      // Focus the textarea for better keyboard accessibility
+      const textarea = feedbackContainer.querySelector('textarea[name="feedback-text"]');
+      if (textarea) {
+        textarea.focus();
+        
+        // Add keyboard accessibility for textarea
+        textarea.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            // Close feedback form on Escape
+            showFeedbackThanks('positive');
+          }
+        });
+      }
+    }
+  }
+
+  function showNegativeFeedbackOptions(feedbackContainer = null) {
+    if (!feedbackContainer) {
+      feedbackContainer = document.querySelector('.feedback-container');
+    }
     if (!feedbackContainer) return;
 
     const feedbackOptions = feedbackContainer.querySelector('.feedback-options');
@@ -209,9 +307,9 @@ if (typeof window !== 'undefined') {
     if (feedbackMessage) {
       feedbackMessage.innerHTML = `
         <div class="feedback-followup">
-          <h3 style="color: var(--ifm-font-color-base, #111827); margin-bottom: 1rem;">What could we improve?</h3>
+          <h3 id="negative-feedback-title" style="color: var(--ifm-font-color-base, #111827); margin-bottom: 1rem;">What could we improve?</h3>
           <form class="feedback-form">
-            <div class="feedback-radio-group" style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div class="feedback-radio-group" role="radiogroup" aria-labelledby="negative-feedback-title" style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem;">
               <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100, #f9fafb);">
                 <input type="radio" name="feedback-reason" value="unclear" class="feedback-radio" style="margin: 0;">
                 <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base, #111827);">
@@ -245,7 +343,18 @@ if (typeof window !== 'undefined') {
               </label>
             </div>
             
-            <div class="feedback-form-actions" style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+            <div class="feedback-text-group" style="margin-bottom: 1.5rem;">
+              <textarea 
+                name="feedback-text" 
+                placeholder="Tell us more about what we can improve (optional)"
+                class="feedback-textarea"
+                aria-label="Additional feedback about what we can improve"
+                aria-labelledby="negative-feedback-title"
+                style="width: 100%; min-height: 80px; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; font-size: 0.9rem; font-family: inherit; resize: vertical; background: var(--ifm-color-emphasis-100, #f9fafb); color: var(--ifm-font-color-base, #111827);"
+              ></textarea>
+            </div>
+            
+            <div class="feedback-form-actions" style="display: flex; gap: 0.75rem;">
               <button type="button" class="feedback-submit-btn" onclick="submitNegativeFeedback()" style="background: var(--ifm-color-primary, #0066cc); color: white; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
                 Submit feedback
               </button>
@@ -257,31 +366,139 @@ if (typeof window !== 'undefined') {
         </div>
       `;
       feedbackMessage.style.display = 'block';
+      
+      // Focus the first radio button for better keyboard accessibility
+      const firstRadio = feedbackContainer.querySelector('input[name="feedback-reason"]');
+      if (firstRadio) {
+        firstRadio.focus();
+        
+        // Add keyboard accessibility for radio buttons
+        const radioButtons = feedbackContainer.querySelectorAll('input[name="feedback-reason"]');
+        radioButtons.forEach((radio, index) => {
+          radio.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+              e.preventDefault();
+              const nextIndex = (index + 1) % radioButtons.length;
+              radioButtons[nextIndex].focus();
+            } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const prevIndex = (index - 1 + radioButtons.length) % radioButtons.length;
+              radioButtons[prevIndex].focus();
+            } else if (e.key === 'Escape') {
+              // Close feedback form on Escape
+              showFeedbackThanks('negative');
+            }
+          });
+          
+          // Clear error message when user selects a radio button
+          radio.addEventListener('change', function() {
+            const existingError = feedbackContainer.querySelector('.feedback-error-message');
+            if (existingError) {
+              FeedbackManager.fadeOut(existingError, 200);
+            }
+          });
+        });
+        
+        // Add keyboard accessibility for textarea
+        const textarea = feedbackContainer.querySelector('textarea[name="feedback-text"]');
+        if (textarea) {
+          textarea.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+              // Close feedback form on Escape
+              showFeedbackThanks('negative');
+            }
+          });
+        }
+      }
     }
+  }
+
+  function submitPositiveFeedback() {
+    // Check if feedback already submitted for THIS specific article
+    if (FeedbackManager.hasAlreadySubmitted()) return;
+    
+    const feedbackContainer = document.querySelector('.feedback-container');
+    if (!feedbackContainer) return;
+    
+    const textInput = feedbackContainer.querySelector('textarea[name="feedback-text"]');
+    const feedbackText = textInput ? textInput.value.trim() : '';
+    
+    // Track positive feedback with optional text
+    FeedbackManager.trackFeedback('positive', { 
+      feedback_text: feedbackText,
+      has_text: feedbackText.length > 0,
+      text_length: feedbackText.length,
+      user_agent: navigator.userAgent,
+      screen_resolution: `${screen.width}x${screen.height}`
+    });
+    FeedbackManager.markAsSubmitted();
+    
+    // Show thank you message
+    showFeedbackThanks('positive', null, feedbackText, feedbackContainer);
   }
 
   function submitNegativeFeedback() {
     // Check if feedback already submitted for THIS specific article
     if (FeedbackManager.hasAlreadySubmitted()) return;
     
-    const selectedOption = document.querySelector('input[name="feedback-reason"]:checked');
+    const feedbackContainer = document.querySelector('.feedback-container');
+    if (!feedbackContainer) return;
+    
+    const selectedOption = feedbackContainer.querySelector('input[name="feedback-reason"]:checked');
     if (!selectedOption) {
-      alert('Please select an option before submitting.');
+      // Remove any existing error message
+      const existingError = feedbackContainer.querySelector('.feedback-error-message');
+      if (existingError) {
+        FeedbackManager.fadeOut(existingError, 150);
+      }
+      
+      // Create and show inline validation message
+      const errorMsg = document.createElement('p');
+      errorMsg.className = 'feedback-error-message';
+      errorMsg.textContent = 'Please select a reason before submitting.';
+      errorMsg.style.cssText = 'color: var(--ifm-color-danger, #dc2626); font-size: 0.85rem; margin: 0.5rem 0 0 0; padding: 0.5rem; background: var(--ifm-color-danger-lightest, rgba(220, 38, 38, 0.1)); border: 1px solid var(--ifm-color-danger-light, rgba(220, 38, 38, 0.3)); border-radius: 6px;';
+      
+      // Insert error message after the radio group
+      const radioGroup = feedbackContainer.querySelector('.feedback-radio-group');
+      if (radioGroup) {
+        radioGroup.insertAdjacentElement('afterend', errorMsg);
+        
+        // Apply smooth fade-in animation
+        FeedbackManager.fadeIn(errorMsg, 300);
+      }
+      
+      // Focus the first radio button to help user
+      const firstRadio = feedbackContainer.querySelector('input[name="feedback-reason"]');
+      if (firstRadio) {
+        firstRadio.focus();
+      }
+      
       return;
     }
     
     const reason = selectedOption.value;
+    const textInput = feedbackContainer.querySelector('textarea[name="feedback-text"]');
+    const feedbackText = textInput ? textInput.value.trim() : '';
     
-    // Track specific negative feedback
-    FeedbackManager.trackFeedback('negative', { reason });
+    // Track specific negative feedback with optional text
+    FeedbackManager.trackFeedback('negative', { 
+      reason,
+      feedback_text: feedbackText,
+      has_text: feedbackText.length > 0,
+      text_length: feedbackText.length,
+      user_agent: navigator.userAgent,
+      screen_resolution: `${screen.width}x${screen.height}`
+    });
     FeedbackManager.markAsSubmitted();
     
     // Show thank you message
-    showFeedbackThanks('negative', reason);
+    showFeedbackThanks('negative', reason, feedbackText, feedbackContainer);
   }
 
-  function showFeedbackThanks(type, reason = null) {
-    const feedbackContainer = document.querySelector('.feedback-container');
+  function showFeedbackThanks(type, reason = null, feedbackText = null, feedbackContainer = null) {
+    if (!feedbackContainer) {
+      feedbackContainer = document.querySelector('.feedback-container');
+    }
     if (!feedbackContainer) return;
 
     const messages = {
@@ -294,8 +511,13 @@ if (typeof window !== 'undefined') {
 
     if (feedbackOptions) feedbackOptions.style.display = 'none';
     if (feedbackMessage) {
-      feedbackMessage.innerHTML = `<p style="font-weight: 500; color: var(--ifm-font-color-base, #111827);">${messages[type]}</p>`;
+      feedbackMessage.innerHTML = `<p class="feedback-thanks" style="font-weight: 500; color: var(--ifm-font-color-base, #111827);">${messages[type]}</p>`;
       feedbackMessage.style.display = 'block';
+      
+      // Add ARIA attributes for screen reader announcements
+      feedbackMessage.setAttribute('role', 'status');
+      feedbackMessage.setAttribute('aria-live', 'polite');
+      feedbackMessage.setAttribute('aria-atomic', 'true');
     }
   }
 
@@ -315,7 +537,7 @@ if (typeof window !== 'undefined') {
         renderFeedbackElement();
       }
     });
-    observer.observe(document.body, { childList: true, subtree: true });
+    observer.observe(document.querySelector('.main-wrapper') || document.body, { childList: true, subtree: true });
 
     window.addEventListener('popstate', () => {
       feedbackRendered = false;
@@ -350,6 +572,7 @@ if (typeof window !== 'undefined') {
 
   window.thumb_up_flow = thumb_up_flow;
   window.thumb_down_flow = thumb_down_flow;
+  window.submitPositiveFeedback = submitPositiveFeedback;
   window.submitNegativeFeedback = submitNegativeFeedback;
   window.initFeedbackSystem = initFeedbackSystem;
 
@@ -367,7 +590,7 @@ if (typeof window !== 'undefined') {
   };
 
   window.clearFeedbackStorage = function() {
-    const currentPage = window.location.pathname;
+    const currentPage = FeedbackManager.getCurrentPath();
     localStorage.removeItem(`article_feedback_${currentPage}`);
     console.log('Cleared feedback storage for:', currentPage);
     feedbackRendered = false;

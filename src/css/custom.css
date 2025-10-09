@@ -2395,6 +2395,12 @@ html[data-theme='dark'] .table-of-contents a.table-of-contents__link--active {
   stroke: #f87171 !important; /* Lighter red for dark mode */
 }
 
+.feedback-btn {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 /* Feedback radio button styling */
 .feedback-radio-option:hover {
   background: var(--ifm-color-emphasis-200, rgba(0, 0, 0, 0.08)) !important;
@@ -2420,4 +2426,138 @@ html[data-theme='dark'] .table-of-contents a.table-of-contents__link--active {
 .feedback-skip-btn:hover {
   background: var(--ifm-color-emphasis-100, rgba(0, 0, 0, 0.04)) !important;
   border-color: var(--ifm-color-emphasis-400, #d1d5db) !important;
+}
+
+/* Feedback error message animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Feedback error message styling */
+.feedback-error-message {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Responsive typography for feedback question */
+.feedback-question {
+  font-size: 1.25rem !important;
+}
+
+@media (max-width: 768px) {
+  .feedback-question {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-question {
+    font-size: 1rem !important;
+  }
+}
+
+/* Thank you state animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes colorFade {
+  from {
+    color: var(--ifm-color-primary, #0066cc);
+    opacity: 0.7;
+  }
+  to {
+    color: var(--ifm-color-success, #10b981);
+    opacity: 1;
+  }
+}
+
+.feedback-thanks {
+  animation: scaleIn 0.4s ease-out, colorFade 0.6s ease-out 0.2s;
+}
+
+.feedback-btn {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip text for Yes button */
+.feedback-btn.yes:hover::after {
+  content: 'This article was helpful';
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ifm-color-emphasis-900, #1f2937);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+/* Tooltip text for No button */
+.feedback-btn.no:hover::after {
+  content: 'This article needs improvement';
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ifm-color-emphasis-900, #1f2937);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+/* Tooltip arrow */
+.feedback-btn:hover::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--ifm-color-emphasis-900, #1f2937);
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }
