@@ -1,6 +1,6 @@
 // Simple Feedback System - Original Working Version
 if (typeof window !== 'undefined') {
-  console.log('FeedbackFooter.js loaded');
+  console.log('FeedbackFooter.js loaded at:', new Date().toISOString(), 'Version: 20241220');
   
   // Ensure gtag is available to prevent runtime errors
   if (!window.gtag) {
