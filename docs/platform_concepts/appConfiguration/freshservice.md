@@ -10,7 +10,7 @@ Integrating Freshservice ITSM with Yellow.ai enables the following actions:
 * [Create a new IT-related ticket](#13-create-ticket).
 
 
-## 1. Connecting Freshservice ITSM with your bot
+## Connecting Freshservice ITSM with your bot
 
 
 In a two-tier environment, you can connect an integration app in the Development environment.  In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
@@ -37,7 +37,7 @@ The format of this field should be `https://yellowtest.freshservice.com/api/v2` 
 
 
 
-## Accessing Freshservice Functions through Bot Conversation 
+## Perform Freshservice actions through Agent Conversations
 
 Once the integration is successful, you can access the following Freshservice functions directly from the Yellow.ai bot.
 
@@ -47,7 +47,7 @@ Once the integration is successful, you can access the following Freshservice fu
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
 :::
 
-### 1.1 See List of all tickets (List all tickets)
+### 1. See List of all tickets (List all tickets)
 
 This action retrieves User Tickets by email address.
 
@@ -143,7 +143,7 @@ In case of success, you need to extract the relevant keys present in the ticket 
 
 ```
 
-### 1.2 Ticket Status 
+### 2. Ticket Status 
 
 Retrieves the current status of a specific ticket.
 
@@ -232,7 +232,7 @@ Retrieves the current status of a specific ticket.
 
 ```
 
-### 1.3 Create Ticket
+### 3. Create Ticket
 
 Creates a new ticket in the Freshservice ITSM app.
 

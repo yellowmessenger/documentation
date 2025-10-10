@@ -131,7 +131,11 @@ module.exports = {
   ],
 
   scripts: [
-    "/js/FeedbackFooter.js",
+    {
+      src: "/js/FeedbackFooter.js?v=20241220",
+      async: true,
+      defer: true,
+    },
     "/js/bot.js",
   ],
 };
