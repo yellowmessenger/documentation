@@ -21,7 +21,7 @@ Yellow.ai Integration with Cashfree Payment Gateway allows you to generateTransa
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cashfree-details.png)
 
 
-## Enable Cashfree related events for the bot
+## Enable Cashfree related events for the AI agent
 
 The `Cashfree payment status` event Indicates an update in the payment status. Each payment undergoes different status such as Pending, Processing, Completed, Failed, Refunded, or Cancelled.
 
@@ -33,12 +33,11 @@ The `Cashfree payment status` event Indicates an update in the payment status. E
 
    ![](https://lh3.googleusercontent.com/zgmzj8u9FXIrz1BGiBzUyi6_S-k2tzQVxaVvqAiHX-pYF8_bDgIsEgqW8_AOVP4jAT_Gn25Wey8vCywa6pU-JirAQqqaEPnPxhu5za_GrP8JTUlahnifhZ-ATNnvjLJJN2Jkt6bLS2GIT2bazEeZIdXM0Tf_j1Jepa9iDC8pBwNbERLHg-S3p7RQdg)
 
-## Manage Cashfree actions through bot conversation
+## Manage Cashfree actions through AI agent conversation
 
-This integration enables the bot to perform the following Cashfree actions:
+This integration enables the AI agent to perform the following Cashfree actions:
 
 * Generate transaction ID
-
 
 :::note
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
@@ -48,21 +47,26 @@ When multiple accounts are added, select the appropriate account for each node, 
 
 This action sends a POST request for creating a new transaction and generates the transaction ID.
 
+1. In the Automation flow builder, select the **Integrations** node and click **Cashfree** from the list of integrations that have been enabled for that AI agent.
 
-   <img src="https://lh3.googleusercontent.com/7pNpF2HUl5qyJFYQXVMwX2PX-kjMcoZy0zrFQNBVtJLbJrrQ4hzbr1l1l1Frjj7dAEt4oNI635vERcm_atJJh1o_0HmsEdN_jtfaH_o9qLqyGp8mnWzFM-nbCs3tJ5rfQl7Oh9BB8F1AdaUVN77F8zrNz2tgjKYQlcF6SdczFJ7efNwitey8aOf7qw" width="80%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/cash-free.png" alt="drawing" width="30%"/>
+
+2. After clicking **Cashfree**, an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Transaction ID**.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/transaction-id.png" alt="drawing" width="80%"/>
+
+3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value, data type and description for all these fields.
 
 **Node Input Params**
 
-
-
 | Field Name |  Description |Sample Input |
 | -------- | -------- | -------- |
-| Order ID     |  The unique identification for the order to be created     |Order1234     |
-|Order Amount|The amount for the request. The minimum amount is 1 |200|
-|Order Currency*|The currency in which the order with the amount specified has to be created|INR|
+| Order ID     |  The unique identification for the order to be created | Order1234  |
+|Order Amount| The amount for the request. The minimum amount is 1 |200|
+| Order Currency | The currency in which the order with the amount specified has to be created | INR |
 |Customer ID|The unique Identification for the Payer|9999999999|
-|Customer Email|Email of the payer|john@test.com|
-|Order Tags|Tags that are to be attached with the order| `{‘comment’: ‘note to be appended’}`|
+|Customer Email| Email of the payer | john@test.com |
+| Order Tags | Tags that are to be attached with the order | `{‘comment’: ‘note to be appended’}` |
 |Notify Url|Copy Webhook URL from cashfree card at integration page|Ex: `https://dummyurl.yellowmessenger.com/integrations/genericIntegration/cashfree/x1674?id=C1f1Z1htZNZ%2BFYF6c76riwNWY%3D`)|
 
 **Sample Success Response**

@@ -12,8 +12,149 @@ The table below describes the fields available in the Workflow action:
 | **Trigger the workflow** | When the conversation reaches the Call workflow action, the AI agent activates the linked workflow.                                                                                                                                                                                                                                                                                                                         |
 | **Pass input variables** | The AI agent sends relevant input data (e.g., booking ID, user name) collected earlier in the conversation to the workflow.                                                                                                                                                                                                                                                                                                 |
 | **Workflow processing**  | The workflow executes its logic to perform tasks, automate backend operations, and handle complex scenarios, such as: <ul><li>Fetching data from APIs or databases (e.g., retrieving weather updates using location data)</li><li>Raising support tickets (e.g., for flight cancellations)</li><li>Connecting to a human agent when needed</li><li>Executing custom functions (e.g., calculating baggage charges)</li></ul> |
-| **Store output**         | The workflow’s response (e.g., booking status, payment confirmation) is stored in a variable for use in subsequent conversation steps.                                                                                                                                                                                                                                                                                    
+| **Store output**         | The workflow’s response (e.g., booking status, payment confirmation) is stored in a variable for use in subsequent conversation steps.       
+
+### Workflow settings 
+
+In the Workflow section of your AI agent, the settings option allows you define what happens when a workflow fails during execution. For example, if an API call times out, a database action fails, or the backend service returns an error.
+
+By configuring fallback behavior, you ensure that the conversation continues smoothly and the user still receives a response or is guided to the next action.
+
+You can also enable an AI-powered apology message, which automatically notifies the user when something goes wrong (for example, "Sorry, I'm having trouble fetching plans right now").
+   
+   <img src="https://cdn.yellowmessenger.com/assets/workflow-fallback/workflow-fallback.png" alt="drawing" width="70%"/>
+  
+#### Fallback options
+
+You can choose fallback actions after a workflow fails:
+
+1. **Trigger fallback set for super agent**: This option executes the fallback response configured for the Super agent. It ensures that the conversation does not stop abruptly and the user receives a relevant message or redirection based on the global fallback setup. Use this option when you want to maintain a consistent fallback experience across all workflows and agents.
+
+2. **Transfer to live agent**: This option hands off the conversation to a human support agent when a workflow fails. It is useful in scenarios where the issue requires manual intervention. For example, payment failures, booking errors, or refund issues that the AI agent cannot resolve due to a backend error, the conversation is handed off to a support agent to assist the user.
+
+3. **Move forward**: This option allows the AI agent to continue the conversation without interruption. It is best used for non-critical workflows where the failure doesn’t impact the overall user experience. Example: If a workflow that fetches optional recommendations (like hotel suggestions) fails, the conversation can still move forward to the booking confirmation step.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/select-workflow.png" alt="drawing" width="60%"/>
+
 ### Output node in Workflows
+
+The Output node in a Workflow defines the data the workflow returns after execution. It returns text or variables and passes them back to the conversation that triggered the workflow. The returned output helps the AI agent use this data in the next steps of the conversation to deliver dynamic and personalized responses.
+
+The Output node ensures that results from operations such as API calls, database queries, or logic functions are returned in a structured and usable format, allowing the AI agent to continue the conversation based on real-time data.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/workflow-output.png" alt="drawing" width="60%"/>
+
+**Use case: Workflow failure triggering a fallback**
+
+Let us consider a scenario where a workflow fails due to a missing variable.
+
+For example, in a flight booking workflow, the agent triggers an API call to fetch available flights using a variable like `destination_city`. If this variable is not defined in the workflow, the API request cannot be completed, causing the workflow to fail.
+
+When this happens, the Workflow fallback setting automatically takes over. Depending on the fallback configuration, one of the following actions occurs:
+
+* The AI agent sends an apology (example, "Sorry, I am having trouble fetching flight options right now").
+* The agent triggers the super agent’s fallback, which could redirect the conversation or you can select to transfer the user to a live agent for manual support if configured.
+   
+**Workflow output status**
+
+In the Output section of a workflow, you can define the status of the workflow execution either **Success** or **Failur**e. This status determines how the AI agent should respond once the workflow finishes executing. If the status is not selected, then an error is displayed.
+
+* **Success**: Select this option when the workflow has executed as expected. For example, an API call returned valid data, a payment was processed successfully, or a booking was confirmed.
+   * You can then define what the workflow should return either a specific value (example, "Payment successful") or a variable (example, payment_status).
+
+* **Failure**: Select this option when the workflow encounters an issue, such as an API timeout, missing data, or an invalid response. For example, you can return an error message ("Unable to fetch details right now") or trigger fallback actions, such as sending an apology or transferring the user to a live agent.
+
+**Types of Output**
+
+You can configure the Output node to return one of the following types:
+
+1. **Return a value**: Displays a predefined text message when the Workflow completes.<br/> **Use case**: Use this when the output is static and does not depend on dynamic input.<br/> **Example**: "Thank you! Your request has been submitted."
+2. **Variable**: Returns dynamic content stored in a variable, such as values fetched from APIs, databases, or functions.<br/> **Use case**: When the workflow depends on user inputs or dynamic data.<br/>  Store the weather temperature fetched from an API and use it later in the conversation.
+
+### Create a workflow
+
+To create a worflow, follow these steps:
+
+1. Navigate to **Agents** > **Prompts** > **Actions** > **Call workflow**.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/call-workflow-action.png)
+    
+2. Click **+ Create workflow**.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/create-worflow.png" alt="drawing" width="90%"/>
+
+3. Provide a **Workflow name** and **Description** to explain the purpose of the workflow.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/create-workflow-step.png" alt="drawing" width="50%"/>
+
+   
+4. This will create a new workflow where you can configure with the required input parameters, logic, and output settings.
+
+* You can also create a workflow via the [Workflow builder section](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-workflow-via-workflow-builder-section).
+
+### Define a workflow
+
+Defining a workflow allows the AI agent to perform automated backend tasks such as retrieving, validating, or storing data based on the user's input during a conversation. 
+
+When defining a workflow, you need to use variables collected during the conversation (such as user name, travel date, or contact number) and pass them into the workflow. These variables drive the logic within the workflow and determine what actions are taken.
+
+**A well-defined workflow helps you to:**
+
+* Automate backend operations like API calls or database updates.
+* Use dynamic inputs from the user by mapping variables into the workflow.
+* Maintain consistency and reduce duplication across conversation flows.
+
+**Use case**: Fetch and store user booking details
+
+To define a workflow, follow these steps:
+
+1. Use prompts to collect user details for flight booking and store them in input variables.
+
+      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/workflow-prompt.png" alt="drawing" width="100%"/>
+
+      
+2. [Create a database](https://docs.yellow.ai/docs/platform_concepts/studio/database#create-database-table) with columns matching the fields you want to store (example, name, phone number, destination).
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/workflow-database.png)
+
+
+3. Go to the workflow that you have created and add a Database node and select the created database. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/database#insert-new-records-or-values-into-a-database-table).
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/database-records.png" alt="drawing" width="80%"/>
+  
+4. Click **Define** and map the input variables to the corresponding database columns.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/define-workflow.png" alt="drawing" width="50%"/>
+  
+   
+5. Link the Database node to the Output node to complete the workflow.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/database-output.png" alt="drawing" width="80%"/>
+        
+**How to call a workflow in a prompt?**
+
+To call a workflow in a prompt, follow these steps:
+
+1. Navigate to **Agents** > **Prompts**, and go to the prompt where the workflow should be triggered.
+
+2. Click **Action** and select **Call workflow**, or use the shortcut key `$`.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/call-workflowprompt.png)
+
+3. Choose the workflow you previously created from the drop-down. 
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/choose-workflow.png" alt="drawing" width="60%"/>
+
+4. Click the **Edit** icon next to the selected workflow and map the required input variables (example, user_name, travel_date) that were collected during the conversation.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/edit-workflow.png) 
+
+5. Click **Save** to complete the configuration.
+
+* Once configured, the workflow will automatically be triggered when the conversation reaches this prompt. The workflow’s output can be stored in a variable and used in the next steps of the conversation.
+
+
+<!-- ### Output node in Workflows
 
 The Output node in a Workflow defines what data is returned once the workflow has finished executing. This data can be text, variables, or rich media, and it is passed back to the conversation that triggered the workflow. The returned output can then be used in the following steps of the conversation to deliver dynamic responses.
 
@@ -180,7 +321,7 @@ To call a workflow in a prompt, follow these steps:
 
 5. Click **Save** to complete the configuration.
 
-* Once configured, the workflow will automatically be triggered when the conversation reaches this prompt. The workflow’s output can be stored in a variable and used in the next steps of the conversation.
+* Once configured, the workflow will automatically be triggered when the conversation reaches this prompt. The workflow’s output can be stored in a variable and used in the next steps of the conversation. -->
 
 
 ### Use case: Fetch weather updates using API via workflow
