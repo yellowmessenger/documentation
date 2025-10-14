@@ -182,7 +182,7 @@ Select allowed countries | Allows you to restrict the location input to specific
 Add custom instruction | Optionally add more specific instructions or hints to guide the user in providing their location.
 Mark user input as optional	| If this option is selected, the user is not required to provide their location. If unchecked, the agent will prompt the user until valid location data is shared.
 
-  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/locationinoput.png" alt="drawing" width="70%"/>
+  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/locationinoput.png" alt="drawing" width="60%"/>
   
 -----  
 
@@ -217,17 +217,10 @@ Linked workflow | Select the workflow you created to fetch and format the data.
 
 #### How to configure Dynamic rich media
 
-**Use case example**: Displaying images fetched from an API in cards format.
+To configure and display dynamic rich media in your AI agent conversation, follow these steps:
 
-To configure dynamic rich media, follow these steps:
-
-#### Step 1: Define Workflow
-
-1. In the **Start node**, select **Event** as the start trigger type.
-
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/workflowstart.png)
    
-2. Add an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to fetch images and store the response in a variable of type object.
+<!-- 2. Add an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to fetch images and store the response in a variable of type object.
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/getAPI-image.png)
     
@@ -246,29 +239,73 @@ To configure dynamic rich media, follow these steps:
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/call-workflow-prompt.png)
     
-#### Step 3: Use Dynamic rich media to display
+#### Step 3: Use Dynamic rich media to display -->
 
 
-1. Go to **Prompts** section > **Actions** > **Get input**.
+1. Go to **Prompts** section  and click **Actions** > **Get input**.
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-input.png)
      
 2. Select **Dynamic rich media** action.
 
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/dynamic.png" alt="drawing" width="60%"/>
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/dynamic.png" alt="drawing" width="50%"/>
 
-3. Define the following fileds:
-    i. **Input name**: Enter the Input name, Description, and configured workflow.
+3. Define the following fields:
+
+    i. **Input name**: Enter the Input name.
+
     ii. **Describe what this input is about:** Provide details of what this input is about.
-    iii. **Linked worklfow**: Select the workflow you created to fetch and format the data.
     
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/dynamic-resort-fetch.png" alt="drawing" width="60%"/>
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/dynamic-resort-fetch.png" alt="drawing" width="50%"/>
+
+4. Click **Configure**.  
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/configure_workflow.png" alt="drawing" width="60%"/>
+
+5.  Click **Insert**.   
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/insert1.png" alt="drawing" width="50%"/>
+
+6. Click **Save**.    
     
+7. Click **Edit** icon of the **Get input action**.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/edit-dymanic-image.png" alt="drawing" width="70%"/>
+
+8. Click **View details**.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/view-details.png" alt="drawing" width="50%"/>
+
+9. Click **Define workflow** to configure the workflow output.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/define-workflow-1.png" alt="drawing" width="50%"/>
+
+10. Add an **Output node**, select **Image**, and copy the sample variable format to display the dynamic image.  
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/dynamic-image-format.png" alt="drawing" width="70%"/>
+
+11. Click on the drop-down and select **+ Create new variable**.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/create-new-variable.png" alt="drawing" width="50%"/>
+
+12. Enter the variable details:
+
+      i. **Variable name**: Specify the variable name.<br/>
+      ii. **Data type**: Select the data type as object.<br/>
+      iii. **Default value**: Paste the copied sample format or enter the image URL to display the dynamic image.<br/>
+      iv. Click **Add**.
+
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/add-journey-variable.png" alt="drawing" width="60%"/>
+
+13. Go to **Agent** > click **Preview** to test and display the dynamic image.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/test-dynamic-image.png)    
+<!--     
 This how the image will be fetch and displayed in cards format:
 
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cards-display.png)
-        
+         -->
 
       
 

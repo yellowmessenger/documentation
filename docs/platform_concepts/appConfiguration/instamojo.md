@@ -67,17 +67,17 @@ You need to integrate first with Development/Staging or Sandbox environment. Onc
 
 ----
 
-## Enable Instamojo related events for the bot
+## Enable Instamojo related events for the AI agent
 
 **Instamojo payment status event**: Indicates an update in the payment status. . Instamojo primarily recognizes the following payment status values: Pending, Sent, Failed, and Completed.
 
 * To activate an event, refer to [this section](/docs/platform_concepts/appConfiguration/overview#step-3-configure-webhook-url).
-* To trigger a bot flow using the activated event, click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-5-trigger-bot-flows-with-integration-events).
+* To trigger a AI agent flow using the activated event, click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-5-trigger-bot-flows-with-integration-events).
 
 
 ## Perform Instamojo actions from your AI Agent
 
-This integration enables the bot to perform the following Instamojo actions:
+This integration enables the AI agent to perform the following Instamojo actions:
 
 * Generate payment link
 * Create refund

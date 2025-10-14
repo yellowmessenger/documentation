@@ -9,7 +9,7 @@ Yellow.ai Integration with Billdesk UPI Payment Gateway allows you to create UPI
 
 ## Connecting BillDesk to yellow.ai
 
-You can connect your account only in development environment and not in live. For a three-tier environment, you can connect an account in Staging and Sandbox environment. Once the bot is published, it will use the integrations if they are configured in the flows.
+You can connect your account only in development environment and not in live. For a three-tier environment, you can connect an account in Staging and Sandbox environment. Once the AI agent is published, it will use the integrations if they are configured in the flows.
 
 
 1. Get the KeyId, Client Id, Merchant Id, Public Key File and API Base URL from Billdesk Team.
@@ -36,9 +36,9 @@ You need to Activate the **Billdesk Payment Status** after integrating BillDesk.
 To know how to enable events, refer to [this doc](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-4-enable-integration-events-in-your-bot).
 
 
-## BillDesk actions from bot conversations
+## BillDesk actions from AI agent conversations
 
-Once the Stripe account is connected, you can perform the following actions through bot conversations: Generate UPI intent and Generate UPI collect.
+Once the Stripe account is connected, you can perform the following actions through AI agent conversations: Generate UPI intent and Generate UPI collect.
 
 
 1. Go to Development/Staging environment and navigate to Automation > Build > Select the flow where you want to add the Generate payment link node.
@@ -51,7 +51,7 @@ Once the Stripe account is connected, you can perform the following actions thro
 
 ### 1. Generate UPI Intent
 
-Generate UPI collect BillDesk refers to a process where you create a request to collect funds from the user using UPI through the bot conversation. 
+Generate UPI collect BillDesk refers to a process where you create a request to collect funds from the user using UPI through the AI agent conversation. 
 
 Get the final amount from your cart total and call the Generate UPI Intent action node of integration, get the transaction Id and Intent URI for whatsapp pay api.
 
@@ -67,7 +67,7 @@ _ Node Input Params:-_
 
 
 :::note
-To use in the [App platform](https://app.yellow.ai) bot use below function.
+To use in the [App platform](https://app.yellow.ai) AI agent use below function.
 :::
 
 ```json
@@ -121,7 +121,7 @@ _ Node Input Params:-_
 |Additional Parameters|Some value|additional_info values that can be attached to the transaction.|
 
 :::note
-To use in the [App platform](https://app.yellow.ai) bot use the below function.
+To use in the [App platform](https://app.yellow.ai) AI agent use the below function.
 :::
 
 ```json

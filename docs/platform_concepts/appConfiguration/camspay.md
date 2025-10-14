@@ -40,14 +40,14 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/over
 :::
 
 
-## 3. Enable integration event in your bot
+## 3. Enable integration event in your AI agent
 
 Open **Automation > Events > Integrations > Camspay payment status** and select **Activate** by clicking the menu next to it.                            
 ![image](https://imgur.com/xWuRPp9.png)
 
 **Camspay Payment Status** event allows you to execute specific actions in response to events. For example:
-- Display a message in the bot conversation when a payment is successful.
-- Show order details in the bot conversation when an order is placed.
+- Display a message in the AI agent conversation when a payment is successful.
+- Show order details in the AI agent conversation when an order is placed.
 
 Event | Description
 ----- | -----------
@@ -57,7 +57,7 @@ Camspay Payment Status | Returns payment/refund status
 Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-4-enable-integration-events-in-your-bot) to learn about enabling integration events.
 :::
 
-## 4. Trigger bot flows with integration events
+## 4. Trigger AI agent flows with integration events
 
 In the start node of a flow, select **Trigger type** as **Event** and select **Camspay payment status** next to it. 
 
@@ -69,7 +69,7 @@ In the start node of a flow, select **Trigger type** as **Event** and select **C
 Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-5-trigger-bot-flows-with-integration-events) to learn how to trigger flows with events.
 :::
 
-## 5. Generate Camspay payment links in bot conversation
+## 5. Generate Camspay payment links in AI agent conversation
 
 Once your Camspay account is successfully connected, configure the node, follow:
 
@@ -92,7 +92,7 @@ Details within the selected action:
 | Success redirect URL        | string        | URL to redirect to after successful payment     |
 | Transaction ID              | string        | Unique transaction identifier generated for each payment                  |
 | Device type                 | string        | Device type used for the transaction. Ex: Web or Mobile             |
-| Intent call                 | string        | Selecting Y/N will open payment links based on the device. Select Y(yes) for a WhatsApp bot, to open the UPI link in the apps available on the phone. Select N(no) for a Web bot, to open payment link in a new browser tab.           |
+| Intent call                 | string        | Selecting Y/N will open payment links based on the device. Select Y(yes) for a WhatsApp AI agent, to open the UPI link in the apps available on the phone. Select N(no) for a Web AI agent, to open payment link in a new browser tab.           |
 | Pay type                    | string        | Primary payment type. Example: UPI, Net Banking(NB), Credit card(CC), Debit card(DC) and all the mentioned types          |
 | Sub pay type                | string        | Secondary payment method or subtype. Example: UPI, Net Banking(NB), Credit card(CC), Debit card(DC) and all the mentioned types              |
 | User defined field 1        | string        | Custom field for additional data (1)            |

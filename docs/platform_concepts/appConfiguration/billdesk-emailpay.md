@@ -4,7 +4,7 @@ sidebar_label : BillDesk EmailPay
 ---
 
 
-The [BillDesk EmailPay](https://www.billdesk.com/web/) integration enables your bot to manage the following BillDesk functions.
+The [BillDesk EmailPay](https://www.billdesk.com/web/) integration enables your AI agent to manage the following BillDesk functions.
 
 1. Generate a payment link to receive payments
 2. Check the status of the payments and recieve notifications on the same.
@@ -39,7 +39,7 @@ In a two-tier environment, you can connect an integration app in the Development
 
    ![](https://i.imgur.com/i9WSqTv.png)
 
-2. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.
+2. Append the region of your AI agent to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your AI agent, you can refer the following list for the same.
 
    * r1 - MEA 
    * r2 - Jakarta 
@@ -47,7 +47,7 @@ In a two-tier environment, you can connect an integration app in the Development
    * r5 - Europe 
    * r3 - Singapore
 
-   For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is MEA. If the bot belongs to India, you can use origin domain itself.
+   For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the AI agent is MEA. If the AI agent belongs to India, you can use origin domain itself.
 
 3. Share the webhook URL to **BillDesk SPOC**. They will configure the webhook at their end.
 
@@ -67,7 +67,7 @@ Please specify the **Min length**, **Max length** and the **data type**(numeric/
 
 ### 1.4 Receive events in Yellow.ai
 
-To receive events and trigger flows based on events, you need to enable that specific event in your bot settings.
+To receive events and trigger flows based on events, you need to enable that specific event in your AI agent settings.
 
 1. In the Development/Staging environment, go to **Automation** > **Event**.
 2. In **Integrations** > **Billdesk EmailPay Payment Status**.
@@ -85,7 +85,7 @@ If you have added multiple accounts in your platform, you need to enable events 
 :::
 
 
-## 2. Generate Payment Link through bot conversation
+## 2. Generate Payment Link through AI agent conversation
 
 You can generate payment links for your customers to pay.
 
@@ -94,7 +94,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 :::
 
 
-1. In the Automation flow builder, select the **Integrations** node and click **Billdesk EmailPay** from the list of integrations that have been enabled for that bot.
+1. In the Automation flow builder, select the **Integrations** node and click **Billdesk EmailPay** from the list of integrations that have been enabled for that AI agent.
 
    <img src="https://i.imgur.com/kHnNZrh.png" width="80%"/>
 
@@ -113,7 +113,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 |Customer Phone Number|INR|String|Customer phone number.|
 |Customer Name|Test|String|Name of the customer.|
 |Order ID|TestOrder122|String|Unique Order ID.|
-|Send Email|false|Boolean|Sending link through email<br/>**True:** Payment link will be sent via email (Currently not supported).<br/>**False:** Payment link will be generated in the bot.
+|Send Email|false|Boolean|Sending link through email<br/>**True:** Payment link will be sent via email (Currently not supported).<br/>**False:** Payment link will be generated in the AI agent.
 
 4. The **Generate Payment Link** Integration Action Node has two outcomes, success or failure. If the payment link is generated successfully, the **Integration Action Node** returns a **Success** response code as shown below.
 
@@ -136,7 +136,7 @@ If generating payment link fails, the **Integration Action Node** returns a **Fa
 }
 ```
 
-To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
+To use this **Integration Action Node** in an app.yellow.ai AI agent, refer the following example:
 
 ```
 app.executeIntegrationAction({

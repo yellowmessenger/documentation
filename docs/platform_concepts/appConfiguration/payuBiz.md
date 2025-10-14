@@ -4,7 +4,7 @@ sidebar_label : PayU Business
 ---
 
 
-[PayU Business integration](https://payu.in/about-us?_ga=2.219146714.274874686.1677657469-282964387.1677657469) enables your bot to receive PayU payments from your users. You can generate payment links, UPI intents for whatsapp pay and receive notifications on the success/failure of the payments.
+[PayU Business integration](https://payu.in/about-us?_ga=2.219146714.274874686.1677657469-282964387.1677657469) enables your AI agent to receive PayU payments from your users. You can generate payment links, UPI intents for whatsapp pay and receive notifications on the success/failure of the payments.
 
 ## Integrating PayU with Yellow.ai
 
@@ -78,7 +78,7 @@ To ensure secure communication and enable PayU Business to send payment status u
 
 PayUBiz will whitelist the webhook URL provided by the merchant in their systems. You also need to get the webhook URL whitelisted from the can write to the [PayU Integration team](mailto:integration@payu.in) for more information.
 
-### 1.4 Enable PayU event to receive event in bot 
+### 1.4 Enable PayU event to receive event in AI agent 
 
 1. On the [Cloud Platform](https://cloud.yellow.ai) go to Staging/Development environment.
 2. On the left navigation bar, click **Automation** > **Build** > **Event** > **Integrations** and search for `PayU Payment Status`.
@@ -133,7 +133,7 @@ If there are multiple accounts, you can select from which account you want to pe
     |Validation Period|1|Number|Determines how long PayU will continue trying to charge the customer if the initial payment fails.|
 
 
-To use this Integration Action Node in an app.yellow.ai bot, refer the following example:
+To use this Integration Action Node in an app.yellow.ai AI agent, refer the following example:
 
 ```js
 app.executeIntegrationAction({
@@ -218,7 +218,7 @@ If generating UPI intent fails, the **Integration Action Node** returns a Failur
 }
 ```
 
-To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
+To use this **Integration Action Node** in an app.yellow.ai AI agent, refer the following example:
 
 ```js
 
@@ -247,7 +247,7 @@ app.executeIntegrationAction({
 
 ### 2.3 Generate WhatsApp pay
 
-PayU business integration allows your bot to accept payments from users via WhatsApp Pay
+PayU business integration allows your AI agent to accept payments from users via WhatsApp Pay
 
 To configure WhatsApp Pay in the PayU business node, follow these steps:
 
@@ -262,7 +262,7 @@ Field name	| Sample value | Data type | Description
 Customer email |  rio@gmail.com | String | Email address of the customer. | 
 Cutsomer name | Rio | String | Name of the customer. |
 Fail URL | `https://example.com/payment-failed` | String  | URL to redirect to if payment fails.. | 
-From |  +91 98800XXXXX | String  | Enter the WhatsApp number that is connected to the bot. |
+From |  +91 98800XXXXX | String  | Enter the WhatsApp number that is connected to the AI agent. |
 Card description | Mobile charger | String | Deatil of the product |
 Order details | `{ "subTotal": 10, "tax": "...", "items": [...] }` |  Object | Contains complete order details. |Product info | Wireless charger | String |  Information about the product.
 Success URL | `https://example.com/payment-success` | String | URL to redirect after a successful payment.
