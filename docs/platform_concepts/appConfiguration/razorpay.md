@@ -56,10 +56,10 @@ To connect your Stripe account with Yellow.ai, follow these steps:
 
 ### 1.3 Configure webhook URL in Razorpay Dashboard 
 
-The Webhook URL serves as a callback URL where Razorpay can send notifications or data updates to your bot. 
+The Webhook URL serves as a callback URL where Razorpay can send notifications or data updates to your AI agent. 
 
-1. Copy the webhook URL and the API key mentioned in the **Instructions** section of the Razorpay Integration Card. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.  (r1 = MEA, r2 = Jakarta, r3 = Singapore, r4= USA, r5 = Europe)
-<br/>For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is MEA. If the bot belongs to India, you can use origin domain itself.
+1. Copy the webhook URL and the API key mentioned in the **Instructions** section of the Razorpay Integration Card. Append the region of your AI agent to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your AI agent, you can refer the following list for the same.  (r1 = MEA, r2 = Jakarta, r3 = Singapore, r4= USA, r5 = Europe)
+<br/>For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the AI agent is MEA. If the AI agent belongs to India, you can use origin domain itself.
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/razorpay.png)
 
@@ -86,9 +86,9 @@ You can set upto 10 URLs to receive Webhook notifications. Webhooks can only be 
 To modify the webhook further, you can select the webhook and click **Edit**. You can refer this [video](https://www.youtube.com/watch?v=qojkh8Vbnek) as well.
 :::
 
-## Enable Razorpay events in your bot
+## Enable Razorpay events in your AI agent
 
-Enable Razorpay events in your bot to trigger flows based on event occurrences, allowing seamless integration of payment processes with bot functionalities.
+Enable Razorpay events in your AI agent to trigger flows based on event occurrences, allowing seamless integration of payment processes with AI agent functionalities.
 
 1. In Development/Staging environment, go to **Automation** > **Event** > **Integrations**.
 2. Activate the event, **Razorpay Payment Status**. Click on the more options icon and select *Activate*. If there are multiple accounts, you need to activate for each account separately. 
@@ -103,7 +103,7 @@ Enable Razorpay events in your bot to trigger flows based on event occurrences, 
 If you have added multiple accounts in your platform, enable events for each of those accounts.
 :::
 
-## Generate Razorpay payment Link from bot conversation
+## Generate Razorpay payment Link from AI agent conversation
 
 The following are the use-cases that are supported in this integration.
 
@@ -117,7 +117,7 @@ When multiple accounts are added, select the appropriate account for each node, 
     <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
 2. Click **Add node** > **Integrations** > **Razorpay payment gateway**.
-In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that AI agent.
 
 
 3. In the first drop-down choose **Generate Payment Link**.
@@ -194,7 +194,7 @@ In the Automation flow builder, select the **Integrations** node and click **Raz
   }
 }
 ```
-To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
+To use this **Integration Action Node** in an app.yellow.ai AI agent, refer the following example:
 
 ```js
 app.executeIntegrationAction({
@@ -255,7 +255,7 @@ app.executeIntegrationAction({
 
 ### Generate Payment Link for Partial Payments
 
-1. In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+1. In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that AI agent.
 
    <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
@@ -440,6 +440,8 @@ app.executeIntegrationAction({
 })
  
 ```
+
+
 
 
 
