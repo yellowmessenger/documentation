@@ -5,9 +5,9 @@ sidebar_label : Freshservice ITSM
 
 Integrating Freshservice ITSM with Yellow.ai enables the following actions:
 
-* [Display list of active tickets requiring resolution](#11-see-list-of-all-tickets-list-all-tickets).
-* [Check the status of a specific ticket](#12-ticket-status).
-* [Create a new IT-related ticket](#13-create-ticket).
+* [See list of active tickets requiring resolution](#1-see-list-of-all-tickets-list-all-tickets).
+* [Check the status of a specific ticket](#2-ticket-status).
+* [Create a new ticket](#3-create-ticket).
 
 
 ## Connecting Freshservice ITSM with your bot
