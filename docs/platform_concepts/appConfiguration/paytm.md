@@ -41,14 +41,14 @@ The webhook URL serves as a callback endpoint where Paytm can send notifications
 
 
 1. Go to the connected Paytm integration and copy the webhook URL. 
-2. Add domain URL. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same. (r1 = MEA, r2 = Jakarta, r3 = Singapore, r4= USA, r5 = Europe)
+2. Add domain URL. Append the region of your AI agent to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your AI agent, you can refer the following list for the same. (r1 = MEA, r2 = Jakarta, r3 = Singapore, r4= USA, r5 = Europe)
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/paytm-webhook.png)
 
 
 3. Login to your Paytm account and navigate to the Webhook URL Configuration section and add the provided webhook URL.
 
-## Enable Paytm event for your bot
+## Enable Paytm event for your AI agent
 
 1. On the Cloud Platform go to Staging/Development environment.
 2. On the left navigation bar, click **Automation** > **Event** > **Integrations** and search for `Paytm Payment Status`.
@@ -85,15 +85,15 @@ The webhook URL serves as a callback endpoint where Paytm can send notifications
 }
 ```
 
-## Paytm actions through bot conversation
+## Paytm actions through AI agent conversation
 
-Once your Paytm account is successfully connected, your bot can perform the following actions:
+Once your Paytm account is successfully connected, your AI agent can perform the following actions:
 
 :::note
 If there are multiple accounts, you can select from which account you want to perform the action.
 :::
 
-### Generate Paytm payment link in bot conversation
+### Generate Paytm payment link in AI agent conversation
 
 1. Go to Development/Staging environment and navigate to **Automation** > **Build** > Select the flow where you want to add the Generate payment link node.
 
@@ -182,7 +182,7 @@ In case of success, you must extract the key **shortUrl** present in the **body*
 
 ```
 
-**To use this Integration Action Node in an app.yellow.ai bot**, refer to the below-mentioned example:
+**To use this Integration Action Node in an app.yellow.ai AI agent**, refer to the below-mentioned example:
 
 ```
  app.executeIntegrationAction({
@@ -285,7 +285,7 @@ In case of success, you need to extract the key **resultStatus**, and **resultMs
 
 ```
 
-**To use this Integration Action Node in an app.yellow.ai bot**, refer to the below-mentioned example:
+**To use this Integration Action Node in an app.yellow.ai AI agent**, refer to the below-mentioned example:
 
 ```js
 app.executeIntegrationAction({
@@ -405,7 +405,7 @@ In case of success, extract the key(s) and display to the end user an appropriat
 
 ```
 
-**To use this Integration Action Node in an app.yellow.ai bot**, refer to the below-mentioned example:
+**To use this Integration Action Node in an app.yellow.ai AI agent**, refer to the below-mentioned example:
 
 ```js
   app.executeIntegrationAction({

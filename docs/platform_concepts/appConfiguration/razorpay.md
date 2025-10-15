@@ -128,8 +128,7 @@ In the Automation flow builder, select the **Integrations** node and click **Raz
 
   | Field name | Sample value| Data type |Description |
   | -------- | -------- | -------- |----|
-  | Text     | Text     | Text     |
-  Amount|100|String|The amount that should be the payment link. This must be in the smallest unit of the currency. For example, if you want to receive a payment of ₹299.95, you must enter the value 29995.|
+  Amount|100|String| The amount that should be collected using payment link. This must be in the smallest unit of the currency. For example, if you want to receive a payment of ₹299.95, you must enter the value 29995.|
   |Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
   |Description|Test|String|A brief description of the payment link.|
   IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
@@ -335,7 +334,7 @@ app.executeIntegrationAction({
   }
 }
 ```
-To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
+To use this **Integration Action Node** in an app.yellow.ai AI agent, refer the following example:
 
 ```js
 app.executeIntegrationAction({
@@ -373,7 +372,7 @@ app.executeIntegrationAction({
 ```
 ### Intiate refund
 
-1. In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+1. In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that AI agent.
 
    <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
@@ -417,7 +416,7 @@ app.executeIntegrationAction({
   "speed_requested": "normal"
 }
 ```
-To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
+To use this **Integration Action Node** in an app.yellow.ai AI agent, refer the following example:
 
 ```js
 app.executeIntegrationAction({

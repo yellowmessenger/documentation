@@ -3,7 +3,7 @@ title : Airpay integration
 sidebar_label : Airpay
 ---
 
-Yellow.ai's integration with Airpay lets your users make payments through the bot. This integration enables your bot to generate payment links in the bot and share it with the bot users using which they can make payments.
+Yellow.ai's integration with Airpay lets your users make payments through the AI agent. This integration enables your AI agent to generate payment links in the AI agent and share it with the AI agent users using which they can make payments.
 
 ## Prerequisites
 
@@ -34,9 +34,9 @@ To connect your Airpay account with Yellow.ai, follow these steps:
 5. To connect another account, click **+ Add Account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
 
-## Generate Airpay payment link in your bot conversation
+## Generate Airpay payment link in your AI agent conversation
 
-To generate a payment link in the bot using Airpay, follow these steps:
+To generate a payment link in the AI agent using Airpay, follow these steps:
 
 1. In Automation **Build**, open the flow where you want to add the payment link.
 2. Navigate to the desired point in your conversation flow where you want to integrate with Airpay for payment links. Follow these steps:
@@ -45,7 +45,7 @@ To generate a payment link in the bot using Airpay, follow these steps:
 2. Drag the node connector to the desired location.
 3. From the Integrations menu, select Airpay.
 2. Navigate to the point where you want to add the flow and click Integration > 
-2. At whichever point of conversation you want the bot to access **Airpay** for payment link, inlcude the Airpay node. For that, drag the node connector, go to **Integrations** > **Airpay**.
+2. At whichever point of conversation you want the AI agent to access **Airpay** for payment link, inlcude the Airpay node. For that, drag the node connector, go to **Integrations** > **Airpay**.
 
    ![](https://i.imgur.com/tFUbjgE.png)
 
