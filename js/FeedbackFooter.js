@@ -71,7 +71,64 @@ if (typeof window !== 'undefined') {
         ...additionalData
       });
       
-      console.log('Feedback submitted:', { type, page: currentPage, ...additionalData });
+
+
+// Get current H1 title
+const pageTitle = document.querySelector('h1')?.innerText?.trim() || 'N/A';
+
+// Combine all feedback data into one object
+const feedbackPayload = {
+  type,
+  page: currentPage,
+  title: pageTitle,
+  ...additionalData
+};
+
+// Log it (for debugging)
+console.log('Feedback submitted:', feedbackPayload);
+
+// Prepare the API body
+const apiBody = {
+  from: "10097070117759084270201634115",  // you can make these dynamic if needed
+  to: "x1694470796328",
+  message: JSON.stringify({
+    event: {
+      code: "docs-feedback",
+      data: {
+        customerData: {
+          customdata: feedbackPayload
+        }
+      }
+    }
+  })
+};
+
+// Send feedback to Yellow.ai API
+fetch("https://r4.cloud.yellow.ai/integrations/yellowmessenger/receive", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(apiBody)
+})
+  .then(response => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.json();
+  })
+  .then(data => {
+    console.log("Feedback successfully sent to Yellow.ai API:", data);
+  })
+  .catch(error => {
+    console.error("Error sending feedback to API:", error);
+  });
+
+
+
+
+
+
+
+
       console.log('Storage key:', `article_feedback_${currentPage}`);
     },
     
@@ -141,9 +198,9 @@ if (typeof window !== 'undefined') {
     if (alreadySubmitted) {
       // Show thank you message if feedback was already submitted for this article
       wrapper.innerHTML = `
-        <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #374151); flex-wrap: wrap;">
-          <span class="feedback-question" style="font-weight: 500; color: var(--ifm-font-color-base, #111827); font-size: 1.25rem;">Was this article helpful?</span>
-          <div class="feedback-thanks" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-color-primary, #0066cc); font-weight: 500;">
+        <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--ifm-color-emphasis-300); color: var(--ifm-font-color-base); flex-wrap: wrap;">
+          <span class="feedback-question" style="font-weight: 500; color: var(--ifm-font-color-base); font-size: 1.25rem;">Was this article helpful?</span>
+          <div class="feedback-thanks" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-color-primary); font-weight: 500;">
             <span>✅</span>
             <span>Thank you for your feedback!</span>
           </div>
@@ -152,17 +209,17 @@ if (typeof window !== 'undefined') {
     } else {
       // Show normal feedback buttons for this article
       wrapper.innerHTML = `
-        <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #374151); flex-wrap: wrap;">
-          <span class="feedback-question" style="font-weight: 500; color: var(--ifm-font-color-base, #111827); font-size: 1.25rem;">Was this article helpful?</span>
+        <div class="feedback-container" style="display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--ifm-color-emphasis-300); color: var(--ifm-font-color-base); flex-wrap: wrap;">
+          <span class="feedback-question" style="font-weight: 500; color: var(--ifm-font-color-base); font-size: 1.25rem;">Was this article helpful?</span>
           <div class="feedback-options" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <button class="feedback-btn yes" id="liked_docs" onclick="thumb_up_flow()" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #111827); transition: all 0.2s ease; font-weight: 500; position: relative;">
+            <button class="feedback-btn yes" id="liked_docs" onclick="thumb_up_flow()" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--ifm-color-emphasis-300); color: var(--ifm-font-color-base); transition: all 0.2s ease; font-weight: 500; position: relative;">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s ease;" aria-hidden="true">
                 <path d="M7 10v12"></path>
                 <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path>
               </svg>
               Yes
             </button>
-            <button class="feedback-btn no" id="disliked_docs" onclick="thumb_down_flow()" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); color: var(--ifm-font-color-base, #111827); transition: all 0.2s ease; font-weight: 500; position: relative;">
+            <button class="feedback-btn no" id="disliked_docs" onclick="thumb_down_flow()" type="button" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; border-radius: 8px; padding: 0.45rem 1rem; background: transparent; cursor: pointer; border: 1px solid var(--ifm-color-emphasis-300); color: var(--ifm-font-color-base); transition: all 0.2s ease; font-weight: 500; position: relative;">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s ease;" aria-hidden="true">
                 <path d="M17 14V2"></path>
                 <path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z"></path>
@@ -187,7 +244,7 @@ if (typeof window !== 'undefined') {
 
     if (yesBtn) {
       yesBtn.addEventListener('mouseenter', () => {
-        yesBtn.style.background = 'var(--ifm-color-emphasis-100, rgba(0, 0, 0, 0.04))';
+        yesBtn.style.background = 'var(--ifm-color-emphasis-100)';
         yesBtn.style.transform = 'translateY(-1px)';
         const svg = yesBtn.querySelector('svg');
         if (svg) svg.style.transform = 'scale(1.1)';
@@ -202,7 +259,7 @@ if (typeof window !== 'undefined') {
 
     if (noBtn) {
       noBtn.addEventListener('mouseenter', () => {
-        noBtn.style.background = 'var(--ifm-color-emphasis-100, rgba(0, 0, 0, 0.04))';
+        noBtn.style.background = 'var(--ifm-color-emphasis-100)';
         noBtn.style.transform = 'translateY(-1px)';
         const svg = noBtn.querySelector('svg');
         if (svg) svg.style.transform = 'scale(1.1)';
@@ -252,7 +309,7 @@ if (typeof window !== 'undefined') {
     if (feedbackMessage) {
       feedbackMessage.innerHTML = `
         <div class="feedback-followup">
-          <h3 id="positive-feedback-title" style="color: var(--ifm-font-color-base, #111827); margin-bottom: 1rem;">Great! Any additional feedback?</h3>
+          <h3 id="positive-feedback-title" style="color: var(--ifm-font-color-base); margin-bottom: 1rem;">Great! Any additional feedback?</h3>
           <form class="feedback-form">
             <div class="feedback-text-group" style="margin-bottom: 1.5rem;">
               <textarea 
@@ -261,15 +318,15 @@ if (typeof window !== 'undefined') {
                 class="feedback-textarea"
                 aria-label="Additional feedback about what you liked"
                 aria-labelledby="positive-feedback-title"
-                style="width: 100%; min-height: 80px; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; font-size: 0.9rem; font-family: inherit; resize: vertical; background: var(--ifm-color-emphasis-100, #f9fafb); color: var(--ifm-font-color-base, #111827);"
+                style="width: 100%; min-height: 80px; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; font-size: 0.9rem; font-family: inherit; resize: vertical; background: var(--ifm-color-emphasis-100); color: var(--ifm-font-color-base);"
               ></textarea>
             </div>
             
             <div class="feedback-form-actions" style="display: flex; gap: 0.75rem;">
-              <button type="button" class="feedback-submit-btn" onclick="submitPositiveFeedback()" style="background: var(--ifm-color-primary, #0066cc); color: white; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
+              <button type="button" class="feedback-submit-btn" onclick="submitPositiveFeedback()" style="background: var(--ifm-color-primary); color: white; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
                 Submit feedback
               </button>
-              <button type="button" class="feedback-skip-btn" onclick="showFeedbackThanks('positive')" style="background: transparent; color: var(--ifm-font-color-base, #111827); border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
+              <button type="button" class="feedback-skip-btn" onclick="showFeedbackThanks('positive')" style="background: transparent; color: var(--ifm-font-color-base); border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
                 Skip
               </button>
             </div>
@@ -307,37 +364,37 @@ if (typeof window !== 'undefined') {
     if (feedbackMessage) {
       feedbackMessage.innerHTML = `
         <div class="feedback-followup">
-          <h3 id="negative-feedback-title" style="color: var(--ifm-font-color-base, #111827); margin-bottom: 1rem;">What could we improve?</h3>
+          <h3 id="negative-feedback-title" style="color: var(--ifm-font-color-base); margin-bottom: 1rem;">What could we improve?</h3>
           <form class="feedback-form">
             <div class="feedback-radio-group" role="radiogroup" aria-labelledby="negative-feedback-title" style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem;">
-              <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100, #f9fafb);">
+              <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100);">
                 <input type="radio" name="feedback-reason" value="unclear" class="feedback-radio" style="margin: 0;">
-                <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base, #111827);">
-                  <i class="ri-question-line" style="font-size: 1.2rem; color: var(--ifm-color-primary, #0066cc);"></i>
+                <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base);">
+                  <i class="ri-question-line" style="font-size: 1.2rem; color: var(--ifm-color-primary);"></i>
                   Unclear or confusing
                 </span>
               </label>
               
-              <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100, #f9fafb);">
+              <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100);">
                 <input type="radio" name="feedback-reason" value="incomplete" class="feedback-radio" style="margin: 0;">
-                <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base, #111827);">
-                  <i class="ri-file-list-line" style="font-size: 1.2rem; color: var(--ifm-color-primary, #0066cc);"></i>
+                <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base);">
+                  <i class="ri-file-list-line" style="font-size: 1.2rem; color: var(--ifm-color-primary);"></i>
                   Missing information
                 </span>
               </label>
               
-              <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100, #f9fafb);">
+              <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100);">
                 <input type="radio" name="feedback-reason" value="outdated" class="feedback-radio" style="margin: 0;">
-                <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base, #111827);">
-                  <i class="ri-time-line" style="font-size: 1.2rem; color: var(--ifm-color-primary, #0066cc);"></i>
+                <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base);">
+                  <i class="ri-time-line" style="font-size: 1.2rem; color: var(--ifm-color-primary);"></i>
                   Outdated content
                 </span>
               </label>
               
-              <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100, #f9fafb);">
+              <label class="feedback-radio-option" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--ifm-color-emphasis-100);">
                 <input type="radio" name="feedback-reason" value="other" class="feedback-radio" style="margin: 0;">
-                <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base, #111827);">
-                  <i class="ri-more-line" style="font-size: 1.2rem; color: var(--ifm-color-primary, #0066cc);"></i>
+                <span class="feedback-radio-label" style="display: flex; align-items: center; gap: 0.5rem; color: var(--ifm-font-color-base);">
+                  <i class="ri-more-line" style="font-size: 1.2rem; color: var(--ifm-color-primary);"></i>
                   Something else
                 </span>
               </label>
@@ -350,15 +407,15 @@ if (typeof window !== 'undefined') {
                 class="feedback-textarea"
                 aria-label="Additional feedback about what we can improve"
                 aria-labelledby="negative-feedback-title"
-                style="width: 100%; min-height: 80px; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; font-size: 0.9rem; font-family: inherit; resize: vertical; background: var(--ifm-color-emphasis-100, #f9fafb); color: var(--ifm-font-color-base, #111827);"
+                style="width: 100%; min-height: 80px; padding: 0.75rem; border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; font-size: 0.9rem; font-family: inherit; resize: vertical; background: var(--ifm-color-emphasis-100); color: var(--ifm-font-color-base);"
               ></textarea>
             </div>
             
             <div class="feedback-form-actions" style="display: flex; gap: 0.75rem;">
-              <button type="button" class="feedback-submit-btn" onclick="submitNegativeFeedback()" style="background: var(--ifm-color-primary, #0066cc); color: white; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
+              <button type="button" class="feedback-submit-btn" onclick="submitNegativeFeedback()" style="background: var(--ifm-color-primary); color: white; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
                 Submit feedback
               </button>
-              <button type="button" class="feedback-skip-btn" onclick="showFeedbackThanks('negative')" style="background: transparent; color: var(--ifm-font-color-base, #111827); border: 1px solid var(--ifm-color-emphasis-300, #e5e7eb); border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
+              <button type="button" class="feedback-skip-btn" onclick="showFeedbackThanks('negative')" style="background: transparent; color: var(--ifm-font-color-base); border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; font-weight: 500;">
                 Skip
               </button>
             </div>
@@ -511,7 +568,7 @@ if (typeof window !== 'undefined') {
 
     if (feedbackOptions) feedbackOptions.style.display = 'none';
     if (feedbackMessage) {
-      feedbackMessage.innerHTML = `<p class="feedback-thanks" style="font-weight: 500; color: var(--ifm-font-color-base, #111827);">${messages[type]}</p>`;
+      feedbackMessage.innerHTML = `<p class="feedback-thanks" style="font-weight: 500; color: var(--ifm-font-color-base);">${messages[type]}</p>`;
       feedbackMessage.style.display = 'block';
       
       // Add ARIA attributes for screen reader announcements
