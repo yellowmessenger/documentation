@@ -127,7 +127,7 @@ const WhatsNewUpdates = () => {
           <h3 className="updatesTitle" style={{
             fontSize: '1.5rem',
             fontWeight: '600',
-            color: 'var(--ifm-color-text-base, #1e293b)',
+            color: 'var(--ifm-color-text-base)',
             margin: '0 0 2rem 0'
           }}>What's New</h3>
           <p className="updatesSubtitle">
@@ -144,8 +144,8 @@ const WhatsNewUpdates = () => {
         }}>
           {displayUpdates.map((update, index) => (
             <div key={index} className="updateCard" style={{
-              background: 'var(--ifm-color-background-base, #ffffff)',
-              border: '1px solid var(--ifm-color-emphasis-200, #e2e8f0)',
+              background: 'var(--ifm-color-background-base)',
+              border: '1px solid var(--ifm-color-emphasis-200)',
               borderRadius: '12px',
               padding: '1.5rem',
               transition: 'all 0.3s ease',
@@ -158,12 +158,12 @@ const WhatsNewUpdates = () => {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-2px)';
               e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
-              e.currentTarget.style.borderColor = 'var(--ifm-color-primary, #3b82f6)';
+              e.currentTarget.style.borderColor = 'var(--ifm-color-primary)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
               e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
-              e.currentTarget.style.borderColor = 'var(--ifm-color-emphasis-200, #e2e8f0)';
+              e.currentTarget.style.borderColor = 'var(--ifm-color-emphasis-200)';
             }}
             onClick={() => window.location.href = update.link}
             >
@@ -189,14 +189,14 @@ const WhatsNewUpdates = () => {
                 <div>
                   <div style={{
                     fontSize: '0.875rem',
-                    color: 'var(--ifm-color-text-secondary, #64748b)',
+                    color: 'var(--ifm-color-text-secondary)',
                     fontWeight: '500'
                   }}>{update.date}</div>
                   <div style={{
                     fontSize: '0.75rem',
-                    color: 'var(--ifm-color-text-secondary, #94a3b8)',
+                    color: 'var(--ifm-color-text-secondary)',
                     fontFamily: 'ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace',
-                    background: 'var(--ifm-color-emphasis-100, #f1f5f9)',
+                    background: 'var(--ifm-color-emphasis-100)',
                     padding: '0.125rem 0.375rem',
                     borderRadius: '4px',
                     marginTop: '0.25rem',
@@ -220,12 +220,12 @@ const WhatsNewUpdates = () => {
                   fontSize: '1.1rem',
                   fontWeight: '600',
                   margin: '0 0 0.5rem 0',
-                  color: 'var(--ifm-color-text-base, #1e293b)',
+                  color: 'var(--ifm-color-text-base)',
                   lineHeight: '1.4'
                 }}>{update.title}</h4>
                 <p style={{
                   fontSize: '0.9rem',
-                  color: 'var(--ifm-color-text-secondary, #64748b)',
+                  color: 'var(--ifm-color-text-secondary)',
                   margin: '0 0 1rem 0',
                   lineHeight: '1.4'
                 }}>{update.description}</p>
@@ -241,7 +241,7 @@ const WhatsNewUpdates = () => {
                 <div style={{
                   fontSize: '0.75rem',
                   fontWeight: '500',
-                  color: 'var(--ifm-color-text-secondary, #94a3b8)',
+                  color: 'var(--ifm-color-text-secondary)',
                   textTransform: 'uppercase',
                   letterSpacing: '0.5px'
                 }}>{update.category}</div>
@@ -251,17 +251,17 @@ const WhatsNewUpdates = () => {
                   gap: '0.25rem',
                   fontSize: '0.875rem',
                   fontWeight: '500',
-                  color: 'var(--ifm-color-primary, #3b82f6)',
+                  color: 'var(--ifm-color-primary)',
                   textDecoration: 'none',
                   transition: 'all 0.2s ease',
                   cursor: 'pointer'
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.color = 'var(--ifm-color-primary-dark, #2563eb)';
+                  e.target.style.color = 'var(--ifm-color-primary-dark)';
                   e.target.style.textDecoration = 'underline';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.color = 'var(--ifm-color-primary, #3b82f6)';
+                  e.target.style.color = 'var(--ifm-color-primary)';
                   e.target.style.textDecoration = 'none';
                 }}
                 >
