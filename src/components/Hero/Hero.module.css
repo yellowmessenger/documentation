@@ -38,7 +38,7 @@
 .badgeText {
   font-size: 14px;
   font-weight: 500;
-  color: var(--ifm-color-text-base, #1e293b);
+  color: var(--ifm-color-text-base);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -49,7 +49,7 @@
   font-weight: 700;
   line-height: 1.1;
   margin: 0 0 1.5rem 0;
-  color: var(--ifm-color-text-base, #1e293b);
+  color: var(--ifm-color-text-base);
   animation: fadeInUp 0.6s ease-out 0.1s both;
 }
 
@@ -71,7 +71,7 @@
 .subtitle {
   font-size: 1.25rem;
   line-height: 1.6;
-  color: var(--ifm-color-text-secondary, #64748b);
+  color: var(--ifm-color-text-secondary);
   margin: 0 0 3rem 0;
   max-width: 600px;
   margin-left: auto;
@@ -97,10 +97,10 @@
   max-width: 500px;
   height: 56px;
   margin: 0 auto;
-  border: 2px solid var(--ifm-color-emphasis-200, #e2e8f0);
+  border: 2px solid var(--ifm-color-emphasis-200);
   border-radius: 14px;
-  background: var(--ifm-color-background-base, #ffffff);
-  color: var(--ifm-color-text-base, #1e293b);
+  background: var(--ifm-color-background-base);
+  color: var(--ifm-color-text-base);
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   font-size: 16px;
@@ -110,9 +110,9 @@
 }
 
 .searchContainer :global(.DocSearch-Button):hover {
-  border-color: var(--ifm-color-primary, #3b82f6);
+  border-color: var(--ifm-color-primary);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(59, 130, 246, 0.1);
-  background: var(--ifm-color-background-base, #ffffff);
+  background: var(--ifm-color-background-base);
 }
 
 .searchContainer :global(.DocSearch-Button-Container) {
@@ -124,13 +124,13 @@
 .searchContainer :global(.DocSearch-Search-Icon) {
   width: 20px;
   height: 20px;
-  color: var(--ifm-color-text-secondary, #64748b);
+  color: var(--ifm-color-text-secondary);
   margin-right: 12px;
 }
 
 .searchContainer :global(.DocSearch-Button-Placeholder) {
   font-size: 16px;
-  color: var(--ifm-color-text-secondary, #64748b);
+  color: var(--ifm-color-text-secondary);
   flex: 1;
   text-align: left;
 }
@@ -142,12 +142,12 @@
 }
 
 .searchContainer :global(.DocSearch-Button-Key) {
-  background: var(--ifm-color-emphasis-200, #f1f5f9);
-  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  background: var(--ifm-color-emphasis-200);
+  border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 6px;
   padding: 0.25rem 0.5rem;
   font-size: 12px;
-  color: var(--ifm-color-text-secondary, #64748b);
+  color: var(--ifm-color-text-secondary);
   font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
   margin-left: 0.25rem;
 }
@@ -196,7 +196,7 @@
 .quickStartTitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--ifm-color-text-base, #1e293b);
+  color: var(--ifm-color-text-base);
   margin: 0 0 2rem 0;
   animation: fadeInUp 0.6s ease-out 0.4s both;
 }
@@ -215,8 +215,8 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: var(--ifm-color-background-base, #ffffff);
-  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  background: var(--ifm-color-background-base);
+  border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
   text-decoration: none;
   color: inherit;
@@ -243,7 +243,7 @@
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  border-color: var(--ifm-color-primary, #3b82f6);
+  border-color: var(--ifm-color-primary);
   text-decoration: none;
   color: inherit;
 }
@@ -258,7 +258,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: var(--ifm-color-primary, #3b82f6);
+  background: var(--ifm-color-primary);
   color: white;
   border-radius: 50%;
   font-size: 14px;
@@ -281,13 +281,13 @@
   font-size: 1.1rem !important;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
-  color: var(--ifm-color-text-base, #1e293b);
+  color: var(--ifm-color-text-base);
   transition: all 0.2s ease;
 }
 
 .cardDescription {
   font-size: 0.9rem;
-  color: var(--ifm-color-text-secondary, #64748b);
+  color: var(--ifm-color-text-secondary);
   margin: 0;
   line-height: 1.4;
   transition: all 0.2s ease;
@@ -296,7 +296,7 @@
 .cardArrow {
   width: 20px;
   height: 20px;
-  stroke: var(--ifm-color-text-secondary, #64748b);
+  stroke: var(--ifm-color-text-secondary);
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
@@ -307,7 +307,7 @@
 
 .card:hover .cardArrow {
   transform: translate(2px, -2px);
-  stroke: var(--ifm-color-primary, #3b82f6);
+  stroke: var(--ifm-color-primary);
 }
 
 
@@ -324,8 +324,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  background: var(--ifm-color-emphasis-100, #f8fafc);
-  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
   border-bottom: none;
   border-radius: 12px 12px 0 0;
 }
@@ -339,7 +339,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--ifm-color-emphasis-400, #cbd5e1);
+  background: var(--ifm-color-emphasis-400);
 }
 
 .codeDot:first-child { background: #ef4444; }
@@ -349,12 +349,12 @@
 .codeTitle {
   font-size: 14px;
   font-weight: 500;
-  color: var(--ifm-color-text-secondary, #64748b);
+  color: var(--ifm-color-text-secondary);
 }
 
 .codeContent {
-  background: var(--ifm-color-emphasis-100, #f8fafc);
-  border: 1px solid var(--ifm-color-emphasis-300, #e2e8f0);
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
   border-top: none;
   border-radius: 0 0 12px 12px;
   overflow: hidden;
@@ -366,7 +366,7 @@
   font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
   font-size: 14px;
   line-height: 1.5;
-  color: var(--ifm-color-text-base, #1e293b);
+  color: var(--ifm-color-text-base);
   background: transparent;
   overflow-x: auto;
 }
