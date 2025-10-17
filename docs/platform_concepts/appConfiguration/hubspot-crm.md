@@ -27,29 +27,24 @@ Once the integration is established, you can perform the following HubSpot CRM a
 
 To connect your Hubspot CRM account with Yellow.ai, follow the these steps:
 
-1. On the left navigation bar, go to **Extensions** > **Integrations**.
+1. On the left navigation bar, go to **Extensions** > **Integrations** > **CRM** > **Hubspot**. Alternatively, you can use the Search box to find the integration app.
 
-   ![](https://i.imgur.com/JagYT5w.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/hub-spot.png)
 
+2. In **Give account name** give a unique name to your Hubspot CRM account and click **Connect**.
 
-2. Navigate to **CRM** > **Hubspot**. Alternatively, you can use the Search box to find the integration app.
-
-   ![](https://i.imgur.com/8lcnYez.png)
-
-3. In **Give account name** give a unique name to your Hubspot CRM account and click **Connect**.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/hub-spot.png)
 
 :::info
 1. In a two-tier environment, add account names in Development and use them in Live.
 2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
 
-4. Sign in to your **Hubspot CRM** account when prompted. From there, select the Hubspot CRM account you want to link with Yellow.ai and click **Choose Account** to authorize Yellow.ai to access **Hubspot CRM**.
+3. Sign in to your **Hubspot CRM** account when prompted. From there, select the Hubspot CRM account you want to link with Yellow.ai and click **Choose Account** to authorize Yellow.ai to access **Hubspot CRM**.
  
    <img src="https://i.imgur.com/8hvI81j.png" alt="drawing" width="60%"/>
 
-5. You can add up to 15 accounts. To add another Hubspot CRM account, click on **Add account** and follow the steps mentioned above.
-
-   ![](https://i.imgur.com/ncdA1T2.png)
+4. You can add up to 15 accounts. To add another Hubspot CRM account, click on **Add account** and follow the steps mentioned above.
 
 
 ## Enable events for Hubspot CRM actions
@@ -73,7 +68,7 @@ You need to add the webhook URL from the integration page in your Hubspot CRM ap
 
 1. Go to **Hubspot CRM integration** and copy the Webhook URL.
 
-   ![](https://i.imgur.com/Qmd7rxZ.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/hub-webhook.png)
 
 2. Go to your **Hubspot CRM** account and click the **Settings** icon.
 
@@ -109,18 +104,13 @@ You need to add the webhook URL from the integration page in your Hubspot CRM ap
 
  To activate an event and use it in your flow,
 
-1. Go to **Event** and click **Integrations**.
+1. Go to **Event** > **Integrations** and search for Hubspot events and click **Activate** next to the respective event.
 
-  ![](https://i.imgur.com/gBBZZ68.png)
-
-
-2. Search for Hubspot events and click **Activate** next to the respective event.
-
-   ![](https://i.imgur.com/BHmLQQk.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/hub-event.png)
 
 3. Go to a flow and include that event in the Start node and [build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) to carry out the action when that event occurs.
 
-   ![](https://i.imgur.com/br6ofma.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/hub-event-trigger.png)
     
 
 ## Manage Hubspot CRM via Yellow.ai bot
@@ -128,13 +118,14 @@ You need to add the webhook URL from the integration page in your Hubspot CRM ap
 To manage your Hubspot CRM account through yellow.ai bot, follow these steps:
 
 1. Go to **Automation** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
+
 2. In whichever point you want the bot to access Hubspot CRM, inlcude the Hubspot CRM node. For that, drag the node connector, go to **Integrations** > **Hubspot**.
 
-   ![](https://i.imgur.com/KUo5DgA.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/hub-node.png)
 
 3. Configure the **Hubspot CRM** node based on the descriptions provided in the following:
 
-   <img src="https://i.imgur.com/vQVD6rB.png" alt="drawing" width="60%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/create-contact.png" alt="drawing" width="60%"/>
 
 * **Account name:** Choose the Hubspot CRM account.
 * **Action:** Choose the [action](#supported-hubspot-crm-actions-in-yellowai) to be performed.

@@ -134,6 +134,13 @@ A well-written prompt keeps the conversation clear and natural. Key elements inc
 * **Context**: Give users enough context to understand why you are asking something. This makes the conversation feel logical and purposeful.
 Example: "To check your order status, I will need your order ID".
 
+#### Reorder prompts
+
+Once you have created multiple prompts in an AI agent, you can easily rearrange them by simply dragging and dropping them in the desired order based on your use case. This feature helps you organize the conversation flow more efficiently and maintain a logical sequence in your AI agent’s conversation.
+
+![Reorder prompts1](/files/reorderprompts-1.gif)
+
+
 **Best practices**
 
 While writing the prompts, consider the following best practices:
@@ -144,7 +151,7 @@ While writing the prompts, consider the following best practices:
 
 Below is a sample screenshot showing how prompts are written:
 
-  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/prompt-sample.png" alt="drawing" width="90%"/> 
+  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/prompt-example.png" alt="drawing" width="90%"/> 
 
 ---
 

@@ -33,24 +33,20 @@ To connect your Epic FHIR account with Yellow.ai, follow the these steps:
    ![](https://i.imgur.com/MGxkK8J.png)
 
 
-2. On the left navigation bar, go to **Extensions** > **Integrations**.
+2. On the left navigation bar, go to **Extensions** > **Integrations** > **CRM** > **EPIC FHIR**. Alternatively, you can use the Search box to find the integration app.
 
-   ![](https://i.imgur.com/JagYT5w.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/epic.png)
 
-3. Navigate to **CRM** > **EPIC FHIR**. Alternatively, you can use the Search box to find the integration app.
+3. Enter the **Client ID** and **Client Secret** and click **Connect to EPIC FHIR**.
 
-   ![](https://i.imgur.com/nnlaQQJ.png)
-
-4. Enter the **Client ID** and **Client Secret** and click **Connect to EPIC FHIR**.
-
-   ![](https://i.imgur.com/uZL82XT.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/epic-connect.png)
    
 :::info
 1. In a two-tier environment, add account names in Development and use them in Live.
 2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
 
-5. You can add up to 15 accounts. To add another Epic FHIR account, click on **Add account** and follow the steps mentioned above. 
+4. You can add up to 15 accounts. To add another Epic FHIR account, click on **Add account** and follow the steps mentioned above. 
 
 
 :::note 
@@ -65,7 +61,7 @@ This integration lets your users access patient's medical records and fetch/book
 1. Go to **Automation** and build a flow based on how you want the bot to take the user through the process.
 2. Include the integration node at the point in the flow where you want to let the user access Epic FHIR info. To accomplish this, navigate to **Integrations** and select **EPIC FHIR**.
 
-     ![](https://i.imgur.com/HlhkU2S.png)
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/edpic-node.pn" alt="drawing" width="5%"/>
 
 
 3. Once the node gets added, click the node, choose the EPIC FHIR account for that action and [choose the action](#supported-epic-fhir-actions-with-yellowai) you want to carry out.
