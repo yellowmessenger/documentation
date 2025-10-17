@@ -2,6 +2,8 @@
 title: Define Super agent    
 sidebar_label: Define Super agent 
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 The Super agent persona sets the tone, personality, and behavior of your agent—shaping how it communicates with users throughout the conversation. A well-defined persona ensures interactions feel consistent, natural, and aligned with your brand voice.
 
@@ -78,30 +80,34 @@ You can choose to:
     * Instruct super agent: 
     * Trigger welcome flow
     * Send message
-  
-      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/welcome.png" alt="drawing" width="90%"/>
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/welcome.png" alt="drawing" width="90%"/>
 
-   #### Option 1: **Instruct superagent**
-   * Write a custom welcome message.
+<Tabs class="tabs-schema">
+
+<TabItem value="instructSuperAgent" label="Instruct superagent" default>
+
+* Write a custom welcome message.
    * Use variables to personalize the greeting.
    * Enable **Show suggestions with welcome message** to display quick replies based on role and persona.
 
-     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instruct-agent.png" alt="drawing" width="80%"/>
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instruct-agent.png" alt="drawing" width="60%"/>
+</TabItem>
 
-   #### Option 2: **Trigger welcome flow**
-    * Select an existing or predefined conversation flow to initiate the chat.
+<TabItem value="triggerWelcomeFlow" label="Trigger welcome flow">
+* Select an existing or predefined conversation flow to initiate the chat.
+      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/select-flow.png" alt="drawing" width="60%"/>
+</TabItem>
 
-      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/select-flow.png" alt="drawing" width="80%"/>
-
-
-   #### Option 3: **Send a message**
-   * Provide a simple greeting message. 
+<TabItem value="sendAMessage" label="Send a message">
+* Provide a simple greeting message. 
 *Example: Hey, I'm Mia from Yellow Banking. How can I assist with your banking needs today?*
    * You can also enable **Show suggestions with welcome message** toggle to add quick replies.
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/send-message.png" alt="drawing" width="60%"/>
+</TabItem>
 
-     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/send-message.png" alt="drawing" width="80%"/>
-     
-#### Add rules to follow during conversation
+</Tabs>
+    
+### Add rules to follow during conversation
 
 You can define conversation rules to guide how the AI agent responds during conversations. These rules ensure consistent interactions and help control how the agent should behave in different situations.
 
@@ -161,7 +167,9 @@ Safeguards every AI interaction by configuring filters that ensure the AI agent 
 
     ![](https://cdn.yellowmessenger.com/assets/yellow-docs/AIsafety.png)
 
-### How to handle unanswered queries?
+### Fallback    
+
+#### How to handle unanswered queries?
 
 There may be times when the AI agent cannot answer a query due to various limitations (example, no knowledge base match, API failure, or validation error). You can configure fallback behaviors for such cases.
 
@@ -197,7 +205,9 @@ When the AI agent is unable to resolve user queries or requires human assistance
 
 Here are a few sample examples showing how Agent persona helps improve user experience in different industries:
 
-#### ✈️ **Travel Industry**
+<Tabs class="tabs-schema">
+
+<TabItem value="travelIndustry" label="Travel Industry" default>
 
 **Example: “Yellow Travels” – Friendly, Insightful, Service-Oriented**
 A travel platform defines its AI agent with a warm, conversational tone and a helpful demeanor.
@@ -206,10 +216,9 @@ A travel platform defines its AI agent with a warm, conversational tone and a he
 * The agent doesn’t just answer “How can I help?”—it suggests trending destinations based on the season and user’s previous searches.
 * During cancellations, it avoids robotic phrasing like *"Refund request submitted"* and instead says, *"I've submitted your cancellation—your refund should be processed in 5–7 days. I’ll keep you posted!"*
 * Result: Higher CSAT and reduced customer drop-offs during peak season.
+</TabItem>
 
-
-####  🏥 **Healthcare Support**
-
+<TabItem value="healthCareSupport" label="Healthcare Support">
 **Example: “CareBot” – Calm, Professional, Empathetic**
 A digital health provider creates a bot with a carefully crafted persona: neutral, factual, but emotionally aware.
 **Impact:**
@@ -217,10 +226,9 @@ A digital health provider creates a bot with a carefully crafted persona: neutra
 * It avoids alarming language when discussing symptoms or test results, using gentle reassurances like *"It’s best to consult a doctor for a full diagnosis."*
 * During mental health assessments, the tone is calm and respectful, building patient trust.
 * Result: Increased usage of digital triage and better patient retention in self-service flows.
+</TabItem>
 
-
-####  🛒 **E-commerce**
-
+<TabItem value="e-Commerce" label="E-commerce">
 **Example: “ModaBot” – Trendy, Assertive, Fast-Paced**
 A fashion brand’s bot uses short, stylish responses to match the brand tone.
 **Impact:**
@@ -228,10 +236,9 @@ A fashion brand’s bot uses short, stylish responses to match the brand tone.
 * Instead of saying *"Your item is out of stock,"* it says, *"Oops—just missed it! Want me to ping you when it’s back?"*
 * The bot uses emojis and expressive copy, fitting with the brand’s Gen Z audience.
 * Result: More upsells via personalized suggestions and stronger brand loyalty in DMs.
+</TabItem>
 
-
-####  💼 **Financial Services**
-
+<TabItem value="financialServices" label="Financial Services">
 **Example: “SecureBank Assistant” – Formal, Reliable, Minimalist**
 The bank defines a no-nonsense, security-first persona to reduce ambiguity in financial interactions.
 **Impact:**
@@ -239,6 +246,9 @@ The bank defines a no-nonsense, security-first persona to reduce ambiguity in fi
 * The agent never uses jokes or casual metaphors—it sticks to precise, timestamped responses for actions like balance checks or transaction alerts.
 * This persona builds user confidence, especially when handling tasks like card blocking or dispute submissions.
 * Result: Lower escalation rates and faster completion of key flows without human intervention.
+</TabItem>
+
+</Tabs>
 
 <!-- In the Agent section, you can configure the bot's persona, how the bot will present itself to users. This configuration focuses on defining the identity, tone, and behavior of the bot, rather than the specific conversations it will have. The bot persona settings ensure that your bot provides a consistent and human-like experience in every interaction.
 
