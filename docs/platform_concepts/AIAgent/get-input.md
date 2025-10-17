@@ -205,6 +205,16 @@ It is useful in scenarios where user options need to be customized for example:
 * Listing support ticket summaries
 * Offering multilingual responses based on user preferences
 
+**Supported Dynamic rich media:**
+
+* Quick replies
+* WhatsApp List
+* Cards
+* File
+* Image
+* Video
+* Whatsapp carousel
+
 
 The table below describes the fields available in the Dynamic rich media action:
 

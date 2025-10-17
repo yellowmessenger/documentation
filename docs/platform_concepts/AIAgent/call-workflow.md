@@ -3,7 +3,7 @@ title: Call workflow
 sidebar_label: Call workflow
 ---
 
-A workflow is a predefined action or process your AI agent can trigger during a conversation. Use this option to execute tasks like retrieving booking details, processing payments, verifying user information, or updating records. You can pass user inputs as variables to the workflow and capture the output for use in later steps.
+A workflow is a predefined action or process your AI agent can trigger during a conversation to perform tasks such as fetching booking details, processing payments, verifying user data, or updating records. Use the Call Workflow action to execute these tasks, pass user inputs as variables, and capture the workflow’s output for use in later steps. You can reuse the same workflow across multiple agents or conversations.
 
 The table below describes the fields available in the Workflow action:
 
