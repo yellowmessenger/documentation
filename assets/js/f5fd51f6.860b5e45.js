@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbenthos=self.webpackChunkbenthos||[]).push([[6092],{49022:(e,t,s)=>{s.r(t),s.d(t,{default:()=>a});s(96540),s(86802),s(28774);var n=s(56347),r=s(74848);const a=()=>(0,r.jsx)(n.rd,{to:"/docs/enterprise-integration/getting-started"})}}]);
