@@ -84,7 +84,7 @@ Follow these steps to generate the keys for encryption:
 * Generate private key:
 
 ```
-openssl genpkey -algorithm RSA -out private_key.pem
+openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -out private_key.pem
 ```
 
 * Extract public key from private key:

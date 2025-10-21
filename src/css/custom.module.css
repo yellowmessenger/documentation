@@ -332,43 +332,101 @@ pre code {
   font-weight: 600;
 }
 
+/* Tip admonitions */
+.theme-admonition.theme-admonition-tip,
 .admonition-tip {
-  background: #F0FDF4;
-  border-color: #A7F3D0;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%) !important;
+  border-color: #22c55e !important;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1) !important;
 }
+.theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb,
 .admonition-tip .admonition-heading h5 {
-  color: #15803D;
+  color: #15803d !important;
 }
 
+/* Info admonitions */
+.theme-admonition.theme-admonition-info,
 .admonition-info {
-  background: #EFF6FF;
-  border-color: #BFDBFE;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%) !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1) !important;
 }
+.theme-admonition.theme-admonition-info .admonitionHeading_Gvgb,
 .admonition-info .admonition-heading h5 {
-  color: #1E40AF;
+  color: #1d4ed8 !important;
 }
 
+/* Note admonitions */
+.theme-admonition.theme-admonition-note,
 .admonition-note {
-  background: #FFFBEB;
-  border-color: #FDE68A;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2) !important;
 }
+.theme-admonition.theme-admonition-note .admonitionHeading_Gvgb,
 .admonition-note .admonition-heading h5 {
-  color: #B45309;
+  color: #b45309 !important;
 }
 
+/* Warning admonitions */
+.theme-admonition.theme-admonition-warning,
+.admonition-warning {
+  background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%) !important;
+  border-color: #ef4444 !important;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.1) !important;
+}
+.theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb,
+.admonition-warning .admonition-heading h5 {
+  color: #dc2626 !important;
+}
+
+/* Dark mode admonitions - Aperture style */
+html[data-theme="dark"] .theme-admonition,
+html[data-theme="dark"] .admonition,
+html[data-theme="dark"] .alert {
+  background-color: rgb(57 103 120) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Dark mode tip admonitions */
+html[data-theme="dark"] .theme-admonition.theme-admonition-tip,
 html[data-theme="dark"] .admonition-tip {
-  border-color: #15803D;
+  border-left: 4px solid #10b981 !important;
 }
-html[data-theme="dark"] .admonition-info {
-  border-color: #1E40AF;
-}
-html[data-theme="dark"] .admonition-note {
-  background-color: rgba(247, 144, 9, 0.1);
-  border-color: var(--ifm-color-warning);
+html[data-theme="dark"] .theme-admonition.theme-admonition-tip .admonitionHeading_Gvgb,
+html[data-theme="dark"] .admonition-tip .admonition-heading h5 {
+  color: #34d399 !important;
 }
 
+/* Dark mode info admonitions */
+html[data-theme="dark"] .theme-admonition.theme-admonition-info,
+html[data-theme="dark"] .admonition-info {
+  border-left: 4px solid #3b82f6 !important;
+}
+html[data-theme="dark"] .theme-admonition.theme-admonition-info .admonitionHeading_Gvgb,
+html[data-theme="dark"] .admonition-info .admonition-heading h5 {
+  color: #60a5fa !important;
+}
+
+/* Dark mode note admonitions */
+html[data-theme="dark"] .theme-admonition.theme-admonition-note,
+html[data-theme="dark"] .admonition-note {
+  border-left: 4px solid #f59e0b !important;
+}
+html[data-theme="dark"] .theme-admonition.theme-admonition-note .admonitionHeading_Gvgb,
 html[data-theme="dark"] .admonition-note .admonition-heading h5 {
-    color: #FCD34D;
+  color: #fbbf24 !important;
+}
+
+/* Dark mode warning admonitions */
+html[data-theme="dark"] .theme-admonition.theme-admonition-warning,
+html[data-theme="dark"] .admonition-warning {
+  border-left: 4px solid #ef4444 !important;
+}
+html[data-theme="dark"] .theme-admonition.theme-admonition-warning .admonitionHeading_Gvgb,
+html[data-theme="dark"] .admonition-warning .admonition-heading h5 {
+  color: #f87171 !important;
 }
 
 /* Style for links inside any admonition */
@@ -380,6 +438,21 @@ html[data-theme="dark"] .admonition-note .admonition-heading h5 {
 
 [class*="admonitionContent"] a:hover {
   color: var(--ifm-link-hover-color) !important;
+}
+
+/* Dark mode text color for admonition content */
+html[data-theme="dark"] .theme-admonition,
+html[data-theme="dark"] .admonition {
+  color: var(--ifm-color-text-base) !important;
+}
+
+html[data-theme="dark"] .theme-admonition p,
+html[data-theme="dark"] .theme-admonition li,
+html[data-theme="dark"] .theme-admonition div,
+html[data-theme="dark"] .admonition p,
+html[data-theme="dark"] .admonition li,
+html[data-theme="dark"] .admonition div {
+  color: var(--ifm-color-text-base) !important;
 }
 
 /* ==========================================================================

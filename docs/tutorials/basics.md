@@ -79,7 +79,7 @@ To access **all resources** including bot building courses, virtual classroom se
 <div class="tutorial-video-card">
   <div class="video-card-header">
     <div class="video-embed-container">
-      <iframe src="https://www.youtube.com/embed/69LmMc4QwME" title="Platform overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://youtu.be/0i0jbeD0tog" title="Platform overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
   <div class="video-card-body">
