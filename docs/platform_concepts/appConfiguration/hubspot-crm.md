@@ -113,7 +113,7 @@ You need to add the webhook URL from the integration page in your Hubspot CRM ap
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/hub-event-trigger.png)
     
 
-## Manage Hubspot CRM via Yellow.ai bot
+## Manage Hubspot CRM via Yellow.ai AI agent
 
 To manage your Hubspot CRM account through yellow.ai bot, follow these steps:
 
@@ -121,7 +121,7 @@ To manage your Hubspot CRM account through yellow.ai bot, follow these steps:
 
 2. In whichever point you want the bot to access Hubspot CRM, inlcude the Hubspot CRM node. For that, drag the node connector, go to **Integrations** > **Hubspot**.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/hub-node.png)
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/hub-node.png" alt="drawing" width="60%"/>
 
 3. Configure the **Hubspot CRM** node based on the descriptions provided in the following:
 
@@ -165,6 +165,9 @@ For example, if you receive the following response, you can use this syntax ``` 
   }
 }
 ```
+
+-----
+
 
 
 
