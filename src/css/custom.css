@@ -853,6 +853,36 @@ html[data-theme='dark'] .theme-doc-sidebar-item-link-level-5 .menu__link:hover {
   min-width: 200px;
 }
 
+/* Ensure consistent button styling in CTA sections - Both buttons same blue color */
+.cta-buttons .button--primary,
+.cta-buttons .button--secondary {
+  background-color: white !important; /* White background */
+  border-color: var(--ifm-color-primary, #3b82f6) !important; /* Blue border */
+  color: var(--ifm-color-primary, #3b82f6) !important; /* Blue text */
+}
+
+.cta-buttons .button--primary:hover,
+.cta-buttons .button--secondary:hover {
+  background-color: var(--ifm-color-primary, #3b82f6) !important; /* Blue background on hover */
+  border-color: var(--ifm-color-primary, #3b82f6) !important;
+  color: white !important; /* White text on hover */
+}
+
+/* Dark mode support for CTA buttons - Both buttons same blue color */
+html[data-theme='dark'] .cta-buttons .button--primary,
+html[data-theme='dark'] .cta-buttons .button--secondary {
+  background-color: var(--ifm-background-color, #1a1a1a) !important; /* Dark background */
+  border-color: var(--ifm-color-primary, #3b82f6) !important; /* Blue border */
+  color: var(--ifm-color-primary, #3b82f6) !important; /* Blue text */
+}
+
+html[data-theme='dark'] .cta-buttons .button--primary:hover,
+html[data-theme='dark'] .cta-buttons .button--secondary:hover {
+  background-color: var(--ifm-color-primary, #3b82f6) !important; /* Blue background on hover */
+  border-color: var(--ifm-color-primary, #3b82f6) !important;
+  color: white !important; /* White text on hover */
+}
+
 /* Learning Path Cards */
 .learning-path {
   display: grid;

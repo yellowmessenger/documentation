@@ -32,17 +32,22 @@ To access **all resources** including bot building courses, virtual classroom se
     <span class="progress-number">👥</span>
     <span class="progress-label">Add Collaborators</span>
   </div>
+ 
   <div class="progress-step">
+    <span class="progress-number">🤖</span>
+    <span class="progress-label">Create AI Agent</span>
+  </div>
+   <div class="progress-step">
     <span class="progress-number">🎨</span>
-    <span class="progress-label">Customize Bot</span>
+    <span class="progress-label">Customize Agent</span>
   </div>
 </div>
 
 ---
 
-## 🚀 Video Tutorial Cards
+## 🎬 Interactive Video Tutorials
 
-<div class="video-cards-grid">
+### 1. Sign up to Yellow.ai and create your first bot
 
 <div class="tutorial-video-card">
   <div class="video-card-header">
@@ -55,7 +60,6 @@ To access **all resources** including bot building courses, virtual classroom se
       <span class="difficulty-badge beginner">Beginner</span>
       <span class="category-tag">Getting Started</span>
     </div>
-    <h3 class="video-title">1. Sign up to Yellow.ai and create your first bot</h3>
     <p class="video-description">Join Yellow.ai to unlock the power of building and customizing your own bot. With an easy sign-up process, you'll be able to dive right in and start creating your bot from scratch.</p>
     
     <div class="video-topics">
@@ -76,18 +80,20 @@ To access **all resources** including bot building courses, virtual classroom se
   </div>
 </div>
 
+### 2. Platform overview
+
 <div class="tutorial-video-card">
   <div class="video-card-header">
     <div class="video-embed-container">
-      <iframe src="https://youtu.be/0i0jbeD0tog" title="Platform overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0i0jbeD0tog?si=BrtZU5zrt-0yZr_P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
     </div>
+    
   </div>
   <div class="video-card-body">
     <div class="video-meta">
       <span class="difficulty-badge beginner">Beginner</span>
       <span class="category-tag">Platform Tour</span>
     </div>
-    <h3 class="video-title">2. Platform overview</h3>
     <p class="video-description">Welcome to our comprehensive platform overview! This video takes you on a complete tour of Yellow.ai's powerful platform, showcasing its key features and functionalities.</p>
     
     <div class="video-topics">
@@ -109,10 +115,12 @@ To access **all resources** including bot building courses, virtual classroom se
   </div>
 </div>
 
+### 3. Add bot collaborators with role-based access
+
 <div class="tutorial-video-card">
   <div class="video-card-header">
     <div class="video-embed-container">
-      <iframe src="https://www.youtube.com/embed/mWGuhIOE4xI" title="Bot collaborators" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xMgABZkoMOE?si=woWZg4hml4JwDa0z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
   <div class="video-card-body">
@@ -120,7 +128,6 @@ To access **all resources** including bot building courses, virtual classroom se
       <span class="difficulty-badge intermediate">Intermediate</span>
       <span class="category-tag">Team Management</span>
     </div>
-    <h3 class="video-title">3. Add bot collaborators with role-based access</h3>
     <p class="video-description">Discover the process of granting role-based access to developers and other users within the platform. This essential tutorial covers team collaboration features and security best practices.</p>
     
     <div class="video-topics">
@@ -141,6 +148,83 @@ To access **all resources** including bot building courses, virtual classroom se
   </div>
 </div>
 
+
+
+### 4. Create Agentic AI - Define Super Agent
+
+<div class="tutorial-video-card">
+  <div class="video-card-header">
+    <div class="video-embed-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/W_fu0J6jUyo?si=5RaHElcmATcdFxBV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="video-card-body">
+    <div class="video-meta">
+      <span class="difficulty-badge intermediate">Intermediate</span>
+      <span class="category-tag">AI Agent Development</span>
+    </div>
+    <p class="video-description">Learn how to create intelligent AI agents that can understand context, make decisions, and provide sophisticated responses. This tutorial covers the foundational concepts of building agentic AI systems with Yellow.ai's platform.</p>
+    
+    <div class="video-topics">
+      <h4>What you'll learn:</h4>
+      <ul>
+        <li>🤖 Understanding agentic AI concepts</li>
+        <li>🎯 Defining agent personas and capabilities</li>
+        <li>🧠 Configuring AI agent behavior</li>
+        <li>⚙️ Setting up agent decision-making logic</li>
+      </ul>
+    </div>
+    
+    <div class="video-actions">
+      <a href="https://www.youtube.com/watch?v=W_fu0J6jUyo" target="_blank" class="btn-watch-video">
+        🎬 Watch on YouTube
+      </a>
+      <a href="/docs/platform_concepts/AIAgent/agentpersona" class="btn-read-guide">
+        📖 Read Documentation
+      </a>
+    </div>
+  </div>
+</div>
+
+### 5. Create Agent AI - Create Agent
+
+<div class="tutorial-video-card">
+  <div class="video-card-header">
+    <div class="video-embed-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_f1dTcEwryo?si=wOQtUqSyLE5Z2ut3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="video-card-body">
+    <div class="video-meta">
+      <span class="difficulty-badge advanced">Intermediate</span>
+      <span class="category-tag">AI Agent Development</span>
+    </div>
+    <p class="video-description">Learn how to build and deploy task-specific AI agents that handle defined use cases like booking flights, tracking orders, or processing returns. This tutorial covers creating agents that focus on task execution, configuring actions for conversation guidance, and implementing backend operations.</p>
+    
+    <div class="video-topics">
+      <h4>What you'll master:</h4>
+      <ul>
+        <li>🎯 Building task-specific agents for defined use cases</li>
+        <li>⚙️ Configuring agent actions and conversation flows</li>
+        <li>🔄 Setting up workflow triggers and backend operations</li>
+        <li>💾 Managing data storage and context between agents</li>
+        <li>🚀 Deploying agents within the AI agent ecosystem</li>
+      </ul>
+    </div>
+    
+    <div class="video-actions">
+      <a href="https://www.youtube.com/watch?v=_f1dTcEwryo" target="_blank" class="btn-watch-video">
+        🎬 Watch on YouTube
+      </a>
+      <a href="/docs/platform_concepts/AIAgent/agent" class="btn-read-guide">
+        📖 Read Documentation
+      </a>
+    </div>
+  </div>
+</div>
+
+### 6. Customize the Look and Feel of the Chatbot
+
 <div class="tutorial-video-card">
   <div class="video-card-header">
     <div class="video-embed-container">
@@ -152,7 +236,6 @@ To access **all resources** including bot building courses, virtual classroom se
       <span class="difficulty-badge intermediate">Intermediate</span>
       <span class="category-tag">Customization</span>
     </div>
-    <h3 class="video-title">4. Customizing the Look and Feel of the Chatbot</h3>
     <p class="video-description">Discover the art of crafting the perfect visual experience for your chatbot. This comprehensive tutorial walks you through the complete process of managing your chatbot's appearance.</p>
     
     <div class="video-topics">
@@ -173,30 +256,32 @@ To access **all resources** including bot building courses, virtual classroom se
   </div>
 </div>
 
-</div>
-
-
----
-
-## 🚀 Ready to Start Building?
-
-<div class="cta-section">
-  <h3>Take Your Learning Further</h3>
-  <p>Ready to put your knowledge into practice? Start building your first bot today with Yellow.ai's intuitive platform.</p>
-  
-  <div class="cta-buttons">
-    <a href="https://cloud.yellow.ai/auth/signup?utm_source=SupportDocs&utm_medium=tutorials&utm_campaign=getting_started" class="button button--primary button--lg" target="_blank">
-      🚀 Try Yellow.ai for Free
-    </a>
-    <a href="/docs/cookbooks/studio/build-bot" class="button button--secondary button--lg">
-      📖 Follow Step-by-Step Guide
-    </a>
-  </div>
-</div>
 
 ---
 
 ## 📚 Continue Your Learning Journey
+
+<div class="cta-section">
+  <h3>Build Beyond the Basics</h3>
+  <p>
+    You’ve completed the video tutorials — now explore deeper capabilities of Yellow.ai’s platform.  
+    Learn how to extend your AI Agent with integrations, workflows, and advanced configurations.
+  </p>
+  
+  <div class="cta-buttons">
+    <a href="/docs/platform_concepts/get_started/createfirstbot" class="button button--secondary button--lg">
+      📖 Explore Step-by-Step Guides
+    </a>
+    <a href="https://cloud.yellow.ai/auth/signup?utm_source=SupportDocs&utm_medium=tutorials&utm_campaign=getting_started" class="button button--primary button--lg" target="_blank">
+      🚀 Create a Free Account
+    </a>
+  </div>
+</div>
+
+
+---
+
+## 🛤️ Explore Advanced Learning Paths
 
 <div class="learning-path">
   <div class="learning-card">
@@ -229,20 +314,6 @@ In this video, we will provide you with a glimpse of our intuitive platform inte
 
 -->
 
-### Add bot collaborators with role-based access
-
-Discover the process of granting role-based access to developers and other users within the platform in this informative video. Role-based access ensures that each user is provided with the appropriate level of permissions and privileges, aligning with their responsibilities and tasks.
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mWGuhIOE4xI?si=Nk3OqkaKi4pvThPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
-
-### Customizing the Look and Feel of the Chatbot 
-
-Discover the art of crafting the perfect visual experience for your chatbot with our comprehensive tutorial. In this video, we'll walk you through the process of managing the chatbot's look and feel.
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q5uKVYSeKh4?si=2ImndgOghLJEK100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 
 <!--
