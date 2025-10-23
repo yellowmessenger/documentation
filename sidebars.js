@@ -226,20 +226,6 @@ module.exports = {
       ]
     },
 
-    // Enterprise Integration section
-    {
-      type: "category",
-      label: "Enterprise Integration",
-      link: {type: 'doc', id: 'enterprise-integration/getting-started'},
-      collapsed: true,
-      items: [
-        "enterprise-integration/getting-started",
-        "enterprise-integration/authentication",
-        "enterprise-integration/webhooks",
-        "enterprise-integration/api-reference",
-        "enterprise-integration/crm-integration",
-      ]
-    },
 
     // Studio starts here  
     {
@@ -1428,15 +1414,6 @@ module.exports = {
 
   ], 
   // Docs tab ends here
-
-
-
-  // Enterprise Integrations tab starts here
-  enterprise_integrations: [
-    "enterprise-integration/getting-started",
-    "enterprise-integration/authentication",
-
-  ],
 
   // Product updates/ What's new tab starts here
   updates: [

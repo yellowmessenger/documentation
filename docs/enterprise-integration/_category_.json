@@ -1,0 +1,8 @@
+{
+  "label": "Enterprise Integration",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprehensive guides for integrating Yellow.ai's Agentic AI platform with your enterprise systems, APIs, and communication channels."
+  }
+}
