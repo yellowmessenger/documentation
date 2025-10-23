@@ -824,9 +824,9 @@
 .updateMeta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   margin-bottom: 15px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 /* Enhanced meta styling for timeline */
@@ -854,12 +854,14 @@
 }
 
 .updateBadge {
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 10px;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .updateBadge.new {
@@ -893,6 +895,8 @@
   color: var(--ifm-color-content-secondary);
   font-size: 0.85rem;
   margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .updateTitle {
