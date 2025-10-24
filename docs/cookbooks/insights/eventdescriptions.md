@@ -103,6 +103,7 @@ sidebar_label : Default DB table descriptions
 | FIRST_RESPONSE_DURATION_IN_SECONDS        | Duration between First Response Time (FRT) and assigned time (in seconds). |
 | FIRST_RESPONSE_TIME_CREATION_IN_SECONDS   | Duration between FRT and ticket creation time (in seconds). |
 | AVERAGE_RESPONSE_TIME_IN_MILLISECONDS     | Average time taken for agents to respond to each customer reply in all tickets (in milliseconds). |
+| ABANDON_DURATION                         | It measures how long a customer waited for an agent before leaving the chat without being attended. <br/> ABANDON_DURATION = Time of Abandonment – Time of Chat Initiation
 | AVERAGE_RESPONSE_TIME_IN_SECONDS          | Average time taken for agents to respond to each customer reply in all tickets (in seconds). |
 | CHILD_BOT_ID                              | Bot ID from which this chat was raised (for unified inbox). |
 | CUSTOM FIELDS                             | Individual custom fields and their values captured from this live chat. |

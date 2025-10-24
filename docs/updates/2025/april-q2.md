@@ -7,75 +7,6 @@ featured: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<div style={{
-  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-  borderRadius: '12px',
-  padding: '2rem',
-  color: 'white',
-  marginBottom: '2rem'
-}}>
-  <h1 style={{color: 'white', marginBottom: '0.5rem', fontSize: '2.5rem'}}>Q2 2025 Releases</h1>
-  <p style={{opacity: 0.9, marginBottom: '1rem', fontSize: '1.1rem'}}>
-    April - June 2025: Revolutionary voice AI, enhanced knowledge management, and powerful analytics improvements
-  </p>
-  <div style={{
-    display: 'flex',
-    gap: '2rem',
-    marginTop: '1.5rem',
-    flexWrap: 'wrap'
-  }}>
-    <div style={{textAlign: 'center'}}>
-      <div style={{fontSize: '2rem', fontWeight: 'bold'}}>🎙️</div>
-      <div style={{opacity: 0.8}}>VoiceX Launch</div>
-    </div>
-    <div style={{textAlign: 'center'}}>
-      <div style={{fontSize: '2rem', fontWeight: 'bold'}}>🧠</div>
-      <div style={{opacity: 0.8}}>KB Revolution</div>
-    </div>
-    <div style={{textAlign: 'center'}}>
-      <div style={{fontSize: '2rem', fontWeight: 'bold'}}>📊</div>
-      <div style={{opacity: 0.8}}>Analytics 2.0</div>
-    </div>
-  </div>
-</div>
-
-## 🚀 **Major Release Highlights**
-
-<div style={{
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-  gap: '1.5rem',
-  marginBottom: '2rem'
-}}>
-
-<div style={{
-  border: '1px solid var(--ifm-color-emphasis-200)',
-  borderRadius: '12px',
-  padding: '1.5rem',
-  background: 'var(--ifm-color-background-surface)',
-  transition: 'transform 0.2s ease, box-shadow 0.2s ease'
-}}>
-  <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.5rem', marginRight: '0.5rem'}}>🎙️</span>
-    <span style={{
-      background: 'linear-gradient(90deg, #10b981, #059669)',
-      color: 'white',
-      padding: '0.25rem 0.75rem',
-      borderRadius: '12px',
-      fontSize: '0.75rem',
-      fontWeight: 'bold'
-    }}>MAJOR LAUNCH</span>
-  </div>
-  <h3 style={{marginBottom: '0.5rem'}}>VoiceX Platform</h3>
-  <p style={{color: 'var(--ifm-color-text-secondary)', marginBottom: '1rem'}}>
-    Next-generation Voice AI with human-like interactions and sentiment analysis
-  </p>
-  <a href="#introducing-voicex" style={{
-    color: 'var(--ifm-color-primary)',
-    textDecoration: 'none',
-    fontWeight: 'bold'
-  }}>Learn more →</a>
-</div>
 
 <div style={{
   border: '1px solid var(--ifm-color-emphasis-200)',
@@ -106,14 +37,11 @@ import TabItem from '@theme/TabItem';
   }}>Learn more →</a>
 </div>
 
-</div>
-
 ---
 
-## 🎙️ **Introducing VoiceX: Revolutionary Voice AI** {#introducing-voicex}
+## Introducing VoiceX: NextGen Voice AI {#introducing-voicex}
 
 <div style={{
-  background: 'linear-gradient(135deg, #f0fdf4, #dcfce7)',
   border: '1px solid #bbf7d0',
   borderRadius: '12px',
   padding: '1.5rem',
@@ -122,13 +50,13 @@ import TabItem from '@theme/TabItem';
 
 We're introducing VoiceX, our next-generation Voice AI platform, built to enable seamless, real-time customer conversations with human-like interactions.
 
-**🎯 Revolutionary Features:**
+**Key Features:**
 - **Human-Like Interaction**: Powered by SmoothTalk AI and Sentiment AI
 - **Ultra-Low Latency**: Eliminates robotic interactions and awkward pauses
 - **Advanced Analytics**: Complex query handling with sentiment detection
 - **Industry-Ready**: Perfect for BFSI, healthcare, utilities, and retail
 
-**📈 Business Impact:**
+**Business Impact:**
 - 90% more natural conversations
 - 65% reduction in call duration
 - 85% customer satisfaction improvement
@@ -142,11 +70,11 @@ We're introducing VoiceX, our next-generation Voice AI platform, built to enable
 - **Utilities**: Service requests with intelligent routing
 - **Retail**: Product support with sentiment-driven responses
 
-[**📚 Complete VoiceX Documentation**](https://docs.yellow.ai/docs/platform_concepts/VoiceX/VoiceXIntro) • [**🎥 Demo Video**](#) • [**💬 Request Demo**](#)
+[**Complete VoiceX Documentation**](https://docs.yellow.ai/docs/platform_concepts/VoiceX/VoiceXIntro)
 
 ---
 
-## 🧠 **Knowledge Management Revolution** {#conversational-knowledge-base}
+## **Knowledge Management Revamp** {#conversational-knowledge-base}
 
 <Tabs defaultValue="conversational" values={[
   {label: '💬 Conversational KB', value: 'conversational'},
@@ -158,7 +86,6 @@ We're introducing VoiceX, our next-generation Voice AI platform, built to enable
 ### AI-Powered Knowledge Assistant ![](https://img.shields.io/badge/-Major%20Enhancement-success)
 
 <div style={{
-  background: 'linear-gradient(135deg, #eff6ff, #dbeafe)',
   border: '1px solid #93c5fd',
   borderRadius: '12px',
   padding: '1.5rem',
@@ -167,7 +94,7 @@ We're introducing VoiceX, our next-generation Voice AI platform, built to enable
 
 We've introduced Conversational KB, a revolutionary AI-powered knowledge assistant that transforms how your agents interact with users.
 
-**🚀 Revolutionary Changes:**
+** What's Changed:**
 
 <div style={{
   display: 'grid',
@@ -218,7 +145,7 @@ We've introduced Conversational KB, a revolutionary AI-powered knowledge assista
 
 </div>
 
-[**🧠 Implementation Guide**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config) • [**📊 Performance Metrics**](#) • [**🎥 Demo Video**](#)
+[**Implementation Guide**](https://docs.yellow.ai/docs/platform_concepts/AIAgent/kb-agent-config)
 
 </TabItem>
 
@@ -227,7 +154,6 @@ We've introduced Conversational KB, a revolutionary AI-powered knowledge assista
 ### Redesigned Knowledge Base Management ![](https://img.shields.io/badge/-Enhancement-orange)
 
 <div style={{
-  background: 'linear-gradient(135deg, #fffbeb, #fef3c7)',
   border: '1px solid #fcd34d',
   borderRadius: '12px',
   padding: '1.5rem',
@@ -253,7 +179,7 @@ Complete revamp of the Knowledge Base module for efficient content management, n
 
 ![Knowledge Base Management Interface](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
 
-[**📚 Management Guide**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview) • [**⚙️ Setup Tutorial**](#) • [**🔧 Best Practices**](#)
+[**Learn More**](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
 
 </TabItem>
 
@@ -263,9 +189,27 @@ Complete revamp of the Knowledge Base module for efficient content management, n
 
 ## **Engage Updates**
 
-###  Smarter WhatsApp Message Delivery with MM Lite API Integration  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+###  Smarter WhatsApp Message Delivery with MM Lite API Integration 
 
-We’ve added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
+
+We've added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
 This smart delivery feature uses Meta’s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they’re most likely to engage.
 
 No change in how you build your campaigns — just choose the API reference while configuring WhatsApp campaign, Meta takes care of the rest.
@@ -300,6 +244,24 @@ If your account is managed by Yellow\.ai:
 
 ### How to choose MM Lite for each WhatsApp campaign:
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
+
 * [Flow campaign](http://localhost:3001/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
 * [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#33-whatsapp-campaign)
 * [Notification API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
@@ -307,15 +269,51 @@ If your account is managed by Yellow\.ai:
 
 
 ### Deprecated Engage Overview Page
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
+
 The Engage Overview page has been deprecated as part of our ongoing efforts to streamline the platform. 
 
 ------
 
 ## **Analyze Updates**
 
-### Redesigned Topic Details Page **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Redesigned Topic Details Page 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
-We’ve introduced a refreshed design and improved terminology on the Topic Details page in the **Analyze** module to make insights easier to understand and act on.
+We've introduced a refreshed design and improved terminology on the Topic Details page in the **Analyze** module to make insights easier to understand and act on.
 
 ![topics](https://cdn.yellowmessenger.com/assets/yellow-docs/gif.gif)
 
@@ -337,8 +335,25 @@ To ensure faster access to actionable insights and smoother navigation:
 
 
 
-### AI Insights for Debug logs & Comments in Topics **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### AI Insights for Debug logs & Comments in Topics
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 Developers or Admins can now access **Debug Logs** and **Comments** right alongside AI Insights — no more tab-switching!
 Enhanced visibility into **Resolution Status** and User **Sentiment Reasoning** enables faster issue identification.
@@ -346,30 +361,119 @@ Enhanced visibility into **Resolution Status** and User **Sentiment Reasoning** 
 **[📘 Dive Into the Details](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#debug-conversations)**
 
 
-### Filter conversations by Session ID **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Filter conversations by Session ID
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 Within conversation logs, jump to any session instantly by [filtering via Session ID](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#filter-conversations) — no more endless clicking on *View more*.
 
 
-###  Pre-enabled Knowledgebase article generation & Chat handoff nodes **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+###  Pre-enabled Knowledgebase article generation & Chat handoff nodes 
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 **[Knowledgebase article generation](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion)** and **[Chat handoff node](https://docs.yellow.ai/docs/platform_concepts/analyze/handoffnode)** are now enabled by default for all customers using Analyze.
 No need to raise a devRev ticket — they're ready to use out of the box!
 
-### Clutter-free & organized Knowledgebase article suggestions  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Clutter-free & organized Knowledgebase article suggestions
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 Improved logic ensures only the most relevant articles are shown (up to 50 for the top 15 topics). 
 Outdated suggestions auto-archive after 2 months if not added to the KB, reducing noise.
 
 
-###  Automatic merging of duplicate & similar topics  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+###  Automatic merging of duplicate & similar topics
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 * We've consolidated near-duplicate and highly similar topics to reduce clutter and provide a more accurate view. Expect a lower count of [unique topics](https://docs.yellow.ai/docs/platform_concepts/analyze/topics), but a higher quality of insights.
 * Key metrics like Containment Rate and Resolution Rate have been recalibrated post-merge for more meaningful analysis.
 
 
-### Introduced Labels for grouping chats ![](https://img.shields.io/badge/-Enhancement-ff9800)
+### Introduced Labels for grouping chats
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 Under **Analyze** > **Conversation logs** you can create and filter by labels to organize conversations more effectively.
 
@@ -380,9 +484,27 @@ Under **Analyze** > **Conversation logs** you can create and filter by labels to
 
 ## **Insights Updates**
 
-### Access Control–Based Filters for Monitor and Reporting  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Access Control–Based Filters for Monitor and Reporting
 
-We’re making monitoring and reporting more secure and relevant by applying **access control–based filters**. Supervisors will now see only data related to their assigned teams across both the **Monitor** and **Analytics** sections.
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
+
+We're making monitoring and reporting more secure and relevant by applying **access control–based filters**. Supervisors will now see only data related to their assigned teams across both the **Monitor** and **Analytics** sections.
 
 
 #### **Monitor Section Updates**
@@ -412,11 +534,29 @@ We’re making monitoring and reporting more secure and relevant by applying **a
 ---
 
 
-### Name change: Dataops is not renamed to Data export **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Name change: Dataops is not renamed to Data export 
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 Data Operations (DataOps) has been renamed to Data Export to better reflect its functionality.
 
-### Sunset Notice: Clearing the Path for a Smarter Analytics Experience **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Sunset Notice: Clearing the Path for a Smarter Analytics Experience
 
 As we prepare for a major revamp of our Analytics module, we’re streamlining the experience by removing a few legacy screens over the next two weeks. These updates are part of our broader effort to deliver cleaner insights, modern visualizations, and a more intuitive interface.
 
@@ -450,7 +590,25 @@ These screens haven’t seen active usage since January 2025 and aren’t tied t
 We’re reimagining Analytics to support faster decision-making with smarter, cleaner, and more relevant insights. Stay tuned for upcoming releases with exciting upgrades.
 
 
-### Default timestamp set to conversation start time for CRA table ![](https://img.shields.io/badge/-Enhancement-ff9800)
+### Default timestamp set to conversation start time for CRA table
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 > Path: **Insights** > **Data Explorer** > **Contained Resolution Analysis**
 
@@ -469,6 +627,24 @@ We've updated the **default timestamp filter** to conversation start time in the
 
 ### More colorful charts in insights data explorer
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
+
 You asked for it—and we listened! Visualized charts in the Insights Data Explorer are no longer limited to shades of blue. We’ve introduced a more vibrant, multi-colored palette to help you better differentiate and interpret your data at a glance. Colors are now more varied; they are currently selected automatically by the system.
 
 **[💡 Start exploring](https://docs.yellow.ai/docs/platform_concepts/growth/visualisation/visualization)**
@@ -477,7 +653,7 @@ You asked for it—and we listened! Visualized charts in the Insights Data Explo
 
 ## **Agent AI Updates (Automation)**
 
-### Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Automate Revamp: A Simpler, Smarter Way to Build Gen AI Agents
 
 We’ve reimagined the AI agent setup experience to be more guided, efficient, and powerful—so you spend less time configuring and more time delivering intelligent conversations.
 
@@ -515,7 +691,26 @@ Build smarter, more natural conversations using intuitive building blocks:
 ---
 
 
-### PCI-Compliant Data Capture Now Supported in Question Nodes  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### PCI-Compliant Data Capture Now Supported in Question Nodes
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
+
 As part of our ongoing commitment to security and compliance, Yellow.ai now supports PCI-compliant data capture across multiple channels using question nodes, in addition to the previously supported voice input nodes. You can then use the API node to transfer PCI-sensitive information securely.
 
 #### Key enhancements
@@ -534,8 +729,25 @@ As part of our ongoing commitment to security and compliance, Yellow.ai now supp
 
 [**Learn how to store PCI data using the API**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node)
 
-### Name change: Skill is now Workflow **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Name change: Skill is now Workflow
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>MINOR</span>
+</div>
 
 We have changed the term **Skill** to **Workflow** across the Yellow.ai platform. All existing skills are now labeled as workflows in Dynamic chat node and Agent AI. 
 You will see this updated terminology reflected consistently throughout the UI for a more intuitive experience.
@@ -546,8 +758,24 @@ You will see this updated terminology reflected consistently throughout the UI f
 
 ## **Integration Updates**
 
-### New integration: Zendesk Offline Ticketing **![](https://img.shields.io/badge/-New-00c853)**
-
+### Zendesk Offline Ticketing integration
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #00c853, #00a844)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>NEW</span>
+</div>
 
 We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure uninterrupted support, even when live agents are unavailable. This addition enables:
 
@@ -558,8 +786,25 @@ We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure
 [**📘 Dive Into the Details**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-offline-ticketing)
 
 
-### New integration: Workday  **![](https://img.shields.io/badge/-New-00c853)**
+### Workday integration 
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #00c853, #00a844)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>NEW</span>
+</div>
 
 Easily integrate Workday Integration to your yellow.ai AI agent and perform **key Workday actions** such as: 
 - View and apply for leaves
@@ -570,8 +815,25 @@ Easily integrate Workday Integration to your yellow.ai AI agent and perform **ke
 
 **[🛠️ Everything You Need to Know](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/workday)**
 
-### Camspay Integration: Added Create payment request action  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Camspay Integration: Added Create payment request action  
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 A new action, **[Create payment request](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/camspay#5-generate-camspay-payment-links-in-bot-conversation)** is now available. This enhancement solves use cases—such as retrieving payment status and displaying order details for successful or failed transactions.
 
@@ -584,7 +846,25 @@ The **Generate payment link** action in the Camspay integration node has been **
 
 ## **Inbox Updates**
 
-### Monitor & Reporting Access Control Updates  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Monitor & Reporting Access Control Updates
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 Supervisors now get scoped views across Monitor, Reporting, and Team tabs—ensuring visibility is limited to their assigned teams.
 
@@ -600,22 +880,93 @@ Supervisors now get scoped views across Monitor, Reporting, and Team tabs—ensu
 Cleaner data. Sharper control. Just the way it should be.
 
 
-### Sender Email Logic Update in Email Ticketing  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Sender Email Logic Update in Email Ticketing
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
-We’ve cleaned up how the "From" address is picked when replying to tickets. Agents can also see clear From/To details while composing—no more guesswork.
+We've cleaned up how the "From" address is picked when replying to tickets. Agents can also see clear From/To details while composing—no more guesswork.
 
-### Rich text formatting for email acknowledgements **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Rich text formatting for email acknowledgements
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 > Path: **Settings** > **Inbox** > **Email settings** 
 
 Personalize your default **[email acknowledgements](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing)** with new formatting options: Bold, Italics, Strike-through, Underline, Code, and Paragraphs.
 
 
-### Attachments icon in email tickets **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Attachments icon in email tickets 
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 To enhance clarity, an attachments icon is displayed on the [email ticket](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro#1-email-tickets-list-view) if the last message includes any attachments. This provides a quick visual cue for users to identify whether the previous message had any files attached, without needing to open the message thread.
 
-### Improved email template structuring **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Improved email template structuring 
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 You can structure your email content using three distinct variables:
 - **Latest email** – The most recent message typed by the agent.
@@ -629,6 +980,24 @@ These variables are available under the Variables section and can be placed howe
 
 ### Real-Time updates on the active chats page for supervisors
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
+
 Supervisors can now view live updates on the Active Chats page—no need to refresh.
 
 > This is a gated feature. Contact support to enable it.
@@ -637,9 +1006,45 @@ Supervisors can now view live updates on the Active Chats page—no need to refr
 
 ### Agent signature field for email templates 
 
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
+
 Admins can now add a fun or informal **Signature** for agents (e.g., *Real Game Changer*) under [Agent settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#modifyadd-existing-agent-properties). Dynamic variable `{{agent.signature}}` can be used in [Email Templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte#step-4-add-dynamic-variables) to personalize outgoing emails with the agent's signature.
 
 ### Role based access control(RBAC) within inbox 
+
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 Yellow.ai has introduced role-based access control (RBAC) within the Inbox platform to enhance data security and meet specific customer requirements.
 
@@ -697,8 +1102,3 @@ Yellow.ai has introduced role-based access control (RBAC) within the Inbox platf
 
 </div>
 
-:::tip 💡 **Stay Connected**
-
-Follow our [community](https://community.yellow.ai) for the latest announcements and feature discussions!
-
-:::
