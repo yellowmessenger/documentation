@@ -1,6 +1,6 @@
 ---
-title: Manage your AI agent 
-sidebar_label : Manage your AI agent
+title: Manage your Rule-based agents
+sidebar_label : Manage your Rule-based agents
 keywords : [reset bot, pause bot, modify bot]
 ---
 

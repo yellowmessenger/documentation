@@ -253,6 +253,7 @@ module.exports = {
                 "platform_concepts/AIAgent/transfer-live-agent",
                 "platform_concepts/AIAgent/call-fallback",
                 "platform_concepts/AIAgent/aigent-variables",
+                "platform_concepts/AIAgent/manage-your-agent",
               ],
             },            
             "platform_concepts/AIAgent/kb-agent-config",
