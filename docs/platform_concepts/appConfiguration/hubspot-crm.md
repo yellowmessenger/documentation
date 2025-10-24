@@ -121,7 +121,7 @@ To manage your Hubspot CRM account through yellow.ai bot, follow these steps:
 
 2. In whichever point you want the bot to access Hubspot CRM, inlcude the Hubspot CRM node. For that, drag the node connector, go to **Integrations** > **Hubspot**.
 
-   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/hub-node.png" alt="drawing" width="60%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/hub-node.png" alt="drawing" width="30%"/>
 
 3. Configure the **Hubspot CRM** node based on the descriptions provided in the following:
 
@@ -165,9 +165,257 @@ For example, if you receive the following response, you can use this syntax ``` 
   }
 }
 ```
+-----
+
+### Create a contact
+
+1. In the Automation flow builder, select the **Integrations** node and click **Hubspot** from the list of integrations that have been enabled for that AI agent.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/hubspot-node.png" alt="drawing" width="30%"/>
+
+2. After clicking **Hubspot**, an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use cases of this integration in a drop-down. Choose **Get contact**, choose **Create a contact** action.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/create-contact-hub.png" alt="drawing" width="60%"/>
+
+
+2. Fill in all the mandatory fields. The below-mentioned table consists of the sample value, data type, and description for all these fields.
+
+| Field name | Sample value| Data type |Description |
+| -------- | -------- | -------- |----|
+First name | John | String | Provide the fist name of the contact. 
+Company | Yellow.ai | String | Provide name of the contact's company.
+Email | john@gmail.com | String | Provide email ID of the user
+Last name | Smith | String | Provide the fist name of the user. 
+Phone | 9980055678 | String | Provide the phone number of the user.
+Website | `https://www.yellow.ai` | String | Provide contact's company website.
+
+
+**Sample success response**
+
+```json
+{
+  "id": "166055775073",
+  "properties": {
+    "createdate": "2025-10-22T08:15:12.069Z",
+    "email": "dwij@test.com",
+    "firstname": "Dwij",
+    "hs_all_contact_vids": "166055775073",
+    "hs_associated_target_accounts": "0",
+    "hs_currently_enrolled_in_prospecting_agent": "false",
+    "hs_email_domain": "test.com",
+    "hs_full_name_or_email": "Dwij",
+    "hs_is_contact": "true",
+    "hs_is_unworked": "true",
+    "hs_lifecyclestage_lead_date": "1761120912069",
+    "hs_membership_has_accessed_private_content": "0",
+    "hs_object_id": "166055775073",
+    "hs_object_source": "INTEGRATION",
+    "hs_object_source_id": "370598",
+    "hs_object_source_label": "INTEGRATION",
+    "hs_pipeline": "contacts-lifecycle-pipeline",
+    "hs_prospecting_agent_actively_enrolled_count": "0",
+    "hs_prospecting_agent_total_enrolled_count": "0",
+    "hs_registered_member": "0",
+    "hs_sequences_actively_enrolled_count": "0",
+    "lastmodifieddate": "2025-10-22T08:15:12.069Z",
+    "lifecyclestage": "lead",
+    "num_notes": "0"
+  },
+  "createdAt": "2025-10-22T08:15:12.069Z",
+  "updatedAt": "2025-10-22T08:15:12.069Z",
+  "archived": false,
+  "url": "app.hubspot.com/go-to/44273183/0-1/166055775073"
+}
+```
+
+**A sample screenshot**
+
+  ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-contact-repsonse.png)
+
+-----  
+
+### Get a contact
+
+1. In the **Hubspot** integration action node, choose **Get a contact**.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/get-a-contact.png" alt="drawing" width="60%"/>
+
+2. Fill in all the mandatory fields. The below-mentioned table consists of the sample value, data type, and description for all these fields.
+
+| Field name | Sample value| Data type |Description |
+| -------- | -------- | -------- |----|
+Contact ID | 166055775073 | string | Provide the unique contact ID of the user to fetch their details.
+
+**Sample Success Response**
+
+```json
+{
+  "id": "166055775073",
+  "properties": {
+    "createdate": "2025-10-22T08:15:12.069Z",
+    "email": "dwij@test.com",
+    "firstname": "Dwij",
+    "hs_object_id": "166055775073",
+    "lastmodifieddate": "2025-10-22T08:15:20.886Z",
+    "lastname": null
+  },
+  "createdAt": "2025-10-22T08:15:12.069Z",
+  "updatedAt": "2025-10-22T08:15:20.886Z",
+  "archived": false,
+  "url": "app.hubspot.com/go-to/44273183/0-1/166055775073"
+}
+```
+
+**A sample screenshot of Get contact:**
+
+  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/get-contact-response.png" alt="drawing" width="80%"/>
+
+----
+
+### Delete a contact
+
+1. In the **Hubspot** integration action node, choose **Delete a contact** action.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/delete-contact.png" alt="drawing" width="70%"/>
+
+2. Fill in all the mandatory fields. The below-mentioned table consists of the sample value, data type, and description for all these fields.
+
+| Field name | Sample value| Data type |Description |
+| -------- | -------- | -------- |----|
+Contact ID | 166055775073 | string | Provide the unique contact ID of the user to delete their details.
+
+----
+
+### Update a contact
+
+1. In the **Hubspot** integration action node, choose **Update a contact** action.
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/update-contact.png" alt="drawing" width="70%"/>
+
+2. Fill in all the mandatory fields. The below-mentioned table consists of the sample value, data type, and description for all these fields.
+
+| Field name | Sample value| Data type |Description |
+| -------- | -------- | -------- |----|
+Contact ID | 166055775073 | string | Provide the unique contact ID of the contact to update their details.
+First name | John | String | Provide the fist name of the contact. 
+Company | Yellow.ai | String | Provide name of the contact's company.
+Email | john@gmail.com | String | 
+Last name | Smith | String | Provide the fist name of the contact. 
+Phone | 9980055678 | String | Provide the phone number of the contact.
+Website | `https://www.yellow.ai` | String | Provide contact's company website.
+
+
+**Sample success response**
+
+```json
+{
+  "id": "166055775073",
+  "properties": {
+    "createdate": "2025-10-22T08:15:12.069Z",
+    "firstname": "Dwij",
+    "hs_is_contact": "true",
+    "hs_is_unworked": "true",
+    "hs_object_id": "166055775073",
+    "hs_object_source": "INTEGRATION",
+    "hs_object_source_id": "370598",
+    "hs_object_source_label": "INTEGRATION",
+    "hs_pipeline": "contacts-lifecycle-pipeline",
+    "hs_searchable_calculated_phone_number": "9678452348",
+    "lastmodifieddate": "2025-10-22T08:25:04.424Z",
+    "lifecyclestage": "lead",
+    "phone": "9678452348"
+  },
+  "createdAt": "2025-10-22T08:15:12.069Z",
+  "updatedAt": "2025-10-22T08:25:04.424Z",
+  "archived": false,
+  "url": "app.hubspot.com/go-to/44273183/0-1/166055775073"
+}
+```
+
+**A sample screenshot**
+
+  ![](https://cdn.yellowmessenger.com/assets/yellow-docs/update-response.png)
 
 -----
 
+### Search a contact by phone
 
+1. In the **Hubspot** integration action node, choose **Search a contact by phone** action. 
+    
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/search-contact.png" alt="drawing" width="70%"/>
+    
+2. Fill in all the mandatory fields. The below-mentioned table consists of the sample value, data type, and description for all these fields.
 
+| Field name | Sample value| Data type |Description |
+| -------- | -------- | -------- |----|     
+Phone | 9987765434 | String | Provide the phone number of the contact to search their details.
 
+**Sample Success Response**
+
+```json
+{
+  "total": 1,
+  "results": [
+    {
+      "id": "166055775073",
+      "properties": {
+        "createdate": "2025-10-22T08:15:12.069Z",
+        "email": "dwij@test.com",
+        "firstname": "Dwij",
+        "hs_object_id": "166055775073",
+        "lastmodifieddate": "2025-10-22T08:25:04.424Z",
+        "lastname": null
+      },
+      "createdAt": "2025-10-22T08:15:12.069Z",
+      "updatedAt": "2025-10-22T08:25:04.424Z",
+      "archived": false
+    }
+  ]
+}
+```
+
+**A sample screenshot:**
+
+ ![](https://cdn.yellowmessenger.com/assets/yellow-docs/search-response.png)
+
+----
+
+### Search a contact by email
+
+1. In the **Hubspot** integration action node, choose **Search a contact by email** action. 
+    
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/email-hub.png" alt="drawing" width="70%"/>
+    
+2. Fill in all the mandatory fields. The below-mentioned table consists of the sample value, data type, and description for all these fields.
+
+| Field name | Sample value| Data type |Description |
+| -------- | -------- | -------- |----|     
+Email | john@gmail.com | String | Provide the email ID of the contact to search their details.
+
+**Sample Success Response**
+
+```json
+{
+  "total": 1,
+  "results": [
+    {
+      "id": "166055775073",
+      "properties": {
+        "createdate": "2025-10-22T08:15:12.069Z",
+        "email": "dwij@test.com",
+        "firstname": "Dwij",
+        "hs_object_id": "166055775073",
+        "lastmodifieddate": "2025-10-22T08:15:20.886Z",
+        "lastname": null
+      },
+      "createdAt": "2025-10-22T08:15:12.069Z",
+      "updatedAt": "2025-10-22T08:15:20.886Z",
+      "archived": false
+    }
+  ]
+}
+```
+
+**A sample screenshot:**
+
+ ![](https://cdn.yellowmessenger.com/assets/yellow-docs/email-search.png)
