@@ -190,8 +190,8 @@ To configure fallback handling:
 
    | Option                    | Description |
    | ------------------------- | ------------ |
-   | **Instruct Super Agent**  | Write a custom fallback message. <br/> Example: *I am still learning and could not help with that. Please contact [support@yellow.ai](mailto:support@yellow.ai).<br/> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instruct-agent-now.png" alt="drawing" width="70%"/> |
-   | **Trigger Fallback Flow** | Select a fallback conversation flow to guide the user when the agent cannot respond.<br/> ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/fallack-con.png)    | 
+   | **Instruct Super Agent**  | Write a custom fallback message. <br/> Example: I am still learning and could not help with that. Please contact [support@yellow.ai](mailto:support@yellow.ai).<br/> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instruct-agent-now.png" alt="drawing" width="70%"/> |
+   | **Trigger Fallback Flow** | Select a fallback conversation flow to guide the user when the agent cannot respond.<br/> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/fallack-con.png" alt="drawing" width="80%"/>  | 
 
 ### Live transfer agent
 

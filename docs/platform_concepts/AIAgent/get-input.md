@@ -317,6 +317,92 @@ This how the image will be fetch and displayed in cards format:
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cards-display.png)
          -->
 
+-------
+
+### Get Feedback input
+
+Use **Get feedback input** to collect feedback from users during conversation. This action allows you to capture ratings using either a thumbs up and thumbs down, or star rating. The feedback data is stored in the [User feedback](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#user-feedback) table in the Data Explorer and will be available throughout the session.
+
+:::note
+The **Get feedback input** action is currently available only for the Chat Widget channel.
+:::
+
+The table below describes the fields available in the Get feedback input action:
+
+Field name | Description
+-----------|------------
+**Input name** | Define the name of the input field where the user's feedback will be stored.
+**Data type** | Default data type is Object, as the feedback includes structured data (rating and comments).
+**Description** | Specify the question or context for which you want to collect feedback. **Example**: "How would you rate your chat experience?".
+**Feedback type** | Choose the rating format: <br/>• **Thumbs Up & Down** – Allows users to express satisfaction or dissatisfaction. <br/>• **Stars** – Enables users to provide detailed feedback on a 5-star scale.
+**Allow additional comments** | Enable this option to allow users provide extra comments or feedback along with their rating.
+**Ask for specific feedback for the rating** | Enable this option to ask follow-up questions based on the rating. You can customize questions and provide predefined reply options to understand the reason behind the customer’s rating.
+
+
+<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/get-feedback.png" alt="drawing" width="60%"/>
+
+#### How to configure Feedback input
+
+To configure and display Feedback input in your AI agent conversation, follow these steps:
+
+1. Go to **Prompts** section and click **Actions** > **Get input**.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-input.png)
+     
+2. Select the **Feddback** action.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/sel-feedback.png" alt="drawing" width="50%"/>
+
+3. In **Input name**, enter a unique name for the feedback input.
+4. In **Description**, provide details about what feedback you want to collect from the user such as feedback on the conversation or service experience. **Example:** "How would you rate your chat experience?".
+5. In **Select feedback type**, choose your preferred feedback form (type):
+       1. **Thumbs Up & Down** – Allows users to give quick positive or negative feedback.
+       2. **Stars** – Allows users to rate their experience on a scale (for example, 1 to 5 stars).
+6. **Allow additional comments**: Enable this option to allow users to add extra comments or suggestions along with their rating.
+7. **Ask for specific feedback for the rating**: Enable this option to collect **detailed feedback** from users based on their rating (positive or negative).  
+You can customize both the **question** and **reply options** for each rating type.
+
+   #### 1. **Thumbs up / Thumbs down**
+
+    Choose whether to configure the question for a **positive** (👍) or **negative** (👎) rating. Each rating type can have its own **question** and **reply options**.
+
+    | Field | Description | Example |
+    |--------|--------------|----------|
+    | **Question** | Follow-up question that appears after a user provides their rating. | "Tell us what you liked?" for positive feedback (👍) or "What went wrong?" for negative feedback (👎). |
+   | **Reply options** | Predefined responses that users can select. You can add multiple options. | "Liked overall experience" or "Helpful agent". |
+   | **➕ Add option** | Click **+** to add more reply options. | Add "Response not clear" or "Issue not resolved". |
+
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/feedback1.png" alt="thumb feedback UI" width="60%"/>
+
+
+   #### 2. Star Rating
+
+   Displays a **rating scale** (for example, 1–5 stars).  
+You can define different feedback questions for each rating level (example, **5 stars- positive**, **1–2 stars- needs improvement**).
+
+   | Field | Description | Example |
+   |--------|--------------|----------|
+   | **Question** | The question asked based on the star rating provided. | "Tell us what you liked?"" or "What could be improved?"" |
+   | **Reply options** | Predefined answers users can select after rating. | "Experience was good", "Quick response", or "Helpful support". |
+   | **➕ Add option** | Click **+** to add more reply options. | Add "Response not clear" or "Issue not resolved". |
+
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/start-rating.png" alt="star rating UI" width="60%"/>
+      
+8. Click **Save**.
+
+9. Click **Preview** to test and display the feedback option.
+    
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/feedback-rating.png" alt="drawing" width="60%"/>
+
+10. Navigate to **Data Explorer** > **User feedback** table to view the collected feedback.
+
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/userfeednac1.png)
+    
+
+
+
+
       
 
    
