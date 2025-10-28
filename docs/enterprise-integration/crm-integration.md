@@ -1,91 +1,52 @@
 # CRM Integration
 
-Integrate Yellow.ai with your Customer Relationship Management (CRM) systems.
+Integrate Yellow.ai's Agentic AI platform with your Customer Relationship Management (CRM) systems to provide personalized customer experiences, automate support workflows, and enhance agent productivity.
 
-## Supported CRMs
+## Why Integrate with CRM?
 
-- Salesforce
-- HubSpot
-- Microsoft Dynamics
-- Zoho CRM
-- Creatio CRM
+-   **Personalized Conversations**: Access customer data (e.g., name, order history, support tickets) to tailor bot responses.
+-   **Automated Lead Qualification**: Qualify leads through bot conversations and automatically create/update lead records in your CRM.
+-   **Streamlined Support**: Create, update, and retrieve support tickets directly from bot conversations.
+-   **Agent Empowerment**: Provide human agents with full customer context during handoffs.
 
-## Salesforce Integration
+## Supported CRM Systems
 
-### Prerequisites
+Yellow.ai offers out-of-the-box integrations and flexible API options for popular CRM platforms, including:
+-   Salesforce Service Cloud
+-   HubSpot CRM
+-   Microsoft Dynamics 365
+-   Zoho CRM
+-   And more via custom API integrations.
 
-- Salesforce account with API access
-- Connected App configured in Salesforce
-- OAuth credentials
+## Common Integration Use Cases
 
-### Setup Steps
+### 1. Lead Generation & Qualification
 
-1. **Configure Connected App in Salesforce**
-   ```javascript
-   // OAuth settings
-   Callback URL: https://cloud.yellow.ai/oauth/salesforce/callback
-   Scopes: api, refresh_token, offline_access
-   ```
+-   **Bot Action**: Collect user details (name, email, company, query).
+-   **CRM Action**: Create a new lead record in Salesforce or HubSpot.
+-   **Bot Response**: Confirm lead creation and provide next steps.
 
-2. **Configure in Yellow.ai**
-   - Navigate to Settings > Integrations
-   - Select Salesforce
-   - Enter OAuth credentials
-   - Test connection
+### 2. Support Ticket Management
 
-3. **Map Data Fields**
-   ```json
-   {
-     "contact": {
-       "email": "sf_email__c",
-       "phone": "sf_phone__c", 
-       "name": "sf_name__c"
-     }
-   }
-   ```
+-   **Bot Action**: Identify user intent as a support query.
+-   **CRM Action**: Search for existing tickets or create a new one in Zendesk or Freshdesk.
+-   **Bot Response**: Provide ticket status or confirmation.
 
-## HubSpot Integration
+### 3. Customer Data Retrieval
 
-### Setup Process
+-   **Bot Action**: User asks for order status or account details.
+-   **CRM Action**: Retrieve relevant data from the CRM using user ID.
+-   **Bot Response**: Present personalized information to the user.
 
-1. **Get HubSpot API Key**
-   - Navigate to HubSpot Settings > Integrations
-   - Create private app
-   - Copy API key
+## Integration Steps (General)
 
-2. **Configure in Yellow.ai**
-   - Add HubSpot integration
-   - Enter API key
-   - Select sync direction
+1.  **Authentication**: Set up secure authentication (API Key or OAuth 2.0) with your CRM.
+2.  **Map Data Fields**: Define how data from Yellow.ai conversations maps to fields in your CRM.
+3.  **Configure Workflows**: Use Yellow.ai's Studio to create flows that trigger CRM actions (e.g., "Create Lead" node, "Update Ticket" API call).
+4.  **Test & Deploy**: Thoroughly test your integration in a staging environment before deploying to production.
 
-3. **Sync Configuration**
-   ```yaml
-   sync_direction: bidirectional
-   sync_interval: 5_minutes
-   fields_to_sync:
-     - email
-     - phone
-     - first_name
-     - last_name
-   ```
+## Further Reading
 
-## Data Synchronization
-
-### Real-time Sync
-
-- Contact updates sync immediately
-- Conversation data flows to CRM
-- Lead scoring updates automatically
-
-### Batch Sync
-
-- Scheduled synchronization
-- Bulk data import/export
-- Conflict resolution
-
-## Best Practices
-
-- Map only necessary fields
-- Set up proper error handling
-- Monitor sync performance
-- Regular data validation
+-   [Salesforce Service Cloud Integration](/docs/platform_concepts/appConfiguration/salesforce-service-cloud)
+-   [HubSpot CRM Integration](/docs/platform_concepts/appConfiguration/hubspot-crm)
+-   [API Node Documentation](/docs/platform_concepts/studio/build/nodes/action-nodes-overview/api-node)
