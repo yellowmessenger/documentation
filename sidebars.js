@@ -226,7 +226,6 @@ module.exports = {
       ]
     },
 
-
     // Studio starts here  
     {
       type: "category",
@@ -1415,6 +1414,12 @@ module.exports = {
 
   ], 
   // Docs tab ends here
+
+  // Enterprise Integration tab starts here
+  // enterprise_integration: [
+  //  "enterprise-integration/getting-started",
+  //  "enterprise-integration/systrack",
+ // ],
 
   // Product updates/ What's new tab starts here
   updates: [

@@ -61,12 +61,12 @@ module.exports = {
           position: "left",
           activeBasePath: "/whats-new",
         },
-        // {
-        //   to: "/enterprise-integration",
-        //   label: "Enterprise Integration",
-        //   position: "right",
-        //   activeBasePath: "/enterprise-integration",
-        // },
+        {
+          to: "/enterprise-integration",
+          label: "Enterprise Integration",
+          position: "right",
+          activeBasePath: "/enterprise-integration",
+        },
         {
           to: "docs/tutorials/basics",
           label: "Videos",
