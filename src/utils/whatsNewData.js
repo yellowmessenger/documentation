@@ -4,6 +4,53 @@
 // --- FEATURE HIGHLIGHTS DATA (Major Updates) ---
 export const featureHighlights = [
   {
+    id: 'ai-prompt-analysis',
+    title: 'AI-based Prompt Analysis',
+    shortDescription: 'Automatically review and improve the quality of prompts and conversation rules used by your AI agents with AI-powered analysis.',
+    showFullImage: true,
+    fullDescription: `**AI-based Prompt Analysis** helps you automatically review and improve the quality of prompts and conversation rules used by your AI agents. The feature reviews clarity, structure, and logic, and provides step-by-step recommendations to align prompts with best practices and improve agent performance before deployment.
+
+### What AI-based Prompt Analysis Does
+
+- **Detects Issues**: Finds unclear, redundant, or conflicting instructions in prompts
+- **Identifies Gaps**: Spots missing elements like fallback logic or escalation rules
+- **AI Suggestions**: Provides AI-generated recommendations to rewrite or simplify prompts
+- **Quality Improvement**: Enhances overall performance and clarity before deployment
+
+### How the Analysis Works
+
+When you run the analysis, the system evaluates your prompt through six stages:
+
+1. **Get Agent Details** – Gathers all agent data including prompts, actions, and conversation rules
+2. **Analyze the Prompt** – Reviews language, structure, and flow to identify issues
+3. **Evaluate Best Practices** – Checks alignment with design standards and AI-agent best practices
+4. **Find Improvements** – Detects optimization opportunities like missing conditions or unclear instructions
+5. **Prepare Suggestions** – Generates content recommendations for clarity and flow
+6. **Generate Analysis** – Produces a quality score, summary, and actionable recommendations
+
+### Analysis Results
+
+Once complete, you'll receive:
+- A **quality score** indicating your prompt's current effectiveness
+- A **summary** highlighting key findings and improvement areas
+- **Recommended actions** with AI-generated suggestions you can apply or copy
+- **Interactive insights** via lightbulb icons to understand each recommendation
+
+This AI-powered feature helps you quickly optimize your agent's prompts and enhance conversational quality without manual rewriting.`,
+    highlights: [
+      'Detects unclear, redundant, or conflicting instructions in prompts',
+      'Provides AI-generated suggestions to rewrite or simplify prompts',
+      'Improves prompt quality and overall agent effectiveness prior to release',
+      'Six-stage analysis process with quality scoring and actionable recommendations',
+      'Interactive insights to understand and apply improvements quickly'
+    ],
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/analyze-prompt.png',
+    category: 'AI Agent',
+    badge: 'Major Update',
+    date: 'October 30, 2025',
+    link: '/docs/platform_concepts/AIAgent/manage-your-agent#ai-based-prompt-analysis'
+  },
+  {
     id: 'data-purge-retention',
     title: 'Take Control of Your Data with Retention & Purge',
     shortDescription: 'Manage the full data lifecycle with automated retention policies and one-time purge capabilities to ensure compliance and reduce risk.',
@@ -77,23 +124,6 @@ This feature currently supports over **29 system tables** across different datab
   },
 
   {
-    id: 'platform-redesign',
-    title: 'Cloud Platform Redefined for a Better Experience',
-    shortDescription: 'A redesigned workspace with a cleaner theme and improved navigation for a smoother, more intuitive experience.',
-    fullDescription: 'We\'ve redesigned the Yellow.ai workspace with a cleaner theme and improved navigation to give you a smoother, more intuitive experience. This update reduces clutter in the left navigation and provides an overall better workflow, with refreshed colors, fonts, and distinct structures for AI and Non-AI agents.',
-    image: 'https://docs.yellow.ai/assets/images/ai-agent-802ebc79e4fb161e23bcb43d275d9ffe.gif',
-    category: 'Platform',
-    badge: 'Major Update',
-    date: 'September 8, 2025',
-    link: '/docs/updates/overview#cloud-platform-redefined',
-    highlights: [
-      'New Navigation for faster access to modules',
-      'Refreshed theme, typography, and colors',
-      'Automation module is now named Build',
-      'Distinct workflows for AI and Non-AI agents'
-    ]
-  },
-  {
     id: 'analytics-overview',
     title: 'Analytics Overview Page (v1)',
     shortDescription: 'A single dashboard to track adoption, performance, and engagement across AI and human agents.',
@@ -135,6 +165,130 @@ This feature currently supports over **29 system tables** across different datab
 
 // --- RECENT UPDATES DATA ---
 export const allUpdates = [
+  {
+    title: 'New Fallback Controls in Super Agent',
+    description: 'Two new fallback options — Instruct Super Agent and Trigger Global Fallback Flow — help handle unexpected situations where the AI encounters technical issues or cannot resolve a user query.',
+    fullDescription: 'In the Fallback section of the Super Agent, two new options have been introduced — **Instruct Super Agent** and **Trigger Global Fallback Flow**. These options help handle unexpected situations where the AI encounters technical issues or cannot resolve a user query, ensuring a more reliable and seamless experience. The AI agent may fail to respond in cases such as no results found in the Knowledge Base, API or workflow failure, input validation fails after multiple attempts, or system/LLM outages.',
+    type: 'Enhancement',
+    badge: 'Enhancement',
+    date: 'October 30, 2025',
+    link: '/docs/platform_concepts/AIAgent/agentpersona#fallback',
+    category: 'AI Agent',
+    icon: '🔄',
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/fallaback-manage.png',
+    highlights: [
+      'Instruct Super Agent option for custom fallback messages',
+      'Trigger Global Fallback Flow to guide users when agent cannot respond',
+      'Handles technical issues, validation failures, and system outages gracefully'
+    ]
+  },
+  {
+    title: 'Global Components Now Accessible from the Header',
+    description: 'The Global Components section is now available directly from the top navigation bar, making it easier to access and manage components across all AI agents.',
+    fullDescription: 'The **Global Components** section is now also available directly from the top navigation bar, making it easier to access and manage components across all AI agents. You can still find it within the **Agents** tab as before, ensuring a consistent experience. This enhancement provides faster access to shared components while maintaining familiar navigation patterns.',
+    type: 'Enhancement',
+    badge: 'Enhancement',
+    date: 'October 25, 2025',
+    link: '/docs/platform_concepts/AIAgent/global-components',
+    category: 'AI Agent',
+    icon: '🌐',
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/global-components.png'
+  },
+  {
+    title: 'View All Components with Agent References',
+    description: 'The Agent References feature provides a complete view of all components used within an AI agent.',
+    fullDescription: 'The **Agent References** feature provides a complete view of all components used within an AI agent. It automatically identifies and groups elements such as **Get Input** actions, **Variables**, and **Workflows** that are part of the agent\'s configuration. With Agent References, you can easily track where each component is used across the conversation flow, ensuring better visibility and easier management of your AI agent\'s structure.',
+    type: 'New Feature',
+    badge: 'new',
+    date: 'October 28, 2025',
+    link: '/docs/platform_concepts/AIAgent/manage-your-agent#agent-references',
+    category: 'AI Agent',
+    icon: '🔍',
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/agent-references.png',
+    highlights: [
+      'Complete view of all components used within an AI agent',
+      'Automatically identifies and groups Get Input actions, Variables, and Workflows',
+      'Easily track where each component is used across conversation flows'
+    ]
+  },
+  {
+    title: 'Collect User Feedback in AI Agents',
+    description: 'Gather real-time user feedback during conversations using the new Get Feedback Input action.',
+    fullDescription: 'You can now gather real-time user feedback during conversations using the new **Get Feedback Input** action. The AI agent captures ratings through thumbs up/down or star inputs, allowing users to share their experience instantly. All feedback is automatically stored in the **User Feedback** table within **Data Explorer**, making it easy to review and analyze insights to enhance your AI agent\'s performance.',
+    type: 'Enhancement',
+    badge: 'Enhancement',
+    date: 'October 30, 2025',
+    link: '/docs/platform_concepts/AIAgent/get-feedback',
+    category: 'AI Agent',
+    icon: '⭐',
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/sel-feedback.png',
+    highlights: [
+      'Capture ratings through thumbs up/down or star inputs',
+      'Automatically stored in User Feedback table within Data Explorer',
+      'Review and analyze insights to enhance AI agent performance'
+    ]
+  },
+  {
+    title: 'Call Agent Action in AI Agents',
+    description: 'The Call Agent action lets one AI agent trigger another within an active conversation, enabling smooth transitions between specialized agents without losing context.',
+    fullDescription: 'The **Call Agent** action lets one AI agent trigger another within an active conversation, enabling smooth transitions between specialized agents without losing context. With this action, AI agents can dynamically hand off conversations between domain-specific agents, pause and resume the parent agent\'s flow seamlessly, maintain conversation context throughout the handoff process, and enable specialization by routing users to the right expert agent. Example: In a flight booking scenario, the main **Yellow Travels** agent can invoke a **Flight Booking** agent to handle ticket reservations and later use the **Call Agent** action to switch to a **Cancellation** agent when the user requests to cancel a booking.',
+    type: 'Enhancement',
+    badge: 'Enhancement',
+    date: 'October 29, 2025',
+    link: '/docs/platform_concepts/AIAgent/call-agent',
+    category: 'AI Agent',
+    icon: '🔄',
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/call-agent.png',
+    highlights: [
+      'Dynamically hand off conversations between domain-specific agents',
+      'Pause and resume the parent agent\'s flow seamlessly',
+      'Maintain conversation context throughout agent transitions'
+    ]
+  },
+  {
+    title: 'AI Safety & Conduct in Super Agent',
+    description: 'Set safety filters for your AI agent conversations to prevent harmful or inappropriate behavior and protect user data.',
+    fullDescription: 'The new **AI Safety & Conduct** option helps set safety filters for your AI agent conversations to prevent harmful or inappropriate behavior and to protect user data. This ensures that every AI interaction remains ethical, accurate, and professional. Configure filters to detect and block banned topics, violence, sexual content, sensitivity, toxicity, and bias—safeguarding both user inputs and AI responses.',
+    type: 'Enhancement',
+    badge: 'Enhancement',
+    date: 'October 28, 2025',
+    link: '/docs/platform_concepts/AIAgent/agentpersona#ai-safety--conduct',
+    category: 'AI Agent',
+    icon: '🛡️',
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/AIsafety.png',
+    highlights: [
+      'Automatically prevents hallucinations, offensive replies, and inappropriate responses',
+      'Protects user privacy and sensitive information through controlled data handling',
+      'Helps ensure compliance with data privacy regulations like GDPR and HIPAA'
+    ]
+  },
+  {
+    title: 'Transfer to Live Agent Action',
+    description: 'The Transfer to Live Agent action enables seamless escalation from an AI conversation to a human agent whenever real-time assistance is required.',
+    fullDescription: 'The **Transfer to Live Agent** action enables seamless escalation from an AI conversation to a human agent whenever real-time assistance is required. It ensures users receive immediate, personalized support when the AI agent cannot fully resolve their query. With this action, AI agents can instantly transfer conversations to human agents for faster issue resolution while maintaining context and chat history for a smooth handover experience.',
+    type: 'Enhancement',
+    badge: 'Enhancement',
+    date: 'October 29, 2025',
+    link: '/docs/platform_concepts/AIAgent/transfer-live-agent',
+    category: 'AI Agent',
+    icon: '👤',
+    image: 'https://cdn.yellowmessenger.com/assets/yellow-docs/profile-live-agent.png',
+    highlights: [
+      'Instantly transfer conversations to human agents for faster issue resolution',
+      'Maintain context and chat history for a smooth handover experience'
+    ]
+  },
+  {
+    title: 'Cloud Platform Redefined for a Better Experience',
+    description: 'A redesigned workspace with a cleaner theme and improved navigation for a smoother, more intuitive experience.',
+    fullDescription: 'We\'ve redesigned the Yellow.ai workspace with a cleaner theme and improved navigation to give you a smoother, more intuitive experience. This update reduces clutter in the left navigation and provides an overall better workflow, with refreshed colors, fonts, and distinct structures for AI and Non-AI agents.',
+    type: 'Platform',
+    badge: 'Enhancement',
+    date: 'September 8, 2025',
+    link: '/docs/updates/overview#cloud-platform-redefined',
+    category: 'Platform',
+    icon: '🎨'
+  },
   {
   title: "Limit WhatsApp Notifications per User",
   description: "Control how many WhatsApp notifications an individual user can receive within a set time period.",

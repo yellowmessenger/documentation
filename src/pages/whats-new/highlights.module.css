@@ -369,9 +369,9 @@
 }
 
 .cardBadge {
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -384,8 +384,8 @@
 }
 
 .cardBadge.enhancement {
-  background: #e3f2fd;
-  color: #1565c0;
+  background: #f3e5f5;
+  color: #8e24aa;
 }
 
 .cardBadge.majorUpdate {
@@ -397,6 +397,19 @@
   color: var(--ifm-color-content-secondary);
   font-size: 0.85rem;
   font-weight: 500;
+}
+
+/* Special styling for "Upcoming" dates */
+.cardDate.upcoming,
+.updateDate.upcoming {
+  color: #1976d2;
+  font-weight: 600;
+  background: #e3f2fd;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .cardCategoryBadge {
@@ -414,6 +427,26 @@
 .cardImageContainer {
   padding: 0 20px;
   margin: 12px 0;
+  position: relative;
+}
+
+.cardImageContainer::after {
+  content: '🔍';
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.cardImageContainer:hover::after {
+  opacity: 1;
 }
 
 .cardImage {
@@ -423,9 +456,25 @@
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .cardImage:hover {
+  transform: scale(1.02);
+}
+
+.cardImageFull {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.cardImageFull:hover {
   transform: scale(1.02);
 }
 
@@ -499,7 +548,7 @@
   color: var(--ifm-color-primary);
   text-decoration: none;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.9rem;
   padding: 8px 12px;
   border-radius: 6px;
@@ -508,7 +557,7 @@
   align-items: center;
   gap: 4px;
   background: transparent;
-  border: 1px solid transparent;
+  border: 1px solid var(--ifm-color-emphasis-300);
 }
 
 .expandLink:hover {
@@ -625,7 +674,7 @@
   background: var(--ifm-color-emphasis-0);
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
@@ -635,6 +684,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  border: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .updateContent {
@@ -647,11 +697,13 @@
   background: var(--ifm-color-emphasis-50);
   border: 1px solid var(--ifm-color-primary-lightest);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  grid-column: span 2;
 }
 
 .updateCard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: var(--ifm-color-emphasis-300);
 }
 
 /* Alternating Timeline Layout */
@@ -854,12 +906,12 @@
 }
 
 .updateBadge {
-  padding: 3px 6px;
-  border-radius: 10px;
-  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -876,7 +928,7 @@
 
 .updateBadge.Enhancement {
   background: #f3e5f5;
-  color: #7b1fa2;
+  color: #8e24aa;
 }
 
 .contentTypeBadge {
@@ -893,7 +945,7 @@
 
 .updateDate {
   color: var(--ifm-color-content-secondary);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   margin-left: auto;
   white-space: nowrap;
   flex-shrink: 0;
@@ -923,6 +975,18 @@
   color: var(--ifm-color-content-secondary);
   line-height: 1.5;
   margin-bottom: 15px;
+  /* Limit to 3 lines when collapsed */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Show full description when card is expanded */
+.updateCard.expanded .updateDescription {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
 
 .updateParagraph {
@@ -1027,7 +1091,7 @@
 }
 
 .expandSection {
-  margin-top: 12px;
+  margin-top: 16px;
   margin-bottom: 16px;
   min-height: 36px;
   display: flex;
@@ -1041,18 +1105,18 @@
 }
 
 .expandButton {
-  background: var(--ifm-color-white);
+  background: transparent;
   border: 1px solid var(--ifm-color-emphasis-300);
-  color: var(--ifm-color-text);
+  color: var(--ifm-color-primary);
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.2s ease;
   width: auto;
   white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 .expandButton:hover {
@@ -1068,9 +1132,17 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid var(--ifm-color-emphasis-200);
-  padding-top: 12px;
+  padding-top: 16px;
   margin-top: auto;
   min-height: 44px;
+  gap: 12px;
+}
+
+.updateFooterLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .updateCategory {
@@ -1194,11 +1266,14 @@
 
 .modalContent {
   position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
   background: var(--ifm-background-color);
   border-radius: 12px;
-  overflow: hidden;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modalClose {
@@ -1222,9 +1297,12 @@
 }
 
 .modalImage {
-  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 /* Animations */
@@ -1287,6 +1365,11 @@
   .updatesContainer.grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
+  }
+  
+  /* Prevent 2-column span on mobile */
+  .updateCard.expanded {
+    grid-column: span 1;
   }
   
   /* Mobile Timeline - Switch to single column */
@@ -1375,13 +1458,20 @@
   
   .updateFooter {
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     align-items: stretch;
     min-height: auto;
+    padding-top: 16px;
+  }
+  
+  .updateFooterLeft {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
   
   .expandSection {
-    margin-top: 10px;
+    margin-top: 16px;
     margin-bottom: 12px;
   }
 
