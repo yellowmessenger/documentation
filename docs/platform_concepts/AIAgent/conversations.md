@@ -172,6 +172,8 @@ In the Prompt section, you can add the following actions:
 
 * [Get input](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input): Collect specific information from the user, such as their name, phone number, and email.
 * [Call workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow): Trigger an external process or function, such as retrieving data from a database, calling an API, or executing backend operations, allowing the AI agent to handle complex tasks.
+* [Call agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-agent): Trigger another agent within the same conversation. This pauses the current agent and transfers control to the selected target agent to continue the conversation.
+* [Transfer to Live agent](https://docs.yellow.ai/docs/platform_concepts/AIAgent/transfer-live-agent): Connect the user to a human agent when the AI agent cannot resolve the query or when real-time assistance is required.
 * [Call a Fallback](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-fallback): Trigger a predefined fallback action when the AI agent is unable to understand or fulfill the user’s request.
 
 :::tip

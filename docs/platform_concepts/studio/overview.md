@@ -266,9 +266,7 @@ In rule-based agents, [nodes](https://docs.yellow.ai/docs/platform_concepts/stud
 * **Dynamic rich media generation**: Create interactive and engaging responses using carousels, images, and quick replies. **Example**: Displaying flight options in a carousel or showing payment instructions with buttons.
 * **Triggering Workflows or APIs**: Initiate automated workflows or external API calls from within the conversation.
 
-------
-
-## Workflows in AI-powered Agents and Rule-based Flows
+### Workflows in AI-powered Agents and Rule-based Flows
 
 Workflows are specialized automation that agents call during a conversation to perform backend tasks, such as making API calls, updating database, or sending notifications. Both AI-powered agents and rule-based flows can use workflows, but they trigger them differently:
 

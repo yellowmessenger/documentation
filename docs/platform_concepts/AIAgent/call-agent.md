@@ -30,16 +30,16 @@ To configure call agent action, follow these steps:
 
 1. Go to Prompt section, Click **Actions** and select **Call agent** to trigger another agent based on your use case.
 
-    ![image](https://hackmd.io/_uploads/BJorVxO2le.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/call-agent.png)
 
 
 2. Select the agent that you want to trigger from the drop-down.
 
-   ![image](https://hackmd.io/_uploads/ryAVVgOngg.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/cancel-flow.png)
    
 * Once configured, the selected agent will be triggered during the conversation.
 
-    ![image](https://hackmd.io/_uploads/rybPHld3gx.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/call-agent1.png)
 
     
 
