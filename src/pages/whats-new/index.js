@@ -16,6 +16,29 @@ export default function WhatsNewOverview() {
   const [expandedUpdates, setExpandedUpdates] = useState(new Set());
   const [selectedImage, setSelectedImage] = useState(null);
 
+  // Format date to show "Upcoming" for future dates or today before 4pm
+  const formatDateDisplay = (dateString) => {
+    const itemDate = new Date(dateString);
+    const now = new Date();
+    
+    // Compare dates (ignoring time)
+    const itemDateOnly = new Date(itemDate.getFullYear(), itemDate.getMonth(), itemDate.getDate());
+    const todayOnly = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    // Future date
+    if (itemDateOnly > todayOnly) {
+      return 'Upcoming';
+    }
+    
+    // Today but before 4pm (16:00)
+    if (itemDateOnly.getTime() === todayOnly.getTime() && now.getHours() < 16) {
+      return 'Upcoming';
+    }
+    
+    // Today after 4pm or past date - return the original date
+    return dateString;
+  };
+
   // Function to render formatted description with markdown-like support
   const renderFormattedDescription = (description) => {
     const lines = description.split('\n');
@@ -267,7 +290,9 @@ export default function WhatsNewOverview() {
                         feature.badge === 'Enhancement' ? styles.enhancement :
                         feature.badge === 'Major Update' ? styles.majorUpdate : ''
                       }`}>{feature.badge}</div>
-                      <span className={styles.cardDate}>{feature.date}</span>
+                      <span className={`${styles.cardDate} ${formatDateDisplay(feature.date) === 'Upcoming' ? styles.upcoming : ''}`}>
+                        {formatDateDisplay(feature.date)}
+                      </span>
                     </div>
                     
                     {feature.image && (
@@ -275,7 +300,7 @@ export default function WhatsNewOverview() {
                         <img 
                           src={feature.image} 
                           alt={feature.title}
-                          className={styles.cardImage}
+                          className={feature.showFullImage ? styles.cardImageFull : styles.cardImage}
                           onClick={() => openImageModal(feature.image)}
                         />
                       </div>
@@ -343,11 +368,12 @@ export default function WhatsNewOverview() {
                       <div className={styles.updateContent}>
                         <div className={styles.updateHeader}>
                           <div className={styles.updateMeta}>
-                            <span className={styles.updateIcon}>{update.icon}</span>
                             <span className={`${styles.updateBadge} ${styles[update.badge]}`}>
                               {update.badge}
                             </span>
-                            <span className={styles.updateDate}>{update.date}</span>
+                            <span className={`${styles.updateDate} ${formatDateDisplay(update.date) === 'Upcoming' ? styles.upcoming : ''}`}>
+                              {formatDateDisplay(update.date)}
+                            </span>
                           </div>
                         </div>
                         
@@ -406,11 +432,11 @@ export default function WhatsNewOverview() {
           <section className={styles.section}>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>
-                <span className={styles.sectionIcon}>📅</span>
-                Update Timeline
+                <span className={styles.sectionIcon}>🕓</span>
+                Timeline View
               </h2>
               <p className={styles.sectionSubtitle}>
-                All updates in chronological order
+                Chronological view of all updates
               </p>
             </div>
 
@@ -441,11 +467,12 @@ export default function WhatsNewOverview() {
                     <div className={styles.updateContent}>
                       <div className={styles.updateHeader}>
                         <div className={styles.updateMeta}>
-                          <span className={styles.updateIcon}>{item.icon}</span>
                           <span className={`${styles.updateBadge} ${item.isMajorUpdate ? styles.majorUpdate : styles[item.badge]}`}>
                             {item.isMajorUpdate ? 'Major Update' : item.badge}
                           </span>
-                          <span className={styles.updateDate}>{item.date}</span>
+                          <span className={`${styles.updateDate} ${formatDateDisplay(item.date) === 'Upcoming' ? styles.upcoming : ''}`}>
+                            {formatDateDisplay(item.date)}
+                          </span>
                         </div>
                       </div>
                       
