@@ -20,6 +20,7 @@ When creating an input, different input types can be selected based on the use c
 * **[Custom](#custom)** – Enables a more flexible input type tailored to specific needs.
 * **[Location](#location)** - Captures the user’s location based on the user input.
 * **[Dynamic rich media](#dynamic-rich-media)** - Displays interactive options like cards with images and action buttons that are generated dynamically.
+* **[Feedback](#get-feedback-input)** - Collects the user's feedback.
 
 ### Create input
 

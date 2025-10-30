@@ -14,27 +14,6 @@ The table below describes the fields available in the Workflow action:
 | **Workflow processing**  | The workflow executes its logic to perform tasks, automate backend operations, and handle complex scenarios, such as: <ul><li>Fetching data from APIs or databases (e.g., retrieving weather updates using location data)</li><li>Raising support tickets (e.g., for flight cancellations)</li><li>Connecting to a human agent when needed</li><li>Executing custom functions (e.g., calculating baggage charges)</li></ul> |
 | **Store output**         | The workflow’s response (e.g., booking status, payment confirmation) is stored in a variable for use in subsequent conversation steps.       
 
-### Workflow settings 
-
-In the Workflow section of your AI agent, the settings option allows you define what happens when a workflow fails during execution. For example, if an API call times out, a database action fails, or the backend service returns an error.
-
-By configuring fallback behavior, you ensure that the conversation continues smoothly and the user still receives a response or is guided to the next action.
-
-You can also enable an AI-powered apology message, which automatically notifies the user when something goes wrong (for example, "Sorry, I'm having trouble fetching plans right now").
-   
-   <img src="https://cdn.yellowmessenger.com/assets/workflow-fallback/workflow-fallback.png" alt="drawing" width="70%"/>
-  
-#### Fallback options
-
-You can choose fallback actions after a workflow fails:
-
-1. **Trigger fallback set for super agent**: This option executes the fallback response configured for the Super agent. It ensures that the conversation does not stop abruptly and the user receives a relevant message or redirection based on the global fallback setup. Use this option when you want to maintain a consistent fallback experience across all workflows and agents.
-
-2. **Transfer to live agent**: This option hands off the conversation to a human support agent when a workflow fails. It is useful in scenarios where the issue requires manual intervention. For example, payment failures, booking errors, or refund issues that the AI agent cannot resolve due to a backend error, the conversation is handed off to a support agent to assist the user.
-
-3. **Move forward**: This option allows the AI agent to continue the conversation without interruption. It is best used for non-critical workflows where the failure doesn’t impact the overall user experience. Example: If a workflow that fetches optional recommendations (like hotel suggestions) fails, the conversation can still move forward to the booking confirmation step.
-
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/select-workflow.png" alt="drawing" width="60%"/>
 
 ### Output node in Workflows
 
@@ -70,6 +49,28 @@ You can configure the Output node to return one of the following types:
 
 1. **Return a value**: Displays a predefined text message when the Workflow completes.<br/> **Use case**: Use this when the output is static and does not depend on dynamic input.<br/> **Example**: "Thank you! Your request has been submitted."
 2. **Variable**: Returns dynamic content stored in a variable, such as values fetched from APIs, databases, or functions.<br/> **Use case**: When the workflow depends on user inputs or dynamic data.<br/>  Store the weather temperature fetched from an API and use it later in the conversation.
+
+### Workflow settings 
+
+In the Workflow section of your AI agent, the settings option allows you define what happens when a workflow fails during execution. For example, if an API call times out, a database action fails, or the backend service returns an error.
+
+By configuring fallback behavior, you ensure that the conversation continues smoothly and the user still receives a response or is guided to the next action.
+
+You can also enable an AI-powered apology message, which automatically notifies the user when something goes wrong (for example, "Sorry, I'm having trouble fetching plans right now").
+   
+   <img src="https://cdn.yellowmessenger.com/assets/workflow-fallback/workflow-fallback.png" alt="drawing" width="70%"/>
+  
+#### Fallback options
+
+You can choose fallback actions after a workflow fails:
+
+1. **Trigger fallback set for super agent**: This option executes the fallback response configured for the Super agent. It ensures that the conversation does not stop abruptly and the user receives a relevant message or redirection based on the global fallback setup. Use this option when you want to maintain a consistent fallback experience across all workflows and agents.
+
+2. **Transfer to live agent**: This option hands off the conversation to a human support agent when a workflow fails. It is useful in scenarios where the issue requires manual intervention. For example, payment failures, booking errors, or refund issues that the AI agent cannot resolve due to a backend error, the conversation is handed off to a support agent to assist the user.
+
+3. **Move forward**: This option allows the AI agent to continue the conversation without interruption. It is best used for non-critical workflows where the failure doesn’t impact the overall user experience. Example: If a workflow that fetches optional recommendations (like hotel suggestions) fails, the conversation can still move forward to the booking confirmation step.
+
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/select-workflow.png" alt="drawing" width="60%"/>
 
 ### Create a workflow
 
