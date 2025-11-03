@@ -5,14 +5,14 @@ sidebar_label: Knowledge base
 
 # Knowledge base overview
 
-The Knowledge Base is a centralized source of truth that helps your AI agent deliver accurate, consistent, and context-aware responses. It allows you to import, organize, and manage content from various sources such as documents, websites, and third-party systems.
+The Knowledge Base is a centralized source of truth that helps your AI agent deliver accurate, consistent, and context-aware responses. It allows you to import, organize, and manage content from various sources such as documents, websites, articles, and third-party systems.
 
 Use the Knowledge Base to ensure your AI agent has access to the latest and most relevant information, reducing manual effort and improving response quality across support, service, and informational use cases.
 
 
 ## What you can do
 
-* Import content from multiple sources, including file uploads, URLs, and third-party platforms like ServiceNow.
+* Import content from multiple sources, including file uploads, URLs, articles, and third-party platforms like ServiceNow.
 * Schedule automatic syncs to keep your content up to date.
 * Tag content with metadata to improve search relevance.
 * Organize documents using folders and subfolders by team, topic, or category.
@@ -25,6 +25,7 @@ You can add content from:
 
 * **Files**: Upload PDFs, Word documents, Excel sheets, and more.
 * **Web sources**: Use URLs or sitemaps to pull content from your website.
+* **Articles**: Create and manage articles directly within the platform to provide structured and editable information to your AI Agent.
 * **Third-party systems**: Connect to external platforms like ServiceNow.
 
 Each source is automatically processed and made searchable by the AI agent. You can view the sync status of each document in the dashboard.
@@ -34,7 +35,7 @@ Each source is automatically processed and made searchable by the AI agent. You 
 
 | Feature                        | Description                                                                         |
 | ------------------------------ | ----------------------------------------------------------------------------------- |
-| **Flexible content ingestion** | Add content from documents, URLs, and external platforms.                           |
+| **Flexible content ingestion** | Add content from documents, URLs, articles, and external platforms.                           |
 | **Metadata tagging**           | Apply filters and tags to help the AI agent interpret context accurately.           |
 | **Automatic content sync**     | Keep your content fresh with scheduled syncs. No manual updates needed.             |
 | **Organized file structure**   | Use folders and subfolders to categorize documents for easy access and scalability. |

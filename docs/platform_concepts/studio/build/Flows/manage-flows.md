@@ -82,7 +82,7 @@ To edit a node, click on the node where you can edit based on your requirements.
 
 ![](https://imgur.com/2bsrF4y.gif)
 
-## Clonning a node
+## Cloning a node
 
 Cloning a node simplifies the process of creating duplicate copies for reuse within the flow. This saves valuable time and effort in content creation by eliminating the need to recreate similar content from scratch.
 
