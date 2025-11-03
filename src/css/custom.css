@@ -2636,3 +2636,835 @@ html[data-theme='dark'] .table-of-contents a.table-of-contents__link--active {
   border-color: var(--ifm-color-primary, #0066cc);
   background: var(--ifm-color-primary-lightest, rgba(0, 102, 204, 0.05));
 }
+
+/* ================== API PAGE IMPROVEMENTS ================== */
+/* 1. Reduce top white space before section titles */
+article.api-method > h2,
+article.api-method > h3,
+.openapi-markdown h2,
+.openapi-markdown h3 {
+  margin-top: 1.5rem !important;
+}
+
+/* 2. Add light border to parameter table rows */
+.openapi-schema-table table tbody tr,
+.openapi-params-table tbody tr,
+table.openapi tbody tr,
+article.api-method table tbody tr {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200) !important;
+}
+
+/* 3. Stripe-style code blocks with enhanced contrast */
+article.api-method pre,
+article.api-method code,
+.openapi-markdown pre,
+.openapi-markdown code,
+.theme-code-block {
+  background: #0d1117 !important;
+  color: #e6edf3 !important;
+  border: 1px solid #30363d !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Inline code styling */
+article.api-method code:not(pre code),
+.openapi-markdown code:not(pre code) {
+  background: #161b22 !important;
+  color: #79c0ff !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 6px !important;
+  font-size: 0.9em !important;
+  border: 1px solid #30363d !important;
+}
+
+/* Code block syntax highlighting improvements */
+article.api-method .token.string,
+.openapi-markdown .token.string {
+  color: #a5d6ff !important;
+}
+
+article.api-method .token.number,
+.openapi-markdown .token.number {
+  color: #79c0ff !important;
+}
+
+article.api-method .token.boolean,
+.openapi-markdown .token.boolean {
+  color: #ff7b72 !important;
+}
+
+article.api-method .token.property,
+.openapi-markdown .token.property {
+  color: #ffa657 !important;
+}
+
+article.api-method .token.punctuation,
+.openapi-markdown .token.punctuation {
+  color: #8b949e !important;
+}
+
+/* 4. Monospace typeface for params & keys */
+article.api-method td:first-child,
+article.api-method th:first-child,
+.openapi-schema-table td:first-child,
+.openapi-schema-table th:first-child,
+.openapi-params-table td:first-child,
+.openapi-params-table th:first-child,
+article.api-method .parameter-name,
+article.api-method .property-name,
+.openapi-markdown .parameter-name,
+.openapi-markdown .property-name {
+  font-family: var(--font-mono, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace) !important;
+  font-size: 0.9em !important;
+  font-weight: 500 !important;
+  color: #7c3aed !important;
+}
+
+/* 5. Accordion/Collapsible Parameter Sections - Slack-style */
+/* Parameter section grouping */
+article.api-method > div[class*="params"],
+article.api-method > div[class*="body"],
+article.api-method section[class*="params"],
+article.api-method section[class*="body"],
+.openapi-markdown > div[class*="params"],
+.openapi-markdown > div[class*="body"] {
+  border: 1px solid var(--ifm-color-emphasis-200) !important;
+  border-radius: 8px !important;
+  margin: 1.5rem 0 !important;
+  overflow: hidden !important;
+  background: var(--ifm-color-emphasis-0) !important;
+}
+
+/* Parameter section headers */
+article.api-method h3,
+article.api-method h4,
+.openapi-markdown h3,
+.openapi-markdown h4 {
+  background: var(--ifm-color-emphasis-100) !important;
+  padding: 12px 16px !important;
+  margin: 0 !important;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background 0.2s ease !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+article.api-method h3:hover,
+article.api-method h4:hover,
+.openapi-markdown h3:hover,
+.openapi-markdown h4:hover {
+  background: var(--ifm-color-emphasis-200) !important;
+}
+
+/* Add collapse indicator icon */
+article.api-method h3::after,
+article.api-method h4::after,
+.openapi-markdown h3::after,
+.openapi-markdown h4::after {
+  content: "▼" !important;
+  font-size: 0.7em !important;
+  color: var(--ifm-color-emphasis-600) !important;
+  transition: transform 0.2s ease !important;
+}
+
+/* Collapsed state */
+article.api-method details[open] > summary h3::after,
+article.api-method details[open] > summary h4::after {
+  transform: rotate(180deg) !important;
+}
+
+/* Parameter table container */
+article.api-method table,
+.openapi-schema-table table,
+.openapi-params-table table {
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* Table wrapper padding */
+article.api-method div[class*="table"],
+.openapi-markdown div[class*="table"] {
+  padding: 16px !important;
+}
+
+/* Section badges for parameter types */
+article.api-method h3::before,
+.openapi-markdown h3::before {
+  content: attr(data-type) !important;
+  background: var(--ifm-color-primary-lightest) !important;
+  color: var(--ifm-color-primary) !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  margin-right: 8px !important;
+}
+
+/* 6. Example values & placeholders styling */
+/* Style example values in parameter tables */
+article.api-method td:nth-child(3),
+article.api-method td:last-child,
+.openapi-schema-table td:nth-child(3),
+.openapi-params-table td:nth-child(3) {
+  font-family: var(--font-mono, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace) !important;
+}
+
+/* Example value containers */
+article.api-method .example,
+article.api-method [class*="example"],
+.openapi-markdown .example,
+.openapi-markdown [class*="example"] {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+  margin: 8px 0 !important;
+  font-family: var(--font-mono, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace) !important;
+  font-size: 0.85em !important;
+  color: #334155 !important;
+  display: block !important;
+  position: relative !important;
+}
+
+/* Example label */
+article.api-method .example::before,
+article.api-method [class*="example"]::before {
+  content: "Example:" !important;
+  display: block !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  color: #64748b !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 4px !important;
+  font-family: var(--font-primary) !important;
+}
+
+/* Code-like formatting for example values */
+article.api-method code,
+.openapi-markdown code {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-size: 0.9em !important;
+  font-weight: 500 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* Placeholder-style for empty/default values */
+article.api-method .placeholder,
+article.api-method [class*="placeholder"],
+.openapi-markdown .placeholder {
+  color: #94a3b8 !important;
+  font-style: italic !important;
+}
+
+/* Table cell with examples - add visual separator */
+article.api-method table td {
+  vertical-align: top !important;
+  padding: 12px 16px !important;
+}
+
+/* Highlight example column */
+article.api-method th:nth-child(3),
+.openapi-schema-table th:nth-child(3),
+.openapi-params-table th:nth-child(3) {
+  background: var(--ifm-color-emphasis-100) !important;
+  font-weight: 600 !important;
+}
+
+/* Add copy icon hint for examples */
+article.api-method .example:hover::after,
+article.api-method [class*="example"]:hover::after {
+  content: "📋 Click to copy" !important;
+  position: absolute !important;
+  top: 8px !important;
+  right: 12px !important;
+  font-size: 0.7rem !important;
+  color: #64748b !important;
+  font-family: var(--font-primary) !important;
+  opacity: 0.7 !important;
+}
+
+/* Dark mode support for examples */
+html[data-theme='dark'] article.api-method .example,
+html[data-theme='dark'] article.api-method [class*="example"],
+html[data-theme='dark'] .openapi-markdown .example {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+html[data-theme='dark'] article.api-method code,
+html[data-theme='dark'] .openapi-markdown code {
+  background: #1e293b !important;
+  color: #e2e8f0 !important;
+  border-color: #334155 !important;
+}
+
+/* 7. Required field badges */
+/* Style for required indicator - Brand yellow pill badge */
+/* Ultra-specific selector to override inline styles */
+table strong[style*="--openapi-required"],
+article.api-method strong[style*="--openapi-required"],
+article.api-method td strong[style*="--openapi-required"],
+article.api-method table strong[style*="--openapi-required"],
+.openapi-schema-table strong[style*="--openapi-required"],
+.openapi-params-table strong[style*="--openapi-required"],
+.openapi-markdown strong[style*="--openapi-required"],
+td > strong[style*="--openapi-required"],
+table td strong[style*="--openapi-required"] {
+  background: #FFF7E1 !important;
+  color: #8C6A1E !important;
+  border: 1px solid #F3CA67 !important;
+  padding: 2px 8px !important;
+  border-radius: 12px !important;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-left: 6px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+}
+
+/* Required asterisk styling */
+article.api-method .required-asterisk,
+article.api-method sup,
+.openapi-schema-table sup,
+.openapi-params-table sup {
+  color: #8C6A1E !important;
+  font-weight: 700 !important;
+  font-size: 1em !important;
+  margin-left: 2px !important;
+}
+
+/* Table row highlighting for required fields */
+article.api-method tr:has(strong[style*="--openapi-required"]),
+.openapi-schema-table tr:has(strong[style*="--openapi-required"]),
+.openapi-params-table tr:has(strong[style*="--openapi-required"]) {
+  border-left: 3px solid #F3CA67 !important;
+  background: linear-gradient(90deg, #FFF7E1 0%, transparent 100%) !important;
+}
+
+/* Required field name emphasis */
+article.api-method td:first-child:has(+ td strong[style*="--openapi-required"]),
+.openapi-schema-table td:first-child:has(+ td strong[style*="--openapi-required"]),
+.openapi-params-table td:first-child:has(+ td strong[style*="--openapi-required"]) {
+  font-weight: 600 !important;
+}
+
+/* Alternative badge style - solid */
+article.api-method .badge-required,
+.openapi-markdown .badge-required {
+  background: #dc2626 !important;
+  color: white !important;
+  border: none !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+  font-size: 0.65rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-left: 6px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* Optional field badge (for contrast) */
+article.api-method .optional,
+article.api-method [class*="optional"],
+.openapi-schema-table .optional,
+.openapi-params-table .optional,
+.openapi-markdown .optional {
+  background: #f0f9ff !important;
+  color: #0369a1 !important;
+  border: 1px solid #bae6fd !important;
+  padding: 2px 8px !important;
+  border-radius: 12px !important;
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-left: 6px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+}
+
+/* Dark mode support for required badges */
+html[data-theme='dark'] table strong[style*="--openapi-required"],
+html[data-theme='dark'] article.api-method strong[style*="--openapi-required"],
+html[data-theme='dark'] article.api-method td strong[style*="--openapi-required"],
+html[data-theme='dark'] article.api-method table strong[style*="--openapi-required"],
+html[data-theme='dark'] .openapi-schema-table strong[style*="--openapi-required"],
+html[data-theme='dark'] .openapi-params-table strong[style*="--openapi-required"],
+html[data-theme='dark'] .openapi-markdown strong[style*="--openapi-required"],
+html[data-theme='dark'] td > strong[style*="--openapi-required"],
+html[data-theme='dark'] table td strong[style*="--openapi-required"] {
+  background: rgba(243, 202, 103, 0.15) !important;
+  color: #F3CA67 !important;
+  border-color: rgba(243, 202, 103, 0.3) !important;
+}
+
+html[data-theme='dark'] article.api-method .badge-required,
+html[data-theme='dark'] .openapi-markdown .badge-required {
+  background: #dc2626 !important;
+  color: white !important;
+}
+
+html[data-theme='dark'] article.api-method .optional,
+html[data-theme='dark'] .openapi-schema-table .optional,
+html[data-theme='dark'] .openapi-params-table .optional,
+html[data-theme='dark'] .openapi-markdown .optional {
+  background: #0c4a6e !important;
+  color: #7dd3fc !important;
+  border-color: #075985 !important;
+}
+
+html[data-theme='dark'] article.api-method tr:has(strong[style*="--openapi-required"]),
+html[data-theme='dark'] .openapi-schema-table tr:has(strong[style*="--openapi-required"]),
+html[data-theme='dark'] .openapi-params-table tr:has(strong[style*="--openapi-required"]) {
+  border-left-color: #F3CA67 !important;
+  background: linear-gradient(90deg, rgba(243, 202, 103, 0.1) 0%, transparent 100%) !important;
+}
+
+/* 8. Copy button for code blocks - Light styling enhancement only */
+/* Improve existing copy button without breaking functionality */
+article.api-method button[class*="copy"],
+article.api-method button[class*="Copy"],
+.openapi-markdown button[class*="copy"],
+.openapi-markdown button[class*="Copy"] {
+  border-radius: 5px !important;
+  font-weight: 500 !important;
+  transition: all 0.15s ease !important;
+}
+
+/* Hover state - soft background */
+article.api-method button[class*="copy"]:hover,
+article.api-method button[class*="Copy"]:hover,
+.openapi-markdown button[class*="copy"]:hover,
+.openapi-markdown button[class*="Copy"]:hover {
+  background: #F8F9FA !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Dark mode hover */
+html[data-theme='dark'] article.api-method button[class*="copy"]:hover,
+html[data-theme='dark'] article.api-method button[class*="Copy"]:hover,
+html[data-theme='dark'] .openapi-markdown button[class*="copy"]:hover,
+html[data-theme='dark'] .openapi-markdown button[class*="Copy"]:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 9. API Tables - Stripe-style clean design */
+/* White background with clean borders and spacing */
+article.api-method table,
+.openapi-schema-table,
+.openapi-params-table,
+.openapi-markdown table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid var(--ifm-color-emphasis-300) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background: #FFFFFF !important;
+}
+
+/* Dark mode - dark background */
+html[data-theme='dark'] article.api-method table,
+html[data-theme='dark'] .openapi-schema-table,
+html[data-theme='dark'] .openapi-params-table,
+html[data-theme='dark'] .openapi-markdown table {
+  background: var(--ifm-background-color) !important;
+}
+
+/* Table header styling */
+article.api-method table thead tr,
+.openapi-schema-table thead tr,
+.openapi-params-table thead tr,
+.openapi-markdown table thead tr {
+  background: #FFFFFF !important;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300) !important;
+}
+
+article.api-method table thead th,
+.openapi-schema-table thead th,
+.openapi-params-table thead th,
+.openapi-markdown table thead th {
+  padding: var(--ifm-table-cell-padding) !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  color: var(--ifm-color-content) !important;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300) !important;
+  background: #fff !important;
+  border: none !important;
+}
+
+/* Table body rows - white background with borders only */
+article.api-method table tbody tr,
+.openapi-schema-table tbody tr,
+.openapi-params-table tbody tr,
+.openapi-markdown table tbody tr {
+  background: #FFFFFF !important;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200) !important;
+  transition: background-color 0.1s ease !important;
+}
+
+/* Dark mode - rows */
+html[data-theme='dark'] article.api-method table thead tr,
+html[data-theme='dark'] .openapi-schema-table thead tr,
+html[data-theme='dark'] .openapi-params-table thead tr,
+html[data-theme='dark'] .openapi-markdown table thead tr,
+html[data-theme='dark'] article.api-method table tbody tr,
+html[data-theme='dark'] .openapi-schema-table tbody tr,
+html[data-theme='dark'] .openapi-params-table tbody tr,
+html[data-theme='dark'] .openapi-markdown table tbody tr {
+  background: var(--ifm-background-color) !important;
+}
+
+html[data-theme='dark'] article.api-method table thead th,
+html[data-theme='dark'] .openapi-schema-table thead th,
+html[data-theme='dark'] .openapi-params-table thead th,
+html[data-theme='dark'] .openapi-markdown table thead th {
+  background: var(--ifm-background-color) !important;
+}
+
+/* Hover effect - very subtle */
+article.api-method table tbody tr:hover,
+.openapi-schema-table tbody tr:hover,
+.openapi-params-table tbody tr:hover,
+.openapi-markdown table tbody tr:hover {
+  background: var(--ifm-color-emphasis-100) !important;
+}
+
+/* Last row - no border */
+article.api-method table tbody tr:last-child,
+.openapi-schema-table tbody tr:last-child,
+.openapi-params-table tbody tr:last-child,
+.openapi-markdown table tbody tr:last-child {
+  border-bottom: none !important;
+}
+
+/* Table cells spacing */
+article.api-method table tbody td,
+.openapi-schema-table tbody td,
+.openapi-params-table tbody td,
+.openapi-markdown table tbody td {
+  padding: var(--ifm-table-cell-padding) !important;
+  vertical-align: top !important;
+  line-height: 1.6 !important;
+  background: #fff !important;
+  border: none !important;
+}
+
+/* Also apply to th cells */
+article.api-method table th,
+.openapi-schema-table th,
+.openapi-params-table th,
+.openapi-markdown table th {
+  background: #fff !important;
+  border: none !important;
+}
+
+/* Dark mode - cells */
+html[data-theme='dark'] article.api-method table tbody td,
+html[data-theme='dark'] .openapi-schema-table tbody td,
+html[data-theme='dark'] .openapi-params-table tbody td,
+html[data-theme='dark'] .openapi-markdown table tbody td,
+html[data-theme='dark'] article.api-method table th,
+html[data-theme='dark'] .openapi-schema-table th,
+html[data-theme='dark'] .openapi-params-table th,
+html[data-theme='dark'] .openapi-markdown table th {
+  background: var(--ifm-background-color) !important;
+}
+
+/* First column (parameter names) - slightly bolder */
+article.api-method table tbody td:first-child,
+.openapi-schema-table tbody td:first-child,
+.openapi-params-table tbody td:first-child,
+.openapi-markdown table tbody td:first-child {
+  font-weight: 500 !important;
+}
+
+/* 10. Code blocks - Rounded edges and subtle shadow */
+article.api-method pre,
+article.api-method .prism-code,
+.openapi-markdown pre,
+.openapi-markdown .prism-code {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Dark mode shadow */
+html[data-theme='dark'] article.api-method pre,
+html[data-theme='dark'] article.api-method .prism-code,
+html[data-theme='dark'] .openapi-markdown pre,
+html[data-theme='dark'] .openapi-markdown .prism-code {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 11. Links - Primary blue color */
+article.api-method a:not([class*="button"]),
+.openapi-markdown a:not([class*="button"]),
+.openapi-schema-table a,
+.openapi-params-table a {
+  color: #2F80ED !important;
+  text-decoration: none !important;
+}
+
+article.api-method a:not([class*="button"]):hover,
+.openapi-markdown a:not([class*="button"]):hover,
+.openapi-schema-table a:hover,
+.openapi-params-table a:hover {
+  text-decoration: underline !important;
+  color: #1a5fc7 !important;
+}
+
+/* 12. Tabs styling - Modern industry-leading design (Vercel/GitHub/Linear inspired) */
+/* Container - Clean card with subtle shadow */
+.tabs-container {
+  margin-bottom: 32px !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 12px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: #FFFFFF !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+  transition: box-shadow 0.2s ease !important;
+}
+
+.tabs-container:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Tabs list - Minimal with spacing */
+.tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+  margin-bottom: 0 !important;
+  gap: 4px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding: 6px 12px 0 12px !important;
+  background: transparent !important;
+}
+
+/* Individual tab items - Pill style */
+.tabs__item {
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  color: #6B7280 !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  margin-bottom: 6px !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* Tab hover state - Subtle background */
+.tabs__item:hover {
+  color: #111827 !important;
+  background: rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Active tab - Bold with underline indicator */
+.tabs__item--active {
+  color: #2563EB !important;
+  background: rgba(37, 99, 235, 0.08) !important;
+  font-weight: 600 !important;
+}
+
+/* Active tab indicator bar */
+.tabs__item--active::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -6px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 2px !important;
+  background: #2563EB !important;
+  border-radius: 2px 2px 0 0 !important;
+}
+
+/* Tab panel content - Better spacing */
+.tabItem_Ymn6 {
+  padding: 24px !important;
+  animation: fadeInUp 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  line-height: 1.7 !important;
+}
+
+.margin-top--md {
+  margin-top: 0 !important;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode - Elevated design */
+html[data-theme='dark'] .tabs-container {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+html[data-theme='dark'] .tabs-container:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme='dark'] .tabs {
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html[data-theme='dark'] .tabs__item {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+html[data-theme='dark'] .tabs__item:hover {
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+html[data-theme='dark'] .tabs__item--active {
+  color: #60A5FA !important;
+  background: rgba(96, 165, 250, 0.12) !important;
+}
+
+html[data-theme='dark'] .tabs__item--active::after {
+  background: #60A5FA !important;
+}
+
+/* 13. HTTP Method tag styling - Target spans in pre tags */
+/* Base styling for method tags */
+article.api-method pre > span:first-child,
+.openapi-markdown pre > span:first-child {
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+  margin-right: 8px !important;
+  display: inline-block !important;
+}
+
+/* POST method - Yellow (classes added via JS) */
+article.api-method pre > span.method-post,
+.openapi-markdown pre > span.method-post {
+  background: #F3CA67 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+/* GET method - Green */
+article.api-method pre > span.method-get,
+.openapi-markdown pre > span.method-get {
+  background: #27AE60 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+/* DELETE method - Red */
+article.api-method pre > span.method-delete,
+.openapi-markdown pre > span.method-delete {
+  background: #D32F2F !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+/* PUT method - Orange */
+article.api-method pre > span.method-put,
+.openapi-markdown pre > span.method-put {
+  background: #F57C00 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+/* PATCH method - Purple */
+article.api-method pre > span.method-patch,
+.openapi-markdown pre > span.method-patch {
+  background: #9C27B0 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+
+/* Alternative style - icon button */
+article.api-method .copy-button,
+.openapi-markdown .copy-button {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+  backdrop-filter: blur(8px) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+article.api-method .copy-button:hover,
+.openapi-markdown .copy-button:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Success state after copying */
+article.api-method .copy-button.copied::before,
+.openapi-markdown .copy-button.copied::before {
+  content: "Copied!" !important;
+}
+
+/* Dark mode adjustments for copy button */
+html[data-theme='dark'] article.api-method pre::before,
+html[data-theme='dark'] article.api-method .prism-code::before,
+html[data-theme='dark'] .openapi-markdown pre::before,
+html[data-theme='dark'] .openapi-markdown .prism-code::before {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+html[data-theme='dark'] article.api-method pre:hover::before,
+html[data-theme='dark'] article.api-method .prism-code:hover::before,
+html[data-theme='dark'] .openapi-markdown pre:hover::before,
+html[data-theme='dark'] .openapi-markdown .prism-code:hover::before {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+
+
+
+table th, table td {
+    /* border: var(--ifm-table-border-width) solid var(--ifm-table-border-color); */
+    background: white;
+}

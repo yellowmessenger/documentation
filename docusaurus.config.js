@@ -21,6 +21,14 @@ module.exports = {
     },
     prism: {
       darkTheme: require("./src/plugins/prism_themes/monokai"),
+      additionalLanguages: ['bash', 'json', 'javascript'],
+      magicComments: [
+        {
+          className: 'theme-code-block-highlighted-line',
+          line: 'highlight-next-line',
+          block: {start: 'highlight-start', end: 'highlight-end'},
+        },
+      ],
     },
     colorMode: {
       defaultMode: "light",
@@ -134,6 +142,7 @@ module.exports = {
 
   clientModules: [
     require.resolve("./src/client-modules/client-module"),
+    require.resolve("./src/client-modules/methodTagStyling"),
   ],
 
   scripts: [

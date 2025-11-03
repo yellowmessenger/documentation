@@ -92,7 +92,9 @@ tags:
   - name: Notification APIs
     description: 
   - name: integrations
-    description: 
+    description:
+  - name: RCS Campaign
+    description: Create templates, send notifications, and schedule campaigns for RCS (Rich Communication Services) messaging 
 
 components:
   securitySchemes:
@@ -225,7 +227,306 @@ components:
             createdAt:
               type: string
               format: date-time
-              description: The creation timestamp of the event 
+              description: The creation timestamp of the event
+    
+    # RCS Messaging Schemas
+    RCSError:
+      type: object
+      required: [code, message]
+      properties:
+        code:
+          type: string
+          example: INVALID_REQUEST
+        message:
+          type: string
+          example: Request validation failed
+
+    RCSJourney:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "Flight flow"
+        slug:
+          type: string
+          example: "flight-flow"
+
+    RCSButton:
+      type: object
+      required: [type, text]
+      properties:
+        type:
+          type: string
+          description: "Button type. Allowed: REPLY, DIAL_PHONE, OPEN_URL"
+          example: REPLY
+        text:
+          type: string
+          example: "Check flights"
+        actionType:
+          type: string
+          description: "Action type used for REPLY buttons (optional)"
+          example: triggerJourney
+        journey:
+          $ref: '#/components/schemas/RCSJourney'
+        phoneNumber:
+          type: string
+          description: "E.164 format required for DIAL_PHONE"
+          example: "+919999999999"
+        url:
+          type: string
+          format: uri
+          example: "https://yellow.ai"
+
+    RCSTemplateCreateRequest:
+      type: object
+      required: [name, type, sender, language, body]
+      properties:
+        name:
+          type: string
+          example: "welcome_template"
+          description: Unique name of the template
+        type:
+          type: string
+          description: |
+            Type of the message format.
+            - TEXT: Plain text message
+            - RICH: Multimedia-rich message including images, buttons, or cards
+          example: TEXT
+        sender:
+          type: string
+          description: RCS sender ID registered for your brand
+          example: "YELLOWBRAND"
+        language:
+          type: string
+          description: ISO language code
+          example: en
+        body:
+          type: string
+          description: Message body (text or markup)
+          example: "Hello {{name}}, welcome to Yellow.ai!"
+        buttons:
+          type: array
+          items:
+            $ref: '#/components/schemas/RCSButton'
+          description: Optional interactive buttons
+
+    RCSTemplateCreateResponse:
+      type: object
+      required: [templateId, status]
+      properties:
+        templateId:
+          type: string
+          example: "tpl_abc123"
+        status:
+          type: string
+          example: created
+        message:
+          type: string
+          example: Template accepted for review
+
+    RCSUserDetails:
+      type: object
+      required: [number]
+      properties:
+        number:
+          type: string
+          description: Recipient mobile number with country code (in E.164 format).
+          example: "+919800000000"
+
+    RCSNotificationPayload:
+      type: object
+      required: [userDetails, notification]
+      properties:
+        userDetails:
+          $ref: '#/components/schemas/RCSUserDetails'
+        notification:
+          type: object
+          required: [type, sender, templateId]
+          properties:
+            type:
+              type: string
+              example: rcsBusinessMessaging
+              description: "Notification type. For this API, it should be 'rcsBusinessMessaging'."
+            sender:
+              type: string
+              example: "YELLOWBRAND"
+              description: "The sender ID to send the RCS Campaign."
+            templateId:
+              type: string
+              example: "tpl_abc123"
+              description: "The unique identifier of the RCS template to be used for the notification."
+            metadata:
+              type: object
+              additionalProperties: true
+              description: Optional key/value metadata
+              
+
+    RCSNotificationResponse:
+      type: object
+      properties:
+        requestId:
+          type: string
+          example: "req_456def"
+          description: Unique request identifier
+        status:
+          type: string
+          example: accepted
+          description: Status of the notification
+        details:
+          type: object
+          additionalProperties: true
+
+    RCSCampaignInfo:
+      type: object
+      properties:
+        campaignMetaData:
+          type: object
+          properties:
+            schedule:
+              type: string
+              example: "@once"
+              description: Campaign execution time, using cron expression or @once for one-time schedule.
+            timezone:
+              type: string
+              example: "Asia/Kolkata"
+              description: "Timezone in which the campaign is scheduled."
+            executionTime:
+              type: string
+              description: Campaign execution schedule in cron format (minute hour day month weekday). Example - "25 20 20 6 *"   Runs at 8:25 PM on June 20 every year
+        columnsMapping:
+          type: object
+          additionalProperties: true
+        campaignGoalMetaData:
+          type: object
+          properties:
+            type:
+              type: string
+              example: delivery
+              description: "Type of the campaign goal. For this API, it should be 'delivery'."
+            validity:
+              type: object
+              properties:
+                unit:
+                  type: string
+                  example: hours
+
+                value:
+                  type: integer
+                  example: 24
+            statusToTrack:
+              type: string
+              example: sent
+              description: "Status to track for the campaign goal."
+
+    RCSCampaignJobPayload:
+      type: object
+      properties:
+        campaignName:
+          type: string
+          example: "May RCS Blast"
+          description: Unique name of the campaign
+        segmentName:
+          type: string
+          example: "Active Users"
+          description: Name of the target audience segment.
+        segmentId:
+          type: string
+          example: "seg_789"
+          description: Unique ID of the target audience segment.
+        schedule:
+          type: string
+          example: "@once"
+          description: Campaign execution time, using cron expression. Use @once for one-time schedule.
+        timezone:
+          type: string
+          example: "Asia/Kolkata"
+        executionTime:
+          type: string
+          description: Campaign execution schedule in cron format (minute hour day month weekday). Example - "25 20 20 6 *" Runs at 8:25 PM on June 20 every year
+        content:
+          type: string
+          example: "Your RCS message content"
+        audienceId:
+          type: string
+          example: "nLcpq5PLu_eISfjD6ohq5"
+        options:
+          type: object
+          additionalProperties: true
+        botId:
+          type: string
+
+    RCSCampaignCreateRequest:
+      type: object
+      required: [botId, name, source, schedule, content]
+      properties:
+        botId:
+          type: string
+          example: "bot_123"
+          description: Unique ID of the bot
+        name:
+          type: string
+          example: "RCS Campaign May"
+          description: Unique name of the campaign
+        description:
+          type: string
+          example: "May RCS Blast"
+          description: Description of the campaign
+        source:
+          type: string
+          example: "rcsBusinessMessaging"
+          description: Source of the campaign. For this API, it should be 'rcsBusinessMessaging'.
+        executionTime:
+          type: string
+          description: Campaign execution schedule in cron format (minute hour day month weekday). Example - "25 20 20 6 *"   Runs at 8:25 PM on June 20 every year
+        segmentId:
+          type: string
+          description: Unique ID of the target audience segment for the campaign
+        segmentName:
+          type: string
+          description: Name of the target audience segment for the campaign
+        templateName:
+          type: string
+          description: Name of the template to be used for the campaign
+        type:
+          type: string
+          example: "outbound campaign"
+          description: Type of the campaign
+        recipientColumnName:
+          type: string
+          example: "phone"
+          description: Name of the column containing recipient phone numbers
+        schedule:
+          type: string
+          example: "@once"
+          description: Campaign execution time, using cron expression. Use @once for one-time schedule.
+        allUsers:
+          type: boolean
+          default: false
+          description: Set to true to send the campaign to all users.
+        content:
+          type: object
+          properties:
+            message:
+              type: string
+              example: "test rcs from yellow"
+        info:
+          $ref: '#/components/schemas/RCSCampaignInfo'
+        jobPayload:
+          $ref: '#/components/schemas/RCSCampaignJobPayload'
+
+    RCSCampaignCreateResponse:
+      type: object
+      properties:
+        campaignId:
+          type: string
+          example: "camp_abc123"
+        status:
+          type: string
+          example: scheduled
+        scheduledAt:
+          type: string
+          format: date-time
+          example: "2025-06-20T20:25:00+05:30"
 
 paths:
   '/cdp/api/v1/user':
@@ -1464,7 +1765,7 @@ paths:
          schema:
             type: string
          example: x1744276526472
-         description: Unique bot identifier.
+         description: Unique identifier of the AI agent (bot)
        - name: jsonQuery
          in: query
          required: true
@@ -1685,3 +1986,226 @@ paths:
           description: Not Found. The specified bot ID does not exist.
         '500':
           description: Internal Server Error. An error occurred on the server side.
+
+  /api/templates/rcsBusinessMessaging/create:
+    post:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - RCS Campaign
+      summary: Create RCS message template
+      description: Create an RCS message template for approval. Templates support text body and optional interactive buttons (REPLY, DIAL_PHONE, OPEN_URL).
+      operationId: createRcsTemplate
+      parameters:
+        - name: bot
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Unique identifier of the AI agent (bot)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RCSTemplateCreateRequest'
+            examples:
+              basic:
+                value:
+                  name: "welcome_template"
+                  type: "TEXT"
+                  sender: "YELLOWBRAND"
+                  language: "en"
+                  body: "Hello {{name}}, welcome to Yellow.ai!"
+                  buttons:
+                    - type: "REPLY"
+                      text: "Start"
+                      actionType: "triggerJourney"
+                      journey:
+                        name: "Quick Start"
+                        slug: "quick-start"
+                    - type: "OPEN_URL"
+                      text: "Visit"
+                      url: "https://yellow.ai"
+      responses:
+        '201':
+          description: Template created and accepted for review
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSTemplateCreateResponse'
+        '400':
+          description: Bad request — validation error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+        '401':
+          description: Unauthorized — missing or invalid API key
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+
+  /api/engagements/notifications/v2/push-rcs:
+    post:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - RCS Campaign
+      summary: Send RCS notification
+      description: Send a notification using a previously approved RCS template.
+      operationId: sendRcsNotification
+      parameters:
+        - name: bot
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Unique identifier of the AI agent (bot)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RCSNotificationPayload'
+            examples:
+              basic:
+                value:
+                  userDetails:
+                    number: "+919876543210"
+                  notification:
+                    type: "rcsBusinessMessaging"
+                    sender: "YELLOWBRAND"
+                    templateId: "tpl_abc123"
+      responses:
+        '200':
+          description: Notification accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSNotificationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+        '429':
+          description: Rate limit exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+
+  /api/engagements/v2/campaign/create-rcs:
+    post:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - RCS Campaign
+      summary: Create and schedule an RCS campaign
+      description: Create and schedule an RCS campaign to target a user segment. Use `@once` to run once. For recurring campaigns use cron expression (minute hour day month weekday).
+      operationId: createRcsCampaign
+      parameters:
+        - name: bot
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Unique identifier of the AI agent (bot)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RCSCampaignCreateRequest'
+            examples:
+              basic:
+                value:
+                  botId: "bot_123"
+                  name: "RCS Campaign May"
+                  description: "Promotional RCS campaign"
+                  source: "rcsBusinessMessaging"
+                  executionTime: "25 20 20 6 *"
+                  segmentId: "seg_789"
+                  segmentName: "Active Users"
+                  templateName: "welcome_template"
+                  type: "outbound campaign"
+                  recipientColumnName: "phone"
+                  schedule: "@once"
+                  allUsers: false
+                  content:
+                    message: "test rcs from yellow"
+                  info:
+                    campaignMetaData:
+                      schedule: "@once"
+                      timezone: "Asia/Kolkata"
+                      executionTime: "25 20 20 6 *"
+                    columnsMapping: {}
+                    campaignGoalMetaData:
+                      type: "delivery"
+                      validity:
+                        unit: "hours"
+                        value: 24
+                      statusToTrack: "sent"
+                  jobPayload:
+                    campaignName: "RCS Campaign May"
+                    segmentName: "Active Users"
+                    segmentId: "seg_789"
+                    schedule: "@once"
+                    timezone: "Asia/Kolkata"
+                    executionTime: "25 20 20 6 *"
+                    content: "Your RCS message content"
+                    audienceId: "nLcpq5PLu_eISfjD6ohq5"
+                    options: {}
+                    botId: "bot_123"
+      responses:
+        '201':
+          description: Campaign created and scheduled
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSCampaignCreateResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+        '409':
+          description: Conflict — duplicate campaign or invalid state
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RCSError'
