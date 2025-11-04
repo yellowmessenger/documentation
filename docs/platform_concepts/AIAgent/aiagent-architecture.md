@@ -1,6 +1,6 @@
 ---
 title: AI agent overview
-sidebar_label: Prompt-based AI agent
+sidebar_label: Build your AI agent
 ---
 
 <!-- Yellow.ai's new AI Agent Builder is a no-code platform that simplifies the creation and deployment of intelligent AI agents. Unlike traditional NLP systems that rely on extensive training data, conversation flows, or complex prompts. This builder allows you to set up AI agents quickly based on the prompts.
