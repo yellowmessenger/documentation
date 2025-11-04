@@ -3355,7 +3355,18 @@ html[data-theme='dark'] .tabs__item--active::after {
   background: #60A5FA !important;
 }
 
-/* 13. HTTP Method tag styling - Target spans in pre tags */
+/* 13. Updates page type label badges - Smaller size */
+/* Target badge labels in updates pages */
+article[id*="updates"] span[style*="padding: 0.25rem 0.75rem"],
+article[id*="q12025"] span[style*="padding: 0.25rem 0.75rem"],
+article[id*="q22025"] span[style*="padding: 0.25rem 0.75rem"],
+article[id*="2025"] span[style*="padding: 0.25rem 0.75rem"] {
+  font-size: 0.65rem !important;
+  padding: 0.2rem 0.6rem !important;
+  letter-spacing: 0.3px !important;
+}
+
+/* 14. HTTP Method tag styling - Target spans in pre tags */
 /* Base styling for method tags */
 article.api-method pre > span:first-child,
 .openapi-markdown pre > span:first-child {

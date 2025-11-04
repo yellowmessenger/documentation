@@ -414,7 +414,7 @@ export const allUpdates = [
     type: 'Enhancement',
     badge: 'Enhancement',
     date: 'July 2, 2025',
-    link: '/docs/updates/2025/april-q2#sunset-notice-clearing-the-path-for-a-smarter-analytics-experience-',
+    link: '/docs/updates/2025/april-q2#sunset-notice-clearing-removing-some-legacy-reports-from-insights-and-engage',
     category: 'Insights',
     icon: '🌅'
   }

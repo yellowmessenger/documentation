@@ -556,14 +556,32 @@ We're making monitoring and reporting more secure and relevant by applying **acc
 
 Data Operations (DataOps) has been renamed to Data Export to better reflect its functionality.
 
-### Sunset Notice: Clearing the Path for a Smarter Analytics Experience
+### Sunset Notice: Clearing Removing some legacy reports from Insights and Engage 
+
 
 As we prepare for a major revamp of our Analytics module, we’re streamlining the experience by removing a few legacy screens over the next two weeks. These updates are part of our broader effort to deliver cleaner insights, modern visualizations, and a more intuitive interface.
 
 Here’s what’s changing:
 
 
-#### Insights – User Journeys  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+#### Insights – User Journeys  
+<div style={{
+  display: 'flex',
+  gap: '0.5rem',
+  marginBottom: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <span style={{
+    background: 'linear-gradient(90deg, #ff9800, #f57c00)',
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '12px',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px'
+  }}>ENHANCEMENT</span>
+</div>
 
 With the shift towards agentic AI workflows, this section—based on an older implementation—no longer aligns with our direction. We’re removing it, but don’t worry:
 
