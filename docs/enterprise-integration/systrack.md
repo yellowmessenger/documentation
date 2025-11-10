@@ -9,7 +9,7 @@ sidebar_label: SysTrack API Setup
 
 | API Details | Description |
 |------|-------------|
-| **Endpoint** | `https://{tenant-name}.b2clogin.com/{tenant-name}.onmicrosoft.com/B2C_1_ROPC_AUTH/oauth2/v2.0/token` |
+| **Endpoint** | `https://systrackcegl.b2clogin.com/systrackcegl.onmicrosoft.com/b2c_1_ropc_auth/oauth2/v2.0/token` |
 | **Method** | `POST`
 | **Content-Type** | `application/x-www-form-urlencoded` | 
 | **Form Parameters** | `grant_type`, `response_type`, `username`, `password`, `client_id`, `scope` |

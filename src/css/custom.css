@@ -3213,6 +3213,118 @@ html[data-theme='dark'] .openapi-markdown .prism-code {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
+/* ================== GENERAL CODE BLOCK STYLING (All Pages) ================== */
+/* Ensure all code blocks have consistent, professional styling */
+.theme-code-block,
+.theme-code-block .codeBlockContent_QJqH,
+.theme-code-block pre,
+.theme-code-block .prism-code {
+  background: #0d1117 !important;
+  color: #e6edf3 !important;
+  border: 1px solid #30363d !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Light mode code blocks */
+html[data-theme='light'] .theme-code-block,
+html[data-theme='light'] .theme-code-block .codeBlockContent_QJqH,
+html[data-theme='light'] .theme-code-block pre,
+html[data-theme='light'] .theme-code-block .prism-code {
+  background: #f6f8fa !important;
+  color: #24292f !important;
+  border: 1px solid #d0d7de !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Syntax highlighting colors for dark mode */
+html[data-theme='dark'] .theme-code-block .token.plain,
+html[data-theme='dark'] .theme-code-block .token.punctuation {
+  color: #c9d1d9 !important;
+}
+
+html[data-theme='dark'] .theme-code-block .token.string,
+html[data-theme='dark'] .theme-code-block .token.attr-value {
+  color: #a5d6ff !important;
+}
+
+html[data-theme='dark'] .theme-code-block .token.operator {
+  color: #79c0ff !important;
+}
+
+html[data-theme='dark'] .theme-code-block .token.function,
+html[data-theme='dark'] .theme-code-block .token.keyword {
+  color: #ff7b72 !important;
+}
+
+html[data-theme='dark'] .theme-code-block .token.number,
+html[data-theme='dark'] .theme-code-block .token.boolean {
+  color: #79c0ff !important;
+}
+
+/* Syntax highlighting colors for light mode */
+html[data-theme='light'] .theme-code-block .token.plain,
+html[data-theme='light'] .theme-code-block .token.punctuation {
+  color: #24292f !important;
+}
+
+html[data-theme='light'] .theme-code-block .token.string,
+html[data-theme='light'] .theme-code-block .token.attr-value {
+  color: #0a3069 !important;
+}
+
+html[data-theme='light'] .theme-code-block .token.operator {
+  color: #cf222e !important;
+}
+
+html[data-theme='light'] .theme-code-block .token.function,
+html[data-theme='light'] .theme-code-block .token.keyword {
+  color: #cf222e !important;
+}
+
+html[data-theme='light'] .theme-code-block .token.number,
+html[data-theme='light'] .theme-code-block .token.boolean {
+  color: #0550ae !important;
+}
+
+/* Code block container improvements */
+.theme-code-block {
+  margin: 1.5rem 0 !important;
+}
+
+.theme-code-block .codeBlockContent_QJqH {
+  padding: 0 !important;
+}
+
+.theme-code-block pre {
+  margin: 0 !important;
+  padding: 1rem 1.25rem !important;
+  overflow-x: auto !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+/* Code block buttons (copy, word wrap) styling */
+.theme-code-block .buttonGroup_M5ko button {
+  background: transparent !important;
+  border: none !important;
+  color: var(--ifm-color-content-secondary) !important;
+  transition: all 0.2s ease !important;
+}
+
+html[data-theme='dark'] .theme-code-block .buttonGroup_M5ko button {
+  color: #8b949e !important;
+}
+
+.theme-code-block .buttonGroup_M5ko button:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: var(--ifm-color-content) !important;
+}
+
+html[data-theme='light'] .theme-code-block .buttonGroup_M5ko button:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
 /* 11. Links - Primary blue color */
 article.api-method a:not([class*="button"]),
 .openapi-markdown a:not([class*="button"]),

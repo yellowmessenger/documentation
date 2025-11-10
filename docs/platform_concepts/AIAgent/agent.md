@@ -163,6 +163,7 @@ In the Prompt section, you can add the following actions:
 
 * [Get input](https://docs.yellow.ai/docs/platform_concepts/AIAgent/get-input): Collect specific information from the user, such as their name, phone number, and email.
 * [Call workflow](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-workflow): Trigger an external process or function, such as retrieving data from a database, calling an API, or executing backend operations, allowing the AI agent to handle complex tasks.
+* Call MCP tool: Use this option to access and perform actions from external applications connected through your [Data Connector or MCP server](/docs/platform_concepts/appConfiguration/mcp-server.md). When a user query requires information or an action from one of these third-party apps, the AI Agent automatically invokes the relevant MCP tool and executes the selected task — such as fetching contact details, updating records, or triggering workflows.
 * [Call a Fallback](https://docs.yellow.ai/docs/platform_concepts/AIAgent/call-fallback): Trigger a predefined fallback action when the AI agent is unable to understand or fulfill the user’s request.
 
 :::tip

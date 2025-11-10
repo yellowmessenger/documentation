@@ -248,6 +248,7 @@ module.exports = {
               items: [
                 "platform_concepts/AIAgent/get-input",
                 "platform_concepts/AIAgent/call-workflow",
+                "platform_concepts/AIAgent/mcp-actions",
                 "platform_concepts/AIAgent/call-agent",
                 "platform_concepts/AIAgent/transfer-live-agent",
                 "platform_concepts/AIAgent/call-fallback",
@@ -1111,6 +1112,7 @@ module.exports = {
             "platform_concepts/appConfiguration/creatio-crm",
           ],
         },
+        "platform_concepts/appConfiguration/mcp-server",
         {
           type: "category",
           label: "ITSM",
