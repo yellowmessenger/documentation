@@ -107,13 +107,14 @@ const WhatsNewUpdates = () => {
   
   // Filter if needed based on config
   const displayUpdates = config.showOnlyNew 
-    ? allUpdates.filter(update => update.badge === 'new')
+    ? allUpdates.filter(update => update.badge === 'NEW')
     : allUpdates;
 
   const getBadgeClass = (badge) => {
     const badgeMap = {
-      'new': 'updateBadgeNew',
-      'Enhancement': 'updateBadgeUpdated',
+      'NEW': 'updateBadgeNew',
+      'ENHANCEMENT': 'updateBadgeUpdated',
+      'MAJOR': 'updateBadgeNew',
       'updated': 'updateBadgeUpdated',
       'security': 'updateBadgeSecurity'
     };
@@ -173,7 +174,7 @@ const WhatsNewUpdates = () => {
                 left: 0,
                 right: 0,
                 height: '3px',
-                background: update.badge === 'new' ? 'linear-gradient(90deg, #10b981, #059669)' : 'linear-gradient(90deg, #3b82f6, #2563eb)',
+                background: update.badge === 'NEW' ? 'linear-gradient(90deg, #10b981, #059669)' : 'linear-gradient(90deg, #3b82f6, #2563eb)',
                 transform: 'scaleX(0)',
                 transformOrigin: 'left',
                 transition: 'transform 0.3s ease'
@@ -210,7 +211,7 @@ const WhatsNewUpdates = () => {
                   borderRadius: '12px',
                   textTransform: 'uppercase',
                   letterSpacing: '0.5px',
-                  background: update.badge === 'new' ? 'linear-gradient(135deg, #10b981, #059669)' : 'linear-gradient(135deg, #3b82f6, #2563eb)',
+                  background: update.badge === 'NEW' ? 'linear-gradient(135deg, #10b981, #059669)' : 'linear-gradient(135deg, #3b82f6, #2563eb)',
                   color: 'white'
                 }}>{update.type}</div>
               </div>
