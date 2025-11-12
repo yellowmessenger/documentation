@@ -7,7 +7,7 @@ featured: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# 🚀 What's New in Yellow.ai
+# What's New in Yellow.ai
 
 <div style={{
   background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -22,7 +22,7 @@ import TabItem from '@theme/TabItem';
   </p>
 </div>
 
-## 🔥 **Featured Updates**
+## **Featured Updates**
 
 <div style={{
   display: 'grid',

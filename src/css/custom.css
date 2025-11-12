@@ -1604,14 +1604,17 @@ html[data-theme='dark'] .cta-buttons .button--secondary:hover {
 }
 
 /* Table of Contents styling - Sticky like Langfuse */
+/* TOC starts after breadcrumb to align with article content */
 .table-of-contents {
   border-left: 3px solid var(--border); /* Enhanced: Thicker accent line */
   padding-left: 1.5rem; /* Enhanced: More padding */
   margin-left: 1.5rem; /* Enhanced: More margin */
   position: sticky !important; /* Sticky positioning */
-  top: 2rem !important; /* Stick with some top spacing */
-  max-height: calc(100vh - 4rem) !important; /* Max height with spacing */
+  /* Start after breadcrumb: navbar (~60px) + breadcrumb (~4.5rem = 72px) + spacing (1rem = 16px) */
+  top: calc(60px + 4.5rem + 1rem) !important; /* Aligns with article content after breadcrumb */
+  max-height: calc(100vh - 60px - 4.5rem - 2rem) !important; /* Max height accounting for navbar and breadcrumb */
   overflow-y: auto; /* Scroll when TOC is very long */
+  align-self: flex-start !important; /* Align to top of container */
 }
 
 .table-of-contents a {
@@ -1645,12 +1648,49 @@ html[data-theme='dark'] .cta-buttons .button--secondary:hover {
 }
 
 /* Additional TOC container sticky behavior */
+/* TOC container starts after breadcrumb to align with article content */
 .theme-doc-toc-desktop,
 .tableOfContents_bqdL {
   position: sticky !important;
-  top: 2rem !important;
-  max-height: calc(100vh - 4rem) !important;
+  /* Start after breadcrumb: navbar (~60px) + breadcrumb (~4.5rem = 72px) + spacing (1rem = 16px) */
+  top: calc(60px + 4.5rem + 1rem) !important; /* Aligns with article content after breadcrumb */
+  max-height: calc(100vh - 60px - 4.5rem - 2rem) !important; /* Max height accounting for navbar and breadcrumb */
   overflow-y: auto;
+  align-self: flex-start !important; /* Align to top of container */
+}
+
+/* Ensure TOC wrapper container stays in view and doesn't disappear early */
+.theme-doc-toc-desktop-wrapper,
+[class*="toc-wrapper"],
+[class*="TOC"] {
+  position: relative !important;
+  align-self: flex-start !important;
+}
+
+/* Keep TOC visible until article title scrolls out - adjust sticky behavior */
+.theme-doc-toc-desktop {
+  /* Ensure TOC stays visible longer by adjusting when it becomes sticky */
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
+/* Ensure parent container allows TOC to stay sticky */
+[class*="docItemCol"]:has(.theme-doc-toc-desktop),
+[class*="docItemCol"]:has(.tableOfContents_bqdL) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+/* Responsive adjustments for TOC positioning */
+@media (max-width: 996px) {
+  .table-of-contents,
+  .theme-doc-toc-desktop,
+  .tableOfContents_bqdL {
+    /* On smaller screens, adjust top position */
+    top: calc(60px + 3.5rem + 1rem) !important;
+    max-height: calc(100vh - 60px - 3.5rem - 2rem) !important;
+  }
 }
 
 /* Content styling */

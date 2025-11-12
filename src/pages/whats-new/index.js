@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './highlights.module.css';
@@ -15,6 +15,7 @@ export default function WhatsNewOverview() {
   const [expandedCard, setExpandedCard] = useState(null);
   const [expandedUpdates, setExpandedUpdates] = useState(new Set());
   const [selectedImage, setSelectedImage] = useState(null);
+  const cardRefs = useRef({});
 
   // Format date to show "Upcoming" for future dates or today before 4pm
   const formatDateDisplay = (dateString) => {
@@ -86,12 +87,30 @@ export default function WhatsNewOverview() {
     return elements;
   };
 
-  // Get unique categories and content types
-  const categories = ['All', ...new Set(allUpdates.map(update => update.category))];
+  // Convert feature highlights to unified format
+  const majorUpdatesFormatted = featureHighlights.map(feature => ({
+    ...feature,
+    description: feature.shortDescription,
+    fullDescription: feature.fullDescription,
+    type: 'Major Update',
+    contentType: 'major',
+    category: feature.category,
+    icon: feature.icon || '🚀',
+    isMajorUpdate: true,
+    highlights: feature.highlights,
+    badge: feature.badge || 'MAJOR',
+    link: feature.link || '#'
+  }));
+
+  // Combine all updates (major + regular) into single array
+  const allUpdatesCombined = [...majorUpdatesFormatted, ...allUpdates];
+
+  // Get unique categories from combined updates
+  const categories = ['All', ...new Set(allUpdatesCombined.map(update => update.category))];
   const contentTypes = ['All', 'Major Features'];
 
   // Filter updates by category and content type
-  const filteredUpdates = allUpdates
+  const filteredUpdates = allUpdatesCombined
     .filter(update => {
       const categoryMatch = selectedCategory === 'All' || update.category === selectedCategory;
       const contentTypeMatch = selectedContentType === 'All' || 
@@ -99,30 +118,6 @@ export default function WhatsNewOverview() {
       return categoryMatch && contentTypeMatch;
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date (newest first)
-
-  // For timeline view, combine major updates and recent changes
-  const getTimelineData = () => {
-    if (viewMode !== 'timeline') return filteredUpdates;
-    
-    // Convert feature highlights to timeline format
-    const majorUpdatesForTimeline = featureHighlights.map(feature => ({
-      ...feature,
-      description: feature.shortDescription,
-      fullDescription: feature.fullDescription,
-      type: 'Major Update',
-      contentType: 'major',
-      category: feature.category,
-      icon: feature.icon || '🚀', // Use specific icon if available, fallback to rocket
-      isMajorUpdate: true,
-      highlights: feature.highlights
-    }));
-
-    // Combine and sort by date (newest first)
-    const combined = [...majorUpdatesForTimeline, ...filteredUpdates];
-    return combined.sort((a, b) => new Date(b.date) - new Date(a.date));
-  };
-
-  const timelineData = getTimelineData();
 
   const toggleCard = (cardId) => {
     setExpandedCard(expandedCard === cardId ? null : cardId);
@@ -156,6 +151,36 @@ export default function WhatsNewOverview() {
     document.addEventListener('keydown', handleEscape);
     return () => document.removeEventListener('keydown', handleEscape);
   }, []);
+
+  // Click outside to collapse expanded cards
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Check if clicking outside any expanded card
+      if (expandedCard !== null) {
+        const cardElement = cardRefs.current[expandedCard];
+        if (cardElement && !cardElement.contains(event.target)) {
+          setExpandedCard(null);
+        }
+      }
+      
+      // Check for expanded regular updates
+      if (expandedUpdates.size > 0) {
+        let clickedOutside = true;
+        expandedUpdates.forEach(updateTitle => {
+          const cardElement = cardRefs.current[updateTitle];
+          if (cardElement && cardElement.contains(event.target)) {
+            clickedOutside = false;
+          }
+        });
+        if (clickedOutside) {
+          setExpandedUpdates(new Set());
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [expandedCard, expandedUpdates]);
 
   return (
     <Layout
@@ -263,112 +288,86 @@ export default function WhatsNewOverview() {
           </div>
         </section>
 
-        {viewMode === 'grid' ? (
-          <>
-            {/* Major Updates - Grid View */}
-            <section className={styles.section}>
-              <div className={styles.sectionHeader}>
-                <h2 className={styles.sectionTitle}>
-                  <span className={styles.sectionIcon}>🚀</span>
-                  Major Updates
-                </h2>
-                <p className={styles.sectionSubtitle}>
-                  Discover the most impactful updates that are transforming how you build and deploy AI agents
-                </p>
-              </div>
-              
-              <div className={styles.highlightsGrid}>
-                {featureHighlights.map((feature, index) => (
+        {/* Unified Updates Section - Single section for all updates */}
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>
+              <span className={styles.sectionIcon}>✨</span>
+              {viewMode === 'grid' ? 'Recent Updates' : 'Timeline View'}
+            </h2>
+            {viewMode === 'timeline' && (
+              <p className={styles.sectionSubtitle}>
+                Chronological view of all updates
+              </p>
+            )}
+          </div>
+
+          {viewMode === 'grid' ? (
+            <div className={`${styles.updatesContainer} ${styles.grid}`}>
+              {filteredUpdates.map((update, index) => {
+                const isMajorUpdate = update.isMajorUpdate || update.contentType === 'major';
+                const isExpanded = isMajorUpdate 
+                  ? expandedCard === update.id 
+                  : expandedUpdates.has(update.title);
+                const hasExpandableContent = update.fullDescription || update.highlights || update.image;
+                
+                // Use highlight card style for major updates, regular card for others
+                const cardClass = isMajorUpdate 
+                  ? `${styles.highlightCard} ${isExpanded ? styles.expanded : ''}`
+                  : `${styles.updateCard} ${isExpanded ? styles.expanded : ''}`;
+                
+                const handleCardClick = (e) => {
+                  // Don't expand if clicking on links, buttons, or images
+                  if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.tagName === 'IMG' || e.target.closest('a') || e.target.closest('button')) {
+                    return;
+                  }
+                  // Toggle expansion
+                  if (isMajorUpdate) {
+                    toggleCard(update.id || update.title);
+                  } else {
+                    toggleUpdateExpansion(update.title);
+                  }
+                };
+
+                const cardKey = isMajorUpdate ? update.id : update.title;
+                
+                return (
                   <div 
-                    key={feature.id} 
-                    className={`${styles.highlightCard} ${expandedCard === feature.id ? styles.expanded : ''}`}
-                    style={{ animationDelay: `${index * 100}ms` }}
+                    key={isMajorUpdate ? update.id : `${update.title}-${index}`} 
+                    ref={(el) => cardRefs.current[cardKey] = el}
+                    className={cardClass}
+                    style={{ animationDelay: `${index * 50}ms`, cursor: hasExpandableContent ? 'pointer' : 'default' }}
+                    onClick={hasExpandableContent ? handleCardClick : undefined}
                   >
-                    <div className={styles.cardHeader}>
-                      <div className={`${styles.cardBadge} ${
-                        feature.badge === 'New Feature' ? styles.newFeature :
-                        feature.badge === 'Enhancement' ? styles.enhancement :
-                        feature.badge === 'Major Update' ? styles.majorUpdate : ''
-                      }`}>{feature.badge}</div>
-                      <span className={`${styles.cardDate} ${formatDateDisplay(feature.date) === 'Upcoming' ? styles.upcoming : ''}`}>
-                        {formatDateDisplay(feature.date)}
-                      </span>
-                    </div>
-                    
-                    {feature.image && (
-                      <div className={styles.cardImageContainer}>
-                        <img 
-                          src={feature.image} 
-                          alt={feature.title}
-                          className={feature.showFullImage ? styles.cardImageFull : styles.cardImage}
-                          onClick={() => openImageModal(feature.image)}
-                        />
+                    {/* Hover overlay for expandable cards */}
+                    {hasExpandableContent && !isExpanded && (
+                      <div className={styles.cardHoverOverlay}>
+                        <span className={styles.hoverText}>Click to view details</span>
                       </div>
                     )}
                     
-                    <div className={styles.cardContent}>
-                      <h3 className={styles.cardTitle}>{feature.title}</h3>
-                      <div className={styles.cardDescription}>
-                        {renderFormattedDescription(expandedCard === feature.id ? feature.fullDescription : feature.shortDescription)}
+                    {hasExpandableContent && isExpanded && (
+                      <div className={styles.cardExpandedIndicator}>
+                        <span className={styles.expandedText}>Click to show less</span>
                       </div>
-                      
-                      {expandedCard === feature.id && feature.highlights && (
-                        <ul className={styles.highlightsList}>
-                          {feature.highlights.map((highlight, idx) => (
-                            <li key={idx} className={styles.highlightItem}>{highlight}</li>
-                          ))}
-                        </ul>
-                      )}
-                      
-                      <div className={styles.expandLinkContainer}>
-                        <a 
-                          className={styles.expandLink}
-                          onClick={() => toggleCard(feature.id)}
-                          role="button"
-                          tabIndex={0}
-                        >
-                          {expandedCard === feature.id ? '▲ Show Less' : '▼ Show More Details'}
-                        </a>
-                      </div>
-                    </div>
+                    )}
                     
-                    <div className={styles.cardFooter}>
-                      <span className={styles.cardCategoryBadge}>{feature.category}</span>
-                      <div className={styles.cardActions}>
-                        <Link to={feature.link} className={styles.readMoreButton}>
-                          Read Docs →
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* Recent Changes - Grid View */}
-            <section className={styles.section}>
-              <div className={styles.sectionHeader}>
-                <h2 className={styles.sectionTitle}>
-                  <span className={styles.sectionIcon}>✨</span>
-                  Recent Updates
-                </h2>
-              </div>
-
-              <div className={`${styles.updatesContainer} ${styles.grid}`}>
-                {filteredUpdates.map((update, index) => {
-                  const isExpanded = expandedUpdates.has(update.title);
-                  const hasExpandableContent = update.fullDescription || update.highlights || update.image;
-                  
-                  return (
-                    <div 
-                      key={`${update.title}-${index}`} 
-                      className={`${styles.updateCard} ${isExpanded ? styles.expanded : ''}`}
-                      style={{ animationDelay: `${index * 50}ms` }}
-                    >
-                      <div className={styles.updateContent}>
+                    <div className={isMajorUpdate ? styles.cardContent : styles.updateContent}>
+                      {isMajorUpdate ? (
+                        <div className={styles.cardHeader}>
+                          <div className={`${styles.cardBadge} ${
+                            update.badge === 'NEW' ? styles.newFeature :
+                            update.badge === 'ENHANCEMENT' ? styles.enhancement :
+                            update.badge === 'MAJOR' ? styles.majorUpdate : ''
+                          }`}>{update.badge || 'MAJOR'}</div>
+                          <span className={`${styles.cardDate} ${formatDateDisplay(update.date) === 'Upcoming' ? styles.upcoming : ''}`}>
+                            {formatDateDisplay(update.date)}
+                          </span>
+                        </div>
+                      ) : (
                         <div className={styles.updateHeader}>
                           <div className={styles.updateMeta}>
-                            <span className={`${styles.updateBadge} ${styles[update.badge]}`}>
+                            <span className={`${styles.updateBadge} ${styles[update.badge] || ''}`}>
                               {update.badge}
                             </span>
                             <span className={`${styles.updateDate} ${formatDateDisplay(update.date) === 'Upcoming' ? styles.upcoming : ''}`}>
@@ -376,99 +375,145 @@ export default function WhatsNewOverview() {
                             </span>
                           </div>
                         </div>
-                        
-                        {update.image && isExpanded && (
-                          <div className={styles.updateImageContainer}>
-                            <img 
-                              src={update.image} 
-                              alt={update.title}
-                              className={styles.updateImage}
-                              onClick={() => openImageModal(update.image)}
-                            />
-                          </div>
-                        )}
-                        
-                        <h3 className={styles.updateTitle}>{update.title}</h3>
-                        <div className={styles.updateDescription}>
-                          {renderFormattedDescription(isExpanded && update.fullDescription ? update.fullDescription : update.description)}
+                      )}
+                      
+                      {update.image && (
+                        <div className={isMajorUpdate ? styles.cardImageContainer : styles.updateImageContainer}>
+                          <img 
+                            src={update.image} 
+                            alt={update.title}
+                            className={isMajorUpdate 
+                              ? (update.showFullImage ? styles.cardImageFull : styles.cardImage)
+                              : (isExpanded ? styles.updateImage : '')
+                            }
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              openImageModal(update.image);
+                            }}
+                            style={!isMajorUpdate && !isExpanded ? { display: 'none' } : {}}
+                          />
                         </div>
-                        
-                        {isExpanded && update.highlights && (
-                          <ul className={styles.updateHighlights}>
-                            {update.highlights.map((highlight, idx) => (
-                              <li key={idx} className={styles.updateHighlightItem}>{highlight}</li>
-                            ))}
-                          </ul>
+                      )}
+                      
+                      <h3 className={isMajorUpdate ? styles.cardTitle : styles.updateTitle}>
+                        {update.title}
+                      </h3>
+                      
+                      <div className={isMajorUpdate ? styles.cardDescription : styles.updateDescription}>
+                        {renderFormattedDescription(
+                          isExpanded && update.fullDescription 
+                            ? update.fullDescription 
+                            : (update.description || update.shortDescription)
                         )}
-                        
-                        <div className={styles.expandSection}>
-                          {hasExpandableContent ? (
-                            <button 
-                              className={styles.expandButton}
-                              onClick={() => toggleUpdateExpansion(update.title)}
+                      </div>
+                      
+                      {isExpanded && update.highlights && (
+                        <ul className={isMajorUpdate ? styles.highlightsList : styles.updateHighlights}>
+                          {update.highlights.map((highlight, idx) => (
+                            <li key={idx} className={isMajorUpdate ? styles.highlightItem : styles.updateHighlightItem}>
+                              {highlight}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      
+                      <div className={isMajorUpdate ? styles.cardFooter : styles.updateFooter}>
+                        {isMajorUpdate ? (
+                          <>
+                            <span className={styles.cardCategoryBadge}>
+                              {update.category}
+                            </span>
+                            <div className={styles.cardActions} onClick={(e) => e.stopPropagation()}>
+                              <Link 
+                                to={update.link || '#'} 
+                                className={styles.readMoreButton}
+                              >
+                                Learn more →
+                              </Link>
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div className={styles.updateFooterLeft}>
+                              <span className={styles.updateCategory}>
+                                {update.category}
+                              </span>
+                            </div>
+                            <Link 
+                              to={update.link || '#'} 
+                              className={styles.updateLink}
+                              onClick={(e) => e.stopPropagation()}
                             >
-                              {isExpanded ? '▲ Show Less' : '▼ Show More'}
-                            </button>
-                          ) : (
-                            <div className={styles.expandSpacer}></div>
-                          )}
-                        </div>
-                        
-                        <div className={styles.updateFooter}>
-                          <span className={styles.updateCategory}>{update.category}</span>
-                          <Link to={update.link} className={styles.updateLink}>
-                            Learn more
-                          </Link>
-                        </div>
+                              Learn more →
+                            </Link>
+                          </>
+                        )}
                       </div>
                     </div>
-                  );
-                })}
-              </div>
-            </section>
-          </>
-        ) : (
-          /* Unified Timeline View */
-          <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <h2 className={styles.sectionTitle}>
-                <span className={styles.sectionIcon}>🕓</span>
-                Timeline View
-              </h2>
-              <p className={styles.sectionSubtitle}>
-                Chronological view of all updates
-              </p>
+                  </div>
+                );
+              })}
             </div>
-
+          ) : (
+            /* Timeline View */
             <div className={`${styles.updatesContainer} ${styles.timeline}`}>
-              {timelineData.map((item, index) => {
-                const isExpanded = item.isMajorUpdate ? expandedCard === item.id : expandedUpdates.has(item.title);
+              {filteredUpdates.map((item, index) => {
+                const isMajorUpdate = item.isMajorUpdate || item.contentType === 'major';
+                const isExpanded = isMajorUpdate ? expandedCard === item.id : expandedUpdates.has(item.title);
                 const hasExpandableContent = item.fullDescription || item.highlights || item.image;
-                const uniqueKey = item.isMajorUpdate ? item.id : item.title;
+                const uniqueKey = isMajorUpdate ? item.id : item.title;
                 
                 // Determine marker style based on update type
                 const getMarkerClass = () => {
-                  if (item.isMajorUpdate) return styles.majorUpdate;
+                  if (isMajorUpdate) return styles.majorUpdate;
                   if (item.type === 'Security Update') return styles.securityUpdate;
                   return styles.regularUpdate;
                 };
 
                 // Determine card style
                 const cardClass = `${styles.updateCard} ${styles.timelineItem} ${
-                  item.isMajorUpdate ? styles.majorUpdateCard : ''
+                  isMajorUpdate ? styles.majorUpdateCard : ''
                 } ${isExpanded ? styles.expanded : ''}`;
+                
+                const handleTimelineCardClick = (e) => {
+                  // Don't expand if clicking on links, buttons, or images
+                  if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.tagName === 'IMG' || e.target.closest('a') || e.target.closest('button')) {
+                    return;
+                  }
+                  // Toggle expansion
+                  if (isMajorUpdate) {
+                    toggleCard(item.id || item.title);
+                  } else {
+                    toggleUpdateExpansion(item.title);
+                  }
+                };
                 
                 return (
                   <div 
                     key={`${uniqueKey}-${index}`} 
+                    ref={(el) => cardRefs.current[uniqueKey] = el}
                     className={cardClass}
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    style={{ animationDelay: `${index * 50}ms`, cursor: hasExpandableContent ? 'pointer' : 'default' }}
+                    onClick={hasExpandableContent ? handleTimelineCardClick : undefined}
                   >
+                    {/* Hover overlay for expandable cards */}
+                    {hasExpandableContent && !isExpanded && (
+                      <div className={styles.cardHoverOverlay}>
+                        <span className={styles.hoverText}>Click to view details</span>
+                      </div>
+                    )}
+                    
+                    {hasExpandableContent && isExpanded && (
+                      <div className={styles.cardExpandedIndicator}>
+                        <span className={styles.expandedText}>Click to show less</span>
+                      </div>
+                    )}
+                    
                     <div className={styles.updateContent}>
                       <div className={styles.updateHeader}>
                         <div className={styles.updateMeta}>
-                          <span className={`${styles.updateBadge} ${item.isMajorUpdate ? styles.majorUpdate : styles[item.badge]}`}>
-                            {item.isMajorUpdate ? 'Major Update' : item.badge}
+                          <span className={`${styles.updateBadge} ${isMajorUpdate ? styles.majorUpdate : (styles[item.badge] || '')}`}>
+                            {isMajorUpdate ? (item.badge || 'MAJOR') : item.badge}
                           </span>
                           <span className={`${styles.updateDate} ${formatDateDisplay(item.date) === 'Upcoming' ? styles.upcoming : ''}`}>
                             {formatDateDisplay(item.date)}
@@ -482,15 +527,23 @@ export default function WhatsNewOverview() {
                             src={item.image} 
                             alt={item.title}
                             className={styles.updateImage}
-                            onClick={() => openImageModal(item.image)}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              openImageModal(item.image);
+                            }}
                           />
                         </div>
                       )}
                       
                       <h3 className={styles.updateTitle}>{item.title}</h3>
-                      <p className={styles.updateDescription}>
-                        {isExpanded && item.fullDescription ? item.fullDescription : item.description}
-                      </p>
+                      
+                      <div className={styles.updateDescription}>
+                        {renderFormattedDescription(
+                          isExpanded && item.fullDescription 
+                            ? item.fullDescription 
+                            : (item.description || item.shortDescription)
+                        )}
+                      </div>
                       
                       {isExpanded && item.highlights && (
                         <ul className={styles.updateHighlights}>
@@ -503,16 +556,12 @@ export default function WhatsNewOverview() {
                       <div className={styles.updateFooter}>
                         <div className={styles.updateFooterLeft}>
                           <span className={styles.updateCategory}>{item.category}</span>
-                          {hasExpandableContent && (
-                            <button 
-                              className={styles.expandButton}
-                              onClick={() => item.isMajorUpdate ? toggleCard(item.id) : toggleUpdateExpansion(item.title)}
-                            >
-                              {isExpanded ? '▲ Show Less' : '▼ Show More'}
-                            </button>
-                          )}
                         </div>
-                        <Link to={item.link} className={styles.updateLink}>
+                        <Link 
+                          to={item.link || '#'} 
+                          className={styles.updateLink}
+                          onClick={(e) => e.stopPropagation()}
+                        >
                           Learn more →
                         </Link>
                       </div>
@@ -521,14 +570,14 @@ export default function WhatsNewOverview() {
                 );
               })}
             </div>
-          </section>
-        )}
+          )}
+        </section>
 
         {/* Historical Updates Navigation */}
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🕰</span>
+              <span className={styles.sectionIcon}>🗓</span>
               Historical Updates
             </h2>
             <p className={styles.sectionSubtitle}>
