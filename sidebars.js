@@ -1410,7 +1410,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/settings/general-settings",
-          
+            "platform_concepts/settings/pii-guardrails",
           ],
         },
 
