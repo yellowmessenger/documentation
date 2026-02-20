@@ -226,6 +226,9 @@ module.exports = {
       ]
     },
 
+    // Nexus - Platform AI Assistant (major section)
+    "platform_concepts/AICopilot/nexus-user-guide",
+
     // Studio starts here  
     {
       type: "category",
@@ -437,7 +440,6 @@ module.exports = {
                   label: "AI Copilot",
                   link: {type: 'doc', id: 'platform_concepts/AICopilot/copilot'},
                   items: [ 
-                    "platform_concepts/AICopilot/nexus-user-guide",
                     "platform_concepts/AICopilot/ai-copilot-debugger",
                   ],
                 }, 
