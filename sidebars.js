@@ -226,6 +226,9 @@ module.exports = {
       ]
     },
 
+    // Nexus - Platform AI Assistant (major section)
+    "platform_concepts/AICopilot/nexus-user-guide",
+
     // Studio starts here  
     {
       type: "category",
